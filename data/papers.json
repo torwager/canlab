@@ -59,23 +59,37 @@
   "section": "Preprints",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "A bioRxiv preprint proposed that increasing stimulus intensity produces topographical expansion of sensory brain representations, based on the title alone with no abstract or full text available.",
-  "key_finding": null,
+  "summary": "Analyzed four fMRI datasets using a Bayes factor approach and found that higher-intensity somatosensory, auditory, and visual stimuli produced expansion of activation topography in sensory and cerebellar regions, correlating with psychophysical discriminability.",
+  "key_finding": "High- versus low-intensity stimulation reliably expanded activation topography in somatosensory, visual, and cerebellar cortices across four fMRI datasets, replicating within individual participants.",
   "free_keywords": [
-   "stimulus intensity",
-   "topographic map",
-   "somatotopy",
-   "bioRxiv preprint",
-   "sensory cortex"
+   "activation topography",
+   "Bayes factor",
+   "somatosensory cortex",
+   "psychophysical discriminability",
+   "cerebellum",
+   "multimodal sensory coding"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
-   "input_mode": "title_only",
-   "confidence": 0.3,
-   "notes": "Title only; topic and approach (pain, fmri) inferred from the pain-neuroscience focus of the author group, not confirmed by any text.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "input_mode": "abstract",
+   "confidence": 0.75,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "pain",
+    "perception"
+   ],
+   "approach": [
+    "fmri",
+    "neuroimaging_methods"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -175,7 +189,7 @@
    "input_mode": "abstract",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -272,7 +286,7 @@
    "input_mode": "abstract",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -378,7 +392,7 @@
    "input_mode": "abstract",
    "confidence": 0.7,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -426,22 +440,37 @@
   "section": "2026",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "A paper under review at eLife examined spatiotemporal dissociations in human amygdala responses to negative affect, based on the title alone with no abstract or full text available.",
-  "key_finding": null,
+  "summary": "Used finite impulse response modeling and data-driven clustering across two fMRI datasets (N=358) to show amygdala subregions differ in temporal response profile to negative images, with reappraisal not reliably altering response magnitude.",
+  "key_finding": "Centromedial amygdala showed sustained post-stimulus activation while laterobasal and superficial subregions peaked earlier, and cognitive reappraisal did not substantially change amygdala response magnitude or shape.",
   "free_keywords": [
-   "amygdala",
-   "negative affect",
-   "spatiotemporal dynamics",
-   "eLife"
+   "amygdala subregions",
+   "finite impulse response",
+   "cognitive reappraisal",
+   "centromedial amygdala",
+   "laterobasal amygdala",
+   "temporal dynamics"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
-   "input_mode": "title_only",
-   "confidence": 0.25,
-   "notes": "Title only; fmri approach inferred from the authors' typical methods, not confirmed by any text. Could instead involve EEG/MEG or intracranial recordings given the 'spatiotemporal' framing.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "input_mode": "abstract",
+   "confidence": 0.75,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "emotion",
+    "emotion_regulation"
+   ],
+   "approach": [
+    "fmri",
+    "neuroimaging_methods"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -554,7 +583,7 @@
    "input_mode": "abstract",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -635,7 +664,7 @@
    "input_mode": "title_only",
    "confidence": 0.3,
    "notes": "Title only; the neuromarker/fmri approach tags were inferred from the phrase 'pattern expressions' (suggesting application of a multivariate brain signature) and are not confirmed by any text.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -724,7 +753,7 @@
    "input_mode": "title_only",
    "confidence": 0.35,
    "notes": "Title only; likely uses high-resolution/7T fMRI given overlapping authors (Wald, Bianciardi, Quigley, Satpute, Barrett, Theriault) with the related hypothalamus 7T paper in this batch, but this is not confirmed.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -803,7 +832,7 @@
    "input_mode": "title_only",
    "confidence": 0.5,
    "notes": "Title only, but the stated sample size (35,000 individuals) strongly indicates a large pooled structural-MRI cohort study, hence the mega_analysis and other_imaging tags.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -904,7 +933,7 @@
    "input_mode": "abstract",
    "confidence": 0.65,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -1008,7 +1037,7 @@
    "input_mode": "abstract",
    "confidence": 0.6,
    "notes": "No neuroimaging is described; tagged as behavioral. Two large cohorts were compared for generalizability rather than clearly pooled into one individual-participant model, so mega_analysis was not tagged despite the large combined sample.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -1119,7 +1148,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -1223,7 +1252,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -1289,21 +1318,37 @@
   "section": "2026",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Likely examined brain functional correlates of trait-like dispositions toward negative emotions, though only the title was available for tagging.",
-  "key_finding": null,
+  "summary": "Tested competing hypotheses about the neural basis of negative emotional dispositions using Bayes factors and machine learning across two large fMRI samples, finding no evidence for amygdala or salience network involvement in neuroticism.",
+  "key_finding": "A brain-wide machine learning pattern predicted the neuroticism facet stress vulnerability (r=.21, replicated r=.19), driven by somatomotor and visual rather than salience network regions.",
   "free_keywords": [
-   "negative emotionality",
-   "individual differences",
-   "trait affect"
+   "neuroticism",
+   "salience network",
+   "stress vulnerability",
+   "multiverse analysis",
+   "Bayes factors",
+   "preregistration"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.25,
-   "notes": "Only the title was available (no abstract or full text); topic, approach, and type were inferred from the title and the author group (Gianaros, Wright, Manuck are known for large-sample individual-differences fMRI research), so tags are low-confidence guesses.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.7,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "emotion",
+    "stress"
+   ],
+   "approach": [
+    "fmri",
+    "machine_learning"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -1379,7 +1424,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -1487,7 +1532,7 @@
    "input_mode": "abstract",
    "confidence": 0.5,
    "notes": "Abstract only; classified as a theoretical/conceptual model paper. The 'computational_model' approach tag is a loose fit since the model is conceptual/biological rather than mathematical, and no empirical data collection is described in the abstract.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -1597,7 +1642,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -1710,7 +1755,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -1792,7 +1837,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -1927,7 +1972,7 @@
    "input_mode": "abstract",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -2056,7 +2101,7 @@
    "input_mode": "full_text",
    "confidence": 0.3,
    "notes": "The full text supplied under this id was actually from an unrelated paper (Dehghani et al., 'Transcranial direct current stimulation of primary motor cortex reduces thermal pain', PAIN 2026), evidently a batch-assembly error; tags here are based solely on this paper's own title, not on the provided body text.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -2110,7 +2155,39 @@
   "has_pdf": true,
   "section": "2026",
   "source": "dartmouth-site",
-  "date_added": "2026-09-06"
+  "date_added": "2026-09-06",
+  "tags": {
+   "topic": [
+    "pain"
+   ],
+   "approach": [
+    "brain_stimulation",
+    "behavioral"
+   ],
+   "type": [
+    "empirical"
+   ]
+  },
+  "summary": "Conducted a preregistered triple-blind randomized crossover trial (N=50) and found anodal M1-tDCS significantly reduced experimental thermal pain relative to cathodal and sham stimulation, while cathodal tDCS increased pain.",
+  "key_finding": "Anodal tDCS reduced pain versus cathodal and sham (Cohen's d=0.93 and 0.85, both P<0.001), and cathodal tDCS increased pain versus sham (d=0.34, P<0.01), with effects stable over 35 minutes.",
+  "free_keywords": [
+   "tDCS",
+   "primary motor cortex",
+   "thermal pain",
+   "triple-blind",
+   "crossover trial",
+   "interhemispheric inhibition",
+   "blinding"
+  ],
+  "classification": {
+   "taxonomy_version": "1.0.0",
+   "prompt_version": "1.0.0",
+   "model": "claude-sonnet-5 (Claude Code subagent)",
+   "input_mode": "full_text",
+   "confidence": 0.9,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  }
  },
  {
   "id": "wake2026differential",
@@ -2221,7 +2298,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -2317,7 +2394,7 @@
    "input_mode": "full_text",
    "confidence": 0.65,
    "notes": "Classified as 'methods' because the paper's main contribution is a new computational modeling framework, though it also reports substantial empirical validation across multiple datasets. Topic tagging is uncertain since the paper is largely topic-agnostic (general brain dynamics), with 'clinical' reflecting only its autism spectrum disorder application.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -2406,7 +2483,7 @@
    "input_mode": "abstract",
    "confidence": 0.3,
    "notes": "The supplied 'abstract' was not a real abstract but a placeholder referencing code associated with the manuscript ('Codes associated with the manuscript...'); tags are based on the title alone.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -2464,22 +2541,37 @@
   "section": "2026",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Examined whether adolescent pain reports in the ABCD study share genetic risk with adult chronic pain conditions using a polygenic score analysis.",
-  "key_finding": null,
+  "summary": "Analyzed polygenic scores derived from adult UK Biobank pain GWAS in 6,387 ABCD adolescents and found general chronic pain genetic risk was associated with adolescent pain presence and intensity but not recurrence or multi-site pain.",
+  "key_finding": "The General Chronic Pain polygenic score predicted adolescent pain presence (OR=1.07) and intensity (b=0.14), while a musculoskeletal-specific score showed no significant associations.",
   "free_keywords": [
    "polygenic score",
    "ABCD study",
-   "adolescents",
-   "genetic overlap"
+   "UK Biobank",
+   "GWAS",
+   "adolescent pain",
+   "chronic pain genetics"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.35,
-   "notes": "Title only; no abstract or full text available, so tags and type are inferred from the title alone.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "pain",
+    "chronic_pain"
+   ],
+   "approach": [
+    "genetics",
+    "behavioral"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -2575,7 +2667,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -2696,7 +2788,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": "The machine_learning tag reflects the review's discussion of ML-derived placebo-responsiveness scores as an emerging approach, not a method the authors themselves applied.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -2799,7 +2891,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -2898,7 +2990,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -2990,7 +3082,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -3041,22 +3133,38 @@
   "section": "2026",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Investigated whether gray matter changes following pain reprocessing therapy for chronic back pain were associated with clinical improvement using a voxel-based morphometry mediation analysis.",
-  "key_finding": null,
+  "summary": "Used voxel-based morphometry mediation analysis to show pain reprocessing therapy increased gray matter in anterior cingulate and orbitofrontal cortex relative to control conditions, but these changes did not mediate clinical improvement in chronic back pain.",
+  "key_finding": "PRT increased gray matter in ACC and OFC versus controls, but clinical improvement instead correlated with lateral prefrontal increases and thalamus/amygdala decreases, and gray matter changes did not mediate treatment effects.",
   "free_keywords": [
+   "pain reprocessing therapy",
    "voxel-based morphometry",
    "gray matter",
-   "pain reprocessing therapy",
-   "structural MRI"
+   "anterior cingulate",
+   "orbitofrontal cortex",
+   "thalamus",
+   "chronic back pain"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.4,
-   "notes": "Title only; no abstract or full text available, so tags and type are inferred from the title alone.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "chronic_pain",
+    "placebo"
+   ],
+   "approach": [
+    "other_imaging",
+    "mediation"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -3164,7 +3272,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -3320,7 +3428,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -3425,7 +3533,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -3521,7 +3629,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Perspective/program-description piece in a 50th-anniversary supplement rather than a primary research report; classified as commentary.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -3653,7 +3761,7 @@
    "input_mode": "abstract",
    "confidence": 0.7,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -3785,7 +3893,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -3915,7 +4023,7 @@
    "input_mode": "abstract",
    "confidence": 0.75,
    "notes": "Abstract only; topic/approach tags reflect the dataset's broad task coverage rather than a single hypothesis.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -3975,22 +4083,37 @@
   "section": "2025",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Compared the neural bases of self-generated versus socially sourced reappraisal, two forms of cognitive emotion regulation.",
-  "key_finding": null,
+  "summary": "Compared neural mechanisms of self- and social-reappraisal using univariate, Bayes factor, and multivariate classifier fMRI analyses, finding shared control-region activity but distinct mentalizing-region engagement specific to reappraising for others.",
+  "key_finding": "Multivariate patterns in mentalizing regions such as right lateral and medial prefrontal cortex and temporal pole distinguished social- from self-reappraisal, while control-region patterns did not.",
   "free_keywords": [
-   "reappraisal",
-   "self-regulation",
-   "social regulation",
-   "emotion regulation strategies"
+   "self-reappraisal",
+   "social-reappraisal",
+   "mentalizing",
+   "multivariate classifier",
+   "prefrontal cortex",
+   "autobiographical memory"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.25,
-   "notes": "Only the title was available (no abstract or full text); tags and summary are inferred from the title alone and are low-confidence, especially the fmri approach tag.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.8,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "emotion_regulation",
+    "social"
+   ],
+   "approach": [
+    "fmri",
+    "machine_learning"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -4088,7 +4211,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -4197,7 +4320,7 @@
    "input_mode": "abstract",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -4295,7 +4418,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -4397,7 +4520,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -4498,7 +4621,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -4586,7 +4709,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": "Batch text also contained an unrelated JAMA Psychiatry letter on firearm injury from the same issue (a PDF extraction artifact); tags apply only to the pain reprocessing therapy paper.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -4688,7 +4811,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -4782,7 +4905,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -4875,7 +4998,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Only the first ~14,000 characters of this Handbook of Clinical Neurology chapter plus keyword snippets were available; later sections were not fully reviewed.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -4960,22 +5083,37 @@
   "section": "2025",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Investigated default mode network functional connectivity as a potential transdiagnostic biomarker of cognitive function, based on the article title alone with no abstract or full text available.",
+  "summary": "Reviewed evidence on default mode network functional connectivity as a transdiagnostic biomarker of cognitive function across aging and clinical conditions including Alzheimer's, Parkinson's, depression, and ADHD, and discussed reliability challenges.",
   "key_finding": null,
   "free_keywords": [
    "default mode network",
-   "biomarker",
-   "transdiagnostic",
-   "functional connectivity"
+   "resting-state connectivity",
+   "transdiagnostic biomarker",
+   "mind wandering",
+   "meditation",
+   "reliability"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.35,
-   "notes": "Title-only record; topic/approach tags inferred from the title wording ('Default Mode Network Functional Connectivity', 'transdiagnostic', 'Cognitive Function') with low confidence.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.8,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "cognitive_control",
+    "clinical"
+   ],
+   "approach": [
+    "fmri",
+    "neuroimaging_methods"
+   ],
+   "type": [
+    "review"
+   ]
   }
  },
  {
@@ -5068,7 +5206,7 @@
    "input_mode": "full_text",
    "confidence": 0.5,
    "notes": "Short letter to the editor; ai_integration reflects discussion of the authors' prior NLP/AI-based synthesis methodology rather than new analysis performed in this reply. The extracted batch text also contains an unrelated second letter (on top-down attention and hyperalgesia) from the same journal issue, which was excluded from tagging this id.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -5167,7 +5305,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -5265,7 +5403,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -5347,7 +5485,7 @@
    "input_mode": "title_only",
    "confidence": 0.3,
    "notes": "Title only; likely concerns the same pain-suffering systematic review addressed in the companion 'Reply to Duffee', but no text was available to confirm content, so tags are low-confidence placeholders.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -5434,7 +5572,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -5616,7 +5754,7 @@
    "input_mode": "full_text",
    "confidence": 0.65,
    "notes": "Journal-labeled 'Opinion' piece describing a new multi-site research resource/protocol rather than a single result or a narrative literature review; classified as 'methods' for that reason, though 'review' is a plausible alternative.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -5681,22 +5819,39 @@
   "section": "2024",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Compared mindfulness meditation and placebo effects on pain, reporting that they modulate distinct multivariate neural signatures, based on the article title alone with no abstract or full text available.",
-  "key_finding": null,
+  "summary": "Applied validated multivariate pain-signature fMRI analyses across two randomized trials (N=115) and found mindfulness meditation reduced nociceptive and negative-affective pain signatures more than placebo cream, which instead reduced a distinct placebo signature.",
+  "key_finding": "Mindfulness meditation produced greater reductions in nociceptive-specific and negative affective pain signature responses than placebo cream, sham meditation, or control, while placebo cream selectively reduced the placebo signature.",
   "free_keywords": [
-   "mindfulness",
-   "meditation",
-   "placebo analgesia",
-   "multivariate signature"
+   "mindfulness meditation",
+   "placebo signature",
+   "nociceptive-specific pain signature",
+   "noxious heat",
+   "randomized clinical trial",
+   "MVPA"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.4,
-   "notes": "Title only; approach tags (fmri, machine_learning, neuromarker) inferred from the phrase 'distinct multivariate neural signatures' in the title.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.8,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "pain",
+    "placebo",
+    "emotion_regulation"
+   ],
+   "approach": [
+    "fmri",
+    "machine_learning",
+    "neuromarker"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -5798,7 +5953,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -5903,7 +6058,7 @@
    "input_mode": "full_text",
    "confidence": 0.92,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -5999,7 +6154,7 @@
    "input_mode": "full_text",
    "confidence": 0.92,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -6091,7 +6246,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -6257,7 +6412,7 @@
    "input_mode": "abstract",
    "confidence": 0.75,
    "notes": "Descriptive/announcement paper for a data-pooling consortium rather than a report of new findings.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -6375,7 +6530,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -6428,21 +6583,35 @@
   "section": "2024",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Reviewed definitions, development strategies, and recent advances in brain-based neuromarkers of addiction.",
+  "summary": "Reviewed definitions and development strategies for addiction neuromarkers, outlining criteria for sensitivity, specificity, predictive validity, and generalization, with emphasis on the Neurobiological Craving Signature as a promising marker of substance use disorder.",
   "key_finding": null,
   "free_keywords": [
-   "addiction",
+   "Neurobiological Craving Signature",
+   "substance use disorder",
    "biomarker development",
-   "substance use"
+   "craving",
+   "addiction neuroscience"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.35,
-   "notes": "Title only; tags, summary, and type are a low-confidence inference from the title alone.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.8,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "reward_craving"
+   ],
+   "approach": [
+    "neuromarker",
+    "machine_learning"
+   ],
+   "type": [
+    "review"
+   ]
   }
  },
  {
@@ -6494,7 +6663,36 @@
   "has_pdf": false,
   "section": "2024",
   "source": "dartmouth-site",
-  "date_added": "2026-09-06"
+  "date_added": "2026-09-06",
+  "tags": {
+   "topic": [
+    "emotion_regulation"
+   ],
+   "approach": [
+    "fmri",
+    "computational_model"
+   ],
+   "type": [
+    "empirical"
+   ]
+  },
+  "summary": "Applied a Bayes factor-based systems identification approach to deconstruct the neural bases of emotion regulation, though limited title-only information precludes describing specific methods or results.",
+  "key_finding": null,
+  "free_keywords": [
+   "systems identification",
+   "Bayes factors",
+   "emotion regulation",
+   "brain bases"
+  ],
+  "classification": {
+   "taxonomy_version": "1.0.0",
+   "prompt_version": "1.0.0",
+   "model": "claude-sonnet-5 (Claude Code subagent)",
+   "input_mode": "title_only",
+   "confidence": 0.35,
+   "notes": "Only the paper title was available (no abstract or full text); topic, approach, and type tags are inferred from the title and should be verified against the full paper.",
+   "classified_at": "2026-09-06T19:26:20Z"
+  }
  },
  {
   "id": "leroux2024statistical",
@@ -6620,7 +6818,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -6715,7 +6913,7 @@
    "input_mode": "abstract",
    "confidence": 0.85,
    "notes": "Abstract only; no full text available.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -6797,7 +6995,7 @@
    "input_mode": "title_only",
    "confidence": 0.3,
    "notes": "Title only; tags, type, and summary are a low-confidence guess based solely on the title.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -6901,7 +7099,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -7003,7 +7201,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -7084,7 +7282,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": "Book chapter; broad methodological perspective piece not tied to a single CANlab topic domain, so 'cognitive_control' was used as the closest available topic tag.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -7178,7 +7376,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -7259,7 +7457,7 @@
    "input_mode": "full_text",
    "confidence": 0.35,
    "notes": "The extracted text contained only the edited volume's front matter and general introduction, not the specific content of this chapter (Branco, Vachon-Presseau, Hall, Wager & Apkarian); tags are based on the chapter title and authors' known research areas only.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -7379,7 +7577,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -7488,7 +7686,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -7590,7 +7788,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -7676,7 +7874,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -7778,7 +7976,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -7880,7 +8078,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -8012,7 +8210,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -8125,7 +8323,7 @@
    "input_mode": "abstract",
    "confidence": 0.7,
    "notes": "Only the abstract was available for this paper.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -8231,7 +8429,7 @@
    "input_mode": "abstract",
    "confidence": 0.65,
    "notes": "Only the abstract was available for this paper.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -8408,7 +8606,7 @@
    "input_mode": "abstract",
    "confidence": 0.7,
    "notes": "Only the abstract was available for this paper (preprint).",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -8520,7 +8718,7 @@
    "input_mode": "abstract",
    "confidence": 0.75,
    "notes": "Abstract only; approach tags inferred from the described multivariate decoding methodology.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -8661,7 +8859,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -8772,7 +8970,7 @@
    "input_mode": "full_text",
    "confidence": 0.45,
    "notes": "No empirical approach clearly applies since this is a purely theoretical correspondence reply with no new data; 'behavioral' was tagged as the closest available approach category given its psychosocial framing.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -8823,23 +9021,37 @@
   "section": "2023",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "This study examined the belief systems underlying persistent beliefs of fraud following the 2020 U.S. presidential election.",
-  "key_finding": null,
+  "summary": "Surveyed 1,642 Americans during the 2020 election vote count and showed a Bayesian belief-updating model explained partisan asymmetry in fraud belief changes better than motivated-reasoning or simplified alternative models.",
+  "key_finding": "A Bayesian model of updating across vote-winner, fraud-prevalence, and fraud-beneficiary beliefs outperformed models of irrational motivated reasoning in explaining partisan asymmetry in fraud beliefs.",
   "free_keywords": [
-   "election fraud beliefs",
-   "misinformation",
-   "belief systems",
-   "political psychology",
-   "2020 U.S. election"
+   "fraud beliefs",
+   "2020 election",
+   "partisan bias",
+   "Bayesian updating",
+   "motivated reasoning",
+   "belief system"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.3,
-   "notes": "Title only, no abstract or full text available; tags are inferred from the title alone and should be verified.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "expectation_learning",
+    "social"
+   ],
+   "approach": [
+    "computational_model",
+    "behavioral"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -8906,23 +9118,37 @@
   "section": "2023",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "The authors developed a brain-based neuromarker for drug and food craving that distinguished drug users from non-users.",
-  "key_finding": null,
+  "summary": "Used machine learning across three fMRI studies (n=99) to develop the Neurobiological Craving Signature, a cross-validated neuromarker predicting cue-induced drug and food craving that discriminated drug users from non-users.",
+  "key_finding": "The Neurobiological Craving Signature discriminated drug users from non-users with 82% accuracy based on responses to drug versus food cues, and transferred between drug and food craving domains.",
   "free_keywords": [
-   "craving",
-   "drug use",
+   "Neurobiological Craving Signature",
+   "drug craving",
    "food craving",
-   "addiction",
-   "biomarker"
+   "cue reactivity",
+   "ventral striatum",
+   "substance use disorder"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.35,
-   "notes": "Title only; approach tags (fmri, machine learning, neuromarker) inferred from the word 'neuromarker' in the title and should be verified against the full text.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.9,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "reward_craving"
+   ],
+   "approach": [
+    "fmri",
+    "machine_learning",
+    "neuromarker"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -9020,7 +9246,7 @@
    "input_mode": "abstract",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -9075,23 +9301,36 @@
   "section": "2023",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "This paper reviewed challenges to reproducibility in neuroimaging analysis and discussed potential solutions.",
+  "summary": "Reviewed challenges and solutions for reproducibility in neuroimaging research, distinguishing analytical reproducibility, replicability, and robustness to analytical variability, and discussed tools and practices to improve each.",
   "key_finding": null,
   "free_keywords": [
-   "reproducibility",
-   "neuroimaging methods",
+   "analytical reproducibility",
+   "replicability",
+   "robustness",
    "open science",
-   "replication",
-   "best practices"
+   "preregistration",
+   "neuroimaging best practices"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.25,
-   "notes": "Title only; no topic in the controlled vocabulary maps well onto a general methodological review of reproducibility, so 'clinical' was chosen loosely based on the journal's clinical/cognitive neuroscience focus and should be reconsidered once full text is available.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.55,
+   "notes": "General methodological review without a specific substantive psychological topic in the taxonomy; 'cognitive_control' used as the closest available topic tag and should be reconsidered.",
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "cognitive_control"
+   ],
+   "approach": [
+    "neuroimaging_methods",
+    "open_tools"
+   ],
+   "type": [
+    "review"
+   ]
   }
  },
  {
@@ -9182,7 +9421,7 @@
    "input_mode": "full_text",
    "confidence": 0.7,
    "notes": "Formatted as a Nature 'Matters arising' reply; classified as commentary despite including original reanalyses, consistent with how such formal replies are typically categorized.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -9294,7 +9533,7 @@
    "input_mode": "full_text",
    "confidence": 0.65,
    "notes": "No approach category in the taxonomy directly covers genetics/GWAS methodology; 'mega_analysis' was tagged based on the large UK Biobank sample explicitly covered by that definition, and 'computational_model' for the structural equation modeling.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -9392,7 +9631,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "Topic tagging is uncertain: the paper concerns brain prediction of muscle strength/motor function, which does not map cleanly onto any topic in the controlled vocabulary; 'brain_body' was chosen as the loosest available fit.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -9479,7 +9718,7 @@
    "input_mode": "abstract",
    "confidence": 0.3,
    "notes": "The supplied 'abstract' was a generic PNAS journal description rather than the paper's actual abstract; tags were inferred from the title alone. Type was guessed as commentary based on PNAS 'Unpacking...' commentary naming conventions but could instead be empirical or review.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -9583,7 +9822,7 @@
    "input_mode": "abstract",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -9703,7 +9942,7 @@
    "input_mode": "abstract",
    "confidence": 0.55,
    "notes": "Abstract only; classified as a reply/commentary to a published critique.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -9824,22 +10063,37 @@
   "section": "2022",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Proposed a hypothetical integrative model linking emotion regulation and salience network dysfunction to the pathophysiology of fibromyalgia.",
+  "summary": "Proposed an integrative model in which imbalanced threat and soothing emotion-regulation systems keep the salience network in a hyperactive state that contributes to fibromyalgia symptoms.",
   "key_finding": null,
   "free_keywords": [
    "fibromyalgia",
    "salience network",
-   "emotion regulation",
-   "integrative model"
+   "midcingulo-insular network",
+   "threat system",
+   "soothing system",
+   "FITSS model"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.3,
-   "notes": "Only the title was available; topic, approach and type were inferred from the title and the review-only journal.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.6,
+   "notes": "Abstract only; a theoretical/hypothetical model with no new data. The fmri approach tag reflects the neuroimaging literature the model draws on, not data collected in this paper.",
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "chronic_pain",
+    "emotion_regulation",
+    "emotion"
+   ],
+   "approach": [
+    "fmri"
+   ],
+   "type": [
+    "review"
+   ]
   }
  },
  {
@@ -9900,22 +10154,40 @@
   "section": "2022",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Tested how short-term and long-term mindfulness training affect neural signatures of pain modulation in a randomized active-control trial.",
-  "key_finding": null,
+  "summary": "A randomized trial found MBSR reduced Neurologic Pain Signature and SIIPS1 responses to thermal pain versus active-control and waitlist groups, while long-term meditators reported less pain without altered signature responses.",
+  "key_finding": "MBSR decreased NPS response relative to the active-control group (d=-0.43) and from pre- to post-intervention (d=-0.47), and cumulative retreat practice was associated with reduced SIIPS1 (r=-0.65).",
   "free_keywords": [
-   "mindfulness training",
-   "pain modulation",
+   "mindfulness",
+   "MBSR",
+   "NPS",
+   "SIIPS1",
+   "meditation",
    "randomized controlled trial",
-   "meditation"
+   "thermal pain"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.35,
-   "notes": "Title only; approach tags (fmri, neuromarker) were inferred from 'Neural Signatures' in the title.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "pain",
+    "emotion_regulation"
+   ],
+   "approach": [
+    "fmri",
+    "neuromarker",
+    "machine_learning",
+    "behavioral"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -10036,7 +10308,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -10132,7 +10404,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -10243,7 +10515,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -10309,22 +10581,38 @@
   "section": "2022",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Identified a neural signature of the subjective decision value that people assign to anticipated future pain using fMRI.",
-  "key_finding": null,
+  "summary": "Using fMRI and multivariate pattern analysis during an economic decision task, identified a distributed neural representation of the decision value of future pain that overlapped with aversive-picture processing but differed from experienced pain.",
+  "key_finding": "A multivariate brain pattern predicted the decision value of future pain and accept/avoid choices, with negative weights in reward-valuation regions and positive weights in salience, negative-affect and executive-control regions.",
   "free_keywords": [
    "decision value",
-   "future pain",
-   "neuroeconomics",
-   "valuation"
+   "economic decision-making",
+   "aversive pictures",
+   "valuation",
+   "reward",
+   "pain avoidance"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.35,
-   "notes": "Title only; topic and approach inferred from the title's reference to decision value and a neural signature.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.8,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "pain",
+    "reward_craving"
+   ],
+   "approach": [
+    "fmri",
+    "machine_learning",
+    "neuromarker"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -10408,7 +10696,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Classified as a study protocol/resource paper (type: methods) since it reports the study design rather than outcome data.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -10508,7 +10796,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -10592,7 +10880,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -10710,7 +10998,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -10823,7 +11111,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -10921,7 +11209,7 @@
    "input_mode": "full_text",
    "confidence": 0.92,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -10987,23 +11275,37 @@
   "section": "2022",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Proposed a collaborative filtering method to recover individual emotional state time series from sparse subjective ratings.",
+  "summary": "Introduced and validated a collaborative-filtering method for recovering individual emotional-state ratings from sparsely sampled data without disrupting the emotion-generation process.",
   "key_finding": null,
   "free_keywords": [
    "collaborative filtering",
-   "sparse ratings",
+   "sparse sampling",
    "emotion dynamics",
-   "imputation",
-   "affective computing toolbox"
+   "ecological momentary assessment",
+   "missing data",
+   "toolbox"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
-   "input_mode": "title_only",
-   "confidence": 0.35,
-   "notes": "Title-only; tags inferred from the title (a collaborative-filtering method with an accompanying toolbox release) without full text.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "input_mode": "abstract",
+   "confidence": 0.55,
+   "notes": "Abstract text is truncated in the source (cuts off mid-sentence) and does not state a quantitative validation result.",
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "emotion"
+   ],
+   "approach": [
+    "machine_learning",
+    "computational_model",
+    "open_tools"
+   ],
+   "type": [
+    "methods"
+   ]
   }
  },
  {
@@ -11109,7 +11411,7 @@
    "input_mode": "full_text",
    "confidence": 0.95,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -11181,22 +11483,35 @@
   "section": "2021",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Examined trial-to-trial variability in fMRI brain state dynamics evoked by emotional video clips, arguing that such variation is the norm rather than a fixed stereotyped response.",
-  "key_finding": null,
+  "summary": "Modeled brain-state dynamics during emotional video viewing with a sequential probabilistic approach and found substantial individual variation in state-occupancy patterns rather than a consistent emotion-specific brain state.",
+  "key_finding": "State-occupancy probability distributions varied substantially across individuals watching the same emotional video clips.",
   "free_keywords": [
-   "brain state dynamics",
-   "emotional video clips",
-   "fMRI variability",
-   "affect dynamics"
+   "brain states",
+   "BOLD dynamics",
+   "emotion categories",
+   "individual variability",
+   "state transitions"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
-   "input_mode": "title_only",
-   "confidence": 0.3,
-   "notes": "Title-only conference paper; tags are best-effort inferences from the title.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "input_mode": "abstract",
+   "confidence": 0.65,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "emotion"
+   ],
+   "approach": [
+    "fmri",
+    "computational_model"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -11293,7 +11608,7 @@
    "input_mode": "full_text",
    "confidence": 0.92,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -11370,7 +11685,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -11421,22 +11736,35 @@
   "section": "2021",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Proposed that novel, higher-order cognitive functions emerge where multiple macroscale cortical gradients converge in the brain.",
+  "summary": "Reviewed evidence that novel higher-order cognitive functions, such as mentalizing at the temporoparietal junction, arise where macroscale cortical processing gradients converge at maximal distance from sensory cortices.",
   "key_finding": null,
   "free_keywords": [
    "macroscale gradients",
-   "cortical convergence zones",
-   "cognitive function",
-   "connectome gradients"
+   "temporoparietal junction",
+   "convergence zones",
+   "cortical hierarchy",
+   "mentalizing"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
-   "input_mode": "title_only",
-   "confidence": 0.3,
-   "notes": "Title-only; type and approach inferred loosely from a title referencing macroscale cortical gradients and cognitive function.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "input_mode": "abstract",
+   "confidence": 0.5,
+   "notes": "Abstract-only theoretical review; the fmri approach tag reflects the imaging-derived gradient literature it synthesizes rather than new data collected here.",
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "cognitive_control",
+    "social"
+   ],
+   "approach": [
+    "fmri"
+   ],
+   "type": [
+    "review"
+   ]
   }
  },
  {
@@ -11524,7 +11852,7 @@
    "input_mode": "full_text",
    "confidence": 0.25,
    "notes": "Outlier mouse immunology/cancer-immunosurveillance paper unrelated to CANlab's core human neuroscience focus; the taxonomy has no good match for immunology methods, so tags are best-effort placeholders.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -11626,7 +11954,7 @@
    "input_mode": "full_text",
    "confidence": 0.92,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -11728,7 +12056,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -11854,7 +12182,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": "Primarily a rodent circuit-manipulation study (fiber photometry, chemogenetics, optogenetics); the human fMRI component is secondary (N=48).",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -11945,7 +12273,7 @@
    "input_mode": "title_only",
    "confidence": 0.3,
    "notes": "Title-only; tags inferred from a title referencing intertemporal choice and medial temporal lobe fMRI activation.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -12042,7 +12370,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -12166,7 +12494,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -12272,7 +12600,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -12357,7 +12685,7 @@
    "input_mode": "full_text",
    "confidence": 0.3,
    "notes": "Only the erratum/title-correction notice was available in the provided text, not the original article; topic and approach tags are inferred from the title/citation alone and are low confidence.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -12449,7 +12777,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -12544,7 +12872,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -12633,7 +12961,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -12720,7 +13048,7 @@
    "input_mode": "full_text",
    "confidence": 0.7,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -12826,7 +13154,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -12926,7 +13254,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -13014,22 +13342,37 @@
   "section": "2021",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Reported a meta-analysis of neural systems underlying placebo analgesia using individual participant fMRI data, though only the paper's title was available and no abstract or full text was provided.",
-  "key_finding": null,
+  "summary": "An individual-participant-data meta-analysis of 603 participants across 20 fMRI studies found that placebo treatments produced small, widespread reductions in pain-related brain activity in ventral attention and somatomotor networks.",
+  "key_finding": "Behavioral placebo analgesia correlated with reduced pain-related activity in ventral attention/somatomotor networks, thalamus, habenula, mid-cingulate and supplementary motor area, with high between-study heterogeneity.",
   "free_keywords": [
    "placebo analgesia",
    "individual participant data",
-   "Placebo Imaging Consortium",
-   "coordinate meta-analysis"
+   "insula",
+   "thalamus",
+   "habenula",
+   "Placebo Imaging Consortium"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
-   "input_mode": "title_only",
-   "confidence": 0.4,
-   "notes": "Only the title was available for this paper (no abstract or full text); tags are inferred from the title alone and should be treated as low confidence.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "input_mode": "abstract",
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "placebo",
+    "pain"
+   ],
+   "approach": [
+    "fmri",
+    "mega_analysis"
+   ],
+   "type": [
+    "empirical"
+   ]
   }
  },
  {
@@ -13145,7 +13488,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -13271,7 +13614,7 @@
    "input_mode": "full_text",
    "confidence": 0.55,
    "notes": "No taxonomy approach fits this pure argumentative letter/reply; 'behavioral' used as the closest available tag since no empirical study or imaging methodology is present in the text.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -13365,7 +13708,7 @@
    "input_mode": "full_text",
    "confidence": 0.55,
    "notes": "Topic tagged 'clinical' only because one validation dataset (FBIRN) includes schizophrenia patients; the paper is otherwise a pure methods/toolbox contribution with no taxonomy topic that fits well.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -13464,7 +13807,7 @@
    "input_mode": "full_text",
    "confidence": 0.55,
    "notes": "Classified as empirical because the Delphi survey produced quantified consensus data, though it could also be read as a review/recommendation article; no imaging or standard behavioral study is present, so 'behavioral' is a loose approach fit.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -13568,7 +13911,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -13647,7 +13990,7 @@
    "input_mode": "title_only",
    "confidence": 0.3,
    "notes": "Only the title was available (no abstract or full text). Tags are inferred by analogy to the companion full-text paper (salman2021approach) by the same authors on the same project, not from direct text evidence.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -13704,22 +14047,36 @@
   "section": "2020",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Addressed, per the title, why fMRI reliability estimates vary depending on the specific measure used, in a methodological commentary on functional MRI reliability.",
-  "key_finding": null,
+  "summary": "Argued and demonstrated, using multivariate studies and a reanalysis of Human Connectome Project data, that task-based fMRI can show excellent test-retest and task reliability when appropriate measures and larger samples are used.",
+  "key_finding": "Multivariate pain and affective-image studies and a Human Connectome Project reanalysis showed excellent reliability (ICC>0.75) over roughly four months, contrasting with Elliot et al.'s (2020) negative conclusions.",
   "free_keywords": [
    "test-retest reliability",
-   "fMRI measurement",
-   "brain signatures",
-   "psychometrics"
+   "ICC",
+   "Human Connectome Project",
+   "task reliability",
+   "biomarkers"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.3,
-   "notes": "Only the title was available (no abstract or full text). Tags reflect general familiarity with this known commentary (a reply to Elliott et al. 2020 on fMRI reliability) rather than batch text evidence; treat with caution and verify against the source if precision matters.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.6,
+   "notes": "Published as a direct reply to Elliot et al. (2020); classified as commentary although it includes an original reanalysis of HCP data.",
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "pain"
+   ],
+   "approach": [
+    "fmri",
+    "neuroimaging_methods",
+    "machine_learning"
+   ],
+   "type": [
+    "commentary"
+   ]
   }
  },
  {
@@ -13811,7 +14168,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -13929,7 +14286,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -14017,7 +14374,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -14119,7 +14476,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -14271,7 +14628,7 @@
    "input_mode": "full_text",
    "confidence": 0.55,
    "notes": "Classified as empirical given the quantified Delphi survey methodology and results, though it functions largely as a consensus/recommendation document; 'behavioral' is a loose approach fit since no standard behavioral experiment was conducted.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -14355,7 +14712,7 @@
    "input_mode": "full_text",
    "confidence": 0.65,
    "notes": "Primarily a statistics/functional-data-analysis methods paper; topic and approach were assigned from the affective-video rating application rather than from neuroimaging data, since no fMRI data were analyzed despite passing citations to fMRI work.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -14441,7 +14798,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -14545,7 +14902,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -14633,7 +14990,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -14725,7 +15082,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Journal labels the article 'REVIEW' in its header, but it reports a new empirical predictive-modeling study on original patient data, so it was tagged as empirical per the rule that type reflects content rather than the journal section label.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -14825,7 +15182,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -14913,7 +15270,7 @@
    "input_mode": "full_text",
    "confidence": 0.7,
    "notes": "NeuroView perspective piece rather than a primary study; the fmri/meta_analysis approach tags reflect the illustrative Neurosynth meta-analytic maps shown in Figure 1, not new analyses by the authors.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -15033,22 +15390,36 @@
   "section": "2020",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Discussed challenges and opportunities in discovering and validating biomarkers to aid development of safe and effective pain therapeutics, based on the title alone since no abstract or full text was available.",
+  "summary": "Summarized outcomes of an NIH HEAL workshop on discovering and validating objective pain biomarkers to guide safe, non-addictive pain therapeutic development amid the opioid crisis.",
   "key_finding": null,
   "free_keywords": [
-   "biomarkers",
-   "pain therapeutics",
-   "drug development",
-   "translational pain research"
+   "opioid crisis",
+   "HEAL Initiative",
+   "biomarker validation",
+   "analgesics",
+   "clinical trial endpoints"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.35,
-   "notes": "Only the title was available (title_only mode); topic, approach and type are inferred from the title and are low confidence.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.65,
+   "notes": "Consensus statement summarizing a multi-stakeholder workshop; treated as a review/perspective rather than new empirical data.",
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "pain",
+    "chronic_pain"
+   ],
+   "approach": [
+    "neuromarker",
+    "pharmacology"
+   ],
+   "type": [
+    "review"
+   ]
   }
  },
  {
@@ -15118,7 +15489,7 @@
    "input_mode": "title_only",
    "confidence": 0.25,
    "notes": "Title-only editorial; the fmri approach tag is a low-confidence guess since neuroimaging is the dominant method in this special-issue topic area, but the actual content is unknown.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -15216,7 +15587,7 @@
    "input_mode": "full_text",
    "confidence": 0.4,
    "notes": "Immunology/transcriptomics paper outside CANlab's core neuroscience scope (Wager contributed bioinformatics/biostatistics support); topic and approach are approximate best fits from the controlled vocabulary (immune measures -> brain_body; released expression-compendium resource -> open_tools).",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -15334,7 +15705,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -15434,7 +15805,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -15527,7 +15898,7 @@
    "input_mode": "full_text",
    "confidence": 0.7,
    "notes": "Only the first 14,000 characters plus keyword snippets were available; later sections (e.g., further biomarker discussion) were not fully read.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -15632,7 +16003,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -15725,7 +16096,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -15813,7 +16184,7 @@
    "input_mode": "full_text",
    "confidence": 0.65,
    "notes": "Opinion/perspective piece proposing a trial-design framework; classified as review rather than commentary given its literature-synthesis structure (Tables 1-3 surveying prior trials).",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -15908,7 +16279,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -16005,7 +16376,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -16106,7 +16477,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -16196,7 +16567,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -16282,7 +16653,7 @@
    "input_mode": "title_only",
    "confidence": 0.4,
    "notes": "Only the title was available (no abstract or full text), so tags and summary are inferred from the title alone.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -16374,7 +16745,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -16470,7 +16841,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -16546,7 +16917,7 @@
    "input_mode": "title_only",
    "confidence": 0.3,
    "notes": "Only the title was available (no abstract or full text); topic and approach tags are low-confidence guesses based on the chapter title and volume theme.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -16631,7 +17002,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "Editorial/perspective introduction to a 10-paper special issue rather than an empirical study; topic and approach tags reflect the range of themes discussed across the synthesized contributions rather than original data.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -16720,7 +17091,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -16812,7 +17183,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -16922,7 +17293,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -17024,7 +17395,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -17106,7 +17477,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -17192,7 +17563,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -17283,7 +17654,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -17340,23 +17711,36 @@
   "section": "2019",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Examined, based on the title alone, how undisclosed analytic flexibility in testing spatial correspondence between brain maps can allow essentially any neuroimaging map to be presented as a replicated finding.",
-  "key_finding": null,
+  "summary": "Showed via a survey of 135 fMRI replication studies that ambiguous, voxel-underspecified anatomical hypotheses (e.g., 'the amygdala') allow flexible, non-reproducible claims of replication and recommended quantitative spatial tests.",
+  "key_finding": "Only 14.1% of surveyed replication studies used exact coordinate- or pattern-based tests, and 42.9% of 'replicated' peaks were more than 15 mm from the original finding.",
   "free_keywords": [
-   "false positives",
-   "spatial correlation test",
    "replication",
-   "p-hacking",
-   "researcher degrees of freedom"
+   "spatial specificity",
+   "amygdala",
+   "coordinate-based tests",
+   "degrees of freedom",
+   "reproducibility"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.25,
-   "notes": "Only the title was available (no abstract or full text). The 'pain' topic tag is a low-confidence guess based on the authors' typical use of pain-signature examples in methodological critiques; this could not be verified and should be reviewed.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.5,
+   "notes": "This is a general methodological/statistical critique with no specific psychological content domain; 'emotion' was tagged loosely based on the amygdala example used throughout for illustration.",
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "emotion"
+   ],
+   "approach": [
+    "neuroimaging_methods",
+    "machine_learning"
+   ],
+   "type": [
+    "methods"
+   ]
   }
  },
  {
@@ -17441,7 +17825,7 @@
    "input_mode": "full_text",
    "confidence": 0.45,
    "notes": "This is a purely statistical/signal-processing methods paper about fMRI preprocessing pipelines and does not fit any taxonomy topic well; 'cognitive_control' was chosen as the least-arbitrary placeholder since resting-state network methods are commonly applied in that domain, but the fit is weak and should be reviewed.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -17529,7 +17913,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -17627,7 +18011,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -17707,7 +18091,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -17800,7 +18184,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -17893,7 +18277,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -17996,7 +18380,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -18071,7 +18455,7 @@
    "input_mode": "title_only",
    "confidence": 0.3,
    "notes": "Only the title was available; tags and summary are inferred from the title and authors' known work, not from full text.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -18169,7 +18553,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -18252,7 +18636,7 @@
    "input_mode": "title_only",
    "confidence": 0.3,
    "notes": "Only the title was available; topic/approach tags and summary are inferred from the title alone and are low confidence.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -18333,7 +18717,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -18422,7 +18806,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -18488,23 +18872,38 @@
   "section": "2018",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Developed a Bayesian log-Gaussian Cox process regression method and applied it to a coordinate-based meta-analysis of neuroimaging studies of working memory.",
+  "summary": "Developed a Bayesian log-Gaussian Cox process regression model with GPU-accelerated MCMC for coordinate-based meta-analysis of neuroimaging studies and applied it to synthesize over 20 years of working-memory fMRI findings.",
   "key_finding": null,
   "free_keywords": [
-   "Bayesian statistics",
-   "Cox process",
    "coordinate-based meta-analysis",
+   "log-Gaussian Cox process",
+   "Bayesian",
+   "GPU computing",
    "working memory",
-   "point process model"
+   "spatial statistics"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
-   "input_mode": "title_only",
-   "confidence": 0.4,
-   "notes": "Only the title was available; tags and summary are inferred from the title alone.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "input_mode": "abstract",
+   "confidence": 0.75,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "cognitive_control"
+   ],
+   "approach": [
+    "meta_analysis",
+    "neuroimaging_methods",
+    "computational_model",
+    "fmri"
+   ],
+   "type": [
+    "methods"
+   ]
   }
  },
  {
@@ -18590,7 +18989,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Classified as empirical because it reports a formal survey of experts with quantitative results, though it functions as a consensus/recommendation statement rather than a typical experiment; could alternatively be considered a review.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -18665,7 +19064,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "This is a book review (commentary) with no original approach methodology of its own; the pharmacology tag reflects the book's subject matter (drugs targeting Nav1.7 channels) rather than a method used in this piece.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -18737,7 +19136,7 @@
    "input_mode": "title_only",
    "confidence": 0.35,
    "notes": "Only the title was available (no abstract or full text); tags and summary are inferred solely from the title, so this is the least certain entry in the batch.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -18853,7 +19252,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Topic 'clinical' is an imperfect fit; the taxonomy has no topic value for forensic/antisocial-behavior populations. 'neuromarker' is tagged loosely for this brain-age biomarker, which is not a canonical CANlab signature.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -18927,7 +19326,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -19036,7 +19435,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "This is a domain-general methods guideline paper; 'cognitive_control' was chosen only because it is the paper's running illustrative example, not because the paper is specifically about that topic. No taxonomy topic value cleanly fits a generic meta-analysis methodology paper.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -19120,7 +19519,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -19224,7 +19623,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -19314,7 +19713,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -19405,7 +19804,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -19536,7 +19935,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -19624,7 +20023,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -19704,7 +20103,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -19783,7 +20182,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -19875,7 +20274,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -19967,7 +20366,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -20045,7 +20444,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -20149,7 +20548,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -20241,7 +20640,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -20332,7 +20731,7 @@
    "input_mode": "full_text",
    "confidence": 0.3,
    "notes": "The batch text supplied for this id was corrupted/duplicated (it repeats the delavega2017largescale full text instead of this paper's content), so tags are based only on the title and citation, not verified full text. Topic and key_finding are low-confidence guesses.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -20419,7 +20818,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -20508,7 +20907,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -20656,7 +21055,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -20738,7 +21137,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "Topic tag 'social' reflects only the empirical illustration (HCP social cognition task); the paper's main contribution is methodological (statistical power in fMRI), and no taxonomy topic captures that well.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -20821,7 +21220,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -20925,7 +21324,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -21031,7 +21430,7 @@
    "input_mode": "full_text",
    "confidence": 0.92,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -21123,7 +21522,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -21215,7 +21614,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -21297,7 +21696,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -21380,7 +21779,7 @@
    "input_mode": "full_text",
    "confidence": 0.7,
    "notes": "Broad methods textbook chapter with no single substantive psychological topic; 'perception' was tagged as the closest general fit under the required topic axis.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -21469,7 +21868,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -21571,7 +21970,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -21654,7 +22053,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -21755,7 +22154,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -21840,7 +22239,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Theoretical book chapter proposing a conceptual/dynamical-systems model rather than reporting new data; the approach tag reflects the proposed process model.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -21927,7 +22326,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -22007,7 +22406,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -22098,7 +22497,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -22197,7 +22596,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": "No approach value in the taxonomy covers the blood-based endothelial microparticle and cortisol assays used here; tagged 'behavioral' for the task/self-report design, but the core biological outcome measure is not represented in the approach axis.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -22292,7 +22691,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -22408,7 +22807,7 @@
    "input_mode": "full_text",
    "confidence": 0.5,
    "notes": "Pure methods/visualization-tool paper with no specific psychological topic in the taxonomy; 'clinical' was tagged loosely because example datasets include ABIDE autism data and disease-relevant gray matter measures.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -22498,7 +22897,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -22602,7 +23001,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -22694,7 +23093,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -22794,7 +23193,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -22877,7 +23276,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -22960,7 +23359,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -23051,7 +23450,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -23169,7 +23568,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -23270,7 +23669,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -23368,7 +23767,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -23478,7 +23877,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -23553,7 +23952,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -23645,7 +24044,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -23737,7 +24136,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -23842,7 +24241,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -23941,7 +24340,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -24030,7 +24429,7 @@
    "input_mode": "full_text",
    "confidence": 0.35,
    "notes": "The extracted full text for this entry is actually the Kalisch et al. target article that the Chang et al. commentary responds to, not the commentary itself (a common artifact of Behavioral and Brain Sciences PDF extraction, since commentaries are bound together with the target article). Tags and summary are based on the citation/title and general knowledge of the CANlab commentary's likely focus (prediction/forecasting of resilience), not on directly read commentary text; confidence is low and a human should verify against the actual Chang et al. commentary.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -24117,7 +24516,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -24207,7 +24606,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -24289,7 +24688,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -24376,7 +24775,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -24457,7 +24856,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -24545,7 +24944,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -24637,7 +25036,7 @@
    "input_mode": "full_text",
    "confidence": 0.88,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -24717,7 +25116,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -24800,7 +25199,7 @@
    "input_mode": "full_text",
    "confidence": 0.3,
    "notes": "The batch file's extracted full text for this entry is a duplicate of the schafer2015conditioned placebo paper (an apparent data-extraction error), not the actual sertraline/depression paper. Tags and summary are based only on the title and citation, not verified full text; please re-extract this paper's PDF text and re-tag.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -24879,7 +25278,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -24964,7 +25363,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -25059,7 +25458,7 @@
    "input_mode": "full_text",
    "confidence": 0.92,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -25141,7 +25540,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -25216,7 +25615,7 @@
    "input_mode": "full_text",
    "confidence": 0.35,
    "notes": "The batch file's extracted text captured only the supplement's front matter, table of contents, and other authors' unrelated chapters (Alzheimer's disease, schizophrenia neuroimaging), not the actual Woo & Wager chapter (p.18). Tags are based only on the title and its one-sentence description in the volume's introduction; the topic tag (pain) is an inference from the authors' typical subject matter, not confirmed text. Recommend re-extracting the correct page range.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -25328,7 +25727,7 @@
    "input_mode": "full_text",
    "confidence": 0.92,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -25405,7 +25804,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -25502,7 +25901,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -25604,7 +26003,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -25691,7 +26090,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -25776,7 +26175,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -25873,7 +26272,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -25967,7 +26366,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -26071,7 +26470,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -26172,7 +26571,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -26268,7 +26667,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -26351,7 +26750,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": "Topic 'pain' reflects the fMRI heat-pain dataset used only to illustrate the method; the paper's actual contribution is purely methodological.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -26431,7 +26830,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": "Commentary discusses fMRI findings from Akdeniz et al. rather than presenting new primary data.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -26518,7 +26917,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -26600,7 +26999,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -26686,7 +27085,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -26774,7 +27173,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -26858,7 +27257,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -26953,7 +27352,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -27047,7 +27446,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "Published as a 'Letter to the Editor' but reports a self-contained empirical study with new data; tagged empirical rather than commentary.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -27133,7 +27532,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -27221,7 +27620,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -27317,7 +27716,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -27395,7 +27794,7 @@
    "input_mode": "full_text",
    "confidence": 0.55,
    "notes": "General fMRI methods tutorial chapter with no specific psychological research topic; 'emotion' tagged as the closest fit based on the chapter's illustrative examples (emotion co-activation meta-analysis).",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -27492,7 +27891,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -27572,7 +27971,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -27654,7 +28053,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Invited commentary discussing Leknes et al. (2013) rather than reporting new data of its own; tags reflect the topics and brain-imaging methods discussed.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -27740,7 +28139,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -27843,7 +28242,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "Topic tag (cognitive_control) is only a loose fit; the paper's primary focus is data-sharing infrastructure rather than a specific psychological content area.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -27924,7 +28323,7 @@
    "input_mode": "full_text",
    "confidence": 0.7,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -28001,7 +28400,7 @@
    "input_mode": "title_only",
    "confidence": 0.25,
    "notes": "Only the chapter title was available (mode: title_only); tags are inferred from the title and authors' research areas and should be treated as low-confidence placeholders.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -28085,7 +28484,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -28170,7 +28569,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -28270,7 +28669,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -28365,7 +28764,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -28457,7 +28856,7 @@
    "input_mode": "full_text",
    "confidence": 0.95,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -28546,7 +28945,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -28634,7 +29033,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "Labeled 'Review' in the journal and primarily elaborates a theoretical model, but embeds an original quantitative meta-analysis; classified as review since the model discussion is the main contribution. Imaging modality (PET vs fMRI) of the underlying rCBF studies is unclear from the excerpt, so other_imaging was added alongside fmri with lower confidence.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -28719,7 +29118,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -28800,7 +29199,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -28888,7 +29287,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": "Presented as a Behavioral and Brain Sciences target article but classified as empirical per the meta-analysis rule, since its central contribution is a new quantitative meta-analysis.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -28974,7 +29373,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -29053,7 +29452,7 @@
    "input_mode": "full_text",
    "confidence": 0.55,
    "notes": "News & Views commentary on another group's method paper (Mantini et al.); the topic axis is a loose fit since the piece concerns cross-species methodology rather than a specific affective/clinical topic in the taxonomy.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -29157,7 +29556,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -29238,7 +29637,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -29329,7 +29728,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": "Topic tagged as empathy/social affect as the closest taxonomy match for mentalizing and self-other judgment research; studies included both PET and fMRI per inclusion criteria.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -29418,7 +29817,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -29513,7 +29912,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": "A pain-processing network localizer was derived via a mega-analytic approach pooling four independent datasets (total n=93), supporting the mega_analysis tag.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -29597,7 +29996,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -29683,7 +30082,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -29763,7 +30162,7 @@
    "input_mode": "full_text",
    "confidence": 0.5,
    "notes": "The full text supplied for this id is identical to the Wager et al. 2011 J Neurosci paper 'Predicting individual differences in placebo analgesia' (see wager2011predicting), not the cited book chapter in Colloca, Flaten & Meissner (Eds.), Placebo and Pain — likely a data extraction mismatch. Tags reflect the text actually provided; confidence lowered accordingly.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -29855,7 +30254,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -29949,7 +30348,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -30037,7 +30436,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -30128,7 +30527,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -30218,7 +30617,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -30308,7 +30707,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -30393,7 +30792,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -30473,7 +30872,7 @@
    "input_mode": "full_text",
    "confidence": 0.55,
    "notes": "General methodological handbook chapter without one clear topic focus; topic tagged as cognitive_control based on the attention-switching/working-memory example discussed at length in the excerpt, but this may not represent the chapter's overall emphasis (the full chapter likely covers many domains as illustrations).",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -30570,7 +30969,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -30670,7 +31069,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -30753,7 +31152,7 @@
    "input_mode": "full_text",
    "confidence": 0.7,
    "notes": "Uses a small three-layer feedforward backpropagation network (10 hidden units), not a modern deep architecture; tagged ai_integration per instructions to flag any neural-network analysis method found in the methods.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -30842,7 +31241,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -30922,7 +31321,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Commentary on Brown & Jones (2010); the authors present no new data of their own.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -31002,7 +31401,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": "Commentary on Petrovic et al. (2010); the authors present no new data of their own.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -31082,7 +31481,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -31169,7 +31568,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -31248,7 +31647,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -31332,7 +31731,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -31419,7 +31818,7 @@
    "input_mode": "full_text",
    "confidence": 0.55,
    "notes": "Broad perspective on neuroimaging meta-science rather than a study of one psychological topic; the topic tag reflects the paper's most-used illustrative example domain (meta-analyses of emotion) rather than its actual subject.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -31472,22 +31871,37 @@
   "section": "2010",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "A book chapter, known only by title, on using the Stroop task as a paradigm to study emotion regulation.",
+  "summary": "Reviewed emotional variants of the Stroop task, distinguishing distraction-based from conflict-based paradigms, and evaluated evidence for and against distinct emotional versus non-emotional anterior cingulate processing regions.",
   "key_finding": null,
   "free_keywords": [
    "Stroop task",
-   "emotion regulation",
+   "emotional conflict",
+   "distraction",
+   "anterior cingulate cortex",
    "interference",
-   "attentional control"
+   "cognitive control"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
-   "input_mode": "title_only",
-   "confidence": 0.3,
-   "notes": "Only the title was available (no abstract or full text); tags are inferred from the title alone and should be treated as low confidence.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "input_mode": "abstract",
+   "confidence": 0.7,
+   "notes": "Book chapter in Self Control in Society, Mind, and Brain (Hassin, Ochsner & Trope, Eds.).",
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "emotion_regulation",
+    "cognitive_control"
+   ],
+   "approach": [
+    "behavioral",
+    "fmri"
+   ],
+   "type": [
+    "chapter"
+   ]
   }
  },
  {
@@ -31563,7 +31977,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "Primarily a methods paper on meta-analytic techniques rather than about one psychological topic; the topic tag reflects the paper's recurring worked examples (emotion/amygdala meta-analyses).",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -31645,7 +32059,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -31728,7 +32142,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -31810,7 +32224,7 @@
    "input_mode": "full_text",
    "confidence": 0.7,
    "notes": "Editorial synthesizing an entire special issue rather than reporting new data; topic/approach tags reflect the volume's recurring themes.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -31889,7 +32303,7 @@
    "input_mode": "full_text",
    "confidence": 0.7,
    "notes": "Editorial introduction summarizing many independent papers rather than presenting original data.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -31975,7 +32389,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -32069,7 +32483,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -32183,7 +32597,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -32273,7 +32687,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -32359,7 +32773,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -32449,7 +32863,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Methods-focused review; topic tags reflect the paper's illustrative examples (emotion, working memory/cognitive control) rather than a single empirical dataset.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -32531,7 +32945,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -32616,7 +33030,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -32699,7 +33113,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "Broad methods/reference chapter without a single empirical topic; the topic tag reflects the chapter's illustrative task-switching/attention example rather than a dedicated focus.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -32780,7 +33194,7 @@
    "input_mode": "full_text",
    "confidence": 0.7,
    "notes": "This chapter re-analyzes (via conjunction) the authors' own previously published meta-analyses rather than presenting a wholly new meta-analysis; classified as 'chapter' given its explicit book-chapter status.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -32861,7 +33275,7 @@
    "input_mode": "full_text",
    "confidence": 0.55,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -32951,7 +33365,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -33041,7 +33455,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -33130,7 +33544,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -33229,7 +33643,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -33308,7 +33722,7 @@
    "input_mode": "full_text",
    "confidence": 0.55,
    "notes": "Topic tagged as 'perception' based on the visual-motor validation task; this is primarily a signal-processing methods paper without a distinct cognitive/clinical topic.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -33387,7 +33801,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -33466,7 +33880,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "Topic tagged as 'perception' based on the visual/motor block-design dataset used for empirical validation; the diagnostic method itself is domain-general and illustrative examples in the text also touch on memory and anxiety.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -33519,22 +33933,38 @@
   "section": "2008",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "This paper proposed a change-point theory framework for modeling transitions between psychological or physiological states in fMRI time series, based on its title; the specific application and findings could not be verified from the available metadata.",
-  "key_finding": null,
+  "summary": "Introduced a hierarchical exponentially weighted moving-average (HEWMA) change-point method for detecting state-related fMRI activity with uncertain onset and duration, validated it via simulations, and applied it to a state-anxiety speech task.",
+  "key_finding": "Simulations confirmed HEWMA controlled false-positive rates and increasing power with longer baselines, and the method detected sustained anxiety-related activation (e.g., rostral PFC) during a speech-preparation task in 24 participants.",
   "free_keywords": [
    "change-point theory",
-   "state-related activity",
-   "fMRI time series",
-   "hemodynamic modeling"
+   "EWMA",
+   "HEWMA",
+   "state anxiety",
+   "speech preparation task",
+   "Matlab toolbox"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.25,
-   "notes": "Only the title was available (no abstract or full text). Topic ('emotion') is a low-confidence inference based on the co-authorship overlap with related resilience/emotion-recovery work (e.g., waugh2008neural cites this method for HRF height/width estimation in an emotion-recovery paradigm); approach and type are inferred from the title. All tags should be verified against the actual paper.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-06T19:26:20Z"
+  },
+  "tags": {
+   "topic": [
+    "stress"
+   ],
+   "approach": [
+    "neuroimaging_methods",
+    "fmri",
+    "computational_model",
+    "open_tools"
+   ],
+   "type": [
+    "methods"
+   ]
   }
  },
  {
@@ -33621,7 +34051,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Classified as 'empirical' per the rule that meta-analyses are empirical, even though this is published as a handbook chapter.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -33706,7 +34136,7 @@
    "input_mode": "full_text",
    "confidence": 0.7,
    "notes": "Primarily a 'Tools of the Trade' methods/tutorial article; topic tag reflects its main illustrative example (a meta-analysis of emotion studies) rather than a dedicated focus, and machine_learning reflects a substantive but prospective discussion of classifiers for meta-analytic data rather than an analysis actually run in this paper.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -33795,7 +34225,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -33882,7 +34312,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -33970,7 +34400,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -34059,7 +34489,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -34139,7 +34569,7 @@
    "input_mode": "full_text",
    "confidence": 0.55,
    "notes": "Purely methodological paper (HRF modeling) with no clear psychological topic focus; 'perception' was tagged only loosely, based on the visual-motor task used to generate empirical HRFs for the simulations, and should be treated as a weak/uncertain assignment.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -34223,7 +34653,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -34305,7 +34735,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Broad introductory book chapter with no single empirical finding; topic tag reflects the authors' own attention-switching study used as an extended worked example rather than a dedicated topical focus.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -34387,7 +34817,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -34470,7 +34900,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -34546,7 +34976,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -34635,7 +35065,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": "Wager is a middle author, not the lead investigator, but the study is included per full text provided.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -34706,7 +35136,7 @@
    "input_mode": "title_only",
    "confidence": 0.25,
    "notes": "Only the title is available (no abstract or full text); topic and approach tags are low-confidence best guesses for this magazine essay rather than an empirical or imaging paper.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -34783,7 +35213,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -34871,7 +35301,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": "Symposium/review article synthesizing multiple authors' prior empirical studies rather than presenting new primary data.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -34954,7 +35384,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -35044,7 +35474,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -35128,7 +35558,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": "Pain dataset is one of three example applications in this primarily methodological paper; topic tag reflects that example.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -35213,7 +35643,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": "Topic tag (perception) reflects the visual/motor cortex tasks used to characterize nonlinearity; the paper has no specific psychological content domain since it is purely methodological.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -35291,7 +35721,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -35381,7 +35811,7 @@
    "input_mode": "title_only",
    "confidence": 0.3,
    "notes": "Only the title is available (no abstract or full text); tags are inferred from the title alone.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -35467,7 +35897,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": "Topic tag (cognitive_control) is a weak best fit based on the working-memory example used to illustrate the statistical issue; the paper itself has no specific psychological content domain.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -35546,7 +35976,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -35624,7 +36054,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -35705,7 +36135,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -35792,7 +36222,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -35877,7 +36307,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -35969,7 +36399,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -36069,7 +36499,7 @@
    "input_mode": "full_text",
    "confidence": 0.95,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -36151,7 +36581,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -36224,7 +36654,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "This is a reply to an ethics letter with no data or research approach of its own; the behavioral approach tag is a weak default describing the human-subjects experiment being discussed rather than any method used in the reply itself.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -36305,7 +36735,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -36390,7 +36820,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -36470,7 +36900,7 @@
    "input_mode": "full_text",
    "confidence": 0.6,
    "notes": "No taxonomy topic value cleanly fits this pure methods/statistics paper on fMRI design optimization, which addresses no specific psychological topic; cognitive_control was chosen as the closest default because working-memory tasks are used as illustrative examples.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -36563,7 +36993,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -36655,7 +37085,7 @@
    "input_mode": "full_text",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -36743,7 +37173,7 @@
    "input_mode": "full_text",
    "confidence": 0.85,
    "notes": "Journal section-labeled the article 'REVIEW' but it is a quantitative coordinate-based meta-analysis of published activation foci, so it was tagged empirical per classify.md's rule that meta-analyses are empirical.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -36824,7 +37254,7 @@
    "input_mode": "full_text",
    "confidence": 0.75,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -36903,7 +37333,7 @@
    "input_mode": "full_text",
    "confidence": 0.78,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -36975,7 +37405,7 @@
    "input_mode": "full_text",
    "confidence": 0.25,
    "notes": "Personal reflective essay on education and motivation, not a neuroscience research paper; the required topic/approach tags are a forced, low-confidence approximation since nothing in the controlled vocabulary fits this content well.",
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  },
  {
@@ -37066,7 +37496,7 @@
    "input_mode": "full_text",
    "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:22:37Z"
+   "classified_at": "2026-09-06T19:26:20Z"
   }
  }
 ]
