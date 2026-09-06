@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}} | CANlab</title>
+<meta name="description" content="{{DESC}}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="CANlab">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{URL}}">
+<meta property="og:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<link rel="canonical" href="{{URL}}">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="../assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/app.css">
+<script type="application/ld+json">{{JSONLD}}</script>
+<base href="../">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <p class="small"><a href="publications.html">← All publications</a></p>
+  <article class="detail" id="detail" data-id="{{ID}}">{{STATIC}}</article>
+  <section style="max-width:920px;margin-top:1.4rem" id="relatedwrap">
+    <h2 style="margin-bottom:.4rem;font-size:1.3rem">Related papers</h2>
+    <ul class="related" id="related">{{RELATED}}</ul>
+  </section>
+  <section style="max-width:920px;margin-top:1.4rem">
+    <h2 style="margin-bottom:.4rem;font-size:1.3rem">Discussion</h2>
+    <p class="small muted">Comments are GitHub Discussions threads, one per paper. Sign in with GitHub to post.</p>
+    <div id="giscus"></div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script src="assets/account.js"></script>
+<script>
+(async function () {
+  const { state } = await CL.loadCore();
+  const id = document.getElementById("detail").dataset.id;
+  const slim = state.index.find(r => r.id === id);
+  const el = document.getElementById("detail");
+  if (!slim) return;
+  const all = await CL.getJSON("data/papers.json");
+  const r = all[id]; if (!r) return;
+  const cls = r.classification || {}, tags = slim.tags || {};
+  const authors = r.authors.join(", ");
+  const links = CL.linkList(slim, { noDetail: true });
+  const axisRows = CL.FILTER_AXES.map(ax => {
+    const arr = tags[ax] || []; if (!arr.length) return "";
+    return `<div class="axis-row"><span class="axis">${CL.esc(state.axes[ax] ? state.axes[ax].label : ax)}</span><span class="chips">${arr.map(v => `<a class="chip" data-axis="${ax}" data-value="${CL.esc(v)}" href="publications.html?${ax}=${encodeURIComponent(v)}" style="${CL.chipColors(ax, v)}">${CL.esc(CL.label(ax, v))}</a>`).join("")}</span></div>`;
+  }).join("");
+  const fullText = (cls.input_mode || "") === "full_text";
+  el.innerHTML = `
+    <div class="meta small muted">${CL.esc(r.journal || "")}${r.volume ? ` <i>${CL.esc(r.volume)}</i>` : ""}${r.issue ? `(${CL.esc(r.issue)})` : ""}${r.pages ? `, ${CL.esc(r.pages)}` : ""} · ${CL.fmtDate(r.date) || r.year || ""}${r.status && r.status !== "published" ? ` · <span class="badge oa">${CL.esc(r.status)}</span>` : ""}${r.kind === "chapter" ? ' · <span class="badge">book chapter</span>' : ""}</div>
+    <h1>${CL.esc(r.title)}</h1>
+    <div class="small">${CL.esc(authors)}</div>
+    <div class="plinks">${links}<span class="btn" style="padding:.45em .9em">${CL.starBtn(id)} <span class="small">My list</span></span></div>
+    ${r.summary ? `<div class="callout"><b>In one sentence.</b> ${CL.esc(r.summary)}${r.key_finding ? " " + CL.esc(r.key_finding) : ""}</div>` : ""}
+    <div><h3 style="margin-bottom:.3rem">Abstract</h3><div class="abstract">${r.abstract ? CL.esc(r.abstract) : '<span class="muted">No abstract available; see the PDF or publisher page.</span>'}</div></div>
+    <div><h3 style="margin-bottom:.5rem">Keywords</h3><div style="display:grid;gap:.5rem">${axisRows || '<span class="muted small">Not yet tagged.</span>'}
+      ${(r.free_keywords || []).length ? `<div class="axis-row"><span class="axis">Free keywords</span><span>${r.free_keywords.map(k => `<a class="chip static" href="publications.html?q=${encodeURIComponent(k)}" style="cursor:pointer">${CL.esc(k)}</a>`).join(" ")}</span></div>` : ""}</div></div>
+    <dl class="kv">
+      <dt>Citation</dt><dd>${CL.esc(r.citation || "")}</dd>
+      ${r.doi ? `<dt>DOI</dt><dd class="mono"><a href="https://doi.org/${CL.esc(r.doi)}">${CL.esc(r.doi)}</a></dd>` : ""}
+      ${r.pmid ? `<dt>PMID</dt><dd class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/${CL.esc(r.pmid)}/">${CL.esc(r.pmid)}</a></dd>` : ""}
+      ${r.cited_by_count != null ? `<dt>Citations</dt><dd class="tnum">${r.cited_by_count.toLocaleString()} (OpenAlex)</dd>` : ""}
+      ${(r.links || []).some(l => l.type === "pdf" && l.mirror) ? `<dt>PDF</dt><dd class="small muted">Served from this site's archive; <a href="${CL.esc((r.links.find(l => l.type === "pdf") || {}).url)}">original copy</a> on the previous lab site.</dd>` : ""}
+      ${cls.model ? `<dt>Tagging</dt><dd class="muted small">Tags and summary were assigned by ${CL.esc(cls.model)} from the ${fullText ? "full text" : (cls.input_mode === "abstract" ? "abstract" : "title")}${cls.confidence != null ? ` <span class="tnum">(confidence ${cls.confidence})</span>` : ""}. <a href="https://github.com/${CL.config.repo}/issues/new?title=${encodeURIComponent("Tag correction: " + r.title.slice(0, 80))}&body=${encodeURIComponent("Paper: " + id + "\n\nSuggested change:\n")}" target="_blank" rel="noopener">Suggest a correction</a>.</dd>` : ""}
+    </dl>`;
+  CL.bindStars(el);
+  document.querySelector('.nav a[href="publications.html"]')?.classList.add("active");
+  const g = CL.config.giscus || {};
+  if (g.repoId && (g.papersCategoryId || g.categoryId)) {
+    const s = document.createElement("script");
+    s.src = "https://giscus.app/client.js"; s.async = true; s.crossOrigin = "anonymous";
+    Object.entries({ "data-repo": CL.config.repo, "data-repo-id": g.repoId, "data-category": g.papersCategory || g.category, "data-category-id": g.papersCategoryId || g.categoryId, "data-mapping": "specific", "data-term": id, "data-strict": "1", "data-reactions-enabled": "1", "data-emit-metadata": "0", "data-input-position": "top", "data-theme": "preferred_color_scheme", "data-lang": "en", "data-loading": "lazy" }).forEach(([k, v]) => s.setAttribute(k, v));
+    document.getElementById("giscus").appendChild(s);
+  } else {
+    document.getElementById("giscus").innerHTML = '<div class="empty">Comments will appear here once GitHub Discussions is connected (see the README).</div>';
+  }
+})().catch(e => console.error("paper:", e));
+</script>
+</body>
+</html>

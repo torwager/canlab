@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | CANlab</title>
+<meta name="description" content="Research themes of the Cognitive and Affective Neuroscience Lab at Dartmouth: the neuroscience of belief, brain-body interactions, affect and emotion, pain systems and biomarkers, desire and drug craving, and individualized spatial topology.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="CANlab">
+<meta property="og:title" content="Research | CANlab">
+<meta property="og:description" content="Belief and expectation, brain-body interactions, affect and emotion, pain biomarkers, craving, and individualized brain models.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://torwager.github.io/canlab/research.html">
+<meta property="og:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<link rel="canonical" href="https://torwager.github.io/canlab/research.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Research</p>
+    <h1>Research themes</h1>
+    <p id="intro"></p>
+  </div>
+  <nav class="theme-nav" id="themenav" aria-label="Research themes"></nav>
+  <div id="themes"><div class="spinner">Loading…</div></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  const r = await CL.getJSON("data/research.json");
+  const esc = CL.esc;
+  document.getElementById("intro").textContent = r.intro;
+  document.getElementById("themenav").innerHTML = r.themes.map(t => `<a href="#${esc(t.id)}">${esc(t.title)}</a>`).join("");
+  // link each theme to the matching publication tags
+  const TAGS = { belief: "topic=expectation_learning,placebo", "brain-body": "topic=brain_body", affect: "topic=emotion", pain: "topic=pain,chronic_pain&approach=neuromarker", craving: "topic=reward_craving", topology: "approach=machine_learning,neuroimaging_methods" };
+  document.getElementById("themes").innerHTML = r.themes.map((t, i) => `<section class="theme${i % 2 ? " flip" : ""} rv" id="${esc(t.id)}">
+      <div>
+        <p class="eyebrow">Theme ${i + 1}</p>
+        <h2>${esc(t.title)}</h2>
+        ${t.question ? `<p class="q">${esc(t.question)}</p>` : ""}
+        ${t.paragraphs.map(p => `<p>${esc(p)}</p>`).join("")}
+        ${TAGS[t.id] ? `<a class="papers-link" href="publications.html?${TAGS[t.id]}">Related publications →</a>` : ""}
+      </div>
+      ${t.image ? `<figure><a href="assets/img/${esc(t.image)}" target="_blank" rel="noopener"><img src="assets/img/${esc(t.image)}" alt="Figure illustrating ${esc(t.title)}" loading="lazy"></a></figure>` : `<figure class="placeholder" style="border:none;box-shadow:none;background:none"></figure>`}
+    </section>`).join("");
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const rvs = document.querySelectorAll("#themes .rv");
+  if (reduce || !("IntersectionObserver" in window)) rvs.forEach(el => el.classList.add("in"));
+  else { const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } }), { threshold: 0.08 }); rvs.forEach(el => io.observe(el)); }
+  if (location.hash) { const el = document.querySelector(location.hash); if (el) setTimeout(() => el.scrollIntoView({ block: "start" }), 50); }
+})().catch(e => { document.getElementById("themes").innerHTML = `<div class="empty">Could not load (${CL.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

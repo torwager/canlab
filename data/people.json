@@ -1,0 +1,1137 @@
+[
+ {
+  "id": "tor-wager",
+  "name": "Tor Wager",
+  "role": "Principal Investigator",
+  "title": "Diana L. Taylor Distinguished Professor in Neuroscience, Dartmouth College",
+  "section": "Principal Investigator",
+  "current": true,
+  "img": "2021_03_2021-wager-headshot-crop-2.jpeg",
+  "bio": [
+   "Tor Wager is the Diana L. Taylor Distinguished Professor in Neuroscience at Dartmouth College. He received his Ph.D. from the University of Michigan in Cognitive Psychology in 2003, and served as an Assistant (2004-2008) and Associate Professor (2009) at Columbia University, and as Associate (2010-2014) and Full Professor (2014-2019) at the University of Colorado, Boulder. Since 2004, he has directed the Cognitive and Affective Neuroscience Laboratory, a research lab devoted to working on the neurophysiology of affective processes—pain, emotion, stress, and empathy—and how they are shaped by cognitive and social influences. Dr. Wager and his lab are also dedicated to developing analysis methods for functional neuroimaging and sharing ideas, tools, and scientific data with the scientific community and the public. See our publication page and GitHub repository for papers, data, tools, and code."
+  ],
+  "links": [
+   {
+    "label": "Curriculum Vitae",
+    "url": "https://docs.google.com/document/d/e/2PACX-1vSQOPsxrqh5SDK_8s6f6bnLANE6Cvcu06i2BhyT2EHkyIhwvXvrV5_z_cPW6kMgFhhP8_mzoD20rpOP/pub"
+   },
+   {
+    "label": "Google Scholar",
+    "url": "https://scholar.google.com/citations?user=8b7b-6EAAAAJ&hl=en"
+   },
+   {
+    "label": "GitHub (canlab)",
+    "url": "https://github.com/canlab"
+   },
+   {
+    "label": "Dartmouth PBS faculty page",
+    "url": "https://pbs.dartmouth.edu/people/tor-wager"
+   }
+  ]
+ },
+ {
+  "id": "amin-dehghani",
+  "name": "Amin Dehghani",
+  "role": "Postdoc, Dartmouth College",
+  "section": "Postdocs",
+  "current": true,
+  "img": "2021_03_Amin-Dehghani.png",
+  "bio": [
+   "Amin completed his Ph.D. in Biomedical Engineering at the University of Tehran, Iran, where he studied emotion regulation based on simultaneous fMRI and EEG data. He’s particularly interested in studying brain mechanisms underlying mental processes using different neuroimaging techniques."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/amin-dehghani/"
+ },
+ {
+  "id": "audrey-marcoux",
+  "name": "Audrey Marcoux",
+  "role": "Postdoc, Dartmouth College",
+  "section": "Postdocs",
+  "current": true,
+  "img": "2026_04_Moi.png",
+  "bio": [
+   "Audrey Marcoux completed her Ph.D. in Psychology (Clinical Neuropsychology) at Université Laval (Canada) in 2026. During her doctoral training, she examined the interpersonal communication of empathy and its modulating factors in clinical contexts under the supervision of Prof. Philip Jackson. She joined the CANlab at Dartmouth in spring 2026 as a postdoctoral researcher. Her research focuses on the patient–clinician relationship, dyadic dynamics, and the social modulation of pain using neuroimaging approaches. Outside the lab, she enjoys traveling, yoga, and stand-up paddleboarding."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/audrey-marcoux/"
+ },
+ {
+  "id": "xiaomin-lin",
+  "name": "Xiaomin Lin",
+  "role": "Postdoc, Dartmouth College",
+  "section": "Postdocs",
+  "current": true,
+  "img": "2026_08_81b2407b00138fd6820cf48356ef85ec-1.jpg",
+  "bio": [
+   "Xiaomin Lin joined the CANlab at Dartmouth in the summer of 2026. He earned his doctoral degree from the Institute of Psychology, Chinese Academy of Sciences, and has a background in clinical medicine and cognitive neuroscience. His research interests focus on the neural mechanisms of pain across the brain and spinal cord, and he is also interested in large-scale data analysis and computational approaches to studying complex neuroimaging and behavioral data. Outside of science, he enjoys water-related activities, especially swimming and diving."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/xiaomin-lin/"
+ },
+ {
+  "id": "michael-sun",
+  "name": "Michael Sun",
+  "role": "Postdoc, Dartmouth College",
+  "section": "Postdocs",
+  "current": true,
+  "img": "2019_12_michael-sun.jpg",
+  "bio": [
+   "Dr. Sun is a postdoctoral researcher and clinical psychologist in Dr. Wager’s laboratory. He studies phenomena relevant to emotion and pain regulation in both basic and clinically applied research contexts. He applies psychological, sociocultural, and bioinformatic perspectives to his work and has experience with neuroimaging, psychophysiological, facial expressive electromyographic, survey, and qualitative interview methodologies. His current work focuses on how the brain maps the body somatotopically, and how it might regulate sensations pertinent to chronically affected areas such as pain in gastrointestinal disorders. Michael also sees patients through GI Psychology at Dartmouth Hitchcock Medical Center’s Department of Gastroenterology and Hepatology."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:msun@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/michael-sun"
+ },
+ {
+  "id": "libo-zhang",
+  "name": "Libo Zhang",
+  "role": "Postdoc, Dartmouth College",
+  "section": "Postdocs",
+  "current": true,
+  "img": "2025_02_libo_headshot.jpg",
+  "bio": [
+   "Li-Bo joined the CANlab at Dartmouth as a postdoctoral researcher in the spring of 2025. He earned his doctoral degree from the Institute of Psychology, Chinese Academy of Sciences, with a background in psychology and cognitive neuroscience. His research focuses on developing neural biomarkers of pain and investigating the neural mechanisms of the placebo effect using EEG and fMRI. Beyond his scientific work, he has a strong interest in philosophy, particularly ethics and epistemology."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/libo-zhang/"
+ },
+ {
+  "id": "alexia-coulombe-leveque",
+  "name": "Alexia Coulombe-Leveque",
+  "role": "Postdoc, Dartmouth College",
+  "section": "Postdocs",
+  "current": true,
+  "img": "2026_09_alexia.jpeg",
+  "bio": [
+   "Alexia joined the lab in 2026 after completing her PhD at Sherbrooke University. Her background is in neuroscience and physiotherapy, and she leads the chronic pain service at the physiotherapy clinic where she has been practicing since 2020. Her research interests are understanding the pathophysiology of chronic pain – especially the role of learning and memory mechanisms – and using this knowledge to develop treatments for chronic pain. Outside the lab, she enjoys outdoor activities (especially canoeing, hiking, and nordic skiing), travelling, and making chocolate truffles – which has been her backup career plan since she was 10 years old."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/alexia-coulombe-leveque/"
+ },
+ {
+  "id": "katerina-zorina-lichtenwalter",
+  "name": "Katerina Zorina-Lichtenwalter",
+  "role": "Email Katerina",
+  "section": "Postdocs",
+  "current": true,
+  "img": "2020_04_Katerina-Headshot.png",
+  "bio": [],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:katerina.zorina@colorado.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/katerina-zorina-lichtenwalter/"
+ },
+ {
+  "id": "vivek-sagar",
+  "name": "Vivek Sagar",
+  "role": "Postdoc, Dartmouth College",
+  "section": "Postdocs",
+  "current": true,
+  "img": "2025_03_vivekheadshot.jpg",
+  "bio": [
+   "Vivek recently completed his PhD in Neuroscience from Northwestern University, where he studied the neural basis of subjective perception, with a focus on olfaction. With a background in Physics, he is now particularly interested in the computational and cognitive principles underlying associative learning, especially in the context of pain perception. In his leisure, he enjoys painting and crafting fiction that (tries to) blend neuroscience and magic realism."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/vivek-sagar/"
+ },
+ {
+  "id": "zhaoxing-wei",
+  "name": "Zhaoxing Wei",
+  "role": "Postdoc, Dartmouth College",
+  "section": "Postdocs",
+  "current": true,
+  "img": "2024_09_Screenshot-2024-09-05-at-1.29.46_PM.jpg",
+  "bio": [
+   "Zhaoxing Wei joined CANlab in the fall of 2024. She received her doctoral training at the Institute of Psychology, Chinese Academy of Sciences (Ph.D. in Cognitive Neuroscience). Her work focused on optimizing cortico-spinal fMRI data acquisition and analysis techniques to explore the neural mechanisms underlying peripheral neuromodulation-based pain relief. She is also interested in the lateralization and specificity of pain representation. At CANlab, her research focuses on investigating the neural mechanisms of placebo effects influenced by social factors."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/zhaoxing-wei/"
+ },
+ {
+  "id": "hsin-yun-tsai",
+  "name": "Hsin-Yun Tsai",
+  "role": "Postdoc, Dartmouth College",
+  "section": "Postdocs",
+  "current": true,
+  "img": "2025_07_IMG_3284.jpg",
+  "bio": [
+   "Hsin-Yun Tsai received her B.S. in life science from National Tsing Hua University and her M.S. in neuroscience from the Graduate Institute of Brain and Mind Sciences at National Taiwan University. She earned her Ph.D. through the Interdisciplinary Neuroscience program of the Taiwan International Graduate Program (TIGP), a collaboration between Academia Sinica and National Taiwan University. Her research investigates the neural mechanisms by which expectations influence human pain perception, with broader interests in how cognitive, emotional, and social factors modulate pain processing. Outside the lab, she enjoys practicing yoga and watching dramas."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/hsin-yun-tsai"
+ },
+ {
+  "id": "zizhuang-miao",
+  "name": "Zizhuang Miao",
+  "role": "Graduate Student, Dartmouth College",
+  "section": "Graduate Students",
+  "current": true,
+  "img": "2022_09_ZizhuangMiao_photo.jpg",
+  "bio": [
+   "Zizhuang joined the lab in 2022 at Dartmouth College. Before that, he received a bachelor’s degree in Psychology from Peking University, China.",
+   "Zizhuang is generally interested in social and affective psychology and neuroscience. He is curious about the mental and neural mechanisms underlying emotion generation, transmission among people, and regulation by self and others.",
+   "He is also interested in how individuals take in and weigh different types of information to reach an inference, belief, or decision."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "zizhuang.miao.gr@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/zizhuang-miao"
+ },
+ {
+  "id": "david-gantz",
+  "name": "David Gantz",
+  "role": "Lab Manager, Dartmouth College",
+  "section": "Graduate Students",
+  "current": true,
+  "img": "2023_08_IMG_4789.jpg",
+  "bio": [
+   "David holds an undergraduate degree in psychology and philosophy from Belmont Abbey College, and a master’s degree in psychology from The Catholic University of America. His research interests broadly include understanding the neural underpinnings of repetitive negative thought patterns, such as worry and rumination, as well as how social pain is represented in the brain. Outside of the lab, David enjoys basketball, painting, skateboarding, and sparkling water."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto::david.m.gantz@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/david-gantz/"
+ },
+ {
+  "id": "bogdan-petre",
+  "name": "Bogdan Petre",
+  "role": "Graduate Student, Dartmouth College",
+  "section": "Graduate Students",
+  "current": true,
+  "img": "2019_12_bogdan_petre2.jpg",
+  "bio": [
+   "Bogdan joined the group in 2016 and is interested in systems and computational neuroscience and applied math. Prior to joining Bogdan worked with Prof Vania Apkarian at Northwestern University where his work focused on predictive diagnostics for chronic pain and pain psychophysics."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/bogdan-petre"
+ },
+ {
+  "id": "aryan-yazdanpanah",
+  "name": "Aryan Yazdanpanah",
+  "role": "Graduate Student, Dartmouth College",
+  "section": "Graduate Students",
+  "current": true,
+  "img": "2026_03_my_Pic.jpg",
+  "bio": [
+   "Aryan joined the Department of Psychological and Brain Sciences in 2022. He is a PhD Innovation Fellow and is co-advised by Tor Wager and Alireza Soltani. His research focuses on computational models of learning and decision-making, particularly reinforcement learning mechanisms in aversive and appetitive domains and the mechanisms underlying confirmation bias. Aryan combines computational modeling with fMRI to study neural circuits involved in confirmation-biased learning and is interested in using brain stimulation to modulate biased learning and reduce pain perception.",
+   "Prior to Dartmouth, Aryan worked as a research assistant at the University of Tehran under the supervision of Majid Nili and Abdol-Hossein Vahabie. He also worked in a computational psychiatry lab at Iran University of Medical Sciences studying traumatic brain injury using computational modeling and behavioral experiments."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/aryan-yazdanpanah"
+ },
+ {
+  "id": "byeol-stella-kim",
+  "name": "Byeol Kim Lux",
+  "role": "Graduate Student, Dartmouth College",
+  "section": "Graduate Students",
+  "current": true,
+  "img": "2022_09_20220825_071932-1.jpg",
+  "bio": [
+   "Byeol joined the CANlab for her Ph.D. in the fall of 2021 with a Fulbright graduate student award. Byeol is interested in building computational modeling of subjective experience, including self-related thought, emotion, and mind wandering. Also interested in the study of brain-body interaction and neurobiological mechanisms of mental and physical health. She majored in astronomy and psychology at Yonsei University, and received a master’s degree in biomedical engineering from Sungkyunkwan University under Wani Woo’s supervision in Korea.",
+   "Personal website | Email Byeol"
+  ],
+  "links": [
+   {
+    "label": "Personal website",
+    "url": "https://byeollux.github.io/"
+   },
+   {
+    "label": "Email",
+    "url": "byeol.kim.gr@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/byeol-stella-kim/"
+ },
+ {
+  "id": "ben-graul",
+  "name": "Ben Graul",
+  "role": "Graduate Student, Dartmouth College",
+  "section": "Graduate Students",
+  "current": true,
+  "img": "2022_09_ben_headshot-e1662573536439.jpg",
+  "bio": [
+   "Ben started with the CANlab in 2022 as the Presidential Graduate Fellow of the Department of Psychological and Brain Sciences. He is interested in understanding the mechanisms underlying placebo effects and researching how cognition and physiology are connected in the mind-body relationship.",
+   "He graduated from Brigham Young University in Provo, Utah with a degree in Neuroscience. Prior to joining the lab, he worked as a lab manager for Dr. Jordan Yorgason investigating striatal dopamine kinetics in ex vivo mice, and a research assistant for Dr. Derin Cobia investigating structural diffeomorphisms in pathologic conditions using MRI. When he’s not in the lab, Ben can usually be found trying new foods with his wife and daughter, playing tabletop games, or enjoying a good book."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "benjamin.e.graul.gr@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/ben-graul"
+ },
+ {
+  "id": "sydney-shohan",
+  "name": "Sydney Shohan",
+  "role": "Lab Manager, Dartmouth College",
+  "section": "Staff",
+  "current": true,
+  "img": "2023_08_IMG_4799.jpg",
+  "bio": [
+   "Sydney graduated with a BA in Cognitive Science from the University of Virginia and an MA in Developmental Psychology from Cornell. She is interested in the impact of social relationships on managing responses to stress. Outside of the lab she enjoys games, drawing, and yoga."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto::sydney.l.shohan@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/sydney-shohan/"
+ },
+ {
+  "id": "neena-dzur",
+  "name": "Neena Dzur",
+  "role": "Lab Manager, Dartmouth College",
+  "section": "Staff",
+  "current": true,
+  "img": "2026_07_Bio-Photo.jpg",
+  "bio": [
+   "Neena Dzur received a BA in Psychology and English from Columbia University. She is interested in the intersection of social and affective psychology and health, specifically the processes of emotion generation and regulation by self and others, as represented in brain-body interactions. Outside of the lab, she enjoys sampling new cafes and very long walks."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/neena-dzur/"
+ },
+ {
+  "id": "sehar-sarang",
+  "name": "Sehar Sarang",
+  "role": "Undergraduate RA, Dartmouth College",
+  "section": "Undergraduate Research Assistants",
+  "current": true,
+  "img": "2025_10_Screenshot_20251001_224217_Gallery.jpg",
+  "bio": [
+   "Sehar is a ’29 from Tallahassee, Florida, interested in Psychology and Biology. She is especially drawn to Social and Developmental Psychology, with a focus on the intersections of learning differences, mental health, and how individuals grow and adapt within their environments. Outside the lab, she enjoys writing, volunteering, and spending time with her brothers."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/sehar-sarang"
+ },
+ {
+  "id": "oleh-pavchak",
+  "name": "Oleh Pavchak",
+  "role": "Dartmouth College",
+  "section": "Undergraduate Research Assistants",
+  "current": true,
+  "img": "2026_06_img_8156_480.jpg",
+  "bio": [
+   "Oleh is a ’29 from Horodenka, Ukraine. He is interested in Psychology and Public Policy, particularly in clinical psychology and its role in health programs and state legislation. In his free time, he enjoys spending time with friends, playing ultimate frisbee, visiting museums, and reading books."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/oleh-pavchak"
+ },
+ {
+  "id": "simone-wuttke",
+  "name": "Simone Wuttke",
+  "role": "Undergraduate RA, Dartmouth College",
+  "section": "Undergraduate Research Assistants",
+  "current": true,
+  "img": "2025_01_IMG_5652.jpg",
+  "bio": [
+   "Simone is a ’27 from New Orleans, Louisiana majoring in Psychology with a minor in German Studies. She is interested in how mental illness manifests within the brain with a hope of pursuing Clinical Psychology. She is also interested in the neurological systems behind emotion and reward. In her free time, she loves to ski, paint, spend time outside, and play piano."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/simone-wuttke"
+ },
+ {
+  "id": "ke-bo",
+  "name": "Ke Bo",
+  "role": "Postdoc, Dartmouth College",
+  "section": "Former Postdocs and Graduate Students",
+  "current": false,
+  "img": "2021_03_KeBo-Headshot.jpg",
+  "bio": [
+   "Ke Bo joined the CANlab at Dartmouth in the spring of 2021. He got his bachelor degree at Xi’an Jiaotong University in China, with a major of Biomedical Engineering. He then received his doctoral training at University of Florida (PhD Biomedical Engineering), where he applied computational models on simultaneously recorded EEG-fMRI data to study the neural mechanism of emotion perception. He was also involved in introducing artificial intelligence techniques, such as convolutional deep neural networks to better understand the research question in affective neuroscience. At CANlab, He is interested in studying the regulation process of negative emotion and pain and their corresponding neural signature."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto: ke.bo@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/ke-bo"
+ },
+ {
+  "id": "heejung-jung",
+  "name": "Heejung Jung",
+  "role": "Postdoc, Stanford University",
+  "section": "Former Postdocs and Graduate Students",
+  "current": false,
+  "img": "2020_01_HJung1.jpg",
+  "bio": [
+   "Former Graduate Student, Dartmouth College",
+   "Heejung is interested in social influence and decision-making. She aims to study how affect and cognition systematically influences one’s decision in a social context. Outside of the lab, Heejung is getting used to New England climate and plans to spend time on prime winter activities that starts with an s: sipping hot apple cider and building snowmen."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/heejung-jung"
+ },
+ {
+  "id": "rotem-botvinik-nezer",
+  "name": "Rotem Botvinik-Nezer",
+  "role": "Faculty at Hebrew University of Jerusalem",
+  "section": "Former Postdocs and Graduate Students",
+  "current": false,
+  "img": "2022_09_Rotem_Botvinik_Nezer_pic.jpg",
+  "bio": [
+   "Former Postdoc, Dartmouth College",
+   "Credentials: PhD",
+   "Rotem Botvinik-Nezer joined the CANlab at Dartmouth in the fall of 2019. She completed her undergraduate and graduate training in Neuroscience at Tel Aviv University, where she studied the neural basis of preference modifications, using neuroimaging (mainly fMRI and diffusion MRI) and behavioral tools. She has been promoting topics related to open science, through research and teaching, and co-led the Neuroimaging Analysis Replication and Prediction Study ( NARPS ; Article) . At the CANlab, she studied the computational and neural mechanisms of the formation and modification of beliefs and expectations, and how they affect mental, physiological, and social processes."
+  ],
+  "links": [
+   {
+    "label": "NARPS",
+    "url": "http://www.narps.info/"
+   },
+   {
+    "label": "Article)",
+    "url": "https://www.nature.com/articles/s41586-020-2314-9"
+   },
+   {
+    "label": "Email",
+    "url": "mailto:rotemb9@gmail.com"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/rotem-botvinik-nezer"
+ },
+ {
+  "id": "mijin-kwon",
+  "name": "Mijin Kwon",
+  "role": "Graduate Student, Dartmouth College",
+  "section": "Former Postdocs and Graduate Students",
+  "current": false,
+  "img": "2020_04_Mijin-Kwon-2020-Headshot.jpg",
+  "bio": [
+   "Mijin joined the CANlab at Dartmouth in the fall of 2019. Before joining the CANlab, she pursued a career as a documentary filmmaker, which naturally led to her interest in how human minds work, particularly the role that emotions play. Since her time in Seoul National University for her master’s degree, she has been studying how emotions influence our everyday life. In the CANlab, she aims to study the neural basis of emotional inference in ourselves (emotion experience) and in others (emotion perception) and what role our conceptual knowledge of emotions play in this process."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto: mijin.kwon.gr@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/mijin-kwon"
+ },
+ {
+  "id": "xiaochun-han",
+  "name": "Xiaochun Han",
+  "role": "Postdoc, Dartmouth College",
+  "section": "Former Postdocs and Graduate Students",
+  "current": false,
+  "img": "2019_12_Xiaochun-2.jpg",
+  "bio": [
+   "Credentials: PhD",
+   "Xiaochun joined the lab as a postdoc in the Sept. of 2018. She received her doctoral training at Peking University in China (Ph. D. Basic Psychology) where she invested the computational modeling and the neural mechanism of the intergroup conflict. In addition, she is interested in how the intergroup relationship and the believing system modulates the pain perception and the empathy towards others’ pain. The research methods that she used include behavioral computational modeling, EEG and fMRI."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:hanxc1012@pku.edu.cn"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/xiaochun-han"
+ },
+ {
+  "id": "lukie-slipski",
+  "name": "Lukie Slipski",
+  "role": "Graduate Student, Dartmouth College",
+  "section": "Former Postdocs and Graduate Students",
+  "current": false,
+  "img": "2019_12_lukie-slipski.jpg",
+  "bio": [
+   "Credentials: MPH",
+   "Luke became a CANlab professional research assistant in June of 2018. He received his BA studying health, behavior, and society from the University of Rochester and his MPH from UC Davis. Prior to his work in the CANlab, Luke was a research analyst with various electronic health record systems. His research interests in the lab focus on how social cognition affects the experience and neural construction of chronic pain."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:lslipski602@gmail.com"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/lukie-slipski"
+ },
+ {
+  "id": "marta-ceko",
+  "name": "Marta Čeko",
+  "role": "Postdoc, University of Colorado",
+  "section": "Former Postdocs and Graduate Students",
+  "current": false,
+  "img": "2019_10_gscholar_fotka.jpeg",
+  "bio": [
+   "Credentials: PhD",
+   "Marta joined the lab as postdoc in the fall of 2015. She received her doctoral training at McGill University in Montreal (Ph.D. Neuroscience) where she investigated the effects of chronic pain on brain function and structure. Currently, her research is focused on exploring the basic brain mechanisms of aversive processing. She is particularly interested in applying predictive computational modeling approaches to fMRI, behavioral, and physiological data to determine brain processes underlying successful regulation of aversive experiences. The longer-term goal of this research is to develop brain and behavioral targets for individualized prevention and treatment of pain and related disorders."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "marta.ceko@gmail.com"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/marta-ceko"
+ },
+ {
+  "id": "philip-kragel",
+  "name": "Philip Kragel",
+  "role": "Postdoc, University of Colorado",
+  "section": "Former Postdocs and Graduate Students",
+  "current": false,
+  "img": "2019_10_Kragel.jpg",
+  "bio": [
+   "Credentials: PhD",
+   "Philip Kragel joined the Cognitive and Affective Neuroscience Lab in the fall of 2015. He completed his undergraduate and graduate training at Duke University, where he received a B.S.E. in Biomedical Engineering, a Masters in Engineering, and a Ph.D. in Psychology and Neuroscience. His research uses neuroimaging and psychophysiological methods to examine the neural basis of affective and emotional processes. In particular, his work combines approaches from machine learning and cognitive neuroscience to quantify how emotions are represented in nervous system activity. His current research expands this line of inquiry to explore the relationships between neural representations of pain, cognition, and emotion."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:Philip.Kragel@colorado.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/philip-kragel"
+ },
+ {
+  "id": "marianne-reddan",
+  "name": "Marianne Reddan",
+  "role": "Visiting Faculty",
+  "section": "Former Visiting Faculty and Scholars",
+  "current": false,
+  "img": "2024_10_headshot-marianne-reddan.jpeg",
+  "bio": [
+   "Marianne Reddan, PhD, was a former graduate student in the lab and is now an Assistant Professor at Albert Einstein College of Medicine where she directs the Socioecological Cognitive Neuroscience lab. Her research bridges cognitive neuroscience with socioecological factors, aiming to promote equity and improve health outcomes."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/marianne-reddan"
+ },
+ {
+  "id": "natalie-nielsen",
+  "name": "Natalie Nielsen",
+  "role": "Visiting Scholar, Donders Institute",
+  "section": "Former Visiting Faculty and Scholars",
+  "current": false,
+  "img": "2025_02_Natalie-5.jpg",
+  "bio": [
+   "Natalie is a PhD student at the Donders Institute for Cognitive Neuroimaging in Nijmegen (Netherlands) and she is joining the CANlab as a visiting scholar in February-March 2025. In her PhD at the Motivational and Cognitive Control lab under the lead of Prof. Roshan Cools, she focusses on control mechanisms of working memory content. First, she explored the dopaminergic modulation of working memory gating mechanisms by means of a pharmacological intervention study. Now, she is applying her knowledge on working memory to rumination. Particularly, she investigates whether distraction can disrupt ruminative thoughts in working memory using behavioural and neuroimaging methods. Beyond that, she is very much interested in (self-) regulatory mechanisms in the brain regarding thoughts, emotions and pain and their application in treatment for psychiatric disorders."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/natalie-nielsen"
+ },
+ {
+  "id": "Soo-Ahn-Lee",
+  "name": "Soo Ahn Lee",
+  "role": "Visiting Scholar, Dartmouth College",
+  "section": "Former Visiting Faculty and Scholars",
+  "current": false,
+  "img": "2022_09_IMG_0474-2.jpg",
+  "bio": [
+   "Soo Ahn is a visiting scholar from Wani Woo’s lab at Sungkyunkwan University in Korea. She completed a BA in psychology at the same university and joined Woo’s lab as a Master-Ph.D. combined course student. She is interested in developing brain models of neural representation of pain and pleasure using fMRI. She aims to investigate the neurobiological relationship between pain and pleasure which would be the brain underpinnings of human affective experiences."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "pbc1159@gmail.com"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/Soo-Ahn-Lee/"
+ },
+ {
+  "id": "Isabel-Neumann",
+  "name": "Isabel Neumann",
+  "role": "Visiting Scholar, Dartmouth College",
+  "section": "Former Visiting Faculty and Scholars",
+  "current": false,
+  "img": "2022_08_Photo_CANlab.jpg",
+  "bio": [
+   "Isabel is a PhD student at Prof. Dr. Paul Pauli’s lab at the University of Würzburg (Germany) and a visiting scholar in the CANlab since May 2022. In her PhD project, she investigates the influence of social support on pain perception in virtual reality. She studied psychology with a focus on clinical psychology at the University of Würzburg (Germany) and Salamanca (Spain). During her studies, she worked in a project which investigated underlying mechanisms in anxiety disorders with virtual reality and gained clinical experience at the Outpatient Center for Psychotherapy of Würzburg. Isabel is interested in social influences on pain, psychophysiological methods, and neural mechanisms in the context of pain modulation. She is also excited to explore the potential of virtual reality for the treatment of clinical disorders and for topics related to open science."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "isabel.neumann@uni-wuerzburg.de"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/Isabel-Neumann/"
+ },
+ {
+  "id": "alina-panzel",
+  "name": "Alina Panzel",
+  "role": "Visiting Scholar, Dartmouth College",
+  "section": "Former Visiting Faculty and Scholars",
+  "current": false,
+  "img": "2021_03_Headshot_Alina-Panzel.jpg",
+  "bio": [
+   "Alina is a predoctoral candidate at the Max Planck School of Cognition and is joining the CANlab for a lab rotation during her orientation year. Prior to starting her Ph.D., she completed a BSc in biology at Humboldt University and Charité Berlin exploring the link between Alzheimer’s disease and Type II Diabetes. During her MSc in Clinical, Social & Cognitive Neuroscience at City University of London, in collaboration with the Max Planck Institute of Brain Research, her work focused on electrophysiological differences in subtypes of Mild Cognitive Impairment. Subsequently, she worked as a research assistant in Prof. Dr. Tania Singer’s Social Neuroscience lab and is currently working at Prof. Dr. Büchel’s lab in Hamburg. Her interests lie in placebo research and the neuronal mechanisms through which prior experiences shape our pain perception."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "alina.panzel@maxplanckschools.de"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/alina-panzel/"
+ },
+ {
+  "id": "kristoffer-n-t-mansson",
+  "name": "Kristoffer N T Månsson",
+  "role": "Visiting Faculty, Dartmouth College",
+  "section": "Former Visiting Faculty and Scholars",
+  "current": false,
+  "img": "2021_03_IMG_2558-Kristoffer-NT-Mansson.jpg",
+  "bio": [
+   "Dr Kristoffer Månsson joined the lab as visiting faculty from Sweden. Before joining us, Dr Månsson completed a postdoc at the Max Planck Institute for Human Development in Berlin (Germany). He will return to Karolinska Institutet in April 2022 as an Assistant Professor. Using fMRI, Dr Månsson investigates temporal dynamics of BOLD signals in psychiatric patients (e.g. moment-to-moment signal variability). Dr Månsson is also interested in rapid changes in brain morphology; recently, he demonstrated that T1w estimated grey matter volume was susceptible to task-related activity."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "kristoffer.nt.mansson@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/kristoffer-n-t-mansson"
+ },
+ {
+  "id": "lukas-van-oudenhove",
+  "name": "Lukas Van Oudenhove",
+  "role": "Visiting Faculty, Dartmouth College",
+  "section": "Former Visiting Faculty and Scholars",
+  "current": false,
+  "img": "2021_03_VanOudenhove_headshot.jpg",
+  "bio": [
+   "Lukas started collaborating with Dr. Wager and Dr. Phil Kragel at CANlab during work visits to CU Boulder over the past years to apply neural signatures for pain and other affective processes to the visceral pain neuroimaging datasets collected in his group, the Laboratory for Brain-Gut Axis Studies (LaBGAS) at KU Leuven, Belgium. To intensify the collaboration and gain more experience with CANlab neuroimaging analysis tools, he joined CANlab as a visiting research scholar on a sabbatical from KU Leuven in 2020. During his stay at Dartmouth College, Lukas is continuing collaborative work on visceral pain and its emotional modulation, as well as expanding the collaboration to include neuroimaging studies on other affective processes, both appetitive and aversive, and the influence of gastrointestinal signals on them, as well as radioligand PET data collected at KU Leuven. Another important goal of his stay is to set up a structural long-term collaboration between CANlab and LaBGAS including joint funding."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:lukas.van.oudenhove@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/lukas-van-oudenhove"
+ },
+ {
+  "id": "sophie-van-t-hof",
+  "name": "Sophie van ‘t Hof",
+  "role": "Visiting Scholar, Dartmouth College",
+  "section": "Former Visiting Faculty and Scholars",
+  "current": false,
+  "img": "2020_04_IMG_2073.0.jpg",
+  "bio": [
+   "Sophie joined the CANlab in January 2020 as a visiting master student from the University of Amsterdam. She works on a project regarding sexual and affective processing using multi-variate neuroimaging analysis techniques. After this project, she hopes to continue to untangle sexual, affective and cognitive processing in the brain."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:sophievanhethof@gmail.com"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/sophie-van-t-hof"
+ },
+ {
+  "id": "feng-zhou",
+  "name": "Feng Zhou",
+  "role": "Visiting Scholar, Dartmouth College",
+  "section": "Former Visiting Faculty and Scholars",
+  "current": false,
+  "img": "2020_01_Weihao-Zheng.jpg",
+  "bio": [
+   "Feng Zhou is a PhD student at the University of Electronic Science and Technology of China and he joined the CANlab in the fall of 2019 as a visiting scholar. He is interested in applying neuroimaging and physiological methods to determine brain-based markers for emotion and empathy. The longer-term goal of his research is to develop novel treatment approaches for emotional dysregulation disorders."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:Feng.Zhou@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/feng-zhou"
+ },
+ {
+  "id": "jason-davis",
+  "name": "Jason Davis",
+  "role": "Undergraduate RA, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2024_09_MG_3645.jpg",
+  "bio": [
+   "Jason is an undergraduate researcher interested in how we represent nociceptive and affective information and how such information reaches conscious awareness. His initial work in the lab examined neural and psychological representations of pain and how attention, via distractor suppression, alters subjective pain intensity and corresponding neural activity. His current research examines the neural and psychological representations of affect, and how affective information reaches conscious awareness during subjective emotional experience. If he is not conducting research in the lab, he is likely either playing soccer, running, or cooking one of his signature bowls.",
+   "If you stay on his good side, he’ll make you one for free…",
+   "To learn more about him and his general research interests, please check out his personal website ."
+  ],
+  "links": [
+   {
+    "label": "website",
+    "url": "http://www.davis2021.com/"
+   },
+   {
+    "label": "Email",
+    "url": "jason.a.davis.25@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/jason-davis"
+ },
+ {
+  "id": "millie-sach",
+  "name": "Millie Sach",
+  "role": "Undergraduate RA, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2024_01_millieheadshot2-5cb9be7c79032fd5.jpg",
+  "bio": [
+   "Millie is a ’26 from Westchester, New York double majoring in Psychology and Asian Societies, Cultures, and Languages. Her psychology interests lie mainly in Social and Developmental Psychology, with a focus on understanding how underlying brain systems function and contribute to the ways humans act both individually and collectively. Outside the lab, Millie enjoys playing the bass, the company of cats and cooking and baking."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/millie-sach"
+ },
+ {
+  "id": "paola-perez",
+  "name": "Paola Perez",
+  "role": "Undergraduate Research Assistant, University of Florida",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2025_06_IMG_7058.jpg",
+  "bio": [
+   "Paola Perez was born and raised in Venezuela, and she is currently a rising senior at the University of Florida. Paola has always been interested in the brain and its complexity which led her to pursue a degree in Psychology with a concentration in Neuroscience and a minor in Statistics. Her scientific interests lie at the intersection between neuroscience, psychology and behavior, with a focus on emotion, cognition and aging. Outside of her academic interests, Paola loves animals and spending time in nature. Her favorite sport is horseback riding, she loves watching horror films and reading."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/paola-perez"
+ },
+ {
+  "id": "ian-zurlo",
+  "name": "Ian Zurlo",
+  "role": "Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2023_08_ianzurlo.jpeg",
+  "bio": [
+   "Ian Zurlo is an undergraduate at Dartmouth College majoring in Neuroscience. He is curious about the neural pathways that underly the processes of pain and how they influence human perception. Ian assists in the investigation into perceptual circuitry of biological pain responses, with the aspiration of attending medical school after graduation. Outside of the lab, he enjoys golfing, tennis, and hiking."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/ian-zurlo"
+ },
+ {
+  "id": "may-lawson",
+  "name": "May Lawson",
+  "role": "Undergraduate RA, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2025_04_DSC00632.jpg",
+  "bio": [
+   "May is a ‘28 undergraduate research assistant from Sheridan, Wyoming. She is planning on majoring in Neuroscience and minoring in Art History. She is specifically interested in how mental illness manifests in the brain, and the science behind how humans process emotions and grief. On a pre-medical track, May aspires to become either an orthopedic surgeon or a neurosurgeon. In her free time, she enjoys baking, spending time with her loved ones, being in the ocean, and just about anything that gets her outdoors."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/may-lawson"
+ },
+ {
+  "id": "grace-tyrrell",
+  "name": "Grace Tyrrell",
+  "role": "Undergraduate RA, Stonehill College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2025_06_IMG_6910.jpg",
+  "bio": [
+   "Grace is an undergraduate student from Cavendish, VT attending Stonehill College. She is double majoring in Neuroscience and Psychology. Her interests include researching and administering non-pharmaceutical treatments, for individuals with mood disorders or other health concerns. Outside the lab, Grace enjoys competing in track and field as a sprinter and hurdler, going on outdoor adventures, and farming."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/grace-tyrrell"
+ },
+ {
+  "id": "surina-prabhu",
+  "name": "Surina Prabhu",
+  "role": "Undergrad RA, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2021_03_Headshot_Surina-Prabhu.jpg",
+  "bio": [
+   "Surina Prabhu is a Dartmouth undergraduate Neuroscience major. She enjoys learning about the intricate circuitry of the brain and how it underlies processes such as emotion, pain, and the subjective human experience. In the lab, Surina assists in mapping the circuitry of the brain involving pain. Apart from the brain, she takes an interest to music, writing, and being outside."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "surina.e.prabhu.24@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/surina-prabhu"
+ },
+ {
+  "id": "sreekar-kasturi",
+  "name": "Sreekar Kasturi",
+  "role": "Senior Undergraduate RA, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2021_01_Sreekar-Kasturi.jpg",
+  "bio": [
+   "Sreekar Kasturi is a Dartmouth undergraduate volunteer. He enjoys studying neuroscience and music and the intersection between these two fields. His research focuses on the use of fMRI analysis to understand the effect of emotions on various regions of the brain and its applications."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:sreekar.v.kasturi.24@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/sreekar-kasturi/"
+ },
+ {
+  "id": "david-ward",
+  "name": "David Ward",
+  "role": "Undergraduate RA, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2021_03_Headshot_David-Ward.jpg",
+  "bio": [
+   "David is a Dartmouth undergraduate student ’25 from Vernon, Connecticut. He is 22 years old and served as a Hospital Corpsman for four years in the U.S. Navy. He is interested in studying neuroscience with the ultimate goal of becoming a physician."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "david.j.ward.25@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/david-ward"
+ },
+ {
+  "id": "luca-gandrud",
+  "name": "Luca Gandrud",
+  "role": "Undergraduate Research Assistant, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2025_06_IMG_3622.jpg",
+  "bio": [
+   "Luca is a ’27 undergraduate research assistant from Charlotte, North Carolina, majoring in Neuroscience. He is interested in improving cognitive performance and personalized health by uncovering the neural mechanisms underlying sleep, learning, memory, emotion, and chronic pain. As an RA, he is currently testing neuromodulation techniques aimed at altering negative affect. He is also conducting an independent project exploring the brain-body connection between physical training and cognitive performance. In the future, he hopes to continue investigating how neuroscience and technology can interface to improve people’s lives.Outside the lab, Luca enjoys leading photography projects, training in boxing, and responding to emergency calls through D-EMS."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/luca-gandrud"
+ },
+ {
+  "id": "carmen-bango",
+  "name": "Carmen Bango",
+  "role": "Research Assistant, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2020_10_Carmen-Bango-Headshot.jpg",
+  "bio": [
+   "Carmen joined the lab in the fall of 2020 after graduating from Williams College with a degree in psychology and a concentration in neuroscience. At Williams, she conducted research with Dr. Shivon Robinson on neonatal opioid exposure in animal models, and research with Dr. Jeremy Cone on implicit cognitive evaluations. She has also previously served as a research assistant for Dr. Ajay Satpute at Northeastern University and Beth Darnall at Stanford University. Her research interests include: The roles of memory, learning and prediction in pain-processing, the neural correlates of acute and chronic pain conditions, body-representations in the brain, the physiological effects and manifestations of stress and trauma, pain education, and the development of safe, effective, and accessible chronic pain treatments. In her free time, Carmen loves to climb mountains, watch Grey’s Anatomy, read short fiction, and drink hot chocolate with marshmallows and whipped cream on a winter’s day."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/carmen-bango/"
+ },
+ {
+  "id": "melanie-kos",
+  "name": "Melanie Kos",
+  "role": "Research Assistant, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2023_10_Screenshot-2023-10-12-at-12.47.26-PM.jpg",
+  "bio": [
+   "Melanie graduated from Dartmouth with a degree in cognitive science. Her research interests broadly include the societal and neurological mechanisms that factor into decision making, social pain and empathy, and the cognitive regulation of pain.",
+   "Outside of the lab, Melanie enjoys putting her art history minor to use at museums, cooking/baking, and tending to her vinyl record collection."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "melanie.caroline.kos@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/melanie-kos/"
+ },
+ {
+  "id": "malka-hershkop",
+  "name": "Malka Hershkop",
+  "role": "Research Assistant, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2022_09_20220511_hershkop_eb_019-e1662479753935.jpg",
+  "bio": [
+   "Malka graduated from Hunter College with a degree in clinical psychology. At Hunter, she conducted research with Dr. Amber Martain on the conceptualization and representation of familiar and unfamiliar numbers. Her research interests broadly include manifestations of stress, pain, and trauma, the effects of pain on emotions and on cognitive function, and body-mapping in the brain.",
+   "Malka also enjoys spending time hosting and cooking for friends, learning to ski, and practicing yoga."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "malka.hershkop@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/malka-hershkop/"
+ },
+ {
+  "id": "sophia-gregorace",
+  "name": "Sophia Gregorace",
+  "role": "Undergraduate RA, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2023_09_sophiaheadshot.jpg",
+  "bio": [
+   "Sophie is a ‘24 from Long Island, NY majoring in psychology and minoring in biology. She was formerly recruited to Dartmouth to swim, but has retired to pursue her academic interests in studying affective neuroscience, human creativity, and neuroplasticity. In addition to the CANlab, she works in the TEACore lab as a technician, dances with Ujima Dance Troupe, and participates in the swim club."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/sophia-gregorace"
+ },
+ {
+  "id": "evans-alvarez",
+  "name": "Evans Alvarez",
+  "role": "University of Southern California",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2023_08_evansalvarez.jpeg",
+  "bio": [
+   "Evans Alvarez is currently studying the anticipatory effects of socially induced affective valence using iEEG data and pain perception modulation on affective representations using tDCS and fMRI. He is greatly interested in neuroimaging and computational techniques that contribute to the mapping and analyzing socially induced cognitive and affective representations. Outside the lab, he is passionate about boxing, street photography, and traveling to new places!"
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/evans-alvarez"
+ },
+ {
+  "id": "jack-katz",
+  "name": "Jack Katz",
+  "role": "Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2023_08_jackkatz.jpeg",
+  "bio": [
+   "Jack Katz is an undergraduate at Dartmouth currently studying Neuroscience. He enjoys learning about many different aspects of the brain and nervous system including visual processing and nociceptive pain. In the lab, Jack is currently focusing on using FMRI and data collection techniques to assess how external factors can influence someone’s perception of a painful stimulus. Outside of the lab Jack plays on the club basketball team, works for Dartmouth EMS, enjoys working out, playing golf, and loves skiing."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/jack-katz"
+ },
+ {
+  "id": "kira-parrish-penny",
+  "name": "Kira Parrish-Penny",
+  "role": "Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2023_08_kira.jpeg",
+  "bio": [
+   "Kira is a ’24 from Oakland, California, studying sociology, psychology, and English. She is interested in social psychology, particularly in group behavior. At Dartmouth, she works at the Rauner Special Collections Library, the Irving Institute for Energy and Society, and at the docks with the Ledyard Canoe and Kayaking club. Last year, Kira was awarded the Historical Accountability Fellowship at Rauner Library and was a member of the 2023 Law and Ethics Fellowship cohort through the Dartmouth Ethics Institute."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/kira-parrish-penny"
+ },
+ {
+  "id": "abenezer-sheberu",
+  "name": "Abenezer Sheberu",
+  "role": "Undergraduate RA, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2023_08_IMG_4258.jpg",
+  "bio": [
+   "Abenezer is an undergraduate studying Neuroscience at Dartmouth College. He enjoys studying various neuro-psychological phenomena, which include but are not limited to learning and behavior, cognition, pain perception, and emotions. Beyond these academic interests, he finds joy in playing the drums and reading."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/abenezer-sheberu"
+ },
+ {
+  "id": "maryam-amini",
+  "name": "Maryam Amini",
+  "role": "Research Assistant, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2019_12_maryam-amini.png",
+  "bio": [
+   "Credentials: BA Neuroscience",
+   "Maryam joined the group in Summer 2019. She is interested in the regulation of emotions and pain through self-control and metacognition, and the neural basis of the human belief system. Prior to joining Canlab, she worked with Dr. Michael Stowell on comorbidity between seizure episodes and Alzheimer’s disease at the University of Colorado Boulder. She graduated summa cum laude with a bachelor’s degree in Neuroscience from CU Boulder."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:maryam.amini@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/maryam-amini"
+ },
+ {
+  "id": "charles-mazof",
+  "name": "Charles Mazof",
+  "role": "Undergraduate RA, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2021_03_CharlesM-Headshot.jpeg",
+  "bio": [
+   "Charles is a Dartmouth undergraduate currently working toward a major in biology and minors in chemistry and computer science. He enjoys neuroscience and is especially interested in learning how complex mental experiences originate from a physical brain. At the lab, Charles is currently working on projects that will collect and analyze fMRI data to better understand how emotion arises in the brain. In his free time, he likes to toss frisbees on the campus green and ski at the Dartmouth Skiway."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto: charles.j.mazof.23@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/charles-mazof"
+ },
+ {
+  "id": "ainsley-bryant",
+  "name": "Ainsley Bryant",
+  "role": "Undergraduate RA, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2021_03_FullSizeRender-Ainsley-Bryant.jpg",
+  "bio": [
+   "Ainsley Bryant is an undergraduate at Dartmouth College studying psychology and environmental studies. She is particularly interested in how the brain processes emotion, pain, and placebo effects. In the lab, she uses MRI to look at how specific pain receptors respond to various stimuli. Outside of academics, Ainsley enjoys volunteering, dancing, skiing, and watching the Chicago Cubs."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "ainsley.r.bryant.23@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/ainsley-bryant/"
+ },
+ {
+  "id": "nicole-liddle",
+  "name": "Nicole Liddle",
+  "role": "Undergraduate RA, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2021_03_NL-Headshot-Square.jpeg",
+  "bio": [
+   "Nicole Liddle is a Dartmouth undergraduate Psychology major, currently pursuing her Senior Honors Thesis while conducting her work at the CANLab. She is primarily interested in studying the mechanisms of consciousness and interpersonal psychology, as well as the intersection of Eastern and Western philosophy and medicine. At the lab, Nicole seeks to explore the therapeutic effects of traditional non-western practices on social support, as a means to reduce stress and social isolation."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "nicole.c.liddle.22@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/nicole-liddle"
+ },
+ {
+  "id": "bethany-hunt",
+  "name": "Bethany Hunt",
+  "role": "Lab Manager, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2021_03_HuntB-Headshot-v4-Square-2.jpg",
+  "bio": [
+   "Credentials: BA Psychology & English",
+   "Bethany is interested in the intersection between social and affective cognition, particularly in relation to illness development and recovery. She completed her BA at Kenyon College, where she researched attention and social approach in autism. Before joining the CANlab in 2020, Bethany studied social perception in eating disorders at UT Southwestern Medical Center. While working in the CANlab, she supported multiple grant projects to better understand how beliefs and expectations shape neural responses to aversive stimuli."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:bethany.j.hunt@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/bethany-hunt"
+ },
+ {
+  "id": "eilis-Murphy",
+  "name": "Eilis Murphy",
+  "role": "Research Assistant, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2020_04_72AC7CD5-F47A-45AB-8B84-EFE5406C8AD7.jpg",
+  "bio": [
+   "Credentials: BA Psychology",
+   "Eilis joined the lab in spring 2020. She completed her BA at Colby-Sawyer College in three years. Prior to joining the CANlab, Eilis worked with Dr. James Haxby as a project coordinator on a mental health sensing and fMRI study. She is interested in self-regulation and social cognition’s effects on modulating chronic and acute pain, as well as the relationship between anxiety and trauma as they influence the experience of chronic pain."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:eilis.i.murphy@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/eilis-Murphy/"
+ },
+ {
+  "id": "jack-lovell",
+  "name": "Jack Lovell",
+  "role": "The University of Colorado at Boulder",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2020_04_Screen-Shot-2020-04-13-at-14.01.38.jpg",
+  "bio": [
+   "Jack is an undergraduate student currently working on projects related to the placebo effect and human emotion. Broadly, he is interested in using fMRI and machine learning to better understand how affective stimuli are processed in the brain, and their role in the realization of pain, emotion, and mood."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/jack-lovell/"
+ },
+ {
+  "id": "clayton-schneider",
+  "name": "Clayton Schneider",
+  "role": "Undergraduate RA, University of Colorado, Boulder",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2019_10_goat.jpg",
+  "bio": [
+   "Clayton is an undergrad student at CU Boulder studying computer science and neuroscience. He hopes to combine these skills to facilitate the rapid development and success of the field of computational neuroscience. Clayton works as a lead web developer on the PainStory project, and is currently working on an fMRI investigation of emotional regulation in a clinical population."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:clayton.schneider@colorado.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/clayton-schneider"
+ },
+ {
+  "id": "jessica-mcdermott",
+  "name": "Jessica McDermott",
+  "role": "Undergraduate RA, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2020_08_Jessica-McDermott-Headshot.jpg",
+  "bio": [
+   "Jessica is a member of the Class of 2021 at Dartmouth and is double-majoring in Neuroscience and Government. She is interested in the intersection between medicine, neuroscience, and public health. During the Summer of 2020, Jessica is researching causal attribution in medicine to better understand how personal beliefs about one’s health condition can impact the effectiveness of treatment."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:jessica.i.mcdermott.21@dartmouth.edu"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/jessica-mcdermott/"
+ },
+ {
+  "id": "victoria-schelkun",
+  "name": "Victoria Schelkun",
+  "role": "Research Assistant, Dartmouth College",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2019_10_fullsizeoutput_3cf7.jpeg",
+  "bio": [
+   "Credentials: BA Neuroscience",
+   "Victoria joined the CANlab in 2017 as an undergraduate volunteer as she completed her BA in neuroscience and psychology at CU Boulder. She now works as a research assistant and coordinator of various projects within the lab. She hopes to eventually investigate how deviations in patterns of neural activation can give rise to various forms of cognitive dysfunction, including how learning mechanisms influence the regulation of pain, emotion, and self control."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:victoria.schelkun@gmail.com"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/victoria-schelkun"
+ },
+ {
+  "id": "laurie-polisky",
+  "name": "Laurie Polisky",
+  "role": "Research Assistant, University of Colorado Boulder",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2019_10_Laurie.jpg",
+  "bio": [
+   "Credentials: BA",
+   "Laurie received her BA in Psychology and Neuroscience with a focus in Media Studies from Grinnell College in 2015. After graduating, she worked at Nielsen Neurofocus implementing EEG, eye tracking, facial encoding and biometrics to investigate how people responded to video and images. Since moving to Boulder she has worked at the intersection of science and film, performing fMRI and EEG studies as a member of the Wager lab while also co-directing a feature documentary about chronic pain. She is interested in further exploring the ways in which film might augment the dissemination of scientific ideas while also expanding her neuroscience background by relating words projected into semantic space."
+  ],
+  "links": [
+   {
+    "label": "Email",
+    "url": "mailto:lbpolisky@gmail.com"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/laurie-polisky"
+ },
+ {
+  "id": "mickela-heilicher",
+  "name": "Mickela Heilicher",
+  "role": "Research Assistant, University of Colorado Boulder",
+  "section": "Former Staff and Undergraduate RAs",
+  "current": false,
+  "img": "2020_01_Daniel-Kusko.jpg",
+  "bio": [
+   "Credentials: BA Psych and Neuroscience",
+   "Mickela joined the lab Spring of 2019 after completing her undergraduate degree in psychology and neuroscience at the University of Puget Sound in the Spring of 2018. She is currently running participants and assisting with data analysis for several projects. Her goal is to use functional MRI to investigate the relationship between psychological disorders and criminal behavior, and the neural mechanisms involved."
+  ],
+  "links": [],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/mickela-heilicher"
+ }
+]

@@ -1,0 +1,65 @@
+{
+ "intro": "Some of the main research themes in our lab are described below. A main theme is understanding how expectations, beliefs, and affective value are constructed in the brain. We develop models of how the brain represents cognitive states and affective experiences, and then use these to understand the mechanisms underlying psychosocial (and other) interventions.",
+ "themes": [
+  {
+   "id": "belief",
+   "title": "The neuroscience of belief",
+   "question": "How are beliefs formed? How do they influence our brains and bodies? What makes them susceptible to change, or resistant to it?",
+   "paragraphs": [
+    "Beliefs are a driving force underlying learning and decision-making. They influence our behavior, our health, and our society. They are conceptual acts – ideas constructed by the brain to govern how we perceive the world and what we learn from experience. For some, beliefs are by definition resistant to new evidence, and so take on ‘a life of our own’, leading to self-fulfilling prophecies. This project studies the neuroscience of how beliefs and expectations are formed, how they are represented in the brain, and how they interact with sensory evidence to shape learning. It also studies how interpersonal social context—including verbal suggestions and nonverbal communication—influences brain representations and learning."
+   ],
+   "image": "2019_12_Slide4.png",
+   "image_original": "https://sites.dartmouth.edu/canlab/files/2019/12/Slide4.png"
+  },
+  {
+   "id": "brain-body",
+   "title": "Brain-body interactions",
+   "question": "How does the prefrontal cortex influence responses in the subcortex, especially the brainstem, related to physiological regulation?",
+   "paragraphs": [
+    "The prefrontal cortex regulates systems in the brainstem that are crucial mediators of autonomic and hormonal (neuroendocrine) responses in the body’s organs. These, in turn, influence inflammation, metabolism, and other immune responses. Prefrontal-brainstem pathways thus provide a substrate for thoughts, beliefs, and other forms of higher-level cognition to influence organ function and health. Increasingly, disorders from depression to cancer are thought of as arising in part from dysregulation in brain-body communication, and understanding these pathways is vital for a new science of “whole-person” health. While these pathways have been mapped to some degree in non-human animals, very little is understood about how they are organized in humans. One branch of this project uses ultra-high-resolution, high-field imaging (7T) to map the connections between cortical, subcortical forebrain, and brainstem regions, and how they relate to autonomic physiology and affective (pain and emotion) signals. Another branch uses multivariate computational techniques to derive better measures of microcircuits connecting neural populations in humans."
+   ],
+   "image": "2019_12_WagerAtlas15painpathways.jpg",
+   "image_original": "https://sites.dartmouth.edu/canlab/files/2019/12/WagerAtlas15painpathways.jpg"
+  },
+  {
+   "id": "affect",
+   "title": "Affect and emotion",
+   "question": "How are pleasure, pain, and emotions represented in the brain, and how are these representations similar or dissimilar across types of emotion?",
+   "paragraphs": [
+    "Affective events are those that are most important to us – pleasure and pain, things we love or hate. They are laden with personal meaning and value. Because they are important, they influence our perception, behavior, and bodily physiology. Emotions, for example, are thought to be organizing concepts that guide and synchronize multiple brain systems around events and goals critical for survival and wellbeing. They are constructed in the brain based on how we appraise or construe events, and once activated, they influence what we attend to, what re remember, and even our body’s physiology and metabolism. We know very little about how they work at a brain level. How are affective events represented in the brain? Is there a common system for representing “good” and “bad” events? Or are brain representations organized around the types of emotion categories (fear, anger, joy, etc.), types of appraisals, types of responses (e.g., immediate action vs. long-term plans), ancestral systems for homeostasis, or something else?"
+   ],
+   "image": "2019_12_2015_Wager_Emotion_Meta_Networks.jpg",
+   "image_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2015_Wager_Emotion_Meta_Networks.png"
+  },
+  {
+   "id": "pain",
+   "title": "Pain systems and biomarkers",
+   "question": "Can we develop biomarkers that will tell us how pain is constructed in the brain at an individual-person level? Can we use these to understand individual differences in the causes of chronic pain, and personalize treatment?",
+   "paragraphs": [
+    "Chronic pain is one of the biggest problems facing modern society. It affects around 20% of the population, and has had or will have a major impact on the health of someone you know. Recently, we’ve experienced a revolution in how we think about pain. It’s not something that happens only in the body and is sensed by the brain. The brain constructs pain from a combination of sensory input, appraisals and beliefs, memories, and other context information. Neuroplastic changes in multiple brain systems help create and maintain the chronic pain state. The problem is that we have very few, if any, biomarkers that can tell us what has gone wrong with an individual pain sufferer – and, thus, what to do to prevent or treat chronic pain effectively. Clinical trials for therapeutics are failing at an increasing rate, and there is no effective treatment for most pain sufferers. Our work asks whether we can identify the brain pathways that contribute to healthy pain experience—including sensory, affective, and motivational pathways—in a way that is reliable and reproducible in individual patients. Then, we can study which pathways are altered in individuals with pain. We can also compare interventions—drugs, psychological treatment, neurostimulation—on a level playing field, studying how they affect the brain. And we can develop new treatments that target those brain pathways."
+   ],
+   "image": "2019_12_Woo2017NPStuningcurve-copy.png",
+   "image_original": "https://sites.dartmouth.edu/canlab/files/2019/12/Woo2017NPStuningcurve-copy.png"
+  },
+  {
+   "id": "craving",
+   "title": "Desire and drug craving",
+   "question": "What brain systems underlie drug craving and potential for relapse? How are these similar to or distinct from brain mediators of other types of pleasant and unpleasant events? Can we use the brain to understand how craving is triggered and predict risk for relapse?",
+   "paragraphs": [
+    "Drug craving can persist and spontaneously recur even after years of abstinence, and is a major factor in relapse. Craving is a basic part of the machinery of human motivation, and extends to natural rewards as well, including foods and activities. Craving can be pleasant, if rewards are imminent, or deeply unpleasant if they are unattainable. This project is a collaboration with Prof. Hedy Kober’s lab at Yale, and involves several parts. One is a meta-analysis of neuroimaging studies of human drug and food craving. This study maps which brain systems are involved in craving, and how they are similar or different across natural rewards and various drugs of abuse. The second part uses individual person-level neuroimaging data combined with pattern recognition (machine learning) models to predict individual craving intensity for drugs (cigarettes, cocaine) and food. If we can develop biomarkers for drug craving, these new biological targets could be used to assess risk for relapse and evaluate the neural mechanisms underlying behavioral, psychological, and pharmacological interventions alike."
+   ],
+   "image": null,
+   "image_original": null
+  },
+  {
+   "id": "topology",
+   "title": "Individualized spatial topology",
+   "question": "How can we develop better models of brain circuits and pathways, particularly those that allow for individual variability in functional anatomy? Can these yield a new class of machine learning-based predictive models that more accurately map onto psychological, behavioral, and clinical outcomes? Can we use them to make inferences about individual differences in functional brain topology?",
+   "paragraphs": [
+    "Machine learning-based predictive models are driving a revolution in neuroimaging. Instead of mapping local brain functions, brain regions are combined into circuits and systems optimized to predict all kinds of outcomes, from the contents of thought to behavior to clinical symptoms. A major focus is in developing normative models from groups of individuals that can predict (or decode) outcomes in new individuals. Such models can help us make inferences about what an individual is thinking or feeling, assess risk for future brain disorders, and more. However, a fundamental limitation is that individual brains are crudely aligned based on anatomical landmarks or overall brain shape, when we know that functional topology (how brain locations map onto functions) varies across individuals and changes with experience. For example, expertise in piano reorganizes motor cortex, and chronic pain reorganizes somatosensory systems. This project explores a new class of functional alignment techniques, including hyperalignment and related individualized spatial models, to account for individual variation in functional topology to build better predictive models of psychological and behavioral states. By combining hyperalignment with multivariate models optimized for prediction, we may be able to dramatically improve the strength and reproducibility of brain-to-mind associations. Because multivariate models can be sensitive to distinct neural populations that are mixed within a region, we may also be able to better model individual functional brain pathways, mapping human fMRI more closely onto circuits identified in neuroscience on non-human animals. And finally, we may also be able to make inferences about how functional topology changes with experience."
+   ],
+   "image": null,
+   "image_original": null
+  }
+ ]
+}

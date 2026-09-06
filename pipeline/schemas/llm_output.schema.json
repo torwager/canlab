@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LLM tagging output for a CANlab paper",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["tags", "summary", "key_finding", "free_keywords", "confidence", "notes"],
+  "properties": {
+    "tags": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["topic", "approach", "type"],
+      "properties": {
+        "topic": {"type": "array", "items": {"type": "string", "enum": ["__ENUM:topic__"]}},
+        "approach": {"type": "array", "items": {"type": "string", "enum": ["__ENUM:approach__"]}},
+        "type": {"type": "string", "enum": ["__ENUM:type__"]}
+      }
+    },
+    "summary": {"type": "string"},
+    "key_finding": {"type": ["string", "null"]},
+    "free_keywords": {"type": "array", "items": {"type": "string"}},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "notes": {"type": ["string", "null"]}
+  },
+  "x-note": "The '__ENUM:<axis>__' placeholders are expanded from taxonomy.json at load time (see llm_client.build_output_schema)."
+}

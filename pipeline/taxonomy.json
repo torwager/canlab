@@ -1,0 +1,238 @@
+{
+ "taxonomy_version": "1.0.0",
+ "notes": "Controlled vocabulary for tagging CANlab publications. Tags are assigned from the full text where a PDF is available, otherwise from the abstract. 'topic' and 'approach' are multi-valued; 'type' is single-valued. Chip colour = axis colour.",
+ "axes": [
+  {
+   "id": "topic",
+   "label": "Topic",
+   "multi": true,
+   "required": true,
+   "color": {
+    "hue": "violet",
+    "light": {
+     "bg": "#EDE9FE",
+     "fg": "#5B21B6"
+    },
+    "dark": {
+     "bg": "#2E1065",
+     "fg": "#C4B5FD"
+    }
+   },
+   "values": [
+    {
+     "id": "placebo",
+     "label": "Placebo effects",
+     "def": "Placebo or nocebo effects, treatment-expectation effects on symptoms or brain responses, open-label placebo, conditioning-based placebo analgesia, or the mechanisms of the treatment context."
+    },
+    {
+     "id": "pain",
+     "label": "Pain",
+     "def": "Pain perception, nociception, analgesia, experimental pain in healthy people, or pain neuroscience."
+    },
+    {
+     "id": "chronic_pain",
+     "label": "Chronic pain",
+     "def": "Clinical pain populations or chronic pain (back pain, fibromyalgia, headache, pain trajectories, pain treatment trials)."
+    },
+    {
+     "id": "emotion",
+     "label": "Emotion",
+     "def": "Affect, emotional experience, valence, negative affect, fear, anxiety, disgust, or the neural representation of emotion categories."
+    },
+    {
+     "id": "emotion_regulation",
+     "label": "Emotion regulation",
+     "def": "Cognitive reappraisal, self-regulation of pain or emotion, mindfulness or attention-based regulation, or top-down control of affect."
+    },
+    {
+     "id": "empathy",
+     "label": "Empathy & social affect",
+     "def": "Empathy, vicarious pain, compassion, prosocial behaviour, social rejection or social pain."
+    },
+    {
+     "id": "stress",
+     "label": "Stress",
+     "def": "Psychological or social stress, threat, cortisol and HPA axis, stress physiology, or stress-related health effects."
+    },
+    {
+     "id": "expectation_learning",
+     "label": "Expectation & learning",
+     "def": "Expectations, beliefs, predictive cues, conditioning, reinforcement learning, or predictive-coding accounts of perception."
+    },
+    {
+     "id": "social",
+     "label": "Social influence",
+     "def": "Social cues and social context, interpersonal communication, patient-provider interaction, social information about others' ratings, or cultural factors."
+    },
+    {
+     "id": "reward_craving",
+     "label": "Reward & craving",
+     "def": "Reward, valuation, pleasure, food or drug craving, addiction, or decision making about value."
+    },
+    {
+     "id": "cognitive_control",
+     "label": "Cognitive control & memory",
+     "def": "Executive function, working memory, attention, inhibition, task switching, interference resolution, or long-term memory."
+    },
+    {
+     "id": "brain_body",
+     "label": "Brain-body interactions",
+     "def": "Autonomic physiology, interoception, immune or inflammatory measures, brainstem and hypothalamus, cardiovascular reactivity, or metabolism."
+    },
+    {
+     "id": "clinical",
+     "label": "Clinical & psychopathology",
+     "def": "Psychiatric or neurological populations (depression, anxiety, PTSD, dementia, bipolar disorder), clinical outcomes, or treatment trials other than pain-specific ones."
+    },
+    {
+     "id": "perception",
+     "label": "Perception & consciousness",
+     "def": "Sensory perception (touch, vision, taste, audition), somatosensory topography, awareness, or consciousness."
+    }
+   ]
+  },
+  {
+   "id": "approach",
+   "label": "Approach",
+   "multi": true,
+   "required": true,
+   "color": {
+    "hue": "teal",
+    "light": {
+     "bg": "#E3EBF3",
+     "fg": "#2F5A86"
+    },
+    "dark": {
+     "bg": "#1E2C3D",
+     "fg": "#A9C4E0"
+    }
+   },
+   "values": [
+    {
+     "id": "fmri",
+     "label": "fMRI",
+     "def": "Functional MRI data are collected or analysed (task fMRI, resting state, 7T fMRI)."
+    },
+    {
+     "id": "neuroimaging_methods",
+     "label": "Neuroimaging methods",
+     "def": "The paper develops, evaluates or teaches analysis methods for neuroimaging: statistics, preprocessing, reliability, power, software, tutorials, or best practices."
+    },
+    {
+     "id": "neuromarker",
+     "label": "Neuromarker / brain signature",
+     "def": "Develops or tests a predictive brain signature or biomarker (e.g. NPS, SIIPS, PINES, VIFS), or evaluates a neuromarker's validity, generalisation, or clinical use."
+    },
+    {
+     "id": "machine_learning",
+     "label": "Machine learning",
+     "def": "Multivariate pattern analysis or predictive modelling with cross-validation (SVM, LASSO, PCR, PLS, decoding, classification, representational similarity)."
+    },
+    {
+     "id": "ai_integration",
+     "label": "AI integration",
+     "def": "Uses deep neural networks, convolutional networks, large language models, generative or foundation models, either as analysis tools or as models compared against brain data. Tag when found anywhere in the methods, even if not in the abstract."
+    },
+    {
+     "id": "computational_model",
+     "label": "Computational model",
+     "def": "Formal or mathematical models of behaviour or brain function (reinforcement learning, Bayesian inference, drift diffusion, dynamical systems, simulations)."
+    },
+    {
+     "id": "mediation",
+     "label": "Mediation",
+     "def": "Mediation or path analysis, including multilevel mediation, mediation brain search (M3), or moderated mediation."
+    },
+    {
+     "id": "meta_analysis",
+     "label": "Meta-analysis",
+     "def": "Quantitative synthesis of published results, including coordinate-based neuroimaging meta-analysis (MKDA, ALE) and effect-size meta-analysis."
+    },
+    {
+     "id": "mega_analysis",
+     "label": "Mega-analysis",
+     "def": "Pooled analysis of individual-participant data from multiple independent studies or datasets (multi-study, consortium, or large biobank data)."
+    },
+    {
+     "id": "genetics",
+     "label": "Genetics & heritability",
+     "def": "Twin or family designs, GWAS or polygenic scores, gene expression, or other genetic and heritability analyses."
+    },
+    {
+     "id": "pharmacology",
+     "label": "Pharmacology",
+     "def": "Drug manipulations or drug mechanisms (opioids, naloxone, remifentanil, cannabinoids, ketamine, SSRIs, analgesics)."
+    },
+    {
+     "id": "psychophysiology",
+     "label": "Psychophysiology & EEG",
+     "def": "Skin conductance, heart rate, EMG, pupillometry, EEG, ERP, MEG, or intracranial recordings."
+    },
+    {
+     "id": "brain_stimulation",
+     "label": "Brain stimulation",
+     "def": "TMS, tDCS, temporal interference stimulation, deep brain stimulation, or other neuromodulation."
+    },
+    {
+     "id": "other_imaging",
+     "label": "PET / structural / spinal imaging",
+     "def": "PET, structural MRI (gray matter, VBM, cortical thickness), diffusion imaging, spinal cord imaging, or other non-fMRI imaging."
+    },
+    {
+     "id": "behavioral",
+     "label": "Behavioural & self-report",
+     "def": "Behavioural experiments, ratings, questionnaires, surveys, or clinical assessments without neuroimaging as the primary measure."
+    },
+    {
+     "id": "open_tools",
+     "label": "Open data & tools",
+     "def": "Releases a dataset, software, toolbox, atlas, or paradigm, or is about data sharing and open science."
+    }
+   ]
+  },
+  {
+   "id": "type",
+   "label": "Article type",
+   "multi": false,
+   "required": true,
+   "color": {
+    "hue": "slate",
+    "light": {
+     "bg": "#F1F5F9",
+     "fg": "#334155"
+    },
+    "dark": {
+     "bg": "#1E293B",
+     "fg": "#CBD5E1"
+    }
+   },
+   "values": [
+    {
+     "id": "empirical",
+     "label": "Empirical",
+     "def": "Reports new data or new analyses of existing data (experiments, trials, secondary analyses, meta- and mega-analyses)."
+    },
+    {
+     "id": "review",
+     "label": "Review",
+     "def": "Narrative or theoretical review, perspective or synthesis of a literature."
+    },
+    {
+     "id": "methods",
+     "label": "Methods / tools",
+     "def": "Primarily describes an analysis method, software, tutorial, atlas or resource."
+    },
+    {
+     "id": "chapter",
+     "label": "Book chapter",
+     "def": "A chapter in an edited book or handbook."
+    },
+    {
+     "id": "commentary",
+     "label": "Commentary",
+     "def": "Comment, editorial, letter, reply, news feature or short opinion piece."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My list | CANlab</title>
+<meta name="description" content="Papers you have starred on the CANlab site, with export to BibTeX, RIS, CSV or a DOI list, and named reading lists.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://torwager.github.io/canlab/mylist.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .tools { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem; }
+  .notice { background: var(--amber-soft); border-left: 3px solid var(--amber); padding: .7rem 1rem; border-radius: 0 10px 10px 0; font-size: .92rem; max-width: 72ch; margin-bottom: 1.2rem; }
+  textarea { width: 100%; min-height: 120px; font-family: var(--mono); font-size: .8rem; border: 1px solid var(--line-2); border-radius: 10px; padding: .6rem; background: var(--surface); color: var(--ink); }
+  .lists { display: flex; gap: .4rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem; }
+  .lists .chip { font-size: .82rem; padding: .3rem .8rem; }
+  .lists input { font: inherit; font-size: .84rem; padding: .3em .7em; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); width: 160px; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">My list</p>
+    <h1>Papers you have starred</h1>
+    <p>Star any paper (☆) on the publications page or on its own page to keep it here. Save the current selection under a name to build several reading lists (a course syllabus, a grant, a journal club). Export sends a list to your reference manager: BibTeX or RIS for Zotero, Mendeley, EndNote and Paperpile, a DOI list to paste into an identifier importer, a CSV, or formatted citations.</p>
+  </div>
+  <div class="notice"><div data-account="full" style="margin-bottom:.4rem"></div>Without an account the lists are stored in this browser only: use <b>Export</b> to save one or move it to another device, and <b>Import</b> to load it back.</div>
+  <div class="lists" id="lists"></div>
+  <div class="tools">
+    <span class="count" id="count"></span>
+    <label class="small muted" style="margin-left:.4rem">Sort <select id="sort"><option value="added">recently starred</option><option value="new">newest</option><option value="old">oldest</option><option value="cited">most cited</option></select></label>
+    <span style="margin-left:auto"></span>
+    <button class="btn" id="export">Export list ids</button>
+    <button class="btn" id="import">Import</button>
+    <button class="btn" id="copy">Copy citations</button>
+    <span id="exportwrap"></span>
+    <button class="btn link" id="clear">Clear stars</button>
+  </div>
+  <div id="io" hidden style="margin-bottom:1rem"><textarea id="iotext" placeholder="Paste an exported list here, then click Load"></textarea><div class="tools" style="margin-top:.4rem"><button class="btn primary" id="load">Load</button><button class="btn" id="ioclose">Close</button><span class="small muted" id="iomsg"></span></div></div>
+  <div class="papers" id="list"><div class="spinner">Loading…</div></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script src="assets/account.js"></script>
+<script>
+(async function () {
+  const { state } = await CL.loadCore();
+  const byId = new Map(state.index.map(r => [r.id, r]));
+  const listEl = document.getElementById("list"), sortEl = document.getElementById("sort");
+  const fu = document.getElementById("foot-updated"); if (fu) fu.textContent = "Data updated " + state.stats.updated + ".";
+  let saved = {}; try { saved = await CLAccount.lists.get(); } catch (e) { saved = {}; }
+  function renderLists() {
+    const names = Object.keys(saved).sort();
+    document.getElementById("lists").innerHTML = `<span class="small muted">Saved lists:</span>` + (names.length ? names.map(n => `<span class="chip" data-load="${CL.esc(n)}" title="Load this list into your stars">${CL.esc(n)} <span class="muted tnum">${saved[n].length}</span></span><button class="star" data-del="${CL.esc(n)}" title="Delete list">×</button>`).join("") : ' <span class="small muted">none yet</span>') + ` <input id="newname" placeholder="Save stars as…" maxlength="60"><button class="btn" id="savelist" style="padding:.35em .9em;font-size:.82rem">Save</button>`;
+  }
+  document.getElementById("lists").addEventListener("click", async e => {
+    const l = e.target.closest("[data-load]"), d = e.target.closest("[data-del]"), s = e.target.closest("#savelist");
+    if (l) { CL.list._ids = new Set(saved[l.dataset.load]); CL.list.save(); render(); }
+    if (d && window.confirm(`Delete the list “${d.dataset.del}”?`)) { delete saved[d.dataset.del]; await CLAccount.lists.save(saved); renderLists(); }
+    if (s) { const n = document.getElementById("newname").value.trim(); if (!n) return; saved[n] = [...CL.list.ids()]; await CLAccount.lists.save(saved); renderLists(); }
+  });
+  function render() {
+    const ids = [...CL.list.ids()];
+    const missing = ids.filter(id => !byId.has(id)).length;
+    let recs = ids.map(id => byId.get(id)).filter(Boolean);
+    const s = sortEl.value;
+    if (s === "new") recs.sort((a, b) => ((b.y || 0) - (a.y || 0)) || (b.d || "").localeCompare(a.d || ""));
+    else if (s === "old") recs.sort((a, b) => ((a.y || 0) - (b.y || 0)) || (a.d || "").localeCompare(b.d || ""));
+    else if (s === "cited") recs.sort((a, b) => ((b.cit ?? -1) - (a.cit ?? -1)));
+    else recs.reverse();
+    document.getElementById("count").textContent = `${recs.length} paper${recs.length === 1 ? "" : "s"}` + (missing ? ` (${missing} no longer in the database)` : "");
+    listEl.innerHTML = recs.length ? recs.map(r => CL.paperCard(r)).join("") : '<div class="empty">Your list is empty. Star papers on the <a href="publications.html">publications page</a>.</div>';
+  }
+  sortEl.onchange = render;
+  CL.bindStars(listEl);
+  document.getElementById("exportwrap").innerHTML = CL.exportMenu("exp");
+  CL.bindExport(document.getElementById("exportwrap"), () => [...CL.list.ids()].map(id => byId.get(id)).filter(Boolean), "canlab-my-list");
+  document.getElementById("export").onclick = () => { const io = document.getElementById("io"); io.hidden = false; document.getElementById("iotext").value = CL.list.export(); document.getElementById("iomsg").textContent = "Copy this text and keep it, or paste it on another device with Import."; document.getElementById("iotext").select(); };
+  document.getElementById("import").onclick = () => { const io = document.getElementById("io"); io.hidden = false; document.getElementById("iotext").value = ""; document.getElementById("iomsg").textContent = "Paste an exported list, then click Load. Papers are added to your current stars."; document.getElementById("iotext").focus(); };
+  document.getElementById("load").onclick = () => { try { const j = JSON.parse(document.getElementById("iotext").value); const ids = Array.isArray(j) ? j : j.ids; if (!Array.isArray(ids)) throw new Error("no ids"); CL.list.add(ids.filter(x => typeof x === "string")); document.getElementById("iomsg").textContent = `Loaded ${ids.length} ids.`; render(); } catch (e) { document.getElementById("iomsg").textContent = "That does not look like an exported list."; } };
+  document.getElementById("ioclose").onclick = () => { document.getElementById("io").hidden = true; };
+  document.getElementById("copy").onclick = async () => {
+    const recs = [...CL.list.ids()].map(id => byId.get(id)).filter(Boolean);
+    const text = recs.map(r => CL.cite(r)).join("\n\n");
+    try { await navigator.clipboard.writeText(text); document.getElementById("count").textContent += " · citations copied"; } catch (e) { document.getElementById("io").hidden = false; document.getElementById("iotext").value = text; document.getElementById("iomsg").textContent = "Copy the citations from the box."; }
+  };
+  document.getElementById("clear").onclick = () => { if (CL.list.size() && window.confirm("Remove all stars? Saved lists are kept.")) { CL.list.clear(); render(); } };
+  renderLists(); render();
+  document.addEventListener("cl:list", render);
+})().catch(e => { document.getElementById("list").innerHTML = `<div class="empty">Could not load data (${CL.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

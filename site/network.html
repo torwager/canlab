@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collaborator network | CANlab</title>
+<meta name="description" content="An interactive map of the people who have published with the Cognitive and Affective Neuroscience Lab (Tor Wager, Dartmouth), linked by co-authorship or by similarity of the topics and methods in their papers.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="CANlab">
+<meta property="og:title" content="Collaborator network | CANlab">
+<meta property="og:description" content="An interactive map of CANlab's co-authors: current members, alumni and collaborators, linked by shared papers or by similar research profiles.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://torwager.github.io/canlab/network.html">
+<meta property="og:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<link rel="canonical" href="https://torwager.github.io/canlab/network.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .net-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 1rem; align-items: start; }
+  @media (max-width: 900px) { .net-wrap { grid-template-columns: 1fr; } }
+  .net { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; height: min(80vh, 880px); box-shadow: var(--shadow); }
+  .net svg { width: 100%; height: 100%; display: block; cursor: grab; }
+  .net svg:active { cursor: grabbing; }
+  .net .link { stroke: var(--line-2); stroke-opacity: .7; }
+  .net .link.w1 { stroke-opacity: .25; }
+  .net .link.sim { stroke: var(--steel); stroke-opacity: .35; }
+  .net .link.wager { stroke: var(--amber); stroke-opacity: .3; }
+  .net .link.hi { stroke: var(--amber-deep); stroke-opacity: 1; }
+  .net .link.dim { stroke-opacity: .08; }
+  .net .node circle { fill: var(--line-2); stroke: var(--surface); stroke-width: 1.5px; cursor: pointer; }
+  .net .node.cur circle { fill: var(--amber); }
+  .net .node.alum circle { fill: var(--steel); }
+  .net .node.pi circle { fill: var(--amber-deep); }
+  .net .node.hi circle { stroke: var(--ink); stroke-width: 2.5px; }
+  .net .node.dim { opacity: .25; }
+  .net .node text { font-size: 11px; fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
+  .net .node text.minor { display: none; }
+  .net.zoomed .node text.minor, .net .node.hi text.minor, .net .node.nb text.minor { display: block; }
+  .toolbar { position: absolute; top: .7rem; left: .7rem; right: .7rem; display: flex; gap: .4rem; flex-wrap: wrap; z-index: 2; align-items: center; }
+  .toolbar .btn { font-size: .8rem; padding: .45em .9em; }
+  .toolbar .btn.on { background: var(--amber); border-color: transparent; color: #1a2332; }
+  .toolbar input, .toolbar select { font: inherit; font-size: .8rem; padding: .45em .8em; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); max-width: 100%; }
+  .zoomctl { position: absolute; right: .8rem; top: 3.6rem; display: flex; flex-direction: column; gap: .3rem; z-index: 2; }
+  @media (max-width: 900px) { .zoomctl { top: auto; bottom: 3.6rem; } }
+  .zoomctl .btn { width: 36px; height: 36px; padding: 0; justify-content: center; font-size: 1.15rem; border-radius: 10px; }
+  .legend { position: absolute; left: .8rem; right: .8rem; bottom: .7rem; font-size: .76rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: .3rem .9rem; align-items: center; pointer-events: none; }
+  .legend > span { background: color-mix(in srgb, var(--surface) 85%, transparent); padding: .3rem .6rem; border-radius: 8px; display: inline-flex; align-items: center; gap: .4em; }
+  .legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; background: var(--line-2); }
+  .legend i.cur { background: var(--amber); }
+  .legend i.alum { background: var(--steel); }
+  .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1rem 1.1rem; min-height: 200px; font-size: .9rem; position: sticky; top: 88px; max-height: calc(100vh - 100px); overflow-y: auto; }
+  .panel h3 { margin: 0 0 .2rem; }
+  .panel .kv { color: var(--muted); font-size: .82rem; margin-bottom: .6rem; }
+  .panel ul { padding-left: 1.1rem; margin: .3rem 0; }
+  .panel li { margin: .25rem 0; }
+  .panel .chips { display: flex; flex-wrap: wrap; gap: .25rem; margin: .4rem 0 .6rem; }
+  .panel .member { display: inline-flex; align-items: center; gap: .4em; font-size: .78rem; font-weight: 600; padding: .15rem .55rem; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); margin-bottom: .5rem; }
+  .panel .member.cur { background: var(--amber-soft); color: var(--ink); }
+  .panel .member.alum { background: var(--steel-soft); color: var(--steel-deep); }
+  .panel.pinned { border-color: var(--amber-deep); box-shadow: 0 0 0 2px var(--amber-soft); }
+  .pinnote { font-size: .76rem; color: var(--amber-deep); margin-bottom: .4rem; }
+  .intro { max-width: 78ch; color: var(--ink-2); margin-bottom: 1rem; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head" style="margin-bottom:.6rem"><p class="eyebrow">Collaborator network</p>
+    <p class="intro">Everyone who appears as an author on at least <span id="minp">3</span> of the lab's papers, shown as a map. <b>Co-authorship</b> links two people who have published together (thicker means more shared papers); <b>similarity</b> links people whose papers cover similar topics and methods, judged from the tags and keywords of their papers. Tor Wager is on nearly every paper, so his links are hidden by default; the <b>Show links to Wager</b> button restores them. Nodes are coloured by lab membership: current members in amber, alumni in blue, other collaborators in grey. Drag nodes, zoom with the buttons or the scroll wheel, hover over a node or link for details, and click a node to pin its details while you browse its papers. The keyword menu rebuilds the map from only the papers carrying that tag.</p>
+  </div>
+  <div class="net-wrap">
+    <div class="net" id="net">
+      <div class="toolbar">
+        <button class="btn on" id="mode-co">Co-authorship</button>
+        <button class="btn" id="mode-sim">Similarity</button>
+        <button class="btn" id="wager" aria-pressed="false" title="Include Tor Wager's links in the layout">Show links to Wager</button>
+        <select id="kw" aria-label="Restrict to papers tagged with"><option value="">All papers</option></select>
+        <input id="find" type="search" list="names" placeholder="Find a person…" aria-label="Find a person" autocomplete="off" style="width:160px">
+        <datalist id="names"></datalist>
+        <button class="btn" id="reset">Reset view</button>
+      </div>
+      <div class="zoomctl"><button class="btn" id="zin" aria-label="Zoom in" title="Zoom in">+</button><button class="btn" id="zout" aria-label="Zoom out" title="Zoom out">−</button></div>
+      <svg id="svg" role="img" aria-label="Force-directed graph of the lab's co-authors"></svg>
+      <div class="legend" id="legend"><span><i class="cur"></i>Current lab member</span><span><i class="alum"></i>Lab alumni</span><span><i></i>Other collaborator</span><span id="legend-links">Node size = papers · link width = co-authored papers</span></div>
+    </div>
+    <aside class="panel" id="panel"></aside>
+  </div>
+  <p class="small muted" style="margin-top:.8rem" id="note"></p>
+</main>
+<div id="site-footer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  const { state } = await CL.loadCore();
+  const esc = CL.esc, panel = document.getElementById("panel"), box = document.getElementById("net");
+  const fu = document.getElementById("foot-updated"); if (fu) fu.textContent = "Data updated " + state.stats.updated + ".";
+  const papers = state.index;
+  const isWager = a => /^Wager T/.test(a);
+  const MAX_NODES = 400, TAG_AXES = ["topic", "approach"];
+  // Tor Wager appears under more than one initials string (e.g. "Wager TD", "Wager T"); fold the variants into the most common one
+  const wagerCounts = new Map(); for (const r of papers) for (const a of (r.au || [])) if (isWager(a)) wagerCounts.set(a, (wagerCounts.get(a) || 0) + 1);
+  const WAGER = [...wagerCounts].sort((a, b) => b[1] - a[1]).map(([a]) => a)[0] || "Wager TD";
+  const canon = a => isWager(a) ? WAGER : a;
+
+  // ----- lab membership: match "Surname II" author strings against people.json by surname + first initial -----
+  let people = [];
+  try { people = await CL.getJSON("data/people.json"); } catch (e) { people = []; }
+  const norm = s => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’'‘`.]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+  const splitAu = a => { const p = a.trim().split(" "); const last = p[p.length - 1]; return p.length > 1 && /^[A-Z]{1,4}$/.test(last) ? { sur: norm(p.slice(0, -1).join(" ")), ini: last[0].toLowerCase() } : { sur: norm(a), ini: "" }; };
+  const memberIndex = new Map();
+  for (const p of people) {
+    const toks = norm(p.name).split(" ").filter(Boolean); if (toks.length < 2) continue;
+    const ini = toks[0][0];
+    for (let i = 1; i < toks.length; i++) { const key = toks.slice(i).join(" ") + "|" + ini; if (!memberIndex.has(key) || p.current) memberIndex.set(key, p); }
+  }
+  const memberCache = new Map();
+  function member(a) {
+    if (memberCache.has(a)) return memberCache.get(a);
+    const { sur, ini } = splitAu(a); const p = ini ? memberIndex.get(sur + "|" + ini) : null;
+    memberCache.set(a, p || null); return p || null;
+  }
+  const kindOf = a => { if (isWager(a)) return "pi"; const p = member(a); return p ? (p.current ? "cur" : "alum") : ""; };
+
+  // ----- keyword menu (grouped by axis) -----
+  const kwSel = document.getElementById("kw");
+  for (const ax of TAG_AXES) {
+    const def = state.axes[ax]; if (!def) continue;
+    const counts = {}; for (const r of papers) for (const v of ((r.tags || {})[ax] || [])) counts[v] = (counts[v] || 0) + 1;
+    const og = document.createElement("optgroup"); og.label = def.label;
+    for (const v of def.values) if ((counts[v.id] || 0) >= 5) og.appendChild(new Option(`${v.label} (${counts[v.id]})`, ax + ":" + v.id));
+    if (og.children.length) kwSel.appendChild(og);
+  }
+  const params = new URLSearchParams(location.search);
+  if (params.get("kw") && [...kwSel.options].some(o => o.value === params.get("kw"))) kwSel.value = params.get("kw");
+  let wagerOn = params.get("wager") === "1";
+
+  // ----- graph construction, in the browser -----
+  function buildGraph(subset) {
+    const minPapers = subset.length === papers.length ? 3 : Math.max(2, Math.min(3, Math.round(subset.length / 60)));
+    const papersOf = new Map();
+    for (const r of subset) for (const a of new Set((r.au || []).map(canon))) { if (!papersOf.has(a)) papersOf.set(a, []); papersOf.get(a).push(r); }
+    const names = [...papersOf.entries()].filter(([, ps]) => ps.length >= minPapers).sort((a, b) => b[1].length - a[1].length).slice(0, MAX_NODES).map(([a]) => a);
+    const idx = new Map(names.map((a, i) => [a, i]));
+    const co = new Map(), shared = new Map();
+    for (const r of subset) {
+      const au = [...new Set((r.au || []).map(canon).filter(a => idx.has(a)))].sort();
+      for (let i = 0; i < au.length; i++) for (let j = i + 1; j < au.length; j++) {
+        const k = au[i] + "|" + au[j]; co.set(k, (co.get(k) || 0) + 1);
+        if (!shared.has(k)) shared.set(k, []);
+        if (shared.get(k).length < 6) shared.get(k).push(r);
+      }
+    }
+    const prof = new Map();
+    for (const a of names) {
+      const c = new Map();
+      for (const r of papersOf.get(a)) {
+        for (const ax of TAG_AXES) for (const v of ((r.tags || {})[ax] || [])) c.set(ax + ":" + v, (c.get(ax + ":" + v) || 0) + 1);
+        for (const k of (r.kw || [])) c.set("kw:" + k.toLowerCase(), (c.get("kw:" + k.toLowerCase()) || 0) + 1);
+      }
+      const n = Math.sqrt([...c.values()].reduce((s, v) => s + v * v, 0)) || 1;
+      prof.set(a, new Map([...c].map(([k, v]) => [k, v / n])));
+    }
+    const sim = [];
+    for (let i = 0; i < names.length; i++) {
+      const pa = prof.get(names[i]); const cands = [];
+      for (let j = i + 1; j < names.length; j++) { const pb = prof.get(names[j]); let dot = 0; for (const [k, v] of pa) { const w = pb.get(k); if (w) dot += v * w; } if (dot > 0.25) cands.push([dot, j]); }
+      cands.sort((a, b) => b[0] - a[0]);
+      for (const [dot, j] of cands.slice(0, 6)) sim.push({ s: i, t: j, w: Math.round(dot * 1000) / 1000, wager: isWager(names[i]) || isWager(names[j]) });
+    }
+    const topTags = a => { const c = new Map(); for (const r of papersOf.get(a)) for (const ax of TAG_AXES) for (const v of ((r.tags || {})[ax] || [])) c.set(ax + ":" + v, (c.get(ax + ":" + v) || 0) + 1); return [...c].sort((x, y) => y[1] - x[1]).slice(0, 8).map(([k, n]) => [k.split(":")[0], k.split(":")[1], n]); };
+    const nodes = names.map((a, i) => { const ps = papersOf.get(a); const ys = ps.map(p => p.y).filter(Boolean); return { id: i, rank: i, name: a, kind: kindOf(a), person: member(a), n: ps.length, y0: ys.length ? Math.min(...ys) : null, y1: ys.length ? Math.max(...ys) : null, tags: topTags(a), papers: ps.slice().sort((p, q) => (q.y || 0) - (p.y || 0)).slice(0, 8) }; });
+    const coauthor = [...co].map(([k, n]) => { const [a, b] = k.split("|"); return { s: idx.get(a), t: idx.get(b), w: n, papers: shared.get(k), wager: isWager(a) || isWager(b) }; });
+    return { minPapers, nodes, coauthor, similarity: sim };
+  }
+
+  // ----- rendering -----
+  const svg = d3.select("#svg");
+  let W = box.clientWidth, H = box.clientHeight;
+  const g = svg.append("g"); const linkLayer = g.append("g"), nodeLayer = g.append("g");
+  const zoom = d3.zoom().scaleExtent([0.25, 6]).on("zoom", e => { g.attr("transform", e.transform); box.classList.toggle("zoomed", e.transform.k > 1.7); });
+  svg.call(zoom);
+  let G, nodes, byId, r, mode = "coauthor", pinned = null, sim = null, link = linkLayer.selectAll("line"), node = nodeLayer.selectAll("g");
+  const rad = d => d.kind === "pi" ? 24 : r(d.n);
+
+  function syncUrl() { const p = new URLSearchParams(location.search); const kw = kwSel.value; if (kw) p.set("kw", kw); else p.delete("kw"); if (wagerOn) p.set("wager", "1"); else p.delete("wager"); history.replaceState(null, "", location.pathname + (p.toString() ? "?" + p : "")); }
+  function build() {
+    const kw = kwSel.value; const [ax, val] = kw ? kw.split(":") : [null, null];
+    const subset = kw ? papers.filter(p => ((p.tags || {})[ax] || []).includes(val)) : papers;
+    G = buildGraph(subset);
+    document.getElementById("minp").textContent = G.minPapers;
+    const nCur = G.nodes.filter(n => n.kind === "cur").length, nAlum = G.nodes.filter(n => n.kind === "alum").length;
+    document.getElementById("note").textContent = (kw ? `Showing ${G.nodes.length} people with at least ${G.minPapers} papers among the ${subset.length} papers tagged “${CL.label(ax, val)}”` : `Showing ${G.nodes.length} people with at least ${G.minPapers} papers`) + ` (${nCur} current lab member${nCur === 1 ? "" : "s"}, ${nAlum} alumni). Names are author strings as they appear on the papers (surname plus initials), so two people who share a name are merged and one person whose initials vary between papers may appear twice. Lab membership is matched from the people list by surname and first initial. The map is computed in your browser from the current bibliography.`;
+    nodes = G.nodes; byId = new Map(nodes.map(n => [n.id, n]));
+    const maxN = d3.max(nodes.filter(n => n.kind !== "pi"), n => n.n) || 10;
+    r = d3.scaleSqrt().domain([G.minPapers, Math.max(G.minPapers + 1, maxN)]).range([3.5, 20]).clamp(true);
+    document.getElementById("names").innerHTML = nodes.map(n => `<option value="${esc(n.name)}">`).join("");
+    if (sim) sim.stop();
+    linkLayer.selectAll("*").remove(); nodeLayer.selectAll("*").remove(); link = linkLayer.selectAll("line"); node = nodeLayer.selectAll("g");
+    sim = d3.forceSimulation(nodes).force("charge", d3.forceManyBody().strength(-260).distanceMax(420)).force("center", d3.forceCenter(W / 2, H / 2)).force("collide", d3.forceCollide(n => rad(n) + 6)).force("x", d3.forceX(W / 2).strength(.02)).force("y", d3.forceY(H / 2).strength(.03));
+    sim.on("tick", () => { link.attr("x1", d => d.source.x).attr("y1", d => d.source.y).attr("x2", d => d.target.x).attr("y2", d => d.target.y); node.attr("transform", d => `translate(${d.x},${d.y})`); });
+    pinned = null; render(); idle();
+    syncUrl();
+  }
+  function edges() { return (mode === "coauthor" ? G.coauthor : G.similarity).filter(e => wagerOn || !e.wager).map(e => ({ source: e.s, target: e.t, w: e.w, wager: e.wager, papers: e.papers || null })); }
+  function render() {
+    const es = edges();
+    link = link.data(es, d => (d.source.id ?? d.source) + "-" + (d.target.id ?? d.target)); link.exit().remove();
+    link = link.enter().append("line").merge(link)
+      .attr("class", d => "link" + (mode === "similarity" ? " sim" : "") + (mode === "coauthor" && d.w === 1 ? " w1" : "") + (d.wager ? " wager" : ""))
+      .attr("stroke-width", d => mode === "coauthor" ? Math.min(7, .6 + d.w * 1.1) : .8 + d.w * 3)
+      .on("mouseenter", (ev, d) => { if (pinned) return; hi(null, d); showLink(d); }).on("mouseleave", () => { if (!pinned) { hi(null, null); idle(); } });
+    node = node.data(nodes, d => d.id); node.exit().remove();
+    const enter = node.enter().append("g").attr("class", d => "node" + (d.kind ? " " + d.kind : "")).call(d3.drag().on("start", (ev, d) => { if (!ev.active) sim.alphaTarget(.3).restart(); d.fx = d.x; d.fy = d.y; }).on("drag", (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on("end", (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+    enter.append("circle").attr("r", d => rad(d));
+    enter.append("text").attr("dy", d => rad(d) + 12).attr("text-anchor", "middle").text(d => d.name).attr("class", d => d.rank < 60 || d.kind === "cur" ? "lbl major" : "lbl minor");
+    enter.on("mouseenter", (ev, d) => { if (!pinned) { hi(d, null); showNode(d, false); } }).on("mouseleave", () => { if (!pinned) { hi(null, null); idle(); } })
+      .on("click", (ev, d) => { ev.stopPropagation(); pin(d); });
+    node = enter.merge(node);
+    // Wager's links, when shown, are weak so the map keeps its structure instead of collapsing into a star
+    sim.force("link", d3.forceLink(es).id(d => d.id)
+      .distance(d => d.wager ? 220 : (mode === "coauthor" ? 130 - Math.min(60, d.w * 8) : 170 - d.w * 90))
+      .strength(d => d.wager ? .02 : (mode === "coauthor" ? Math.min(.9, .15 + d.w * .1) : d.w * .8)));
+    sim.alpha(.9).restart();
+  }
+  function pin(d) { if (pinned === d) { pinned = null; hi(null, null); idle(); return; } pinned = d; hi(d, null); showNode(d, true); }
+  function hi(n, l) {
+    if (!n && !l) { node.classed("hi", false).classed("nb", false).classed("dim", false); link.classed("hi", false).classed("dim", false); return; }
+    if (n) {
+      const nb = new Set([n.id]); link.each(d => { if (d.source.id === n.id) nb.add(d.target.id); if (d.target.id === n.id) nb.add(d.source.id); });
+      node.classed("hi", d => d.id === n.id).classed("nb", d => nb.has(d.id) && d.id !== n.id).classed("dim", d => !nb.has(d.id));
+      link.classed("hi", d => d.source.id === n.id || d.target.id === n.id).classed("dim", d => !(d.source.id === n.id || d.target.id === n.id));
+    } else {
+      node.classed("nb", false).classed("dim", d => d.id !== l.source.id && d.id !== l.target.id).classed("hi", d => d.id === l.source.id || d.id === l.target.id);
+      link.classed("hi", d => d === l).classed("dim", d => d !== l);
+    }
+  }
+  const chip = (ax, v) => `<span class="chip static" style="${CL.chipColors(ax, v)}">${esc(CL.label(ax, v))}</span>`;
+  function memberBadge(d) {
+    if (d.kind === "pi") return `<div><span class="member cur">Principal investigator</span></div>`;
+    if (!d.person) return "";
+    const sec = d.person.section ? ` · ${esc(d.person.section)}` : "";
+    return `<div><a class="member ${d.kind}" href="people.html" style="text-decoration:none">${d.kind === "cur" ? "Current lab member" : "Lab alumni"}${sec}</a></div>`;
+  }
+  function showNode(d, isPinned) {
+    panel.classList.toggle("pinned", !!isPinned);
+    const deg = edges().filter(e => (e.source.id ?? e.source) === d.id || (e.target.id ?? e.target) === d.id).length;
+    const degNote = d.kind === "pi" && !wagerOn ? "links hidden (use “Show links to Wager”)" : `${deg} ${mode === "coauthor" ? "co-author" : "similar researcher"}${deg === 1 ? "" : "s"} shown`;
+    panel.innerHTML = `${isPinned ? '<div class="pinnote">Pinned. Click the node again, or empty space on the map, to release.</div>' : ""}<h3>${esc(d.person ? d.person.name : d.name)}</h3>${d.person ? `<div class="kv" style="margin-bottom:.3rem">${esc(d.name)}</div>` : ""}${memberBadge(d)}<div class="kv">${d.n} paper${d.n === 1 ? "" : "s"}${d.y0 ? ` · ${d.y0}–${d.y1}` : ""} · ${degNote}</div>
+      <div class="chips">${d.tags.map(([ax, v]) => chip(ax, v)).join("")}</div>
+      <div class="small muted">Recent papers</div><ul>${d.papers.map(p => `<li><a href="papers/${encodeURIComponent(p.id)}.html">${esc(p.t)}</a> <span class="muted">(${p.y || ""})</span></li>`).join("")}</ul>
+      <p class="small"><a href="publications.html?author=${encodeURIComponent(d.name)}">All ${d.n} paper${d.n === 1 ? "" : "s"} by this author →</a></p>`;
+  }
+  function showLink(l) {
+    const a = byId.get(l.source.id ?? l.source), b = byId.get(l.target.id ?? l.target);
+    panel.classList.remove("pinned");
+    if (mode === "coauthor") panel.innerHTML = `<h3>${esc(a.name)} &amp; ${esc(b.name)}</h3><div class="kv">${l.w} co-authored paper${l.w === 1 ? "" : "s"}</div><ul>${(l.papers || []).map(p => `<li><a href="papers/${encodeURIComponent(p.id)}.html">${esc(p.t)}</a> <span class="muted">(${p.y || ""})</span></li>`).join("")}</ul>${l.w > (l.papers || []).length ? `<p class="small muted">and ${l.w - l.papers.length} more</p>` : ""}`;
+    else panel.innerHTML = `<h3>${esc(a.name)} ~ ${esc(b.name)}</h3><div class="kv">Research-profile similarity ${Math.round(l.w * 100)}% (cosine of tag and keyword profiles)</div><div class="small muted">Shared emphases</div><div class="chips">${a.tags.filter(t => b.tags.some(u => u[0] === t[0] && u[1] === t[1])).slice(0, 8).map(([ax, v]) => chip(ax, v)).join("") || '<span class="muted small">none among the top tags</span>'}</div>`;
+  }
+  function idle() { panel.classList.remove("pinned"); panel.innerHTML = `<h3>Hover over a person</h3><p class="muted small">Details about the person or the connection appear here. Click a node to pin its details so you can open its papers; click it again, or empty space on the map, to release.</p><p class="muted small">Amber nodes are current lab members, blue nodes are alumni, grey nodes are collaborators from other groups.</p>`; }
+  function setMode(m) { mode = m; document.getElementById("mode-co").classList.toggle("on", m === "coauthor"); document.getElementById("mode-sim").classList.toggle("on", m === "similarity"); document.getElementById("legend-links").textContent = m === "coauthor" ? "Node size = papers · link width = co-authored papers" : "Node size = papers · link = similar research profile"; pinned = null; render(); hi(null, null); idle(); }
+  function setWager(on) { wagerOn = on; const b = document.getElementById("wager"); b.classList.toggle("on", on); b.setAttribute("aria-pressed", String(on)); pinned = null; render(); hi(null, null); idle(); syncUrl(); }
+  document.getElementById("mode-co").onclick = () => setMode("coauthor");
+  document.getElementById("mode-sim").onclick = () => setMode("similarity");
+  document.getElementById("wager").onclick = () => setWager(!wagerOn);
+  document.getElementById("wager").classList.toggle("on", wagerOn); document.getElementById("wager").setAttribute("aria-pressed", String(wagerOn));
+  document.getElementById("reset").onclick = () => { svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity); pinned = null; hi(null, null); idle(); document.getElementById("find").value = ""; };
+  document.getElementById("zin").onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1.5);
+  document.getElementById("zout").onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.5);
+  svg.on("click", () => { pinned = null; hi(null, null); idle(); });
+  kwSel.onchange = build;
+  const findEl = document.getElementById("find");
+  findEl.addEventListener("input", () => {
+    const q = norm(findEl.value);
+    if (!q) { pinned = null; hi(null, null); idle(); return; }
+    const full = n => n.person ? norm(n.person.name) : "";
+    const m = nodes.find(n => norm(n.name) === q || full(n) === q) || nodes.find(n => norm(n.name).startsWith(q) || full(n).startsWith(q)) || nodes.find(n => norm(n.name).includes(q) || full(n).includes(q));
+    if (!m) { node.classed("dim", true).classed("hi", false); link.classed("dim", true); panel.classList.remove("pinned"); panel.innerHTML = `<h3>No match</h3><p class="muted small">Nobody with at least ${G.minPapers} papers here matches “${esc(findEl.value)}”. Try the <a href="publications.html?author=${encodeURIComponent(findEl.value.trim())}">author search in the publications list</a>.</p>`; return; }
+    pinned = m; hi(m, null); showNode(m, true);
+    const t = d3.zoomTransform(svg.node()); const k = Math.max(1, t.k);
+    if (m.x != null) svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - m.x * k, H / 2 - m.y * k).scale(k));
+  });
+  window.addEventListener("resize", () => { W = box.clientWidth; H = box.clientHeight; if (sim) sim.force("center", d3.forceCenter(W / 2, H / 2)).force("x", d3.forceX(W / 2).strength(.02)).force("y", d3.forceY(H / 2).strength(.03)).alpha(.3).restart(); });
+  build();
+})().catch(e => { document.getElementById("panel").innerHTML = `<div class="empty">Could not build the graph (${CL.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

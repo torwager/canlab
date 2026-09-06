@@ -1,0 +1,25 @@
+{
+  // CANlab community API: GitHub sign-in, starred lists, named lists, community picks.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "canlab-community",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-03",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "kv_namespaces": [
+    // `npx wrangler kv namespace create STORE` prints the id.
+    { "binding": "STORE", "id": "REPLACE_WITH_KV_ID" }
+  ],
+  "vars": {
+    // An Origin header is scheme+host only, so SITE_ORIGIN must not include a path.
+    // SITE_PATH is appended to it when building return URLs (e.g. after sign-in).
+    "SITE_ORIGIN": "https://torwager.github.io",
+    "SITE_PATH": "/canlab",
+    // From https://github.com/settings/developers (OAuth Apps). The secret is set with `wrangler secret put`.
+    "GITHUB_CLIENT_ID": "REPLACE_WITH_CLIENT_ID"
+  }
+  // No routes block: the worker is served from https://canlab-community.<account>.workers.dev.
+  // To use a custom domain on a Cloudflare DNS zone instead (DNS is added automatically on deploy), add:
+  // "routes": [ { "pattern": "community.canlab.science", "custom_domain": true } ]
+  // and update the GitHub OAuth callback URL and site/assets/config.js `communityApi` to match.
+}

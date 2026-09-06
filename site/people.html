@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People | CANlab</title>
+<meta name="description" content="The people of the Cognitive and Affective Neuroscience Lab at Dartmouth College: Tor Wager, postdocs, graduate students, staff, undergraduate research assistants, visiting scholars, and alumni.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="CANlab">
+<meta property="og:title" content="People | CANlab">
+<meta property="og:description" content="Tor Wager and the members and alumni of the Cognitive and Affective Neuroscience Lab.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://torwager.github.io/canlab/people.html">
+<meta property="og:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<link rel="canonical" href="https://torwager.github.io/canlab/people.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .sec-nav { display: flex; flex-wrap: wrap; gap: .4rem; margin: .4rem 0 1.4rem; }
+  .sec-nav a { font-size: .84rem; padding: .35em .8em; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink-2); font-weight: 500; }
+  .sec-nav a:hover { border-color: var(--amber-deep); color: var(--ink); }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">People</p>
+    <h1>The lab</h1>
+    <p>Click a person to read their bio. The lab has been at Dartmouth College since 2019, and before that at the University of Colorado Boulder and Columbia University; alumni from all three are listed below.</p>
+  </div>
+  <nav class="sec-nav" id="secnav" aria-label="Sections"></nav>
+  <div id="pi"></div>
+  <div id="people"><div class="spinner">Loading…</div></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  const people = await CL.getJSON("data/people.json");
+  const esc = CL.esc;
+  const pi = people.find(p => p.section === "Principal Investigator");
+  const ORDER = ["Postdocs", "Graduate Students", "Staff", "Undergraduate Research Assistants", "Visiting Scholars", "Former Postdocs and Graduate Students", "Former Visiting Faculty and Scholars", "Former Staff and Undergraduate RAs"];
+  const secs = [...new Set(people.map(p => p.section))].filter(s => s !== "Principal Investigator").sort((a, b) => (ORDER.indexOf(a) + 1 || 99) - (ORDER.indexOf(b) + 1 || 99));
+  const sid = s => s.toLowerCase().replace(/[^a-z]+/g, "-").replace(/(^-|-$)/g, "");
+  document.getElementById("secnav").innerHTML = [`<a href="#pi">Principal investigator</a>`].concat(secs.map(s => `<a href="#${sid(s)}">${esc(s)}</a>`)).join("");
+  if (pi) document.getElementById("pi").innerHTML = `<h2 class="people-section" id="pi-h" style="margin-top:.4rem"><span>Principal investigator</span></h2><section class="pi rv in" id="pi">
+      <img src="assets/img/${esc(pi.img)}" alt="${esc(pi.name)}" width="240">
+      <div><h2>${esc(pi.name)}, PhD</h2><div class="role">${esc(pi.title || pi.role)}</div>${pi.bio.map(b => `<p>${esc(b)}</p>`).join("")}
+        <p>See the <a href="publications.html">publications page</a> and the <a href="https://canlab.github.io" target="_blank" rel="noopener">CANlab GitHub site</a> for papers, data, tools and code.</p>
+        <div class="links">${(pi.links || []).map(l => `<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("")}<a class="btn" href="publications.html?author=Wager%20TD">Publications</a></div></div></section>`;
+  const card = p => `<article class="person${p.current ? "" : " alum"}" id="${esc(p.id)}" tabindex="0" role="button" aria-expanded="false">
+      <div class="ph">${p.img ? `<img src="assets/img/${esc(p.img)}" alt="${esc(p.name)}" loading="lazy">` : ""}</div>
+      <div class="who"><b>${esc(p.name)}</b><span>${esc(p.role)}</span></div>
+      <div class="bio"><span class="close" data-close>Close ×</span><h3>${esc(p.name)}</h3><div class="role">${esc(p.role)}</div>${(p.bio || []).length ? p.bio.map(b => `<p>${esc(b)}</p>`).join("") : '<p class="muted">No bio on file.</p>'}
+        <div class="plinks">${(p.links || []).map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("")}<a href="publications.html?author=${encodeURIComponent(surnameKey(p.name))}">Publications with the lab</a></div></div>
+    </article>`;
+  function surnameKey(name) { const parts = name.replace(/\(.*?\)/g, "").trim().split(/\s+/); const sur = parts[parts.length - 1]; const ini = parts.slice(0, -1).map(w => w[0]).join(""); return sur + " " + ini; }
+  document.getElementById("people").innerHTML = secs.map(s => { const ps = people.filter(p => p.section === s); return `<h2 class="people-section" id="${sid(s)}"><span>${esc(s)}</span><span class="muted">${ps.length}</span></h2><div class="people-grid">${ps.map(card).join("")}</div>`; }).join("");
+  const grid = document.getElementById("people");
+  function open(el, on) { grid.querySelectorAll(".person.open").forEach(x => { if (x !== el) { x.classList.remove("open"); x.setAttribute("aria-expanded", "false"); } }); el.classList.toggle("open", on); el.setAttribute("aria-expanded", String(on)); if (on) { history.replaceState(null, "", "#" + el.id); el.scrollIntoView({ block: "nearest" }); } }
+  grid.addEventListener("click", e => { const el = e.target.closest(".person"); if (!el) return; if (e.target.closest("[data-close]")) { open(el, false); return; } if (e.target.closest("a")) return; if (!el.classList.contains("open")) open(el, true); });
+  grid.addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && e.target.classList.contains("person")) { e.preventDefault(); open(e.target, !e.target.classList.contains("open")); } if (e.key === "Escape") { const o = grid.querySelector(".person.open"); if (o) open(o, false); } });
+  if (location.hash) { const el = document.getElementById(location.hash.slice(1)); if (el && el.classList.contains("person")) open(el, true); else if (el) el.scrollIntoView({ block: "start" }); }
+})().catch(e => { document.getElementById("people").innerHTML = `<div class="empty">Could not load (${CL.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

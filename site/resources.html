@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tools & training | CANlab</title>
+<meta name="description" content="Open-source neuroimaging tools from CANlab (CanlabCore, Mediation Toolbox, MKDA meta-analysis, brain signature patterns, datasets), the Principles of fMRI book, Coursera fMRI courses, and fMRI methods chapters.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="CANlab">
+<meta property="og:title" content="Tools & training | CANlab">
+<meta property="og:description" content="Open-source neuroimaging toolboxes, brain signatures, datasets, the Principles of fMRI book and Coursera courses.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://torwager.github.io/canlab/resources.html">
+<meta property="og:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<link rel="canonical" href="https://torwager.github.io/canlab/resources.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .book { display: grid; grid-template-columns: auto 1fr; gap: 1.2rem; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; box-shadow: var(--shadow); max-width: 900px; }
+  .book .cover { width: 90px; height: 120px; border-radius: 6px; background: linear-gradient(160deg, var(--steel-deep), var(--steel)); color: #fff; font-family: var(--serif); display: grid; place-items: center; text-align: center; font-size: .8rem; padding: .5rem; box-shadow: 0 10px 20px -10px rgba(26,35,50,.5); }
+  .book h3 { margin: 0 0 .2rem; }
+  .book p { margin: 0 0 .5rem; color: var(--ink-2); font-size: .95rem; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Tools &amp; training</p>
+    <h1>Tools, courses and teaching materials</h1>
+    <p>The lab develops open-source software for neuroimaging analysis and shares brain signature patterns, atlases, paradigms and data. Tor Wager and Martin Lindquist also teach fMRI analysis through a textbook, two free Coursera courses and an annual hands-on workshop.</p>
+  </div>
+  <div id="content"><div class="spinner">Loading…</div></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  const r = await CL.getJSON("data/resources.json");
+  const esc = CL.esc;
+  const extra = xs => (xs || []).length ? `<div class="extra">${xs.map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)} ↗</a>`).join("")}</div>` : "";
+  document.getElementById("content").innerHTML = `
+    <div class="section" style="margin-top:.4rem"><h2>Book</h2></div>
+    ${r.books.map(b => `<div class="book rv in"><div class="cover">Principles of fMRI</div><div><h3><a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)} ↗</a></h3><p class="small muted" style="margin-bottom:.3rem">${esc(b.authors)}</p><p>${esc(b.blurb)}</p><a class="btn primary" href="${esc(b.url)}" target="_blank" rel="noopener">Get the book (PDF / e-book)</a></div></div>`).join("")}
+    <div class="section"><h2>Courses</h2><span class="muted">Free video lectures, self-quizzes and workshops</span></div>
+    <div class="res-grid">${r.courses.map(c => `<article class="res-card"><span class="prov">${esc(c.provider)}</span><h3><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></h3><p>${esc(c.blurb)}</p>${extra(c.extra)}</article>`).join("")}</div>
+    <div class="section"><h2>Open-source neuroimaging analysis tools</h2></div>
+    <p class="prose" style="margin-bottom:1rem">${esc(r.tools_intro)}</p>
+    <div class="res-grid">${r.tools.map(t => `<article class="res-card"><h3><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.title)} ↗</a></h3><p>${esc(t.blurb)}</p>${extra(t.extra)}</article>`).join("")}</div>
+    <div class="section"><h2>fMRI methods chapters</h2><span class="muted">${esc(r.chapters_intro)}</span></div>
+    <div class="res-list">${r.chapters.map(c => `<div class="res"><span class="name"><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a></span><span class="country">PDF ↗</span><span class="sub">${esc(c.where)}</span></div>`).join("")}</div>
+    <div class="section"><h2>Elsewhere</h2></div>
+    <div class="res-list">${r.other.map(o => `<div class="res"><span class="name"><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.title)}</a></span><span class="country">↗</span></div>`).join("")}
+      <div class="res"><span class="name"><a href="publications.html?approach=open_tools">Papers that release tools, data or atlases</a></span><span class="country">on this site</span></div>
+      <div class="res"><span class="name"><a href="https://scienceofplacebo.org" target="_blank" rel="noopener">Science of Placebo</a></span><span class="country">↗</span><span class="sub">A daily-updated research hub and searchable database of placebo and nocebo research, run by the lab.</span></div></div>`;
+})().catch(e => { document.getElementById("content").innerHTML = `<div class="empty">Could not load (${CL.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

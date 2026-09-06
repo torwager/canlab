@@ -1,0 +1,19 @@
+{
+ "intro": "We are always interested in hearing from curious, motivated people who want to study how beliefs, expectations and social context shape pain, emotion and the body.",
+ "openings": [
+  {"title": "Principal Neuroscientist: Evans Family Professor of Psychiatry and Neuroscience", "org": "Dartmouth Hitchcock / Dartmouth College", "url": "https://providers-dartmouth-hitchcock.icims.com/jobs/14566/principal-neuroscientist---evans-family-professor-of-psychiatry-and-neuroscience/job?mode=view&mobile=false&width=785&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240", "image": "2021_03_Screenshot-153.png", "kind": "faculty"},
+  {"title": "Undergraduate research assistants", "org": "Dartmouth College", "url": "https://forms.gle/EXa1Jd8Kxp87FazZ6", "image": "2022_07_DartUndergradRAPost.jpg", "kind": "undergraduate", "blurb": "Dartmouth undergraduates interested in joining the lab as research assistants can apply through this form."}
+ ],
+ "general": [
+  {"title": "Postdoctoral researchers", "blurb": "Postdoctoral positions are advertised as they open. Candidates with a background in neuroimaging, computational modelling, pain or affective neuroscience are encouraged to send a CV, a short statement of interests and the names of two references to Tor Wager."},
+  {"title": "Graduate students", "blurb": "Graduate students join through the Dartmouth Department of Psychological and Brain Sciences (Cognitive Neuroscience) PhD program. Mention CANlab and Tor Wager in your application.", "url": "https://pbs.dartmouth.edu/graduate"},
+  {"title": "Visiting scholars", "blurb": "We regularly host visiting faculty, postdocs and students for collaborative projects. Get in touch with a description of the project you have in mind."}
+ ],
+ "participate": {
+  "title": "Participate in a study",
+  "intro": "Research opportunities at Dartmouth College, Hanover NH.",
+  "studies": [
+   {"title": "Brain imaging study of a heat-management cream", "blurb": "Seeking healthy individuals 18+ years old for a clinical trial of a heat management cream. This brain imaging (fMRI) study includes 3 in-person sessions and a 40-60 minute online survey. Contribute to our understanding of pain management and receive up to $350 upon completion of all of the study's parts.", "screening_url": "https://dartmouth.co1.qualtrics.com/jfe/form/SV_1SLZ4isLqmRSKUe", "email": "canlabstudies@gmail.com", "compensation": "Up to $350"}
+  ]
+ }
+}

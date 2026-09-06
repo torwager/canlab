@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News | CANlab</title>
+<meta name="description" content="News from the Cognitive and Affective Neuroscience Lab at Dartmouth: press coverage, podcasts, awards and new findings, updated automatically.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="CANlab">
+<meta property="og:title" content="News | CANlab">
+<meta property="og:description" content="Press coverage, podcasts, awards and new findings from the lab.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://torwager.github.io/canlab/news.html">
+<meta property="og:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<link rel="canonical" href="https://torwager.github.io/canlab/news.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">News</p>
+    <h1>News and press</h1>
+    <p>Lab announcements and coverage of our work in the press, on radio and in podcasts. Posts written by the lab appear in full; the "In the media" feed is collected automatically every two days from news and podcast sources and links to the original outlet.</p>
+  </div>
+  <div class="tabs" role="tablist"><button class="on" data-tab="all" role="tab">All</button><button data-tab="post" role="tab">Lab posts</button><button data-tab="media" role="tab">In the media</button></div>
+  <div class="filter-top"><span class="count" id="count"></span><span class="small muted" id="updated" style="margin-left:auto"></span></div>
+  <div class="news-list" id="list"><div class="spinner">Loading…</div></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  const esc = CL.esc;
+  const posts = await CL.getJSON("data/news_posts.json");
+  let media = { items: [], updated: "" };
+  try { media = await CL.getJSON("data/news.json"); } catch (e) { /* feed not built yet */ }
+  const items = posts.map(p => ({ kind: "post", id: p.id, d: p.date, t: p.title, html: p.html, img: p.image, src: p.source_url })).concat((media.items || []).map(m => ({ kind: "media", id: m.id || m.url, d: m.date, t: m.title, url: m.url, source: m.source, snippet: m.snippet, mkind: m.kind })));
+  items.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
+  let tab = "all";
+  function render() {
+    const shown = items.filter(i => tab === "all" || i.kind === tab || (tab === "media" && i.kind === "media"));
+    document.getElementById("count").textContent = `${shown.length} item${shown.length === 1 ? "" : "s"}`;
+    document.getElementById("updated").textContent = media.updated ? `Media feed refreshed ${CL.fmtDate(media.updated)}.` : "";
+    document.getElementById("list").innerHTML = shown.length ? shown.map(i => i.kind === "post" ? `<article class="post${i.img ? " has-img" : ""}" id="${esc(i.id)}">
+        ${i.img ? `<div class="thumb"><img src="assets/img/${esc(i.img)}" alt="" loading="lazy"></div>` : ""}
+        <span class="date">${CL.fmtDate(i.d)}</span>
+        <h3>${esc(i.t)}</h3>
+        <div class="body">${i.html}</div>
+        <span class="src">Posted by the lab${i.src ? ` · <a href="${esc(i.src)}" target="_blank" rel="noopener">original post</a>` : ""}</span>
+      </article>` : `<article class="post">
+        <span class="date">${CL.fmtDate(i.d)}${i.mkind === "podcast" ? " · podcast" : ""}</span>
+        <h3><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.t)} ↗</a></h3>
+        ${i.snippet ? `<div class="body">${esc(i.snippet)}</div>` : ""}
+        <span class="src">${esc(i.source || "")}</span>
+      </article>`).join("") : '<div class="empty">Nothing here yet.</div>';
+    // drop thumbnails duplicated inside the post body
+    document.querySelectorAll(".post.has-img").forEach(p => { const t = p.querySelector(".thumb img"); p.querySelectorAll(".body img").forEach(im => { if (t && im.getAttribute("src") === t.getAttribute("src")) im.remove(); }); });
+  }
+  document.querySelector(".tabs").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; tab = b.dataset.tab; document.querySelectorAll(".tabs button").forEach(x => x.classList.toggle("on", x === b)); render(); });
+  render();
+  if (location.hash) { const el = document.getElementById(location.hash.slice(1)); if (el) el.scrollIntoView({ block: "start" }); }
+})().catch(e => { document.getElementById("list").innerHTML = `<div class="empty">Could not load (${CL.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

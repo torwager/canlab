@@ -1,0 +1,35 @@
+{
+ "books": [
+  {"title": "Principles of fMRI", "authors": "Tor D. Wager & Martin A. Lindquist", "url": "https://leanpub.com/principlesoffmri", "blurb": "A textbook on the physics, experimental design, preprocessing and statistical analysis of functional MRI, available as an e-book from Leanpub.", "kind": "book"}
+ ],
+ "courses": [
+  {"title": "Functional MRI 1", "provider": "Coursera", "url": "https://www.coursera.org/learn/functional-mri", "blurb": "Part 1 of an online Coursera course by Martin Lindquist and Tor Wager: free video lectures and self-quizzes covering image acquisition, experimental design and preprocessing.", "extra": [{"label": "Lectures on YouTube", "url": "https://www.youtube.com/watch?v=ZL-Tr1KSMKY&list=PLcvMDPDk-dSmTBejANv7kY2mFo1ni_gkA"}]},
+  {"title": "Functional MRI 2", "provider": "Coursera", "url": "https://www.coursera.org/learn/functional-mri-2", "blurb": "Part 2 of the Coursera course by Martin Lindquist and Tor Wager: the general linear model, multiple comparisons, connectivity, multivariate methods and reproducibility."},
+  {"title": "fMRI Image Acquisition and Analysis with SPM and ICA", "provider": "MIND Research Network", "url": "https://sites.google.com/dartmouth.edu/mind-fmri-course/home", "blurb": "A hands-on, immersive three-day fMRI analysis workshop with Vince Calhoun, Kent Kiehl and Tor Wager.", "extra": [{"label": "Course materials on GitHub", "url": "https://github.com/torwager/mindfmricourse"}]}
+ ],
+ "tools_intro": "CANlab develops open-source tools for neuroimaging analysis, hosted at canlab.github.io with linked GitHub repositories and step-by-step walkthroughs.",
+ "tools": [
+  {"title": "canlab.github.io", "url": "https://canlab.github.io/", "blurb": "The hub for CANlab analysis tools: linked repositories, walkthroughs and tutorials.", "extra": [{"label": "Repositories", "url": "https://canlab.github.io/repositories/"}, {"label": "Walkthroughs and tutorials", "url": "https://canlab.github.io/walkthroughs/"}]},
+  {"title": "Neuroimaging Pattern Masks", "url": "https://github.com/canlab/Neuroimaging_Pattern_Masks", "blurb": "Brain signature patterns (NPS, SIIPS, PINES and others), atlases of regions, and meta-analysis masks for neuroimaging data analysis.", "extra": [{"label": "CANlab Brain Patterns website", "url": "https://sites.google.com/dartmouth.edu/canlab-brainpatterns/home"}]},
+  {"title": "CANlab Core Tools", "url": "https://github.com/canlab/CanlabCore", "blurb": "Interactive, object-oriented data visualization and analysis, and multivariate prediction, in MATLAB."},
+  {"title": "CANlab Help Examples", "url": "https://github.com/canlab/CANlab_help_examples", "blurb": "Walkthroughs and help examples for CANlab Core, plus group analysis and prediction scripts."},
+  {"title": "Mediation Toolbox", "url": "https://github.com/canlab/MediationToolbox", "blurb": "Single- and multi-level mediation analysis, and mediation brain search (M3)."},
+  {"title": "MKDA neuroimaging meta-analysis", "url": "https://github.com/canlab/Canlab_MKDA_MetaAnalysis", "blurb": "Coordinate-based meta-analysis for neuroimaging using Multilevel Kernel Density Analysis and related statistical tools."},
+  {"title": "Robust Toolbox", "url": "https://github.com/canlab/RobustToolbox", "blurb": "Robust regression for second-level (group) analysis."},
+  {"title": "Paradigms", "url": "https://github.com/canlab/Paradigms_Public", "blurb": "Experimental paradigms, code and stimuli."},
+  {"title": "CANlab Datasets", "url": "https://github.com/canlab/CANlab_data_public", "blurb": "Datasets from published CANlab papers."},
+  {"title": "Preprocessing Pipeline", "url": "https://github.com/canlab/preprocess", "blurb": "The CANlab SPM-based fMRI preprocessing pipeline."}
+ ],
+ "chapters_intro": "There is some overlap across chapters, but each covers some unique topics.",
+ "chapters": [
+  {"title": "Fundamentals of Functional Neuroimaging", "where": "Handbook of Psychophysiology, 4th ed. (2017)", "url": "https://cpb-us-e1.wpmucdn.com/sites.dartmouth.edu/dist/2/2150/files/2019/12/2017_Geuter_Cambridge-University-Press.pdf"},
+  {"title": "Principles of functional Magnetic Resonance Imaging", "where": "Handbook of Neuroimaging Data Analysis (2014)", "url": "https://cpb-us-e1.wpmucdn.com/sites.dartmouth.edu/dist/2/2150/files/2019/12/2014_Lindquist_Handbook-of-Neuroimaging-Data-Analysis.pdf"},
+  {"title": "Essentials of Functional Magnetic Resonance Imaging", "where": "Handbook of Social Neuroscience (2011)", "url": "https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780195342161.001.0001/oxfordhb-9780195342161-e-006"},
+  {"title": "Essentials of Functional Neuroimaging", "where": "Handbook of Neuroscience for the Behavioral Sciences (2009)", "url": "https://www.researchgate.net/publication/229762108_Essentials_of_Functional_Neuroimaging"},
+  {"title": "Elements of Functional Neuroimaging", "where": "Handbook of Psychophysiology, 3rd ed. (2007)", "url": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.460.9879&rep=rep1&type=pdf"}
+ ],
+ "other": [
+  {"title": "A short list of representative papers by topic", "url": "https://docs.google.com/document/d/1w779MMQACsZFg9vAGs72Ppvm0U4nDWGIkxPDk6rwObo/edit?usp=sharing"},
+  {"title": "Tor Wager's Google Scholar profile", "url": "https://scholar.google.com/citations?user=8b7b-6EAAAAJ&hl=en"}
+ ]
+}

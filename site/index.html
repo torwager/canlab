@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CANlab · Cognitive and Affective Neuroscience Lab, Dartmouth</title>
+<meta name="description" content="The Cognitive and Affective Neuroscience Lab (Tor Wager, Dartmouth College) studies the neurophysiology of pain, emotion, stress and empathy, and how beliefs, expectations and social context shape the brain and body. Publications, people, research themes, tools and news.">
+<link rel="alternate" type="application/rss+xml" title="CANlab: new papers" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="CANlab">
+<meta property="og:title" content="CANlab · Cognitive and Affective Neuroscience Lab, Dartmouth">
+<meta property="og:description" content="How beliefs, expectations and social context shape pain, emotion and the body. Publications, people, research, tools and news from Tor Wager's lab at Dartmouth.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://torwager.github.io/canlab/">
+<meta property="og:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="CANlab: Cognitive and Affective Neuroscience Lab, Dartmouth College, with a brain-network graphic">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<link rel="canonical" href="https://torwager.github.io/canlab/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ResearchOrganization","name":"Cognitive and Affective Neuroscience Lab","alternateName":"CANlab","url":"https://torwager.github.io/canlab/","logo":"https://torwager.github.io/canlab/assets/icon-192.png","parentOrganization":{"@type":"CollegeOrUniversity","name":"Dartmouth College","url":"https://home.dartmouth.edu/"},"founder":{"@type":"Person","name":"Tor D. Wager","jobTitle":"Diana L. Taylor Distinguished Professor in Neuroscience","sameAs":["https://scholar.google.com/citations?user=8b7b-6EAAAAJ","https://github.com/torwager"]},"address":{"@type":"PostalAddress","addressLocality":"Hanover","addressRegion":"NH","addressCountry":"US"},"sameAs":["https://github.com/canlab","https://canlab.github.io","https://sites.dartmouth.edu/canlab/"]}
+</script>
+<style>
+  .curtain { position: relative; }
+  .curtain-media { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; z-index: 0; background: linear-gradient(160deg, var(--bg) 0%, var(--bg-2) 55%, var(--bg-3) 100%); }
+  .hero-grid { position: absolute; inset: 0; display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 2rem; padding: 72px var(--pad) 0; max-width: var(--max); margin: 0 auto; }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; align-content: center; gap: 1.2rem; padding-top: 88px; } }
+  .hero-copy h1 { font-size: clamp(2.2rem, 4.4vw, 3.5rem); margin-bottom: .35em; max-width: 13em; }
+  .hero-copy .lede { font-size: clamp(.98rem, 1.2vw, 1.08rem); color: var(--ink-2); max-width: 40em; margin: 0 0 1.4rem; line-height: 1.55; }
+  .hero-pill { display: inline-flex; align-items: center; gap: .6em; padding: .45em 1em .45em .6em; border-radius: 999px; background: color-mix(in srgb, var(--surface) 70%, transparent); border: 1px solid var(--line); font-size: .86rem; font-weight: 500; margin-bottom: 1.3rem; backdrop-filter: blur(6px); }
+  .hero-pill .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 4px rgba(233,185,73,.25); }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
+  .hero-stage { position: relative; display: grid; place-items: center; }
+  .hero-hint { position: absolute; right: var(--pad); bottom: 30px; z-index: 2; font-size: .8rem; color: var(--muted); display: flex; align-items: center; gap: .5em; pointer-events: none; }
+  .hero-hint .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); animation: pulse 2.2s infinite; }
+  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(233,185,73,.6);} 70% { box-shadow: 0 0 0 10px rgba(233,185,73,0);} }
+  .scroll-cue { position: absolute; left: 50%; bottom: 34px; transform: translateX(-50%); z-index: 3; }
+  .scroll-cue a { display: inline-flex; align-items: center; gap: .6em; padding: .7em 1.3em; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; box-shadow: 0 12px 28px -10px rgba(26,35,50,.55); transition: transform .3s var(--ease); }
+  .scroll-cue a:hover { transform: translateY(-2px); }
+  .scroll-cue a svg { width: 16px; height: 16px; animation: nudge 1.8s infinite; }
+  @keyframes nudge { 0%,100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+  @media (max-width: 720px) { .hero-hint { display: none; } .scroll-cue { display: none; } .curtain-media { height: auto; min-height: 100svh; } .hero-grid { position: relative; padding-bottom: 2rem; } .hero-canvas-wrap { width: min(100%, 420px); } }
+  .curtain-body { position: relative; z-index: 1; background: var(--bg); box-shadow: 0 -30px 60px -30px rgba(26,35,50,.18); border-top: 1px solid rgba(255,255,255,.7); }
+  .curtain-body::before { content: ""; display: block; height: 6px; background: linear-gradient(90deg, var(--amber), var(--amber-soft)); opacity: .9; }
+  @media (prefers-reduced-motion: reduce) { .curtain-media { position: relative; height: auto; min-height: 80vh; } }
+  .section { padding: clamp(56px, 8vw, 104px) 0; margin: 0; display: block; }
+  .section-tight { padding: clamp(36px, 5vw, 64px) 0; }
+  .section-head { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: clamp(28px, 4vw, 48px); align-items: end; }
+  @media (min-width: 900px) { .section-head { grid-template-columns: 1.1fr 1fr; gap: 3rem; } }
+  .section-head p { margin: 0; color: var(--ink-2); font-size: 1.08rem; }
+  .facts { display: grid; gap: 1.5rem; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.8rem 0; margin: 0 0 2rem; }
+  @media (min-width: 760px) { .facts { grid-template-columns: repeat(4, 1fr); } }
+  .facts dt { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: .3rem; }
+  .facts dd { margin: 0; font-family: var(--serif); font-size: 1.6rem; line-height: 1.2; }
+  .latest { display: grid; gap: .8rem; grid-template-columns: 1fr; }
+  @media (min-width: 860px) { .latest { grid-template-columns: repeat(3, 1fr); } }
+  .latest .paper { min-height: 100%; }
+  .darkstrip { background: var(--ink); color: #eef0f3; }
+  .darkstrip h2 { color: #fff; }
+  .darkstrip p { color: #b7bec9; }
+  .darkstrip .wrap { display: grid; gap: 2rem; grid-template-columns: 1fr; align-items: center; }
+  @media (min-width: 860px) { .darkstrip .wrap { grid-template-columns: 1.2fr 1fr; gap: 3rem; } }
+  .darkstrip .tools { display: grid; gap: .6rem; }
+  .darkstrip .tools a { display: block; padding: .8rem 1rem; border-radius: 12px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); color: #eef0f3; text-decoration: none; transition: background .2s; }
+  .darkstrip .tools a:hover { background: rgba(255,255,255,.12); }
+  .darkstrip .tools b { display: block; font-family: var(--serif); font-size: 1.05rem; }
+  .darkstrip .tools span { font-size: .85rem; color: #b7bec9; }
+  .labphoto { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); }
+  .labphoto img { width: 100%; display: block; }
+  .about-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; align-items: center; }
+  @media (min-width: 860px) { .about-grid { grid-template-columns: 1fr 1.1fr; } }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+<section class="curtain">
+  <div class="curtain-media" id="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="hero-pill"><span class="dot"></span> Cognitive and Affective Neuroscience Lab · Dartmouth College</span>
+        <h1>How beliefs and expectations shape the brain and body</h1>
+        <p class="lede">The Cognitive and Affective Neuroscience Lab, directed by Professor Tor Wager, studies the neurophysiology of affective processes—pain, emotion, stress, and empathy—and how they are shaped by cognitive and social influences. We are interested in how thoughts, beliefs, and expectations affect the brain and body. We use a range of techniques, including fMRI, psychophysiology, EEG, pharmacology, and computational modeling of brain networks and behavior. We are also dedicated to developing models for the analysis and synthesis of functional neuroimaging data, especially fMRI, and open sharing of tools and scientific data.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="publications.html">Publications <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="research.html">Research themes</a>
+          <a class="btn btn-ghost" href="people.html">People</a>
+        </div>
+      </div>
+      <div class="hero-stage">
+        <div class="hero-canvas-wrap" role="img" aria-label="An interactive brain network. Move your cursor over it to trigger cascades of activity."><canvas id="hero-canvas"></canvas></div>
+      </div>
+    </div>
+    <div class="hero-hint"><span class="pulse"></span> Move your cursor over the brain</div>
+    <div class="scroll-cue"><a href="#start">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a></div>
+  </div>
+
+  <div class="curtain-body" id="start">
+    <section class="section-tight">
+      <div class="wrap">
+        <dl class="facts rv" id="facts">
+          <div><dt>Publications</dt><dd class="tnum" id="f-papers">400+</dd></div>
+          <div><dt>Since</dt><dd class="tnum" id="f-since">2000</dd></div>
+          <div><dt>Citations (OpenAlex)</dt><dd class="tnum" id="f-cites">…</dd></div>
+          <div><dt>Lab members past &amp; present</dt><dd class="tnum" id="f-people">…</dd></div>
+        </dl>
+        <div class="section-head"><div class="rv"><p class="eyebrow">Sections</p><h2>Explore the lab</h2></div></div>
+        <div class="tiles">
+          <a class="tile glow rv" href="research.html"><div><div class="ic">◎</div><h3>Research</h3><p>Belief and expectation, brain-body interactions, affect and emotion, pain biomarkers, craving, and individualized brain models.</p></div><span class="go">Research themes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d1" href="publications.html"><div><div class="ic">⌕</div><h3>Publications</h3><p>Every paper since 2000 with PDFs, brain maps, code and data, searchable by keyword and filterable by topic, approach and type.</p></div><span class="go">Search the papers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d2" href="people.html"><div><div class="ic">☺</div><h3>People</h3><p>Postdocs, graduate students, staff and research assistants, plus alumni of the lab at Dartmouth, Colorado and Columbia.</p></div><span class="go">Meet the lab <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv" href="resources.html"><div><div class="ic">⚒</div><h3>Tools &amp; training</h3><p>Open-source neuroimaging toolboxes, brain signature patterns, datasets, the Principles of fMRI book and Coursera courses.</p></div><span class="go">Tools and courses <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d1" href="news.html"><div><div class="ic">◷</div><h3>News</h3><p>Lab news and press coverage, from the Wall Street Journal and Nature to podcasts and radio, updated automatically.</p></div><span class="go">Latest news <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d2" href="network.html"><div><div class="ic">⧉</div><h3>Collaborator network</h3><p>An interactive map of the lab's co-authors, computed in your browser from the publication database.</p></div><span class="go">Explore the network <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv" href="join.html"><div><div class="ic">★</div><h3>Join us</h3><p>Open positions, how to apply as a postdoc, student or visiting scholar, and how to participate in a study.</p></div><span class="go">Join or participate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d1" href="mylist.html"><div><div class="ic">☆</div><h3>Reading lists</h3><p>Star papers into your own lists, export them to Zotero, EndNote or BibTeX, and sign in to sync across devices.</p></div><span class="go">My list <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d2" href="discuss.html"><div><div class="ic">✎</div><h3>Discussion</h3><p>Comment on papers and talk with the lab and other researchers about findings, methods and tools.</p></div><span class="go">Join the discussion <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="rv"><p class="eyebrow">Latest</p><h2>Recent papers</h2></div>
+          <p class="rv rv-d1">The most recent publications and preprints. <a href="publications.html">Browse all papers</a> or subscribe by <a href="feed.xml">RSS</a>.</p>
+        </div>
+        <div class="latest rv rv-d1" id="latest"><div class="spinner">Loading…</div></div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="rv"><p class="eyebrow">In the news</p><h2>Recent coverage</h2></div>
+          <p class="rv rv-d1">Press, podcasts and lab announcements. <a href="news.html">All news</a>.</p>
+        </div>
+        <div class="strip-news cards rv rv-d1" id="newsstrip"><div class="spinner">Loading…</div></div>
+      </div>
+    </section>
+
+    <section class="section darkstrip">
+      <div class="wrap">
+        <div class="rv">
+          <p class="eyebrow">Open science</p>
+          <h2>Tools, data and brain signatures, shared openly</h2>
+          <p>The lab maintains a family of open-source MATLAB toolboxes for neuroimaging analysis, publishes its brain signature patterns and atlases, releases data from published studies, and runs the Science of Placebo research hub. Everything on this site, including the publication database and its tags, is open on GitHub.</p>
+          <p><a class="btn primary" href="resources.html">Tools &amp; training</a> <a class="btn btn-ghost" href="https://github.com/canlab" target="_blank" rel="noopener" style="color:#fff">CANlab on GitHub ↗</a></p>
+        </div>
+        <div class="tools rv rv-d1">
+          <a href="https://github.com/canlab/CanlabCore" target="_blank" rel="noopener"><b>CANlab Core Tools</b><span>Object-oriented neuroimaging analysis and multivariate prediction in MATLAB</span></a>
+          <a href="https://github.com/canlab/Neuroimaging_Pattern_Masks" target="_blank" rel="noopener"><b>Neuroimaging Pattern Masks</b><span>Brain signatures (NPS, SIIPS, PINES), atlases and meta-analysis masks</span></a>
+          <a href="https://scienceofplacebo.org" target="_blank" rel="noopener"><b>Science of Placebo</b><span>A daily-updated research hub and database of placebo and nocebo research</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap about-grid">
+        <div class="labphoto rv"><img src="assets/img/2019_12_canlab.jpg" alt="Members of the Cognitive and Affective Neuroscience Lab" loading="lazy"></div>
+        <div class="rv rv-d1">
+          <p class="eyebrow">About the lab</p>
+          <h2>Founded in 2004, at Dartmouth since 2019</h2>
+          <p>Tor Wager is the Diana L. Taylor Distinguished Professor in Neuroscience at Dartmouth College. He has directed the Cognitive and Affective Neuroscience Laboratory since 2004, first at Columbia University, then at the University of Colorado Boulder, and now at Dartmouth. The lab works on the neurophysiology of affective processes and on analysis methods for functional neuroimaging, and shares its ideas, tools and data with the scientific community and the public.</p>
+          <p><a class="btn" href="people.html">People</a> <a class="btn" href="about.html">About this site</a></p>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script src="assets/hero.js"></script>
+<script>
+(async function () {
+  const { state } = await CL.loadCore();
+  const s = state.stats;
+  document.getElementById("f-papers").textContent = s.n.toLocaleString();
+  document.getElementById("f-since").textContent = s.y0 || "";
+  document.getElementById("f-cites").textContent = s.n_cites ? s.n_cites.toLocaleString() : "";
+  document.getElementById("f-people").textContent = s.n_people || "";
+  const recent = state.index.slice().sort((a, b) => ((b.y || 0) - (a.y || 0)) || (b.d || "").localeCompare(a.d || "") || (b.added || "").localeCompare(a.added || "")).slice(0, 3);
+  document.getElementById("latest").innerHTML = recent.map(r => CL.paperCard(r)).join("");
+  CL.bindStars(document.getElementById("latest"));
+  try {
+    const posts = await CL.getJSON("data/news_posts.json");
+    let feed = []; try { feed = (await CL.getJSON("data/news.json")).items || []; } catch (e) { /* none yet */ }
+    const items = posts.map(p => ({ t: p.title, d: p.date, u: "news.html#" + p.id, src: "CANlab", img: p.image ? "assets/img/" + p.image : null })).concat(feed.map(f => ({ t: f.title, d: f.date, u: f.url, src: f.source, img: null }))).sort((a, b) => b.d.localeCompare(a.d)).slice(0, 3);
+    document.getElementById("newsstrip").innerHTML = items.map(i => `<article class="card"><span class="date">${CL.fmtDate(i.d)}</span><h3><a href="${CL.esc(i.u)}">${CL.esc(i.t)}</a></h3><p>${CL.esc(i.src)}</p></article>`).join("");
+  } catch (e) { document.getElementById("newsstrip").innerHTML = ""; }
+})().catch(e => console.error("landing:", e));
+</script>
+</body>
+</html>

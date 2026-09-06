@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications | CANlab</title>
+<meta name="description" content="All publications from the Cognitive and Affective Neuroscience Lab (Tor Wager, Dartmouth), organized by year, with PDFs, brain maps, code and data. Search by keyword and filter by topic, approach and article type; export to BibTeX, RIS or CSV.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="CANlab">
+<meta property="og:title" content="Publications | CANlab">
+<meta property="og:description" content="Every CANlab paper since 2000 with PDFs, brain maps, code and data. Search, filter by tags, and export references.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://torwager.github.io/canlab/publications.html">
+<meta property="og:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<link rel="canonical" href="https://torwager.github.io/canlab/publications.html">
+<link rel="alternate" type="application/rss+xml" title="CANlab: new papers" href="feed.xml">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .other-ways { display: flex; flex-wrap: wrap; gap: .5rem .9rem; font-size: .88rem; margin: .4rem 0 1rem; align-items: center; }
+  .other-ways .lbl { color: var(--muted); }
+  .books { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: .7rem 1rem; font-size: .92rem; margin-bottom: 1rem; display: flex; gap: .8rem; align-items: center; flex-wrap: wrap; }
+  .books b { font-family: var(--serif); font-weight: 600; }
+  .filters .hint { font-size: .78rem; color: var(--muted); padding: .3rem 0 .6rem; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Publications</p>
+    <h1>Papers, preprints and chapters</h1>
+    <p>Every publication from the lab, organized by year. Each entry links to the PDF and, where available, to publisher pages, brain pattern maps, paradigms, code, data and videos. Search titles, abstracts and keywords, or filter with the tags on the left (within an axis, any selected tag matches; axes combine with AND). Star papers to build your own list and export the results to a reference manager.</p>
+  </div>
+  <div class="stat-row" id="stats"></div>
+  <div class="other-ways"><span class="lbl">Other ways to view papers:</span> <a href="https://docs.google.com/document/d/1w779MMQACsZFg9vAGs72Ppvm0U4nDWGIkxPDk6rwObo/edit?usp=sharing" target="_blank" rel="noopener">A short list of representative papers by topic ↗</a> · <a href="https://scholar.google.com/citations?user=8b7b-6EAAAAJ&hl=en" target="_blank" rel="noopener">Tor's Google Scholar page ↗</a> · <a href="bibliometrics.html">Bibliometrics</a> · <a href="network.html">Collaborator network</a></div>
+  <div class="books"><span class="pill-logo" aria-hidden="true" style="background:linear-gradient(90deg,var(--steel) 50%,var(--amber) 50%)"></span><span><b>Book.</b> Wager, T. D. &amp; Lindquist, M. A. <i>Principles of fMRI</i>. <a href="https://leanpub.com/principlesoffmri" target="_blank" rel="noopener">[PDF / e-book] ↗</a></span></div>
+  <div id="candidates"></div>
+  <div class="searchbar"><input id="q" type="search" placeholder="Search titles, abstracts and keywords, e.g. placebo naloxone, neurologic pain signature, mediation" autocomplete="off" aria-label="Search titles and abstracts"><input id="qa" type="search" placeholder="Author, e.g. Atlas or Woo CW" autocomplete="off" aria-label="Author" style="flex:0 1 240px"><button class="btn primary" id="go">Search</button></div>
+  <div class="layout">
+    <aside class="filters" id="filtersWrap" aria-label="Filter by keyword">
+      <div class="hint">Tags were assigned from the full text of each paper by an AI model and checked by hand where flagged; <a href="about.html#tags">how tagging works</a>.</div>
+      <div id="filters"></div>
+    </aside>
+    <section>
+      <div class="filter-top">
+        <span class="count" id="count"></span>
+        <span id="active"></span>
+        <button class="btn link" id="clear" hidden>Clear all</button>
+        <div class="sortbar" style="margin-left:auto">
+          <label>Sort <select id="sort"><option value="year">by year</option><option value="rel">relevance</option><option value="cited">most cited</option><option value="old">oldest first</option></select></label>
+          <label>Year <select id="yfrom"><option value="">any</option></select> – <select id="yto"><option value="">any</option></select></label>
+          <span id="exportwrap"></span>
+          <label><input type="checkbox" id="onlyList"> my list</label>
+          <label><input type="checkbox" id="onlyPdf"> with PDF</label>
+        </div>
+      </div>
+      <div id="who" style="margin:-.2rem 0 .5rem;display:flex;flex-wrap:wrap;gap:.3rem;align-items:center"></div>
+      <div class="year-nav" id="yearnav"></div>
+      <div class="papers" id="results"><div class="spinner">Loading publications…</div></div>
+      <div class="pager" id="pager"></div>
+    </section>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/minisearch/7.2.0/umd/index.min.js"></script>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script src="assets/account.js"></script>
+<script>
+(async function () {
+  const { state } = await CL.loadCore();
+  const PAGE = 60;
+  const { filters, params } = CL.filtersFromQuery();
+  document.getElementById("stats").innerHTML = `<div class="stat"><b class="tnum">${state.stats.n.toLocaleString()}</b><span>publications</span></div>
+    <div class="stat"><b class="tnum">${state.stats.y0}–${state.stats.y1}</b><span>years</span></div>
+    <div class="stat"><b class="tnum">${state.stats.n_pdf.toLocaleString()}</b><span>with PDF</span></div>
+    <div class="stat"><b class="tnum">${(state.stats.n_cites || 0).toLocaleString()}</b><span>citations (OpenAlex)</span></div>
+    <div class="stat"><b>${CL.fmtDate(state.stats.updated)}</b><span>last updated</span></div>`;
+  try { const cands = await CL.getJSON("data/candidates.json"); if (cands.length) document.getElementById("candidates").innerHTML = `<details class="books" style="display:block"><summary style="cursor:pointer"><b>${cands.length} new paper${cands.length === 1 ? "" : "s"} found by the daily search, awaiting review</b> <span class="muted small">(found automatically; not yet in the database)</span></summary><div class="papers" style="margin-top:.6rem">${cands.map(c => `<article class="paper cand"><div class="title">${CL.esc(c.title)}</div><div class="meta"><span class="authors">${CL.esc((c.authors || []).slice(0, 4).join(", "))}${(c.authors || []).length > 4 ? " et al." : ""}</span><span class="date tnum">${c.year || ""}</span><span class="journal">${CL.esc(c.journal || "")}</span><span class="badge new">${CL.esc(c.status || "")}</span></div>${c.summary ? `<div class="summary">${CL.esc(c.summary)}</div>` : ""}<div class="links">${c.doi ? `<a class="plink publisher" href="https://doi.org/${CL.esc(c.doi)}" target="_blank" rel="noopener">Publisher ↗</a>` : ""}${c.oa_url ? `<a class="plink pdf" href="${CL.esc(c.oa_url)}" target="_blank" rel="noopener">Open access</a>` : ""}<span class="small muted">to approve: <code>python -m pipeline.approve ${CL.esc(c.id)}</code></span></div></article>`).join("")}</div></details>`; } catch (e) { /* no queue */ }
+  const els = Object.fromEntries(["q", "qa", "go", "filters", "count", "active", "clear", "sort", "yfrom", "yto", "results", "pager", "onlyList", "onlyPdf", "yearnav", "who"].map(id => [id, document.getElementById(id)]));
+  els.q.value = params.get("q") || "";
+  els.qa.value = params.get("author") || "";
+  els.sort.value = params.get("sort") || (els.q.value ? "rel" : "year");
+  const years = state.stats.years;
+  for (const y of years.slice().reverse()) { els.yfrom.add(new Option(y, y)); els.yto.add(new Option(y, y)); }
+  els.yfrom.value = params.get("from") || ""; els.yto.value = params.get("to") || "";
+  const fu = document.getElementById("foot-updated"); if (fu) fu.textContent = "Data updated " + state.stats.updated + ".";
+  let page = +(params.get("p") || 1);
+
+  // full-text search index (title + abstract + keywords + authors + journal), built lazily
+  let mini = null, building = null;
+  function buildIndex() {
+    if (building) return building;
+    building = (async () => {
+      const ms = new MiniSearch({ fields: ["t", "ab", "kw", "au", "j"], storeFields: [], searchOptions: { boost: { t: 3, kw: 2 }, prefix: true, fuzzy: 0.15, combineWith: "AND" } });
+      ms.addAll(await CL.getJSON("data/text.json"));
+      mini = ms; return ms;
+    })();
+    return building;
+  }
+  const yearHead = (y, n) => `<h2 class="year-head" id="y${y}">${y === 0 ? "Undated" : y}<span class="n">${n} paper${n === 1 ? "" : "s"}</span></h2>`;
+
+  let lastShown = [];
+  async function run() {
+    const q = els.q.value.trim();
+    let hits = null;
+    if (q) { els.results.innerHTML = '<div class="spinner">Searching…</div>'; const ms = await buildIndex(); hits = new Map(ms.search(q).map(h => [h.id, h.score])); }
+    const qa = els.qa.value.trim().toLowerCase().replace(/\s+/g, " ");
+    const authorMatch = a => { const n = a.toLowerCase(); if (!qa) return true; if (qa.includes(" ")) return n === qa || n.startsWith(qa); return n === qa || n.startsWith(qa + " ") || n.includes(" " + qa + " ") || n.endsWith(" " + qa); };
+    const authorHit = r => !qa || (r.au || []).some(authorMatch);
+    let pool = state.index.filter(r => (!hits || hits.has(r.id)) && authorHit(r) && (!els.onlyList.checked || CL.list.has(r.id)) && (!els.onlyPdf.checked || r.pdf));
+    const yf = +els.yfrom.value || 0, yt = +els.yto.value || 9999;
+    pool = pool.filter(r => (r.y || 0) >= yf && (r.y || 0) <= yt);
+    CL.renderFilters(els.filters, pool, filters, () => { page = 1; run(); });
+    const shown = pool.filter(r => CL.matches(r, filters));
+    const sort = els.sort.value;
+    const byDate = (a, b) => ((b.y || 0) - (a.y || 0)) || (b.d || "").localeCompare(a.d || "") || (a.st === "preprint" ? -1 : 0);
+    if (sort === "rel" && hits) shown.sort((a, b) => hits.get(b.id) - hits.get(a.id));
+    else if (sort === "old") shown.sort((a, b) => -byDate(a, b));
+    else if (sort === "cited") shown.sort((a, b) => ((b.cit ?? -1) - (a.cit ?? -1)) || byDate(a, b));
+    else shown.sort(byDate);
+    lastShown = shown;
+    const pages = Math.max(1, Math.ceil(shown.length / PAGE));
+    page = Math.min(Math.max(1, page), pages);
+    els.count.textContent = `${shown.length.toLocaleString()} paper${shown.length === 1 ? "" : "s"}` + (q ? ` for “${q}”` : "") + (qa ? ` by ${els.qa.value.trim()}` : "");
+    els.active.innerHTML = CL.activeChips(filters);
+    if (qa) {
+      const counts = {};
+      for (const r of pool) for (const a of new Set((r.au || []).filter(authorMatch))) counts[a] = (counts[a] || 0) + 1;
+      const names = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+      els.who.innerHTML = names.length > 1 ? `<span class="small muted">Matches ${names.length} author names:</span> ` + names.slice(0, 12).map(([a, n]) => `<button class="chip" data-author="${CL.esc(a)}">${CL.esc(a)} <span class="muted tnum">${n}</span></button>`).join(" ") : "";
+    } else els.who.innerHTML = "";
+    els.clear.hidden = !Object.values(filters).some(s => s.size) && !q && !qa && !els.yfrom.value && !els.yto.value && !els.onlyList.checked && !els.onlyPdf.checked;
+    CL.filtersToQuery(filters, { q, author: qa ? els.qa.value.trim() : "", sort: sort !== "year" ? sort : "", from: els.yfrom.value, to: els.yto.value, list: els.onlyList.checked ? "1" : "", pdf: els.onlyPdf.checked ? "1" : "", p: page > 1 ? page : "" });
+    const slice = shown.slice((page - 1) * PAGE, page * PAGE);
+    // year navigation + year headings when sorted chronologically
+    const chrono = sort === "year" || sort === "old";
+    if (chrono) {
+      const counts = new Map(); for (const r of shown) counts.set(r.y || 0, (counts.get(r.y || 0) || 0) + 1);
+      const ys = [...counts.keys()].sort((a, b) => sort === "old" ? a - b : b - a);
+      els.yearnav.innerHTML = ys.map(y => `<a href="#y${y}" data-y="${y}">${y || "n.d."}</a>`).join("");
+      let html = "", cur = null;
+      for (const r of slice) { if (r.y !== cur) { cur = r.y; html += yearHead(cur || 0, counts.get(cur || 0)); } html += CL.paperCard(r); }
+      els.results.innerHTML = html || '<div class="empty">No papers match. Try fewer filters or a broader search.</div>';
+    } else {
+      els.yearnav.innerHTML = "";
+      els.results.innerHTML = slice.length ? slice.map(r => CL.paperCard(r)).join("") : '<div class="empty">No papers match. Try fewer filters or a broader search.</div>';
+    }
+    els.pager.innerHTML = pages > 1 ? `<button class="btn" id="prev" ${page <= 1 ? "disabled" : ""}>‹ Prev</button><span class="small muted tnum">page ${page} of ${pages}</span><button class="btn" id="next" ${page >= pages ? "disabled" : ""}>Next ›</button>` : "";
+    const prev = document.getElementById("prev"), next = document.getElementById("next");
+    if (prev) prev.onclick = () => { page--; run(); window.scrollTo({ top: 0 }); };
+    if (next) next.onclick = () => { page++; run(); window.scrollTo({ top: 0 }); };
+  }
+  // year links: jump to the page holding that year
+  els.yearnav.addEventListener("click", e => {
+    const a = e.target.closest("a[data-y]"); if (!a) return;
+    const y = +a.dataset.y; const i = lastShown.findIndex(r => (r.y || 0) === y);
+    if (i >= 0) { const p = Math.floor(i / PAGE) + 1; if (p !== page) { e.preventDefault(); page = p; run().then(() => { const el = document.getElementById("y" + y); if (el) el.scrollIntoView({ block: "start" }); }); } }
+  });
+  document.getElementById("exportwrap").innerHTML = CL.exportMenu("exp");
+  CL.bindExport(document.getElementById("exportwrap"), () => lastShown.slice(0, 2000), "canlab-publications");
+  els.go.onclick = () => { page = 1; els.sort.value = els.q.value.trim() ? "rel" : "year"; run(); };
+  els.q.addEventListener("keydown", e => { if (e.key === "Enter") els.go.onclick(); });
+  els.qa.addEventListener("keydown", e => { if (e.key === "Enter") els.go.onclick(); });
+  els.sort.onchange = els.yfrom.onchange = els.yto.onchange = els.onlyList.onchange = els.onlyPdf.onchange = () => { page = 1; run(); };
+  CL.bindStars(els.results);
+  els.active.addEventListener("click", e => { const c = e.target.closest(".chip"); if (!c) return; CL.toggle(filters, c.dataset.axis, c.dataset.value); page = 1; run(); });
+  els.clear.onclick = () => { for (const k in filters) filters[k].clear(); els.q.value = ""; els.qa.value = ""; els.yfrom.value = ""; els.yto.value = ""; els.onlyList.checked = false; els.onlyPdf.checked = false; els.sort.value = "year"; page = 1; run(); };
+  els.qa.addEventListener("change", () => { page = 1; run(); });
+  els.who.addEventListener("click", e => { const b = e.target.closest("[data-author]"); if (!b) return; els.qa.value = b.dataset.author; page = 1; run(); });
+  els.q.addEventListener("change", () => { page = 1; if (!els.q.value.trim() && els.sort.value === "rel") els.sort.value = "year"; run(); });
+  CL.bindCardChips(els.results, filters, () => { page = 1; run(); });
+  if (params.get("list") === "1") els.onlyList.checked = true;
+  if (params.get("pdf") === "1") els.onlyPdf.checked = true;
+  await run();
+  if (location.hash) { const el = document.querySelector(location.hash); if (el) el.scrollIntoView({ block: "start" }); }
+  if (!els.q.value) buildIndex();
+})().catch(e => { document.getElementById("results").innerHTML = `<div class="empty">Could not load data (${CL.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>
