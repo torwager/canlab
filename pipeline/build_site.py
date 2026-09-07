@@ -99,6 +99,9 @@ def merge_author_variants(papers):
 
 def slim(r):
     tags = {k: (v if isinstance(v, list) else [v]) for k, v in (r.get("tags") or {}).items() if v}
+    # a paper that links to a neuromarker, atlas, paradigm, code or dataset counts as releasing open tools
+    if any(l["type"] in ("maps", "code", "data", "paradigm") for l in r.get("links", [])) and "open_tools" not in tags.get("approach", []):
+        tags["approach"] = tags.get("approach", []) + ["open_tools"]
     pdf = pdf_link(r)
     return {
         "id": r["id"], "t": r["title"], "a": short_authors(r["authors"]), "al": author_line(r["authors"]), "au": r.get("authors_short") or [],

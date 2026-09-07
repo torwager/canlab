@@ -70,7 +70,8 @@
      "label": "Walkthroughs and tutorials",
      "url": "https://canlab.github.io/walkthroughs/"
     }
-   ]
+   ],
+   "thumb": "tool-canlab-github.jpg"
   },
   {
    "title": "Neuroimaging Pattern Masks",
@@ -81,47 +82,56 @@
      "label": "CANlab Brain Patterns website",
      "url": "https://sites.google.com/dartmouth.edu/canlab-brainpatterns/home"
     }
-   ]
+   ],
+   "thumb": "tool-masks.jpg"
   },
   {
    "title": "CANlab Core Tools",
    "url": "https://github.com/canlab/CanlabCore",
-   "blurb": "Interactive, object-oriented data visualization and analysis, and multivariate prediction, in MATLAB."
+   "blurb": "Interactive, object-oriented data visualization and analysis, and multivariate prediction, in MATLAB.",
+   "thumb": "tool-core.jpg"
   },
   {
    "title": "CANlab Help Examples",
    "url": "https://github.com/canlab/CANlab_help_examples",
-   "blurb": "Walkthroughs and help examples for CANlab Core, plus group analysis and prediction scripts."
+   "blurb": "Walkthroughs and help examples for CANlab Core, plus group analysis and prediction scripts.",
+   "thumb": "tool-examples.jpg"
   },
   {
    "title": "Mediation Toolbox",
    "url": "https://github.com/canlab/MediationToolbox",
-   "blurb": "Single- and multi-level mediation analysis, and mediation brain search (M3)."
+   "blurb": "Single- and multi-level mediation analysis, and mediation brain search (M3).",
+   "thumb": "tool-mediation.jpg"
   },
   {
    "title": "MKDA neuroimaging meta-analysis",
    "url": "https://github.com/canlab/Canlab_MKDA_MetaAnalysis",
-   "blurb": "Coordinate-based meta-analysis for neuroimaging using Multilevel Kernel Density Analysis and related statistical tools."
+   "blurb": "Coordinate-based meta-analysis for neuroimaging using Multilevel Kernel Density Analysis and related statistical tools.",
+   "thumb": "tool-mkda.jpg"
   },
   {
    "title": "Robust Toolbox",
    "url": "https://github.com/canlab/RobustToolbox",
-   "blurb": "Robust regression for second-level (group) analysis."
+   "blurb": "Robust regression for second-level (group) analysis.",
+   "thumb": "tool-robust.jpg"
   },
   {
    "title": "Paradigms",
    "url": "https://github.com/canlab/Paradigms_Public",
-   "blurb": "Experimental paradigms, code and stimuli."
+   "blurb": "Experimental paradigms, code and stimuli.",
+   "thumb": "tool-paradigms.jpg"
   },
   {
    "title": "CANlab Datasets",
    "url": "https://github.com/canlab/CANlab_data_public",
-   "blurb": "Datasets from published CANlab papers."
+   "blurb": "Datasets from published CANlab papers.",
+   "thumb": "tool-datasets.jpg"
   },
   {
    "title": "Preprocessing Pipeline",
    "url": "https://github.com/canlab/preprocess",
-   "blurb": "The CANlab SPM-based fMRI preprocessing pipeline."
+   "blurb": "The CANlab SPM-based fMRI preprocessing pipeline.",
+   "thumb": "tool-preprocess.jpg"
   }
  ],
  "chapters_intro": "There is some overlap across chapters, but each covers some unique topics.",
