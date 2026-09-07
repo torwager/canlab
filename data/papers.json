@@ -53,7 +53,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/zhangintensitydependent.pdf",
-    "url_original": null,
+    "url_original": "pdf/zhangintensitydependent.pdf",
     "version": "publisher"
    },
    {
@@ -66,24 +66,25 @@
   "section": "Preprints",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Analyzed four fMRI datasets using a Bayes factor approach and found that higher-intensity somatosensory, auditory, and visual stimuli produced expansion of activation topography in sensory and cerebellar regions, correlating with psychophysical discriminability.",
-  "key_finding": "High- versus low-intensity stimulation reliably expanded activation topography in somatosensory, visual, and cerebellar cortices across four fMRI datasets, replicating within individual participants.",
+  "summary": "Used a Bayes factor-based approach across four fMRI datasets to show that higher-intensity stimulation produced topographical expansion of activation, recruiting new voxels beyond magnitude coding, generalizing across pain and other sensory modalities.",
+  "key_finding": "High- versus low-intensity painful stimulation produced topographical expansion in S1, posterior midcingulate, V1, and cerebellar lobules V/VI, replicated across two large-scale fMRI datasets and within individuals in a precision dataset.",
   "free_keywords": [
-   "activation topography",
+   "topographical expansion",
    "Bayes factor",
-   "somatosensory cortex",
-   "psychophysical discriminability",
+   "neural recruitment",
+   "population coding",
    "cerebellum",
-   "multimodal sensory coding"
+   "precision fMRI",
+   "sensory intensity coding"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.75,
+   "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -91,8 +92,7 @@
     "perception"
    ],
    "approach": [
-    "fmri",
-    "neuroimaging_methods"
+    "fmri"
    ],
    "type": [
     "empirical"
@@ -163,7 +163,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/weicerebellar.pdf",
-    "url_original": null,
+    "url_original": "pdf/weicerebellar.pdf",
     "version": "publisher"
    },
    {
@@ -183,29 +183,33 @@
    ],
    "approach": [
     "fmri",
-    "mega_analysis"
+    "mega_analysis",
+    "machine_learning",
+    "neuromarker"
    ],
    "type": [
     "empirical"
    ]
   },
-  "summary": "An individual-participant mega-analysis of human placebo-analgesia neuroimaging studies (n=603) plus independent Human Connectome Project data found that pontine and cerebellar regions track placebo analgesia.",
-  "key_finding": "Cerebellar and pontine regions showed placebo-induced anticipatory increases and stimulus-related decreases correlating with placebo analgesia magnitude, and pontine activity was functionally connected to cingulate-cerebellar regions in independent HCP data (n=820).",
+  "summary": "Reanalyzed individual-participant data from 20 fMRI studies of placebo analgesia (n=603) plus Human Connectome Project connectivity data (n=820) to show that pain and placebo effects converge in cerebellar and pontine regions consistent with a cortico-pontine-cerebellar predictive circuit.",
+  "key_finding": "Placebo-induced anticipatory increases and pain-related decreases converged in cerebellar Crus I/lobule VI, and pontine nucleus activity correlated with individual differences in placebo analgesia and was functionally connected to cingulate and cerebellar regions.",
   "free_keywords": [
    "cerebellum",
    "pons",
+   "Purkinje cells",
+   "anterior cingulate cortex",
    "Human Connectome Project",
-   "predictive configuration",
-   "Placebo Imaging Consortium"
+   "action-mode network",
+   "LASSO-PCR"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.75,
+   "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Wei, Z., Spisak, T., Timmann, D., Scherrer, G., Bingel, U., Wager, T. D., & the Placebo Imaging Consortium. (preprint). Cerebellar activation in human placebo analgesia: Bridging findings from mice to humans. bioRxiv. [online link]"
@@ -269,7 +273,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/dehghanitemporal.pdf",
-    "url_original": null,
+    "url_original": "pdf/dehghanitemporal.pdf",
     "version": "publisher"
    },
    {
@@ -294,24 +298,25 @@
     "empirical"
    ]
   },
-  "summary": "A pre-registered, triple-blind, randomized crossover study in 32 healthy adults found that temporal interference stimulation of left motor cortex produced frequency-dependent bilateral analgesia for experimentally evoked heat pain.",
-  "key_finding": "Active tTIS reduced pain relative to sham at 10, 20, and 70 Hz (Cohen's d = 0.46-0.82), with 10 Hz producing the largest and most durable analgesic effect.",
+  "summary": "In a preregistered triple-blind randomized crossover trial, temporal interference stimulation of left primary motor cortex at 10, 20, or 70 Hz reduced bilateral experimentally evoked thermal pain relative to sham, with 10 Hz producing the largest analgesic effect.",
+  "key_finding": "Active tTIS produced significant bilateral analgesia at all frequencies relative to sham (Cohen's d = 0.46-0.82), with 10 Hz producing the greatest reduction (d = 0.82).",
   "free_keywords": [
    "temporal interference stimulation",
-   "tTIS",
    "primary motor cortex",
+   "inter-effector regions",
+   "somato-cognitive action network",
    "noninvasive neuromodulation",
    "thermal pain",
-   "inter-effector regions"
+   "crossover trial"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.85,
+   "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Dehghani, A., Gantz, D. M., Murphy, E. K., Halter, R. J., & Wager, T. D. (preprint) Temporal Interference Stimulation of the Motor Cortex Produces Frequency-Dependent Analgesia. bioRxiv. [online link]"
@@ -380,7 +385,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/luxvicarious.pdf",
-    "url_original": null,
+    "url_original": "pdf/luxvicarious.pdf",
     "version": "publisher"
    },
    {
@@ -396,8 +401,8 @@
   "tags": {
    "topic": [
     "stress",
-    "brain_body",
-    "empathy"
+    "empathy",
+    "brain_body"
    ],
    "approach": [
     "fmri",
@@ -408,25 +413,26 @@
     "empirical"
    ]
   },
-  "summary": "Researchers measured fMRI, autonomic physiology, and monocyte gene expression in 88 participants viewing videos depicting vicarious trauma versus positive human-animal interactions, finding immune and brain-network changes after trauma viewing.",
-  "key_finding": "Vicarious trauma produced sustained sympathetic arousal, elevated pro-inflammatory (IL1B, CXCL8) and reduced anti-inflammatory (TGFB1) monocyte responses, and altered frontoparietal-default mode-hippocampal coupling that predicted CXCL8 increases.",
+  "summary": "Scanned participants with fMRI, autonomic monitoring, and monocyte RNA sequencing during viewing of vicarious trauma versus positive human-animal interaction films, finding that vicarious trauma induced sustained sympathetic arousal, pro-inflammatory monocyte gene expression, and reorganized large-scale brain network coupling.",
+  "key_finding": "Vicarious trauma elevated heart rate for 40 minutes post-viewing, upregulated pro-inflammatory genes IL1B and CXCL8 while reducing anti-inflammatory TGFB1, and disrupted frontoparietal/default-mode-hippocampal coupling predicted CXCL8 increases.",
   "free_keywords": [
    "vicarious trauma",
+   "innate immunity",
    "monocytes",
-   "IL1B",
-   "CXCL8",
-   "TGFB1",
-   "sympathetic arousal",
-   "naturalistic movie viewing"
+   "RNA sequencing",
+   "autonomic arousal",
+   "NeuroMark ICA",
+   "action-mode network",
+   "moral injury"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.7,
+   "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Lux, B. K., Kos, M. C., Ward, D., Kolling IV, F. W., Li, X., Jakubzick, C. V., & Wager, T. D. (preprint) Vicarious trauma primes innate immunity and reconfigures human brain networks. bioRxiv [online link]"
@@ -476,7 +482,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/bo2026spatiotemporal.pdf",
-    "url_original": null,
+    "url_original": "pdf/bo2026spatiotemporal.pdf",
     "version": "publisher"
    }
   ],
@@ -484,24 +490,25 @@
   "section": "2026",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Used finite impulse response modeling and data-driven clustering across two fMRI datasets (N=358) to show amygdala subregions differ in temporal response profile to negative images, with reappraisal not reliably altering response magnitude.",
-  "key_finding": "Centromedial amygdala showed sustained post-stimulus activation while laterobasal and superficial subregions peaked earlier, and cognitive reappraisal did not substantially change amygdala response magnitude or shape.",
+  "summary": "Applied finite impulse response modeling and data-driven clustering to fMRI data from 358 participants to show that amygdala subregions differ in their temporal response profiles to negative images and that cognitive reappraisal did not reliably alter these time courses.",
+  "key_finding": "Centromedial amygdala showed sustained activation into the post-stimulus rating period while laterobasal and superficial subregions peaked earlier, and reappraisal did not substantially change amygdala response magnitude or shape despite successfully reducing reported negative affect.",
   "free_keywords": [
    "amygdala subregions",
-   "finite impulse response",
+   "finite impulse response modeling",
    "cognitive reappraisal",
    "centromedial amygdala",
    "laterobasal amygdala",
-   "temporal dynamics"
+   "hemodynamic response function",
+   "data-driven clustering"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.75,
+   "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -509,8 +516,7 @@
     "emotion_regulation"
    ],
    "approach": [
-    "fmri",
-    "neuroimaging_methods"
+    "fmri"
    ],
    "type": [
     "empirical"
@@ -603,7 +609,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/lee2026functional.pdf",
-    "url_original": null,
+    "url_original": "pdf/lee2026functional.pdf",
     "version": "publisher"
    }
   ],
@@ -622,14 +628,15 @@
     "empirical"
    ]
   },
-  "summary": "Using 7-Tesla resting-state fMRI and a data-driven approach, researchers identified four functionally distinct subregions of the human hypothalamus that differed in their connectivity with two large-scale cortical networks.",
-  "key_finding": "The anterior hypothalamus showed the strongest connectivity to a fronto-limbic cortical network, while a ventral subregion extending into the tuberal region showed the weakest cortical connectivity.",
+  "summary": "Used ultra-high-field 7-Tesla resting-state fMRI and data-driven Louvain community detection to identify four functional subregions of the human hypothalamus, which showed differing patterns of connectivity to frontal/midline versus posterior sensorimotor cortical networks.",
+  "key_finding": "The anterior hypothalamic subregion showed the strongest connectivity with a frontal, midline, and limbic cortical network overlapping default mode regions, while hypothalamic subregions were only weakly connected to a posterior sensorimotor network.",
   "free_keywords": [
    "hypothalamus",
-   "7T fMRI",
+   "7-Tesla fMRI",
    "resting-state connectivity",
-   "subregions",
-   "cortical networks"
+   "Louvain community detection",
+   "functional subregions",
+   "default mode network"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
@@ -638,7 +645,7 @@
    "input_mode": "abstract",
    "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "citation_original": "Lee, K. M., Rodriguez, J., Hartley, L., Zhang, J., Kragel, P. A., Chanes, L., Wager, T. D., Quigley, K. S., Wald, L. L., Bianciardi, M., Barret, L. F., Theriault, J. E., & Satpute, A. B. (2026) Functional Architecture of the Human Hypothalamus: Cortical Coupling and Subregional Organization Using 7-Tesla fMRI. Network Neuroscience."
  },
@@ -857,16 +864,8 @@
   "landing_url": null,
   "openalex_authors": [],
   "keywords": [],
-  "links": [
-   {
-    "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/zorinalichtenwalter2026gray.pdf",
-    "url_original": null,
-    "version": "publisher"
-   }
-  ],
-  "has_pdf": true,
+  "links": [],
+  "has_pdf": false,
   "section": "2026",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
@@ -875,30 +874,30 @@
     "chronic_pain"
    ],
    "approach": [
-    "other_imaging",
-    "mega_analysis"
+    "other_imaging"
    ],
    "type": [
-    "empirical"
+    "commentary"
    ]
   },
-  "summary": "A PAIN journal publication reported brain gray matter changes across chronic pain trajectories using structural MRI data from approximately 35,000 individuals, based on the title alone with no abstract or full text available.",
-  "key_finding": null,
+  "summary": "Commented on a large UK Biobank MRI study (Bhatt et al.) of gray-matter differences between chronic pain patients and controls, discussing regional patterns of cortical surface area and thickness changes and unresolved questions about causality and mediation.",
+  "key_finding": "The discussed study found widespread reductions in cortical surface area and increased thickness in precuneus and lateral orbitofrontal cortex in chronic pain, with precuneus emerging as a mediator of suicide attempts.",
   "free_keywords": [
+   "UK Biobank",
    "gray matter",
+   "cortical surface area",
+   "suicide attempts",
    "chronic pain trajectories",
-   "large-scale cohort",
-   "structural MRI",
-   "UK Biobank-scale"
+   "structural MRI"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.5,
-   "notes": "Title only, but the stated sample size (35,000 individuals) strongly indicates a large pooled structural-MRI cohort study, hence the mega_analysis and other_imaging tags.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.75,
+   "notes": "This is a commentary/perspective on Bhatt et al. 2023 (Biological Psychiatry) rather than a primary data paper, despite the citation title suggesting new data ('MRI evidence from 35,000 individuals'); tagged as commentary based on the actual full text retrieved, which is titled 'A new look at gray-matter decreases in chronic pain.'",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "citation_original": "Zorina-Lichtenwalter, K., Bango, C. I.,Petre, B., Rader, L., Čeko, M., Lindquist, M. A., Friedman, N. P., & Wager, T. D. (2026) Brain gray matter changes across chronic pain trajectories: MRI evidence from 35,000 individuals. PAIN."
  },
@@ -1074,7 +1073,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/sun2026fatigue.pdf",
-    "url_original": null,
+    "url_original": "pdf/sun2026fatigue.pdf",
     "version": "publisher"
    }
   ],
@@ -1088,33 +1087,33 @@
     "stress"
    ],
    "approach": [
-    "behavioral",
     "mediation",
-    "computational_model"
+    "behavioral",
+    "mega_analysis"
    ],
    "type": [
     "empirical"
    ]
   },
-  "summary": "Using latent-variable, regression, Bayesian network, and mediation analyses across two large pre-surgical cohorts, researchers found that fatigue was the most consistent psychosocial correlate linking sociodemographic risk to surgical pain intensity and spread.",
-  "key_finding": "Fatigue linked sleep disturbance, depressive symptoms, neuroticism, adverse childhood experiences, and socioeconomic disadvantage to pain outcomes, occupying a central position in the psychosocial-pain dependency structure across both cohorts.",
+  "summary": "Using two large pre-surgical cohorts from the A2CPS consortium, tested the Risk of Pain Spread framework with latent-variable, regression, Bayesian network, and mediation analyses, finding that fatigue was the most consistent correlate linking psychosocial risk factors to pain intensity and spread.",
+  "key_finding": "Fatigue was the central mediator linking sleep disturbance, depression, neuroticism, adverse childhood experiences, and socioeconomic disadvantage to surgical and nonsurgical pain intensity and widespread pain across both cohorts.",
   "free_keywords": [
-   "ROPS framework",
-   "surgical pain",
-   "widespread pain",
+   "Risk of Pain Spread",
+   "fatigue",
    "Bayesian network",
-   "sociodemographic risk",
+   "structural equation modeling",
    "A2CPS consortium",
-   "fatigue"
+   "surgical pain",
+   "widespread pain"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.6,
-   "notes": "No neuroimaging is described; tagged as behavioral. Two large cohorts were compared for generalizability rather than clearly pooled into one individual-participant model, so mega_analysis was not tagged despite the large combined sample.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Sun, M., Ansari, B., Clauw, D., Harris, R. E., Sluka, K. A., Kaplan, C. M., Brummet, C. M., Lindquist, M. A., & Wager, T. D. (in press). Fatigue Links Sociodemographic Risk to Pain Intensity and Spread in Two Surgical Cohorts. PAIN.",
@@ -1397,7 +1396,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/sicorello2026functional.pdf",
-    "url_original": null,
+    "url_original": "pdf/sicorello2026functional.pdf",
     "version": "publisher"
    },
    {
@@ -1410,33 +1409,35 @@
   "section": "2026",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Tested competing hypotheses about the neural basis of negative emotional dispositions using Bayes factors and machine learning across two large fMRI samples, finding no evidence for amygdala or salience network involvement in neuroticism.",
-  "key_finding": "A brain-wide machine learning pattern predicted the neuroticism facet stress vulnerability (r=.21, replicated r=.19), driven by somatomotor and visual rather than salience network regions.",
+  "summary": "In a preregistered study of two large samples, tested whether neuroticism relates to amygdala, salience network, or affective neural signature responses during emotional tasks, finding no such associations but identifying a novel brain-wide machine learning pattern that predicted the stress-vulnerability facet.",
+  "key_finding": "No brain region, network, or existing affective signature (including the amygdala) predicted neuroticism, but a whole-brain machine learning pattern predicted the neuroticism facet stress vulnerability (r = .21) and replicated in an independent dataset (r = .19), driven mainly by somatomotor and visual networks.",
   "free_keywords": [
    "neuroticism",
-   "salience network",
    "stress vulnerability",
+   "PINES",
+   "VIFS",
    "multiverse analysis",
-   "Bayes factors",
-   "preregistration"
+   "partial least squares",
+   "Bayes factor",
+   "salience network"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.7,
+   "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
-    "emotion",
-    "stress"
+    "emotion"
    ],
    "approach": [
     "fmri",
-    "machine_learning"
+    "machine_learning",
+    "neuromarker"
    ],
    "type": [
     "empirical"
@@ -1598,7 +1599,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/liu2026mitoception.pdf",
-    "url_original": null,
+    "url_original": "pdf/liu2026mitoception.pdf",
     "version": "publisher"
    }
   ],
@@ -1609,34 +1610,36 @@
   "tags": {
    "topic": [
     "brain_body",
-    "stress"
+    "stress",
+    "clinical"
    ],
    "approach": [
-    "computational_model"
+    "genetics"
    ],
    "type": [
     "review"
    ]
   },
-  "summary": "Proposed a theoretical model, 'mitoception,' in which the metabokine GDF15 signals cellular energy deficits to the brainstem, triggering fatigue, anxiety, and neuroendocrine stress responses that reprioritize systemic energy metabolism.",
+  "summary": "Proposed a theoretical model, termed mitoception, in which the metabokine GDF15 signals cellular energy gaps to brainstem receptors, triggering fatigue, anxiety, and neuroendocrine stress responses that reprioritize systemic energy metabolism.",
   "key_finding": null,
   "free_keywords": [
    "GDF15",
+   "mitoception",
    "metaboception",
-   "interoception",
-   "integrative stress response",
-   "allostasis",
-   "fatigue",
-   "aging"
+   "integrated stress response",
+   "GFRAL",
+   "area postrema",
+   "reductive stress",
+   "mitochondria"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.5,
-   "notes": "Abstract only; classified as a theoretical/conceptual model paper. The 'computational_model' approach tag is a loose fit since the model is conceptual/biological rather than mathematical, and no empirical data collection is described in the abstract.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.7,
+   "notes": "Theoretical/narrative review proposing a new conceptual model rather than reporting new primary data; tagged type=review per guidance that reviews proposing a formal model remain review. Approach tag 'genetics' reflects the paper's use of gene-expression evidence (e.g., GTEx, bulk RNA-seq) rather than a dedicated genetic analysis.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Liu, C. C., Huang, Q., Shaulson, E. D., Trumpff, C., Epel, E., Barrett, L. F., Belsky, D. W., Wilson, M. Z., Cohen, A. A., Wager T. D., & Picard, M. (in press) Mitoception Via the Metabokine GDF15 and Human Health. Biopsychosocial Science and Medicine. 88(6), 500–520."
@@ -1973,7 +1976,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/kwon2026convergent.pdf",
-    "url_original": null,
+    "url_original": "pdf/kwon2026convergent.pdf",
     "version": "publisher"
    },
    {
@@ -2001,24 +2004,25 @@
     "empirical"
    ]
   },
-  "summary": "Performed a Bayesian mega-analysis of fMRI data (n=540, 36 contrasts) to map convergent and selective representations of pain, appetitive, aversive, and cognitive control processes in the insula, revealing a hierarchical convergence architecture.",
-  "key_finding": "A multi-domain convergence zone was identified in bilateral dorsal anterior insula, surrounded by progressively more domain-selective zones.",
+  "summary": "Conducted a Bayesian mega-analysis of fMRI data across pain, appetitive, aversive, and cognitive control domains to identify convergent and selective functional zones in the insula, revealing a hierarchical topography with a multi-domain hub in bilateral dorsal anterior insula.",
+  "key_finding": "A multi-domain convergence zone in bilateral dorsal anterior insula was surrounded by progressively more domain-selective zones, validated in an independent dataset (n=608), and characterized by distinct cytoarchitectonic and neurotransmitter profiles.",
   "free_keywords": [
    "insula",
    "convergence zone",
-   "Bayes factor",
+   "Bayes factor mega-analysis",
    "cytoarchitecture",
    "neurotransmitter profiling",
-   "Affective Neuroimaging Consortium"
+   "functional decoding",
+   "coactivation"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.75,
-   "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.6,
+   "notes": "The batch file's 'full text' for this paper was actually a publisher licence-to-publish document, not the manuscript; tags are based on the detailed abstract only.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Kwon, M., Bo, K., Botvinik-Nezer, R. Kragel, P. A., Oudehove, L. V., Wager, T. D., and The Affective Neuroimaging Consortium (2026) Convergent and selective representations of pain, appetitive processes, aversive processes, and cognitive control in the insula. Nat Commun 17, 5186. [online link]"
@@ -2113,7 +2117,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/acild2026neuromarkers.pdf",
-    "url_original": null,
+    "url_original": "pdf/acild2026neuromarkers.pdf",
     "version": "publisher"
    },
    {
@@ -2133,35 +2137,37 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "empathy",
+    "social",
     "clinical"
    ],
    "approach": [
-    "neuromarker",
+    "fmri",
     "machine_learning",
-    "fmri"
+    "neuromarker"
    ],
    "type": [
     "empirical"
    ]
   },
-  "summary": "Likely developed and tested brain neuromarkers predicting self- and other-related mentalizing across adult, clinical, and developmental samples, based on the paper's title.",
-  "key_finding": null,
+  "summary": "Applied interpretable machine learning to fMRI data from multiple adult, clinical, and developmental samples (total n=390) to train and validate brain signatures predicting self- and other-related mentalizing, which distinguished self from other processing less well in schizophrenia.",
+  "key_finding": "Self- and other-mentalizing classifiers achieved 82% and 77% out-of-sample accuracy respectively, a combined classifier reached 98% accuracy, and self/other separation was reduced in individuals with schizophrenia and increased with age during adolescence.",
   "free_keywords": [
    "mentalizing",
    "theory of mind",
+   "support vector machine",
    "brain signature",
-   "predictive modeling",
-   "developmental sample"
+   "schizophrenia",
+   "self-referential processing",
+   "adolescent development"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "full_text",
-   "confidence": 0.3,
-   "notes": "The full text supplied under this id was actually from an unrelated paper (Dehghani et al., 'Transcranial direct current stimulation of primary motor cortex reduces thermal pain', PAIN 2026), evidently a batch-assembly error; tags here are based solely on this paper's own title, not on the provided body text.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.8,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Açil D., Andrews-Hanna, J. R., López-Solà, M., van Buuren, M., Krabbendam, L., Zhang, L., van der Meer, L., Fuentes-Claramonte, P., Pomarol-Clotet, E., Salvador, R., Debbané, M., Vrticka, P., Vuilleumier, P., Sbarra, D. A., Coppola, A. M., Tusche, A., White, L. O., Wager, T. D., & Koban, L. (2026). Brain neuromarkers predict self- and other-related mentalizing across adult, clinical, and developmental samples. Nat Commun 17, 7229. [online link]",
@@ -2520,7 +2526,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/miao2026common.pdf",
-    "url_original": null,
+    "url_original": "pdf/miao2026common.pdf",
     "version": "publisher"
    },
    {
@@ -2540,8 +2546,7 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "social",
-    "empathy"
+    "social"
    ],
    "approach": [
     "fmri"
@@ -2550,13 +2555,13 @@
     "empirical"
    ]
   },
-  "summary": "Likely examined common and distinct neural correlates of social interaction processing versus theory of mind while participants processed narratives, based on the paper's title, since no substantive abstract text was provided.",
+  "summary": "Examined the neural correlates of social interaction processing and theory of mind using naturalistic narrative stimuli, identifying brain regions common to and distinct between these two social-cognitive processes.",
   "key_finding": null,
   "free_keywords": [
    "theory of mind",
-   "social interaction",
-   "narrative fMRI",
-   "mentalizing"
+   "social interaction processing",
+   "naturalistic narratives",
+   "neural correlates"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
@@ -2564,8 +2569,8 @@
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
    "confidence": 0.3,
-   "notes": "The supplied 'abstract' was not a real abstract but a placeholder referencing code associated with the manuscript ('Codes associated with the manuscript...'); tags are based on the title alone.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "notes": "The batch file provided only a publisher licence-to-publish document (no abstract or methods text) for this paper; tags are based solely on the title and author list, so confidence is low and details (sample, specific approach beyond fMRI) could not be verified.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Miao, Z., Jung, H., Kragel, P. A., Sadil, P., Lindquist, M. A., & Wager, T. D. (2026) Common and distinct neural correlates of social interaction processing and theory of mind in narratives. Nature Communications. 1-17. [online link]"
@@ -2625,7 +2630,7 @@
     "type": "pdf",
     "label": "PDF (author manuscript)",
     "url": "pdf/author_manuscripts/rader2026adolescent.pdf",
-    "url_original": null,
+    "url_original": "pdf/author_manuscripts/rader2026adolescent.pdf",
     "version": "author_manuscript"
    }
   ],
@@ -2633,24 +2638,24 @@
   "section": "2026",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Analyzed polygenic scores derived from adult UK Biobank pain GWAS in 6,387 ABCD adolescents and found general chronic pain genetic risk was associated with adolescent pain presence and intensity but not recurrence or multi-site pain.",
-  "key_finding": "The General Chronic Pain polygenic score predicted adolescent pain presence (OR=1.07) and intensity (b=0.14), while a musculoskeletal-specific score showed no significant associations.",
+  "summary": "Tested whether polygenic scores for adult chronic pain conditions, derived from UK Biobank GWAS summary statistics, predicted self-reported pain in 6,387 European-ancestry adolescents from the ABCD study across two assessment waves.",
+  "key_finding": "The General Chronic Pain polygenic score was associated with adolescent pain presence (OR=1.07) and intensity (b=0.14), while the Musculoskeletal-specific Pain polygenic score showed no significant associations.",
   "free_keywords": [
    "polygenic score",
    "ABCD study",
    "UK Biobank",
    "GWAS",
    "adolescent pain",
-   "chronic pain genetics"
+   "heritability"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.85,
+   "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -3242,7 +3247,7 @@
     "type": "pdf",
     "label": "PDF (author manuscript)",
     "url": "pdf/author_manuscripts/murillo2026gray.pdf",
-    "url_original": null,
+    "url_original": "pdf/author_manuscripts/murillo2026gray.pdf",
     "version": "author_manuscript"
    },
    {
@@ -3260,25 +3265,24 @@
   "section": "2026",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Used voxel-based morphometry mediation analysis to show pain reprocessing therapy increased gray matter in anterior cingulate and orbitofrontal cortex relative to control conditions, but these changes did not mediate clinical improvement in chronic back pain.",
-  "key_finding": "PRT increased gray matter in ACC and OFC versus controls, but clinical improvement instead correlated with lateral prefrontal increases and thalamus/amygdala decreases, and gray matter changes did not mediate treatment effects.",
+  "summary": "A randomized trial tested whether pain reprocessing therapy versus treatment-as-usual and open-label placebo controls changed gray matter volume, and whether treatment-induced gray-matter changes mediated improvements in disability and pain in chronic back pain.",
+  "key_finding": "PRT increased gray matter in the anterior cingulate and orbitofrontal cortex relative to controls, but these changes did not mediate clinical improvement; instead, symptom relief was associated with separate lateral prefrontal increases and thalamus/amygdala decreases.",
   "free_keywords": [
-   "pain reprocessing therapy",
    "voxel-based morphometry",
    "gray matter",
-   "anterior cingulate",
-   "orbitofrontal cortex",
+   "pain reprocessing therapy",
+   "chronic back pain",
    "thalamus",
-   "chronic back pain"
+   "amygdala"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.85,
+   "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -3861,7 +3865,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/bott2025exploring.pdf",
-    "url_original": null,
+    "url_original": "pdf/bott2025exploring.pdf",
     "version": "publisher"
    },
    {
@@ -3888,24 +3892,24 @@
     "empirical"
    ]
   },
-  "summary": "Combined resting-state EEG data from 614 people with chronic pain across five countries in a mega-analysis, finding limited replicability across cohorts but robust associations between pain intensity and theta-band, limbic-network connectivity when data were pooled.",
-  "key_finding": "A mega-analysis pooling all datasets found robust associations between pain intensity and large-scale brain network connectivity at theta frequencies, including the limbic network, and multivariate models combining theta, alpha, and beta connectivity showed strong evidence for predicting pain intensity.",
+  "summary": "A mega-analysis pooled resting-state EEG from 614 people with chronic pain across eight international datasets to test standard spectral features and machine-learning models of large-scale brain network connectivity as candidate biomarkers of pain intensity.",
+  "key_finding": "Standard EEG features (theta/alpha/beta power, peak alpha frequency) showed no replicable association with pain intensity, but multivariate connectivity patterns spanning theta, alpha, and beta bands showed strong evidence for association with pain intensity.",
   "free_keywords": [
-   "EEG biomarker",
-   "resting-state EEG",
-   "theta connectivity",
-   "limbic network",
-   "discovery-replication",
-   "multi-site mega-analysis"
+   "EEG",
+   "resting-state connectivity",
+   "Bayes factor",
+   "biomarker",
+   "theta band",
+   "elastic net regression"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.7,
+   "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Bott, F. S., Zebhauser, P. T., Hohn, V. D., Turgut, Ö., May, E. S., Tiemann, L., Gil Ávila, C., Heitmann, H., Nickel, M. M., Day, M. A., Adhia, D. B., Ashar, Y. K., Wager, T. D., Granovsky, Y., Yarnitsky, D., Jansen, M. P., Gross, J., & Ploner, M. (2025) Exploring electroencephalographic chronic pain biomarkers: a mega-analysis. eBioMedicine, 120 (105955). ISSN 2352-3964. [Online Link]"
@@ -4131,7 +4135,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/jung2025spacetop.pdf",
-    "url_original": null,
+    "url_original": "pdf/jung2025spacetop.pdf",
     "version": "publisher"
    },
    {
@@ -4146,10 +4150,10 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "cognitive_control",
+    "pain",
     "emotion",
     "social",
-    "brain_body"
+    "cognitive_control"
    ],
    "approach": [
     "fmri",
@@ -4161,24 +4165,24 @@
     "methods"
    ]
   },
-  "summary": "Introduced Spacetop, an open multimodal dataset of 101 participants scanned for 6 hours each, combining six functional tasks, two hours of naturalistic movie viewing, structural and diffusion imaging, and autonomic physiological recordings spanning cognitive, affective, social, and somatic domains.",
+  "summary": "Introduced Spacetop, an open multimodal dataset of 101 participants with six hours of fMRI each, combining naturalistic movie viewing with somatic pain, vicarious pain, social, and cognitive experimental tasks plus diffusion imaging and autonomic physiology.",
   "key_finding": null,
   "free_keywords": [
    "open dataset",
-   "naturalistic viewing",
-   "multimodal MRI",
-   "autonomic physiology",
-   "Sci Data",
-   "diffusion imaging"
+   "naturalistic movies",
+   "diffusion MRI",
+   "vicarious pain",
+   "skin conductance",
+   "Dartmouth Brain Imaging Center"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.75,
-   "notes": "Abstract only; topic/approach tags reflect the dataset's broad task coverage rather than a single hypothesis.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Jung, H., Amini, M., Hunt, B. J., Murphy, E. I., Sadil, P., Halchenko, Y. O., Petre, B., Miao, Z., Kragel, P. A., Han, X., Heilicher, M. O., Sun, M., Collins, O. G., Lindquist, M. A., & Wager, T. D. (2025) Spacetop: A multimodal fMRI dataset unifying naturalistic processes with a rich array of experimental tasks. Sci Data 12, 1465. [online link]"
@@ -4234,7 +4238,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/he2025comparing.pdf",
-    "url_original": null,
+    "url_original": "pdf/he2025comparing.pdf",
     "version": "publisher"
    },
    {
@@ -4247,24 +4251,23 @@
   "section": "2025",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Compared neural mechanisms of self- and social-reappraisal using univariate, Bayes factor, and multivariate classifier fMRI analyses, finding shared control-region activity but distinct mentalizing-region engagement specific to reappraising for others.",
-  "key_finding": "Multivariate patterns in mentalizing regions such as right lateral and medial prefrontal cortex and temporal pole distinguished social- from self-reappraisal, while control-region patterns did not.",
+  "summary": "Compared the neural mechanisms of self- versus social-reappraisal of negative autobiographical memories using univariate contrasts, Bayes factors, and multivariate classifiers in an fMRI study.",
+  "key_finding": "Self- and social-reappraisal similarly recruited control regions with indistinguishable multivariate patterns, whereas social-reappraisal additionally and distinctly engaged mentalizing regions such as medial prefrontal cortex and right temporal pole.",
   "free_keywords": [
-   "self-reappraisal",
-   "social-reappraisal",
+   "reappraisal",
    "mentalizing",
-   "multivariate classifier",
-   "prefrontal cortex",
-   "autobiographical memory"
+   "temporal pole",
+   "autobiographical memory",
+   "multivariate pattern classification"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.8,
+   "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -4454,7 +4457,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/crawford2025somatotopic.pdf",
-    "url_original": null,
+    "url_original": "pdf/crawford2025somatotopic.pdf",
     "version": "publisher"
    },
    {
@@ -4469,9 +4472,8 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "pain",
     "placebo",
-    "brain_body"
+    "pain"
    ],
    "approach": [
     "fmri"
@@ -4480,23 +4482,24 @@
     "empirical"
    ]
   },
-  "summary": "Used ultrahigh-field fMRI of the lateral periaqueductal gray during a placebo-analgesia paradigm applied at different body sites in 93 participants and found that analgesic responses were somatotopically organized in the lPAG and its descending output to the rostral ventromedial medulla.",
-  "key_finding": "Analgesic responses were somatotopically organized in the lateral PAG and its descending projections to the rostral ventromedial medulla, indicating body-site-selective control over pain.",
+  "summary": "Used ultra-high-field 7T fMRI in 93 participants during a body-site-specific placebo analgesia paradigm to test whether the lateral periaqueductal gray and its descending outputs show somatotopic organization of analgesic responses.",
+  "key_finding": "Placebo analgesia responses were somatotopically organized in the lateral periaqueductal gray and rostral ventromedial medulla, with face- versus body-site placebo analgesia mapping to distinct rostro-caudal locations.",
   "free_keywords": [
    "periaqueductal gray",
+   "7 Tesla fMRI",
    "rostral ventromedial medulla",
    "somatotopy",
-   "descending pain modulation",
-   "ultrahigh-field fMRI"
+   "brainstem",
+   "descending pain modulation"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.75,
+   "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Crawford, L. S., Tinoco Mendoza, F. A., Robertson, R. V., Meylakh, N., Macey, P. M., Bannister, K., Wager, T. D., Macefield, V. G., Keay, K. A., & Henderson, L. A. (2025) Somatotopic Organization of Brainstem Analgesic Circuitry. Science, 389(6763), eadu8846. [online link]"
@@ -5268,7 +5271,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/tripathi2025default.pdf",
-    "url_original": null,
+    "url_original": "pdf/tripathi2025default.pdf",
     "version": "publisher"
    },
    {
@@ -5281,24 +5284,24 @@
   "section": "2025",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Reviewed evidence on default mode network functional connectivity as a transdiagnostic biomarker of cognitive function across aging and clinical conditions including Alzheimer's, Parkinson's, depression, and ADHD, and discussed reliability challenges.",
+  "summary": "Reviewed evidence on default mode network functional connectivity, particularly its anticorrelation with frontoparietal networks, as a potential transdiagnostic biomarker of cognitive function across attention states, aging, and psychiatric and neurological disorders.",
   "key_finding": null,
   "free_keywords": [
    "default mode network",
-   "resting-state connectivity",
-   "transdiagnostic biomarker",
-   "mind wandering",
-   "meditation",
-   "reliability"
+   "frontoparietal network",
+   "anticorrelation",
+   "mind-wandering",
+   "reliability",
+   "precision fMRI"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.8,
+   "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -5307,6 +5310,7 @@
    ],
    "approach": [
     "fmri",
+    "neuromarker",
     "neuroimaging_methods"
    ],
    "type": [
@@ -6032,7 +6036,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/riegner2024mindfulness.pdf",
-    "url_original": null,
+    "url_original": "pdf/riegner2024mindfulness.pdf",
     "version": "publisher"
    },
    {
@@ -6045,35 +6049,35 @@
   "section": "2024",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Applied validated multivariate pain-signature fMRI analyses across two randomized trials (N=115) and found mindfulness meditation reduced nociceptive and negative-affective pain signatures more than placebo cream, which instead reduced a distinct placebo signature.",
-  "key_finding": "Mindfulness meditation produced greater reductions in nociceptive-specific and negative affective pain signature responses than placebo cream, sham meditation, or control, while placebo cream selectively reduced the placebo signature.",
+  "summary": "Applied validated multivariate pain-signature patterns (NPS, SIIPS-1, NAPS) across two randomized trials to test whether mindfulness meditation and placebo-cream analgesia engage distinct brain mechanisms to reduce pain.",
+  "key_finding": "Mindfulness meditation reduced nociceptive (NPS) and negative-affective (NAPS) pain signatures more than placebo, sham mindfulness, or control, while placebo-cream selectively reduced the placebo-related SIIPS-1 signature, showing a double dissociation.",
   "free_keywords": [
    "mindfulness meditation",
-   "placebo signature",
-   "nociceptive-specific pain signature",
-   "noxious heat",
-   "randomized clinical trial",
-   "MVPA"
+   "NPS",
+   "SIIPS-1",
+   "NAPS",
+   "sham mindfulness",
+   "multivariate pattern analysis"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.8,
+   "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
-    "pain",
     "placebo",
+    "pain",
     "emotion_regulation"
    ],
    "approach": [
     "fmri",
-    "machine_learning",
-    "neuromarker"
+    "neuromarker",
+    "machine_learning"
    ],
    "type": [
     "empirical"
@@ -6614,7 +6618,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/quide2024enigmachronic.pdf",
-    "url_original": null,
+    "url_original": "pdf/quide2024enigmachronic.pdf",
     "version": "publisher"
    }
   ],
@@ -6624,29 +6628,26 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "chronic_pain",
-    "clinical"
+    "chronic_pain"
    ],
    "approach": [
     "mega_analysis",
-    "open_tools",
-    "fmri",
     "other_imaging",
+    "fmri",
+    "open_tools",
     "genetics"
    ],
    "type": [
-    "methods"
+    "commentary"
    ]
   },
-  "summary": "Introduced the ENIGMA-Chronic Pain working group, a global consortium pooling structural, diffusion, and resting-state fMRI data from over 30 datasets to identify common and condition-specific brain correlates of chronic pain.",
+  "summary": "Described the formation and aims of the ENIGMA-Chronic Pain working group, which pools neuroimaging and clinical data from over 30 international datasets (about 2000 chronic pain and 4000 control participants) to identify common and condition-specific brain correlates of chronic pain.",
   "key_finding": null,
   "free_keywords": [
-   "ENIGMA",
-   "consortium",
-   "UK Biobank",
-   "OpenPain",
-   "multimodal neuroimaging",
-   "sex differences",
+   "ENIGMA consortium",
+   "multi-site neuroimaging",
+   "data sharing",
+   "biobank",
    "reproducibility"
   ],
   "classification": {
@@ -6654,9 +6655,9 @@
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.75,
-   "notes": "Descriptive/announcement paper for a data-pooling consortium rather than a report of new findings.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.85,
+   "notes": "Describes a planned consortium initiative rather than new empirical results; approach tags reflect the imaging modalities and pooled-data strategy the working group plans to use.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Quidé, Y. et al. (in press) ENIGMA-Chronic Pain: a worldwide initiative to identify brain correlates of chronic pain. PAIN",
@@ -6832,7 +6833,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/harp2024neuromarkers.pdf",
-    "url_original": null,
+    "url_original": "pdf/harp2024neuromarkers.pdf",
     "version": "publisher"
    }
   ],
@@ -6840,23 +6841,24 @@
   "section": "2024",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Reviewed definitions and development strategies for addiction neuromarkers, outlining criteria for sensitivity, specificity, predictive validity, and generalization, with emphasis on the Neurobiological Craving Signature as a promising marker of substance use disorder.",
+  "summary": "Reviewed definitions, development strategies, and validation requirements for neuromarkers in addiction, focusing on machine-learning-derived brain signatures of craving such as the Neurobiological Craving Signature.",
   "key_finding": null,
   "free_keywords": [
-   "Neurobiological Craving Signature",
    "substance use disorder",
-   "biomarker development",
    "craving",
-   "addiction neuroscience"
+   "Neurobiological Craving Signature",
+   "cross-validation",
+   "biomarker validation",
+   "computational psychiatry"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.8,
+   "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -6864,7 +6866,8 @@
    ],
    "approach": [
     "neuromarker",
-    "machine_learning"
+    "machine_learning",
+    "fmri"
    ],
    "type": [
     "review"
@@ -6932,32 +6935,36 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "emotion_regulation"
+    "emotion_regulation",
+    "emotion"
    ],
    "approach": [
     "fmri",
-    "computational_model"
+    "computational_model",
+    "neuroimaging_methods"
    ],
    "type": [
     "empirical"
    ]
   },
-  "summary": "Applied a Bayes factor-based systems identification approach to deconstruct the neural bases of emotion regulation, though limited title-only information precludes describing specific methods or results.",
-  "key_finding": null,
+  "summary": "Used Bayes factors within a novel axiomatic systems-identification approach across two large fMRI datasets to dissociate reappraisal-specific, shared-appraisal, and modifiable versus non-modifiable emotion-generation brain systems.",
+  "key_finding": "Four distinct reappraisal-related brain systems were identified, including an anterior prefrontal system selective for reappraisal and a subcortical system (amygdala, hypothalamus, periaqueductal gray) unaffected by reappraisal, challenging limbic-centric models of emotion regulation.",
   "free_keywords": [
-   "systems identification",
-   "Bayes factors",
-   "emotion regulation",
-   "brain bases"
+   "Bayes factor",
+   "axiomatic systems identification",
+   "amygdala",
+   "cannabinoid receptors",
+   "serotonin",
+   "reappraisal"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.35,
-   "notes": "Only the paper title was available (no abstract or full text); topic, approach, and type tags are inferred from the title and should be verified against the full paper.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.9,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "abstract_source": "pubmed",
@@ -7151,7 +7158,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/ceko2024effects.pdf",
-    "url_original": null,
+    "url_original": "pdf/ceko2024effects.pdf",
     "version": "publisher"
    }
   ],
@@ -7161,8 +7168,7 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "chronic_pain",
-    "pain"
+    "chronic_pain"
    ],
    "approach": [
     "fmri",
@@ -7174,14 +7180,12 @@
     "empirical"
    ]
   },
-  "summary": "A randomized clinical trial found that virtual reality neuroscience-based therapy reduced pain intensity and interference in chronic back pain compared with usual care, an effect partly mediated by reduced kinesiophobia and catastrophizing, alongside prefrontal connectivity and white matter changes.",
-  "key_finding": "VR neuroscience-based therapy reduced pain intensity (g = 0.63) and pain interference (g = 0.84) versus waitlist control, with increased dorsomedial prefrontal connectivity and decreased white matter fractional anisotropy near the anterior cingulate.",
+  "summary": "A randomized clinical trial tested whether an 8-week virtual reality neuroscience-based therapy (VRNT) improved pain and functioning in chronic back pain relative to waitlist control, with pre- and post-treatment MRI examining brain network changes.",
+  "key_finding": "VRNT significantly reduced pain intensity (g=0.63) and interference (g=0.84) versus control, an effect partially mediated by reduced kinesiophobia and catastrophizing, and was associated with increased dorsomedial prefrontal connectivity and decreased corpus callosum fractional anisotropy.",
   "free_keywords": [
    "virtual reality",
-   "chronic back pain",
    "kinesiophobia",
    "pain catastrophizing",
-   "functional connectivity",
    "fractional anisotropy",
    "randomized clinical trial"
   ],
@@ -7190,9 +7194,9 @@
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.85,
-   "notes": "Abstract only; no full text available.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.9,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Ceko, M., Baeuerle, T., Webster, L., Wager, T. D., & Lumley, M. A. (in press) The Effects of Virtual Reality Neuroscience-based Therapy on Clinical and Neuroimaging Outcomes in Patients with Chronic Back Pain: A Randomized Clinical Trial. PAIN"
@@ -7250,7 +7254,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/wager2024look.pdf",
-    "url_original": null,
+    "url_original": "pdf/wager2024look.pdf",
     "version": "publisher"
    }
   ],
@@ -7263,28 +7267,30 @@
     "chronic_pain"
    ],
    "approach": [
-    "other_imaging"
+    "other_imaging",
+    "mega_analysis"
    ],
    "type": [
     "commentary"
    ]
   },
-  "summary": "Offered a new perspective on the interpretation of gray-matter decreases observed in chronic pain.",
-  "key_finding": null,
+  "summary": "A commentary discussed a large UK Biobank study (Bhatt et al.) mapping cortical structural variability in over 20,000 participants with and without chronic pain, highlighting distinct gray-matter patterns by pain type and site.",
+  "key_finding": "The discussed study found widespread reductions in cortical surface area associated with chronic pain, with different regional patterns for localized versus multisite pain, and precuneus changes mediating suicide-attempt risk.",
   "free_keywords": [
+   "UK Biobank",
+   "cortical surface area",
    "gray matter",
-   "structural MRI",
-   "chronic pain",
-   "perspective"
+   "suicide",
+   "precuneus"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.3,
-   "notes": "Title only; tags, type, and summary are a low-confidence guess based solely on the title.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.85,
+   "notes": "This is a commentary/perspective on another group's paper (Bhatt et al. 2023) rather than an original empirical study by the authors.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Zorina-Lichtenwalter, K., & Friedman, N. P. (in press) A new look at gray-matter decreases in chronic pain. Biological Psychiatry"
@@ -7719,7 +7725,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/branco2023predictability.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2023/11/placebo-effects-through-the-lens.pdf",
+    "url_original": null,
     "version": "publisher"
    }
   ],
@@ -7729,33 +7735,35 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "placebo"
+    "placebo",
+    "chronic_pain"
    ],
    "approach": [
-    "pharmacology",
-    "fmri"
+    "genetics",
+    "pharmacology"
    ],
    "type": [
     "chapter"
    ]
   },
-  "summary": "This book chapter addressed the predictability of placebo responses and their implications for clinical pain trials, within a volume reviewing translational and neurobiological placebo research.",
+  "summary": "Reviewed factors that predict placebo responses, including genetic, pharmacological, and neurobiological markers, and discussed implications for clinical trial design and pain treatment.",
   "key_finding": null,
   "free_keywords": [
-   "placebo predictability",
-   "clinical trial design",
-   "opioid mechanisms",
-   "expectancy",
-   "conditioning"
+   "book chapter",
+   "predictability",
+   "clinical trials",
+   "translational research",
+   "genetic markers",
+   "Oxford University Press"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "full_text",
-   "confidence": 0.35,
-   "notes": "The extracted text contained only the edited volume's front matter and general introduction, not the specific content of this chapter (Branco, Vachon-Presseau, Hall, Wager & Apkarian); tags are based on the chapter title and authors' known research areas only.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.3,
+   "notes": "Full text extraction captured mostly front matter, table of contents, and the book's general introduction rather than this specific chapter's own content; tags are based on the title, authorship, and limited surrounding context.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "citation_original": "Branco, P., Vachon-Presseau, E., Hall, K. T., Wager, T. D., & Apkarian, A. V. (2023) Predictability of placebo responses and their clinical implications. In Colloca, L., Noel, J., Frankin, P. D., & Seneviratne, C. (eds), Placebo Effects Through the Lens of Translational Research (pp.57-75) Oxford Academic [PDF]"
  },
@@ -8623,13 +8631,14 @@
     "empirical"
    ]
   },
-  "summary": "Researchers developed a predictive neuroimaging marker of trait rumination based on dynamic resting-state functional connectivity with the dorsomedial prefrontal cortex, validated across five samples and linked to depression severity.",
-  "key_finding": "A dmPFC-based dynamic connectivity marker generalized across subclinical datasets, and a refined version derived from a virtual lesion analysis predicted depression scores in adults with major depressive disorder.",
+  "summary": "Developed a predictive model of trait rumination from dynamic resting-state functional connectivity with the dorsomedial prefrontal cortex, validated it across three subclinical datasets, and showed it predicted depression severity in adults with major depressive disorder.",
+  "key_finding": "A dmPFC-based dynamic connectivity model predicted depressive rumination across training, validation, and independent test datasets (r = 0.34, 0.24, 0.29) and generalized to predict depression scores (BDI-II) in 35 adults with MDD.",
   "free_keywords": [
    "rumination",
    "default mode network",
    "dynamic functional connectivity",
-   "predictive marker",
+   "virtual lesion analysis",
+   "Lasso regression",
    "depression"
   ],
   "classification": {
@@ -8637,9 +8646,9 @@
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.7,
-   "notes": "Only the abstract was available for this paper.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Kim, J., Andrews-Hanna, J.R., Eisenbarth, H., Lux, B.K., Kim, H.J., Lee, E., Lindquist, M.A., Losin, E.A.R., Wager, T.D., & Woo, C. (2023). A dorsomedial prefrontal cortex-based dynamic functional connectivity model of rumination. Nat Commun 14. PMID: 37321986. PMCID: PMC10272121. [PDF]"
@@ -8721,8 +8730,7 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "emotion",
-    "perception"
+    "emotion"
    ],
    "approach": [
     "fmri",
@@ -8732,23 +8740,24 @@
     "empirical"
    ]
   },
-  "summary": "Using a sequential probabilistic model of brain state dynamics, researchers found substantial individual variation in brain state occupancy patterns while people watched the same emotion-evoking video clips.",
-  "key_finding": "Substantial variation in state occupancy probability distributions was observed across individuals watching the same video clips, arguing against a single consistent brain pattern for each emotion category.",
+  "summary": "Modeled temporal brain state dynamics with a hidden Markov model during emotional video viewing and found substantial variation across individuals in the brain state sequences evoked by the same emotional clip.",
+  "key_finding": "State occupancy probability distributions varied substantially across participants viewing the same video, arguing against a single consistent brain pattern for each emotion category.",
   "free_keywords": [
-   "brain state dynamics",
-   "probabilistic model",
-   "emotion categories",
-   "BOLD signal",
-   "temporal dynamics"
+   "hidden Markov model",
+   "Gaussian mixture model",
+   "BOLD dynamics",
+   "Glasser atlas",
+   "individual variability",
+   "EMBC"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.65,
-   "notes": "Only the abstract was available for this paper.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.75,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Singh, A., Westlin, C., Eisenbarth, H., Losin, E.A.R., Andrews-Hanna, J.R., Wager, T.D., et al. (2023). Variation is the Norm: Brain State Dynamics Evoked By Emotional Video Clips. 2021 43rd Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC), Mexico, 2021, pp. 6003-6007. PMID: 34892486. PMCID: PMC8784974. [PDF]",
@@ -8912,24 +8921,24 @@
     "empirical"
    ]
   },
-  "summary": "A PGC-ENIGMA PTSD Consortium mega-analysis of resting-state fMRI from 1063 adults used a novel resolution limit-free community detection approach and found altered whole-brain and network connectivity metrics in PTSD compared with controls.",
-  "key_finding": "Individuals with PTSD showed greater whole-brain, default mode network, and central executive network participation coefficient and connectivity strength than trauma-exposed and healthy controls, with sex differences in these metrics.",
+  "summary": "Applied a resolution limit-free community detection method to resting-state fMRI data from 1,063 adults in the PGC-ENIGMA PTSD Consortium and found that individuals with PTSD showed greater network participation coefficient and connectivity strength than controls.",
+  "key_finding": "PTSD was associated with reduced network specialization and higher inter-module connectivity (elevated participation coefficient and connectivity strength) across whole-brain, default mode, and central executive networks compared to trauma-exposed and non-exposed controls.",
   "free_keywords": [
-   "PTSD",
-   "resting-state fMRI",
+   "PGC-ENIGMA",
+   "graph theory",
+   "participation coefficient",
    "community detection",
-   "PGC-ENIGMA consortium",
-   "network neuroscience",
-   "default mode network"
+   "PACO algorithm",
+   "medRxiv preprint"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.7,
-   "notes": "Only the abstract was available for this paper (preprint).",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.8,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Ross, M.C., Cisler, J.M., Koch S.B.J, Olff, M., Veltman, D.J., Nawijn, L., Frijling, J.L., van Zuiden, M., Zhu, X., Neria, Y., Suarez-Jimenez, B., Wager, T.D., et al. (preprint) Resolution limit-free community detection reveals unique patterns of resting-state network connectivity in posttraumatic stress disorder: A PGC-ENIGMA PTSD Consortium investigation. [PDF]",
@@ -9029,24 +9038,24 @@
     "empirical"
    ]
   },
-  "summary": "Researchers trained a multivariate fMRI signature, the Brain Reward Signature, that decoded monetary rewards versus losses and generalized across an independent sample and a large gambling-task dataset.",
-  "key_finding": "The Brain Reward Signature decoded rewards versus losses with 92% accuracy in training and generalized to an independent Monetary Incentive Delay sample (92%) and a large gambling-task sample (73%; N=1084).",
+  "summary": "Trained a LASSO-PCR predictive model, the Brain Reward Signature, on monetary incentive delay task fMRI data and showed it generalized across task versions and samples, including a large gambling task dataset, to predict reward and loss magnitude.",
+  "key_finding": "The Brain Reward Signature achieved 92% forced-choice decoding accuracy for rewards versus losses in training and validation samples and 73% accuracy in an independent gambling-task sample of over 1,000 participants.",
   "free_keywords": [
-   "Brain Reward Signature",
-   "Monetary Incentive Delay task",
-   "decoding accuracy",
-   "generalization",
-   "gambling task",
-   "disgust task"
+   "monetary incentive delay task",
+   "LASSO-PCR",
+   "ventral striatum",
+   "vmPFC",
+   "Human Connectome Project",
+   "disgust-delay task"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.75,
-   "notes": "Abstract only; approach tags inferred from the described multivariate decoding methodology.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.8,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Speer, S.P.H., Keysers, C., Barrios, J.C., Teurlings, C.J.S., Smidts, A., Boksem, M. A.S., Wager, T.D., & Gazzola, V. (2023). A multivariate brain signature for reward. NeuroImage, 271, 119990. PMID: 36878456. [PDF] [Link to the signature]"
@@ -9275,33 +9284,34 @@
   "tags": {
    "topic": [
     "chronic_pain",
-    "stress"
+    "stress",
+    "emotion_regulation",
+    "brain_body"
    ],
    "approach": [
-    "behavioral"
+    "psychophysiology"
    ],
    "type": [
     "commentary"
    ]
   },
-  "summary": "In a reply to a correspondence, the authors defended their integrative FITSS model of fibromyalgia, emphasizing bidirectional threat-soothing and autonomic nervous system dynamics rather than a single sympathetically maintained neuropathic mechanism.",
+  "summary": "Replied to a correspondence critiquing their fibromyalgia model, arguing that autonomic, peripheral, and psychosocial mechanisms interact bidirectionally rather than any single factor being the primary driver of the disorder.",
   "key_finding": null,
   "free_keywords": [
    "fibromyalgia",
    "autonomic nervous system",
-   "threat and soothing systems",
-   "correspondence",
    "salience network",
-   "central sensitization"
+   "small fiber pathology",
+   "threat and soothing systems"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "full_text",
-   "confidence": 0.45,
-   "notes": "No empirical approach clearly applies since this is a purely theoretical correspondence reply with no new data; 'behavioral' was tagged as the closest available approach category given its psychosocial framing.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.6,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Pinto, A.M., Geenen, R., Wager, T.D., et al. (2023). Reply to “Imbalance of threat and soothing systems in fibromyalgia: rephrasing an established mechanistic model.” Nature Reviews Rheumatology, 19(5), 319–320.. PMID: 36959282. [PDF]",
@@ -9357,15 +9367,15 @@
   "section": "2023",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Surveyed 1,642 Americans during the 2020 election vote count and showed a Bayesian belief-updating model explained partisan asymmetry in fraud belief changes better than motivated-reasoning or simplified alternative models.",
-  "key_finding": "A Bayesian model of updating across vote-winner, fraud-prevalence, and fraud-beneficiary beliefs outperformed models of irrational motivated reasoning in explaining partisan asymmetry in fraud beliefs.",
+  "summary": "Surveyed 1,642 Americans during the 2020 election vote count and found partisan asymmetry in fraud belief updating, which a Bayesian belief-system model explained better than models of irrational motivated reasoning.",
+  "key_finding": "Fraud beliefs increased after a hypothetical loss and decreased after a hypothetical win in a partisan-asymmetric pattern that a rational Bayesian model of interrelated beliefs (winner, fraud, beneficiary) fit better than motivated-reasoning alternatives.",
   "free_keywords": [
-   "fraud beliefs",
-   "2020 election",
-   "partisan bias",
-   "Bayesian updating",
-   "motivated reasoning",
-   "belief system"
+   "2020 US election",
+   "belief updating",
+   "desirability effects",
+   "partisan asymmetry",
+   "Bayesian attribution model",
+   "misinformation"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
@@ -9374,7 +9384,7 @@
    "input_mode": "title_only",
    "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -9458,24 +9468,24 @@
   "section": "2023",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Used machine learning across three fMRI studies (n=99) to develop the Neurobiological Craving Signature, a cross-validated neuromarker predicting cue-induced drug and food craving that discriminated drug users from non-users.",
-  "key_finding": "The Neurobiological Craving Signature discriminated drug users from non-users with 82% accuracy based on responses to drug versus food cues, and transferred between drug and food craving domains.",
+  "summary": "Used machine learning on pooled fMRI data from five independent cohorts of drug users and non-users to develop the Neurobiological Craving Signature, which predicted cue-induced drug and food craving and discriminated drug users from non-users.",
+  "key_finding": "The Neurobiological Craving Signature classified drug users versus non-users from responses to drug cues with 75% accuracy, while responses to food cues did not significantly differentiate the groups.",
   "free_keywords": [
-   "Neurobiological Craving Signature",
-   "drug craving",
-   "food craving",
-   "cue reactivity",
+   "craving",
+   "LASSO-PCR",
+   "ventromedial prefrontal cortex",
    "ventral striatum",
-   "substance use disorder"
+   "substance use disorder",
+   "cue reactivity"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.9,
+   "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -9484,7 +9494,8 @@
    "approach": [
     "fmri",
     "machine_learning",
-    "neuromarker"
+    "neuromarker",
+    "mega_analysis"
    ],
    "type": [
     "empirical"
@@ -9564,23 +9575,22 @@
    ],
    "approach": [
     "machine_learning",
-    "mediation",
     "ai_integration",
-    "fmri",
-    "neuroimaging_methods"
+    "mediation",
+    "fmri"
    ],
    "type": [
     "methods"
    ]
   },
-  "summary": "The authors introduced a machine-learning-based high-dimensional mediation method and applied it to identify brain patterns mediating thermal pain intensity and reported pain, and connectivity mediating fluid intelligence and working memory.",
-  "key_finding": "The method identified single-trial brain activation patterns mediating the temperature-pain relationship using a deep learning model, and resting-state connectivity mediating the fluid intelligence-working memory relationship using connectome-based predictive modeling.",
+  "summary": "Introduced a machine learning based algorithm for high-dimensional mediation analysis that iterates between a machine learning model and a standard mediation model, applying it with deep learning to fMRI pain data and resting-state connectivity data on working memory and fluid intelligence.",
+  "key_finding": "Combined with a deep convolutional neural network, the method identified distributed brain activation patterns that mediated the relationship between thermal stimulus intensity and reported pain at the single-trial level.",
   "free_keywords": [
-   "high-dimensional mediation",
+   "mediation analysis",
    "deep learning",
-   "single-trial fMRI",
-   "connectome-based predictive modeling",
+   "convolutional neural network",
    "Human Connectome Project",
+   "connectome-based predictive modeling",
    "fluid intelligence"
   ],
   "classification": {
@@ -9588,9 +9598,9 @@
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.85,
+   "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Nath, T., Caffo, B., Wager, T.D., Lindquist, M.A. (2023) A machine learning based approach towards high-dimensional mediation analysis. NeuroImage, 268, 119843. PMID: 36586543. PMCID: PMC10332048. [PDF]"
@@ -9636,41 +9646,33 @@
    "Mathematics",
    "Statistics"
   ],
-  "links": [
-   {
-    "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/botviniknezer2023reproducibility.pdf",
-    "url_original": "https://www.sciencedirect.com/science/article/abs/pii/S245190222200341X",
-    "version": "publisher"
-   }
-  ],
-  "has_pdf": true,
+  "links": [],
+  "has_pdf": false,
   "section": "2023",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Reviewed challenges and solutions for reproducibility in neuroimaging research, distinguishing analytical reproducibility, replicability, and robustness to analytical variability, and discussed tools and practices to improve each.",
+  "summary": "Reviewed challenges and emerging best practices for research reproducibility in neuroimaging, distinguishing analytical reproducibility, replicability, and robustness to analytical variability.",
   "key_finding": null,
   "free_keywords": [
-   "analytical reproducibility",
+   "reproducibility",
    "replicability",
-   "robustness",
+   "analytical variability",
    "open science",
-   "preregistration",
-   "neuroimaging best practices"
+   "best practices",
+   "neuroimaging"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.55,
-   "notes": "General methodological review without a specific substantive psychological topic in the taxonomy; 'cognitive_control' used as the closest available topic tag and should be reconsidered.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.35,
+   "notes": "The extracted full text did not match this article (it appears to be an unrelated 2013 OHBM workshop document on neuroimaging pipeline software); tags and summary are based on the abstract only. The topic axis is a loose fit since this is a general methodological review rather than a content-domain paper.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
-    "cognitive_control"
+    "clinical"
    ],
    "approach": [
     "neuroimaging_methods",
@@ -10052,7 +10054,8 @@
   "tags": {
    "topic": [
     "placebo",
-    "cognitive_control"
+    "cognitive_control",
+    "expectation_learning"
    ],
    "approach": [
     "behavioral"
@@ -10061,23 +10064,24 @@
     "commentary"
    ]
   },
-  "summary": "This paper examined how placebo effects and working memory training interventions each and jointly influence measures of cognitive performance.",
-  "key_finding": null,
+  "summary": "Commented on a companion study showing that a balanced placebo design crossing working memory training with expectation manipulation found training and placebo/nocebo suggestions each independently improved cognitive performance.",
+  "key_finding": "In the companion study, placebo versus nocebo expectation affected fluid intelligence test performance with no significant working memory training effect, while both training and placebo independently improved overall test performance.",
   "free_keywords": [
-   "placebo effects",
+   "balanced placebo design",
    "working memory training",
-   "cognitive performance",
+   "fluid intelligence",
+   "growth mindset",
    "cognitive training",
-   "expectation"
+   "expectancy effects"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.3,
-   "notes": "The supplied 'abstract' was a generic PNAS journal description rather than the paper's actual abstract; tags were inferred from the title alone. Type was guessed as commentary based on PNAS 'Unpacking...' commentary naming conventions but could instead be empirical or review.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.75,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. & Jung, H. (2022). Unpacking placebo and working memory training effects on cognitive performance. Proceedings of the National Academy of Sciences of the United States of America, 119(42), e2214268119. PMID: 36197960. PMCID: PMC9586315. [PDF]"
@@ -10155,9 +10159,9 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "expectation_learning",
     "reward_craving",
-    "emotion"
+    "emotion",
+    "expectation_learning"
    ],
    "approach": [
     "fmri",
@@ -10168,24 +10172,24 @@
     "empirical"
    ]
   },
-  "summary": "The authors applied a meta-analytically derived aversive conditioning brain pattern to three independent appetitive conditioning fMRI datasets and found it reliably distinguished rewarded from unrewarded cues, revealing shared neural systems for aversive and appetitive learning.",
-  "key_finding": "The aversive conditioning pattern closely resembled appetitive CS+ > CS- activation and classified CS+ versus CS- with above-chance accuracy in all three independent samples (Ns=29, 76, 38).",
+  "summary": "Applied a meta-analytically derived aversive conditioning brain pattern to three independent appetitive conditioning fMRI datasets and found it discriminated rewarded from unrewarded cues, evidencing a shared neural basis for aversive and appetitive learning.",
+  "key_finding": "The aversive conditioning pattern significantly distinguished rewarded from unrewarded cues (appCS+ vs appCS-) with above-chance forced-choice accuracy in all three independent appetitive conditioning samples.",
   "free_keywords": [
-   "aversive conditioning",
    "appetitive conditioning",
-   "fear network",
-   "reward network",
+   "fear conditioning",
+   "cross-paradigm integration",
+   "nucleus accumbens",
    "pattern expression",
-   "meta-analytic pattern"
+   "cosine similarity"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.85,
+   "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Klein, S., Kruse, O., Tapia León, I., Van Oudenhove, L., Van ’t Hof, S.R., Klucken, T., Wager, T.D., & Stark, S. (2022). Cross-paradigm integration shows a common neural basis for aversive and appetitive conditioning. NeuroImage, 263, 119594. PMID: 36041642. [PDF]"
@@ -10287,29 +10291,31 @@
    "approach": [
     "fmri",
     "behavioral",
-    "neuroimaging_methods"
+    "computational_model",
+    "mega_analysis"
    ],
    "type": [
     "commentary"
    ]
   },
-  "summary": "Responded to a critique of the ABCD Study stop signal task, arguing that violations of race-model assumptions had minimal impact on the ABCD neuroimaging data and much less impact on performance data than the critique suggested.",
-  "key_finding": "The authors' own computational modeling of the ABCD Stop task suggested the flagged design and coding issues had only a modest impact on the rank ordering of individual differences in performance.",
+  "summary": "Responded to a critique of the ABCD Study's fMRI stop signal task, presenting reanalyses showing that violations of race model assumptions had only modest effects on stop-signal reaction time estimates and did not undermine the task's neuroimaging validity.",
+  "key_finding": "After applying standard performance exclusion criteria, Stop Fail response times were 83 ms faster than Go response times, consistent with race model context independence, and only about 5% of participants showed violations of this pattern.",
   "free_keywords": [
    "ABCD Study",
    "stop signal task",
    "race model",
    "response inhibition",
-   "adolescent development"
+   "SSRT",
+   "adolescent neuroimaging"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.55,
-   "notes": "Abstract only; classified as a reply/commentary to a published critique.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.75,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Garavan, H., Chaarani, B., Hahn, S., Allgaier, N., Juliano, A., Yuan, D.K., Orr, C., Watts, R., Wager, T.D., Ruiz de Leon, O., Hagler Jr., D.J., Potter, A. (2022). The ABCD stop signal data: Response to Bissett et al. Developmental Cognitive Neuroscience,Volume 57. ISSN 1878-9293. PMID: 35987133. [PDF]"
@@ -10521,25 +10527,25 @@
   "section": "2022",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "A randomized trial found MBSR reduced Neurologic Pain Signature and SIIPS1 responses to thermal pain versus active-control and waitlist groups, while long-term meditators reported less pain without altered signature responses.",
-  "key_finding": "MBSR decreased NPS response relative to the active-control group (d=-0.43) and from pre- to post-intervention (d=-0.47), and cumulative retreat practice was associated with reduced SIIPS1 (r=-0.65).",
+  "summary": "A randomized trial found that mindfulness-based stress reduction reduced neurologic pain signature and SIIPS1 responses to experimental thermal pain relative to controls, while long-term meditators reported less pain without differing neural responses.",
+  "key_finding": "MBSR reduced NPS response relative to an active control (d=-0.43) and from pre- to post-intervention (d=-0.47); among long-term meditators, intensive retreat practice correlated with lower SIIPS1 (r=-0.65).",
   "free_keywords": [
    "mindfulness",
    "MBSR",
-   "NPS",
+   "neurologic pain signature",
    "SIIPS1",
    "meditation",
-   "randomized controlled trial",
-   "thermal pain"
+   "thermal pain",
+   "randomized controlled trial"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.85,
+   "confidence": 0.9,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -10549,8 +10555,7 @@
    "approach": [
     "fmri",
     "neuromarker",
-    "machine_learning",
-    "behavioral"
+    "machine_learning"
    ],
    "type": [
     "empirical"
@@ -10942,13 +10947,6 @@
   "keywords": [],
   "links": [
    {
-    "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/coll2022neural.pdf",
-    "url_original": null,
-    "version": "publisher"
-   },
-   {
     "type": "publisher",
     "label": "Link",
     "url": "https://pubmed.ncbi.nlm.nih.gov/35658082/"
@@ -10959,28 +10957,28 @@
     "url": "https://github.com/canlab/Neuroimaging_Pattern_Masks/tree/master/Multivariate_signature_patterns/2022_coll_pain_monetary_reward_decision_value"
    }
   ],
-  "has_pdf": true,
+  "has_pdf": false,
   "section": "2022",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Using fMRI and multivariate pattern analysis during an economic decision task, identified a distributed neural representation of the decision value of future pain that overlapped with aversive-picture processing but differed from experienced pain.",
-  "key_finding": "A multivariate brain pattern predicted the decision value of future pain and accept/avoid choices, with negative weights in reward-valuation regions and positive weights in salience, negative-affect and executive-control regions.",
+  "summary": "Using an economic decision task combining pain and money, multivariate pattern analysis of fMRI identified a distributed brain representation encoding the decision value of future pain, overlapping with aversive-picture responses but distinct from experienced pain.",
+  "key_finding": "A multivariate neural pattern predicted decisions to accept or avoid future pain and the pain's intensity, overlapping with representations of aversive images but distinct from representations of experienced pain.",
   "free_keywords": [
+   "intertemporal pain choice",
    "decision value",
-   "economic decision-making",
+   "economic decision task",
    "aversive pictures",
    "valuation",
-   "reward",
-   "pain avoidance"
+   "multivariate pattern analysis"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.8,
-   "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.45,
+   "notes": "The supplied full text did not match this paper (it was a different fMRI study of effort-reward decisions); tags, summary, and key finding are based on the abstract only.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -11676,24 +11674,24 @@
   "section": "2022",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Introduced and validated a collaborative-filtering method for recovering individual emotional-state ratings from sparsely sampled data without disrupting the emotion-generation process.",
-  "key_finding": null,
+  "summary": "Introduced and validated Neighbors, an open-source collaborative-filtering toolbox that recovers dense individual emotion ratings from sparse sampling, outperforming mean and multivariate imputation across image, video, and social-decision datasets.",
+  "key_finding": "Non-negative matrix factorization collaborative filtering reduced imputation error by 10-13% over mean imputation, with the largest benefits for datasets with greater inter-individual variability such as emotional video ratings.",
   "free_keywords": [
    "collaborative filtering",
+   "Neighbors toolbox",
    "sparse sampling",
-   "emotion dynamics",
-   "ecological momentary assessment",
-   "missing data",
-   "toolbox"
+   "matrix factorization",
+   "K-nearest neighbors",
+   "affective ratings"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.55,
-   "notes": "Abstract text is truncated in the source (cuts off mid-sentence) and does not state a quantitative validation result.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.9,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -11757,7 +11755,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/ashar2022pain.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2021/03/2021_Ashar_JAMAPsych.pdf",
+    "url_original": null,
     "version": "publisher"
    },
    {
@@ -11892,23 +11890,24 @@
   "section": "2021",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Modeled brain-state dynamics during emotional video viewing with a sequential probabilistic approach and found substantial individual variation in state-occupancy patterns rather than a consistent emotion-specific brain state.",
-  "key_finding": "State-occupancy probability distributions varied substantially across individuals watching the same emotional video clips.",
+  "summary": "A hidden Markov model with Gaussian-mixture emission densities applied to fMRI data during emotional video clips revealed substantial variation across individuals in brain-state occupancy dynamics evoked by the same video.",
+  "key_finding": "Individuals showed high dissimilarity in state-occupancy probability sequences while watching the same emotional video clips, supporting variability rather than consistency as the norm in emotion-related brain dynamics.",
   "free_keywords": [
-   "brain states",
-   "BOLD dynamics",
-   "emotion categories",
+   "hidden Markov model",
+   "brain state dynamics",
+   "Gaussian mixture model",
+   "emotional video clips",
    "individual variability",
-   "state transitions"
+   "Glasser atlas"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.65,
+   "confidence": 0.85,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -12150,47 +12149,43 @@
   "keywords": [],
   "links": [
    {
-    "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/jung2021novel.pdf",
-    "url_original": null,
-    "version": "publisher"
-   },
-   {
     "type": "publisher",
     "label": "Link",
     "url": "https://direct.mit.edu/jocn/article-abstract/34/3/381/108892/Novel-Cognitive-Functions-Arise-at-the-Convergence?redirectedFrom=fulltext"
    }
   ],
-  "has_pdf": true,
+  "has_pdf": false,
   "section": "2021",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Reviewed evidence that novel higher-order cognitive functions, such as mentalizing at the temporoparietal junction, arise where macroscale cortical processing gradients converge at maximal distance from sensory cortices.",
+  "summary": "This review proposed that novel higher-order cognitive functions, illustrated by the temporal-parietal junction, arise where hierarchical macroscale sensory-processing gradients converge and combine maximally abstracted representations.",
   "key_finding": null,
   "free_keywords": [
+   "temporal-parietal junction",
    "macroscale gradients",
-   "temporoparietal junction",
-   "convergence zones",
-   "cortical hierarchy",
-   "mentalizing"
+   "convergence-divergence zones",
+   "theory of mind",
+   "hierarchical processing",
+   "polymodal cortex"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.5,
-   "notes": "Abstract-only theoretical review; the fmri approach tag reflects the imaging-derived gradient literature it synthesizes rather than new data collected here.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.8,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
     "cognitive_control",
-    "social"
+    "social",
+    "perception"
    ],
    "approach": [
-    "fmri"
+    "fmri",
+    "brain_stimulation"
    ],
    "type": [
     "review"
@@ -12260,31 +12255,30 @@
     "brain_body"
    ],
    "approach": [
-    "behavioral"
+    "genetics"
    ],
    "type": [
     "empirical"
    ]
   },
-  "summary": "Showed in mouse models that B cell-deficient animals lacking natural antibodies had markedly increased tumor burden, revealing that natural antibodies and a compensatory dendritic cell-interferon-NK cell pathway contribute to anti-tumor immunity.",
-  "key_finding": "Two B cell-deficient mouse strains (IgHEL and CD19creDTA) showed a three- to fivefold increase in tumor burden compared with wild-type mice, while muMT mice compensated via elevated interferon-producing plasmacytoid dendritic cells and NK cell recruitment.",
+  "summary": "Using B cell-deficient mouse models, this study showed that natural antibodies are required for early elimination of neoantigen-expressing and tumor cells, with muMT mice compensating via a pDC-interferon-NK cell mechanism.",
+  "key_finding": "IgHEL and CD19creDTA B cell-deficient mice showed a three- to fivefold increase in tumor burden versus wild type, while muMT mice avoided this via compensatory interferon-producing plasmacytoid dendritic cells that recruit NK cells.",
   "free_keywords": [
    "natural antibodies",
-   "B cells",
-   "tumor immunosurveillance",
+   "cancer immunosurveillance",
+   "B16F10 melanoma",
    "plasmacytoid dendritic cells",
    "muMT mice",
-   "melanoma",
-   "mouse model"
+   "neoantigen"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "full_text",
-   "confidence": 0.25,
-   "notes": "Outlier mouse immunology/cancer-immunosurveillance paper unrelated to CANlab's core human neuroscience focus; the taxonomy has no good match for immunology methods, so tags are best-effort placeholders.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.3,
+   "notes": "This is a basic mouse immunology/tumor-immunity paper outside CANlab's usual cognitive/affective neuroscience scope; no taxonomy approach value fits well, so 'genetics' was used loosely for its genetically modified mouse models. Flagging for review of whether this belongs in the database.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Rawat, K., Tewari, A., Morrisson, M.J., Wager, T.D., & Jakubzick, C.V. (2021). Redefining innate natural antibodies as important contributors to anti-tumor immunity. Elife. 10:e69713. PMCID: PMC8547949. [PDF]"
@@ -12680,7 +12674,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/reeck2021framing.pdf",
-    "url_original": null,
+    "url_original": "pdf/reeck2021framing.pdf",
     "version": "publisher"
    },
    {
@@ -12705,23 +12699,24 @@
     "empirical"
    ]
   },
-  "summary": "Examined how framing intertemporal choices as delay versus acceleration differentially engaged medial temporal lobe activation during fMRI.",
-  "key_finding": null,
+  "summary": "fMRI during intertemporal choice showed greater hippocampal, amygdala, and anterior insula activation when options were framed as delaying versus accelerating consumption, consistent with preference-construction accounts of framing effects.",
+  "key_finding": "Delay-framed (versus acceleration-framed) intertemporal choices produced greater activation in hippocampus, amygdala, and anterior insula, suggesting more vivid representation of the sooner default option.",
   "free_keywords": [
    "intertemporal choice",
-   "medial temporal lobe",
-   "framing effect",
    "delay discounting",
-   "decision neuroscience"
+   "framing effects",
+   "query theory",
+   "medial temporal lobe",
+   "preference construction"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.3,
-   "notes": "Title-only; tags inferred from a title referencing intertemporal choice and medial temporal lobe fMRI activation.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "abstract_source": "pdf",
@@ -13120,30 +13115,33 @@
   "tags": {
    "topic": [
     "empathy",
-    "emotion_regulation"
+    "placebo"
    ],
    "approach": [
-    "fmri"
+    "fmri",
+    "behavioral"
    ],
    "type": [
-    "commentary"
+    "empirical"
    ]
   },
-  "summary": "Published an erratum correcting the article title for a study of compassion training's effects on brain responses to suffering others; no results were included in the erratum text.",
-  "key_finding": null,
+  "summary": "A three-arm randomized trial found that smartphone-delivered compassion meditation increased medial orbitofrontal cortex responses to suffering others relative to a familiarity-control condition, with effects partly explained by placebo.",
+  "key_finding": "Compassion meditation increased mOFC responses to suffering others versus the familiarity control (P<0.05, FWE-corrected), and individual increases in mOFC response correlated with increased compassion-related feelings (r=0.50).",
   "free_keywords": [
-   "compassion training",
-   "erratum",
-   "correction"
+   "compassion meditation",
+   "medial orbitofrontal cortex",
+   "oxytocin placebo",
+   "longitudinal fMRI",
+   "prosocial affect"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "full_text",
-   "confidence": 0.3,
-   "notes": "Only the erratum/title-correction notice was available in the provided text, not the original article; topic and approach tags are inferred from the title/citation alone and are low confidence.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.6,
+   "notes": "The supplied 'full text' was only an erratum notice correcting the paper's title, not the paper's actual content; tags and summary are based on the abstract.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Ashar, Y.K., Andrews-Hanna, J.R., Halifax, J., Dimidjian, S. & Wager, T.D. (2021). Effects of compassion training on brain responses to suffering others. Social Cognitive and Affective Neuroscience. PMID: 33948660. [PDF]"
@@ -13801,13 +13799,6 @@
   "keywords": [],
   "links": [
    {
-    "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/zunhammer2021metaanalysis.pdf",
-    "url_original": "https://www.nature.com/articles/s41467-021-21179-3.epdf?sharing_token=OJX40o6zb59OGmojCTwyENRgN0jAjWel9jnR3ZoTv0NPLu3F2IJ2oEv-WrjHLGoPQf6EDV-_5_IBAmZdjIji40SiJRGcBp-LQHc3LCpo5-3_RXE4zyIYcJq-7Ehoy4Ldzl1mXgPk1br963krxsaEnmpmLq7dlPZOi-1jraNwijM%3D",
-    "version": "publisher"
-   },
-   {
     "type": "maps",
     "label": "Treshholded Whole Brain Maps",
     "url": "https://osf.io/tbpr4/"
@@ -13818,18 +13809,18 @@
     "url": "https://github.com/canlab/Neuroimaging_Pattern_Masks/tree/master/CANlab_Meta_analysis_maps/2021_Zunhammer_n603_Pain_Placebo"
    }
   ],
-  "has_pdf": true,
+  "has_pdf": false,
   "section": "2021",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "An individual-participant-data meta-analysis of 603 participants across 20 fMRI studies found that placebo treatments produced small, widespread reductions in pain-related brain activity in ventral attention and somatomotor networks.",
-  "key_finding": "Behavioral placebo analgesia correlated with reduced pain-related activity in ventral attention/somatomotor networks, thalamus, habenula, mid-cingulate and supplementary motor area, with high between-study heterogeneity.",
+  "summary": "An individual-participant-data meta-analysis of 603 participants from 20 fMRI studies found that placebo treatments produced small, widespread reductions in pain-related brain activity, especially in ventral attention and somatomotor networks.",
+  "key_finding": "Placebo treatments had moderate effects on pain reports but only small, heterogeneous effects on pain-related fMRI activity, concentrated in ventral attention and somatomotor networks including the insula.",
   "free_keywords": [
    "placebo analgesia",
    "individual participant data",
+   "neurologic pain signature",
    "insula",
-   "thalamus",
-   "habenula",
+   "ventral attention network",
    "Placebo Imaging Consortium"
   ],
   "classification": {
@@ -13837,9 +13828,9 @@
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.85,
-   "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.75,
+   "notes": "The supplied full text matched a closely related earlier JAMA Neurology (2018) publication by the same authors/consortium using the same NPS/603-participant dataset rather than the cited 2021 Nature Communications paper; tags reflect both the abstract and this related full text.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -13848,7 +13839,9 @@
    ],
    "approach": [
     "fmri",
-    "mega_analysis"
+    "meta_analysis",
+    "mega_analysis",
+    "neuromarker"
    ],
    "type": [
     "empirical"
@@ -14529,7 +14522,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/kragel2020fmri.pdf",
-    "url_original": null,
+    "url_original": "pdf/kragel2020fmri.pdf",
     "version": "publisher"
    },
    {
@@ -14542,32 +14535,35 @@
   "section": "2020",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Argued and demonstrated, using multivariate studies and a reanalysis of Human Connectome Project data, that task-based fMRI can show excellent test-retest and task reliability when appropriate measures and larger samples are used.",
-  "key_finding": "Multivariate pain and affective-image studies and a Human Connectome Project reanalysis showed excellent reliability (ICC>0.75) over roughly four months, contrasting with Elliot et al.'s (2020) negative conclusions.",
+  "summary": "This reply to Elliott et al. (2020) argued that task-fMRI reliability is excellent for multivariate, machine-learning-derived brain patterns in larger samples, citing pain signatures, cardiovascular-risk patterns, and depression biotypes as examples.",
+  "key_finding": "Multivariate signatures (e.g., neurologic pain signature, cardiovascular-risk patterns) showed good-to-excellent test-retest reliability (ICC>0.75), and a reanalyzed HCP face-processing classifier showed exceptional task reliability (Cohen's kappa=.909) across 4 weeks.",
   "free_keywords": [
    "test-retest reliability",
-   "ICC",
+   "biomarker development",
    "Human Connectome Project",
-   "task reliability",
-   "biomarkers"
+   "neurologic pain signature",
+   "multivariate pattern",
+   "depression biotypes"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.6,
-   "notes": "Published as a direct reply to Elliot et al. (2020); classified as commentary although it includes an original reanalysis of HCP data.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
-    "pain"
+    "pain",
+    "clinical"
    ],
    "approach": [
     "fmri",
     "neuroimaging_methods",
-    "machine_learning"
+    "machine_learning",
+    "neuromarker"
    ],
    "type": [
     "commentary"
@@ -15684,7 +15680,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/duff2020inferring.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2020/09/2020_Duff_LancetDigHealth.pdf",
+    "url_original": null,
     "version": "publisher"
    }
   ],
@@ -15936,28 +15932,29 @@
   "section": "2020",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Summarized outcomes of an NIH HEAL workshop on discovering and validating objective pain biomarkers to guide safe, non-addictive pain therapeutic development amid the opioid crisis.",
+  "summary": "This NIH HEAL Initiative consensus statement summarized workshop discussions on challenges and opportunities for discovering and validating objective biomarkers to guide development of safe, non-addictive pain therapeutics.",
   "key_finding": null,
   "free_keywords": [
+   "biomarker validation",
    "opioid crisis",
    "HEAL Initiative",
-   "biomarker validation",
-   "analgesics",
-   "clinical trial endpoints"
+   "clinical trial endpoints",
+   "non-addictive therapeutics",
+   "consensus statement"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.65,
-   "notes": "Consensus statement summarizing a multi-stakeholder workshop; treated as a review/perspective rather than new empirical data.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.55,
+   "notes": "Only the cover letter and abstract were available in the supplied full text (about 3.8k characters), not the workshop report's substantive content, so approach tags are inferred mainly from the abstract.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
-    "pain",
-    "chronic_pain"
+    "chronic_pain",
+    "pain"
    ],
    "approach": [
     "neuromarker",
@@ -16007,16 +16004,8 @@
    "Tor D. Wager"
   ],
   "keywords": [],
-  "links": [
-   {
-    "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/hamann2020neuropsychologia.pdf",
-    "url_original": null,
-    "version": "publisher"
-   }
-  ],
-  "has_pdf": true,
+  "links": [],
+  "has_pdf": false,
   "section": "2020",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
@@ -16031,7 +16020,7 @@
     "commentary"
    ]
   },
-  "summary": "Introduced a Neuropsychologia special issue on the neural basis of emotion as guest editors, based on the title alone since no abstract or full text was available.",
+  "summary": "This editorial introduced a Neuropsychologia special issue surveying current research on the neural basis of emotion.",
   "key_finding": null,
   "free_keywords": [
    "special issue",
@@ -16043,9 +16032,9 @@
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.25,
-   "notes": "Title-only editorial; the fmri approach tag is a low-confidence guess since neuroimaging is the dominant method in this special-issue topic area, but the actual content is unknown.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.2,
+   "notes": "The supplied abstract and full text both belonged to a different, unrelated paper (an adolescent cognitive-control fMRI study by Banich et al.), not this editorial; tags are a low-confidence best guess based on the title alone. Recommend re-extracting this paper's actual text.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "abstract_source": "pdf",
@@ -16122,21 +16111,21 @@
     "brain_body"
    ],
    "approach": [
-    "open_tools",
-    "genetics"
+    "genetics",
+    "open_tools"
    ],
    "type": [
-    "empirical"
+    "methods"
    ]
   },
-  "summary": "Performed RNA sequencing on 15 human and 9 mouse mononuclear phagocyte subtypes from lung, lymph node, blood, and spleen and identified cross-species homologous subtypes along with marker genes that are largely divergent between species.",
-  "key_finding": "Only 13-23% of the top 1,000 marker genes overlapped between corresponding human and mouse mononuclear phagocyte subtypes, and CD88 distinguished monocytes/macrophages from dendritic cells in both species.",
+  "summary": "This resource paper used RNA sequencing to build a cross-species gene-expression compendium of human and mouse mononuclear phagocytes, finding only 13-23% marker-gene overlap between corresponding human-mouse subtypes.",
+  "key_finding": "Only 13-23% of top marker genes overlapped between corresponding human and mouse mononuclear phagocyte subtypes, and CD88 distinguished macrophages/monocytes from dendritic cells in both species.",
   "free_keywords": [
-   "mononuclear phagocytes",
    "RNA sequencing",
+   "mononuclear phagocytes",
    "cross-species homology",
-   "macrophages",
    "dendritic cells",
+   "macrophages",
    "transcriptome"
   ],
   "classification": {
@@ -16144,9 +16133,9 @@
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "full_text",
-   "confidence": 0.4,
-   "notes": "Immunology/transcriptomics paper outside CANlab's core neuroscience scope (Wager contributed bioinformatics/biostatistics support); topic and approach are approximate best fits from the controlled vocabulary (immune measures -> brain_body; released expression-compendium resource -> open_tools).",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.3,
+   "notes": "This is a basic immunology/transcriptomics resource paper outside CANlab's cognitive/affective neuroscience scope; 'genetics' and 'open_tools' are the closest available approach tags. Flagging for review of whether this belongs in the database.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Leach, S.M, Gibbings, S.L., Tewari, A.D., Atif, S.M., Vestal, B., Danhorn, T., Janssen, W.J., Wager, T.D. & Jakubzick, C.V. (2020) Human and Mouse Transcriptome Profiling Identifies Cross-Species Homology in Pulmonary and Lymph Node Mononuclear Phagocytes. Cell Reports. 33(5):108337. PMID: 33147458. [PDF]",
@@ -16912,7 +16901,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/kohoutova2020interpreting.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2020/04/2020_Kohoutová_NatPrtcls.pdf",
+    "url_original": null,
     "version": "publisher"
    },
    {
@@ -17873,10 +17862,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/zilchamano2019neural.pdf",
+    "label": "PDF (author manuscript)",
+    "url": "pdf/author_manuscripts/zilchamano2019neural.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/10/1-s2.0-S0022395619303401-main.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -17961,7 +17950,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/zunhammer2019laterality.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2019/10/jamaneurology_zunhammer_2019_lr_190006.pdf",
+    "url_original": null,
     "version": "publisher"
    }
   ],
@@ -18240,30 +18229,32 @@
   "section": "2019",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Showed via a survey of 135 fMRI replication studies that ambiguous, voxel-underspecified anatomical hypotheses (e.g., 'the amygdala') allow flexible, non-reproducible claims of replication and recommended quantitative spatial tests.",
-  "key_finding": "Only 14.1% of surveyed replication studies used exact coordinate- or pattern-based tests, and 42.9% of 'replicated' peaks were more than 15 mm from the original finding.",
+  "summary": "Surveyed 135 fMRI studies claiming replication, found most provided no quantitative spatial evidence and many replicated peaks were far from original locations, and recommended permutation tests, Bayesian MANOVA, and multivariate pattern models for testing spatial reproducibility.",
+  "key_finding": "42.9% of studies reporting peak coordinates had 'replicated' peaks more than 15 mm from the original finding, despite claiming replication.",
   "free_keywords": [
-   "replication",
-   "spatial specificity",
-   "amygdala",
-   "coordinate-based tests",
-   "degrees of freedom",
-   "reproducibility"
+   "replication crisis",
+   "Bayesian MANOVA",
+   "peak coordinates",
+   "dorsal anterior cingulate",
+   "model degrees of freedom",
+   "pattern-based prior models"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.5,
-   "notes": "This is a general methodological/statistical critique with no specific psychological content domain; 'emotion' was tagged loosely based on the amygdala example used throughout for illustration.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
-    "emotion"
+    "pain",
+    "empathy"
    ],
    "approach": [
+    "fmri",
     "neuroimaging_methods",
     "machine_learning"
    ],
@@ -18330,7 +18321,7 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "cognitive_control"
+    "brain_body"
    ],
    "approach": [
     "fmri",
@@ -18340,24 +18331,25 @@
     "methods"
    ]
   },
-  "summary": "Showed theoretically and empirically that sequential, modular fMRI preprocessing steps such as motion regression and temporal filtering are not commutative and can reintroduce previously removed artifacts into resting-state fMRI data.",
-  "key_finding": "High-pass filtering performed after motion regression reintroduced motion artifacts into the data, and vice versa, demonstrating that the order of modular preprocessing steps materially affects resting-state fMRI results.",
+  "summary": "Showed mathematically and empirically that sequential fMRI preprocessing steps such as motion regression and temporal filtering are non-commutative projections that can reintroduce previously removed nuisance artifacts, and proposed combined or orthogonalized filtering as remedies.",
+  "key_finding": "Performing high-pass filtering after motion regression reintroduced motion-related artifacts into resting-state fMRI data, demonstrated theoretically and with test-retest data.",
   "free_keywords": [
-   "resting-state fMRI",
+   "preprocessing pipeline",
    "motion regression",
-   "temporal filtering",
-   "geometric projection",
-   "nuisance regression",
-   "orthogonalization"
+   "global signal regression",
+   "resting-state fMRI",
+   "orthogonalization",
+   "nuisance covariates",
+   "band-pass filtering"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "full_text",
-   "confidence": 0.45,
-   "notes": "This is a purely statistical/signal-processing methods paper about fMRI preprocessing pipelines and does not fit any taxonomy topic well; 'cognitive_control' was chosen as the least-arbitrary placeholder since resting-state network methods are commonly applied in that domain, but the fit is weak and should be reviewed.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.65,
+   "notes": "Pure signal-processing/statistics paper with no clear psychological topic in the taxonomy; 'brain_body' was chosen loosely because the paper discusses cardiac/respiratory physiological noise, but this is a weak fit.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Lindquist, M., Geuter, S., Wager, T. D., & Caffo, B. (2019). Modular preprocessing pipelines can reintroduce artifacts into fMRI data. Human Brain Mapping. 40(8): 2358-2376. PMID: 30666750. [PDF]",
@@ -18409,10 +18401,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/krause2019pain.pdf",
+    "label": "PDF (author manuscript)",
+    "url": "pdf/author_manuscripts/krause2019pain.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/10/Krause_Pain_of_sleep_loss.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -18588,10 +18580,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/reddanmc2019systems.pdf",
+    "label": "PDF (author manuscript)",
+    "url": "pdf/author_manuscripts/reddanmc2019systems.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/10/Reddan_NeuroLetters.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -18986,32 +18978,38 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "emotion"
+    "pain",
+    "emotion",
+    "empathy"
    ],
    "approach": [
-    "neuromarker",
-    "machine_learning"
+    "fmri",
+    "machine_learning",
+    "neuromarker"
    ],
    "type": [
     "chapter"
    ]
   },
-  "summary": "Discussed approaches for building reproducible and generalizable multivariate brain models of affective processes as a book chapter in the Nebraska Symposium on Motivation volume.",
-  "key_finding": null,
+  "summary": "Reviewed challenges in mapping brain measures to affective constructs like pain, negative affect, and empathy, and argued that cross-validated predictive modeling, exemplified by the Neurologic Pain Signature, yields more reproducible and generalizable brain measures than region-based approaches.",
+  "key_finding": "The Neurologic Pain Signature reliably tracked trial-by-trial pain reports across nearly 400 participants in 11 studies, with over 95% of participants showing a positive NPS-pain correlation and odd-even reliability of 0.84.",
   "free_keywords": [
-   "affective neuroscience",
-   "brain signatures",
-   "generalizability",
-   "reproducibility"
+   "Neurologic Pain Signature",
+   "brain representation",
+   "cross-validation",
+   "specificity",
+   "predictive modeling",
+   "bias-variance tradeoff",
+   "population coding"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.3,
-   "notes": "Only the title was available; tags and summary are inferred from the title and authors' known work, not from full text.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Kragel, P.A., Wager, T. D. (2018). Reproducible, generalizable brain models of affective processes. In M. Neta & I. Haas (Eds.) Nebraska Symposium on Motivation. New York, NY: Springer. [PDF]"
@@ -19167,31 +19165,37 @@
   "tags": {
    "topic": [
     "emotion",
-    "emotion_regulation"
+    "emotion_regulation",
+    "expectation_learning"
    ],
    "approach": [
-    "fmri"
+    "fmri",
+    "machine_learning",
+    "psychophysiology"
    ],
    "type": [
     "empirical"
    ]
   },
-  "summary": "Examined, per the title, whether imagination-based strategies could attenuate neural expression of conditioned threat responses, in this Neuron article on attenuating neural threat expression with imagination.",
-  "key_finding": null,
+  "summary": "Showed in an fMRI and skin-conductance study that imagined extinction reduced a neural threat-predictive pattern and physiological threat responses as effectively as real extinction, with vmPFC central to both and nucleus accumbens uniquely predicting imagined extinction success.",
+  "key_finding": "A whole-brain SVM-based threat-predictive pattern classified threat with 77% accuracy, and both real and imagined extinction reduced its expression upon reinstated threat re-exposure, with nucleus accumbens activity predicting success only in the imagined extinction group.",
   "free_keywords": [
-   "threat conditioning",
-   "imagination",
    "fear extinction",
-   "reappraisal"
+   "imagination",
+   "ventromedial prefrontal cortex",
+   "nucleus accumbens",
+   "skin conductance response",
+   "support vector machine",
+   "reinstatement"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.3,
-   "notes": "Only the title was available; topic/approach tags and summary are inferred from the title alone and are low confidence.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Reddan, M. C., Wager T. D., & Schiller D. (2018). Attenuating Neural Threat Expression with Imagination. Neuron. 100(4): 994-1005. PMCID: PMC6314478. [PDF], [Brain Model]"
@@ -19436,24 +19440,24 @@
   "section": "2018",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Developed a Bayesian log-Gaussian Cox process regression model with GPU-accelerated MCMC for coordinate-based meta-analysis of neuroimaging studies and applied it to synthesize over 20 years of working-memory fMRI findings.",
-  "key_finding": null,
+  "summary": "Proposed a Bayesian log-Gaussian Cox process meta-regression model with GPU-accelerated MCMC for coordinate-based neuroimaging meta-analysis and applied it to 157 working-memory fMRI studies to examine effects of stimulus type, age, and sample size.",
+  "key_finding": "The model identified brain regions consistently activated across working-memory studies and found that verbal versus non-verbal stimulus type affected the expected number and location of activation foci.",
   "free_keywords": [
-   "coordinate-based meta-analysis",
    "log-Gaussian Cox process",
-   "Bayesian",
+   "coordinate-based meta-analysis",
+   "Hamiltonian Monte Carlo",
+   "meta-regression",
    "GPU computing",
-   "working memory",
-   "spatial statistics"
+   "working memory foci"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.75,
+   "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -19686,29 +19690,36 @@
   "tags": {
    "topic": [
     "pain",
+    "empathy",
     "social"
    ],
    "approach": [
-    "fmri"
+    "fmri",
+    "mediation",
+    "neuromarker"
    ],
    "type": [
     "empirical"
    ]
   },
-  "summary": "Investigated whether reframing pain within a prosocial, meaningful context altered its perceived intensity and associated brain responses using fMRI.",
-  "key_finding": null,
+  "summary": "Found in an fMRI study of 29 women that voluntarily accepting extra pain to protect a romantic partner reduced pain unpleasantness and increased vmPFC activity, with reductions in pain- and emotion-processing regions mediating the unpleasantness decrease.",
+  "key_finding": "vmPFC activation increased during Accept-Partner-Pain trials, especially in more willing participants, and multilevel mediation showed that reduced activity in pain- and aversive-emotion-processing regions significantly mediated reduced pain unpleasantness (q<.05 FDR-corrected).",
   "free_keywords": [
+   "ventromedial prefrontal cortex",
    "prosocial meaning",
-   "pain reappraisal"
+   "romantic partners",
+   "multilevel mediation",
+   "Neurologic Pain Signature",
+   "meaning-based intervention"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.35,
-   "notes": "Only the title was available (no abstract or full text); tags and summary are inferred solely from the title, so this is the least certain entry in the batch.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "abstract_source": "pdf",
   "citation_original": "López-Solà, M., Koban, L., & Wager, T. D. (2018). Transforming pain with prosocial meaning: an fMRI study. Psychosomatic Medicine. 80(9): 814-825. PMID: 29846310. [PDF]."
@@ -21002,7 +21013,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/anon2017chang.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2020/10/2020-Woo_NatNeuro.pdf",
+    "url_original": null,
     "version": "publisher"
    }
   ],
@@ -21308,7 +21319,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/calhoun2017impact.pdf",
-    "url_original": null,
+    "url_original": "pdf/calhoun2017impact.pdf",
     "version": "publisher"
    }
   ],
@@ -21318,33 +21329,35 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "clinical"
+    "cognitive_control"
    ],
    "approach": [
-    "neuroimaging_methods",
-    "fmri"
+    "fmri",
+    "neuroimaging_methods"
    ],
    "type": [
     "methods"
    ]
   },
-  "summary": "Compared T1-based versus EPI-based spatial normalization templates for fMRI preprocessing and evaluated their impact on downstream group-level fMRI analysis results.",
-  "key_finding": null,
+  "summary": "Compared EPI-template versus T1-template spatial normalization strategies across four fMRI datasets and found that normalizing directly to an EPI template reduced cross-subject variability and improved task-related statistical power compared with T1-based normalization, especially without distortion correction.",
+  "key_finding": "EPInorm increased effective sample size by 12-25% relative to T1norm when distortion correction was not applied, across a go/no-go task dataset, a pain dataset, a pediatric resting-state dataset, and the multisite ABIDE dataset.",
   "free_keywords": [
+   "EPInorm",
+   "T1norm",
    "spatial normalization",
-   "EPI template",
-   "T1 template",
-   "preprocessing",
-   "registration"
+   "ABIDE",
+   "distortion correction",
+   "coregistration variability",
+   "go/no-go task"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "full_text",
-   "confidence": 0.3,
-   "notes": "The batch text supplied for this id was corrupted/duplicated (it repeats the delavega2017largescale full text instead of this paper's content), so tags are based only on the title and citation, not verified full text. Topic and key_finding are low-confidence guesses.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.7,
+   "notes": "This is a pure methods-comparison paper tested on several unrelated datasets (go/no-go, pain, pediatric resting-state, autism); no single topic is central, so 'cognitive_control' (from the primary go/no-go task dataset) was chosen as a weak best fit.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Calhoun, V. D., Wager, T. D., Krishnan, A., Rosch, K. S., Seymour, K. E., Nebel, M. B., Mostofsky, S. H., Nyalakanai, P. and Kiehl, K. (2017). The impact of T1 versus EPI spatial normalization templates for fMRI data analyses. Human Brain Mapping. 38(11): 5331-5342. PMID: 28745021. [PDF]"
@@ -25086,7 +25099,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/chang2015challenges.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2015_Chang_BehavBrainSci.pdf",
+    "url_original": null,
     "version": "publisher"
    }
   ],
@@ -25100,22 +25113,20 @@
     "clinical"
    ],
    "approach": [
-    "machine_learning",
-    "behavioral"
+    "computational_model"
    ],
    "type": [
     "commentary"
    ]
   },
-  "summary": "Chang and colleagues wrote a peer commentary in Behavioral and Brain Sciences on Kalisch et al.'s target article, discussing the methodological challenges of prospectively forecasting individual resilience to stress.",
+  "summary": "Argued, as a peer commentary on a proposed neurobiological resilience framework, that forecasting individual resilience trajectories will require large-scale longitudinal datasets with dense intraindividual sampling and innovative computational and analytic methods.",
   "key_finding": null,
   "free_keywords": [
    "resilience",
+   "transdiagnostic framework",
    "forecasting",
-   "prediction",
-   "individual differences",
-   "Behavioral and Brain Sciences",
-   "target article commentary"
+   "intraindividual sampling",
+   "Behavioral and Brain Sciences commentary"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
@@ -25123,8 +25134,8 @@
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "full_text",
    "confidence": 0.35,
-   "notes": "The extracted full text for this entry is actually the Kalisch et al. target article that the Chang et al. commentary responds to, not the commentary itself (a common artifact of Behavioral and Brain Sciences PDF extraction, since commentaries are bound together with the target article). Tags and summary are based on the citation/title and general knowledge of the CANlab commentary's likely focus (prediction/forecasting of resilience), not on directly read commentary text; confidence is low and a human should verify against the actual Chang et al. commentary.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "notes": "The extracted full text belongs to the target article by Kalisch et al. that this piece comments on, not to the actual Chang et al. commentary; tags are based only on the commentary's own abstract.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Chang, L. J., Reddan, M., Ashar, Y. K., Eisenbarth, H., & Wager, T. D. (2015). The challenges of forecasting resilience. Behavioral and Brain Sciences. 38. PMID: 26785725. [PDF]"
@@ -25885,7 +25896,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/schafer2015partial.pdf",
-    "url_original": null,
+    "url_original": "pdf/schafer2015partial.pdf",
     "version": "publisher"
    }
   ],
@@ -25900,29 +25911,32 @@
    ],
    "approach": [
     "fmri",
+    "psychophysiology",
     "pharmacology"
    ],
    "type": [
     "empirical"
    ]
   },
-  "summary": "Based on its title, this study likely examined whether sertraline treatment ameliorates abnormal medial visceromotor network function in patients with major depression using fMRI.",
-  "key_finding": null,
+  "summary": "Found in a 12-week fMRI and ECG study that sertraline treatment partially normalized reduced brain-vagal (respiratory sinus arrhythmia) covariation within the medial visceromotor network in depressed patients relative to controls, without significantly changing mean heart rate variability.",
+  "key_finding": "BOLD-RSA covariation increased significantly more in sertraline-treated depressed patients than in controls in sgACC, dACC, PAG, insula, putamen, and amygdala, despite no significant change in mean RSA.",
   "free_keywords": [
    "sertraline",
-   "SSRI",
-   "depression",
-   "visceromotor network",
-   "autonomic"
+   "respiratory sinus arrhythmia",
+   "vagal control",
+   "medial visceromotor network",
+   "heart rate variability",
+   "major depressive disorder",
+   "subgenual ACC"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "full_text",
-   "confidence": 0.3,
-   "notes": "The batch file's extracted full text for this entry is a duplicate of the schafer2015conditioned placebo paper (an apparent data-extraction error), not the actual sertraline/depression paper. Tags and summary are based only on the title and citation, not verified full text; please re-extract this paper's PDF text and re-tag.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Schafer, S. M., Wager, T. D., Mercado Jr, R. A., Thayer, J. F., Allen, J. J., & Lane, R. D. (2015). Partial Amelioration of Medial Visceromotor Network Dysfunction in Major Depression by Sertraline. Psychosomatic Medicine. 77(7), 752-761. PMID: 26258459. [PDF]"
@@ -26312,7 +26326,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/woo2015predictive.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2015_Woo_Sience.pdf",
+    "url_original": null,
     "version": "publisher"
    }
   ],
@@ -26326,29 +26340,30 @@
    ],
    "approach": [
     "machine_learning",
-    "neuroimaging_methods",
-    "fmri"
+    "neuromarker",
+    "neuroimaging_methods"
    ],
    "type": [
     "methods"
    ]
   },
-  "summary": "This chapter in a special Science supplement on computational psychophysiology described the predictive mapping (multivariate pattern analysis) approach for identifying fMRI patterns that decode psychological and clinical states.",
+  "summary": "Summarized the development of predictive, multivoxel-pattern-based brain models in neuroimaging as an alternative to traditional mass-univariate mapping, describing how cross-validated pattern models such as brain signatures can decode mental states like pain from fMRI data.",
   "key_finding": null,
   "free_keywords": [
    "multivoxel pattern analysis",
-   "decoding",
-   "biomarker",
-   "computational psychophysiology"
+   "predictive mapping",
+   "brain signature",
+   "cross-validation",
+   "decoding"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "full_text",
-   "confidence": 0.35,
-   "notes": "The batch file's extracted text captured only the supplement's front matter, table of contents, and other authors' unrelated chapters (Alzheimer's disease, schizophrenia neuroimaging), not the actual Woo & Wager chapter (p.18). Tags are based only on the title and its one-sentence description in the volume's introduction; the topic tag (pain) is an inference from the authors' typical subject matter, not confirmed text. Recommend re-extracting the correct page range.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.3,
+   "notes": "The extracted full text is the front matter and other chapters of the Science supplement, not the actual Woo & Wager chapter (which begins on p. 18 and was not captured); tags are inferred from the title and the brief description of the chapter given elsewhere in the supplement's introduction, and should be verified against the actual chapter text.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "abstract_source": "pdf",
   "citation_original": "Woo, C. W. & Wager, T. D. (2015). The predictive mapping approach in neuroimaging. Advances in Computational Psychophysiology. Science. 350 (6256), 114. [PDF]"
@@ -29172,8 +29187,8 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "reward_craving",
-    "expectation_learning"
+    "expectation_learning",
+    "reward_craving"
    ],
    "approach": [
     "behavioral"
@@ -29182,13 +29197,14 @@
     "chapter"
    ]
   },
-  "summary": "Book chapter, known only by title, apparently addressing how expectancies shape consumers' subjective experiences of products, consistent with the authors' backgrounds in neuroeconomics and marketing research.",
+  "summary": "Discussed, in a book chapter, how prior expectancies shape the subjective and neural experience of consuming products, drawing on consumer neuroscience research linking price and marketing cues to valuation and experienced pleasure.",
   "key_finding": null,
   "free_keywords": [
-   "consumption experience",
-   "expectancy effects",
-   "neuroeconomics",
-   "marketing"
+   "consumer neuroscience",
+   "price expectations",
+   "marketing cues",
+   "valuation",
+   "consumption experience"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
@@ -29196,8 +29212,8 @@
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
    "confidence": 0.25,
-   "notes": "Only the chapter title was available (mode: title_only); tags are inferred from the title and authors' research areas and should be treated as low-confidence placeholders.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "notes": "Only the title is available (no abstract or full text); tags are inferred from the title and the authors' known research area and should be treated as low-confidence placeholders.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "crossref_checked": true,
   "citation_original": "Plassmann, H. and Wager, T. D. (2013). How Expectancies Shape Consumption Experiences. In: Preston, Knuston, Kringelbach (Eds), Interdisciplinary Science of Consumption. [PDF]"
@@ -30068,7 +30084,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/lindquist2012what.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2012_Lindquist_BehavBrainSci.pdf",
+    "url_original": null,
     "version": "publisher"
    }
   ],
@@ -32750,24 +32766,23 @@
   "section": "2010",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Reviewed emotional variants of the Stroop task, distinguishing distraction-based from conflict-based paradigms, and evaluated evidence for and against distinct emotional versus non-emotional anterior cingulate processing regions.",
-  "key_finding": null,
+  "summary": "Reviewed the emotional Stroop task literature, distinguishing distraction-based paradigms, which showed limited disruption of performance in healthy adults, from emotional-conflict paradigms, which produced more robust interference effects relevant to studying emotional and cognitive control.",
+  "key_finding": "Early neuroimaging evidence for distinct emotional versus non-emotional processing regions within the anterior cingulate cortex, based on emotional distraction Stroop tasks, received limited support in subsequent research.",
   "free_keywords": [
-   "Stroop task",
-   "emotional conflict",
-   "distraction",
+   "emotional Stroop task",
    "anterior cingulate cortex",
-   "interference",
-   "cognitive control"
+   "attentional distraction",
+   "emotional conflict",
+   "interference"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "abstract",
-   "confidence": 0.7,
-   "notes": "Book chapter in Self Control in Society, Mind, and Brain (Hassin, Ochsner & Trope, Eds.).",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.6,
+   "notes": "Only the abstract is available; no full text to confirm methodological details.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
@@ -32775,11 +32790,11 @@
     "cognitive_control"
    ],
    "approach": [
-    "behavioral",
-    "fmri"
+    "fmri",
+    "behavioral"
    ],
    "type": [
-    "chapter"
+    "review"
    ]
   },
   "crossref_checked": true,
@@ -34323,7 +34338,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/wager2008prefrontalsubcortical.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2008_Wager_Neuron.pdf",
+    "url_original": null,
     "version": "publisher"
    }
   ],
@@ -34852,34 +34867,34 @@
   "section": "2008",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
-  "summary": "Introduced a hierarchical exponentially weighted moving-average (HEWMA) change-point method for detecting state-related fMRI activity with uncertain onset and duration, validated it via simulations, and applied it to a state-anxiety speech task.",
-  "key_finding": "Simulations confirmed HEWMA controlled false-positive rates and increasing power with longer baselines, and the method detected sustained anxiety-related activation (e.g., rostral PFC) during a speech-preparation task in 24 participants.",
+  "summary": "Introduced a hierarchical exponentially weighted moving average (HEWMA) change-point method for modeling fMRI activity with uncertain onset and duration, validated its false-positive control and power via simulation, and applied it to an anxiety-inducing speech-preparation task.",
+  "key_finding": "The HEWMA method detected sustained, variable-onset activation in medial and rostral prefrontal cortex during a 24-subject anxiety-induction speech-preparation task while controlling the false-positive rate.",
   "free_keywords": [
    "change-point theory",
    "EWMA",
    "HEWMA",
-   "state anxiety",
-   "speech preparation task",
-   "Matlab toolbox"
+   "general linear model",
+   "state-related activity",
+   "Monte Carlo simulation",
+   "speech preparation anxiety task"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
-   "confidence": 0.85,
+   "confidence": 0.8,
    "notes": null,
-   "classified_at": "2026-09-06T19:26:20Z"
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "tags": {
    "topic": [
     "stress"
    ],
    "approach": [
-    "neuroimaging_methods",
     "fmri",
-    "computational_model",
-    "open_tools"
+    "neuroimaging_methods",
+    "computational_model"
    ],
    "type": [
     "methods"
@@ -36058,22 +36073,23 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "cognitive_control"
+    "perception"
    ],
    "approach": [
-    "behavioral"
+    "neuroimaging_methods"
    ],
    "type": [
     "commentary"
    ]
   },
-  "summary": "Discussed, in an APS Observer essay, whether studying the brain is necessary for understanding the mind.",
+  "summary": "Wager wrote a brief opinion piece in APS Observer addressing whether studying the brain is necessary to understand the mind.",
   "key_finding": null,
   "free_keywords": [
-   "mind-brain relationship",
+   "philosophy of mind",
    "reductionism",
-   "philosophy of science",
-   "psychological science"
+   "neuroscience methodology",
+   "mind-brain relationship",
+   "APS Observer"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
@@ -36081,8 +36097,8 @@
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "title_only",
    "confidence": 0.25,
-   "notes": "Only the title is available (no abstract or full text); topic and approach tags are low-confidence best guesses for this magazine essay rather than an empirical or imaging paper.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "notes": "Only the title is available for this item (no abstract or full text); tags are a low-confidence best guess based on the title alone.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "citation_original": "Wager, T.D. (2006). Do We Need to Study the Brain to Understand the Mind? APS Observer. 19(9):25-27. [PDF]"
  },
@@ -37593,7 +37609,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/wager2004painful.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2004_Wager_Science-2-Response.pdf",
+    "url_original": null,
     "version": "publisher"
    }
   ],
@@ -38374,7 +38390,7 @@
   "date_added": "2026-09-06",
   "tags": {
    "topic": [
-    "emotion_regulation"
+    "reward_craving"
    ],
    "approach": [
     "behavioral"
@@ -38383,23 +38399,24 @@
     "commentary"
    ]
   },
-  "summary": "Reflected personally on giftedness, arguing that intrinsic motivation, self-direction, and parental trust rather than external pressure sustain long-term achievement and personal fulfillment.",
+  "summary": "Wager wrote a personal reflective essay on what giftedness means, arguing that intrinsic motivation, self-trust, and dedication matter more than innate talent for personal fulfillment.",
   "key_finding": null,
   "free_keywords": [
    "giftedness",
    "intrinsic motivation",
-   "self-determination",
-   "achievement motivation",
-   "personal essay"
+   "self-actualization",
+   "creativity",
+   "education",
+   "autonomy"
   ],
   "classification": {
    "taxonomy_version": "1.0.0",
    "prompt_version": "1.0.0",
    "model": "claude-sonnet-5 (Claude Code subagent)",
    "input_mode": "full_text",
-   "confidence": 0.25,
-   "notes": "Personal reflective essay on education and motivation, not a neuroscience research paper; the required topic/approach tags are a forced, low-confidence approximation since nothing in the controlled vocabulary fits this content well.",
-   "classified_at": "2026-09-06T19:26:20Z"
+   "confidence": 0.15,
+   "notes": "This is a personal, non-scientific essay on education and motivation, not a neuroscience research paper; taxonomy tags are a forced best fit and should be treated as low confidence.",
+   "classified_at": "2026-09-07T03:40:08Z"
   },
   "citation_original": "Wager, T. D. (2001). Life after gifted education: A reflection on what ‘giftedness’ means. [PDF]"
  },
@@ -38540,7 +38557,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/satpute2015involvement.pdf",
-    "url_original": null,
+    "url_original": "pdf/satpute2015involvement.pdf",
     "version": "publisher"
    },
    {
@@ -38555,7 +38572,42 @@
   "date_added": "2026-09-07",
   "crossref_checked": true,
   "abstract_source": "pubmed",
-  "citation_original": "Satpute, A. B., Kang, J., Bickart, K. C., Yardley, H., Wager, T. D., & Barrett, L. F. (2015). Involvement of sensory regions in affective experience: A meta-analysis. Frontiers in Psychology."
+  "citation_original": "Satpute, A. B., Kang, J., Bickart, K. C., Yardley, H., Wager, T. D., & Barrett, L. F. (2015). Involvement of sensory regions in affective experience: A meta-analysis. Frontiers in Psychology.",
+  "tags": {
+   "topic": [
+    "emotion",
+    "perception"
+   ],
+   "approach": [
+    "fmri",
+    "meta_analysis",
+    "machine_learning",
+    "other_imaging"
+   ],
+   "type": [
+    "empirical"
+   ]
+  },
+  "summary": "This meta-analysis of neuroimaging studies found that limbic/paralimbic regions and early sensory cortices were engaged across visual, auditory, olfactory, gustatory, and somatosensory affective experiences, and multivariate classification decoded stimulus modality from activation patterns.",
+  "key_finding": "A Bayesian Spatial Point Process classification model diagnosed the sensory modality driving an affective experience from study-level activation patterns, and amygdala, anterior insula, and orbitofrontal cortex were consistently engaged across two or more modalities.",
+  "free_keywords": [
+   "MKDA",
+   "Bayesian Spatial Point Process",
+   "amygdala",
+   "anterior insula",
+   "cross-modal affect",
+   "interoception",
+   "exteroception"
+  ],
+  "classification": {
+   "taxonomy_version": "1.0.0",
+   "prompt_version": "1.0.0",
+   "model": "claude-sonnet-5 (Claude Code subagent)",
+   "input_mode": "full_text",
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
+  }
  },
  {
   "id": "silvers2014worse",
@@ -38597,7 +38649,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/silvers2014worse.pdf",
-    "url_original": null,
+    "url_original": "pdf/silvers2014worse.pdf",
     "version": "publisher"
    }
   ],
@@ -38607,7 +38659,38 @@
   "date_added": "2026-09-07",
   "crossref_checked": true,
   "abstract_source": "pubmed",
-  "citation_original": "Silvers, J. A., Weber, J., Wager, T. D., & Ochsner, K. N. (2014). Bad and worse: neural systems underlying reappraisal of high- and low-intensity negative emotions. Social Cognitive and Affective Neuroscience."
+  "citation_original": "Silvers, J. A., Weber, J., Wager, T. D., & Ochsner, K. N. (2014). Bad and worse: neural systems underlying reappraisal of high- and low-intensity negative emotions. Social Cognitive and Affective Neuroscience.",
+  "tags": {
+   "topic": [
+    "emotion",
+    "emotion_regulation"
+   ],
+   "approach": [
+    "fmri"
+   ],
+   "type": [
+    "empirical"
+   ]
+  },
+  "summary": "This fMRI study compared reappraisal of high- and low-intensity negative emotions and found that both recruited dorsomedial and left prefrontal regions, with high-intensity reappraisal additionally engaging right lateral and dorsomedial prefrontal cortex.",
+  "key_finding": "Reappraisal of high-intensity emotion more strongly activated left dorsolateral prefrontal cortex and additionally recruited right lateral and dorsomedial prefrontal regions not engaged during low-intensity reappraisal.",
+  "free_keywords": [
+   "cognitive reappraisal",
+   "emotional intensity",
+   "dlPFC",
+   "vlPFC",
+   "dmPFC",
+   "emotion regulation"
+  ],
+  "classification": {
+   "taxonomy_version": "1.0.0",
+   "prompt_version": "1.0.0",
+   "model": "claude-sonnet-5 (Claude Code subagent)",
+   "input_mode": "full_text",
+   "confidence": 0.9,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
+  }
  },
  {
   "id": "becker2017orbitofrontal",
@@ -38651,7 +38734,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/becker2017orbitofrontal.pdf",
-    "url_original": null,
+    "url_original": "pdf/becker2017orbitofrontal.pdf",
     "version": "publisher"
    }
   ],
@@ -38661,7 +38744,39 @@
   "date_added": "2026-09-07",
   "crossref_checked": true,
   "abstract_source": "pubmed",
-  "citation_original": "Becker, S., Gandhi, W., Pomares, F., Wager, T. D., & Schweinhardt, P. (2017). Orbitofrontal cortex mediates pain inhibition by monetary reward. Social Cognitive and Affective Neuroscience."
+  "citation_original": "Becker, S., Gandhi, W., Pomares, F., Wager, T. D., & Schweinhardt, P. (2017). Orbitofrontal cortex mediates pain inhibition by monetary reward. Social Cognitive and Affective Neuroscience.",
+  "tags": {
+   "topic": [
+    "pain",
+    "reward_craving"
+   ],
+   "approach": [
+    "fmri",
+    "neuromarker",
+    "mediation"
+   ],
+   "type": [
+    "empirical"
+   ]
+  },
+  "summary": "Monetary reward reduced pain perception, and individual differences in reward-induced analgesia correlated with medial orbitofrontal cortex activity, whose connectivity with insula, anterior cingulate, and somatosensory cortex decreased during simultaneous reward and pain, without changing neurologic pain signature responses.",
+  "key_finding": "Pain inhibition by monetary wins correlated with medial orbitofrontal cortex activation and its reduced functional connectivity with rostral anterior insula, anterior-dorsal cingulate, and primary somatosensory cortex, while the neurologic pain signature (NPS) response was unaffected by reward or loss.",
+  "free_keywords": [
+   "orbitofrontal cortex",
+   "neurologic pain signature (NPS)",
+   "wheel of fortune task",
+   "psychophysiological interaction (PPI)",
+   "reward-induced analgesia"
+  ],
+  "classification": {
+   "taxonomy_version": "1.0.0",
+   "prompt_version": "1.0.0",
+   "model": "claude-sonnet-5 (Claude Code subagent)",
+   "input_mode": "full_text",
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
+  }
  },
  {
   "id": "woo2017imaging",
@@ -38699,7 +38814,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/woo2017imaging.pdf",
-    "url_original": null,
+    "url_original": "pdf/woo2017imaging.pdf",
     "version": "publisher"
    }
   ],
@@ -38708,7 +38823,40 @@
   "source": "cv-2026-06",
   "date_added": "2026-09-07",
   "crossref_checked": true,
-  "citation_original": "Woo, C.-W., & Wager, T. D. (2017). Imaging biomarkers and biotypes for depression. Nature Medicine."
+  "citation_original": "Woo, C.-W., & Wager, T. D. (2017). Imaging biomarkers and biotypes for depression. Nature Medicine.",
+  "tags": {
+   "topic": [
+    "clinical"
+   ],
+   "approach": [
+    "fmri",
+    "machine_learning",
+    "brain_stimulation"
+   ],
+   "type": [
+    "commentary"
+   ]
+  },
+  "summary": "This commentary discussed a study that identified four fMRI resting-state connectivity-based biotypes of depression, which differentiated patients from controls with about 80-90% accuracy and predicted response to dorsomedial prefrontal TMS treatment.",
+  "key_finding": "The discussed study's depression biotypes, derived via canonical correlation analysis and clustering of resting-state connectivity, predicted dmPFC-TMS treatment response with up to 90% accuracy and replicated in an independent sample.",
+  "free_keywords": [
+   "biotypes",
+   "resting-state fMRI",
+   "canonical correlation analysis",
+   "TMS",
+   "precision psychiatry",
+   "RDoC",
+   "Drysdale"
+  ],
+  "classification": {
+   "taxonomy_version": "1.0.0",
+   "prompt_version": "1.0.0",
+   "model": "claude-sonnet-5 (Claude Code subagent)",
+   "input_mode": "full_text",
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
+  }
  },
  {
   "id": "koban2017whats",
@@ -38745,22 +38893,49 @@
   "landing_url": null,
   "openalex_authors": [],
   "keywords": [],
-  "links": [
-   {
-    "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/koban2017whats.pdf",
-    "url_original": null,
-    "version": "publisher"
-   }
-  ],
-  "has_pdf": true,
+  "links": [],
+  "has_pdf": false,
   "section": "2017",
   "source": "cv-2026-06",
   "date_added": "2026-09-07",
   "crossref_checked": true,
   "abstract_source": "pubmed",
-  "citation_original": "Koban, L., Jepma, M., Geuter, S., & Wager, T. D. (2017). What's in a word? How instructions, suggestions, and social information change pain and emotion. Neuroscience & Biobehavioral Reviews."
+  "citation_original": "Koban, L., Jepma, M., Geuter, S., & Wager, T. D. (2017). What's in a word? How instructions, suggestions, and social information change pain and emotion. Neuroscience & Biobehavioral Reviews.",
+  "tags": {
+   "topic": [
+    "placebo",
+    "pain",
+    "emotion",
+    "social",
+    "expectation_learning"
+   ],
+   "approach": [
+    "fmri"
+   ],
+   "type": [
+    "review"
+   ]
+  },
+  "summary": "This review synthesized literature on how instructions, suggestions, and social information affect pain and emotion through observational learning, social influence, placebo, and hypnosis, proposing that prefrontal regulation of expectation and appraisal mediates these effects.",
+  "key_finding": "The review concluded that instructions and social information alter pain and emotion via changes in expectation and appraisal, mediated by dorsolateral and ventromedial prefrontal systems.",
+  "free_keywords": [
+   "placebo",
+   "hypnosis",
+   "observational learning",
+   "social influence",
+   "appraisal",
+   "expectation",
+   "prefrontal regulation"
+  ],
+  "classification": {
+   "taxonomy_version": "1.0.0",
+   "prompt_version": "1.0.0",
+   "model": "claude-sonnet-5 (Claude Code subagent)",
+   "input_mode": "full_text",
+   "confidence": 0.45,
+   "notes": "The extracted full text for this batch entry appears to be a different paper (Benedetti & Amanzio, 'Mechanisms of the placebo response', Pulmonary Pharmacology & Therapeutics 2013) rather than Koban et al.'s actual article text; tags here rely on the (matching) title and abstract only, so approach/topic coverage may be incomplete.",
+   "classified_at": "2026-09-07T03:40:08Z"
+  }
  },
  {
   "id": "smith2017potential",
@@ -38866,7 +39041,7 @@
     "type": "pdf",
     "label": "PDF (author manuscript)",
     "url": "pdf/author_manuscripts/smith2017potential.pdf",
-    "url_original": null,
+    "url_original": "pdf/author_manuscripts/smith2017potential.pdf",
     "version": "author_manuscript"
    }
   ],
@@ -38876,7 +39051,41 @@
   "date_added": "2026-09-07",
   "crossref_checked": true,
   "abstract_source": "pubmed",
-  "citation_original": "Smith, S. M., Dworkin, R. H., Turk, D. C., Baron, R., Polydefkis, M., Tracey, I., Borsook, D., Edwards, R. R., Harris, R. E., Wager, T. D., Arendt-Nielsen, L., Burke, L. B., Carr, D. B., Chappell, A., Farrar, J. T., Freeman, R., Gilron, I., Goli, V., Haeussler, J., Jensen, T., Katz, N. P., Kent, J., Kopecky, E. A., Lee, D. A., Maixner, W., Markman, J. D., McArthur, J. C., McDermott, M. P., Parvathenani, L., Raja, S. N., Rappaport, B. A., Rice, A. S. C., Rowbotham, M. C., Tobias, J. K., Wasan, A. D., & Witter, J. (2017). The potential role of sensory testing, skin biopsy, and functional brain imaging as biomarkers in chronic pain clinical trials: IMMPACT considerations. The Journal of Pain."
+  "citation_original": "Smith, S. M., Dworkin, R. H., Turk, D. C., Baron, R., Polydefkis, M., Tracey, I., Borsook, D., Edwards, R. R., Harris, R. E., Wager, T. D., Arendt-Nielsen, L., Burke, L. B., Carr, D. B., Chappell, A., Farrar, J. T., Freeman, R., Gilron, I., Goli, V., Haeussler, J., Jensen, T., Katz, N. P., Kent, J., Kopecky, E. A., Lee, D. A., Maixner, W., Markman, J. D., McArthur, J. C., McDermott, M. P., Parvathenani, L., Raja, S. N., Rappaport, B. A., Rice, A. S. C., Rowbotham, M. C., Tobias, J. K., Wasan, A. D., & Witter, J. (2017). The potential role of sensory testing, skin biopsy, and functional brain imaging as biomarkers in chronic pain clinical trials: IMMPACT considerations. The Journal of Pain.",
+  "tags": {
+   "topic": [
+    "chronic_pain",
+    "pain"
+   ],
+   "approach": [
+    "fmri",
+    "other_imaging",
+    "behavioral",
+    "pharmacology"
+   ],
+   "type": [
+    "review"
+   ]
+  },
+  "summary": "This IMMPACT consensus review evaluated sensory testing, skin punch biopsy, and functional brain imaging as candidate diagnostic, prognostic, predictive, and pharmacodynamic biomarkers for chronic pain clinical trials, concluding that further standardization and validation are needed.",
+  "key_finding": "The IMMPACT panel found preliminary evidence that quantitative sensory testing (e.g., conditioned pain modulation) and brain imaging can predict analgesic treatment response in some chronic pain conditions, but no biomarker is yet qualified for regulatory use.",
+  "free_keywords": [
+   "IMMPACT",
+   "quantitative sensory testing (QST)",
+   "skin biopsy",
+   "conditioned pain modulation (CPM)",
+   "biomarker qualification",
+   "neuropathic pain phenotyping"
+  ],
+  "classification": {
+   "taxonomy_version": "1.0.0",
+   "prompt_version": "1.0.0",
+   "model": "claude-sonnet-5 (Claude Code subagent)",
+   "input_mode": "full_text",
+   "confidence": 0.85,
+   "notes": null,
+   "classified_at": "2026-09-07T03:40:08Z"
+  }
  },
  {
   "id": "lindquist2008application",
@@ -39027,21 +39236,43 @@
   "landing_url": null,
   "openalex_authors": [],
   "keywords": [],
-  "links": [
-   {
-    "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/roy2017neuromatrix.pdf",
-    "url_original": null,
-    "version": "publisher"
-   }
-  ],
-  "has_pdf": true,
+  "links": [],
+  "has_pdf": false,
   "section": "2017",
   "source": "cv-2026-06",
   "date_added": "2026-09-07",
   "crossref_checked": true,
   "abstract_source": "pubmed",
-  "citation_original": "Roy, M., & Wager, T. D. (2017). Neuromatrix theory of pain. The Routledge Handbook of Philosophy of Pain (J. Corns, Ed.), Routledge, pp. 87-97."
+  "citation_original": "Roy, M., & Wager, T. D. (2017). Neuromatrix theory of pain. The Routledge Handbook of Philosophy of Pain (J. Corns, Ed.), Routledge, pp. 87-97.",
+  "tags": {
+   "topic": [
+    "pain",
+    "chronic_pain"
+   ],
+   "approach": [
+    "computational_model"
+   ],
+   "type": [
+    "chapter"
+   ]
+  },
+  "summary": "This book chapter discussed the neuromatrix theory of pain in the context of the philosophy of pain, as part of the Routledge Handbook of Philosophy of Pain.",
+  "key_finding": null,
+  "free_keywords": [
+   "neuromatrix theory",
+   "Melzack",
+   "philosophy of pain",
+   "phantom limb pain",
+   "chronic pain theory"
+  ],
+  "classification": {
+   "taxonomy_version": "1.0.0",
+   "prompt_version": "1.0.0",
+   "model": "claude-sonnet-5 (Claude Code subagent)",
+   "input_mode": "full_text",
+   "confidence": 0.2,
+   "notes": "The abstract and 'full text' extracted for this ID actually belong to a different paper (Jepma, Koban, van Doorn, Jones & Wager, 2018, Nature Human Behaviour, 'Behavioural and neural evidence for self-reinforcing expectancy effects on pain') -- apparently a metadata/PDF matching error. Tags here are based only on the title and chapter type, with low confidence; the real chapter's content could not be verified.",
+   "classified_at": "2026-09-07T03:40:08Z"
+  }
  }
 ]
