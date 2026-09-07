@@ -73,12 +73,12 @@ window.CL = (function () {
       document.querySelectorAll(`[data-star="${CSS.escape(b.dataset.star)}"]`).forEach(x => { x.classList.toggle("on", on); x.setAttribute("aria-pressed", on); x.textContent = on ? "★" : "☆"; x.title = on ? "Remove from my list" : "Add to my list"; });
     });
   }
-  function updateListBadge() { document.querySelectorAll(".nav a[href='mylist.html']").forEach(a => { const n = list.size(); a.innerHTML = `My list${n ? ` <span class="navcount">${n}</span>` : ""}`; }); }
+  function updateListBadge() { document.querySelectorAll(".nav a[href='mylist.html'], .site-footer a[href='mylist.html']").forEach(a => { const n = list.size(); a.innerHTML = `My list${n ? ` <span class="navcount">${n}</span>` : ""}`; }); }
   document.addEventListener("cl:list", updateListBadge);
 
   // ---- links on a paper: PDF (mirror with original as fallback), publisher, PubMed, maps/code/data/video
   const LINK_LABELS = { pdf: "PDF", publisher: "Publisher", maps: "Brain maps", paradigm: "Paradigm", code: "Code", data: "Data", video: "Video", supplement: "Supplement", preprint: "Preprint", slides: "Slides", other: "Link" };
-  function pdfUrl(l) { return (l.mirror && C.pdfMirror) ? l.mirror : l.url; }
+  function pdfUrl(l) { return l.url; }
   function linkList(r, opts = {}) {
     const out = [];
     const seen = new Set();
@@ -86,12 +86,12 @@ window.CL = (function () {
       const url = l.type === "pdf" ? pdfUrl(l) : l.url;
       if (seen.has(url)) continue; seen.add(url);
       const lab = l.label && !/^(pdf|online link|link|full text|read online)$/i.test(l.label) ? l.label : (LINK_LABELS[l.type] || "Link");
-      out.push(`<a class="plink ${l.type}" href="${esc(url)}" target="_blank" rel="noopener"${l.type === "pdf" && l.url !== url ? ` data-fallback="${esc(l.url)}"` : ""}>${esc(lab)}${l.type === "pdf" ? "" : " ↗"}</a>`);
+      out.push(`<a class="plink ${l.type}" href="${esc(url)}" target="_blank" rel="noopener"${l.version === "author_manuscript" ? ' title="PubMed Central author manuscript"' : ""}>${esc(lab)}${l.type === "pdf" ? "" : " ↗"}</a>`);
     }
     if (r.doi && !(r.links || []).some(l => l.type === "publisher")) out.push(`<a class="plink publisher" href="https://doi.org/${esc(r.doi)}" target="_blank" rel="noopener">Publisher ↗</a>`);
     if (r.pmid) out.push(`<a class="plink" href="https://pubmed.ncbi.nlm.nih.gov/${esc(r.pmid)}/" target="_blank" rel="noopener">PubMed</a>`);
     if (r.oa && r.oa !== (r.links || []).find(l => l.type === "pdf")?.url && !r.pdf) out.push(`<a class="plink" href="${esc(r.oa)}" target="_blank" rel="noopener">Open access ↗</a>`);
-    if (!opts.noDetail) out.push(`<a class="plink detail" href="papers/${encodeURIComponent(r.id)}.html">Details &amp; discussion</a>`);
+    if (!opts.noDetail) out.push(`<a class="plink detail" href="papers/${encodeURIComponent(r.id)}.html">Details</a>`);
     return out.join("");
   }
 
@@ -111,10 +111,11 @@ window.CL = (function () {
     const isNew = opts.newSince && r.added >= opts.newSince;
     return `<article class="paper" data-id="${esc(r.id)}" id="p-${esc(r.id)}">
       <div class="title">${starBtn(r.id)}<a href="papers/${encodeURIComponent(r.id)}.html">${esc(r.t)}</a></div>
-      <div class="meta"><span class="authors">${esc(r.al || r.a)}</span><span class="date tnum">${r.y || ""}</span><span class="journal">${citeLine(r)}</span>${isNew ? '<span class="badge new">new</span>' : ""}${statusBadge(r)}${r.cit != null && r.cit > 0 ? `<span class="cites tnum" title="Citations (OpenAlex)">${r.cit.toLocaleString()} citations</span>` : ""}</div>
+      <div class="meta"><span class="authors">${esc(r.al || r.a)}${r.trunc ? ", et al." : ""}</span><span class="date tnum">${r.y || ""}</span><span class="journal">${citeLine(r)}</span>${isNew ? '<span class="badge new">new</span>' : ""}${statusBadge(r)}${r.cit != null && r.cit > 0 ? `<span class="cites tnum" title="Citations (OpenAlex)">${r.cit.toLocaleString()} citations</span>` : ""}</div>
       ${r.s ? `<div class="summary">${esc(r.s)}</div>` : ""}
       <div class="chips">${chipsFor(r, true)}</div>
       <div class="links">${linkList(r)}</div>
+      ${(r.comm || []).length ? `<div class="comms">${r.comm.map(c => `<a class="comm" href="${esc(c.pdf || (c.doi ? "https://doi.org/" + c.doi : "#"))}" target="_blank" rel="noopener" title="${esc(c.note || "Commentary on this paper")}"><span class="ic">✎</span><span><b>${esc(c.note || "Commentary")}:</b> ${esc(c.title)} <span class="muted">(${esc(c.authors || "")}${c.journal ? ", " + esc(c.journal) : ""}${c.year ? " " + c.year : ""})</span></span></a>`).join("")}</div>` : ""}
     </article>`;
   }
 
@@ -187,12 +188,6 @@ window.CL = (function () {
   function exportMenu(id) { return `<details class="exportmenu" id="${id}"><summary class="btn">Export ▾</summary><div class="menu-list" style="display:flex;position:absolute;right:0;min-width:330px">${Object.entries(EXPORTS).map(([k, v]) => `<a href="#" data-export="${k}">${esc(v[0])}</a>`).join("")}</div></details>`; }
   function bindExport(container, getRecs, name) { container.addEventListener("click", e => { const a = e.target.closest("[data-export]"); if (!a) return; e.preventDefault(); const recs = getRecs(); if (!recs.length) return; exportRefs(recs, a.dataset.export, name); const d = a.closest("details"); if (d) d.open = false; }); }
 
-  // PDF links: if the mirrored copy is missing (e.g. before the release is published), fall back to the original URL
-  document.addEventListener("click", e => {
-    const a = e.target.closest("a.plink.pdf[data-fallback]"); if (!a || a.dataset.checked) return;
-    a.dataset.checked = "1";
-    fetch(a.href, { method: "HEAD", mode: "no-cors" }).catch(() => { a.href = a.dataset.fallback; });
-  }, { capture: true });
 
   return { state, config: C, loadCore, getJSON, chipsFor, paperCard, linkList, citeLine, cite, matches, list, starBtn, bindStars, updateListBadge, exportRefs, exportMenu, bindExport, renderFilters, activeChips, toggle, filtersToQuery, filtersFromQuery, bindCardChips, label, esc, fmtDate, chipColors, pdfUrl, CARD_AXES, FILTER_AXES };
 })();

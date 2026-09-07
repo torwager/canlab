@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="assets/app.css">
 <style>
   .book { display: grid; grid-template-columns: auto 1fr; gap: 1.2rem; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; box-shadow: var(--shadow); max-width: 900px; }
+  .book .coverimg { width: 120px; border-radius: 6px; box-shadow: 0 10px 20px -10px rgba(26,35,50,.5); display: block; }
   .book .cover { width: 90px; height: 120px; border-radius: 6px; background: linear-gradient(160deg, var(--steel-deep), var(--steel)); color: #fff; font-family: var(--serif); display: grid; place-items: center; text-align: center; font-size: .8rem; padding: .5rem; box-shadow: 0 10px 20px -10px rgba(26,35,50,.5); }
   .book h3 { margin: 0 0 .2rem; }
   .book p { margin: 0 0 .5rem; color: var(--ink-2); font-size: .95rem; }
@@ -32,7 +33,7 @@
   <div class="page-head">
     <p class="eyebrow">Tools &amp; training</p>
     <h1>Tools, courses and teaching materials</h1>
-    <p>The lab develops open-source software for neuroimaging analysis and shares brain signature patterns, atlases, paradigms and data. Tor Wager and Martin Lindquist also teach fMRI analysis through a textbook, two free Coursera courses and an annual hands-on workshop.</p>
+    <p>The lab develops open-source software for neuroimaging analysis and shares brain signature patterns, atlases, paradigms and data. Tor Wager and Martin Lindquist also teach fMRI analysis through two textbooks, two free Coursera courses and an annual hands-on workshop.</p>
   </div>
   <div id="content"><div class="spinner">Loading…</div></div>
 </main>
@@ -46,8 +47,8 @@
   const esc = CL.esc;
   const extra = xs => (xs || []).length ? `<div class="extra">${xs.map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)} ↗</a>`).join("")}</div>` : "";
   document.getElementById("content").innerHTML = `
-    <div class="section" style="margin-top:.4rem"><h2>Book</h2></div>
-    ${r.books.map(b => `<div class="book rv in"><div class="cover">Principles of fMRI</div><div><h3><a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)} ↗</a></h3><p class="small muted" style="margin-bottom:.3rem">${esc(b.authors)}</p><p>${esc(b.blurb)}</p><a class="btn primary" href="${esc(b.url)}" target="_blank" rel="noopener">Get the book (PDF / e-book)</a></div></div>`).join("")}
+    <div class="section" style="margin-top:.4rem"><h2>Books</h2></div>
+    <div style="display:grid;gap:1rem">${r.books.map(b => `<div class="book rv in">${b.cover ? `<a href="${esc(b.url)}" target="_blank" rel="noopener"><img class="coverimg" src="assets/img/${esc(b.cover)}" alt="Cover of ${esc(b.title)}"></a>` : `<div class="cover">${esc(b.title)}</div>`}<div><h3><a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)} ↗</a></h3><p class="small muted" style="margin-bottom:.3rem">${esc(b.authors)}</p><p>${esc(b.blurb)}</p><div style="display:flex;gap:.5rem;flex-wrap:wrap"><a class="btn primary" href="${esc(b.url)}" target="_blank" rel="noopener">${b.url.includes("mitpress") ? "MIT Press" : "Get the e-book"} ↗</a>${(b.extra || []).map(x => `<a class="btn" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)} ↗</a>`).join("")}</div></div></div>`).join("")}</div>
     <div class="section"><h2>Courses</h2><span class="muted">Free video lectures, self-quizzes and workshops</span></div>
     <div class="res-grid">${r.courses.map(c => `<article class="res-card"><span class="prov">${esc(c.provider)}</span><h3><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></h3><p>${esc(c.blurb)}</p>${extra(c.extra)}</article>`).join("")}</div>
     <div class="section"><h2>Open-source neuroimaging analysis tools</h2></div>
@@ -56,7 +57,7 @@
     <div class="section"><h2>fMRI methods chapters</h2><span class="muted">${esc(r.chapters_intro)}</span></div>
     <div class="res-list">${r.chapters.map(c => `<div class="res"><span class="name"><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a></span><span class="country">PDF ↗</span><span class="sub">${esc(c.where)}</span></div>`).join("")}</div>
     <div class="section"><h2>Elsewhere</h2></div>
-    <div class="res-list">${r.other.map(o => `<div class="res"><span class="name"><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.title)}</a></span><span class="country">↗</span></div>`).join("")}
+    <div class="res-list">
       <div class="res"><span class="name"><a href="publications.html?approach=open_tools">Papers that release tools, data or atlases</a></span><span class="country">on this site</span></div>
       <div class="res"><span class="name"><a href="https://scienceofplacebo.org" target="_blank" rel="noopener">Science of Placebo</a></span><span class="country">↗</span><span class="sub">A daily-updated research hub and searchable database of placebo and nocebo research, run by the lab.</span></div></div>`;
 })().catch(e => { document.getElementById("content").innerHTML = `<div class="empty">Could not load (${CL.esc(e.message)}).</div>`; });

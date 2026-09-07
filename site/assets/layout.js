@@ -11,15 +11,12 @@
       <a href="news.html">News</a>
       <a href="resources.html">Tools &amp; training</a>
       <div class="menu"><a href="network.html" class="menu-btn" aria-haspopup="true" aria-expanded="false">Explore ▾</a>
-        <div class="menu-list"><a href="network.html">Collaborator network</a><a href="bibliometrics.html">Bibliometrics</a><a href="discuss.html">Discussion</a></div></div>
+        <div class="menu-list"><a href="network.html">Collaborator network</a><a href="bibliometrics.html">Bibliometrics</a></div></div>
       <a href="join.html">Join</a>
-      <div class="menu"><a href="mylist.html" class="menu-btn" aria-haspopup="true" aria-expanded="false">Members ▾</a>
-        <div class="menu-list"><a href="account.html">Sign in</a><a href="mylist.html">My list</a></div></div>
-      <a href="about.html">About</a>
     </nav></div></header>`;
   const footer = `<footer class="site-footer"><div class="wrap">
     <div><strong>Cognitive and Affective Neuroscience Lab</strong>Dartmouth College, Hanover NH. Directed by Tor Wager. We study the neurophysiology of pain, emotion, stress and empathy, and how they are shaped by beliefs, expectations and social context. <span id="foot-updated"></span></div>
-    <div><strong>Lab</strong><ul><li><a href="research.html">Research</a></li><li><a href="people.html">People</a></li><li><a href="publications.html">Publications</a></li><li><a href="news.html">News</a></li><li><a href="join.html">Join us / participate</a></li><li><a href="feed.xml">RSS: new papers</a></li></ul></div>
+    <div><strong>Lab</strong><ul><li><a href="research.html">Research</a></li><li><a href="people.html">People</a></li><li><a href="publications.html">Publications</a></li><li><a href="news.html">News</a></li><li><a href="join.html">Join us / participate</a></li><li><a href="mylist.html">My list</a></li><li><a href="account.html">Sign in</a></li><li><a href="about.html">About this site</a></li><li><a href="feed.xml">RSS: new papers</a></li></ul></div>
     <div><strong>Resources</strong><ul><li><a href="resources.html">Tools &amp; training</a></li><li><a href="https://canlab.github.io" target="_blank" rel="noopener">canlab.github.io</a></li><li><a href="https://github.com/canlab" target="_blank" rel="noopener">CANlab on GitHub</a></li><li><a href="https://scienceofplacebo.org" target="_blank" rel="noopener">Science of Placebo</a></li><li><a href="https://github.com/${C.repo || "torwager/canlab"}" target="_blank" rel="noopener">This site's source &amp; data</a></li></ul></div>
     <div class="credit-row"><span class="credit">Designed by <a href="https://torwager.github.io" target="_blank" rel="noopener">Tor Wager</a> · Cognitive and Affective Neuroscience Lab · Dartmouth College</span></div>
   </div></footer>`;
@@ -31,6 +28,7 @@
   window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
 
   if (window.CL) CL.updateListBadge();
+  // "My list" lives in the footer: mirror the star count there
   const here = (location.pathname.split("/").pop() || "index.html");
   document.querySelectorAll(".nav a").forEach(a => { if (a.getAttribute("href") === here) a.classList.add("active"); });
   if (here.startsWith("paper")) document.querySelectorAll('.nav a[href="publications.html"]').forEach(a => a.classList.add("active"));

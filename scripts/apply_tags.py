@@ -21,7 +21,7 @@ by_id = {p["id"]: p for p in papers}
 tax = load_taxonomy()
 valid = {ax["id"]: {v["id"] for v in ax["values"]} for ax in tax["axes"]}
 modes = {}
-for f in glob.glob(str(ROOT / "work" / "tagging" / "batch-*.ids.json")):
+for f in glob.glob(str(ROOT / "work" / "tagging*" / "batch-*.ids.json")):
     for x in json.load(open(f)):
         modes[x["id"]] = x["mode"]
 n = 0; bad = []

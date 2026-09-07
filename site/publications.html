@@ -26,6 +26,15 @@
   .books { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: .7rem 1rem; font-size: .92rem; margin-bottom: 1rem; display: flex; gap: .8rem; align-items: center; flex-wrap: wrap; }
   .books b { font-family: var(--serif); font-weight: 600; }
   .filters .hint { font-size: .78rem; color: var(--muted); padding: .3rem 0 .6rem; }
+  .reflist { max-width: 78ch; }
+  .reflist .ref { padding: .45rem 0 .45rem 2.2em; text-indent: -2.2em; font-size: .95rem; line-height: 1.5; color: var(--ink-2); border-bottom: 1px dotted var(--line); }
+  .reflist .ref a.t { color: var(--ink); font-weight: 500; text-decoration: none; }
+  .reflist .ref a.t:hover { color: var(--steel-deep); text-decoration: underline; }
+  .reflist .ref .extra { font-size: .82rem; white-space: nowrap; }
+  .reflist .ref .extra a { margin-left: .5em; }
+  .reflist .books { margin: .3rem 0 1rem; }
+  body.simple .layout { grid-template-columns: 1fr; }
+  body.simple .filters, body.simple .paper-only { display: none !important; }
 </style>
 </head>
 <body>
@@ -37,8 +46,8 @@
     <p>Every publication from the lab, organized by year. Each entry links to the PDF and, where available, to publisher pages, brain pattern maps, paradigms, code, data and videos. Search titles, abstracts and keywords, or filter with the tags on the left (within an axis, any selected tag matches; axes combine with AND). Star papers to build your own list and export the results to a reference manager.</p>
   </div>
   <div class="stat-row" id="stats"></div>
-  <div class="other-ways"><span class="lbl">Other ways to view papers:</span> <a href="https://docs.google.com/document/d/1w779MMQACsZFg9vAGs72Ppvm0U4nDWGIkxPDk6rwObo/edit?usp=sharing" target="_blank" rel="noopener">A short list of representative papers by topic ↗</a> · <a href="https://scholar.google.com/citations?user=8b7b-6EAAAAJ&hl=en" target="_blank" rel="noopener">Tor's Google Scholar page ↗</a> · <a href="bibliometrics.html">Bibliometrics</a> · <a href="network.html">Collaborator network</a></div>
-  <div class="books"><span class="pill-logo" aria-hidden="true" style="background:linear-gradient(90deg,var(--steel) 50%,var(--amber) 50%)"></span><span><b>Book.</b> Wager, T. D. &amp; Lindquist, M. A. <i>Principles of fMRI</i>. <a href="https://leanpub.com/principlesoffmri" target="_blank" rel="noopener">[PDF / e-book] ↗</a></span></div>
+  <div class="other-ways"><span class="lbl">Other ways to view papers:</span> <a href="https://scholar.google.com/citations?user=OZHkBcYAAAAJ&hl=en" target="_blank" rel="noopener">Tor's Google Scholar page ↗</a> · <a href="bibliometrics.html">Bibliometrics</a> · <a href="network.html">Collaborator network</a></div>
+  <div class="books"><img src="assets/img/cover-elements-of-fmri.jpg" alt="" style="width:34px;border-radius:3px"><span><b>Books.</b> Wager, T. D. &amp; Lindquist, M. A. <i>Elements of Functional Magnetic Resonance Imaging</i> (MIT Press, 2026) <a href="https://mitpress.mit.edu/9780262045049/elements-of-functional-magnetic-resonance-imaging/" target="_blank" rel="noopener">[MIT Press] ↗</a> · <a href="https://torwager.github.io/elements-of-fmri-tutorials" target="_blank" rel="noopener">[tutorials] ↗</a></span><img src="assets/img/cover-principles-of-fmri.jpg" alt="" style="width:26px;border-radius:3px"><span><i>Principles of fMRI</i> <a href="https://leanpub.com/principlesoffmri" target="_blank" rel="noopener">[e-book] ↗</a></span></div>
   <div id="candidates"></div>
   <div class="searchbar"><input id="q" type="search" placeholder="Search titles, abstracts and keywords, e.g. placebo naloxone, neurologic pain signature, mediation" autocomplete="off" aria-label="Search titles and abstracts"><input id="qa" type="search" placeholder="Author, e.g. Atlas or Woo CW" autocomplete="off" aria-label="Author" style="flex:0 1 240px"><button class="btn primary" id="go">Search</button></div>
   <div class="layout">
@@ -55,6 +64,7 @@
           <label>Sort <select id="sort"><option value="year">by year</option><option value="rel">relevance</option><option value="cited">most cited</option><option value="old">oldest first</option></select></label>
           <label>Year <select id="yfrom"><option value="">any</option></select> – <select id="yto"><option value="">any</option></select></label>
           <span id="exportwrap"></span>
+          <button class="btn" id="viewtoggle" title="Switch between the tagged card view and a plain reference list">Simple reference list</button>
           <label><input type="checkbox" id="onlyList"> my list</label>
           <label><input type="checkbox" id="onlyPdf"> with PDF</label>
         </div>
@@ -80,7 +90,6 @@
   document.getElementById("stats").innerHTML = `<div class="stat"><b class="tnum">${state.stats.n.toLocaleString()}</b><span>publications</span></div>
     <div class="stat"><b class="tnum">${state.stats.y0}–${state.stats.y1}</b><span>years</span></div>
     <div class="stat"><b class="tnum">${state.stats.n_pdf.toLocaleString()}</b><span>with PDF</span></div>
-    <div class="stat"><b class="tnum">${(state.stats.n_cites || 0).toLocaleString()}</b><span>citations (OpenAlex)</span></div>
     <div class="stat"><b>${CL.fmtDate(state.stats.updated)}</b><span>last updated</span></div>`;
   try { const cands = await CL.getJSON("data/candidates.json"); if (cands.length) document.getElementById("candidates").innerHTML = `<details class="books" style="display:block"><summary style="cursor:pointer"><b>${cands.length} new paper${cands.length === 1 ? "" : "s"} found by the daily search, awaiting review</b> <span class="muted small">(found automatically; not yet in the database)</span></summary><div class="papers" style="margin-top:.6rem">${cands.map(c => `<article class="paper cand"><div class="title">${CL.esc(c.title)}</div><div class="meta"><span class="authors">${CL.esc((c.authors || []).slice(0, 4).join(", "))}${(c.authors || []).length > 4 ? " et al." : ""}</span><span class="date tnum">${c.year || ""}</span><span class="journal">${CL.esc(c.journal || "")}</span><span class="badge new">${CL.esc(c.status || "")}</span></div>${c.summary ? `<div class="summary">${CL.esc(c.summary)}</div>` : ""}<div class="links">${c.doi ? `<a class="plink publisher" href="https://doi.org/${CL.esc(c.doi)}" target="_blank" rel="noopener">Publisher ↗</a>` : ""}${c.oa_url ? `<a class="plink pdf" href="${CL.esc(c.oa_url)}" target="_blank" rel="noopener">Open access</a>` : ""}<span class="small muted">to approve: <code>python -m pipeline.approve ${CL.esc(c.id)}</code></span></div></article>`).join("")}</div></details>`; } catch (e) { /* no queue */ }
   const els = Object.fromEntries(["q", "qa", "go", "filters", "count", "active", "clear", "sort", "yfrom", "yto", "results", "pager", "onlyList", "onlyPdf", "yearnav", "who"].map(id => [id, document.getElementById(id)]));
@@ -107,6 +116,26 @@
   const yearHead = (y, n) => `<h2 class="year-head" id="y${y}">${y === 0 ? "Undated" : y}<span class="n">${n} paper${n === 1 ? "" : "s"}</span></h2>`;
 
   let lastShown = [];
+  let view = params.get("view") === "list" ? "list" : "cards";
+  const vt = document.getElementById("viewtoggle");
+  function applyView() { document.body.classList.toggle("simple", view === "list"); vt.textContent = view === "list" ? "Tagged card view" : "Simple reference list"; }
+  vt.onclick = () => { view = view === "list" ? "cards" : "list"; applyView(); page = 1; run(); };
+  applyView();
+  // CV-style reference: authors (year). title (linked to the PDF). venue, volume(issue), pages.
+  function refLine(r) {
+    const pdf = r.pdf ? CL.pdfUrl({ url: r.pdf }) : null;
+    const t = `${pdf ? `<a class="t" href="${CL.esc(pdf)}" target="_blank" rel="noopener">${CL.esc(r.t)}</a>` : `<a class="t" href="papers/${encodeURIComponent(r.id)}.html">${CL.esc(r.t)}</a>`}`;
+    const au = (r.al || r.a || "") + (r.trunc ? ", et al." : "");
+    const yr = r.st === "in press" ? "in press" : (r.st === "under review" ? "under review" : (r.st === "preprint" ? "preprint" : (r.y || "n.d.")));
+    let venue = r.j ? `<i>${CL.esc(r.j)}</i>` : "";
+    if (r.kind === "chapter" && r.j) venue = `In ${CL.esc(r.j)}`;
+    const vol = r.vol ? `, ${r.kind === "chapter" ? "" : "<i>"}${CL.esc(r.vol)}${r.kind === "chapter" ? "" : "</i>"}${r.issue ? `(${CL.esc(r.issue)})` : ""}` : "";
+    const pg = r.pg ? `, ${CL.esc(String(r.pg).replace(/-/g, "–"))}` : "";
+    const extras = (r.links || []).filter(l => l.type !== "pdf" && l.type !== "publisher").map(l => `<a href="${CL.esc(l.url)}" target="_blank" rel="noopener">[${CL.esc(l.label)}]</a>`).join("");
+    const pub = r.doi ? `<a href="https://doi.org/${CL.esc(r.doi)}" target="_blank" rel="noopener">[link]</a>` : (r.u ? `<a href="${CL.esc(r.u)}" target="_blank" rel="noopener">[link]</a>` : "");
+    return `<div class="ref" id="p-${CL.esc(r.id)}">${CL.esc(au)} (${yr}). ${t}. ${venue}${vol}${pg}.${(r.comm || []).map(c => ` <span class="badge" title="${CL.esc(c.title)}">+ commentary</span>`).join("")} <span class="extra">${pdf ? `<a href="${CL.esc(pdf)}" target="_blank" rel="noopener">[PDF]</a>` : ""}${pub}${extras}</span></div>`;
+  }
+  const BOOKS = `<div class="books reflist"><div class="ref">Wager, T. D., &amp; Lindquist, M. A. (2026). <a class="t" href="https://mitpress.mit.edu/9780262045049/elements-of-functional-magnetic-resonance-imaging/" target="_blank" rel="noopener">Elements of Functional Magnetic Resonance Imaging</a>. <i>MIT Press</i>. <span class="extra"><a href="https://torwager.github.io/elements-of-fmri-tutorials" target="_blank" rel="noopener">[tutorials]</a></span></div><div class="ref">Wager, T. D., &amp; Lindquist, M. A. (2015). <a class="t" href="https://leanpub.com/principlesoffmri" target="_blank" rel="noopener">Principles of fMRI</a>. <i>Leanpub</i>. <span class="extra"><a href="https://leanpub.com/principlesoffmri" target="_blank" rel="noopener">[e-book]</a></span></div></div>`;
   async function run() {
     const q = els.q.value.trim();
     let hits = null;
@@ -137,7 +166,20 @@
       els.who.innerHTML = names.length > 1 ? `<span class="small muted">Matches ${names.length} author names:</span> ` + names.slice(0, 12).map(([a, n]) => `<button class="chip" data-author="${CL.esc(a)}">${CL.esc(a)} <span class="muted tnum">${n}</span></button>`).join(" ") : "";
     } else els.who.innerHTML = "";
     els.clear.hidden = !Object.values(filters).some(s => s.size) && !q && !qa && !els.yfrom.value && !els.yto.value && !els.onlyList.checked && !els.onlyPdf.checked;
-    CL.filtersToQuery(filters, { q, author: qa ? els.qa.value.trim() : "", sort: sort !== "year" ? sort : "", from: els.yfrom.value, to: els.yto.value, list: els.onlyList.checked ? "1" : "", pdf: els.onlyPdf.checked ? "1" : "", p: page > 1 ? page : "" });
+    CL.filtersToQuery(filters, { q, author: qa ? els.qa.value.trim() : "", sort: sort !== "year" ? sort : "", from: els.yfrom.value, to: els.yto.value, list: els.onlyList.checked ? "1" : "", pdf: els.onlyPdf.checked ? "1" : "", view: view === "list" ? "list" : "", p: page > 1 && view !== "list" ? page : "" });
+    if (view === "list") {
+      // the simple list shows everything on one page: books first, then years in descending order
+      const counts = new Map(); for (const r of shown) counts.set(r.y || 0, (counts.get(r.y || 0) || 0) + 1);
+      const ys = [...counts.keys()].sort((a, b) => sort === "old" ? a - b : b - a);
+      els.yearnav.innerHTML = ys.map(y => `<a href="#y${y}">${y || "n.d."}</a>`).join("");
+      let html = (q || qa || Object.values(filters).some(s => s.size)) ? "" : `<h2 class="year-head" id="ybooks">Books</h2>${BOOKS}`;
+      let cur = null; html += '<div class="reflist">';
+      const order = shown.slice().sort(sort === "rel" && hits ? (a, b) => hits.get(b.id) - hits.get(a.id) : byDate);
+      for (const r of order) { if ((r.y || 0) !== cur) { cur = r.y || 0; html += `</div>${yearHead(cur, counts.get(cur))}<div class="reflist">`; } html += refLine(r); }
+      els.results.innerHTML = (html + "</div>") || '<div class="empty">No papers match.</div>';
+      els.pager.innerHTML = "";
+      return;
+    }
     const slice = shown.slice((page - 1) * PAGE, page * PAGE);
     // year navigation + year headings when sorted chronologically
     const chrono = sort === "year" || sort === "old";

@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 papers = json.load(open(ROOT / "data" / "papers.json"))
 TEXT_DIR = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "work" / "pdftext"
-OUT = ROOT / "work" / "tagging"; OUT.mkdir(parents=True, exist_ok=True)
+OUT = Path(os.environ.get("TAGDIR", str(ROOT / "work" / "tagging"))); OUT.mkdir(parents=True, exist_ok=True)
 BATCH = int(os.environ.get("BATCH", "10"))
 HEAD = 14000
 TERMS = [r"deep (neural )?network", r"convolutional", r"\bCNN\b", r"transformer", r"large language model", r"\bLLM", r"\bGPT", r"generative (AI|model)", r"foundation model", r"artificial intelligence", r"neural network",
@@ -42,6 +42,23 @@ def snippets(text, n=60, w=110):
 
 
 def text_for(p):
+    # PDFs now live in site/pdf/<id>.pdf (or author_manuscripts/); extract with PyMuPDF and cache under work/pdftext/<id>.txt
+    for sub in ("", "author_manuscripts/"):
+        f = ROOT / "site" / "pdf" / f"{sub}{p['id']}.pdf"
+        if f.exists():
+            cache = ROOT / "work" / "pdftext" / f"{p['id']}.txt"
+            if cache.exists():
+                t = cache.read_text(errors="ignore")
+            else:
+                try:
+                    import fitz
+                    d = fitz.open(f); t = "\n".join(pg.get_text() for pg in d)
+                except Exception:
+                    t = ""
+                try: cache.write_text(t)
+                except Exception: pass
+            if len(t.strip()) > 800:
+                return t
     for l in p.get("links", []):
         if l["type"] == "pdf" and l.get("file"):
             f = TEXT_DIR / (l["file"] + ".txt")
@@ -52,7 +69,9 @@ def text_for(p):
     return ""
 
 
-todo = [p for p in papers if not p.get("tags") or os.environ.get("ALL")]
+ONLY = os.environ.get("ONLY")  # path to a JSON list of ids to (re)tag
+only_ids = set(json.load(open(ONLY))) if ONLY else None
+todo = [p for p in papers if (only_ids and p["id"] in only_ids) or (not only_ids and (not p.get("tags") or os.environ.get("ALL")))]
 print(len(todo), "papers to tag")
 for bi in range(0, len(todo), BATCH):
     batch = todo[bi: bi + BATCH]; n = bi // BATCH + 1

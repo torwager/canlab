@@ -27,23 +27,36 @@
 <style>
   .curtain { position: relative; }
   .curtain-media { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; z-index: 0; background: linear-gradient(160deg, var(--bg) 0%, var(--bg-2) 55%, var(--bg-3) 100%); }
-  .hero-grid { position: absolute; inset: 0; display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 2rem; padding: 72px var(--pad) 0; max-width: var(--max); margin: 0 auto; }
-  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; align-content: center; gap: 1.2rem; padding-top: 88px; } }
-  .hero-copy h1 { font-size: clamp(2.2rem, 4.4vw, 3.5rem); margin-bottom: .35em; max-width: 13em; }
-  .hero-copy .lede { font-size: clamp(.98rem, 1.2vw, 1.08rem); color: var(--ink-2); max-width: 40em; margin: 0 0 1.4rem; line-height: 1.55; }
-  .hero-pill { display: inline-flex; align-items: center; gap: .6em; padding: .45em 1em .45em .6em; border-radius: 999px; background: color-mix(in srgb, var(--surface) 70%, transparent); border: 1px solid var(--line); font-size: .86rem; font-weight: 500; margin-bottom: 1.3rem; backdrop-filter: blur(6px); }
-  .hero-pill .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 4px rgba(233,185,73,.25); }
-  .hero-actions { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
-  .hero-stage { position: relative; display: grid; place-items: center; }
-  .hero-hint { position: absolute; right: var(--pad); bottom: 30px; z-index: 2; font-size: .8rem; color: var(--muted); display: flex; align-items: center; gap: .5em; pointer-events: none; }
-  .hero-hint .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); animation: pulse 2.2s infinite; }
-  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(233,185,73,.6);} 70% { box-shadow: 0 0 0 10px rgba(233,185,73,0);} }
+  .curtain-media { display: flex; flex-direction: column; }
+  .banner-wrap { padding: 88px var(--pad) 0; max-width: var(--max); margin: 0 auto; width: 100%; }
+  .banner { font-size: clamp(1.9rem, 4.6vw, 4.2rem); letter-spacing: -.015em; margin: 0 0 .5rem; max-width: none; white-space: nowrap; }
+  @media (max-width: 760px) { .banner { white-space: normal; } }
+  .banner-wrap .lede { font-size: clamp(.92rem, 1.05vw, 1.02rem); color: var(--ink-2); max-width: none; margin: 0 0 1.2rem; line-height: 1.5; }
+  .gallery { position: relative; flex: 1; min-height: 0; margin: 0 var(--pad) 84px; max-width: var(--max); width: calc(100% - 2 * var(--pad)); align-self: center; border-radius: var(--radius); overflow: hidden; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
+  .gallery-track { position: absolute; inset: 0; }
+  .gallery-track img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 14px; background: #fff; opacity: 0; transition: opacity .9s var(--ease); }
+  .gallery-track img.on { opacity: 1; }
+  .gallery-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line-2); background: color-mix(in srgb, var(--surface) 85%, transparent); color: var(--ink); font-size: 1.5rem; line-height: 1; cursor: pointer; z-index: 2; display: grid; place-items: center; backdrop-filter: blur(6px); }
+  .gallery-btn.prev { left: 12px; } .gallery-btn.next { right: 12px; }
+  .gallery-btn:hover { border-color: var(--ink); }
+  .gallery-dots { position: absolute; left: 0; right: 0; bottom: 10px; display: flex; justify-content: center; gap: 6px; z-index: 2; }
+  .gallery-dots button { width: 8px; height: 8px; border-radius: 50%; border: none; background: var(--line-2); cursor: pointer; padding: 0; }
+  .gallery-dots button.on { background: var(--amber-deep); width: 22px; border-radius: 4px; }
+  .explore { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, 1fr); gap: 2rem; align-items: start; }
+  @media (max-width: 960px) { .explore { grid-template-columns: 1fr; } }
+  .explore .tiles { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 640px) { .explore .tiles { grid-template-columns: 1fr; } }
+  .explore .tile { min-height: 190px; padding: 1.3rem; }
+  .explore .tile h3 { font-size: 1.15rem; margin: .5rem 0 .25rem; }
+  .explore .tile p { font-size: .88rem; margin-bottom: .8rem; }
+  .hero-stage { position: sticky; top: 90px; display: grid; place-items: center; }
+  .hero-stage .hero-canvas-wrap { aspect-ratio: 1 / 1; width: 100%; max-width: 560px; }
   .scroll-cue { position: absolute; left: 50%; bottom: 34px; transform: translateX(-50%); z-index: 3; }
   .scroll-cue a { display: inline-flex; align-items: center; gap: .6em; padding: .7em 1.3em; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; box-shadow: 0 12px 28px -10px rgba(26,35,50,.55); transition: transform .3s var(--ease); }
   .scroll-cue a:hover { transform: translateY(-2px); }
   .scroll-cue a svg { width: 16px; height: 16px; animation: nudge 1.8s infinite; }
   @keyframes nudge { 0%,100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
-  @media (max-width: 720px) { .hero-hint { display: none; } .scroll-cue { display: none; } .curtain-media { height: auto; min-height: 100svh; } .hero-grid { position: relative; padding-bottom: 2rem; } .hero-canvas-wrap { width: min(100%, 420px); } }
+  @media (max-width: 720px) { .scroll-cue { display: none; } .curtain-media { height: auto; min-height: 100svh; } .gallery { min-height: 260px; margin-bottom: 24px; } }
   .curtain-body { position: relative; z-index: 1; background: var(--bg); box-shadow: 0 -30px 60px -30px rgba(26,35,50,.18); border-top: 1px solid rgba(255,255,255,.7); }
   .curtain-body::before { content: ""; display: block; height: 6px; background: linear-gradient(90deg, var(--amber), var(--amber-soft)); opacity: .9; }
   @media (prefers-reduced-motion: reduce) { .curtain-media { position: relative; height: auto; min-height: 80vh; } }
@@ -80,22 +93,16 @@
 <main>
 <section class="curtain">
   <div class="curtain-media" id="hero">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <span class="hero-pill"><span class="dot"></span> Cognitive and Affective Neuroscience Lab · Dartmouth College</span>
-        <h1>How beliefs and expectations shape the brain and body</h1>
-        <p class="lede">The Cognitive and Affective Neuroscience Lab, directed by Professor Tor Wager, studies the neurophysiology of affective processes—pain, emotion, stress, and empathy—and how they are shaped by cognitive and social influences. We are interested in how thoughts, beliefs, and expectations affect the brain and body. We use a range of techniques, including fMRI, psychophysiology, EEG, pharmacology, and computational modeling of brain networks and behavior. We are also dedicated to developing models for the analysis and synthesis of functional neuroimaging data, especially fMRI, and open sharing of tools and scientific data.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="publications.html">Publications <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="btn btn-ghost" href="research.html">Research themes</a>
-          <a class="btn btn-ghost" href="people.html">People</a>
-        </div>
-      </div>
-      <div class="hero-stage">
-        <div class="hero-canvas-wrap" role="img" aria-label="An interactive brain network. Move your cursor over it to trigger cascades of activity."><canvas id="hero-canvas"></canvas></div>
-      </div>
+    <div class="banner-wrap">
+      <h1 class="banner">Cognitive and Affective Neuroscience Lab</h1>
+      <p class="lede">The Cognitive and Affective Neuroscience Lab, directed by Professor Tor Wager, studies the neurophysiology of affective processes—pain, emotion, stress, and empathy—and how they are shaped by cognitive and social influences. We are interested in how thoughts, beliefs, and expectations affect the brain and body. We use a range of techniques, including fMRI, psychophysiology, EEG, pharmacology, and computational modeling of brain networks and behavior. We are also dedicated to developing models for the analysis and synthesis of functional neuroimaging data, especially fMRI, and open sharing of tools and scientific data.</p>
     </div>
-    <div class="hero-hint"><span class="pulse"></span> Move your cursor over the brain</div>
+    <div class="gallery" id="gallery" aria-label="Pictures from the lab's research" role="region">
+      <div class="gallery-track" id="gallery-track"></div>
+      <button class="gallery-btn prev" id="gprev" aria-label="Previous picture">‹</button>
+      <button class="gallery-btn next" id="gnext" aria-label="Next picture">›</button>
+      <div class="gallery-dots" id="gdots"></div>
+    </div>
     <div class="scroll-cue"><a href="#start">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a></div>
   </div>
 
@@ -108,8 +115,9 @@
           <div><dt>Citations (OpenAlex)</dt><dd class="tnum" id="f-cites">…</dd></div>
           <div><dt>Lab members past &amp; present</dt><dd class="tnum" id="f-people">…</dd></div>
         </dl>
-        <div class="section-head"><div class="rv"><p class="eyebrow">Sections</p><h2>Explore the lab</h2></div></div>
-        <div class="tiles">
+        <div class="section-head"><div class="rv"><p class="eyebrow">Sections</p><h2>Explore the lab</h2></div><p class="rv rv-d1">Move your cursor over the network on the right to see activity spread between its nodes.</p></div>
+        <div class="explore">
+          <div class="tiles">
           <a class="tile glow rv" href="research.html"><div><div class="ic">◎</div><h3>Research</h3><p>Belief and expectation, brain-body interactions, affect and emotion, pain biomarkers, craving, and individualized brain models.</p></div><span class="go">Research themes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
           <a class="tile glow rv rv-d1" href="publications.html"><div><div class="ic">⌕</div><h3>Publications</h3><p>Every paper since 2000 with PDFs, brain maps, code and data, searchable by keyword and filterable by topic, approach and type.</p></div><span class="go">Search the papers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
           <a class="tile glow rv rv-d2" href="people.html"><div><div class="ic">☺</div><h3>People</h3><p>Postdocs, graduate students, staff and research assistants, plus alumni of the lab at Dartmouth, Colorado and Columbia.</p></div><span class="go">Meet the lab <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
@@ -118,10 +126,12 @@
           <a class="tile glow rv rv-d2" href="network.html"><div><div class="ic">⧉</div><h3>Collaborator network</h3><p>An interactive map of the lab's co-authors, computed in your browser from the publication database.</p></div><span class="go">Explore the network <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
           <a class="tile glow rv" href="join.html"><div><div class="ic">★</div><h3>Join us</h3><p>Open positions, how to apply as a postdoc, student or visiting scholar, and how to participate in a study.</p></div><span class="go">Join or participate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
           <a class="tile glow rv rv-d1" href="mylist.html"><div><div class="ic">☆</div><h3>Reading lists</h3><p>Star papers into your own lists, export them to Zotero, EndNote or BibTeX, and sign in to sync across devices.</p></div><span class="go">My list <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-          <a class="tile glow rv rv-d2" href="discuss.html"><div><div class="ic">✎</div><h3>Discussion</h3><p>Comment on papers and talk with the lab and other researchers about findings, methods and tools.</p></div><span class="go">Join the discussion <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
         </div>
       </div>
-    </section>
+    
+          <div class="hero-stage rv rv-d1"><div class="hero-canvas-wrap" role="img" aria-label="An interactive network graph. Moving the cursor over a node sends pulses of light along its connections."><canvas id="hero-canvas"></canvas></div></div>
+        </div>
+      </section>
 
     <section class="section">
       <div class="wrap">
@@ -179,6 +189,20 @@
 <script src="assets/layout.js"></script>
 <script src="assets/hero.js"></script>
 <script>
+(function () {
+  const N = 20, track = document.getElementById("gallery-track"), dots = document.getElementById("gdots");
+  if (!track) return;
+  const imgs = [];
+  for (let i = 1; i <= N; i++) { const im = new Image(); im.src = `assets/gallery/slide-${String(i).padStart(2, "0")}.jpg`; im.alt = ""; im.loading = i > 2 ? "lazy" : "eager"; track.appendChild(im); imgs.push(im); const b = document.createElement("button"); b.setAttribute("aria-label", "Picture " + i); b.onclick = () => go(i - 1, true); dots.appendChild(b); }
+  let cur = 0, timer = null;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function go(i, manual) { cur = (i + N) % N; imgs.forEach((im, k) => im.classList.toggle("on", k === cur)); dots.querySelectorAll("button").forEach((b, k) => b.classList.toggle("on", k === cur)); if (manual) restart(); }
+  function restart() { clearInterval(timer); if (!reduce) timer = setInterval(() => go(cur + 1), 6000); }
+  document.getElementById("gprev").onclick = () => go(cur - 1, true);
+  document.getElementById("gnext").onclick = () => go(cur + 1, true);
+  document.addEventListener("visibilitychange", () => { if (document.hidden) clearInterval(timer); else restart(); });
+  go(0); restart();
+})();
 (async function () {
   const { state } = await CL.loadCore();
   const s = state.stats;

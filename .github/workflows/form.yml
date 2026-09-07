@@ -1,0 +1,34 @@
+name: Google Form responses
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - name: Check for new responses and open an issue for each
+        env:
+          FORM_CSV_URL: ${{ secrets.FORM_CSV_URL }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create form-response --color 1D76DB --description "Google Form submission" -R ${{ github.repository }} 2>/dev/null || true
+          python -m pipeline.form_monitor
+      - name: Remember seen responses
+        run: |
+          git config user.name "canlab-bot"
+          git config user.email "canlab-bot@users.noreply.github.com"
+          git add data/form_seen.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "no change"; else git commit -m "form: record seen responses" && git pull --rebase origin main && git push origin HEAD:main; fi

@@ -19,6 +19,15 @@
 <link rel="canonical" href="https://torwager.github.io/canlab/research.html">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/app.css">
+<style>
+  .bookstrip { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin: .2rem 0 1.6rem; }
+  .bookcard { display: flex; gap: .9rem; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: .7rem .9rem; box-shadow: var(--shadow); transition: transform .25s var(--ease); }
+  .bookcard:hover { transform: translateY(-2px); }
+  .bookcard img { width: 56px; border-radius: 4px; flex: none; box-shadow: 0 6px 14px -8px rgba(26,35,50,.6); }
+  .bookcard .ic { width: 56px; height: 72px; border-radius: 4px; background: var(--amber-soft); color: var(--amber-deep); display: grid; place-items: center; font-size: 1.5rem; flex: none; }
+  .bookcard b { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.02rem; line-height: 1.25; }
+  .bookcard .muted { font-size: .8rem; }
+</style>
 </head>
 <body>
 <div id="site-header"></div>
@@ -29,6 +38,11 @@
     <p id="intro"></p>
   </div>
   <nav class="theme-nav" id="themenav" aria-label="Research themes"></nav>
+  <div class="bookstrip">
+    <a class="bookcard" href="https://mitpress.mit.edu/9780262045049/elements-of-functional-magnetic-resonance-imaging/" target="_blank" rel="noopener"><img src="assets/img/cover-elements-of-fmri.jpg" alt="Cover of Elements of Functional Magnetic Resonance Imaging"><span><b>Elements of Functional Magnetic Resonance Imaging</b><span class="muted">Wager &amp; Lindquist, MIT Press 2026 · <u>MIT Press ↗</u></span></span></a>
+    <a class="bookcard alt" href="https://torwager.github.io/elements-of-fmri-tutorials" target="_blank" rel="noopener"><span class="ic">⌘</span><span><b>Elements of fMRI tutorials</b><span class="muted">Interactive companion tutorials on GitHub ↗</span></span></a>
+    <a class="bookcard" href="https://leanpub.com/principlesoffmri" target="_blank" rel="noopener"><img src="assets/img/cover-principles-of-fmri.jpg" alt="Cover of Principles of fMRI"><span><b>Principles of fMRI</b><span class="muted">Wager &amp; Lindquist, Leanpub e-book ↗</span></span></a>
+  </div>
   <div id="themes"><div class="spinner">Loading…</div></div>
 </main>
 <div id="site-footer"></div>

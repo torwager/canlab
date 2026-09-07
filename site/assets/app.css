@@ -367,3 +367,10 @@ mark { background: var(--amber-soft); color: inherit; padding: 0 .1em; border-ra
 
 /* Candidates queue */
 .cand { border-left: 3px solid var(--steel); }
+
+/* Commentaries and editorials about a paper, shown as a linked bubble under it */
+.paper .comms, .detail .comms { display: grid; gap: .35rem; margin-top: .2rem; }
+.comm { display: flex; gap: .6rem; align-items: flex-start; padding: .5rem .8rem; border-radius: 12px; background: var(--steel-soft); color: var(--ink-2); font-size: .84rem; line-height: 1.35; text-decoration: none; border: 1px solid transparent; }
+.comm:hover { border-color: var(--steel); text-decoration: none; }
+.comm .ic { color: var(--steel-deep); flex: none; }
+.comm b { color: var(--steel-deep); font-weight: 600; }

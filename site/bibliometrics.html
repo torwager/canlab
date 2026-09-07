@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bibliometrics | CANlab</title>
-<meta name="description" content="A bibliometric view of the publications of the Cognitive and Affective Neuroscience Lab (Tor Wager, Dartmouth): papers and citations per year, article types, topics and methods over time, journals, co-authors and the most-cited papers.">
+<meta name="description" content="A bibliometric view of the publications of the Cognitive and Affective Neuroscience Lab (Tor Wager, Dartmouth): publications per year, topics and methods over time, co-authors and the most-cited papers.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <meta property="og:site_name" content="CANlab">
 <meta property="og:title" content="Bibliometrics | CANlab">
-<meta property="og:description" content="Papers and citations per year, topics and methods over time, journals, co-authors and the most-cited papers from CANlab.">
+<meta property="og:description" content="Publications per year, topics and methods over time, co-authors and the most-cited papers from CANlab.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://torwager.github.io/canlab/bibliometrics.html">
 <meta property="og:image" content="https://torwager.github.io/canlab/assets/og.jpg">
@@ -42,7 +42,6 @@
   .legend { display: flex; flex-wrap: wrap; gap: .3rem .9rem; font-size: .8rem; color: var(--text-secondary); }
   .legend span { display: inline-flex; align-items: center; gap: .4em; }
   .legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
-  .legend i.line { width: 16px; height: 0; border-top: 2.5px solid var(--s2); border-radius: 0; }
   .legend a { display: inline-flex; align-items: center; gap: .4em; color: inherit; text-decoration: none; }
   .legend a:hover { color: var(--text-primary); text-decoration: underline; }
   .tip { position: fixed; pointer-events: none; background: var(--ink); color: var(--bg); font-size: .8rem; padding: .4rem .6rem; border-radius: 8px; box-shadow: var(--shadow); z-index: 60; max-width: 260px; opacity: 0; transition: opacity .12s; }
@@ -68,11 +67,11 @@
   <div class="page-head">
     <p class="eyebrow">Bibliometrics</p>
     <h1>The shape of the lab's work</h1>
-    <p>A descriptive look at the lab's publications since 2000: how output and citations have grown, what kinds of papers we write, the topics and methods they cover, where they appear, and who we write them with. Figures are recomputed from the <a href="publications.html">publications database</a> on every build, so they reflect the bibliography as it stands today. Every bar, band, journal and co-author is clickable and opens the matching papers in a new tab.</p>
+    <p>A descriptive look at the lab's publications since 2000: how output has grown, the topics and methods the papers cover, and who we write them with. Figures are recomputed from the <a href="publications.html">publications database</a> on every build, so they reflect the bibliography as it stands today. Every bar, band and co-author is clickable and opens the matching papers in a new tab.</p>
   </div>
   <div class="num-row" id="nums"></div>
   <div class="viz-grid" id="viz"><div class="spinner">Computing…</div></div>
-  <p class="notes" id="notes">Notes. Citation counts come from <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a> and are refreshed with each build; papers that OpenAlex has not indexed count as zero, and counts for recent papers are still growing. Topic, approach and article-type tags were assigned by a language model from the full text of each paper and checked by hand where flagged (see <a href="about.html#tags">how tagging works</a>); a paper can carry several topic and approach tags, so the stacked charts count tags, not papers. Author names are surname plus initials as they appear on the papers, so two people who share a name are merged and one person whose initials vary is split. Counts for the current year are partial.</p>
+  <p class="notes" id="notes">Notes. Topic, approach and article-type tags were assigned by a language model from the full text of each paper and checked by hand where flagged (see <a href="about.html#tags">how tagging works</a>); a paper can carry several topic and approach tags, so the stacked charts count tags, not papers. Author names are surname plus initials as they appear on the papers, so two people who share a name are merged and one person whose initials vary is split. Counts for the current year are partial. Citation counts in the most-cited table come from <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a> and are refreshed with each build; papers that OpenAlex has not indexed do not appear in that table, and counts for recent papers are still growing.</p>
 </main>
 <div class="tip" id="tip" role="status" aria-live="polite"></div>
 <div id="site-footer"></div>
@@ -97,7 +96,7 @@
   const years = B.years;
 
   document.getElementById("nums").innerHTML = [
-    [B.n.toLocaleString(), "publications"], [years.length ? years[0] + "–" + years[years.length - 1] : "", "years"], [B.n_journals.toLocaleString(), "journals"], [coauthors.size.toLocaleString(), "co-authors"], [(B.total_cites || 0).toLocaleString(), "citations (OpenAlex)"]
+    [B.n.toLocaleString(), "publications"], [years.length ? years[0] + "–" + years[years.length - 1] : "", "years"], [coauthors.size.toLocaleString(), "co-authors"]
   ].map(([v, l]) => `<div class="num"><b>${v}</b><span>${l}</span></div>`).join("");
 
   // ---------- chart builders (inline SVG) ----------
@@ -105,32 +104,26 @@
   function niceTicks(max, n) { const raw = max / n, p = Math.pow(10, Math.floor(Math.log10(Math.max(raw, 1e-9)))), f = raw / p, step = (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * p; const out = []; for (let t = 0; t <= max; t += step) out.push(Math.round(t)); return out; }
   function yearLabels(ys, xOf, yPos) { const step = ys.length > 40 ? 10 : ys.length > 20 ? 5 : 2; return ys.map((y, i) => y % step === 0 ? `<text x="${xOf(i)}" y="${yPos}" text-anchor="middle">${y}</text>` : "").join(""); }
 
-  // (1) bars per year with a line for citations to the papers published that year
-  function barsAndLine(ys, values, line, opts = {}) {
-    const W = 640, H = 260, m = { t: 12, r: 52, b: 30, l: 40 };
+  // (1) publications per year
+  function bars(ys, values, opts = {}) {
+    const W = 640, H = 240, m = { t: 12, r: 8, b: 30, l: 40 };
     const iw = W - m.l - m.r, ih = H - m.t - m.b;
-    const max = Math.max(1, ...values), lmax = Math.max(1, ...line);
-    const ticks = niceTicks(max, 4), lticks = niceTicks(lmax, 4);
+    const max = Math.max(1, ...values), ticks = niceTicks(max, 4);
     const bw = iw / ys.length;
-    const cx = i => m.l + i * bw + bw / 2, ly = v => m.t + ih - v / lmax * ih;
+    const cx = i => m.l + i * bw + bw / 2;
     let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.aria || "")}">`;
     s += `<g class="grid">` + ticks.map(t => `<line x1="${m.l}" x2="${W - m.r}" y1="${m.t + ih - t / max * ih}" y2="${m.t + ih - t / max * ih}"/>`).join("") + `</g>`;
     s += `<g class="axis">` + ticks.map(t => `<text x="${m.l - 6}" y="${m.t + ih - t / max * ih + 4}" text-anchor="end">${t}</text>`).join("") + `</g>`;
-    s += `<g class="axis">` + lticks.map(t => `<text x="${W - m.r + 6}" y="${ly(t) + 4}" fill="var(--s2)" style="fill:var(--s2)">${t.toLocaleString()}</text>`).join("") + `</g>`;
     ys.forEach((y, i) => {
       const h = values[i] / max * ih, x = m.l + i * bw + 1, w = Math.max(1, bw - 2);
       const partial = y === thisYear;
-      s += `<g class="hbar" data-link="${linkYear(y)}" data-tip="<b>${y}</b>${values[i]} paper${values[i] === 1 ? "" : "s"}${partial ? " (year in progress)" : ""}<br>${(line[i] || 0).toLocaleString()} citations to these papers<br>Click to open in the publications list"><rect x="${x}" y="${m.t + ih - h}" width="${w}" height="${h}" rx="${Math.min(3, w / 2)}" fill="var(--seq)" opacity="${partial ? .45 : 1}"/><rect x="${x}" y="${m.t}" width="${w}" height="${ih}" fill="transparent"/></g>`;
+      s += `<g class="hbar" data-link="${linkYear(y)}" data-tip="<b>${y}</b>${values[i]} paper${values[i] === 1 ? "" : "s"}${partial ? " (year in progress)" : ""}<br>Click to open in the publications list"><rect x="${x}" y="${m.t + ih - h}" width="${w}" height="${h}" rx="${Math.min(3, w / 2)}" fill="var(--seq)" opacity="${partial ? .45 : 1}"/><rect x="${x}" y="${m.t}" width="${w}" height="${ih}" fill="transparent"/></g>`;
     });
-    const path = ys.map((_, i) => `${i ? "L" : "M"}${cx(i).toFixed(1)},${ly(line[i] || 0).toFixed(1)}`).join("");
-    s += `<path d="${path}" fill="none" stroke="var(--s2)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" style="pointer-events:none"/>`;
-    s += ys.map((_, i) => `<circle cx="${cx(i).toFixed(1)}" cy="${ly(line[i] || 0).toFixed(1)}" r="3" fill="var(--surface-1)" stroke="var(--s2)" stroke-width="2" style="pointer-events:none"/>`).join("");
     s += `<g class="axis">` + yearLabels(ys, cx, H - 10) + `<line x1="${m.l}" x2="${W - m.r}" y1="${m.t + ih}" y2="${m.t + ih}"/></g>`;
-    s += `</svg><div class="legend"><span><i style="background:var(--seq)"></i>Papers published (left axis)</span><span><i class="line"></i>Citations to papers published that year (right axis)</span></div>`;
-    return s;
+    return s + `</svg>`;
   }
 
-  // (2-4) stacked bars by year: counts of the top-k keys, the rest folded into Other
+  // (2-3) stacked bars by year: counts of the top-k keys, the rest folded into Other
   function stackedBars(series, axis, opts = {}) {
     const k = Math.min(opts.k || series.keys.length, series.keys.length);
     const keys = series.keys.slice(0, k), hasOther = series.keys.length > k;
@@ -166,7 +159,7 @@
     return s;
   }
 
-  // (5-7) horizontal bars
+  // (4-5) horizontal bars
   function hbars(pairs, opts = {}) {
     const rows = pairs.slice(0, opts.k || 12);
     if (!rows.length) return `<div class="empty">Nothing to show yet.</div>`;
@@ -192,14 +185,12 @@
   const axisPanel = (ax, color) => { const def = state.axes[ax]; return `<div><h4>${esc(def ? def.label : ax)}</h4>${hbars(tc[ax] || [], { axis: ax, k: 15, color, width: 360, left: 150, cut: 24, aria: def ? def.label : ax, link: v => `publications.html?${ax}=${encodeURIComponent(v)}` })}</div>`; };
   const coauthorRows = (B.top_authors || []).filter(([a]) => !isWager(a));
   const html = [
-    card("Papers and citations per year", "Bars: publications by year (the current year is lighter because it is incomplete). Line: total OpenAlex citations to the papers published in that year, which favours older papers that have had time to be cited.", barsAndLine(years, B.per_year, B.cites_per_year || years.map(() => 0), { aria: "Papers and citations per year" }) + table(years.map((y, i) => [y, `${B.per_year[i]} papers · ${(B.cites_per_year ? B.cites_per_year[i] : 0).toLocaleString()} citations`]), ["Year", "Papers · citations"]), true),
-    card("Article types by year", "Empirical papers, reviews, methods and tools papers, book chapters and commentaries. Click a segment to open those papers for that year.", stackedBars(B.type_by_year, "type", { aria: "Article type by year" })),
+    card("Publications per year", "Number of papers published each year (the current year is lighter because it is incomplete). Click a bar to open that year's papers.", bars(years, B.per_year, { aria: "Publications per year" }) + table(years.map((y, i) => [y, B.per_year[i]]), ["Year", "Papers"]), true),
     card("Topics by year", "The eight most frequent topic tags; less frequent topics are folded into Other. A paper can carry several topics.", stackedBars(B.topic_by_year, "topic", { k: 8, aria: "Topics by year" })),
     card("Approaches by year", "The eight most frequent approach tags (methods and study types); the rest are folded into Other.", stackedBars(B.approach_by_year, "approach", { k: 8, aria: "Approaches by year" })),
     card("Tags across the whole bibliography", "How many papers carry each topic, approach and article-type tag. Click a bar to open those papers.", `<div class="three">${axisPanel("topic", "var(--s7)")}${axisPanel("approach", "var(--s3)")}${axisPanel("type", "var(--s9)")}</div>`, true),
-    card("Journals", "Journals in which the lab has published most often (journal articles only). Click to search the publications list for the journal.", hbars(B.top_journals || [], { k: 15, cut: 34, left: 220, aria: "Top journals", link: j => `publications.html?q=${encodeURIComponent(j)}` }) + table(B.top_journals || [], ["Journal", "Papers"])),
     card("Most frequent co-authors", "People who appear most often on the lab's papers, in any author position (Tor Wager excluded). Click to open their papers; the <a href=\"network.html\">collaborator network</a> shows how they connect.", hbars(coauthorRows, { k: 15, color: "var(--s5)", aria: "Most frequent co-authors", link: a => `publications.html?author=${encodeURIComponent(a)}` }) + table(coauthorRows, ["Author", "Papers"])),
-    card("Most-cited papers", `Citation counts from OpenAlex${B.n_with_cites ? ` (available for ${B.n_with_cites.toLocaleString()} of ${B.n.toLocaleString()} papers)` : ""}.`, `<table><tr><th></th><th>Paper</th><th class="n">Citations</th></tr>${(B.most_cited || []).slice(0, 25).map((p, i) => `<tr><td class="rank">${i + 1}</td><td><a href="papers/${encodeURIComponent(p.id)}.html">${esc(p.t)}</a><div class="small muted">${esc(p.a)}${p.j ? ` · ${esc(p.j)}` : ""} · ${p.y || ""}</div></td><td class="n">${(p.cites || 0).toLocaleString()}</td></tr>`).join("")}</table>`, true),
+    card("Most-cited papers", `Citation counts from OpenAlex${B.n_with_cites ? ` (available for ${B.n_with_cites.toLocaleString()} of ${B.n.toLocaleString()} papers)` : ""}.`, `<table><tr><th></th><th>Paper</th><th class="n">Citations (OpenAlex)</th></tr>${(B.most_cited || []).slice(0, 25).map((p, i) => `<tr><td class="rank">${i + 1}</td><td><a href="papers/${encodeURIComponent(p.id)}.html">${esc(p.t)}</a><div class="small muted">${esc(p.a)}${p.j ? ` · ${esc(p.j)}` : ""} · ${p.y || ""}</div></td><td class="n">${(p.cites || 0).toLocaleString()}</td></tr>`).join("")}</table>`, true),
   ].join("");
   const viz = document.getElementById("viz");
   viz.innerHTML = html;
