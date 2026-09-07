@@ -2,9 +2,9 @@
    The layout (49 nodes, 150 edges) was extracted from the cover graphic and is loaded from
    assets/hero-graph.json (or an inline window.CANLAB_HERO_GRAPH). Every node is drawn light grey and
    only breathes very slowly at rest. Hovering, touching or clicking a node makes it fire: it lights up
-   yellow and a comet-like pulse runs along each of its edges, shifting yellow -> orange -> pink as it
-   travels. Arriving pulses light the neighbour pink, which then fires onward with probability 0.8 per
-   edge, so activity cascades and dies out (capped at 400 pulses / 12 hops).
+   yellow and its edges light up from the node outwards, shifting yellow -> orange as the signal travels.
+   Arriving signals light the neighbour orange and continue with probability 0.7, 0.5 and 0.2 at hops 1-3,
+   so activity spreads a little and dies out (capped at 120 pulses / 3 hops).
    Dependency-free. Exposes window.CANLAB_HERO.fire(nodeId?) for a manual cascade. */
 (function () {
   const canvas = document.getElementById("hero-canvas");
@@ -14,11 +14,11 @@
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const SPEED = 220;        // pulse speed, px/s (screen pixels)
-  const HEAD = 6, TAIL = 35; // comet head diameter and tail length, px
-  const MAX_PULSES = 400, MAX_HOPS = 12, P_ONWARD = 0.8;
+  const MAX_PULSES = 120, MAX_HOPS = 3;
+  const P_HOP = [0.7, 0.5, 0.2];   // probability that a pulse continues along each edge at hop 1, 2, 3
   const REFIRE_MS = 600, FADE_MS = 700, BREATH = 0.03;
-  const STOPS = [[255, 216, 74], [255, 138, 42], [255, 61, 143]]; // #ffd84a -> #ff8a2a -> #ff3d8f
-  const YELLOW = STOPS[0], PINK = STOPS[2];
+  const STOPS = [[255, 216, 74], [255, 160, 50], [255, 138, 42]]; // #ffd84a -> #ffa032 -> #ff8a2a (yellow to orange)
+  const YELLOW = STOPS[0], ORANGE = STOPS[2];
 
   // Colour of a pulse at travel fraction t: linear RGB between yellow (0), orange (0.5) and pink (1).
   function pulseColor(t) {
@@ -87,7 +87,7 @@
     if (!n) return;
     if (!force && now - n.litAt < REFIRE_MS) return;
     light(n, YELLOW, now);
-    fire(i, -1, 0, 1, now);
+    fire(i, -1, 0, P_HOP[0], now);
   }
   function nearest(px, py, maxDist) {
     let best = -1, bd = Infinity;
@@ -107,8 +107,8 @@
       p.t += (SPEED * dt / 1000) / p.len;
       if (p.t < 1) continue;
       pulses.splice(k, 1);
-      light(nodes[p.b], PINK, now);
-      fire(p.b, p.a, p.hop + 1, P_ONWARD, now);
+      light(nodes[p.b], ORANGE, now);
+      fire(p.b, p.a, p.hop + 1, P_HOP[p.hop + 1] || 0, now);
     }
   }
 
@@ -124,32 +124,21 @@
       const breath = reduce ? 1 : 1 + BREATH * Math.sin(now * 0.00045 + n.ph);
       const r = n.sr * breath * (1 + 0.25 * n.lit);
       ctx.save();
-      if (n.lit > 0.01) { ctx.shadowColor = rgba(n.col, 0.9 * n.lit); ctx.shadowBlur = 6 + 14 * n.lit; }
       ctx.fillStyle = rgba(mix(T.fill, n.col, n.lit));
       ctx.beginPath(); ctx.arc(n.sx, n.sy, r, 0, Math.PI * 2); ctx.fill();
-      ctx.shadowBlur = 0;
       ctx.strokeStyle = rgba(mix(T.rim, n.col, n.lit)); ctx.lineWidth = 1; ctx.stroke();
       ctx.restore();
     }
 
-    // Pulses: a comet whose head colour follows the travel fraction, with a fading tail behind it.
-    const glow = pulses.length < 160;
+    // Pulses: the edge itself lights up from the source towards the target; colour shifts yellow -> orange with travel.
+    ctx.lineCap = "round";
     for (const p of pulses) {
       const a = nodes[p.a], b = nodes[p.b], dx = b.sx - a.sx, dy = b.sy - a.sy;
       const hx = a.sx + dx * p.t, hy = a.sy + dy * p.t;
-      const tailT = Math.max(0, p.t - TAIL / p.len), tx = a.sx + dx * tailT, ty = a.sy + dy * tailT;
-      const head = pulseColor(p.t), tail = pulseColor(tailT);
-      ctx.save();
-      if (glow) { ctx.shadowColor = rgba(head, 0.8); ctx.shadowBlur = 8; }
-      const g = ctx.createLinearGradient(tx, ty, hx, hy);
-      g.addColorStop(0, rgba(tail, 0)); g.addColorStop(0.6, rgba(pulseColor(tailT + (p.t - tailT) * 0.6), 0.45)); g.addColorStop(1, rgba(head, 0.9));
-      ctx.strokeStyle = g; ctx.lineWidth = 2.4; ctx.lineCap = "round";
-      ctx.beginPath(); ctx.moveTo(tx, ty); ctx.lineTo(hx, hy); ctx.stroke();
-      ctx.globalAlpha = 0.95; ctx.fillStyle = rgba(head);
-      ctx.beginPath(); ctx.arc(hx, hy, HEAD / 2, 0, Math.PI * 2); ctx.fill();
-      ctx.globalAlpha = 0.6; ctx.fillStyle = "rgba(255,255,255,0.9)";
-      ctx.beginPath(); ctx.arc(hx, hy, HEAD / 4, 0, Math.PI * 2); ctx.fill();
-      ctx.restore();
+      const g = ctx.createLinearGradient(a.sx, a.sy, hx, hy);
+      g.addColorStop(0, rgba(YELLOW, 0.35)); g.addColorStop(1, rgba(pulseColor(p.t), 0.95));
+      ctx.strokeStyle = g; ctx.lineWidth = 2.2;
+      ctx.beginPath(); ctx.moveTo(a.sx, a.sy); ctx.lineTo(hx, hy); ctx.stroke();
     }
   }
 
