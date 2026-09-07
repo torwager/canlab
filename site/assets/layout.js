@@ -2,7 +2,7 @@
 (function () {
   const C = window.CANLAB_CONFIG || {};
   const header = `<header class="site-header solid"><div class="wrap">
-    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><circle cx="8" cy="10" r="3"/><circle cx="22" cy="7" r="3"/><circle cx="25" cy="21" r="3"/><circle cx="11" cy="24" r="3"/><circle cx="16" cy="15" r="3.4"/><path d="M10.6 11.8 13.6 13.6M19.2 8.4l-1.6 4.2M18.9 16.7l3.8 2.8M13.6 17.2l-1.4 4.2M11 10.5l9.4-3M13.5 23.2l9.1-2.6"/></svg></span><span><b>CAN</b>lab</span></a>
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"><img src="assets/logo-mark.png" alt="" width="26" height="26"></span><span><b>CAN</b>lab</span></a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
     <nav class="nav" id="nav" aria-label="Main">
       <a href="research.html">Research</a>

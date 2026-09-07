@@ -251,9 +251,8 @@ mark { background: var(--amber-soft); color: inherit; padding: 0 .1em; border-ra
 /* ==========================================================================
    CANlab additions
    ========================================================================== */
-.brand-mark { width: 30px; height: 30px; display: inline-grid; place-items: center; border-radius: 9px; background: var(--amber-soft); }
-.brand-mark svg { width: 24px; height: 24px; stroke: var(--amber-deep); stroke-width: 1.6; }
-.brand-mark svg circle { fill: var(--amber); stroke: var(--amber-deep); }
+.brand-mark { width: 34px; height: 34px; display: inline-grid; place-items: center; border-radius: 9px; background: var(--amber-soft); flex: none; }
+.brand-mark img { width: 26px; height: 26px; object-fit: contain; display: block; }
 .paper .meta .authors { font-weight: 500; color: var(--ink); }
 .paper .meta .journal i { font-style: italic; }
 .paper .meta .cites { color: var(--muted); font-size: .8rem; }
