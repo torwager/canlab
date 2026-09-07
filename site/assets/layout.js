@@ -11,8 +11,9 @@
       <a href="news.html">News</a>
       <a href="resources.html">Tools &amp; training</a>
       <div class="menu"><a href="network.html" class="menu-btn" aria-haspopup="true" aria-expanded="false">Explore ▾</a>
-        <div class="menu-list"><a href="network.html">Collaborator network</a><a href="bibliometrics.html">Bibliometrics</a><a href="https://scienceofplacebo.org" target="_blank" rel="noopener">Science of Placebo ↗</a><a href="https://torwager.github.io/elements-of-fmri-tutorials" target="_blank" rel="noopener">Elements of fMRI tutorials ↗</a><a href="https://dbic.github.io/PBS_resources/" target="_blank" rel="noopener">PBS shared resources ↗</a></div></div>
-      <a href="join.html">Join</a>
+        <div class="menu-list"><a href="network.html">Collaborator network</a><a href="bibliometrics.html">Bibliometrics</a><a href="https://scienceofplacebo.org" target="_blank" rel="noopener">Science of Placebo ↗</a><a href="https://torwager.github.io/elements-of-fmri-tutorials" target="_blank" rel="noopener">Elements of fMRI tutorials ↗</a><a href="https://dbic.github.io/PBS_resources/" target="_blank" rel="noopener">PBS shared resources ↗</a><a href="https://torwager.github.io/mindfmricourse" target="_blank" rel="noopener">fMRI course (MIND) ↗</a></div></div>
+      <div class="menu"><a href="join.html" class="menu-btn" aria-haspopup="true" aria-expanded="false">Join ▾</a>
+        <div class="menu-list"><a href="join.html#team">Join our team</a><a href="join.html#participate">Participate in research</a></div></div>
     </nav></div></header>`;
   const footer = `<footer class="site-footer"><div class="wrap">
     <div><strong>Cognitive and Affective Neuroscience Lab</strong>Dartmouth College, Hanover NH. Directed by Tor Wager. We study the neurophysiology of pain, emotion, stress and empathy, and how they are shaped by beliefs, expectations and social context. <span id="foot-updated"></span></div>

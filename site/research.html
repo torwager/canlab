@@ -17,8 +17,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
 <link rel="canonical" href="https://torwager.github.io/canlab/research.html">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/app.css">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/app.css?v=4">
 <style>
   .head-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; align-items: center; margin-bottom: 1rem; }
   .head-hero .page-head { margin-bottom: .8rem; }
@@ -40,13 +40,16 @@
     </div>
     <div class="hero-canvas-wrap" role="img" aria-label="An interactive network graph"><canvas id="hero-canvas"></canvas></div>
   </div>
-  <div id="themes"><div class="spinner">Loading…</div></div>
+  <div class="with-sidenav">
+    <aside class="sidenav" id="sidenav" aria-label="Jump to a theme"></aside>
+    <div id="themes"><div class="spinner">Loading…</div></div>
+  </div>
 </main>
 <div id="site-footer"></div>
-<script src="assets/config.js"></script>
-<script src="assets/app.js"></script>
-<script src="assets/layout.js"></script>
-<script src="assets/hero.js"></script>
+<script src="assets/config.js?v=4"></script>
+<script src="assets/app.js?v=4"></script>
+<script src="assets/layout.js?v=4"></script>
+<script src="assets/hero.js?v=4"></script>
 <script>
 (async function () {
   const r = await CL.getJSON("data/research.json");
@@ -65,6 +68,7 @@
       </div>
       ${t.image ? `<figure><a href="assets/img/${esc(t.image)}" target="_blank" rel="noopener"><img src="assets/img/${esc(t.image)}" alt="Figure illustrating ${esc(t.title)}" loading="lazy"></a></figure>` : `<figure class="placeholder" style="border:none;box-shadow:none;background:none"></figure>`}
     </section>`).join("");
+  CL.sideNav(document.getElementById("sidenav"), r.themes.map(t => ({ id: t.id, label: t.title })), "Themes");
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const rvs = document.querySelectorAll("#themes .rv");
   if (reduce || !("IntersectionObserver" in window)) rvs.forEach(el => el.classList.add("in"));

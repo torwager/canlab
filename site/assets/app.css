@@ -373,3 +373,12 @@ mark { background: var(--amber-soft); color: inherit; padding: 0 .1em; border-ra
 .comm:hover { border-color: var(--steel); text-decoration: none; }
 .comm .ic { color: var(--steel-deep); flex: none; }
 .comm b { color: var(--steel-deep); font-weight: 600; }
+
+/* Sticky section navigation on long pages (people, research, join) */
+.with-sidenav { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 2rem; align-items: start; }
+@media (max-width: 860px) { .with-sidenav { grid-template-columns: 1fr; } .sidenav { position: static !important; display: flex; flex-wrap: wrap; gap: .3rem; border: none !important; padding: 0 !important; margin-bottom: 1rem; } .sidenav a { border: 1px solid var(--line-2); border-radius: 999px; padding: .3em .8em !important; border-left: 1px solid var(--line-2) !important; } .sidenav .lbl { display: none; } }
+.sidenav { position: sticky; top: 92px; border-left: 2px solid var(--line); padding: .2rem 0 .2rem 0; font-size: .86rem; }
+.sidenav .lbl { font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding: 0 0 .5rem .9rem; }
+.sidenav a { display: block; padding: .32em .9rem; color: var(--ink-2); border-left: 2px solid transparent; margin-left: -2px; text-decoration: none; line-height: 1.3; }
+.sidenav a:hover { color: var(--ink); border-left-color: var(--line-2); }
+.sidenav a.on { color: var(--ink); font-weight: 600; border-left-color: var(--amber-deep); }

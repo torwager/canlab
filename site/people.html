@@ -17,8 +17,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
 <link rel="canonical" href="https://torwager.github.io/canlab/people.html">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/app.css">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/app.css?v=4">
 <style>
   .sec-nav { display: flex; flex-wrap: wrap; gap: .4rem; margin: .4rem 0 1.4rem; }
   .sec-nav a { font-size: .84rem; padding: .35em .8em; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink-2); font-weight: 500; }
@@ -34,13 +34,18 @@
     <p>Click a person to read their bio. The lab has been at Dartmouth College since 2019, and before that at the University of Colorado Boulder and Columbia University; alumni from all three are listed below.</p>
   </div>
   <nav class="sec-nav" id="secnav" aria-label="Sections"></nav>
-  <div id="pi"></div>
-  <div id="people"><div class="spinner">Loading…</div></div>
+  <div class="with-sidenav">
+    <aside class="sidenav" id="sidenav" aria-label="Jump to a section"></aside>
+    <div>
+      <div id="pi-wrap"></div>
+      <div id="people"><div class="spinner">Loading…</div></div>
+    </div>
+  </div>
 </main>
 <div id="site-footer"></div>
-<script src="assets/config.js"></script>
-<script src="assets/app.js"></script>
-<script src="assets/layout.js"></script>
+<script src="assets/config.js?v=4"></script>
+<script src="assets/app.js?v=4"></script>
+<script src="assets/layout.js?v=4"></script>
 <script>
 (async function () {
   const people = await CL.getJSON("data/people.json");
@@ -50,7 +55,7 @@
   const secs = [...new Set(people.map(p => p.section))].filter(s => s !== "Principal Investigator").sort((a, b) => (ORDER.indexOf(a) + 1 || 99) - (ORDER.indexOf(b) + 1 || 99));
   const sid = s => s.toLowerCase().replace(/[^a-z]+/g, "-").replace(/(^-|-$)/g, "");
   document.getElementById("secnav").innerHTML = [`<a href="#pi">Principal investigator</a>`].concat(secs.map(s => `<a href="#${sid(s)}">${esc(s)}</a>`)).join("");
-  if (pi) document.getElementById("pi").innerHTML = `<h2 class="people-section" id="pi-h" style="margin-top:.4rem"><span>Principal investigator</span></h2><section class="pi rv in" id="pi">
+  if (pi) document.getElementById("pi-wrap").innerHTML = `<h2 class="people-section" id="pi-h" style="margin-top:.4rem"><span>Principal investigator</span></h2><section class="pi rv in" id="pi">
       <img src="assets/img/${esc(pi.img)}" alt="${esc(pi.name)}" width="240">
       <div><h2>${esc(pi.name)}, PhD</h2><div class="role">${esc(pi.title || pi.role)}</div>${pi.bio.map(b => `<p>${esc(b)}</p>`).join("")}
         <p>See the <a href="publications.html">publications page</a> and the <a href="https://canlab.github.io" target="_blank" rel="noopener">CANlab GitHub site</a> for papers, data, tools and code.</p>
@@ -63,6 +68,7 @@
     </article>`;
   function surnameKey(name) { const parts = name.replace(/\(.*?\)/g, "").trim().split(/\s+/); const sur = parts[parts.length - 1]; const ini = parts.slice(0, -1).map(w => w[0]).join(""); return sur + " " + ini; }
   document.getElementById("people").innerHTML = secs.map(s => { const ps = people.filter(p => p.section === s); return `<h2 class="people-section" id="${sid(s)}"><span>${esc(s)}</span><span class="muted">${ps.length}</span></h2><div class="people-grid">${ps.map(card).join("")}</div>`; }).join("");
+  CL.sideNav(document.getElementById("sidenav"), [{ id: "pi", label: "Principal investigator" }].concat(secs.map(s => ({ id: sid(s), label: s }))));
   const grid = document.getElementById("people");
   function open(el, on) { grid.querySelectorAll(".person.open").forEach(x => { if (x !== el) { x.classList.remove("open"); x.setAttribute("aria-expanded", "false"); } }); el.classList.toggle("open", on); el.setAttribute("aria-expanded", String(on)); if (on) { history.replaceState(null, "", "#" + el.id); el.scrollIntoView({ block: "nearest" }); } }
   grid.addEventListener("click", e => { const el = e.target.closest(".person"); if (!el) return; if (e.target.closest("[data-close]")) { open(el, false); return; } if (e.target.closest("a")) return; if (!el.classList.contains("open")) open(el, true); });

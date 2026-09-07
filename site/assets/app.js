@@ -189,5 +189,13 @@ window.CL = (function () {
   function bindExport(container, getRecs, name) { container.addEventListener("click", e => { const a = e.target.closest("[data-export]"); if (!a) return; e.preventDefault(); const recs = getRecs(); if (!recs.length) return; exportRefs(recs, a.dataset.export, name); const d = a.closest("details"); if (d) d.open = false; }); }
 
 
-  return { state, config: C, loadCore, getJSON, chipsFor, paperCard, linkList, citeLine, cite, matches, list, starBtn, bindStars, updateListBadge, exportRefs, exportMenu, bindExport, renderFilters, activeChips, toggle, filtersToQuery, filtersFromQuery, bindCardChips, label, esc, fmtDate, chipColors, pdfUrl, CARD_AXES, FILTER_AXES };
+  // Sticky side navigation: items = [{id, label}] for sections on the page; highlights the section in view.
+  function sideNav(container, items, label = "On this page") {
+    container.innerHTML = `<div class="lbl">${esc(label)}</div>` + items.map(i => `<a href="#${esc(i.id)}">${esc(i.label)}</a>`).join("");
+    const links = [...container.querySelectorAll("a")];
+    const secs = items.map(i => document.getElementById(i.id)).filter(Boolean);
+    function update() { let cur = secs[0]; for (const s of secs) if (s.getBoundingClientRect().top <= 120) cur = s; links.forEach(a => a.classList.toggle("on", cur && a.getAttribute("href") === "#" + cur.id)); }
+    window.addEventListener("scroll", update, { passive: true }); update();
+  }
+  return { state, config: C, loadCore, sideNav, getJSON, chipsFor, paperCard, linkList, citeLine, cite, matches, list, starBtn, bindStars, updateListBadge, exportRefs, exportMenu, bindExport, renderFilters, activeChips, toggle, filtersToQuery, filtersFromQuery, bindCardChips, label, esc, fmtDate, chipColors, pdfUrl, CARD_AXES, FILTER_AXES };
 })();

@@ -17,8 +17,25 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
 <link rel="canonical" href="https://torwager.github.io/canlab/news.html">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/app.css">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/app.css?v=4">
+<style>
+  .news-grid { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 2rem; align-items: start; }
+  @media (max-width: 960px) { .news-grid { grid-template-columns: 1fr; } .news-side { order: -1; } }
+  .news-side { position: sticky; top: 92px; display: grid; gap: 1rem; }
+  .pane { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1rem 1.1rem; }
+  .pane-h { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--amber-deep); font-weight: 600; margin-bottom: .6rem; }
+  .pane .post { padding: 0; border: none; background: none; }
+  .pane .post h3 { font-size: 1.05rem; }
+  .pane .post .body { font-size: .88rem; }
+  .pane .post .body img { max-width: 100%; }
+  .np { padding: .55rem 0; border-top: 1px solid var(--line); font-size: .86rem; line-height: 1.35; }
+  .np:first-of-type { border-top: none; }
+  .np .t a { color: var(--ink); font-weight: 500; text-decoration: none; }
+  .np .t a:hover { color: var(--steel-deep); }
+  .np .m { color: var(--muted); font-size: .78rem; }
+  .np .badge { margin-left: .3em; }
+</style>
 </head>
 <body>
 <div id="site-header"></div>
@@ -28,21 +45,36 @@
     <h1>News and press</h1>
     <p>Lab announcements and coverage of our work in the press, on radio and in podcasts. Posts written by the lab appear in full; the "In the media" feed is collected automatically every two days from news and podcast sources and links to the original outlet.</p>
   </div>
-  <div class="tabs" role="tablist"><button class="on" data-tab="all" role="tab">All</button><button data-tab="post" role="tab">Lab posts</button><button data-tab="media" role="tab">In the media</button></div>
-  <div class="filter-top"><span class="count" id="count"></span><span class="small muted" id="updated" style="margin-left:auto"></span></div>
-  <div class="news-list" id="list"><div class="spinner">Loading…</div></div>
+  <div class="news-grid">
+    <div>
+      <div class="tabs" role="tablist"><button class="on" data-tab="all" role="tab">All</button><button data-tab="post" role="tab">Lab posts</button><button data-tab="media" role="tab">In the media</button></div>
+      <div class="filter-top"><span class="count" id="count"></span><span class="small muted" id="updated" style="margin-left:auto"></span></div>
+      <div class="news-list" id="list"><div class="spinner">Loading…</div></div>
+    </div>
+    <aside class="news-side">
+      <div class="pane" id="pinned"><div class="pane-h">Pinned</div><div class="spinner">Loading…</div></div>
+      <div class="pane" id="newpapers"><div class="pane-h">New papers</div><div class="spinner">Loading…</div></div>
+    </aside>
+  </div>
 </main>
 <div id="site-footer"></div>
-<script src="assets/config.js"></script>
-<script src="assets/app.js"></script>
-<script src="assets/layout.js"></script>
+<script src="assets/config.js?v=4"></script>
+<script src="assets/app.js?v=4"></script>
+<script src="assets/layout.js?v=4"></script>
 <script>
 (async function () {
   const esc = CL.esc;
   const posts = await CL.getJSON("data/news_posts.json");
   let media = { items: [], updated: "" };
   try { media = await CL.getJSON("data/news.json"); } catch (e) { /* feed not built yet */ }
-  const items = posts.map(p => ({ kind: "post", id: p.id, d: p.date, t: p.title, html: p.html, img: p.image, src: p.source_url })).concat((media.items || []).map(m => ({ kind: "media", id: m.id || m.url, d: m.date, t: m.title, url: m.url, source: m.source, snippet: m.snippet, mkind: m.kind })));
+  // pinned posts go to the side pane (and stay out of the main feed)
+  const pinnedPosts = posts.filter(p => p.pinned).sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  document.getElementById("pinned").innerHTML = '<div class="pane-h">Pinned</div>' + (pinnedPosts.length ? pinnedPosts.map(p => `<article class="post" id="${esc(p.id)}" style="margin-bottom:1rem"><span class="date">${CL.fmtDate(p.date)}</span><h3>${esc(p.title)}</h3><div class="body">${p.html}</div></article>`).join("") : '<div class="muted small">Nothing pinned.</div>');
+  try {
+    const np = await CL.getJSON("data/newpapers.json");
+    document.getElementById("newpapers").innerHTML = '<div class="pane-h">New papers</div>' + (np.items.length ? np.items.slice(0, 12).map(r => `<div class="np"><div class="t">${r.pending ? `<span>${esc(r.t)}</span>` : `<a href="papers/${encodeURIComponent(r.id)}.html">${esc(r.t)}</a>`}${r.pending ? '<span class="badge new" title="Found by the daily literature search; awaiting review">new</span>' : ""}</div><div class="m">${esc(r.a)}${r.y ? " (" + r.y + ")" : ""}${r.j ? " · " + esc(r.j) : ""}${r.added ? " · added " + CL.fmtDate(r.added) : ""}</div></div>`).join("") + `<div class="small muted" style="margin-top:.6rem">Updated ${CL.fmtDate(np.updated)} by the daily literature search. <a href="publications.html">All publications</a></div>` : '<div class="muted small">No new papers in the last six months. The daily search adds them here automatically.</div>');
+  } catch (e) { document.getElementById("newpapers").innerHTML = '<div class="pane-h">New papers</div><div class="muted small">Not available yet.</div>'; }
+  const items = posts.filter(p => !p.pinned).map(p => ({ kind: "post", id: p.id, d: p.date, t: p.title, html: p.html, img: p.image, src: p.source_url })).concat((media.items || []).map(m => ({ kind: "media", id: m.id || m.url, d: m.date, t: m.title, url: m.url, source: m.source, snippet: m.snippet, mkind: m.kind })));
   items.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
   let tab = "all";
   function render() {

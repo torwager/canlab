@@ -17,8 +17,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
 <link rel="canonical" href="https://torwager.github.io/canlab/join.html">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/app.css">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/app.css?v=4">
 <style>
   .study { background: var(--surface); border: 1px solid var(--line-2); border-radius: var(--radius); padding: 1.3rem 1.5rem; max-width: 860px; box-shadow: var(--shadow); display: grid; gap: .6rem; }
   .study .comp { font-family: var(--serif); font-size: 1.3rem; color: var(--amber-deep); }
@@ -32,17 +32,23 @@
     <h1>Join our team</h1>
     <p id="intro"></p>
   </div>
-  <div id="openings" class="openings"></div>
-  <div class="section"><h2>Other ways to join</h2></div>
-  <div class="cards" id="general"></div>
-  <div class="section" id="participate"><h2>Participate in a study</h2></div>
-  <p class="prose" id="pintro"></p>
-  <div id="studies" style="display:grid;gap:1rem"></div>
+  <div class="with-sidenav">
+    <aside class="sidenav" id="sidenav" aria-label="Jump to a section"></aside>
+    <div>
+      <div class="section" id="team" style="margin-top:0"><h2>Open positions</h2></div>
+      <div id="openings" class="openings"></div>
+      <div class="section" id="other"><h2>Other ways to join</h2></div>
+      <div class="cards" id="general"></div>
+      <div class="section" id="participate"><h2>Participate in research</h2></div>
+      <p class="prose" id="pintro"></p>
+      <div id="studies" style="display:grid;gap:1rem"></div>
+    </div>
+  </div>
 </main>
 <div id="site-footer"></div>
-<script src="assets/config.js"></script>
-<script src="assets/app.js"></script>
-<script src="assets/layout.js"></script>
+<script src="assets/config.js?v=4"></script>
+<script src="assets/app.js?v=4"></script>
+<script src="assets/layout.js?v=4"></script>
 <script>
 (async function () {
   const j = await CL.getJSON("data/join.json");
@@ -51,6 +57,7 @@
   document.getElementById("openings").innerHTML = j.openings.map(o => `<article class="opening rv in">${o.image ? `<a href="${esc(o.url)}" target="_blank" rel="noopener"><img src="assets/img/${esc(o.image)}" alt="${esc(o.title)}"></a>` : ""}<div class="body"><span class="eyebrow" style="margin:0">${esc(o.kind)}</span><h3><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.title)} ↗</a></h3><p>${esc(o.org)}</p>${o.blurb ? `<p>${esc(o.blurb)}</p>` : ""}<p><a class="btn primary" href="${esc(o.url)}" target="_blank" rel="noopener">${o.kind === "undergraduate" ? "Apply (form)" : "View the posting"}</a></p></div></article>`).join("");
   document.getElementById("general").innerHTML = j.general.map(g => `<article class="card"><h3>${esc(g.title)}</h3><p>${esc(g.blurb)}</p>${g.url ? `<p><a href="${esc(g.url)}" target="_blank" rel="noopener">More information ↗</a></p>` : ""}</article>`).join("");
   document.getElementById("pintro").textContent = j.participate.intro;
+  CL.sideNav(document.getElementById("sidenav"), [{ id: "team", label: "Join our team" }, { id: "other", label: "Other ways to join" }, { id: "participate", label: "Participate in research" }]);
   document.getElementById("studies").innerHTML = j.participate.studies.map(s => `<div class="study"><h3 style="margin:0">${esc(s.title)}</h3><p style="margin:0">${esc(s.blurb)}</p>${s.compensation ? `<div class="comp">${esc(s.compensation)}</div>` : ""}<div style="display:flex;gap:.6rem;flex-wrap:wrap"><a class="btn primary" href="${esc(s.screening_url)}" target="_blank" rel="noopener">Online eligibility screening ↗</a>${s.email ? `<a class="btn" href="mailto:${esc(s.email)}">Email ${esc(s.email)}</a>` : ""}</div></div>`).join("");
 })().catch(e => { document.getElementById("openings").innerHTML = `<div class="empty">Could not load (${CL.esc(e.message)}).</div>`; });
 </script>

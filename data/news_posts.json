@@ -1,5 +1,19 @@
 [
  {
+  "id": "mind-fmri-course-2026",
+  "title": "Upcoming: fMRI Acquisition and Analysis Course, September 9–11, 2026",
+  "date": "2026-09-07",
+  "html": "<p>Tor Wager, Vince Calhoun and Kent Kiehl are teaching the three-day <a href=\"https://torwager.github.io/mindfmricourse\" target=\"_blank\" rel=\"noopener\">fMRI Acquisition and Analysis Course</a> again this year: September 9–11, 2026, live online via Zoom, 8:00 am to 6:00 pm ET. It is a hands-on course on the design, acquisition and analysis of neuroimaging data with Statistical Parametric Mapping, Independent Component Analysis and more.</p><p><a href=\"https://torwager.github.io/mindfmricourse/enroll.html\" target=\"_blank\" rel=\"noopener\">Reserve a space</a> on the course website.</p>",
+  "text": "Three-day hands-on fMRI course with Vince Calhoun, Kent Kiehl and Tor Wager, September 9–11, 2026, live online.",
+  "image": null,
+  "links": [
+   "https://torwager.github.io/mindfmricourse"
+  ],
+  "source_url": "https://torwager.github.io/mindfmricourse",
+  "kind": "post",
+  "pinned": true
+ },
+ {
   "id": "tor-wager-wins-prestigious-national-academy-of-sciences-award",
   "title": "Tor Wager Wins Prestigious National Academy of Sciences Award",
   "date": "2026-01-27",
@@ -11,7 +25,8 @@
    "https://fas.dartmouth.edu/news/2026/01/tor-wager-wins-prestigious-national-academy-sciences-award"
   ],
   "source_url": "https://sites.dartmouth.edu/canlab/2026/01/27/tor-wager-wins-prestigious-national-academy-of-sciences-award/",
-  "kind": "post"
+  "kind": "post",
+  "pinned": true
  },
  {
   "id": "canlab-featured-in-article-from-the-scientist",

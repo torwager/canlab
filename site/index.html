@@ -19,8 +19,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
 <link rel="canonical" href="https://torwager.github.io/canlab/">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/app.css">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/app.css?v=4">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ResearchOrganization","name":"Cognitive and Affective Neuroscience Lab","alternateName":"CANlab","url":"https://torwager.github.io/canlab/","logo":"https://torwager.github.io/canlab/assets/icon-192.png","parentOrganization":{"@type":"CollegeOrUniversity","name":"Dartmouth College","url":"https://home.dartmouth.edu/"},"founder":{"@type":"Person","name":"Tor D. Wager","jobTitle":"Diana L. Taylor Distinguished Professor in Neuroscience","sameAs":["https://scholar.google.com/citations?user=8b7b-6EAAAAJ","https://github.com/torwager"]},"address":{"@type":"PostalAddress","addressLocality":"Hanover","addressRegion":"NH","addressCountry":"US"},"sameAs":["https://github.com/canlab","https://canlab.github.io","https://sites.dartmouth.edu/canlab/"]}
 </script>
@@ -74,7 +74,7 @@
   @media (min-width: 900px) { .section-head { grid-template-columns: 1.1fr 1fr; gap: 3rem; } }
   .section-head p { margin: 0; color: var(--ink-2); font-size: 1.08rem; }
   .facts { display: grid; gap: 1.5rem; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.8rem 0; margin: 0 0 2rem; }
-  @media (min-width: 760px) { .facts { grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 760px) { .facts { grid-template-columns: repeat(3, 1fr); } }
   .facts dt { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: .3rem; }
   .facts dd { margin: 0; font-family: var(--serif); font-size: 1.6rem; line-height: 1.2; }
   .latest { display: grid; gap: .8rem; grid-template-columns: 1fr; }
@@ -120,7 +120,6 @@
         <dl class="facts rv" id="facts">
           <div><dt>Publications</dt><dd class="tnum" id="f-papers">400+</dd></div>
           <div><dt>Since</dt><dd class="tnum" id="f-since">2000</dd></div>
-          <div><dt>Papers with PDF</dt><dd class="tnum" id="f-pdf">…</dd></div>
           <div><dt>Lab members past &amp; present</dt><dd class="tnum" id="f-people">…</dd></div>
         </dl>
         <div class="section-head"><div class="rv"><p class="eyebrow">Sections</p><h2>Explore the lab</h2></div></div>
@@ -191,10 +190,10 @@
 </section>
 </main>
 <div id="site-footer"></div>
-<script src="assets/config.js"></script>
-<script src="assets/app.js"></script>
-<script src="assets/layout.js"></script>
-<script src="assets/hero.js"></script>
+<script src="assets/config.js?v=4"></script>
+<script src="assets/app.js?v=4"></script>
+<script src="assets/layout.js?v=4"></script>
+<script src="assets/hero.js?v=4"></script>
 <script>
 (async function () {
   const track = document.getElementById("gallery-track"), dots = document.getElementById("gdots");
@@ -222,7 +221,6 @@
   const s = state.stats;
   document.getElementById("f-papers").textContent = s.n.toLocaleString();
   document.getElementById("f-since").textContent = s.y0 || "";
-  document.getElementById("f-pdf").textContent = s.n_pdf ? s.n_pdf.toLocaleString() : "";
   document.getElementById("f-people").textContent = s.n_people || "";
   const recent = state.index.slice().sort((a, b) => ((b.y || 0) - (a.y || 0)) || (b.d || "").localeCompare(a.d || "") || (b.added || "").localeCompare(a.added || "")).slice(0, 3);
   document.getElementById("latest").innerHTML = recent.map(r => CL.paperCard(r)).join("");

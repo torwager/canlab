@@ -247,6 +247,14 @@ def main():
              "n_people": len(json.load(open(config.DATA / "people.json"))) if (config.DATA / "people.json").exists() else 0,
              "n_candidates": len(json.load(open(config.CANDIDATES))) if config.CANDIDATES.exists() else 0}
     json.dump(stats, open(site / "stats.json", "w"), indent=1)
+    # "New papers" pane on the news page: papers added in the last 180 days, plus candidates the daily search found (awaiting approval)
+    import datetime
+    cutoff = (datetime.date.today() - datetime.timedelta(days=180)).isoformat()
+    cands = json.load(open(config.CANDIDATES)) if config.CANDIDATES.exists() else []
+    newp = [{"id": s["id"], "t": s["t"], "a": s["a"], "y": s["y"], "j": s["j"], "added": s["added"], "pending": False} for s in index if s["added"] and s["added"] >= cutoff and s["added"] > "2026-09-07"]
+    newp += [{"id": c["id"], "t": c["title"], "a": short_authors(c.get("authors") or []), "y": c.get("year"), "j": c.get("journal") or "", "added": c.get("date_added") or "", "pending": True, "doi": c.get("doi")} for c in cands]
+    newp.sort(key=lambda r: r["added"], reverse=True)
+    json.dump({"updated": time.strftime("%Y-%m-%d"), "items": newp[:40]}, open(site / "newpapers.json", "w"), ensure_ascii=False, indent=1)
     json.dump(bibliometrics(papers, index), open(site / "bibliometrics.json", "w"), ensure_ascii=False, separators=(",", ":"))
     pdir = config.SITE / "papers"
     shutil.rmtree(pdir, ignore_errors=True)
