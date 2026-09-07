@@ -21,6 +21,18 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/app.css">
 <style>
+  .head-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; align-items: center; }
+  .head-hero .page-head { margin-bottom: .8rem; }
+  .head-hero .stat-row { margin-bottom: .6rem; }
+  .head-hero .hero-canvas-wrap { aspect-ratio: 1 / 1; width: 100%; max-width: 480px; margin: 0 auto; }
+  @media (max-width: 860px) { .head-hero { grid-template-columns: 1fr; } .head-hero .hero-canvas-wrap { max-width: 360px; } }
+  .bookstrip { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin: .6rem 0 1.2rem; }
+  .bookcard { display: flex; gap: .9rem; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: .7rem .9rem; box-shadow: var(--shadow); transition: transform .25s var(--ease); }
+  .bookcard:hover { transform: translateY(-2px); }
+  .bookcard img { width: 56px; border-radius: 4px; flex: none; box-shadow: 0 6px 14px -8px rgba(26,35,50,.6); }
+  .bookcard .ic { width: 56px; height: 72px; border-radius: 4px; background: var(--amber-soft); color: var(--amber-deep); display: grid; place-items: center; font-size: 1.5rem; flex: none; }
+  .bookcard b { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.02rem; line-height: 1.25; }
+  .bookcard .muted { font-size: .8rem; }
   .other-ways { display: flex; flex-wrap: wrap; gap: .5rem .9rem; font-size: .88rem; margin: .4rem 0 1rem; align-items: center; }
   .other-ways .lbl { color: var(--muted); }
   .books { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: .7rem 1rem; font-size: .92rem; margin-bottom: 1rem; display: flex; gap: .8rem; align-items: center; flex-wrap: wrap; }
@@ -40,14 +52,23 @@
 <body>
 <div id="site-header"></div>
 <main class="wrap">
-  <div class="page-head">
-    <p class="eyebrow">Publications</p>
-    <h1>Papers, preprints and chapters</h1>
-    <p>Every publication from the lab, organized by year. Each entry links to the PDF and, where available, to publisher pages, brain pattern maps, paradigms, code, data and videos. Search titles, abstracts and keywords, or filter with the tags on the left (within an axis, any selected tag matches; axes combine with AND). Star papers to build your own list and export the results to a reference manager.</p>
+  <div class="head-hero">
+    <div>
+      <div class="page-head">
+        <p class="eyebrow">Publications</p>
+        <h1>Papers, preprints and chapters</h1>
+        <p>Every publication from the lab, organized by year. Each entry links to the PDF and, where available, to publisher pages, brain pattern maps, paradigms, code, data and videos. Search titles, abstracts and keywords, or filter with the tags on the left (within an axis, any selected tag matches; axes combine with AND). Star papers to build your own list and export the results to a reference manager.</p>
+      </div>
+      <div class="stat-row" id="stats"></div>
+    </div>
+    <div class="hero-canvas-wrap" role="img" aria-label="An interactive network graph"><canvas id="hero-canvas"></canvas></div>
   </div>
-  <div class="stat-row" id="stats"></div>
+  <div class="bookstrip">
+    <a class="bookcard" href="https://mitpress.mit.edu/9780262045049/elements-of-functional-magnetic-resonance-imaging/" target="_blank" rel="noopener"><img src="assets/img/cover-elements-of-fmri.jpg" alt="Cover of Elements of Functional Magnetic Resonance Imaging"><span><b>Elements of Functional Magnetic Resonance Imaging</b><span class="muted">Wager &amp; Lindquist, MIT Press 2026 · <u>MIT Press ↗</u></span></span></a>
+    <a class="bookcard alt" href="https://torwager.github.io/elements-of-fmri-tutorials" target="_blank" rel="noopener"><span class="ic">⌘</span><span><b>Elements of fMRI tutorials</b><span class="muted">Interactive companion tutorials on GitHub ↗</span></span></a>
+    <a class="bookcard" href="https://leanpub.com/principlesoffmri" target="_blank" rel="noopener"><img src="assets/img/cover-principles-of-fmri.jpg" alt="Cover of Principles of fMRI"><span><b>Principles of fMRI</b><span class="muted">Wager &amp; Lindquist, Leanpub e-book ↗</span></span></a>
+  </div>
   <div class="other-ways"><span class="lbl">Other ways to view papers:</span> <a href="https://scholar.google.com/citations?user=OZHkBcYAAAAJ&hl=en" target="_blank" rel="noopener">Tor's Google Scholar page ↗</a> · <a href="bibliometrics.html">Bibliometrics</a> · <a href="network.html">Collaborator network</a></div>
-  <div class="books"><img src="assets/img/cover-elements-of-fmri.jpg" alt="" style="width:34px;border-radius:3px"><span><b>Books.</b> Wager, T. D. &amp; Lindquist, M. A. <i>Elements of Functional Magnetic Resonance Imaging</i> (MIT Press, 2026) <a href="https://mitpress.mit.edu/9780262045049/elements-of-functional-magnetic-resonance-imaging/" target="_blank" rel="noopener">[MIT Press] ↗</a> · <a href="https://torwager.github.io/elements-of-fmri-tutorials" target="_blank" rel="noopener">[tutorials] ↗</a></span><img src="assets/img/cover-principles-of-fmri.jpg" alt="" style="width:26px;border-radius:3px"><span><i>Principles of fMRI</i> <a href="https://leanpub.com/principlesoffmri" target="_blank" rel="noopener">[e-book] ↗</a></span></div>
   <div id="candidates"></div>
   <div class="searchbar"><input id="q" type="search" placeholder="Search titles, abstracts and keywords, e.g. placebo naloxone, neurologic pain signature, mediation" autocomplete="off" aria-label="Search titles and abstracts"><input id="qa" type="search" placeholder="Author, e.g. Atlas or Woo CW" autocomplete="off" aria-label="Author" style="flex:0 1 240px"><button class="btn primary" id="go">Search</button></div>
   <div class="layout">
@@ -82,6 +103,7 @@
 <script src="assets/app.js"></script>
 <script src="assets/layout.js"></script>
 <script src="assets/account.js"></script>
+<script src="assets/hero.js"></script>
 <script>
 (async function () {
   const { state } = await CL.loadCore();
@@ -89,7 +111,6 @@
   const { filters, params } = CL.filtersFromQuery();
   document.getElementById("stats").innerHTML = `<div class="stat"><b class="tnum">${state.stats.n.toLocaleString()}</b><span>publications</span></div>
     <div class="stat"><b class="tnum">${state.stats.y0}–${state.stats.y1}</b><span>years</span></div>
-    <div class="stat"><b class="tnum">${state.stats.n_pdf.toLocaleString()}</b><span>with PDF</span></div>
     <div class="stat"><b>${CL.fmtDate(state.stats.updated)}</b><span>last updated</span></div>`;
   try { const cands = await CL.getJSON("data/candidates.json"); if (cands.length) document.getElementById("candidates").innerHTML = `<details class="books" style="display:block"><summary style="cursor:pointer"><b>${cands.length} new paper${cands.length === 1 ? "" : "s"} found by the daily search, awaiting review</b> <span class="muted small">(found automatically; not yet in the database)</span></summary><div class="papers" style="margin-top:.6rem">${cands.map(c => `<article class="paper cand"><div class="title">${CL.esc(c.title)}</div><div class="meta"><span class="authors">${CL.esc((c.authors || []).slice(0, 4).join(", "))}${(c.authors || []).length > 4 ? " et al." : ""}</span><span class="date tnum">${c.year || ""}</span><span class="journal">${CL.esc(c.journal || "")}</span><span class="badge new">${CL.esc(c.status || "")}</span></div>${c.summary ? `<div class="summary">${CL.esc(c.summary)}</div>` : ""}<div class="links">${c.doi ? `<a class="plink publisher" href="https://doi.org/${CL.esc(c.doi)}" target="_blank" rel="noopener">Publisher ↗</a>` : ""}${c.oa_url ? `<a class="plink pdf" href="${CL.esc(c.oa_url)}" target="_blank" rel="noopener">Open access</a>` : ""}<span class="small muted">to approve: <code>python -m pipeline.approve ${CL.esc(c.id)}</code></span></div></article>`).join("")}</div></details>`; } catch (e) { /* no queue */ }
   const els = Object.fromEntries(["q", "qa", "go", "filters", "count", "active", "clear", "sort", "yfrom", "yto", "results", "pager", "onlyList", "onlyPdf", "yearnav", "who"].map(id => [id, document.getElementById(id)]));

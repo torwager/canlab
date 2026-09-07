@@ -20,28 +20,25 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/app.css">
 <style>
-  .bookstrip { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin: .2rem 0 1.6rem; }
-  .bookcard { display: flex; gap: .9rem; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: .7rem .9rem; box-shadow: var(--shadow); transition: transform .25s var(--ease); }
-  .bookcard:hover { transform: translateY(-2px); }
-  .bookcard img { width: 56px; border-radius: 4px; flex: none; box-shadow: 0 6px 14px -8px rgba(26,35,50,.6); }
-  .bookcard .ic { width: 56px; height: 72px; border-radius: 4px; background: var(--amber-soft); color: var(--amber-deep); display: grid; place-items: center; font-size: 1.5rem; flex: none; }
-  .bookcard b { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.02rem; line-height: 1.25; }
-  .bookcard .muted { font-size: .8rem; }
+  .head-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; align-items: center; margin-bottom: 1rem; }
+  .head-hero .page-head { margin-bottom: .8rem; }
+  .head-hero .hero-canvas-wrap { aspect-ratio: 1 / 1; width: 100%; max-width: 520px; margin: 0 auto; }
+  @media (max-width: 860px) { .head-hero { grid-template-columns: 1fr; } .head-hero .hero-canvas-wrap { max-width: 380px; } }
 </style>
 </head>
 <body>
 <div id="site-header"></div>
 <main class="wrap">
-  <div class="page-head">
-    <p class="eyebrow">Research</p>
-    <h1>Research themes</h1>
-    <p id="intro"></p>
-  </div>
-  <nav class="theme-nav" id="themenav" aria-label="Research themes"></nav>
-  <div class="bookstrip">
-    <a class="bookcard" href="https://mitpress.mit.edu/9780262045049/elements-of-functional-magnetic-resonance-imaging/" target="_blank" rel="noopener"><img src="assets/img/cover-elements-of-fmri.jpg" alt="Cover of Elements of Functional Magnetic Resonance Imaging"><span><b>Elements of Functional Magnetic Resonance Imaging</b><span class="muted">Wager &amp; Lindquist, MIT Press 2026 · <u>MIT Press ↗</u></span></span></a>
-    <a class="bookcard alt" href="https://torwager.github.io/elements-of-fmri-tutorials" target="_blank" rel="noopener"><span class="ic">⌘</span><span><b>Elements of fMRI tutorials</b><span class="muted">Interactive companion tutorials on GitHub ↗</span></span></a>
-    <a class="bookcard" href="https://leanpub.com/principlesoffmri" target="_blank" rel="noopener"><img src="assets/img/cover-principles-of-fmri.jpg" alt="Cover of Principles of fMRI"><span><b>Principles of fMRI</b><span class="muted">Wager &amp; Lindquist, Leanpub e-book ↗</span></span></a>
+  <div class="head-hero">
+    <div>
+      <div class="page-head">
+        <p class="eyebrow">Research</p>
+        <h1>Research themes</h1>
+        <p id="intro"></p>
+      </div>
+      <nav class="theme-nav" id="themenav" aria-label="Research themes"></nav>
+    </div>
+    <div class="hero-canvas-wrap" role="img" aria-label="An interactive network graph"><canvas id="hero-canvas"></canvas></div>
   </div>
   <div id="themes"><div class="spinner">Loading…</div></div>
 </main>
@@ -49,6 +46,7 @@
 <script src="assets/config.js"></script>
 <script src="assets/app.js"></script>
 <script src="assets/layout.js"></script>
+<script src="assets/hero.js"></script>
 <script>
 (async function () {
   const r = await CL.getJSON("data/research.json");

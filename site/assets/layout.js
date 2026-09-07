@@ -11,7 +11,7 @@
       <a href="news.html">News</a>
       <a href="resources.html">Tools &amp; training</a>
       <div class="menu"><a href="network.html" class="menu-btn" aria-haspopup="true" aria-expanded="false">Explore ▾</a>
-        <div class="menu-list"><a href="network.html">Collaborator network</a><a href="bibliometrics.html">Bibliometrics</a></div></div>
+        <div class="menu-list"><a href="network.html">Collaborator network</a><a href="bibliometrics.html">Bibliometrics</a><a href="https://scienceofplacebo.org" target="_blank" rel="noopener">Science of Placebo ↗</a><a href="https://torwager.github.io/elements-of-fmri-tutorials" target="_blank" rel="noopener">Elements of fMRI tutorials ↗</a><a href="https://dbic.github.io/PBS_resources/" target="_blank" rel="noopener">PBS shared resources ↗</a></div></div>
       <a href="join.html">Join</a>
     </nav></div></header>`;
   const footer = `<footer class="site-footer"><div class="wrap">
