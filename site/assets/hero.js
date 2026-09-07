@@ -4,8 +4,8 @@
    only breathes very slowly at rest. Hovering, touching or clicking a node makes it fire: it lights up
    yellow and its edges light up from the node outwards, shifting yellow -> orange as the signal travels.
    Arriving signals light the neighbour orange and continue with probability 0.7, 0.5 and 0.2 at hops 1-3,
-   then 0.2 per edge for every further hop with no depth limit (capped at 160 pulses in flight). A random node
-   also fires spontaneously every few seconds while the canvas is on screen.
+   then 0.2 at hops 3 and 4, and nothing beyond hop 4 (capped at 120 pulses in flight). A random node also
+   fires spontaneously every 7 to 14 s while the canvas is on screen.
    Dependency-free. Exposes window.CANLAB_HERO.fire(nodeId?) for a manual cascade. */
 (function () {
   const canvas = document.getElementById("hero-canvas");
@@ -15,9 +15,9 @@
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const SPEED = 220;        // pulse speed, px/s (screen pixels)
-  const MAX_PULSES = 160, MAX_HOPS = 40;
-  const P_HOP = [0.7, 0.5, 0.2];   // continuation probability per edge at hop 1, 2, and every hop after that (0.2, no limit)
-  const SPONT_MS = [2500, 6000];   // spontaneous firing: a random node fires every 2.5 to 6 s while the canvas is on screen
+  const MAX_PULSES = 120, MAX_HOPS = 4;
+  const P_HOP = [0.7, 0.5, 0.2, 0.2];   // continuation probability per edge at hops 1-4; nothing propagates past hop 4
+  const SPONT_MS = [7000, 14000];       // spontaneous firing: a random node fires every 7 to 14 s while the canvas is on screen
   const REFIRE_MS = 600, FADE_MS = 700, BREATH = 0.03;
   const STOPS = [[255, 216, 74], [255, 160, 50], [255, 138, 42]]; // #ffd84a -> #ffa032 -> #ff8a2a (yellow to orange)
   const YELLOW = STOPS[0], ORANGE = STOPS[2];
@@ -110,7 +110,7 @@
       if (p.t < 1) continue;
       pulses.splice(k, 1);
       light(nodes[p.b], ORANGE, now);
-      fire(p.b, p.a, p.hop + 1, P_HOP[Math.min(p.hop + 1, P_HOP.length - 1)], now);
+      fire(p.b, p.a, p.hop + 1, P_HOP[p.hop + 1] || 0, now);
     }
   }
 
