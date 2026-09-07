@@ -43,15 +43,18 @@
   .gallery-dots { position: absolute; left: 0; right: 0; bottom: 10px; display: flex; justify-content: center; gap: 6px; z-index: 2; }
   .gallery-dots button { width: 8px; height: 8px; border-radius: 50%; border: none; background: var(--line-2); cursor: pointer; padding: 0; }
   .gallery-dots button.on { background: var(--amber-deep); width: 22px; border-radius: 4px; }
-  .explore { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, 1fr); gap: 2rem; align-items: start; }
-  @media (max-width: 960px) { .explore { grid-template-columns: 1fr; } }
-  .explore .tiles { grid-template-columns: repeat(2, 1fr); }
-  @media (max-width: 640px) { .explore .tiles { grid-template-columns: 1fr; } }
-  .explore .tile { min-height: 190px; padding: 1.3rem; }
-  .explore .tile h3 { font-size: 1.15rem; margin: .5rem 0 .25rem; }
-  .explore .tile p { font-size: .88rem; margin-bottom: .8rem; }
-  .hero-stage { position: sticky; top: 90px; display: grid; place-items: center; }
-  .hero-stage .hero-canvas-wrap { aspect-ratio: 1 / 1; width: 100%; max-width: 560px; }
+  .explore { display: grid; grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr); gap: 2rem; align-items: start; }
+  @media (max-width: 860px) { .explore { grid-template-columns: 1fr; } }
+  .explore .tiles { grid-template-columns: 1fr; gap: .7rem; }
+  .explore .tile { min-height: 0; padding: .9rem 1.1rem; flex-direction: row; align-items: center; gap: .9rem; }
+  .explore .tile > div { display: grid; grid-template-columns: 40px minmax(0, 1fr); column-gap: .9rem; align-items: center; flex: 1; min-width: 0; }
+  .explore .tile .ic { width: 40px; height: 40px; margin: 0; grid-row: 1 / span 2; }
+  .explore .tile h3 { font-size: 1.05rem; margin: 0 0 .1rem; }
+  .explore .tile p { font-size: .82rem; margin: 0; }
+  .explore .tile .go { flex: none; font-size: .82rem; }
+  .explore .tile .go span { display: none; }
+  .hero-stage { position: sticky; top: 90px; display: block; width: 100%; }
+  .hero-stage .hero-canvas-wrap { aspect-ratio: 1 / 1; width: 100%; max-width: 640px; margin: 0 auto; }
   .scroll-cue { position: absolute; left: 50%; bottom: 34px; transform: translateX(-50%); z-index: 3; }
   .scroll-cue a { display: inline-flex; align-items: center; gap: .6em; padding: .7em 1.3em; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; box-shadow: 0 12px 28px -10px rgba(26,35,50,.55); transition: transform .3s var(--ease); }
   .scroll-cue a:hover { transform: translateY(-2px); }
@@ -113,26 +116,25 @@
         <dl class="facts rv" id="facts">
           <div><dt>Publications</dt><dd class="tnum" id="f-papers">400+</dd></div>
           <div><dt>Since</dt><dd class="tnum" id="f-since">2000</dd></div>
-          <div><dt>Citations (OpenAlex)</dt><dd class="tnum" id="f-cites">…</dd></div>
+          <div><dt>Papers with PDF</dt><dd class="tnum" id="f-pdf">…</dd></div>
           <div><dt>Lab members past &amp; present</dt><dd class="tnum" id="f-people">…</dd></div>
         </dl>
         <div class="section-head"><div class="rv"><p class="eyebrow">Sections</p><h2>Explore the lab</h2></div><p class="rv rv-d1">Move your cursor over the network on the right to see activity spread between its nodes.</p></div>
         <div class="explore">
           <div class="tiles">
-          <a class="tile glow rv" href="research.html"><div><div class="ic">◎</div><h3>Research</h3><p>Belief and expectation, brain-body interactions, affect and emotion, pain biomarkers, craving, and individualized brain models.</p></div><span class="go">Research themes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-          <a class="tile glow rv rv-d1" href="publications.html"><div><div class="ic">⌕</div><h3>Publications</h3><p>Every paper since 2000 with PDFs, brain maps, code and data, searchable by keyword and filterable by topic, approach and type.</p></div><span class="go">Search the papers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-          <a class="tile glow rv rv-d2" href="people.html"><div><div class="ic">☺</div><h3>People</h3><p>Postdocs, graduate students, staff and research assistants, plus alumni of the lab at Dartmouth, Colorado and Columbia.</p></div><span class="go">Meet the lab <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-          <a class="tile glow rv" href="resources.html"><div><div class="ic">⚒</div><h3>Tools &amp; training</h3><p>Open-source neuroimaging toolboxes, brain signature patterns, datasets, the Principles of fMRI book and Coursera courses.</p></div><span class="go">Tools and courses <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-          <a class="tile glow rv rv-d1" href="news.html"><div><div class="ic">◷</div><h3>News</h3><p>Lab news and press coverage, from the Wall Street Journal and Nature to podcasts and radio, updated automatically.</p></div><span class="go">Latest news <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-          <a class="tile glow rv rv-d2" href="network.html"><div><div class="ic">⧉</div><h3>Collaborator network</h3><p>An interactive map of the lab's co-authors, computed in your browser from the publication database.</p></div><span class="go">Explore the network <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-          <a class="tile glow rv" href="join.html"><div><div class="ic">★</div><h3>Join us</h3><p>Open positions, how to apply as a postdoc, student or visiting scholar, and how to participate in a study.</p></div><span class="go">Join or participate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-          <a class="tile glow rv rv-d1" href="mylist.html"><div><div class="ic">☆</div><h3>Reading lists</h3><p>Star papers into your own lists, export them to Zotero, EndNote or BibTeX, and sign in to sync across devices.</p></div><span class="go">My list <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        </div>
-      </div>
-    
+          <a class="tile glow rv" href="research.html"><div><div class="ic">◎</div><h3>Research</h3><p>Belief and expectation, brain-body interactions, affect and emotion, pain biomarkers, craving, and individualized brain models.</p></div><span class="go"><span>Research themes </span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d1" href="publications.html"><div><div class="ic">⌕</div><h3>Publications</h3><p>Every paper since 2000 with PDFs, brain maps, code and data, searchable by keyword and filterable by topic, approach and type.</p></div><span class="go"><span>Search the papers </span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d2" href="people.html"><div><div class="ic">☺</div><h3>People</h3><p>Postdocs, graduate students, staff and research assistants, plus alumni of the lab at Dartmouth, Colorado and Columbia.</p></div><span class="go"><span>Meet the lab </span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv" href="resources.html"><div><div class="ic">⚒</div><h3>Tools &amp; training</h3><p>Open-source neuroimaging toolboxes, brain signature patterns, datasets, the Principles of fMRI book and Coursera courses.</p></div><span class="go"><span>Tools and courses </span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d1" href="news.html"><div><div class="ic">◷</div><h3>News</h3><p>Lab news and press coverage, from the Wall Street Journal and Nature to podcasts and radio, updated automatically.</p></div><span class="go"><span>Latest news </span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d2" href="network.html"><div><div class="ic">⧉</div><h3>Collaborator network</h3><p>An interactive map of the lab's co-authors, computed in your browser from the publication database.</p></div><span class="go"><span>Explore the network </span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv" href="join.html"><div><div class="ic">★</div><h3>Join us</h3><p>Open positions, how to apply as a postdoc, student or visiting scholar, and how to participate in a study.</p></div><span class="go"><span>Join or participate </span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d1" href="mylist.html"><div><div class="ic">☆</div><h3>Reading lists</h3><p>Star papers into your own lists, export them to Zotero, EndNote or BibTeX, and sign in to sync across devices.</p></div><span class="go"><span>My list </span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          </div>
           <div class="hero-stage rv rv-d1"><div class="hero-canvas-wrap" role="img" aria-label="An interactive network graph. Moving the cursor over a node sends pulses of light along its connections."><canvas id="hero-canvas"></canvas></div></div>
         </div>
-      </section>
+      </div>
+    </section>
 
     <section class="section">
       <div class="wrap">
@@ -216,7 +218,7 @@
   const s = state.stats;
   document.getElementById("f-papers").textContent = s.n.toLocaleString();
   document.getElementById("f-since").textContent = s.y0 || "";
-  document.getElementById("f-cites").textContent = s.n_cites ? s.n_cites.toLocaleString() : "";
+  document.getElementById("f-pdf").textContent = s.n_pdf ? s.n_pdf.toLocaleString() : "";
   document.getElementById("f-people").textContent = s.n_people || "";
   const recent = state.index.slice().sort((a, b) => ((b.y || 0) - (a.y || 0)) || (b.d || "").localeCompare(a.d || "") || (b.added || "").localeCompare(a.added || "")).slice(0, 3);
   document.getElementById("latest").innerHTML = recent.map(r => CL.paperCard(r)).join("");
