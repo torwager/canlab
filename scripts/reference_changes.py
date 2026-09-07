@@ -2,7 +2,7 @@
 import json, subprocess, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
-old = {p["id"]: p for p in json.loads(subprocess.run(["git", "show", "HEAD:data/papers.json"], capture_output=True, text=True, cwd=ROOT).stdout)}
+old = {p["id"]: p for p in json.loads(subprocess.run(["git", "show", "d160c29:data/papers.json"], capture_output=True, text=True, cwd=ROOT).stdout)}
 new = json.load(open(ROOT / "data" / "papers.json"))
 lines = ["Reference updates, 2026-09-07", "=" * 28, "",
          "Every citation was regenerated in one style (Authors (Year). Title. Journal, Volume(Issue), Pages. DOI) from structured fields;",

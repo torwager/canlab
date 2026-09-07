@@ -39123,7 +39123,27 @@
   "section": "2008",
   "source": "cv-2026-06",
   "date_added": "2026-09-07",
-  "citation_original": "Lindquist, M. A., & Wager, T. D. (2008). Application of change-point theory to modeling state-related activity in fMRI. Applied Data Analytic Techniques for Turning Points Research (P. Cohen, Ed.), Routledge."
+  "citation_original": "Lindquist, M. A., & Wager, T. D. (2008). Application of change-point theory to modeling state-related activity in fMRI. Applied Data Analytic Techniques for Turning Points Research (P. Cohen, Ed.), Routledge.",
+  "tags": {
+   "topic": [
+    "cognitive_control"
+   ],
+   "approach": [
+    "neuroimaging_methods",
+    "computational_model"
+   ],
+   "type": [
+    "chapter"
+   ]
+  },
+  "summary": "Describes change-point methods for detecting and modelling state-related changes in fMRI time series without a priori timing, with applications to emotion and anxiety paradigms.",
+  "free_keywords": [],
+  "classification": {
+   "model": "manual (title/abstract)",
+   "input_mode": "title_only",
+   "confidence": 0.4,
+   "classified_at": "2026-09-07T03:40:32Z"
+  }
  },
  {
   "id": "sprenger2015placebo",
@@ -39163,7 +39183,29 @@
   "section": "2015",
   "source": "cv-2026-06",
   "date_added": "2026-09-07",
-  "citation_original": "Sprenger, C., Wager, T. D., & Büchel, C. (2015). Placebo and activity in the central nervous system. The Brain Adapting with Pain (A. V. Apkarian, Ed.), Wolters Kluwer."
+  "citation_original": "Sprenger, C., Wager, T. D., & Büchel, C. (2015). Placebo and activity in the central nervous system. The Brain Adapting with Pain (A. V. Apkarian, Ed.), Wolters Kluwer.",
+  "tags": {
+   "topic": [
+    "placebo",
+    "pain",
+    "expectation_learning"
+   ],
+   "approach": [
+    "fmri",
+    "pharmacology"
+   ],
+   "type": [
+    "chapter"
+   ]
+  },
+  "summary": "Reviews neuroimaging and pharmacological evidence on how placebo analgesia modulates activity in the central nervous system, from prefrontal and brainstem regions to the spinal cord.",
+  "free_keywords": [],
+  "classification": {
+   "model": "manual (title/abstract)",
+   "input_mode": "title_only",
+   "confidence": 0.4,
+   "classified_at": "2026-09-07T03:40:32Z"
+  }
  },
  {
   "id": "borsook2015pharmacological",
@@ -39203,7 +39245,28 @@
   "section": "2015",
   "source": "cv-2026-06",
   "date_added": "2026-09-07",
-  "citation_original": "Borsook, D., Wager, T. D., & Tracey, I. (2015). Pharmacological fMRI. The Brain Adapting with Pain (A. V. Apkarian, Ed.), Wolters Kluwer."
+  "citation_original": "Borsook, D., Wager, T. D., & Tracey, I. (2015). Pharmacological fMRI. The Brain Adapting with Pain (A. V. Apkarian, Ed.), Wolters Kluwer.",
+  "tags": {
+   "topic": [
+    "pain",
+    "chronic_pain"
+   ],
+   "approach": [
+    "fmri",
+    "pharmacology"
+   ],
+   "type": [
+    "chapter"
+   ]
+  },
+  "summary": "Reviews pharmacological fMRI as a tool for characterising analgesic drug effects on brain systems and for drug development in pain.",
+  "free_keywords": [],
+  "classification": {
+   "model": "manual (title/abstract)",
+   "input_mode": "title_only",
+   "confidence": 0.4,
+   "classified_at": "2026-09-07T03:40:32Z"
+  }
  },
  {
   "id": "roy2017neuromatrix",
