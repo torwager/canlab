@@ -377,7 +377,7 @@
    "Primary advisor: Tor Wager. Current position: Chief, NIH Intramural Program on Pain, National Center for Complementary and Integrative Health (NCCIH)."
   ],
   "links": [],
-  "source_url": "https://irp.nih.gov/pi/lauren-atlas"
+  "source_url": "https://www.nccih.nih.gov/about/staff/lauren-y-atlas"
  },
  {
   "id": "jason-buhle",
@@ -1156,6 +1156,19 @@
   "source_url": "https://sites.dartmouth.edu/canlab/people/luca-gandrud"
  },
  {
+  "id": "sam-gershman",
+  "name": "Sam Gershman",
+  "role": "Undergraduate RA, Columbia University",
+  "section": "Former Undergraduate RAs",
+  "current": false,
+  "img": "sam-gershman.jpg",
+  "bio": [
+   "Sam was an undergraduate research assistant in the lab at Columbia University. Current position: Professor of Psychology, Harvard University."
+  ],
+  "links": [],
+  "source_url": "https://kempnerinstitute.harvard.edu/people/our-people/samuel-gershman/"
+ },
+ {
   "id": "sophia-gregorace",
   "name": "Sophia Gregorace",
   "role": "Undergraduate RA, Dartmouth College",
@@ -1171,7 +1184,7 @@
  {
   "id": "catherine-insel",
   "name": "Catherine Insel",
-  "role": "Undergraduate RA",
+  "role": "Undergraduate RA, Columbia University",
   "section": "Former Undergraduate RAs",
   "current": false,
   "img": "catherine-insel.jpg",
@@ -1416,6 +1429,24 @@
   "source_url": "https://www.esciencecenter.nl/fellowship-programme/henk-cremers/"
  },
  {
+  "id": "sophie-van-t-hof",
+  "name": "Sophie van ‘t Hof",
+  "role": "Visiting Scholar, Dartmouth College",
+  "section": "Former Visiting Faculty and Scholars",
+  "current": false,
+  "img": "2020_04_IMG_2073.0.jpg",
+  "bio": [
+   "Sophie joined the CANlab in January 2020 as a visiting master student from the University of Amsterdam. She works on a project regarding sexual and affective processing using multi-variate neuroimaging analysis techniques. After this project, she hopes to continue to untangle sexual, affective and cognitive processing in the brain."
+  ],
+  "links": [
+   {
+    "label": "Google Scholar",
+    "url": "https://scholar.google.com/citations?user=sLwpdZsAAAAJ&hl=en"
+   }
+  ],
+  "source_url": "https://sites.dartmouth.edu/canlab/people/sophie-van-t-hof"
+ },
+ {
   "id": "Soo-Ahn-Lee",
   "name": "Soo Ahn Lee",
   "role": "Visiting Scholar, Dartmouth College",
@@ -1568,7 +1599,7 @@
    "Weihao was a visiting fellow in the lab."
   ],
   "links": [],
-  "source_url": "http://uais.lzu.edu.cn/?p=4236"
+  "source_url": "https://sites.dartmouth.edu/canlab/people/"
  },
  {
   "id": "feng-zhou",
@@ -1576,7 +1607,7 @@
   "role": "Visiting Scholar, Dartmouth College",
   "section": "Former Visiting Faculty and Scholars",
   "current": false,
-  "img": "2020_01_Weihao-Zheng.jpg",
+  "img": null,
   "bio": [
    "Feng Zhou is a PhD student at the University of Electronic Science and Technology of China and he joined the CANlab in the fall of 2019 as a visiting scholar. He is interested in applying neuroimaging and physiological methods to determine brain-based markers for emotion and empathy. The longer-term goal of his research is to develop novel treatment approaches for emotional dysregulation disorders."
   ],
@@ -1587,23 +1618,5 @@
    }
   ],
   "source_url": "https://sites.dartmouth.edu/canlab/people/feng-zhou"
- },
- {
-  "id": "sophie-van-t-hof",
-  "name": "Sophie van ‘t Hof",
-  "role": "Visiting Scholar, Dartmouth College",
-  "section": "Former Visiting Faculty and Scholars",
-  "current": false,
-  "img": "2020_04_IMG_2073.0.jpg",
-  "bio": [
-   "Sophie joined the CANlab in January 2020 as a visiting master student from the University of Amsterdam. She works on a project regarding sexual and affective processing using multi-variate neuroimaging analysis techniques. After this project, she hopes to continue to untangle sexual, affective and cognitive processing in the brain."
-  ],
-  "links": [
-   {
-    "label": "Google Scholar",
-    "url": "https://scholar.google.com/citations?user=sLwpdZsAAAAJ&hl=en"
-   }
-  ],
-  "source_url": "https://sites.dartmouth.edu/canlab/people/sophie-van-t-hof"
  }
 ]
