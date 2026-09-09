@@ -21,6 +21,8 @@
 <link rel="stylesheet" href="assets/app.css?v=4">
 <style>
   .sec-nav { display: flex; flex-wrap: wrap; gap: .4rem; margin: .4rem 0 1.4rem; }
+  .ph.none { display: grid; place-items: center; background: linear-gradient(135deg, var(--amber-soft), var(--steel-soft)); }
+  .ph .initials { font-family: var(--serif); font-size: 2.6rem; color: var(--ink-3); letter-spacing: .02em; }
   .sec-nav a { font-size: .84rem; padding: .35em .8em; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink-2); font-weight: 500; }
   .sec-nav a:hover { border-color: var(--amber-deep); color: var(--ink); }
 </style>
@@ -51,7 +53,7 @@
   const people = await CL.getJSON("data/people.json");
   const esc = CL.esc;
   const pi = people.find(p => p.section === "Principal Investigator");
-  const ORDER = ["Postdocs", "Graduate Students", "Staff", "Undergraduate Research Assistants", "Visiting Scholars", "Former Postdocs and Graduate Students", "Former Visiting Faculty and Scholars", "Former Staff and Undergraduate RAs"];
+  const ORDER = ["Postdocs", "Graduate Students", "Staff", "Undergraduate Research Assistants", "Visiting Scholars", "Former Ph.D. Students", "Former Postdocs", "Former Visiting Faculty and Scholars", "Former Staff", "Former Undergraduate RAs"];
   const secs = [...new Set(people.map(p => p.section))].filter(s => s !== "Principal Investigator").sort((a, b) => (ORDER.indexOf(a) + 1 || 99) - (ORDER.indexOf(b) + 1 || 99));
   const sid = s => s.toLowerCase().replace(/[^a-z]+/g, "-").replace(/(^-|-$)/g, "");
   document.getElementById("secnav").innerHTML = [`<a href="#pi">Principal investigator</a>`].concat(secs.map(s => `<a href="#${sid(s)}">${esc(s)}</a>`)).join("");
@@ -61,7 +63,7 @@
         <p>See the <a href="publications.html">publications page</a> and the <a href="https://canlab.github.io" target="_blank" rel="noopener">CANlab GitHub site</a> for papers, data, tools and code.</p>
         <div class="links">${(pi.links || []).map(l => `<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("")}<a class="btn" href="publications.html?author=Wager%20TD">Publications</a></div></div></section>`;
   const card = p => `<article class="person${p.current ? "" : " alum"}" id="${esc(p.id)}" tabindex="0" role="button" aria-expanded="false">
-      <div class="ph">${p.img ? `<img src="assets/img/${esc(p.img)}" alt="${esc(p.name)}" loading="lazy">` : ""}</div>
+      <div class="ph${p.img ? "" : " none"}">${p.img ? `<img src="assets/img/${esc(p.img)}" alt="${esc(p.name)}" loading="lazy">` : `<span class="initials" aria-hidden="true">${esc(p.name.split(/\s+/).filter(Boolean).map(w => w[0]).slice(0, 2).join(""))}</span>`}</div>
       <div class="who"><b>${esc(p.name)}</b><span>${esc(p.role)}</span></div>
       <div class="bio"><span class="close" data-close>Close ×</span><h3>${esc(p.name)}</h3><div class="role">${esc(p.role)}</div>${(p.bio || []).length ? p.bio.map(b => `<p>${esc(b)}</p>`).join("") : '<p class="muted">No bio on file.</p>'}
         <div class="plinks">${(p.links || []).map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("")}<a href="publications.html?author=${encodeURIComponent(surnameKey(p.name))}">Publications with the lab</a></div></div>
