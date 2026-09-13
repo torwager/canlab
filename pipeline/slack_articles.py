@@ -41,15 +41,24 @@ def slack(method, token, **params):
 def find_channel(token, name):
     if name.startswith("C") and name.upper() == name:
         return name
-    cursor = None
-    while True:
-        j = slack("conversations.list", token, types="public_channel,private_channel", limit=1000, **({"cursor": cursor} if cursor else {}))
-        for c in j["channels"]:
-            if c["name"] == name.lstrip("#"):
-                return c["id"]
-        cursor = (j.get("response_metadata") or {}).get("next_cursor")
-        if not cursor:
-            raise SystemExit(f"channel #{name} not found (is the bot a member?)")
+    # private channels need the groups:read scope; fall back to public channels only when it is missing
+    for types in ("public_channel,private_channel", "public_channel"):
+        cursor = None
+        try:
+            while True:
+                j = slack("conversations.list", token, types=types, limit=1000, exclude_archived="true", **({"cursor": cursor} if cursor else {}))
+                for c in j["channels"]:
+                    if c["name"] == name.lstrip("#"):
+                        return c["id"]
+                cursor = (j.get("response_metadata") or {}).get("next_cursor")
+                if not cursor:
+                    break
+        except RuntimeError as e:
+            if "missing_scope" in str(e) and "private" in types:
+                continue
+            raise
+        break
+    raise SystemExit(f"channel #{name} not found: the app must be added to the channel (channel details > Integrations > Add apps), and a private channel needs the groups:read/groups:history scopes")
 
 
 _users = {}
