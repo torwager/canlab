@@ -236,6 +236,8 @@ def main():
                       "message": clean_text(m.get("text")), "comments": [], "reactions": []}
                 it.update(rec); store["items"].append(it); by_key[key] = it; by_ts[m["ts"]] = it; new += 1
             it["permalink"] = it.get("permalink") or f"https://{team.get('url','').replace('https://','').rstrip('/')}/archives/{chan}/p{m['ts'].replace('.', '')}"
+            if new and new % 15 == 0:
+                json.dump(store, open(OUT, "w"), indent=1, ensure_ascii=False)  # checkpoint so an interrupted run keeps its work
             # 2. discussion: thread replies + reactions
             it["reactions"] = [{"name": r["name"], "count": r["count"]} for r in (m.get("reactions") or [])]
             if m.get("reply_count"):
@@ -247,12 +249,14 @@ def main():
         from .classify import classify_record
         todo = [it for it in store["items"] if not it.get("tags") and it.get("title") and it["title"] != it.get("url")]
         print(f"tagging {len(todo)} papers")
-        for it in todo:
+        for n, it in enumerate(todo, 1):
             try:
                 rec = {"id": it["id"], "title": it["title"], "authors": it.get("authors") or [], "journal": it.get("journal") or "", "year": it.get("year"), "abstract": it.get("abstract") or ""}
                 classify_record(rec)
                 for k in ("tags", "summary", "key_finding", "free_keywords", "classification"):
                     it[k] = rec.get(k)
+                if n % 15 == 0:
+                    json.dump(store, open(OUT, "w"), indent=1, ensure_ascii=False)
             except Exception as e:
                 print("tagging failed", it["id"], e); continue
     store["updated"] = time.strftime("%Y-%m-%d")
