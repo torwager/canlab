@@ -240,7 +240,7 @@ def main():
     json.dump([{"id": r["id"], "t": r["title"], "ab": r.get("abstract") or "", "kw": " ".join((r.get("keywords") or []) + (r.get("free_keywords") or [])), "au": " ".join(r["authors"]), "j": r.get("journal") or ""} for r in papers],
               open(site / "text.json", "w"), ensure_ascii=False, separators=(",", ":"))
     shutil.copy(config.ROOT / "pipeline" / "taxonomy.json", site / "taxonomy.json")
-    for name in ("people.json", "research.json", "resources.json", "join.json", "news_posts.json", "news.json", "candidates.json", "events.json"):
+    for name in ("people.json", "research.json", "resources.json", "join.json", "news_posts.json", "news.json", "candidates.json", "events.json", "journal_club.json"):
         src = config.DATA / name
         if src.exists():
             shutil.copy(src, site / name)
@@ -268,7 +268,7 @@ def main():
     (config.SITE / "feed.xml").write_text(rss(recent))
     today = time.strftime("%Y-%m-%d")
     pages = [("", "weekly", "1.0"), ("publications.html", "daily", "0.9"), ("research.html", "monthly", "0.8"), ("people.html", "monthly", "0.8"), ("news.html", "daily", "0.7"),
-             ("resources.html", "monthly", "0.7"), ("network.html", "weekly", "0.5"), ("bibliometrics.html", "weekly", "0.5"), ("join.html", "monthly", "0.6"), ("about.html", "monthly", "0.5")]
+             ("resources.html", "monthly", "0.7"), ("network.html", "weekly", "0.5"), ("journal-club.html", "daily", "0.6"), ("bibliometrics.html", "weekly", "0.5"), ("join.html", "monthly", "0.6"), ("about.html", "monthly", "0.5")]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{today}</lastmod><changefreq>{f}</changefreq><priority>{p}</priority></url>" for u, f, p in pages]
     sm += [f"<url><loc>{SITE_URL}/papers/{r['id']}.html</loc><lastmod>{r.get('date_added') or today}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>" for r in papers]

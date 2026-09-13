@@ -350,3 +350,26 @@ site redirects via its settings/plugin.
     (python -m http.server in site/); check every page and console; commit in chunks; push; verify live.
 [ ] Hand the owner: paywalled PDFs to download, form-monitor setup step, analytics token, worker deploy,
     custom-domain DNS steps, Scholar ids that could not be found.
+
+------------------------------------------------------------------------------------------
+14. JOURNAL CLUB (Slack #articles -> journal-club.html), added 2026-09-13
+------------------------------------------------------------------------------------------
+pipeline/slack_articles.py reads the lab's #articles channel with a Slack bot token (scopes
+channels:history, channels:read, users:read, reactions:read; the bot must be invited to the channel),
+finds paper links in each message (DOI in the URL or unfurl, else citation_doi/og:title from the landing
+page), resolves metadata (Crossref by DOI, PubMed for abstract/PMID/PMCID, Unpaywall for an OA PDF),
+keeps thread replies + reactions as the discussion (Slack display names; ids in JOURNAL_CLUB_ANON show as
+"lab member"), tags with the same taxonomy via pipeline.classify (title+abstract), writes
+data/journal_club.json {updated, channel, items:[{id, slack_ts, shared_on, shared_by, message, url, doi,
+title, authors, journal, year, abstract, pmid, pmcid, oa_url, pdf_url, publisher_url, permalink,
+comments:[{by,date,text}], reactions:[{name,count}], tags, summary, key_finding, free_keywords}]}.
+Incremental by default (messages newer than the last slack_ts); --full re-reads everything.
+journalclub.yml runs it daily and commits; the data push triggers the site build.
+site/journal-club.html: same filter sidebar/chips as Publications, MiniSearch over title/abstract/
+authors/comments, sort (recently shared, publication year, most discussed, relevance), tabs Papers |
+Timeline (pick a topic/method -> chronological list by year with shared dates, oldest first), detail
+view opened in place (key finding, abstract, the Slack message + threaded replies, keywords, links:
+OA PDF / publisher PDF / PMC, Publisher (doi.org; PDF there needs institutional access), PubMed, Slack
+thread). Deep links: #<id>, ?tab=timeline&tl=topic:pain. Nav: Explore > Journal club.
+Privacy: Slack comments become public on the site and in the public repo; tell the lab, and use
+JOURNAL_CLUB_ANON for anyone who prefers not to be named.

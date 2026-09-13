@@ -1,0 +1,53 @@
+name: Journal club (Slack #articles)
+
+on:
+  schedule:
+    - cron: "17 10 * * *"
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Re-read the whole channel history"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Import papers, discussion and tags from Slack
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_ARTICLES_CHANNEL: ${{ vars.SLACK_ARTICLES_CHANNEL || 'articles' }}
+          JOURNAL_CLUB_ANON: ${{ vars.JOURNAL_CLUB_ANON }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CANLAB_CONTACT_EMAIL: ${{ vars.CANLAB_CONTACT_EMAIL }}
+        run: |
+          if [ -z "$SLACK_BOT_TOKEN" ]; then echo "SLACK_BOT_TOKEN secret not set; skipping"; exit 0; fi
+          python -m pipeline.slack_articles ${{ inputs.full && '--full' || '' }}
+      - name: Commit (the push triggers the site build and deploy)
+        run: |
+          git config user.name "canlab-bot"
+          git config user.email "canlab-bot@users.noreply.github.com"
+          git add data/journal_club.json
+          if git diff --cached --quiet; then echo "no changes"; else
+            git commit -m "journal club: update $(date -u +%F)"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

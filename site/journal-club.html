@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journal club | CANlab</title>
+<meta name="description" content="Papers shared and discussed in the CANlab journal club: searchable, tagged by topic and method, with a timeline per topic and the lab's discussion of each paper.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="CANlab">
+<meta property="og:title" content="Journal club | CANlab">
+<meta property="og:description" content="Papers shared and discussed in the CANlab journal club, searchable and tagged, with a timeline per topic.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://torwager.github.io/canlab/journal-club.html">
+<meta property="og:image" content="https://torwager.github.io/canlab/assets/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://torwager.github.io/canlab/journal-club.html">
+<link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="assets/app.css?v=4">
+<style>
+  .jc-tabs { display: flex; gap: .4rem; margin: .2rem 0 1rem; }
+  .jc-tabs button { border: 1px solid var(--line-2); background: var(--surface); border-radius: 999px; padding: .45em 1.1em; font: inherit; font-size: .9rem; font-weight: 500; color: var(--ink-2); cursor: pointer; }
+  .jc-tabs button.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .jc .paper .shared { font-size: .8rem; color: var(--muted); margin: .15rem 0 .35rem; display: flex; gap: .8em; flex-wrap: wrap; align-items: center; }
+  .jc .paper .shared .rx { display: inline-flex; gap: .4em; }
+  .jc .paper .shared .rx span { background: var(--surface-2); border-radius: 999px; padding: .05em .5em; }
+  .jc .paper .cc { color: var(--steel-deep); font-weight: 500; }
+  .jc .paper.open { grid-column: 1 / -1; }
+  .jc .detail { margin-top: .8rem; padding-top: .8rem; border-top: 1px dashed var(--line); display: grid; gap: .8rem; }
+  .jc .detail h4 { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 .3rem; }
+  .jc .detail .abstract { font-size: .92rem; line-height: 1.55; color: var(--ink-2); max-width: 78ch; }
+  .jc .msg { background: var(--surface-2); border-radius: 12px; padding: .7rem .9rem; font-size: .9rem; line-height: 1.45; }
+  .jc .msg .by { font-weight: 600; color: var(--ink); margin-right: .5em; }
+  .jc .msg .d { color: var(--muted); font-family: var(--mono); font-size: .74rem; }
+  .jc .thread { display: grid; gap: .5rem; }
+  .jc .thread .msg { margin-left: 1.2rem; border-left: 3px solid var(--amber-soft); }
+  .jc .detail .links a { margin-right: .6rem; }
+  /* timeline */
+  .tl-controls { display: flex; gap: .6rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem; }
+  .tl-controls select { font: inherit; font-size: .9rem; padding: .4em .7em; border-radius: 10px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); }
+  .timeline { position: relative; padding-left: 1.6rem; max-width: 80ch; }
+  .timeline::before { content: ""; position: absolute; left: .45rem; top: .3rem; bottom: .3rem; width: 2px; background: var(--line-2); }
+  .tl-year { position: relative; font-family: var(--serif); font-size: 1.35rem; margin: 1.2rem 0 .5rem; }
+  .tl-year::before { content: ""; position: absolute; left: -1.6rem; top: .45rem; width: 14px; height: 14px; border-radius: 50%; background: var(--amber); border: 3px solid var(--bg); box-shadow: 0 0 0 2px var(--amber); }
+  .tl-item { position: relative; padding: .45rem 0 .45rem .2rem; display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: .8rem; align-items: baseline; }
+  .tl-item::before { content: ""; position: absolute; left: -1.33rem; top: .95rem; width: 8px; height: 8px; border-radius: 50%; background: var(--steel); }
+  .tl-item .d { font-family: var(--mono); font-size: .76rem; color: var(--muted); }
+  .tl-item .t a { color: var(--ink); font-weight: 500; text-decoration: none; }
+  .tl-item .t a:hover { color: var(--steel-deep); }
+  .tl-item .m { font-size: .8rem; color: var(--muted); }
+  .setup { background: var(--surface); border: 1px dashed var(--line-2); border-radius: var(--radius-sm); padding: 1.2rem 1.4rem; max-width: 70ch; }
+  .setup code { font-family: var(--mono); font-size: .85em; background: var(--surface-2); padding: .1em .4em; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Journal club</p>
+    <h1>Papers the lab is reading</h1>
+    <p>Every paper shared in the lab's <b>#articles</b> Slack channel, collected daily and tagged by topic and method the same way as the lab's own publications. Search or filter, switch to the timeline to see how a topic developed over time, and open a paper for its abstract, the lab's discussion and links to the publisher's page or PDF (publisher PDFs open with institutional access, for example on the Dartmouth VPN).</p>
+  </div>
+  <div class="stat-row" id="stats"></div>
+  <div class="layout jc">
+    <aside class="filters" id="filtersWrap" aria-label="Filter by keyword">
+      <div class="hint">Tags are assigned by an AI model from the title and abstract; <a href="about.html#tags">how tagging works</a>.</div>
+      <div id="filters"></div>
+    </aside>
+    <section>
+      <div class="jc-tabs" role="tablist"><button class="on" data-tab="papers" role="tab">Papers</button><button data-tab="timeline" role="tab">Timeline</button></div>
+      <div id="papersTab">
+        <div class="searchbar"><input type="search" id="q" placeholder="Search titles, abstracts, authors and comments" aria-label="Search"><button class="btn primary" id="go">Search</button></div>
+        <div class="filter-top"><span class="count" id="count"></span><span class="active" id="active"></span><button class="btn link" id="clear" hidden>Clear all</button>
+          <label class="sort">Sort <select id="sort"><option value="shared">recently shared</option><option value="year">publication year</option><option value="discussed">most discussed</option><option value="rel">relevance</option></select></label></div>
+        <div class="paper-list" id="results"><div class="spinner">Loading…</div></div>
+      </div>
+      <div id="timelineTab" hidden>
+        <div class="tl-controls"><label>Topic or method <select id="tlTag"></select></label><span class="muted small" id="tlCount"></span></div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/minisearch/7.2.0/umd/index.min.js"></script>
+<script src="assets/config.js?v=4"></script>
+<script src="assets/app.js?v=4"></script>
+<script src="assets/layout.js?v=4"></script>
+<script>
+(async function () {
+  const esc = CL.esc;
+  const els = Object.fromEntries(["q", "go", "count", "active", "clear", "sort", "results", "stats", "filters", "tlTag", "tlCount", "timeline", "papersTab", "timelineTab"].map(k => [k, document.getElementById(k)]));
+  await CL.loadCore();
+  const state = CL.state;
+  let jc = { items: [], updated: null };
+  try { jc = await CL.getJSON("data/journal_club.json"); } catch (e) { /* not built yet */ }
+  const items = (jc.items || []).map(r => ({ ...r, tags: r.tags || {}, comments: r.comments || [], reactions: r.reactions || [], year: r.year ? +r.year : null, n_comments: (r.comments || []).length, n_react: (r.reactions || []).reduce((a, x) => a + (x.count || 0), 0) }));
+
+  if (!items.length) {
+    els.results.innerHTML = `<div class="setup"><h3 style="margin:0 0 .4rem">Not connected yet</h3><p class="small" style="margin:0">The journal club fills itself from the lab's Slack <b>#articles</b> channel once the <code>SLACK_BOT_TOKEN</code> secret is set in the repository (see the README). Papers, tags and discussion threads are then imported every day.</p></div>`;
+    els.stats.innerHTML = ""; els.count.textContent = ""; document.getElementById("filtersWrap").hidden = true; return;
+  }
+
+  // ---- stats
+  const years = items.map(r => r.shared_on).filter(Boolean).sort();
+  els.stats.innerHTML = `<div class="stat"><b class="tnum">${items.length}</b><span>papers shared</span></div><div class="stat"><b class="tnum">${items.reduce((a, r) => a + r.n_comments, 0)}</b><span>comments</span></div><div class="stat"><b class="tnum">${years.length ? years[0].slice(0, 4) + "–" + years[years.length - 1].slice(0, 4) : ""}</b><span>years</span></div><div class="stat"><b class="tnum">${CL.fmtDate(jc.updated)}</b><span>last import</span></div>`;
+
+  // ---- search index
+  const ms = new MiniSearch({ fields: ["title", "abstract", "authors", "journal", "comments_text", "message", "summary", "kw"], storeFields: ["id"], searchOptions: { prefix: true, fuzzy: 0.15, boost: { title: 3, summary: 2 } } });
+  ms.addAll(items.map(r => ({ id: r.id, title: r.title, abstract: r.abstract || "", authors: (r.authors || []).join(" "), journal: r.journal || "", comments_text: r.comments.map(c => c.text).join(" "), message: r.message || "", summary: r.summary || "", kw: (r.free_keywords || []).join(" ") })));
+
+  // ---- filters / state
+  const { filters, params } = CL.filtersFromQuery();
+  let q = params.get("q") || "", sort = params.get("sort") || "shared", tab = params.get("tab") === "timeline" ? "timeline" : "papers", open = (location.hash || "").slice(1);
+  els.q.value = q; els.sort.value = sort;
+  const byId = Object.fromEntries(items.map(r => [r.id, r]));
+
+  function pdfLink(r) {
+    if (r.oa_url) return { url: r.oa_url, label: "PDF (open access)", cls: "pdf" };
+    if (r.pdf_url) return { url: r.pdf_url, label: "PDF from publisher", cls: "pdf" };
+    if (r.pmcid) return { url: `https://www.ncbi.nlm.nih.gov/pmc/articles/${r.pmcid}/`, label: "PMC full text", cls: "pdf" };
+    return null;
+  }
+  function linkPills(r) {
+    const out = [];
+    const pdf = pdfLink(r); if (pdf) out.push(`<a class="plink ${pdf.cls}" href="${esc(pdf.url)}" target="_blank" rel="noopener">${pdf.label}</a>`);
+    if (r.doi) out.push(`<a class="plink publisher" href="https://doi.org/${esc(r.doi)}" target="_blank" rel="noopener" title="Publisher page; the PDF there opens with institutional access (e.g. Dartmouth VPN)">Publisher ↗</a>`);
+    else if (r.url) out.push(`<a class="plink publisher" href="${esc(r.url)}" target="_blank" rel="noopener">Link ↗</a>`);
+    if (r.pmid) out.push(`<a class="plink" href="https://pubmed.ncbi.nlm.nih.gov/${esc(r.pmid)}/" target="_blank" rel="noopener">PubMed ↗</a>`);
+    if (r.permalink) out.push(`<a class="plink" href="${esc(r.permalink)}" target="_blank" rel="noopener" title="Open the thread in Slack (lab members)">Slack thread ↗</a>`);
+    return out.join("");
+  }
+  function card(r) {
+    const isOpen = open === r.id;
+    const au = (r.authors || []).slice(0, 3).join("; ") + ((r.authors || []).length > 3 ? " et al." : "");
+    return `<article class="paper${isOpen ? " open" : ""}" id="${esc(r.id)}" data-id="${esc(r.id)}">
+      <div class="title"><a href="#${esc(r.id)}" data-open="${esc(r.id)}">${esc(r.title)}</a></div>
+      <div class="meta"><span class="authors">${esc(au)}</span>${r.journal ? `<span>${esc(r.journal)}</span>` : ""}${r.year ? `<span class="date">${r.year}</span>` : ""}</div>
+      <div class="shared">Shared ${CL.fmtDate(r.shared_on)}${r.shared_by ? ` by <b>${esc(r.shared_by)}</b>` : ""}${r.n_comments ? `<span class="cc">${r.n_comments} comment${r.n_comments > 1 ? "s" : ""}</span>` : ""}${r.reactions.length ? `<span class="rx">${r.reactions.slice(0, 4).map(x => `<span>:${esc(x.name)}: ${x.count}</span>`).join("")}</span>` : ""}</div>
+      ${r.summary ? `<div class="summary">${esc(r.summary)}</div>` : ""}
+      <div class="chips">${CL.chipsFor(r, true)}</div>
+      <div class="links">${linkPills(r)}</div>
+      ${isOpen ? detail(r) : ""}
+    </article>`;
+  }
+  function detail(r) {
+    const msg = r.message && r.message.replace(/https?:\S+/g, "").trim();
+    return `<div class="detail">
+      ${r.key_finding ? `<div class="callout"><b>Key finding.</b> ${esc(r.key_finding)}</div>` : ""}
+      ${r.abstract ? `<div><h4>Abstract</h4><div class="abstract">${esc(r.abstract)}</div></div>` : ""}
+      <div><h4>Discussion in Slack</h4>
+        ${msg ? `<div class="msg"><span class="by">${esc(r.shared_by || "lab member")}</span><span class="d">${CL.fmtDate(r.shared_on)}</span><div>${esc(msg)}</div></div>` : ""}
+        ${r.comments.length ? `<div class="thread" style="margin-top:.5rem">${r.comments.map(c => `<div class="msg"><span class="by">${esc(c.by)}</span><span class="d">${esc(c.date)}</span><div>${esc(c.text)}</div></div>`).join("")}</div>` : `<p class="small muted" style="margin:.4rem 0 0">No replies yet${r.permalink ? ` · <a href="${esc(r.permalink)}" target="_blank" rel="noopener">discuss in Slack</a>` : ""}.</p>`}
+      </div>
+      ${(r.free_keywords || []).length ? `<div><h4>Keywords</h4><div class="small muted">${r.free_keywords.map(esc).join(" · ")}</div></div>` : ""}
+      <div class="links">${linkPills(r)}<a class="plink" href="#" data-close="1">Close</a></div>
+    </div>`;
+  }
+
+  function run() {
+    q = els.q.value.trim();
+    let hits = null, shown = items;
+    if (q) { const res = ms.search(q); hits = new Map(res.map(h => [h.id, h.score])); shown = items.filter(r => hits.has(r.id)); }
+    shown = shown.filter(r => CL.matches(r, filters));
+    const key = { shared: (a, b) => (b.slack_ts || "").localeCompare(a.slack_ts || ""), year: (a, b) => (b.year || 0) - (a.year || 0) || (b.slack_ts || "").localeCompare(a.slack_ts || ""), discussed: (a, b) => (b.n_comments + b.n_react) - (a.n_comments + a.n_react), rel: (a, b) => hits ? hits.get(b.id) - hits.get(a.id) : 0 }[sort];
+    shown = shown.slice().sort(key);
+    els.count.textContent = `${shown.length} paper${shown.length === 1 ? "" : "s"}`;
+    els.active.innerHTML = CL.activeChips(filters);
+    els.clear.hidden = !(q || Object.values(filters).some(s => s.size));
+    CL.renderFilters(els.filters, q ? items.filter(r => hits.has(r.id)) : items, filters, run);
+    CL.filtersToQuery(filters, { q, sort: sort !== "shared" ? sort : "", tab: tab === "timeline" ? "timeline" : "" });
+    els.results.innerHTML = shown.length ? shown.map(card).join("") : '<div class="empty">No papers match.</div>';
+    renderTimeline();
+  }
+
+  // ---- timeline
+  function tagOptions() {
+    const counts = {};
+    for (const r of items) for (const ax of ["topic", "approach"]) for (const v of (r.tags[ax] || [])) counts[ax + ":" + v] = (counts[ax + ":" + v] || 0) + 1;
+    const opts = [`<option value="">All papers</option>`];
+    for (const ax of ["topic", "approach"]) {
+      const def = state.axes[ax]; if (!def) continue;
+      const vals = def.values.filter(v => counts[ax + ":" + v.id]).sort((a, b) => counts[ax + ":" + b.id] - counts[ax + ":" + a.id]);
+      if (vals.length) opts.push(`<optgroup label="${esc(def.label)}">${vals.map(v => `<option value="${ax}:${v.id}">${esc(v.label)} (${counts[ax + ":" + v.id]})</option>`).join("")}</optgroup>`);
+    }
+    els.tlTag.innerHTML = opts.join("");
+    const pre = params.get("tl"); if (pre) els.tlTag.value = pre;
+  }
+  function renderTimeline() {
+    if (tab !== "timeline") return;
+    const sel = els.tlTag.value; let rows = items;
+    if (sel) { const [ax, v] = sel.split(":"); rows = items.filter(r => (r.tags[ax] || []).includes(v)); }
+    rows = rows.slice().sort((a, b) => (a.slack_ts || "").localeCompare(b.slack_ts || ""));
+    els.tlCount.textContent = `${rows.length} paper${rows.length === 1 ? "" : "s"}, oldest first`;
+    let cur = null, html = "";
+    for (const r of rows) {
+      const y = (r.shared_on || "").slice(0, 4);
+      if (y !== cur) { cur = y; html += `<div class="tl-year">${esc(y)}</div>`; }
+      html += `<div class="tl-item"><span class="d">${CL.fmtDate(r.shared_on)}</span><div><div class="t"><a href="#${esc(r.id)}" data-open="${esc(r.id)}">${esc(r.title)}</a></div><div class="m">${esc((r.authors || [])[0] || "")}${r.year ? ` (${r.year})` : ""}${r.journal ? ` · ${esc(r.journal)}` : ""} · shared by ${esc(r.shared_by || "lab member")}${r.n_comments ? ` · ${r.n_comments} comment${r.n_comments > 1 ? "s" : ""}` : ""}</div></div></div>`;
+    }
+    els.timeline.innerHTML = html || '<div class="empty">No papers with this tag yet.</div>';
+    const p = new URLSearchParams(location.search); if (sel) p.set("tl", sel); else p.delete("tl"); p.set("tab", "timeline"); history.replaceState(null, "", location.pathname + "?" + p.toString() + location.hash);
+  }
+
+  // ---- events
+  document.querySelector(".jc-tabs").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; tab = b.dataset.tab; document.querySelectorAll(".jc-tabs button").forEach(x => x.classList.toggle("on", x === b)); els.papersTab.hidden = tab !== "papers"; els.timelineTab.hidden = tab !== "timeline"; document.getElementById("filtersWrap").style.visibility = tab === "papers" ? "" : "hidden"; run(); });
+  els.tlTag.onchange = renderTimeline;
+  els.go.onclick = run; els.q.addEventListener("keydown", e => { if (e.key === "Enter") run(); });
+  els.sort.onchange = () => { sort = els.sort.value; run(); };
+  els.clear.onclick = () => { els.q.value = ""; for (const k in filters) filters[k].clear(); run(); };
+  els.active.addEventListener("click", e => { const chip = e.target.closest(".chip"); if (!chip) return; CL.toggle(filters, chip.dataset.axis, chip.dataset.value); run(); });
+  CL.bindCardChips(els.results, filters, run);
+  document.addEventListener("click", e => {
+    const o = e.target.closest("[data-open]"); if (o) { e.preventDefault(); open = open === o.dataset.open ? "" : o.dataset.open; history.replaceState(null, "", location.pathname + location.search + (open ? "#" + open : "")); if (tab === "timeline" && open) { tab = "papers"; document.querySelectorAll(".jc-tabs button").forEach(x => x.classList.toggle("on", x.dataset.tab === "papers")); els.papersTab.hidden = false; els.timelineTab.hidden = true; document.getElementById("filtersWrap").style.visibility = ""; } run(); const el = document.getElementById(open); if (el) el.scrollIntoView({ block: "start", behavior: "smooth" }); return; }
+    const c = e.target.closest("[data-close]"); if (c) { e.preventDefault(); open = ""; history.replaceState(null, "", location.pathname + location.search); run(); }
+  });
+  tagOptions();
+  if (tab === "timeline") { document.querySelectorAll(".jc-tabs button").forEach(x => x.classList.toggle("on", x.dataset.tab === "timeline")); els.papersTab.hidden = true; els.timelineTab.hidden = false; document.getElementById("filtersWrap").style.visibility = "hidden"; }
+  if (open && !byId[open]) open = "";
+  run();
+})().catch(e => { document.getElementById("results").innerHTML = `<div class="empty">Could not load (${CL.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>
