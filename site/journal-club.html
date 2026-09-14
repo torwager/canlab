@@ -72,8 +72,10 @@
       <div id="papersTab">
         <div class="searchbar"><input type="search" id="q" placeholder="Search titles, abstracts, authors and comments" aria-label="Search"><button class="btn primary" id="go">Search</button></div>
         <div class="filter-top"><span class="count" id="count"></span><span class="active" id="active"></span><button class="btn link" id="clear" hidden>Clear all</button>
+          <label><input type="checkbox" id="showLinks"> include other links (news, blogs, tools)</label>
           <label class="sort">Sort <select id="sort"><option value="shared">recently shared</option><option value="year">publication year</option><option value="discussed">most discussed</option><option value="rel">relevance</option></select></label></div>
         <div class="paper-list" id="results"><div class="spinner">Loading…</div></div>
+        <div class="pager" id="pager"></div>
       </div>
       <div id="timelineTab" hidden>
         <div class="tl-controls"><label>Topic or method <select id="tlTag"></select></label><span class="muted small" id="tlCount"></span></div>
@@ -90,31 +92,35 @@
 <script>
 (async function () {
   const esc = CL.esc;
-  const els = Object.fromEntries(["q", "go", "count", "active", "clear", "sort", "results", "stats", "filters", "tlTag", "tlCount", "timeline", "papersTab", "timelineTab"].map(k => [k, document.getElementById(k)]));
+  const els = Object.fromEntries(["q", "go", "count", "active", "clear", "sort", "results", "stats", "filters", "tlTag", "tlCount", "timeline", "papersTab", "timelineTab", "showLinks", "pager"].map(k => [k, document.getElementById(k)]));
+  const PAGE = 60; let page = 1;
   await CL.loadCore();
   const state = CL.state;
+  const { filters, params } = CL.filtersFromQuery();
   let jc = { items: [], updated: null };
   try { jc = await CL.getJSON("data/journal_club.json"); } catch (e) { /* not built yet */ }
-  const items = (jc.items || []).map(r => ({ ...r, tags: r.tags || {}, comments: r.comments || [], reactions: r.reactions || [], year: r.year ? +r.year : null, n_comments: (r.comments || []).length, n_react: (r.reactions || []).reduce((a, x) => a + (x.count || 0), 0) }));
+  const allItems = (jc.items || []).map(r => ({ ...r, tags: r.tags || {}, comments: r.comments || [], reactions: r.reactions || [], year: r.year ? +r.year : null, n_comments: (r.comments || []).length, n_react: (r.reactions || []).reduce((a, x) => a + (x.count || 0), 0) }));
 
-  if (!items.length) {
+  let showLinks = params.get("links") === "1"; els.showLinks.checked = showLinks;
+  const papersOnly = allItems.filter(r => (r.kind || "paper") === "paper");
+  let items = showLinks ? allItems : papersOnly;
+  if (!allItems.length) {
     els.results.innerHTML = `<div class="setup"><h3 style="margin:0 0 .4rem">Not connected yet</h3><p class="small" style="margin:0">The journal club fills itself from the lab's Slack <b>#articles</b> channel once the <code>SLACK_BOT_TOKEN</code> secret is set in the repository (see the README). Papers, tags and discussion threads are then imported every day.</p></div>`;
     els.stats.innerHTML = ""; els.count.textContent = ""; document.getElementById("filtersWrap").hidden = true; return;
   }
 
   // ---- stats
-  const years = items.map(r => r.shared_on).filter(Boolean).sort();
-  els.stats.innerHTML = `<div class="stat"><b class="tnum">${items.length}</b><span>papers shared</span></div><div class="stat"><b class="tnum">${items.reduce((a, r) => a + r.n_comments, 0)}</b><span>comments</span></div><div class="stat"><b class="tnum">${years.length ? years[0].slice(0, 4) + "–" + years[years.length - 1].slice(0, 4) : ""}</b><span>years</span></div><div class="stat"><b class="tnum">${CL.fmtDate(jc.updated)}</b><span>last import</span></div>`;
+  const years = allItems.map(r => r.shared_on).filter(Boolean).sort();
+  els.stats.innerHTML = `<div class="stat"><b class="tnum">${papersOnly.length}</b><span>papers shared</span></div><div class="stat"><b class="tnum">${allItems.length - papersOnly.length}</b><span>other links</span></div><div class="stat"><b class="tnum">${allItems.reduce((a, r) => a + r.n_comments, 0)}</b><span>comments</span></div><div class="stat"><b class="tnum">${years.length ? years[0].slice(0, 4) + "–" + years[years.length - 1].slice(0, 4) : ""}</b><span>years</span></div><div class="stat"><b class="tnum">${CL.fmtDate(jc.updated)}</b><span>last import</span></div>`;
 
   // ---- search index
   const ms = new MiniSearch({ fields: ["title", "abstract", "authors", "journal", "comments_text", "message", "summary", "kw"], storeFields: ["id"], searchOptions: { prefix: true, fuzzy: 0.15, boost: { title: 3, summary: 2 } } });
-  ms.addAll(items.map(r => ({ id: r.id, title: r.title, abstract: r.abstract || "", authors: (r.authors || []).join(" "), journal: r.journal || "", comments_text: r.comments.map(c => c.text).join(" "), message: r.message || "", summary: r.summary || "", kw: (r.free_keywords || []).join(" ") })));
+  ms.addAll(allItems.map(r => ({ id: r.id, title: r.title, abstract: r.abstract || "", authors: (r.authors || []).join(" "), journal: r.journal || "", comments_text: r.comments.map(c => c.text).join(" "), message: r.message || "", summary: r.summary || "", kw: (r.free_keywords || []).join(" ") })));
 
   // ---- filters / state
-  const { filters, params } = CL.filtersFromQuery();
   let q = params.get("q") || "", sort = params.get("sort") || "shared", tab = params.get("tab") === "timeline" ? "timeline" : "papers", open = (location.hash || "").slice(1);
   els.q.value = q; els.sort.value = sort;
-  const byId = Object.fromEntries(items.map(r => [r.id, r]));
+  const byId = Object.fromEntries(allItems.map(r => [r.id, r]));
 
   function pdfLink(r) {
     if (r.oa_url) return { url: r.oa_url, label: "PDF (open access)", cls: "pdf" };
@@ -135,7 +141,7 @@
     const isOpen = open === r.id;
     const au = (r.authors || []).slice(0, 3).join("; ") + ((r.authors || []).length > 3 ? " et al." : "");
     return `<article class="paper${isOpen ? " open" : ""}" id="${esc(r.id)}" data-id="${esc(r.id)}">
-      <div class="title"><a href="#${esc(r.id)}" data-open="${esc(r.id)}">${esc(r.title)}</a></div>
+      <div class="title"><a href="#${esc(r.id)}" data-open="${esc(r.id)}">${esc(r.title_unresolved ? (r.url || r.title).replace(/^https?:\/\//, "") : r.title)}</a>${(r.kind || "paper") !== "paper" ? '<span class="badge" title="Not a journal article: news, blog, tool or other link">link</span>' : ""}</div>
       <div class="meta"><span class="authors">${esc(au)}</span>${r.journal ? `<span>${esc(r.journal)}</span>` : ""}${r.year ? `<span class="date">${r.year}</span>` : ""}</div>
       <div class="shared">Shared ${CL.fmtDate(r.shared_on)}${r.shared_by ? ` by <b>${esc(r.shared_by)}</b>` : ""}${r.n_comments ? `<span class="cc">${r.n_comments} comment${r.n_comments > 1 ? "s" : ""}</span>` : ""}${r.reactions.length ? `<span class="rx">${r.reactions.slice(0, 4).map(x => `<span>:${esc(x.name)}: ${x.count}</span>`).join("")}</span>` : ""}</div>
       ${r.summary ? `<div class="summary">${esc(r.summary)}</div>` : ""}
@@ -169,8 +175,12 @@
     els.active.innerHTML = CL.activeChips(filters);
     els.clear.hidden = !(q || Object.values(filters).some(s => s.size));
     CL.renderFilters(els.filters, q ? items.filter(r => hits.has(r.id)) : items, filters, run);
-    CL.filtersToQuery(filters, { q, sort: sort !== "shared" ? sort : "", tab: tab === "timeline" ? "timeline" : "" });
-    els.results.innerHTML = shown.length ? shown.map(card).join("") : '<div class="empty">No papers match.</div>';
+    CL.filtersToQuery(filters, { q, sort: sort !== "shared" ? sort : "", tab: tab === "timeline" ? "timeline" : "", links: showLinks ? "1" : "" });
+    if (open && shown.some(r => r.id === open)) page = Math.floor(shown.findIndex(r => r.id === open) / PAGE) + 1;
+    const pages = Math.max(1, Math.ceil(shown.length / PAGE)); page = Math.min(Math.max(1, page), pages);
+    const slice = shown.slice((page - 1) * PAGE, page * PAGE);
+    els.results.innerHTML = slice.length ? slice.map(card).join("") : '<div class="empty">No papers match.</div>';
+    els.pager.innerHTML = pages > 1 ? `<button class="btn" data-page="${page - 1}" ${page === 1 ? "disabled" : ""}>‹ Previous</button><span class="small muted">Page ${page} of ${pages}</span><button class="btn" data-page="${page + 1}" ${page === pages ? "disabled" : ""}>Next ›</button>` : "";
     renderTimeline();
   }
 
@@ -206,8 +216,10 @@
   // ---- events
   document.querySelector(".jc-tabs").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; tab = b.dataset.tab; document.querySelectorAll(".jc-tabs button").forEach(x => x.classList.toggle("on", x === b)); els.papersTab.hidden = tab !== "papers"; els.timelineTab.hidden = tab !== "timeline"; document.getElementById("filtersWrap").style.visibility = tab === "papers" ? "" : "hidden"; run(); });
   els.tlTag.onchange = renderTimeline;
-  els.go.onclick = run; els.q.addEventListener("keydown", e => { if (e.key === "Enter") run(); });
-  els.sort.onchange = () => { sort = els.sort.value; run(); };
+  els.go.onclick = () => { page = 1; run(); }; els.q.addEventListener("keydown", e => { if (e.key === "Enter") { page = 1; run(); } });
+  els.sort.onchange = () => { sort = els.sort.value; page = 1; run(); };
+  els.pager.addEventListener("click", e => { const b = e.target.closest("[data-page]"); if (!b || b.disabled) return; page = +b.dataset.page; open = ""; run(); els.results.scrollIntoView({ block: "start", behavior: "smooth" }); });
+  els.showLinks.onchange = () => { showLinks = els.showLinks.checked; items = showLinks ? allItems : papersOnly; run(); };
   els.clear.onclick = () => { els.q.value = ""; for (const k in filters) filters[k].clear(); run(); };
   els.active.addEventListener("click", e => { const chip = e.target.closest(".chip"); if (!chip) return; CL.toggle(filters, chip.dataset.axis, chip.dataset.value); run(); });
   CL.bindCardChips(els.results, filters, run);

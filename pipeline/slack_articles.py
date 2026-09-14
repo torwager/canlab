@@ -244,10 +244,12 @@ def main():
                 rep = slack("conversations.replies", token, channel=chan, ts=m["ts"], limit=200)["messages"][1:]
                 it["comments"] = [{"by": user_name(token, r.get("user"), anon), "date": time.strftime("%Y-%m-%d %H:%M", time.gmtime(float(r["ts"]))), "text": clean_text(r.get("text"))} for r in rep if clean_text(r.get("text"))]
             time.sleep(0.4)
+    from .jc_curate import curate
+    curate([it for it in store["items"] if not it.get("kind")])
     # 3. tags
     if not a.no_llm and (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("OPENAI_API_KEY")):
         from .classify import classify_record
-        todo = [it for it in store["items"] if not it.get("tags") and it.get("title") and it["title"] != it.get("url")]
+        todo = [it for it in store["items"] if not it.get("tags") and it.get("kind", "paper") == "paper" and it.get("title") and not it.get("title_unresolved")]
         print(f"tagging {len(todo)} papers")
         for n, it in enumerate(todo, 1):
             try:
