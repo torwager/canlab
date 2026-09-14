@@ -18,7 +18,7 @@
     "summary": {"type": "string"},
     "key_finding": {"type": ["string", "null"]},
     "free_keywords": {"type": "array", "items": {"type": "string"}},
-    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "confidence": {"type": "number", "description": "Confidence in the tags, from 0 (guess) to 1 (certain)"},
     "notes": {"type": ["string", "null"]}
   },
   "x-note": "The '__ENUM:<axis>__' placeholders are expanded from taxonomy.json at load time (see llm_client.build_output_schema)."

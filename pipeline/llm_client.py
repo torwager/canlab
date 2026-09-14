@@ -91,6 +91,7 @@ def build_output_schema(tax: dict) -> dict:
 
     walk(schema)
     schema.pop("$schema", None)
+    schema.pop("title", None)
     return schema
 
 

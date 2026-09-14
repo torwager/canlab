@@ -251,6 +251,7 @@ def main():
         from .classify import classify_record
         todo = [it for it in store["items"] if not it.get("tags") and it.get("kind", "paper") == "paper" and it.get("title") and not it.get("title_unresolved")]
         print(f"tagging {len(todo)} papers")
+        failures = 0
         for n, it in enumerate(todo, 1):
             try:
                 rec = {"id": it["id"], "title": it["title"], "authors": it.get("authors") or [], "journal": it.get("journal") or "", "year": it.get("year"), "abstract": it.get("abstract") or ""}
@@ -259,8 +260,14 @@ def main():
                     it[k] = rec.get(k)
                 if n % 15 == 0:
                     json.dump(store, open(OUT, "w"), indent=1, ensure_ascii=False)
+                failures = 0
             except Exception as e:
-                print("tagging failed", it["id"], e); continue
+                failures += 1
+                print("tagging failed", it["id"], e)
+                if failures >= 3:
+                    json.dump(store, open(OUT, "w"), indent=1, ensure_ascii=False)
+                    raise SystemExit("tagging keeps failing; stopping so the error is visible")
+                continue
     store["updated"] = time.strftime("%Y-%m-%d")
     store["items"].sort(key=lambda it: it["slack_ts"], reverse=True)
     json.dump(store, open(OUT, "w"), indent=1, ensure_ascii=False)
