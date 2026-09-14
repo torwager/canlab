@@ -88,7 +88,12 @@
   "bio": [
    "Dr. Sun is a postdoctoral researcher and clinical psychologist in Dr. Wager’s laboratory. He studies phenomena relevant to emotion and pain regulation in both basic and clinically applied research contexts. He applies psychological, sociocultural, and bioinformatic perspectives to his work and has experience with neuroimaging, psychophysiological, facial expressive electromyographic, survey, and qualitative interview methodologies. His current work focuses on how the brain maps the body somatotopically, and how it might regulate sensations pertinent to chronically affected areas such as pain in gastrointestinal disorders. Michael also sees patients through GI Psychology at Dartmouth Hitchcock Medical Center’s Department of Gastroenterology and Hepatology."
   ],
-  "links": [],
+  "links": [
+   {
+    "label": "Google Scholar",
+    "url": "https://scholar.google.com/citations?user=j1yqAtgAAAAJ&hl=en"
+   }
+  ],
   "source_url": "https://sites.dartmouth.edu/canlab/people/michael-sun"
  },
  {

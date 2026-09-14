@@ -11,7 +11,7 @@
       <a href="news.html">News</a>
       <a href="resources.html">Tools &amp; training</a>
       <div class="menu"><a href="network.html" class="menu-btn" aria-haspopup="true" aria-expanded="false">Explore ▾</a>
-        <div class="menu-list"><a href="journal-club.html">Journal club</a><a href="network.html">Collaborator network</a><a href="bibliometrics.html">Bibliometrics</a><a href="https://scienceofplacebo.org" target="_blank" rel="noopener">Science of Placebo ↗</a><a href="https://torwager.github.io/elements-of-fmri-tutorials" target="_blank" rel="noopener">Elements of fMRI tutorials ↗</a><a href="https://dbic.github.io/PBS_resources/" target="_blank" rel="noopener">PBS shared resources ↗</a><a href="https://torwager.github.io/mindfmricourse" target="_blank" rel="noopener">fMRI course (MIND) ↗</a></div></div>
+        <div class="menu-list"><a href="journal-club.html">Journal club</a><a href="mylist.html">My reading list</a><a href="network.html">Collaborator network</a><a href="bibliometrics.html">Bibliometrics</a><a href="https://scienceofplacebo.org" target="_blank" rel="noopener">Science of Placebo</a><a href="https://torwager.github.io/elements-of-fmri-tutorials" target="_blank" rel="noopener">Elements of fMRI tutorials</a><a href="https://dbic.github.io/PBS_resources/" target="_blank" rel="noopener">PBS shared resources</a><a href="https://torwager.github.io/mindfmricourse" target="_blank" rel="noopener">fMRI course (MIND)</a></div></div>
       <div class="menu"><a href="join.html" class="menu-btn" aria-haspopup="true" aria-expanded="false">Join ▾</a>
         <div class="menu-list"><a href="join.html#team">Join our team</a><a href="join.html#participate">Participate in research</a></div></div>
     </nav></div></header>`;

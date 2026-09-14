@@ -18,7 +18,7 @@
 <meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
 <link rel="canonical" href="https://torwager.github.io/canlab/resources.html">
 <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="assets/app.css?v=4">
+<link rel="stylesheet" href="assets/app.css?v=5">
 <style>
   .book { display: grid; grid-template-columns: auto 1fr; gap: 1.2rem; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; box-shadow: var(--shadow); max-width: 900px; }
   .book .coverimg { width: 120px; border-radius: 6px; box-shadow: 0 10px 20px -10px rgba(26,35,50,.5); display: block; }
@@ -46,9 +46,9 @@
   </div>
 </main>
 <div id="site-footer"></div>
-<script src="assets/config.js?v=4"></script>
-<script src="assets/app.js?v=4"></script>
-<script src="assets/layout.js?v=4"></script>
+<script src="assets/config.js?v=5"></script>
+<script src="assets/app.js?v=5"></script>
+<script src="assets/layout.js?v=5"></script>
 <script>
 (async function () {
   const r = await CL.getJSON("data/resources.json");
@@ -61,7 +61,7 @@
     <div class="res-grid">${r.courses.map(c => `<article class="res-card"><span class="prov">${esc(c.provider)}</span><h3><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></h3><p>${esc(c.blurb)}</p>${extra(c.extra)}</article>`).join("")}</div>
     <div class="section" id="tools"><h2>Open-source neuroimaging analysis tools</h2></div>
     <p class="prose" style="margin-bottom:1rem">${esc(r.tools_intro)}</p>
-    <div class="res-grid">${r.tools.map(t => `<article class="res-card${t.thumb ? " has-thumb" : ""}">${t.thumb ? `<a class="thumb" href="${esc(t.url)}" target="_blank" rel="noopener"><img src="assets/img/${esc(t.thumb)}" alt="" loading="lazy"></a>` : ""}<div><h3><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.title)} ↗</a></h3><p>${esc(t.blurb)}</p>${extra(t.extra)}</div></article>`).join("")}</div>
+    <div class="res-grid">${r.tools.map(t => `<article class="res-card${t.thumb ? " has-thumb" : ""}">${t.thumb ? `<a class="thumb" href="${esc(t.url)}" target="_blank" rel="noopener"><img src="assets/img/${esc(t.thumb)}" alt="" loading="lazy"></a>` : ""}<div><h3><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.title)} ↗</a></h3><p>${esc(t.blurb)}</p>${t.note ? `<p class="small muted" style="margin:.2rem 0 0">${esc(t.note)}</p>` : ""}${extra(t.extra)}</div></article>`).join("")}</div>
     <div class="section" id="chapters"><h2>fMRI methods chapters</h2><span class="muted">${esc(r.chapters_intro)}</span></div>
     <div class="res-list">${r.chapters.map(c => `<div class="res"><span class="name"><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a></span><span class="country">PDF ↗</span><span class="sub">${esc(c.where)}</span></div>`).join("")}</div>
     <div class="section" id="elsewhere"><h2>Elsewhere</h2></div>

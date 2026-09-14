@@ -76,14 +76,15 @@
   {
    "title": "Neuroimaging Pattern Masks",
    "url": "https://github.com/canlab/Neuroimaging_Pattern_Masks",
-   "blurb": "Brain signature patterns (NPS, SIIPS, PINES and others), atlases of regions, and meta-analysis masks for neuroimaging data analysis.",
+   "blurb": "Brain signature patterns (SIIPS, PINES, VPS and others), atlases of regions, and meta-analysis masks for neuroimaging data analysis.",
    "extra": [
     {
      "label": "CANlab Brain Patterns website",
      "url": "https://sites.google.com/dartmouth.edu/canlab-brainpatterns/home"
     }
    ],
-   "thumb": "tool-masks.jpg"
+   "thumb": "tool-masks.jpg",
+   "note": "The Neurologic Pain Signature (NPS) is not in the public repository; it is available on request by emailing Prof. Wager."
   },
   {
    "title": "CANlab Core Tools",
