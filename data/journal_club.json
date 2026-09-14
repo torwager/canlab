@@ -3,6 +3,90 @@
  "channel": null,
  "items": [
   {
+   "id": "estrada2025holographic",
+   "slack_ts": "1789364240.923429",
+   "shared_on": "2026-09-14",
+   "shared_by": "tor",
+   "message": "nature.com/articles/s41551-025-01449-x (https://www.nature.com/articles/s41551-025-01449-x)\n\nIn this paper, *“holographic stimulation” means shaping the ultrasound pressure field so that the brain is stimulated at multiple spatially arranged foci at the same time*, rather than focusing all acoustic energy into one conventional spot. It is analogous to optical holography in the sense that *phase delays across many transducer elements are engineered to synthesize a desired 3D spatial pattern*. Nature (https://www.nature.com/articles/s41551-025-01449-x?utm_source=chatgpt.com)\nConcretely, they use a *512-element spherical phased ultrasound array*. For ordinary TUS, all elements cooperate to form one ~250-µm lateral focus. For their holographic TUS, or *hTUS*, they divide the 512 elements into interleaved subsets and assign each subset to a different focal location. They demonstrate configurations such as *three foci arranged as a triangle* and *five foci arranged as a pentagon*. Each subset gets element-specific phase/time delays so its waves interfere constructively at its assigned location.\n\nThe scientifically interesting part is that they are using this not just as a targeting trick. They ask whether *stimulating a distributed patch/network cooperatively* behaves differently from stimulating one small focus. They report that multi-focus hTUS substantially lowers the pressure threshold for producing measurable cortical calcium responses—roughly an order-of-magnitude shift in their threshold metric—and interpret the effect as likely involving *network recruitment/cooperative interactions*, rather than simply the local pressure at each focus.\n\nWould this be possible using electrical stimulation/tTIs?  It would require \"wavefront engineering\"",
+   "comments": [],
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41551-025-01449-x",
+   "doi": "10.1038/s41551-025-01449-x",
+   "title": "Holographic transcranial ultrasound neuromodulation enhances stimulation efficacy by cooperatively recruiting distributed brain circuits",
+   "abstract": "Abstract Precision-targeted ultrasonic neuromodulation offers immense potential for studying brain function and treating neurological diseases. Yet, its application has been limited by challenges in achieving precise spatio-temporal control and monitoring of ultrasound effects on brain circuits. Here we show that transcranial ultrasound elicits direct and highly focal responses, which can be dynamically steered at spatio-temporal scales relevant for neural function. Furthermore, holographic transcranial ultrasound stimulation allows direct control of the stimulated volume and actively modulates local and mid-range network projections, effectively lowering the activation threshold by an order of magnitude. To better understand this previously unexplored excitability regime not fully explained by the conventional pressure–frequency dyad, we developed a dual modelling framework, where both an empirical and a mechanistic model were constructed to capture the intricacies of holographic transcranial ultrasound stimulation. These models achieve qualitative agreement with our experimental results, suggesting that these findings are predominantly driven by putative network interactions. Our results bring insight on the complex interaction mechanisms of ultrasound with neural tissue and highlight its potential for the noninvasive interfacing of distributed brain networks.",
+   "authors": [
+    "Estrada, H.",
+    "Chen, Y.",
+    "Lemaire, T.",
+    "Davoudi, N.",
+    "Özbek, A.",
+    "Parduzi, Q.",
+    "Shoham, S.",
+    "Razansky, D."
+   ],
+   "journal": "Nature Biomedical Engineering",
+   "year": 2025,
+   "pdf_url": "https://www.nature.com/articles/s41551-025-01449-x.pdf",
+   "type": "journal-article",
+   "pmid": "40624336",
+   "pmcid": "PMC12647959",
+   "oa_url": "https://www.nature.com/articles/s41551-025-01449-x.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41551-025-01449-x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1789364240923429",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control",
+     "brain_body"
+    ],
+    "approach": [
+     "computational_model",
+     "other_imaging"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.0.0",
+    "prompt_version": "1.0.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-14T16:22:51Z",
+    "usage": {
+     "input_tokens": 539,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 3598,
+     "output_tokens": 100,
+     "cost_usd": 0.01107
+    }
+   }
+  },
+  {
+   "id": "shared2026site",
+   "slack_ts": "1789364078.462479",
+   "shared_on": "2026-09-14",
+   "shared_by": "tor",
+   "message": "<!channel> This slack is now being fed to our website (torwager.github.io/canlab)...see (http://torwager.github.io/canlab)...see) the \"explore\" tab. It does post discussions...if you think maybe we shouldn't, please lmk.",
+   "comments": [],
+   "reactions": [],
+   "url": "http://torwager.github.io/canlab)...see",
+   "doi": null,
+   "title": "Site not found &middot; GitHub Pages",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1789364078462479",
+   "kind": "link"
+  },
+  {
    "id": "shared2026language",
    "slack_ts": "1789221181.151069",
    "shared_on": "2026-09-12",
