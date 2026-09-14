@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write
 
 concurrency:
   group: daily
@@ -30,16 +31,29 @@ jobs:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Fetch a GitHub OIDC token for Anthropic Workload Identity Federation (only when configured)
+        if: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID != '' }}
+        run: |
+          fetch() { curl -sS -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://api.anthropic.com" | jq -r .value > /tmp/anthropic-jwt; }
+          fetch
+          # GitHub identity tokens expire after ~5 minutes; keep the file fresh for long runs so the SDK can re-exchange it
+          (while sleep 240; do fetch; done) &
       - name: Import papers, discussion and tags from Slack
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_ARTICLES_CHANNEL: ${{ vars.SLACK_ARTICLES_CHANNEL || 'articles' }}
           JOURNAL_CLUB_ANON: ${{ vars.JOURNAL_CLUB_ANON }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          ANTHROPIC_IDENTITY_TOKEN_FILE: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID != '' && '/tmp/anthropic-jwt' || '' }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           CANLAB_CONTACT_EMAIL: ${{ vars.CANLAB_CONTACT_EMAIL }}
         run: |
           if [ -z "$SLACK_BOT_TOKEN" ]; then echo "SLACK_BOT_TOKEN secret not set; skipping"; exit 0; fi
+          for v in ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN OPENAI_API_KEY ANTHROPIC_WORKSPACE_ID ANTHROPIC_IDENTITY_TOKEN_FILE; do [ -z "${!v}" ] && unset "$v"; done  # an empty ANTHROPIC_API_KEY would shadow federation
           python -m pipeline.slack_articles ${{ inputs.full && '--full' || '' }}
       - name: Commit (the push triggers the site build and deploy)
         run: |

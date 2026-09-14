@@ -247,7 +247,7 @@ def main():
     from .jc_curate import curate
     curate([it for it in store["items"] if not it.get("kind")])
     # 3. tags
-    if not a.no_llm and (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("OPENAI_API_KEY")):
+    if not a.no_llm and any(os.environ.get(k) for k in ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN", "ANTHROPIC_FEDERATION_RULE_ID", "OPENAI_API_KEY")):
         from .classify import classify_record
         todo = [it for it in store["items"] if not it.get("tags") and it.get("kind", "paper") == "paper" and it.get("title") and not it.get("title_unresolved")]
         print(f"tagging {len(todo)} papers")

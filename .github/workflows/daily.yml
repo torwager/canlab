@@ -38,16 +38,30 @@ jobs:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Fetch a GitHub OIDC token for Anthropic Workload Identity Federation (only when configured)
+        if: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID != '' }}
+        run: |
+          fetch() { curl -sS -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://api.anthropic.com" | jq -r .value > /tmp/anthropic-jwt; }
+          fetch
+          # GitHub identity tokens expire after ~5 minutes; keep the file fresh for long runs so the SDK can re-exchange it
+          (while sleep 240; do fetch; done) &
       - name: Search for new papers, tag them, refresh citations
         if: ${{ github.event_name != 'push' && inputs.skip_search != true }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          ANTHROPIC_IDENTITY_TOKEN_FILE: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID != '' && '/tmp/anthropic-jwt' || '' }}
           NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           CANLAB_CONTACT_EMAIL: ${{ vars.CANLAB_CONTACT_EMAIL }}
           CANLAB_LLM_MODEL: ${{ vars.CANLAB_LLM_MODEL }}
-        run: python -m pipeline.run_daily --days ${{ inputs.days || 14 }} --refresh-citations 60
+        run: |
+          for v in ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN OPENAI_API_KEY ANTHROPIC_WORKSPACE_ID ANTHROPIC_IDENTITY_TOKEN_FILE; do [ -z "${!v}" ] && unset "$v"; done  # an empty ANTHROPIC_API_KEY would shadow federation
+          python -m pipeline.run_daily --days ${{ inputs.days || 14 }} --refresh-citations 60
       - name: Commit data back to the repository
         if: ${{ github.event_name != 'push' && inputs.skip_search != true }}
         run: |

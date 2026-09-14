@@ -293,7 +293,14 @@ news.yml every 2 days: Google News RSS for the PI's name/lab/topics + Apple podc
 LLM relevance filter, keeps 180 days. form.yml every 30 min: reads the form's response sheet published
 as CSV (secret FORM_CSV_URL) and opens a GitHub issue per new row (the only way without Google API
 credentials; the in-app browser cannot open docs.google.com).
-Secrets/vars to set: ANTHROPIC_API_KEY or OPENAI_API_KEY, optionally OPENALEX_API_KEY, NCBI_API_KEY,
+LLM credential: ANTHROPIC_API_KEY secret, or Workload Identity Federation (no stored key): Console
+→ Settings → Workload identity → Connect workload → GitHub Actions (service account + issuer
+token.actions.githubusercontent.com + rule with subject_prefix repo:<owner>/<repo>:ref:refs/heads/main,
+audience https://api.anthropic.com), then repository VARIABLES ANTHROPIC_FEDERATION_RULE_ID,
+ANTHROPIC_ORGANIZATION_ID, ANTHROPIC_SERVICE_ACCOUNT_ID (+ ANTHROPIC_WORKSPACE_ID for multi-workspace
+rules); workflows need id-token: write, fetch the OIDC JWT to a file (refresh every 4 min for long runs)
+and must unset empty ANTHROPIC_API_KEY/AUTH_TOKEN vars, which would shadow federation.
+Other secrets/vars: OPENAI_API_KEY as an alternative, optionally OPENALEX_API_KEY, NCBI_API_KEY,
 CANLAB_CONTACT_EMAIL, FORM_CSV_URL. Analytics: Cloudflare Web Analytics token in config.js
 (cookie-free); leave empty until the owner creates it. Sign-in: worker/README.md (GitHub OAuth app +
 Cloudflare KV + wrangler deploy, then communityApi in config.js).

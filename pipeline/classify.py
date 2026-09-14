@@ -12,7 +12,9 @@ _clf = None
 def get_classifier():
     global _clf
     if _clf is None:
-        provider = os.environ.get("CANLAB_LLM_PROVIDER") or ("anthropic" if (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")) else "openai")
+        # Anthropic credentials: an API key, a bearer token, or Workload Identity Federation (the SDK exchanges the identity token itself)
+        has_anthropic = any(os.environ.get(k) for k in ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN", "ANTHROPIC_FEDERATION_RULE_ID"))
+        provider = os.environ.get("CANLAB_LLM_PROVIDER") or ("anthropic" if has_anthropic else "openai")
         model = os.environ.get("CANLAB_LLM_MODEL") or {"anthropic": "claude-sonnet-5", "openai": "gpt-5-mini"}[provider]
         _clf = Classifier(provider=provider, model=model, effort=os.environ.get("CANLAB_LLM_EFFORT", "medium"))
     return _clf
