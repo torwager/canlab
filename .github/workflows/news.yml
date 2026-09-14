@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
   id-token: write
 
 concurrency:
@@ -46,7 +47,8 @@ jobs:
         run: |
           for v in ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN OPENAI_API_KEY ANTHROPIC_WORKSPACE_ID ANTHROPIC_IDENTITY_TOKEN_FILE; do [ -z "${!v}" ] && unset "$v"; done  # an empty ANTHROPIC_API_KEY would shadow federation
           python -m pipeline.news
-      - name: Commit
+      - name: Commit the data
+        id: commit
         run: |
           git config user.name "canlab-bot"
           git config user.email "canlab-bot@users.noreply.github.com"
@@ -55,4 +57,10 @@ jobs:
             git commit -m "news: update $(date -u +%F)"
             git pull --rebase origin main
             git push origin HEAD:main
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
+      - name: Deploy the site (commits made with the workflow token do not trigger the deploy workflow by themselves)
+        if: ${{ steps.commit.outputs.pushed == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run daily.yml -R ${{ github.repository }} -f skip_search=true
