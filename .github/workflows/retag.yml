@@ -1,0 +1,83 @@
+name: Re-tag records (after a taxonomy change)
+
+on:
+  workflow_dispatch:
+    inputs:
+      file:
+        description: "Data file to re-tag"
+        type: choice
+        options: ["data/journal_club.json", "data/papers.json"]
+        default: "data/journal_club.json"
+      match:
+        description: "Pattern key (STIM) or a regex matched against title/abstract/summary/message"
+        type: string
+        default: "STIM"
+      also_tag:
+        description: "Also re-tag records already carrying this approach tag"
+        type: string
+        default: "brain_stimulation"
+      include_unresolved:
+        description: "Include records whose title came from the Slack message"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  actions: write
+  id-token: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  retag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Fetch a GitHub OIDC token for Anthropic Workload Identity Federation (only when configured)
+        if: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID != '' }}
+        run: |
+          fetch() { curl -sS -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://api.anthropic.com" | jq -r .value > /tmp/anthropic-jwt; }
+          fetch
+          (while sleep 240; do fetch; done) &
+      - name: Re-tag the matching records
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          ANTHROPIC_IDENTITY_TOKEN_FILE: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID != '' && '/tmp/anthropic-jwt' || '' }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CANLAB_CONTACT_EMAIL: ${{ vars.CANLAB_CONTACT_EMAIL }}
+        run: |
+          for v in ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN OPENAI_API_KEY ANTHROPIC_WORKSPACE_ID ANTHROPIC_IDENTITY_TOKEN_FILE; do [ -z "${!v}" ] && unset "$v"; done
+          python scripts/retag.py --file "${{ inputs.file }}" --match "${{ inputs.match }}" \
+            ${{ inputs.also_tag != '' && format('--also-tag {0}', inputs.also_tag) || '' }} \
+            ${{ inputs.include_unresolved && '--include-unresolved' || '' }} --apply
+      - name: Commit the data
+        id: commit
+        run: |
+          git config user.name "canlab-bot"
+          git config user.email "canlab-bot@users.noreply.github.com"
+          git add "${{ inputs.file }}"
+          if git diff --cached --quiet; then echo "no changes"; else
+            git commit -m "re-tag $(basename ${{ inputs.file }} .json) records matching ${{ inputs.match }}"
+            git pull --rebase origin main
+            git push origin HEAD:main
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Deploy the site
+        if: ${{ steps.commit.outputs.pushed == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run daily.yml -R ${{ github.repository }} -f skip_search=true

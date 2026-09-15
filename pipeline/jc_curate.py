@@ -14,7 +14,7 @@ PAPER_HOSTS = ("nature.com", "sciencedirect.com", "biorxiv.org", "medrxiv.org", 
                "elifesciences.org", "sagepub.com", "nejm.org", "mit.edu", "rdcu.be", "researchgate.net", "tandfonline.com", "cambridge.org", "karger.com", "bmj.com", "thelancet.com",
                "annualreviews.org", "mdpi.com", "hindawi.com", "biomedcentral.com", "springeropen.com", "iop.org", "ieee.org", "acm.org", "ssrn.com", "europepmc.org", "semanticscholar.org",
                "paperpile.com", "psychiatryonline.org", "physiology.org", "royalsocietypublishing.org", "jstor.org", "neurology.org", "aacrjournals.org", "ahajournals.org", "jci.org", "embopress.org", "rupress.org", "cshlp.org")
-BAD_TITLES = re.compile(r"^(just a moment|access denied|redirecting|are you a robot|attention required|error|403|404|page not found|loading|sciencedirect|nature|science|pubmed|home)\b|cloudflare|captcha|verify you are", re.I)
+BAD_TITLES = re.compile(r"^(just a moment|access denied|redirecting|sorry|are you a robot|attention required|error|403|404|page not found|loading|sciencedirect|nature|science|pubmed|home)\b|cloudflare|captcha|verify you are", re.I)
 DOI_RE = re.compile(r"10\.\d{4,9}/[^\s\"'<>|)\]}#?]+", re.I)
 
 
@@ -151,6 +151,7 @@ def curate(items):
         if BAD_TITLES.match((it.get("title") or "").strip()) or it["title"] in (it.get("url"), it.get("url_original")):
             it["title_unresolved"] = True
             msg = re.sub(r"https?://\S+", "", it.get("message") or "").strip().split("\n")[0].strip(" *_\"“”")
+            msg = re.sub(r"^\*?\[(HTML|PDF|BOOK|CITATION)\]\*?\s*", "", msg, flags=re.I).strip(" *_\"“”")  # Google Scholar alert markers
             if 12 < len(msg) < 160:
                 it["title"] = msg
         else:

@@ -207,7 +207,7 @@ topic (multi): placebo, pain, chronic_pain, emotion, emotion_regulation, empathy
   expectation_learning, social, reward_craving, cognitive_control, brain_body, clinical, perception.
 approach (multi): fmri, neuroimaging_methods, neuromarker, machine_learning, ai_integration,
   computational_model, mediation, meta_analysis, mega_analysis, genetics, pharmacology,
-  psychophysiology, brain_stimulation, other_imaging, behavioral, open_tools.
+  psychophysiology, brain_stimulation, tms, tdcs, tis, other_imaging, behavioral, open_tools.
 type (single): empirical, review, methods, chapter, commentary.
 Each value has a definition the model reads. Tagging must be done from FULL TEXT when a PDF exists
 (features like deep-learning analysis or mediation are often absent from abstracts), else abstract,
@@ -220,6 +220,15 @@ batch-NN.tags.json; scripts/apply_tags.py validates ids against the taxonomy and
 daily pipeline tags candidates automatically (classify.py, structured JSON output).
 Automatic rule at build: any paper with a maps/code/data/paradigm link gets approach open_tools.
 Genetics was added after the first pass and back-filled by keyword; expect to add values later too.
+Adding a value later (taxonomy 1.1.0 added the stimulation methods tms, tdcs and tis under the renamed
+umbrella brain_stimulation = "Neurostimulation (any)"): bump taxonomy_version and PROMPT_VERSION, say in
+prompts/classify.md when to use the new value, add any implication to classify.IMPLIES (a specific
+stimulation tag always adds brain_stimulation, so the umbrella filter catches everything), then re-tag
+ONLY the records that could carry it — scripts/retag.py --file <data file> --match STIM --also-tag
+brain_stimulation [--include-unresolved] --apply, run from the "Re-tag records" workflow (retag.yml,
+workflow_dispatch) because the API key lives in repository secrets. Re-tagging rewrites summary,
+key_finding and free_keywords too, so never re-tag more than the pattern needs. Filter sidebars only
+show values with a non-zero count, so a new value is invisible until something carries it.
 
 ------------------------------------------------------------------------------------------
 7. PEOPLE, PHOTOS, GOOGLE SCHOLAR

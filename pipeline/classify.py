@@ -20,10 +20,19 @@ def get_classifier():
     return _clf
 
 
+# Specific stimulation methods always imply the umbrella tag, so "Neurostimulation (any)" filters everything.
+IMPLIES = {"tms": "brain_stimulation", "tdcs": "brain_stimulation", "tis": "brain_stimulation"}
+
+
 def apply(rec, data, model, input_mode, confidence=None):
     """Write a tagging result (the JSON object from the model or from a manual batch) into a paper record."""
     tags = data.get("tags") or {}
-    rec["tags"] = {"topic": list(dict.fromkeys(tags.get("topic") or [])), "approach": list(dict.fromkeys(tags.get("approach") or [])), "type": [tags["type"]] if tags.get("type") else []}
+    approach = list(dict.fromkeys(tags.get("approach") or []))
+    for v in list(approach):
+        parent = IMPLIES.get(v)
+        if parent and parent not in approach:
+            approach.append(parent)
+    rec["tags"] = {"topic": list(dict.fromkeys(tags.get("topic") or [])), "approach": approach, "type": [tags["type"]] if tags.get("type") else []}
     rec["summary"] = (data.get("summary") or "").strip()
     rec["key_finding"] = (data.get("key_finding") or "").strip() or None
     rec["free_keywords"] = [k.strip() for k in (data.get("free_keywords") or []) if k and k.strip()][:10]

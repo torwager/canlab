@@ -1,5 +1,5 @@
 {
- "taxonomy_version": "1.0.0",
+ "taxonomy_version": "1.1.0",
  "notes": "Controlled vocabulary for tagging CANlab publications. Tags are assigned from the full text where a PDF is available, otherwise from the abstract. 'topic' and 'approach' are multi-valued; 'type' is single-valued. Chip colour = axis colour.",
  "axes": [
   {
@@ -170,8 +170,23 @@
     },
     {
      "id": "brain_stimulation",
-     "label": "Brain stimulation",
-     "def": "TMS, tDCS, temporal interference stimulation, deep brain stimulation, or other neuromodulation."
+     "label": "Neurostimulation (any)",
+     "def": "Any brain or nerve stimulation method is used or reviewed: TMS, tDCS and other transcranial electrical stimulation, temporal interference stimulation, focused ultrasound, deep brain stimulation, vagus nerve or spinal cord stimulation, or intracranial electrical stimulation. Always tag this alongside the specific method tags below."
+    },
+    {
+     "id": "tms",
+     "label": "TMS",
+     "def": "Transcranial magnetic stimulation, including repetitive TMS (rTMS), theta-burst stimulation (TBS/iTBS/cTBS), single- and paired-pulse TMS, and accelerated protocols such as SAINT."
+    },
+    {
+     "id": "tdcs",
+     "label": "tDCS",
+     "def": "Transcranial direct current stimulation, and closely related transcranial electrical stimulation delivered through scalp electrodes (tACS, tRNS, transcranial electrical stimulation more generally)."
+    },
+    {
+     "id": "tis",
+     "label": "Temporal interference (tTIS)",
+     "def": "Transcranial temporal interference stimulation (tTIS or TI): two or more kilohertz electric fields whose interference envelope stimulates a deep target non-invasively. Only use when temporal interference is named, not for other electrical stimulation."
     },
     {
      "id": "other_imaging",
