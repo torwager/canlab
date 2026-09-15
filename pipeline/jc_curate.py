@@ -15,6 +15,14 @@ PAPER_HOSTS = ("nature.com", "sciencedirect.com", "biorxiv.org", "medrxiv.org", 
                "annualreviews.org", "mdpi.com", "hindawi.com", "biomedcentral.com", "springeropen.com", "iop.org", "ieee.org", "acm.org", "ssrn.com", "europepmc.org", "semanticscholar.org",
                "paperpile.com", "psychiatryonline.org", "physiology.org", "royalsocietypublishing.org", "jstor.org", "neurology.org", "aacrjournals.org", "ahajournals.org", "jci.org", "embopress.org", "rupress.org", "cshlp.org")
 BAD_TITLES = re.compile(r"^(just a moment|access denied|redirecting|sorry|are you a robot|attention required|error|403|404|page not found|loading|sciencedirect|nature|science|pubmed|home)\b|cloudflare|captcha|verify you are", re.I)
+# Landing pages that prefix the article title with the site name ("Frontiers | Real title")
+SITE_PREFIX = re.compile(r"^(frontiers|springerlink|sciencedirect|pubmed|nature|wiley online library|taylor & francis|plos|jama network|biorxiv|medrxiv|osf|semantic scholar)\s*\|\s*(?=.{20})", re.I)
+
+
+def strip_site_prefix(t):
+    return SITE_PREFIX.sub("", (t or "").strip()).strip()
+
+
 DOI_RE = re.compile(r"10\.\d{4,9}/[^\s\"'<>|)\]}#?]+", re.I)
 
 
@@ -148,6 +156,7 @@ def curate(items):
             if doi: time.sleep(0.3)
         it["kind"] = "paper" if is_paper(it) else "link"
         n_paper += it["kind"] == "paper"
+        it["title"] = strip_site_prefix(it.get("title"))
         if BAD_TITLES.match((it.get("title") or "").strip()) or it["title"] in (it.get("url"), it.get("url_original")):
             it["title_unresolved"] = True
             msg = re.sub(r"https?://\S+", "", it.get("message") or "").strip().split("\n")[0].strip(" *_\"“”")
