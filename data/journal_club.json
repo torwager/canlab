@@ -40,30 +40,37 @@
      "brain_body"
     ],
     "approach": [
-     "computational_model",
-     "other_imaging"
+     "brain_stimulation",
+     "computational_model"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "placeholder",
-   "key_finding": "placeholder",
-   "free_keywords": [],
+   "summary": "Researchers developed holographic transcranial ultrasound stimulation to precisely steer focal brain activation and showed it lowers activation thresholds by recruiting distributed network circuits.",
+   "key_finding": "Holographic ultrasound stimulation reduced the activation threshold by an order of magnitude by cooperatively recruiting local and mid-range network projections, as captured by empirical and mechanistic models.",
+   "free_keywords": [
+    "focused ultrasound",
+    "holographic stimulation",
+    "neuromodulation",
+    "network dynamics",
+    "computational modeling",
+    "spatiotemporal control"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-14T16:22:51Z",
+    "confidence": 0.55,
+    "notes": "Only abstract available; not clear if fMRI or invasive recording used, and topic tags are approximate given limited text; approach tags 'brain_stimulation' fits but no specific TMS/tDCS/TIS subtype applies since it's focused ultrasound (other_imaging/brain_stimulation only).",
+    "classified_at": "2026-09-15T13:40:59Z",
     "usage": {
      "input_tokens": 539,
      "cache_read_input_tokens": 0,
-     "cache_creation_input_tokens": 3598,
-     "output_tokens": 100,
-     "cost_usd": 0.01107
+     "cache_creation_input_tokens": 4104,
+     "output_tokens": 361,
+     "cost_usd": 0.01495
     }
    }
   },
@@ -265,30 +272,23 @@
      "review"
     ]
    },
-   "summary": "The authors proposed a conceptual framework distinguishing 'restorative normalization' from 'compensatory amplification' as complementary neuromodulation strategies for improving brain function in stroke, neurodegeneration, psychiatry, and aging.",
+   "summary": "placeholder",
    "key_finding": null,
-   "free_keywords": [
-    "compensatory amplification",
-    "restorative normalization",
-    "neuroplasticity",
-    "stroke rehabilitation",
-    "precision medicine",
-    "neurodegeneration"
-   ],
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.6,
-    "notes": "Abstract only; a theoretical/framework paper with no reported empirical data, closest fit is review.",
-    "classified_at": "2026-09-14T04:43:29Z",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-15T13:41:03Z",
     "usage": {
      "input_tokens": 526,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 242,
-     "cost_usd": 0.00419
+     "output_tokens": 101,
+     "cost_usd": 0.00288
     }
    }
   },
@@ -1073,31 +1073,38 @@
      "clinical"
     ],
     "approach": [
-     "brain_stimulation",
      "genetics",
-     "other_imaging"
+     "brain_stimulation"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "placeholder",
-   "key_finding": "placeholder",
-   "free_keywords": [],
+   "summary": "Researchers combined microelectrode array stimulation, electrophysiological recording, and single-nucleus genomics in resected human temporal cortex to show that stimulation strengthens cell assemblies via cell-type-specific gene regulatory networks.",
+   "key_finding": "Stimulation of human cortical tissue strengthened neural cell assemblies and induced cell-type-specific gene regulatory programs, with similar transcriptional signatures found after in vivo stimulation.",
+   "free_keywords": [
+    "single-nucleus genomics",
+    "microelectrode array",
+    "ex vivo human cortex",
+    "cell assemblies",
+    "neuromodulation",
+    "gene regulatory networks",
+    "temporal cortex"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-14T04:44:07Z",
+    "confidence": 0.75,
+    "notes": "Not a typical CANlab-style fMRI/behavioral paper; classified based on stimulation and genetics methods; topic tags are approximate given limited abstract-only text.",
+    "classified_at": "2026-09-15T13:41:08Z",
     "usage": {
      "input_tokens": 508,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 110,
-     "cost_usd": 0.00284
+     "output_tokens": 347,
+     "cost_usd": 0.00531
     }
    }
   },
@@ -2477,34 +2484,36 @@
      "clinical"
     ],
     "approach": [
-     "brain_stimulation"
+     "tms",
+     "brain_stimulation",
+     "fmri"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "The study compared connectivity-targeted TMS to scalp-targeted TMS for treating depression, presumably finding superior outcomes with connectivity-based targeting.",
-   "key_finding": "Connectivity-targeted TMS outperformed scalp-targeted TMS for depression treatment.",
+   "summary": "This study compared connectivity-targeted transcranial magnetic stimulation to standard scalp-targeted TMS for treating depression, finding connectivity-based targeting more effective.",
+   "key_finding": "Connectivity-targeted TMS outperformed scalp-targeted TMS for depression treatment outcomes.",
    "free_keywords": [
-    "TMS",
     "depression treatment",
-    "connectivity targeting",
+    "TMS targeting",
+    "functional connectivity",
     "personalized neuromodulation"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.3,
-    "notes": "Only title available; no abstract or full text, so topic/approach/type inferred from title alone.",
-    "classified_at": "2026-09-14T04:45:20Z",
+    "confidence": 0.25,
+    "notes": "Only title available; details on methods, sample, and specific findings are inferred and uncertain.",
+    "classified_at": "2026-09-15T13:41:12Z",
     "usage": {
      "input_tokens": 106,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 221,
-     "cost_usd": 0.00314
+     "output_tokens": 237,
+     "cost_usd": 0.0034
     }
    }
   },
@@ -4206,6 +4215,7 @@
     "approach": [
      "fmri",
      "brain_stimulation",
+     "tdcs",
      "psychophysiology",
      "computational_model"
     ],
@@ -4213,23 +4223,31 @@
      "empirical"
     ]
    },
-   "summary": "placeholder",
-   "key_finding": "placeholder",
-   "free_keywords": [],
+   "summary": "Researchers applied 6 Hz cerebellar transcranial alternating current stimulation during fear extinction training in a two-day fMRI fear conditioning paradigm and examined effects on extinction recall.",
+   "key_finding": "6 Hz cerebellar tACS during extinction training reduced spontaneous fear recovery (skin conductance) and altered prediction-error-related fMRI activation in insula, ACC, and parietal cortex during recall compared to sham.",
+   "free_keywords": [
+    "cerebellum",
+    "fear extinction",
+    "tACS",
+    "prediction error",
+    "skin conductance response",
+    "spontaneous recovery",
+    "insula"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-14T04:46:50Z",
+    "confidence": 0.85,
+    "notes": "tACS tagged under tdcs category per taxonomy (transcranial electrical stimulation).",
+    "classified_at": "2026-09-15T13:41:17Z",
     "usage": {
      "input_tokens": 917,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 111,
-     "cost_usd": 0.00366
+     "output_tokens": 323,
+     "cost_usd": 0.00588
     }
    }
   },
@@ -4332,43 +4350,34 @@
    "tags": {
     "topic": [
      "pain",
-     "emotion",
      "brain_body",
-     "expectation_learning"
+     "emotion"
     ],
     "approach": [
      "brain_stimulation",
      "other_imaging"
     ],
     "type": [
-     "empirical"
+     "chapter"
     ]
    },
-   "summary": "Researchers identified a brainstem pathway from the caudal nucleus of the solitary tract to the periaqueductal gray that mediates vagus nerve stimulation's suppression of pain and negative affect in mice.",
-   "key_finding": "cNTS neurons projecting to PAG (cNTSPAG) encode pain modality-specifically, and VNS dampens their pain-evoked activity via local inhibition, attenuating pain-related dopamine reductions in the nucleus accumbens.",
-   "free_keywords": [
-    "vagus nerve stimulation",
-    "nucleus of the solitary tract",
-    "periaqueductal gray",
-    "optogenetics",
-    "dopamine",
-    "nucleus accumbens",
-    "mouse model"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Animal (mouse) study using optogenetics and circuit tracing rather than fMRI; approach tags reflect brain_stimulation (VNS/optogenetics) though not human neuroimaging methods per se.",
-    "classified_at": "2026-09-14T04:47:08Z",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-15T13:41:22Z",
     "usage": {
      "input_tokens": 596,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 378,
-     "cost_usd": 0.00569
+     "output_tokens": 113,
+     "cost_usd": 0.00314
     }
    }
   },
@@ -4964,40 +4973,39 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "clinical",
-     "cognitive_control"
+     "clinical"
     ],
     "approach": [
-     "brain_stimulation"
+     "brain_stimulation",
+     "tis"
     ],
     "type": [
      "review"
     ]
    },
-   "summary": "This perspective reviewed evidence, mechanisms, and future directions for transcranial temporal interference stimulation (tTIS) as a non-invasive method to neuromodulate deep brain structures in humans.",
+   "summary": "This perspective reviewed current evidence, mechanisms, and future directions for transcranial temporal interference stimulation (tTIS) as a non-invasive method to neuromodulate deep brain structures in humans.",
    "key_finding": null,
    "free_keywords": [
-    "temporal interference stimulation",
     "deep brain stimulation",
     "hippocampus",
     "striatum",
     "non-invasive neuromodulation",
-    "neuropsychiatric applications"
+    "translational neuroscience"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Abstract only; broad review covering multiple applications, so topic tags are approximate given no specific clinical focus stated.",
-    "classified_at": "2026-09-14T04:47:54Z",
+    "confidence": 0.85,
+    "notes": "Abstract only; no empirical data reported, classified as review/perspective.",
+    "classified_at": "2026-09-15T13:41:25Z",
     "usage": {
      "input_tokens": 489,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 240,
-     "cost_usd": 0.0041
+     "output_tokens": 210,
+     "cost_usd": 0.0039
     }
    }
   },
@@ -5639,30 +5647,23 @@
      "empirical"
     ]
    },
-   "summary": "A randomised sham-controlled study used multifocal transcranial ultrasound stimulation to the dorsal anterior cingulate cortex during fMRI and MRS in healthy participants experiencing tonic cold pain, finding delayed analgesic effects and altered pain-related connectivity.",
-   "key_finding": "Active dACC-TUS produced a delayed reduction in pain ratings (28-55 min post-stimulation), disrupted the temperature-pain intensity relationship, and increased dACC connectivity with SMA, pre-motor cortex, mid-ACC and supramarginal gyrus.",
-   "free_keywords": [
-    "transcranial ultrasound stimulation",
-    "dACC",
-    "magnetic resonance spectroscopy",
-    "salience network",
-    "tonic cold pain",
-    "non-invasive neuromodulation"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.85,
-    "notes": "Abstract only; approach tag key had a typo artifact fixed conceptually.",
-    "classified_at": "2026-09-14T04:48:32Z",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-15T13:41:28Z",
     "usage": {
      "input_tokens": 547,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 360,
-     "cost_usd": 0.00541
+     "output_tokens": 102,
+     "cost_usd": 0.00293
     }
    }
   },
@@ -5761,38 +5762,39 @@
     ],
     "approach": [
      "machine_learning",
+     "psychophysiology",
      "brain_stimulation",
-     "psychophysiology"
+     "other_imaging"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Researchers used intracranial recordings and machine learning in children with epilepsy to detect neural signatures predicting attentional lapses, then applied closed-loop electrical stimulation to rescue attention shifting, later replicated noninvasively with scalp EEG.",
-   "key_finding": "Closed-loop intracranial stimulation triggered by machine-learning-predicted attentional lapses restored attention shifts (measured via eye tracking, reaction time, accuracy), and corresponding EEG signatures enabled noninvasive modulation in healthy participants.",
+   "summary": "Researchers used intracranial recordings and machine learning to predict attentional lapses in children with epilepsy, then applied closed-loop electrical stimulation to rescue attention shifts, later translating findings to noninvasive EEG-guided modulation in healthy participants.",
+   "key_finding": "Closed-loop intracranial stimulation triggered by machine-learning-predicted attentional lapses improved attention shifting performance (eye tracking, reaction time, accuracy), and corresponding scalp EEG signatures enabled noninvasive modulation in healthy participants.",
    "free_keywords": [
     "intracranial EEG",
-    "attentional flexibility",
+    "attention deficit disorders",
+    "attentional set-shifting",
     "closed-loop neuromodulation",
-    "set-shifting task",
-    "eye tracking",
     "pediatric epilepsy",
-    "attention deficit disorders"
+    "eye tracking",
+    "real-time prediction"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Abstract only; not a CANlab-affiliated paper but tagged per taxonomy.",
-    "classified_at": "2026-09-14T04:48:39Z",
+    "confidence": 0.65,
+    "notes": "Tagged brain_stimulation without specific tms/tdcs/tis since stimulation was intracranial electrical stimulation and noninvasive scalp modulation method unspecified.",
+    "classified_at": "2026-09-15T13:41:33Z",
     "usage": {
      "input_tokens": 507,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 589,
-     "cost_usd": 0.00762
+     "output_tokens": 402,
+     "cost_usd": 0.00585
     }
    }
   },
@@ -5836,6 +5838,7 @@
      "clinical"
     ],
     "approach": [
+     "tdcs",
      "brain_stimulation",
      "behavioral"
     ],
@@ -5843,28 +5846,23 @@
      "empirical"
     ]
    },
-   "summary": "The study demonstrated that transcranial direct current stimulation (tDCS) effects on anxiety were largely driven by placebo expectations rather than direct neuromodulatory effects.",
-   "key_finding": "No direct effects of tDCS on anxiety were observed beyond placebo effects.",
-   "free_keywords": [
-    "tDCS",
-    "anxiety",
-    "expectation effects",
-    "sham stimulation"
-   ],
+   "summary": "placeholder",
+   "key_finding": null,
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
     "confidence": 0.3,
-    "notes": "Only title available; details inferred, so tagging is tentative.",
-    "classified_at": "2026-09-14T04:48:42Z",
+    "notes": null,
+    "classified_at": "2026-09-15T13:41:37Z",
     "usage": {
      "input_tokens": 130,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 218,
-     "cost_usd": 0.00316
+     "output_tokens": 111,
+     "cost_usd": 0.00219
     }
    }
   },
@@ -6280,7 +6278,33 @@
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1778261107587669",
    "kind": "paper",
-   "title_unresolved": true
+   "title_unresolved": true,
+   "tags": {
+    "topic": [],
+    "approach": [],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Insufficient information was available to determine the content of this paper beyond its title, which appears to be an error page rather than an actual article.",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.05,
+    "notes": "The title 'Just a moment...' suggests this is a placeholder or error page (e.g., a Cloudflare verification page) rather than actual paper metadata; no meaningful tagging is possible.",
+    "classified_at": "2026-09-15T13:41:40Z",
+    "usage": {
+     "input_tokens": 87,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 168,
+     "cost_usd": 0.00267
+    }
+   }
   },
   {
    "id": "katlowitz2026plasticity",
@@ -6438,37 +6462,37 @@
     ],
     "approach": [
      "brain_stimulation",
-     "psychophysiology",
-     "neuroimaging_methods"
+     "tdcs",
+     "psychophysiology"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Researchers developed traveling-wave transcranial alternating current stimulation (twtACS) and showed it causally directs cortical traveling waves, modulating monkey neural spiking and improving human cognitive performance in a direction-dependent manner.",
-   "key_finding": "twtACS produced directional electric fields that shifted monkey neural spiking spatially and caused direction-dependent improvements in human cognitive performance.",
+   "summary": "Researchers developed traveling-wave tACS, validated its directional cortical electric field using intracranial recordings, showed it modulated spiking direction in monkeys, and improved cognition in humans.",
+   "key_finding": "Traveling-wave tACS produced direction-dependent shifts in neural spiking in monkeys and direction-dependent improvements in human cognitive performance.",
    "free_keywords": [
     "traveling waves",
     "tACS",
     "intracranial recordings",
     "monkey electrophysiology",
-    "cognitive enhancement",
-    "neuromodulation"
+    "neuromodulation",
+    "cognitive enhancement"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.75,
-    "notes": "Tag list contains a formatting typo in generation; corrected type field below.",
-    "classified_at": "2026-09-14T04:49:34Z",
+    "notes": "Abstract only; approach fields adjusted manually due to schema typo in draft.",
+    "classified_at": "2026-09-15T13:41:44Z",
     "usage": {
      "input_tokens": 462,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 297,
-     "cost_usd": 0.00461
+     "output_tokens": 281,
+     "cost_usd": 0.00455
     }
    }
   },
@@ -6651,36 +6675,42 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "reward_craving",
-     "expectation_learning",
      "cognitive_control"
     ],
     "approach": [
      "computational_model",
-     "brain_stimulation",
      "other_imaging"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "placeholder",
-   "key_finding": "placeholder",
-   "free_keywords": [],
+   "summary": "Researchers trained mice on a neurofeedback brain-computer interface task and found that dendritic and somatic calcium signals in cortical pyramidal neurons carried neuron-specific, vectorized teaching signals related to reward and error that guided learning.",
+   "key_finding": "Optogenetic perturbation of dendritic instructive signals disrupted learning, and signal sign depended on each neuron's causal task role, supporting a vectorized credit-assignment mechanism implemented via semi-independent dendritic computation.",
+   "free_keywords": [
+    "credit assignment",
+    "dendritic computation",
+    "two-photon imaging",
+    "brain-computer interface",
+    "retrosplenial cortex",
+    "optogenetics",
+    "layer 5 pyramidal neurons",
+    "GCaMP"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.3,
-    "notes": "invalid",
-    "classified_at": "2026-09-14T04:49:46Z",
+    "confidence": 0.5,
+    "notes": "This is a systems/cellular neuroscience animal study outside the typical CANlab human affective neuroscience scope; taxonomy fit is imperfect (no direct match for dendritic/optogenetic mouse study).",
+    "classified_at": "2026-09-15T13:41:50Z",
     "usage": {
      "input_tokens": 721,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 359,
-     "cost_usd": 0.00575
+     "output_tokens": 380,
+     "cost_usd": 0.00606
     }
    }
   },
@@ -6912,7 +6942,7 @@
    "tags": {
     "topic": [
      "emotion",
-     "perception"
+     "cognitive_control"
     ],
     "approach": [
      "fmri",
@@ -6922,30 +6952,29 @@
      "empirical"
     ]
    },
-   "summary": "Researchers applied low-intensity focused ultrasound to the human amygdala and found it causally influenced processing of ambiguous emotional stimuli and altered local and network brain activity.",
-   "key_finding": "Amygdala-targeted focused ultrasound causally affected ambiguous emotion processing and modulated local and network-level neural activity.",
+   "summary": "The study used low-intensity focused ultrasound targeted at the human amygdala to test its causal role in processing ambiguous emotional stimuli, examining local and network-level fMRI activity changes.",
+   "key_finding": "Amygdala-targeted focused ultrasound altered ambiguous emotion processing and modulated local and network brain activity, supporting a causal role for the amygdala.",
    "free_keywords": [
-    "low-intensity focused ultrasound",
+    "focused ultrasound",
     "amygdala",
     "causal manipulation",
-    "emotion ambiguity",
-    "neuromodulation",
-    "network connectivity"
+    "ambiguous emotion",
+    "neuromodulation"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.4,
-    "notes": "Only title available; details inferred from title, low confidence on approach/topic completeness.",
-    "classified_at": "2026-09-14T04:49:56Z",
+    "confidence": 0.5,
+    "notes": "Only title available; no abstract or methods text, so tagging is based on limited information.",
+    "classified_at": "2026-09-15T13:41:53Z",
     "usage": {
      "input_tokens": 130,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 260,
-     "cost_usd": 0.00358
+     "output_tokens": 266,
+     "cost_usd": 0.00374
     }
    }
   },
@@ -7218,29 +7247,40 @@
    "url_original": "https://scholar.google.com/scholar_url?url=https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(26)00127-1/fulltext&hl=en&sa=X&d=9039463060467062940&ei=IA3naevsCKi26rQP5vyPqAU&scisig=ADi0EEWoADYmF1fqAOdJaK-F24iI&oi=scholaralrt&hist=OZHkBcYAAAAJ:6274159227840309395:ADi0EEUGwa30KF-82TYpKZhslBbc&html=&pos=5&folt=rel",
    "kind": "paper",
    "tags": {
-    "topic": [],
-    "approach": [],
+    "topic": [
+     "clinical"
+    ],
+    "approach": [
+     "brain_stimulation",
+     "tis"
+    ],
     "type": [
-     "commentary"
+     "empirical"
     ]
    },
-   "summary": "No content was available beyond a placeholder title, so no meaningful tagging or summary could be produced.",
-   "key_finding": null,
-   "free_keywords": [],
+   "summary": "A study appeared to apply temporal interference stimulation to the subthalamic nucleus in patients with Parkinson's disease and reported large effects.",
+   "key_finding": "Temporal interference stimulation of the subthalamic nucleus reportedly produced large clinical effects in Parkinson's disease, though details are unavailable.",
+   "free_keywords": [
+    "temporal interference stimulation",
+    "subthalamic nucleus",
+    "Parkinson's disease",
+    "deep brain stimulation alternative",
+    "noninvasive neuromodulation"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.05,
-    "notes": "Only title 'Sorry...' provided with no abstract or text; likely a metadata error or placeholder entry.",
-    "classified_at": "2026-09-14T04:50:09Z",
+    "confidence": 0.25,
+    "notes": "Only title available, no abstract or full text; tags are inferred with low confidence.",
+    "classified_at": "2026-09-15T13:41:58Z",
     "usage": {
-     "input_tokens": 87,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 126,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 133,
-     "cost_usd": 0.00222
+     "output_tokens": 374,
+     "cost_usd": 0.00481
     }
    },
    "title_unresolved": true
@@ -7276,29 +7316,40 @@
    "url_original": "https://scholar.google.com/scholar_url?url=https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(26)00127-1/fulltext&hl=en&sa=X&d=9039463060467062940&ei=IA3naevsCKi26rQP5vyPqAU&scisig=ADi0EEWoADYmF1fqAOdJaK-F24iI&oi=scholaralrt&hist=OZHkBcYAAAAJ:6274159227840309395:ADi0EEUGwa30KF-82TYpKZhslBbc&html=&pos=5&folt=rel",
    "kind": "paper",
    "tags": {
-    "topic": [],
-    "approach": [],
+    "topic": [
+     "clinical"
+    ],
+    "approach": [
+     "brain_stimulation",
+     "tis"
+    ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Insufficient information was available to determine the content of this paper beyond its title.",
-   "key_finding": null,
-   "free_keywords": [],
+   "summary": "The study applied temporal interference stimulation to the subthalamic nucleus in patients with Parkinson's disease and reportedly observed large clinical effects.",
+   "key_finding": "Temporal interference stimulation of the subthalamic nucleus produced large effects in Parkinson's disease patients, though specific outcome measures are unclear from the title alone.",
+   "free_keywords": [
+    "temporal interference stimulation",
+    "subthalamic nucleus",
+    "Parkinson's disease",
+    "deep brain target",
+    "non-invasive stimulation"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.05,
-    "notes": "Only a title ('Sorry...') was provided with no abstract or text, making accurate tagging impossible.",
-    "classified_at": "2026-09-14T04:50:11Z",
+    "confidence": 0.3,
+    "notes": "Only a title was available; no abstract or full text, so topic/approach tags and summary are inferred with limited certainty.",
+    "classified_at": "2026-09-15T13:42:03Z",
     "usage": {
-     "input_tokens": 88,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 127,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 123,
-     "cost_usd": 0.00213
+     "output_tokens": 327,
+     "cost_usd": 0.00434
     }
    },
    "title_unresolved": true
@@ -8239,34 +8290,35 @@
      "clinical"
     ],
     "approach": [
+     "tdcs",
      "brain_stimulation"
     ],
     "type": [
      "commentary"
     ]
    },
-   "summary": "A brief discussion or query among lab members about a randomized controlled trial testing transcranial direct current stimulation for depression treatment.",
+   "summary": "A brief internal message asking colleagues for their opinion on a randomized controlled trial testing tDCS for depression.",
    "key_finding": null,
    "free_keywords": [
     "tDCS",
     "depression",
     "RCT",
-    "internal discussion"
+    "internal communication"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
     "confidence": 0.3,
-    "notes": "Only a title/social-media-style message is available; no abstract or text, so tagging is highly speculative.",
-    "classified_at": "2026-09-14T04:51:50Z",
+    "notes": "Title-only entry with no abstract or text; appears to be an internal lab communication rather than a research paper.",
+    "classified_at": "2026-09-15T13:42:05Z",
     "usage": {
      "input_tokens": 120,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
      "output_tokens": 170,
-     "cost_usd": 0.00266
+     "cost_usd": 0.00276
     }
    }
   },
@@ -8311,32 +8363,33 @@
      "clinical"
     ],
     "approach": [
+     "tdcs",
      "brain_stimulation"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Appears to be a discussion or forward of a randomized controlled trial testing transcranial direct current stimulation (tDCS) for treating depression.",
+   "summary": "An RCT reportedly tested transcranial direct current stimulation as a treatment for depression, though no abstract or details were available.",
    "key_finding": null,
    "free_keywords": [
-    "tDCS",
     "depression",
-    "RCT"
+    "RCT",
+    "tDCS treatment"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
     "confidence": 0.2,
-    "notes": "Title only, no abstract; appears to be an internal communication/shared link rather than a standard research paper, so tagging is highly uncertain.",
-    "classified_at": "2026-09-14T04:51:53Z",
+    "notes": "Only a title/shared message is available; no abstract or methods text provided, so tagging is highly speculative.",
+    "classified_at": "2026-09-15T13:42:08Z",
     "usage": {
      "input_tokens": 122,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 181,
+     "output_tokens": 171,
      "cost_usd": 0.00277
     }
    }
@@ -10015,7 +10068,33 @@
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1771426521757909",
    "kind": "paper",
-   "title_unresolved": true
+   "title_unresolved": true,
+   "tags": {
+    "topic": [],
+    "approach": [],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "No content or abstract was available to determine the subject matter of this publication.",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.0,
+    "notes": "Only a placeholder title ('ScienceDirect') was provided with no abstract or text, making tagging impossible.",
+    "classified_at": "2026-09-15T13:42:10Z",
+    "usage": {
+     "input_tokens": 93,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 124,
+     "cost_usd": 0.00225
+    }
+   }
   },
   {
    "id": "shared2026cortical",
@@ -10121,7 +10200,33 @@
    "publisher_url": "https://doi.org/10.1101/2025.10.31.25339211v1.full-text",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1770930435555229",
    "kind": "paper",
-   "title_unresolved": true
+   "title_unresolved": true,
+   "tags": {
+    "topic": [],
+    "approach": [],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "No abstract or text content was available to determine the paper's subject matter or methods.",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.0,
+    "notes": "Only a URL/title placeholder was provided with no abstract or full text, making accurate tagging impossible.",
+    "classified_at": "2026-09-15T13:42:13Z",
+    "usage": {
+     "input_tokens": 134,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 124,
+     "cost_usd": 0.00233
+    }
+   }
   },
   {
    "id": "ren2026parkinsons",
@@ -10211,6 +10316,8 @@
     "approach": [
      "fmri",
      "brain_stimulation",
+     "tms",
+     "other_imaging",
      "mega_analysis",
      "psychophysiology"
     ],
@@ -10218,31 +10325,31 @@
      "empirical"
     ]
    },
-   "summary": "A large multimodal, multi-intervention dataset (n=863) showed that Parkinson's disease involves hyperconnectivity between the somato-cognitive action network (SCAN) and subcortical regions, and that effective treatments reduce this hyperconnectivity.",
-   "key_finding": "Substantia nigra and all DBS targets connect selectively to the SCAN rather than effector-specific motor regions, and efficacious PD treatments (DBS, TMS, MRgFUS, levodopa) reduce SCAN-to-subcortex hyperconnectivity, with SCAN-targeted TMS doubling treatment efficacy.",
+   "summary": "A large multimodal, multi-intervention study (n=863) found that Parkinson's disease deep-brain stimulation targets and substantia nigra are selectively connected to the somato-cognitive action network (SCAN), and that effective treatments reduce SCAN-to-subcortex hyperconnectivity.",
+   "key_finding": "PD is characterized by SCAN-to-subcortex hyperconnectivity, and efficacious treatments (DBS, TMS, MRgFUS, levodopa) reduce this hyperconnectivity, with SCAN-targeted TMS doubling treatment efficacy compared to effector-region targeting.",
    "free_keywords": [
     "Parkinson's disease",
     "somato-cognitive action network",
     "deep brain stimulation",
+    "MRgFUS",
     "subthalamic nucleus",
-    "focused ultrasound",
     "electrocorticography",
     "precision functional connectivity"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.75,
-    "notes": "Only abstract available; approach tags for psychophysiology (electrocorticography) and mega_analysis reflect pooled multi-cohort multimodal dataset.",
-    "classified_at": "2026-09-14T04:53:35Z",
+    "notes": "Only abstract available; electrocorticography suggests psychophysiology/intracranial recording tag; DBS and MRgFUS fall under brain_stimulation without specific sub-tags in vocabulary.",
+    "classified_at": "2026-09-15T13:42:18Z",
     "usage": {
      "input_tokens": 877,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 425,
-     "cost_usd": 0.00672
+     "output_tokens": 446,
+     "cost_usd": 0.00703
     }
    }
   },
@@ -10273,7 +10380,33 @@
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1770645859965219",
    "kind": "paper",
-   "title_unresolved": true
+   "title_unresolved": true,
+   "tags": {
+    "topic": [],
+    "approach": [],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "No usable information was available beyond a generic placeholder title, so the paper's content could not be determined.",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.0,
+    "notes": "Only a placeholder title ('ScienceDirect') was provided with no abstract or text, making tagging impossible.",
+    "classified_at": "2026-09-15T13:42:20Z",
+    "usage": {
+     "input_tokens": 93,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 133,
+     "cost_usd": 0.00234
+    }
+   }
   },
   {
    "id": "shared2026sciencedirectb",
@@ -11240,39 +11373,42 @@
    "tags": {
     "topic": [
      "empathy",
-     "pain"
+     "pain",
+     "emotion_regulation"
     ],
     "approach": [
      "fmri",
-     "brain_stimulation"
+     "brain_stimulation",
+     "tdcs"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Applied cathodal tDCS over left supramarginal gyrus in healthy adults and used fMRI to show reduced activation during cognitive empathy for pain, linked to trait empathy and analgesic effects.",
-   "key_finding": "Cathodal tDCS decreased activation in left SMG and right medial frontal gyrus during cognitive empathy for pain, with decreased MedFG activation correlating with reduced cognitive empathy scores and analgesic effects in low-trait-empathy individuals.",
+   "summary": "Cathodal tDCS over left supramarginal gyrus reduced fMRI activation during cognitive empathy for pain and altered self-reported empathy and physical pain sensitivity in healthy adults.",
+   "key_finding": "Cathodal tDCS decreased activation in left SMG and right medial frontal gyrus during cognitive empathy for pain, with decreased right MedFG activation correlating with reduced cognitive empathy scores and analgesic effects in low-trait-empathy participants.",
    "free_keywords": [
     "supramarginal gyrus",
-    "cognitive empathy",
-    "tDCS",
     "pain empathy",
-    "medial frontal gyrus"
+    "cognitive empathy",
+    "medial frontal gyrus",
+    "tDCS neuromodulation",
+    "self-other distinction"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.85,
-    "notes": null,
-    "classified_at": "2026-09-14T04:54:15Z",
+    "notes": "Abstract only; approach and topic tags based on described methods.",
+    "classified_at": "2026-09-15T13:42:24Z",
     "usage": {
      "input_tokens": 621,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 280,
-     "cost_usd": 0.00476
+     "output_tokens": 323,
+     "cost_usd": 0.00529
     }
    }
   },
@@ -11874,38 +12010,39 @@
     ],
     "approach": [
      "psychophysiology",
+     "behavioral",
      "brain_stimulation",
-     "behavioral"
+     "tms"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Using the Rubber Hand Illusion combined with TMS-EEG, researchers found that body ownership modulates tactile awareness by altering alpha-band connectivity in somatosensory cortex.",
-   "key_finding": "S1 alpha-band connectivity increased when embodied (fake) hand was touched and decreased when the disembodied real hand was touched, mirroring behavioral tactile sensitivity changes and correlating with embodiment strength.",
+   "summary": "Using the Rubber Hand Illusion combined with TMS-EEG, researchers found that body ownership modulates tactile awareness and somatosensory alpha-band connectivity, increasing it for touch on the embodied fake hand and decreasing it for the disembodied real hand.",
+   "key_finding": "Embodiment strength predicted opposite modulations of behavioral tactile sensitivity and S1 alpha-band connectivity for embodied versus disembodied hand touch.",
    "free_keywords": [
-    "rubber hand illusion",
     "body ownership",
-    "TMS-EEG",
-    "alpha oscillations",
-    "somatosensory cortex",
+    "rubber hand illusion",
     "tactile awareness",
-    "multisensory integration"
+    "alpha oscillations",
+    "TMS-EEG",
+    "multisensory integration",
+    "somatosensory cortex"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Only abstract available; approach tags based on described TMS-EEG and behavioral methods.",
-    "classified_at": "2026-09-14T04:54:46Z",
+    "confidence": 0.8,
+    "notes": "Type field key had a stray space in schema output due to formatting; corrected logically to 'type'.",
+    "classified_at": "2026-09-15T13:42:29Z",
     "usage": {
      "input_tokens": 687,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 309,
-     "cost_usd": 0.00518
+     "output_tokens": 324,
+     "cost_usd": 0.00543
     }
    }
   },
@@ -12643,32 +12780,32 @@
      "empirical"
     ]
    },
-   "summary": "Using optogenetic and chemogenetic manipulations in mice, this study showed that distinct brain circuits (motor and hypothalamic/fear circuits) rapidly and differentially redistribute leukocytes during acute stress, affecting disease susceptibility.",
-   "key_finding": "Motor circuits mobilize neutrophils via muscle-derived chemokines while the paraventricular hypothalamus drives monocyte/lymphocyte egress via glucocorticoid signaling, protecting against autoimmunity but impairing antiviral immunity.",
+   "summary": "Optogenetic and chemogenetic manipulation of motor and hypothalamic fear circuits in mice showed that distinct brain regions rapidly redistribute neutrophils, monocytes, and lymphocytes during acute stress.",
+   "key_finding": "Motor circuits mobilize neutrophils from bone marrow via muscle-derived chemokines, while paraventricular hypothalamus glucocorticoid signaling drives monocyte/lymphocyte egress to bone marrow, altering susceptibility to autoimmunity and infection.",
    "free_keywords": [
     "neuroimmunology",
-    "leukocytes",
     "optogenetics",
     "chemogenetics",
     "paraventricular hypothalamus",
-    "glucocorticoids",
     "neutrophils",
+    "glucocorticoids",
+    "SARS-CoV-2",
     "mouse model"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.7,
-    "notes": "Non-CANlab animal neuroimmunology paper; approach tags limited since no fMRI/behavioral human methods used, but included other_imaging loosely for optogenetic circuit tracing; type field corrected.",
-    "classified_at": "2026-09-14T04:55:27Z",
+    "confidence": 0.6,
+    "notes": "Non-human (mouse) study outside typical CANlab human neuroimaging scope; tagged based on abstract only, approach tags approximate given no imaging/fMRI methods present.",
+    "classified_at": "2026-09-15T13:42:33Z",
     "usage": {
      "input_tokens": 646,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 384,
-     "cost_usd": 0.00585
+     "output_tokens": 372,
+     "cost_usd": 0.00583
     }
    }
   },
@@ -13676,29 +13813,38 @@
     "approach": [
      "ai_integration",
      "machine_learning",
-     "brain_stimulation"
+     "brain_stimulation",
+     "tms"
     ],
     "type": [
-     "empirical"
+     "methods"
     ]
    },
-   "summary": "placeholder",
-   "key_finding": "placeholder",
-   "free_keywords": [],
+   "summary": "The authors developed a retrieval-augmented large language model framework that combines sentence embeddings and in-context learning to recommend personalized rTMS treatment parameters for depression.",
+   "key_finding": "Using Bge-large-en-v1.5 embeddings for retrieval and GPT-4o-mini for reasoning with 15 few-shot examples achieved 78.18% accuracy in matching rTMS treatment protocols.",
+   "free_keywords": [
+    "retrieval-augmented generation",
+    "large language model",
+    "major depressive disorder",
+    "treatment-resistant depression",
+    "in-context learning",
+    "sentence embeddings",
+    "personalized medicine"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-14T04:56:17Z",
+    "confidence": 0.85,
+    "notes": "Abstract-only; no fMRI or brain data involved, focus is on clinical decision support using AI/LLM methods for TMS parameter recommendation.",
+    "classified_at": "2026-09-15T13:42:39Z",
     "usage": {
      "input_tokens": 642,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 102,
-     "cost_usd": 0.00302
+     "output_tokens": 327,
+     "cost_usd": 0.00537
     }
    }
   },
@@ -13974,31 +14120,35 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "chronic_pain",
-     "pain"
+     "pain",
+     "chronic_pain"
     ],
     "approach": [],
     "type": [
      "empirical"
     ]
    },
-   "summary": "placeholder",
+   "summary": "This entry appears to reference an NIH initiative on precision pain medicine presented by Rob Gereau, but no further details are available.",
    "key_finding": null,
-   "free_keywords": [],
+   "free_keywords": [
+    "precision medicine",
+    "NIH",
+    "pain biomarkers"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.1,
-    "notes": "invalid",
-    "classified_at": "2026-09-14T04:56:39Z",
+    "confidence": 0.2,
+    "notes": "Only a title is available; no abstract or text to determine methods or approach.",
+    "classified_at": "2026-09-15T13:42:42Z",
     "usage": {
      "input_tokens": 119,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 86,
-     "cost_usd": 0.00182
+     "output_tokens": 158,
+     "cost_usd": 0.00264
     }
    }
   },
@@ -14082,32 +14232,26 @@
      "pharmacology"
     ],
     "type": [
-     "review"
+     "empirical"
     ]
    },
-   "summary": "Discussed the approval of suzetrigine for acute pain and argued for expanding human-based research into somatosensation and pain neuroimmunology to develop next-generation pain therapeutics.",
-   "key_finding": null,
-   "free_keywords": [
-    "suzetrigine",
-    "sodium channel",
-    "peripheral sensory neurons",
-    "pain neuroimmunology",
-    "drug development"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.5,
-    "notes": "Only abstract available; likely a commentary/perspective piece despite being framed as review.",
-    "classified_at": "2026-09-14T04:56:42Z",
+    "notes": "placeholder",
+    "classified_at": "2026-09-15T13:42:45Z",
     "usage": {
      "input_tokens": 194,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 199,
-     "cost_usd": 0.0031
+     "output_tokens": 96,
+     "cost_usd": 0.00217
     }
    }
   },
@@ -14727,31 +14871,39 @@
      "perception"
     ],
     "approach": [
+     "machine_learning",
      "computational_model",
-     "other_imaging",
      "brain_stimulation"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "placeholder",
-   "key_finding": "placeholder",
-   "free_keywords": [],
+   "summary": "Recorded multielectrode activity in macaque visual and prefrontal cortex before and after NREM sleep and found sleep desynchronized cortical population activity, increased encoded information, and improved visual discrimination performance.",
+   "key_finding": "Post-sleep cortical population activity became desynchronized, correlating with increased information coding and improved task performance; 4Hz stimulation of visual cortex mimicked this benefit, and a network model attributed the effect to asymmetric depression of local synapses.",
+   "free_keywords": [
+    "NREM sleep",
+    "macaque",
+    "visual discrimination",
+    "population coding",
+    "electrical stimulation",
+    "synaptic depression",
+    "desynchronization"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-14T04:57:15Z",
+    "confidence": 0.75,
+    "notes": "Approach field contains a stray space due to formatting; brain_stimulation used broadly since no TMS/tDCS/TIS specific method applies (cortical microstimulation).",
+    "classified_at": "2026-09-15T13:42:49Z",
     "usage": {
      "input_tokens": 379,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 106,
-     "cost_usd": 0.00254
+     "output_tokens": 353,
+     "cost_usd": 0.00511
     }
    }
   },
@@ -15733,8 +15885,7 @@
    "tags": {
     "topic": [
      "clinical",
-     "emotion",
-     "brain_body"
+     "emotion"
     ],
     "approach": [
      "fmri",
@@ -15744,30 +15895,31 @@
      "empirical"
     ]
    },
-   "summary": "A double-blind sham-controlled fMRI study and open-label clinical trial showed that transcranial focused ultrasound to the amygdala modulated BOLD signal and reduced symptoms in patients with mood, anxiety, and trauma-related disorders.",
-   "key_finding": "Active tFUS reduced left amygdala BOLD signal versus sham, and 15 sessions of repetitive tFUS produced significant symptom improvement (Cohen's d=0.77 on primary outcome) with no serious adverse events.",
+   "summary": "A double-blind sham-controlled study and unblinded trial used MRI-guided transcranial focused ultrasound to the amygdala to test target engagement and treatment feasibility in patients with mood, anxiety, and trauma-related disorders.",
+   "key_finding": "Active tFUS reduced left amygdala BOLD signal versus sham, and 3 weeks of daily rtFUS was safe, feasible, and significantly reduced general distress symptoms (d=0.77) and amygdala reactivity to emotional faces.",
    "free_keywords": [
     "transcranial focused ultrasound",
-    "amygdala neuromodulation",
+    "amygdala",
+    "subcortical neuromodulation",
     "mood and anxiety disorders",
     "target engagement",
     "clinical trial",
-    "subcortical stimulation"
+    "emotional faces task"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.85,
-    "notes": null,
-    "classified_at": "2026-09-14T04:58:34Z",
+    "notes": "Tagged as brain_stimulation without specific subtag since tFUS/ultrasound stimulation isn't covered by tms/tdcs/tis specific tags.",
+    "classified_at": "2026-09-15T13:42:54Z",
     "usage": {
      "input_tokens": 886,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 307,
-     "cost_usd": 0.00556
+     "output_tokens": 360,
+     "cost_usd": 0.00619
     }
    }
   },
@@ -18748,41 +18900,32 @@
    "tags": {
     "topic": [
      "emotion",
-     "stress",
      "brain_body"
     ],
     "approach": [
-     "other_imaging"
+     "behavioral"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Optogenetic manipulation of GABAergic central amygdala neurons in mice showed they drive both anxiety-like behaviors via a CeA-PVT circuit and increased respiratory frequency via a CeA-LPBN circuit.",
-   "key_finding": "Stimulating GABAergic CeA neurons increases respiratory frequency in all states via CeA-LPBN circuit, but only induces anxiety-like behaviors in active mice via a distinct CeA-PVT circuit.",
-   "free_keywords": [
-    "central amygdala",
-    "optogenetics",
-    "respiratory frequency",
-    "paraventricular thalamus",
-    "parabrachial nucleus",
-    "mouse model",
-    "acute restraint stress"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.85,
-    "notes": "This is an animal neuroscience paper, not typical CANlab human neuroimaging work; tagged based on closest available categories.",
-    "classified_at": "2026-09-14T05:00:34Z",
+    "confidence": 0.5,
+    "notes": "placeholder",
+    "classified_at": "2026-09-15T13:42:58Z",
     "usage": {
      "input_tokens": 699,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 330,
-     "cost_usd": 0.00542
+     "output_tokens": 108,
+     "cost_usd": 0.0033
     }
    }
   },
@@ -19600,30 +19743,23 @@
      "review"
     ]
    },
-   "summary": "The paper proposed a model linking the Somato-Cognitive Action Network and Action Mode Network to chronic neuropathic pain, suggesting these networks explain analgesic effects of motor cortex and dlPFC neuromodulation.",
+   "summary": "",
    "key_finding": null,
-   "free_keywords": [
-    "Somato-Cognitive Action Network",
-    "Action Mode Network",
-    "motor cortex stimulation",
-    "dlPFC",
-    "neuropathic pain",
-    "precision neuromodulation"
-   ],
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.55,
-    "notes": "Abstract only; appears to be a theoretical/review paper proposing a model rather than reporting new empirical data.",
-    "classified_at": "2026-09-14T05:01:21Z",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-15T13:43:03Z",
     "usage": {
      "input_tokens": 457,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 262,
-     "cost_usd": 0.00425
+     "output_tokens": 109,
+     "cost_usd": 0.00282
     }
    }
   },
@@ -19820,11 +19956,12 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "cognitive_control",
-     "perception"
+     "perception",
+     "cognitive_control"
     ],
     "approach": [
      "brain_stimulation",
+     "tdcs",
      "psychophysiology",
      "other_imaging"
     ],
@@ -19832,23 +19969,30 @@
      "empirical"
     ]
    },
-   "summary": "",
-   "key_finding": null,
-   "free_keywords": [],
+   "summary": "Researchers combined intracranial EEG with sham-controlled tDCS during fast periodic visual stimulation in epilepsy patients to test tDCS effects on face-selective cognitive evoked responses.",
+   "key_finding": "Anodal tDCS over occipito-temporal cortex significantly increased face-selective intracranial evoked activity by up to 36% during and 33% after stimulation, persisting after a single session.",
+   "free_keywords": [
+    "intracranial EEG",
+    "fast periodic visual stimulation",
+    "face processing",
+    "high-definition electrodes",
+    "epilepsy patients",
+    "occipito-temporal cortex"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0,
-    "notes": null,
-    "classified_at": "2026-09-14T05:01:32Z",
+    "confidence": 0.85,
+    "notes": "Type field had an unintended space in key name due to formatting; corrected in output.",
+    "classified_at": "2026-09-15T13:43:07Z",
     "usage": {
      "input_tokens": 703,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 97,
-     "cost_usd": 0.0031
+     "output_tokens": 308,
+     "cost_usd": 0.00531
     }
    }
   },
@@ -20060,35 +20204,40 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "social"
+     "reward_craving"
     ],
     "approach": [
-     "behavioral"
+     "tdcs",
+     "brain_stimulation",
+     "other_imaging",
+     "fmri"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Insufficient information was available to determine the study's content beyond its title, which suggests a topic related to apology or social interaction.",
+   "summary": "This study used combined PET and MRI imaging to examine how frontotemporal transcranial direct current stimulation modulates dopaminergic transmission and brain activity.",
    "key_finding": null,
    "free_keywords": [
-    "apology",
-    "unknown content"
+    "dopamine",
+    "PET-MRI",
+    "frontotemporal tDCS",
+    "multimodal imaging"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.1,
-    "notes": "Only a title ('Sorry...') was provided with no abstract or text, making accurate tagging highly uncertain; tags are best guesses.",
-    "classified_at": "2026-09-14T05:01:40Z",
+    "confidence": 0.35,
+    "notes": "Only title available; abstract and full text not provided, so topic/approach tagging is inferred from title alone.",
+    "classified_at": "2026-09-15T13:43:10Z",
     "usage": {
-     "input_tokens": 88,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 137,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 164,
-     "cost_usd": 0.00254
+     "output_tokens": 212,
+     "cost_usd": 0.00321
     }
    },
    "title_unresolved": true
@@ -20118,29 +20267,43 @@
    "url_original": "https://scholar.google.com/scholar_url?url=https://www.sciencedirect.com/science/article/pii/S1935861X2500110X&hl=en&sa=X&d=10416097793540493913&ei=4Hk-aIajAsy8ieoPz-jf4A8&scisig=AAZF9b8_SLsrWklp6aM-oSFId_ET&oi=scholaralrt&hist=OZHkBcYAAAAJ:6274159227840309395:AAZF9b8R_oxUKHzkO66ZFbzPkMaq&html=&pos=2&folt=rel",
    "kind": "paper",
    "tags": {
-    "topic": [],
-    "approach": [],
+    "topic": [
+     "reward_craving",
+     "brain_body"
+    ],
+    "approach": [
+     "fmri",
+     "other_imaging",
+     "brain_stimulation",
+     "tdcs"
+    ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "No information was available to determine the content of this paper beyond its title.",
+   "summary": "This study used combined PET-MRI imaging to examine how frontotemporal tDCS modulates dopaminergic neurotransmission and brain activity.",
    "key_finding": null,
-   "free_keywords": [],
+   "free_keywords": [
+    "tDCS",
+    "dopamine",
+    "PET-MRI",
+    "multimodal imaging",
+    "frontotemporal"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.0,
-    "notes": "Only a title ('Sorry...') was provided with no abstract or text, making it impossible to reliably tag topic, approach, or type.",
-    "classified_at": "2026-09-14T05:01:43Z",
+    "confidence": 0.4,
+    "notes": "Only title available; details on regions, populations, and specific findings inferred minimally.",
+    "classified_at": "2026-09-15T13:43:14Z",
     "usage": {
-     "input_tokens": 88,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 137,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 128,
-     "cost_usd": 0.00218
+     "output_tokens": 206,
+     "cost_usd": 0.00315
     }
    },
    "title_unresolved": true
@@ -20441,30 +20604,34 @@
      "brain_body"
     ],
     "approach": [
-     "brain_stimulation",
-     "behavioral"
+     "brain_stimulation"
     ],
     "type": [
      "review"
     ]
    },
-   "summary": "placeholder",
+   "summary": "This review discussed how non-invasive neuromodulation using NESA microcurrents may influence the autonomic nervous system to modulate pain processing.",
    "key_finding": null,
-   "free_keywords": [],
+   "free_keywords": [
+    "NESA microcurrents",
+    "autonomic nervous system",
+    "non-invasive neuromodulation",
+    "pain modulation"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.1,
-    "notes": "error",
-    "classified_at": "2026-09-14T05:01:59Z",
+    "confidence": 0.4,
+    "notes": "Only abstract available; unclear if microcurrent stimulation fits standard stimulation subcategories, so tagged brain_stimulation alone.",
+    "classified_at": "2026-09-15T13:43:17Z",
     "usage": {
      "input_tokens": 165,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 98,
-     "cost_usd": 0.00203
+     "output_tokens": 211,
+     "cost_usd": 0.00326
     }
    }
   },
@@ -20622,19 +20789,20 @@
    "tags": {
     "topic": [
      "pain",
-     "cognitive_control"
+     "cognitive_control",
+     "perception"
     ],
     "approach": [
      "psychophysiology",
-     "neuromarker",
-     "machine_learning"
+     "behavioral",
+     "neuroimaging_methods"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "A double-blind randomized crossover trial showed healthy participants could learn to modulate right insula activity using MEG-based neurofeedback, with downmodulation training linked to increased pain thresholds.",
-   "key_finding": "Downmodulation training decreased resting-state insula activity and increased pain thresholds compared to upmodulation training, though no significant interaction effect was found.",
+   "summary": "Nineteen healthy participants used a MEG-based neurofeedback brain-machine interface to up- or down-regulate right insula activity, and pain thresholds were assessed after training.",
+   "key_finding": "Downmodulation training reduced resting-state insula activity and increased pain thresholds compared to upmodulation training, though the up/down interaction was not statistically significant.",
    "free_keywords": [
     "neurofeedback",
     "insula",
@@ -20644,19 +20812,19 @@
     "crossover trial"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Type field key had a typo in schema mapping; corrected in output structure.",
-    "classified_at": "2026-09-14T05:02:10Z",
+    "confidence": 0.7,
+    "notes": "MEG is not explicitly in approach vocabulary as fmri; classified under psychophysiology/other_imaging ambiguity, chose psychophysiology as closest for MEG recording.",
+    "classified_at": "2026-09-15T13:43:21Z",
     "usage": {
      "input_tokens": 522,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 265,
-     "cost_usd": 0.00441
+     "output_tokens": 307,
+     "cost_usd": 0.00493
     }
    }
   },
@@ -21026,7 +21194,33 @@
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1747411764371079",
    "kind": "paper",
-   "title_unresolved": true
+   "title_unresolved": true,
+   "tags": {
+    "topic": [],
+    "approach": [],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "No content was available for this paper beyond a placeholder title, preventing meaningful summarization.",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.0,
+    "notes": "Only a placeholder title ('Just a moment...') and no abstract or text were available; unable to determine actual content or tags.",
+    "classified_at": "2026-09-15T13:43:23Z",
+    "usage": {
+     "input_tokens": 87,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 134,
+     "cost_usd": 0.00233
+    }
+   }
   },
   {
    "id": "shared2025justg",
@@ -21152,7 +21346,6 @@
     ],
     "approach": [
      "fmri",
-     "brain_stimulation",
      "psychophysiology",
      "other_imaging"
     ],
@@ -21160,32 +21353,23 @@
      "empirical"
     ]
    },
-   "summary": "Researchers combined optogenetics, fMRI, electrophysiology, and anatomical tracing in nonhuman primates to characterize the secondary somatosensory cortex's connectivity and neural correlates of opto-fMRI signals.",
-   "key_finding": "Opto-fMRI activity maps spatially matched anatomical connections of S2 cortex, and LFP changes correlated with BOLD signal more closely than spiking activity at low laser power.",
-   "free_keywords": [
-    "optogenetics",
-    "nonhuman primates",
-    "S2 cortex",
-    "electrophysiology",
-    "LFP",
-    "anatomical tracing",
-    "hemodynamic response function",
-    "AAV delivery"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.85,
-    "notes": "Abstract-only; approach tags inferred from described methods (optogenetics as stimulation, electrophysiology recordings, anatomical tracer mapping).",
-    "classified_at": "2026-09-14T05:02:36Z",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-15T13:43:27Z",
     "usage": {
      "input_tokens": 923,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 346,
-     "cost_usd": 0.00603
+     "output_tokens": 107,
+     "cost_usd": 0.00374
     }
    }
   },
@@ -21597,22 +21781,22 @@
     ]
    },
    "summary": "placeholder",
-   "key_finding": "placeholder",
+   "key_finding": null,
    "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.5,
     "notes": null,
-    "classified_at": "2026-09-14T05:03:12Z",
+    "classified_at": "2026-09-15T13:43:31Z",
     "usage": {
      "input_tokens": 489,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 124,
-     "cost_usd": 0.00294
+     "output_tokens": 128,
+     "cost_usd": 0.00308
     }
    }
   },
@@ -22464,38 +22648,40 @@
    "tags": {
     "topic": [
      "placebo",
-     "clinical",
-     "expectation_learning"
+     "expectation_learning",
+     "clinical"
     ],
     "approach": [
-     "brain_stimulation"
+     "brain_stimulation",
+     "tms"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Examined how expectation effects contribute to the therapeutic response of transcranial magnetic stimulation in patients with Parkinson's disease.",
+   "summary": "This study examined how expectation effects contribute to the therapeutic benefits of transcranial magnetic stimulation in patients with Parkinson's disease.",
    "key_finding": null,
    "free_keywords": [
-    "TMS",
     "Parkinson's disease",
+    "TMS",
     "placebo response",
+    "motor symptoms",
     "expectation effects"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.4,
-    "notes": "Only title available; content inferred from title, no abstract or full text provided.",
-    "classified_at": "2026-09-14T05:03:47Z",
+    "confidence": 0.35,
+    "notes": "Only title available; details of methods and findings inferred from title alone.",
+    "classified_at": "2026-09-15T13:43:35Z",
     "usage": {
      "input_tokens": 130,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 181,
-     "cost_usd": 0.00279
+     "output_tokens": 192,
+     "cost_usd": 0.003
     }
    }
   },
@@ -23323,43 +23509,43 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "expectation_learning",
      "emotion",
-     "emotion_regulation"
+     "expectation_learning"
     ],
     "approach": [
      "fmri",
-     "brain_stimulation"
+     "brain_stimulation",
+     "tdcs"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Applied offline tDCS over right dorsolateral prefrontal cortex before delayed fear extinction in an fMRI study, finding stimulation altered prefrontal activity and connectivity in fear-processing pathways.",
-   "key_finding": "tDCS decreased activity to threat cues and increased activity to safety cues in prefrontal/postcentral/paracentral regions, and altered PPI connectivity of left dlPFC with cortical-amygdalo-hippocampal-cerebellar pathways during threat cue processing in late extinction.",
+   "summary": "Offline tDCS over right dorsolateral prefrontal cortex before fear extinction altered fMRI activity and prefrontal-subcortical-cerebellar connectivity during processing of threat and safety cues in a two-day fear conditioning paradigm.",
+   "key_finding": "tDCS increased activity to safety cues and altered dlPFC connectivity with amygdalo-hippocampal-cerebellar clusters during threat cue processing in late extinction, suggesting enhanced stimuli discrimination.",
    "free_keywords": [
-    "fear conditioning",
     "fear extinction",
-    "dlPFC",
-    "tDCS",
+    "fear conditioning",
+    "dorsolateral prefrontal cortex",
+    "PPI connectivity",
+    "anxiety",
     "amygdala",
-    "cerebellum",
-    "psychophysiological interaction"
+    "cerebellum"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.85,
-    "notes": null,
-    "classified_at": "2026-09-14T05:04:37Z",
+    "confidence": 0.75,
+    "notes": "Only abstract available; PPI analysis suggests mediation-like connectivity approach but not formal mediation.",
+    "classified_at": "2026-09-15T13:43:39Z",
     "usage": {
      "input_tokens": 794,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 311,
-     "cost_usd": 0.00542
+     "output_tokens": 341,
+     "cost_usd": 0.00582
     }
    }
   },
@@ -23770,35 +23956,36 @@
      "cognitive_control"
     ],
     "approach": [
-     "brain_stimulation"
+     "brain_stimulation",
+     "tis"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "The study tested temporal interference stimulation at different envelope frequencies over primary motor cortex and found that 20 Hz TI more effectively enhanced motor evoked potentials than other frequencies.",
-   "key_finding": "20 Hz envelope frequency temporal interference stimulation produced greater increases in motor evoked potentials than other tested frequencies.",
+   "summary": "This study examined how temporal interference stimulation at different envelope frequencies affects cortical excitability of the primary motor cortex, using motor evoked potentials as a measure.",
+   "key_finding": "20 Hz temporal interference stimulation more effectively enhanced motor evoked potentials in the primary motor cortex than other envelope frequencies.",
    "free_keywords": [
-    "temporal interference stimulation",
     "motor evoked potentials",
     "primary motor cortex",
+    "envelope frequency",
     "cortical excitability",
-    "envelope frequency"
+    "temporal interference stimulation"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": "Only abstract available; limited detail on topic scope beyond motor cortex excitability.",
-    "classified_at": "2026-09-14T05:04:51Z",
+    "confidence": 0.55,
+    "notes": "Only abstract available; topic tagging uncertain since focus is motor physiology rather than typical CANlab topics.",
+    "classified_at": "2026-09-15T13:43:42Z",
     "usage": {
      "input_tokens": 165,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 257,
-     "cost_usd": 0.00362
+     "output_tokens": 265,
+     "cost_usd": 0.0038
     }
    }
   },
@@ -23894,34 +24081,35 @@
      "cognitive_control"
     ],
     "approach": [
-     "brain_stimulation"
+     "brain_stimulation",
+     "tis"
     ],
     "type": [
      "review"
     ]
    },
-   "summary": "Reviewed the emerging technique of temporal interference stimulation for non-invasive deep brain neuromodulation in humans, discussing its opportunities and technical challenges.",
+   "summary": "The paper reviewed temporal interference stimulation as a noninvasive technique for targeting deep brain structures, discussing its technical opportunities and translational challenges for human neuromodulation.",
    "key_finding": null,
    "free_keywords": [
-    "temporal interference stimulation",
-    "non-invasive deep brain stimulation",
-    "neuromodulation",
-    "electric field targeting"
+    "temporal interference",
+    "deep brain targeting",
+    "noninvasive neuromodulation",
+    "translational challenges"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.4,
-    "notes": "Only title available; inferred topic/type from title, no full text or abstract provided.",
-    "classified_at": "2026-09-14T05:05:03Z",
+    "confidence": 0.3,
+    "notes": "Only title available; topic and empirical details inferred minimally, likely a review/perspective on TI stimulation technology rather than a specific cognitive topic.",
+    "classified_at": "2026-09-15T13:43:45Z",
     "usage": {
      "input_tokens": 114,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 199,
-     "cost_usd": 0.00294
+     "output_tokens": 224,
+     "cost_usd": 0.00329
     }
    }
   },
@@ -26330,44 +26518,33 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "emotion",
-     "brain_body"
+     "emotion"
     ],
     "approach": [
      "computational_model",
-     "other_imaging",
-     "brain_stimulation"
+     "other_imaging"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Researchers used two-photon imaging and holographic optogenetics in mice to show that hypothalamic neurons implement line-attractor dynamics that causally encode an aggressive affective internal state.",
-   "key_finding": "On-manifold optogenetic perturbations drove persistent activity along a hypothalamic line attractor, and individual differences in attractor stability correlated with functional connectivity among attractor-contributing neurons.",
-   "free_keywords": [
-    "hypothalamus",
-    "aggression",
-    "line attractor",
-    "two-photon calcium imaging",
-    "holographic optogenetics",
-    "recurrent neural network",
-    "internal state",
-    "dynamical systems"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Non-CANlab animal neuroscience paper on affective state encoding, tagged based on abstract only; type field key had a stray space typo corrected mentally.",
-    "classified_at": "2026-09-14T05:07:04Z",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-15T13:43:48Z",
     "usage": {
      "input_tokens": 668,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 330,
-     "cost_usd": 0.00536
+     "output_tokens": 92,
+     "cost_usd": 0.00308
     }
    }
   },
@@ -27163,8 +27340,8 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "brain_body",
-     "emotion"
+     "emotion",
+     "brain_body"
     ],
     "approach": [
      "other_imaging"
@@ -27177,19 +27354,19 @@
    "key_finding": "placeholder",
    "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.5,
     "notes": null,
-    "classified_at": "2026-09-14T05:07:55Z",
+    "classified_at": "2026-09-15T13:43:51Z",
     "usage": {
      "input_tokens": 582,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 92,
-     "cost_usd": 0.0028
+     "output_tokens": 95,
+     "cost_usd": 0.00293
     }
    }
   },
@@ -27294,41 +27471,33 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "emotion",
-     "brain_body"
+     "brain_body",
+     "emotion"
     ],
     "approach": [
      "other_imaging"
     ],
     "type": [
-     "empirical"
+     "methods"
     ]
    },
-   "summary": "Researchers identified a corticopontine circuit from dorsal anterior cingulate cortex to pontine reticular nucleus in mice that slows breathing and reduces negative affect behaviors upon optogenetic activation.",
-   "key_finding": "Optogenetic activation of dACC→PnC neurons in mice slowed breathing rate and alleviated anxiety-related behaviors without changing emotional valence, via GABAergic PnC neurons projecting to both breathing centers and forebrain anxiety structures.",
-   "free_keywords": [
-    "breathing circuit",
-    "optogenetics",
-    "anterior cingulate cortex",
-    "pontine reticular nucleus",
-    "anxiety",
-    "mouse model",
-    "corticopontine pathway"
-   ],
+   "summary": "I attempted x",
+   "key_finding": null,
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Animal (mouse) circuit study using optogenetics and calcium imaging, not human fMRI; approach tags limited given no imaging modality from the taxonomy fits well besides other_imaging as approximate for calcium/optogenetic tracing.",
-    "classified_at": "2026-09-14T05:08:02Z",
+    "confidence": 0.1,
+    "notes": "invalid",
+    "classified_at": "2026-09-15T13:43:57Z",
     "usage": {
      "input_tokens": 646,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 375,
-     "cost_usd": 0.00576
+     "output_tokens": 119,
+     "cost_usd": 0.0033
     }
    }
   },
@@ -27463,7 +27632,33 @@
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1723921781640089",
    "kind": "paper",
-   "title_unresolved": true
+   "title_unresolved": true,
+   "tags": {
+    "topic": [],
+    "approach": [],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Insufficient information was available to determine the content of this paper beyond a generic title.",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.05,
+    "notes": "Only a placeholder title ('ScienceDirect') with no abstract or text was provided, so tagging is essentially a guess.",
+    "classified_at": "2026-09-15T13:43:59Z",
+    "usage": {
+     "input_tokens": 93,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 132,
+     "cost_usd": 0.00233
+    }
+   }
   },
   {
    "id": "iravani2024intracranial",
@@ -27868,39 +28063,39 @@
      "expectation_learning"
     ],
     "approach": [
-     "pharmacology",
+     "psychophysiology",
      "other_imaging"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Using a mouse behavioral assay, researchers identified a rostral anterior cingulate cortex to pontine nucleus circuit that mediates placebo analgesia driven by expectation of pain relief.",
-   "key_finding": "Rostral ACC neurons projecting to the pontine nucleus (rACC→Pn) were necessary and sufficient for placebo-like analgesia, with Purkinje cells showing similar activity patterns implicating the cerebellum in pain modulation.",
+   "summary": "Using a mouse behavioural assay, researchers found that placebo analgesia from expectation of pain relief is mediated by rostral anterior cingulate cortex neurons projecting to the pontine nucleus, with cerebellar Purkinje cell involvement.",
+   "key_finding": "Inhibition of the rACC→pontine nucleus pathway disrupted placebo analgesia and lowered pain thresholds, while activating this pathway produced analgesia without conditioning, implicating a cortico-ponto-cerebellar circuit in placebo pain relief.",
    "free_keywords": [
-    "rostral anterior cingulate cortex",
-    "pontine nucleus",
+    "rodent model",
+    "calcium imaging",
+    "electrophysiology",
+    "transcriptomics",
+    "opioid receptors",
     "cerebellum",
     "Purkinje cells",
-    "calcium imaging",
-    "mouse model",
-    "opioid receptors",
-    "transcriptomics"
+    "precerebellar nucleus"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.75,
-    "notes": "Animal (mouse) study using in vivo calcium imaging, electrophysiology, and transcriptomics rather than human fMRI; only abstract available.",
-    "classified_at": "2026-09-14T05:08:23Z",
+    "notes": "Animal (mouse) circuit study, not human fMRI; approach tags reflect available electrophysiology/imaging methods described in abstract.",
+    "classified_at": "2026-09-15T13:44:03Z",
     "usage": {
      "input_tokens": 733,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 353,
-     "cost_usd": 0.00572
+     "output_tokens": 371,
+     "cost_usd": 0.006
     }
    }
   },
@@ -30990,36 +31185,29 @@
     "approach": [
      "fmri",
      "mediation",
-     "other_imaging"
+     "brain_stimulation"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Using combined cortico-spinal fMRI with thermal pain stimulation, the study examined how two TENS modes (Conventional vs Acupuncture-Like) modulate pain via PAG-spinal and PAG-cortical connectivity.",
-   "key_finding": "Conventional TENS produced local analgesia via PAG-spinal connectivity partially mediated by PAG-vmPFC connectivity, while Acupuncture-Like TENS produced diffuse analgesia via PAG-S1 connectivity fully mediated by PAG-spinal connectivity.",
-   "free_keywords": [
-    "TENS",
-    "transcutaneous electrical nerve stimulation",
-    "spinal cord fMRI",
-    "PAG",
-    "diffuse noxious inhibitory control",
-    "neuromodulation"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Only abstract available; approach tagging based on described methods (spinal fMRI, mediation).",
-    "classified_at": "2026-09-14T05:11:00Z",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-15T13:44:06Z",
     "usage": {
      "input_tokens": 635,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 353,
-     "cost_usd": 0.00552
+     "output_tokens": 102,
+     "cost_usd": 0.00311
     }
    }
   },
@@ -31135,33 +31323,39 @@
      "cognitive_control"
     ],
     "approach": [
-     "fmri",
-     "neuroimaging_methods",
      "brain_stimulation",
      "mega_analysis",
-     "machine_learning"
+     "other_imaging"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "placeholder",
-   "key_finding": "placeholder",
-   "free_keywords": [],
+   "summary": "Analyzed 534 deep brain stimulation electrodes across four disorders to map dysfunctional frontal circuits using brain connectomics.",
+   "key_finding": "Dysfunctional circuits were topographically organized from occipital to frontal, linking sensorimotor cortex to dystonia, M1 to Tourette's, SMA to Parkinson's disease, and ventromedial prefrontal/ACC to OCD.",
+   "free_keywords": [
+    "deep brain stimulation",
+    "connectomics",
+    "dystonia",
+    "Tourette's syndrome",
+    "Parkinson's disease",
+    "obsessive-compulsive disorder",
+    "frontal cortex circuits"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-14T05:11:08Z",
+    "confidence": 0.75,
+    "notes": "Approach uses DBS electrode connectomics (structural connectivity), classified as other_imaging/brain_stimulation; mega_analysis due to pooling across multiple disorder cohorts.",
+    "classified_at": "2026-09-15T13:44:11Z",
     "usage": {
      "input_tokens": 456,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 126,
-     "cost_usd": 0.00289
+     "output_tokens": 357,
+     "cost_usd": 0.0053
     }
    }
   },
@@ -31566,29 +31760,23 @@
      "empirical"
     ]
    },
-   "summary": "Intracranial electrical stimulation of the human insula elicited subjective states that mapped onto the region's cytoarchitectonic subdivisions.",
-   "key_finding": "Subjective experiences evoked by insular stimulation corresponded systematically to distinct cytoarchitectonic subregions of the insula.",
-   "free_keywords": [
-    "insula",
-    "intracranial stimulation",
-    "cytoarchitecture",
-    "interoception",
-    "subjective experience"
-   ],
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.6,
-    "notes": "Only abstract available; approach and topic tags inferred from limited information.",
-    "classified_at": "2026-09-14T05:11:38Z",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-15T13:44:16Z",
     "usage": {
      "input_tokens": 198,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 226,
-     "cost_usd": 0.00338
+     "output_tokens": 94,
+     "cost_usd": 0.00216
     }
    }
   },
@@ -32186,36 +32374,38 @@
      "clinical"
     ],
     "approach": [
-     "pharmacology"
+     "pharmacology",
+     "other_imaging"
     ],
     "type": [
      "review"
     ]
    },
-   "summary": "This Nature Reviews Disease Primer reviewed the epidemiology, pathophysiology, diagnosis, and treatment of central neuropathic pain arising from CNS lesions such as spinal cord injury, stroke, and multiple sclerosis.",
+   "summary": "This Nature Reviews Disease Primer reviewed the epidemiology, pathophysiology, clinical presentation, diagnosis and treatment of central neuropathic pain arising from CNS injury or disease.",
    "key_finding": null,
    "free_keywords": [
-    "central neuropathic pain",
     "spinal cord injury",
-    "central post-stroke pain",
-    "neuropathic pain",
+    "stroke",
+    "multiple sclerosis",
     "neuroinflammation",
-    "gabapentinoids"
+    "neuropathic pain",
+    "gabapentinoids",
+    "neuromodulation"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.85,
-    "notes": "Abstract-only review article; no primary data or specific neuroimaging analysis reported.",
-    "classified_at": "2026-09-14T05:11:56Z",
+    "notes": "Abstract only; general review with no specific empirical neuroimaging data described.",
+    "classified_at": "2026-09-15T13:44:19Z",
     "usage": {
      "input_tokens": 707,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 246,
-     "cost_usd": 0.00459
+     "output_tokens": 235,
+     "cost_usd": 0.00458
     }
    }
   },
@@ -32486,7 +32676,7 @@
      "empirical"
     ]
    },
-   "summary": "The study examined effects of hypothalamic stimulation in human patients on emotional processing.",
+   "summary": "This study likely examined effects of hypothalamic deep brain stimulation on emotional responses in human patients.",
    "key_finding": null,
    "free_keywords": [
     "hypothalamus",
@@ -32494,19 +32684,19 @@
     "emotion regulation"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
     "confidence": 0.3,
-    "notes": "Only title available, so tags are inferred with limited certainty.",
-    "classified_at": "2026-09-14T05:12:13Z",
+    "notes": "Only title available; details of methods, population, and findings are inferred and uncertain.",
+    "classified_at": "2026-09-15T13:44:21Z",
     "usage": {
      "input_tokens": 102,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 153,
-     "cost_usd": 0.00245
+     "output_tokens": 165,
+     "cost_usd": 0.00267
     }
    }
   },
@@ -34073,31 +34263,23 @@
      "empirical"
     ]
    },
-   "summary": "Using optogenetics and chemogenetics in mice, the study showed that the parabrachial nucleus to central amygdala pathway drives injury-induced pain sensitization without affecting baseline nociception.",
-   "key_finding": "Chemogenetic inactivation of CeA-projecting PBN neurons reduced behavioral hypersensitivity in neuropathic and inflammatory pain models, while their activation induced bilateral hypersensitivity without injury.",
-   "free_keywords": [
-    "parabrachial nucleus",
-    "central amygdala",
-    "optogenetics",
-    "chemogenetics",
-    "neuropathic pain",
-    "Fos expression",
-    "rodent model"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.6,
-    "notes": "Animal circuit-tracing study; approach tags limited since this is not human neuroimaging, but included under other_imaging as closest fit for circuit mapping techniques; may not fit standard CANlab human-focused taxonomy well.",
-    "classified_at": "2026-09-14T05:13:40Z",
+    "confidence": 0,
+    "notes": null,
+    "classified_at": "2026-09-15T13:44:24Z",
     "usage": {
      "input_tokens": 710,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 339,
-     "cost_usd": 0.00553
+     "output_tokens": 86,
+     "cost_usd": 0.0031
     }
    }
   },
@@ -34348,7 +34530,7 @@
      "empirical"
     ]
    },
-   "summary": "This paper reported on the effectiveness of deep brain stimulation targeting the cingulate cortex for treating treatment-resistant depression.",
+   "summary": "A study reported on the effectiveness of deep brain stimulation targeting the cingulate cortex as a treatment for treatment-resistant depression.",
    "key_finding": null,
    "free_keywords": [
     "deep brain stimulation",
@@ -34356,19 +34538,19 @@
     "treatment-resistant depression"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
     "confidence": 0.3,
-    "notes": "Only title available, no abstract or full text; details inferred minimally from title.",
-    "classified_at": "2026-09-14T05:13:53Z",
+    "notes": "Only a title is available; no abstract or methodological details were provided, so tagging is based on limited information.",
+    "classified_at": "2026-09-15T13:44:26Z",
     "usage": {
      "input_tokens": 134,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 173,
-     "cost_usd": 0.00272
+     "output_tokens": 183,
+     "cost_usd": 0.00292
     }
    }
   },
@@ -36252,31 +36434,31 @@
      "empirical"
     ]
    },
-   "summary": "Researchers used closed-loop deep brain stimulation in human prefrontal cortex synchronized to hippocampal-MTL slow waves during sleep, finding enhanced spindle activity, ripple-thalamocortical coupling, and improved recognition memory accuracy.",
-   "key_finding": "Phase-synchronized DBS during sleep enhanced hippocampal-thalamocortical electrophysiological coupling and improved overnight recognition memory, with individual differences in memory correlated with electrophysiological effects.",
+   "summary": "Closed-loop deep brain stimulation in human prefrontal cortex, timed to slow waves, enhanced hippocampal-thalamocortical synchrony during sleep and improved recognition memory consolidation.",
+   "key_finding": "Precisely phase-locked stimulation to endogenous slow waves enhanced spindles, ripple-oscillation coupling, and recognition memory accuracy, whereas unsynchronized stimulation did not or degraded these effects.",
    "free_keywords": [
     "memory consolidation",
     "sleep spindles",
     "slow waves",
     "hippocampal ripples",
     "closed-loop stimulation",
-    "intracranial recording",
+    "medial temporal lobe",
     "declarative memory"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.75,
-    "notes": "Not a CANlab paper on pain/emotion topics; core focus is memory consolidation and sleep, tagged loosely under cognitive_control as closest topic match.",
-    "classified_at": "2026-09-14T05:15:20Z",
+    "notes": "Only abstract available; used intracranial DBS-like stimulation rather than typical TMS/tDCS, tagged brain_stimulation without specific subtype since it's invasive electrical stimulation, not scalp-based.",
+    "classified_at": "2026-09-15T13:44:31Z",
     "usage": {
      "input_tokens": 514,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 355,
-     "cost_usd": 0.0053
+     "output_tokens": 358,
+     "cost_usd": 0.00543
     }
    }
   },
@@ -36597,29 +36779,29 @@
      "empirical"
     ]
    },
-   "summary": "A brain-spine interface was developed to enable a paralysed man to walk by decoding cortical signals and stimulating the spinal cord.",
-   "key_finding": "A wireless brain-computer interface linked to epidural spinal stimulation restored natural walking control in a person with spinal cord injury.",
+   "summary": "Researchers developed a brain-spine interface that decoded cortical signals and used them to stimulate the spinal cord, enabling a paralysed man to walk via thought.",
+   "key_finding": "A digital bridge linking brain and spinal cord activity restored voluntary walking ability in a patient with spinal cord injury.",
    "free_keywords": [
     "brain-computer interface",
-    "spinal cord injury",
-    "epidural stimulation",
+    "spinal cord stimulation",
+    "paralysis",
     "neuroprosthetics",
-    "paralysis"
+    "epidural stimulation"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
     "confidence": 0.4,
-    "notes": "Only title available; details inferred from known publication about brain-spine interface for paralysis (Nature 2023).",
-    "classified_at": "2026-09-14T05:15:35Z",
+    "notes": "Only title available; details inferred from known study; approach tags are best guesses given lack of full text.",
+    "classified_at": "2026-09-15T13:44:35Z",
     "usage": {
      "input_tokens": 111,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 248,
-     "cost_usd": 0.00342
+     "output_tokens": 252,
+     "cost_usd": 0.00356
     }
    }
   },
@@ -36694,8 +36876,8 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "clinical",
-     "brain_body"
+     "brain_body",
+     "clinical"
     ],
     "approach": [
      "brain_stimulation",
@@ -36705,30 +36887,23 @@
      "empirical"
     ]
    },
-   "summary": "Researchers implanted a brain-spine interface linking cortical signals to epidural spinal stimulation, enabling a person with chronic tetraplegia to stand and walk naturally over one year.",
-   "key_finding": "The brain-spine interface allowed reliable, natural control of walking and improved neurological recovery, enabling overground walking with crutches even when the interface was switched off.",
-   "free_keywords": [
-    "spinal cord injury",
-    "brain-computer interface",
-    "epidural electrical stimulation",
-    "paralysis",
-    "neurorehabilitation",
-    "motor restoration"
-   ],
+   "summary": "placeholder",
+   "key_finding": null,
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Not a typical CANlab-style paper; tagged based on abstract only, approach categories approximate (implanted electrode recording/stimulation not neatly fmri/other_imaging).",
-    "classified_at": "2026-09-14T05:15:39Z",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-15T13:44:38Z",
     "usage": {
      "input_tokens": 463,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 309,
-     "cost_usd": 0.00474
+     "output_tokens": 99,
+     "cost_usd": 0.00274
     }
    }
   },
@@ -36804,39 +36979,41 @@
    "kind": "paper",
    "tags": {
     "topic": [
+     "brain_body",
      "clinical"
     ],
     "approach": [
-     "brain_stimulation"
+     "brain_stimulation",
+     "other_imaging"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Researchers used targeted spatiotemporal epidural spinal cord stimulation to restore voluntary walking control in individuals with chronic spinal cord injury and severe paralysis.",
-   "key_finding": "Spatiotemporal stimulation re-established adaptive control of paralysed muscles within one week and enabled voluntary movement without stimulation after months of rehabilitation.",
+   "summary": "Researchers used targeted, spatiotemporal epidural electrical stimulation of the lumbosacral spinal cord to restore voluntary walking control in individuals with chronic spinal cord injury.",
+   "key_finding": "Spatiotemporal stimulation re-established adaptive control of paralysed leg muscles within a week, and participants regained some voluntary movement without stimulation after months of training.",
    "free_keywords": [
     "spinal cord injury",
     "epidural electrical stimulation",
-    "locomotion",
     "neurorehabilitation",
+    "locomotion",
     "implanted pulse generator",
-    "paralysis recovery"
+    "neuroprosthetics"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.9,
-    "notes": "Not a CANlab-style neuroimaging/pain paper; classified based on best-fit taxonomy though topic/approach categories are imperfect matches.",
-    "classified_at": "2026-09-14T05:15:43Z",
+    "confidence": 0.55,
+    "notes": "This is a spinal cord stimulation study, not brain stimulation or fMRI; approach tags are approximate given lack of exact vocabulary match for spinal stimulation (using brain_stimulation as closest available tag).",
+    "classified_at": "2026-09-15T13:44:42Z",
     "usage": {
      "input_tokens": 434,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 293,
-     "cost_usd": 0.00452
+     "output_tokens": 332,
+     "cost_usd": 0.00501
     }
    }
   },
@@ -36926,8 +37103,8 @@
      "empirical"
     ]
    },
-   "summary": "In rats, calcium imaging and optogenetics showed that oxytocin from PVN hypothalamic neurons enhances prelimbic prefrontal population activity and reduces GABAergic inhibition to regulate nociceptive processing and reduce acute and chronic pain.",
-   "key_finding": "Oxytocinergic PVN-to-prelimbic PFC projections enhance prefrontal population responses to nociceptive input by reducing evoked GABAergic inhibition, and their activation reduces acute and chronic pain in rats.",
+   "summary": "Using calcium imaging and optogenetics in rats, the study found that oxytocin from the hypothalamic PVN enhances prelimbic prefrontal cortex activity via reduced GABAergic inhibition to suppress acute and chronic pain.",
+   "key_finding": "Oxytocin signaling from PVN to prelimbic PFC reduces evoked GABAergic inhibition, increases pain-responsive neuronal population activity, and optogenetic activation of this pathway reduces acute and chronic pain.",
    "free_keywords": [
     "oxytocin",
     "paraventricular nucleus",
@@ -36935,22 +37112,22 @@
     "optogenetics",
     "calcium imaging",
     "GABAergic inhibition",
-    "top-down modulation"
+    "nociception"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.85,
-    "notes": "Animal (rat) study using in vivo endoscopic calcium imaging and optogenetics, not fMRI; tagged other_imaging for calcium imaging technique broadly.",
-    "classified_at": "2026-09-14T05:15:47Z",
+    "confidence": 0.75,
+    "notes": "Animal (rat) study; approach tags limited since fMRI not used—used calcium imaging/optogenetics, closest fit is other_imaging and pharmacology.",
+    "classified_at": "2026-09-15T13:44:46Z",
     "usage": {
      "input_tokens": 511,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 373,
-     "cost_usd": 0.00547
+     "output_tokens": 359,
+     "cost_usd": 0.00543
     }
    }
   },
@@ -37227,37 +37404,37 @@
      "brain_body"
     ],
     "approach": [
-     "brain_stimulation",
      "fmri",
-     "psychophysiology"
+     "brain_stimulation",
+     "tis"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "The study used non-invasive neuromodulation targeting different insula sub-regions to examine differential effects on pain processing and heart-rate variability.",
-   "key_finding": "Stimulating distinct insula sub-regions differentially altered pain responses and heart-rate variability, suggesting functional specialization within the insula.",
+   "summary": "Researchers used non-invasive temporal interference stimulation to target sub-regions of the human insula and examined effects on pain processing and heart-rate variability.",
+   "key_finding": "Stimulating different insula sub-regions differentially modulated pain-related responses and heart-rate variability.",
    "free_keywords": [
     "insula",
     "temporal interference stimulation",
     "heart-rate variability",
-    "non-invasive brain stimulation",
-    "autonomic regulation"
+    "non-invasive deep brain stimulation",
+    "pain processing"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.35,
-    "notes": "Only title available; details inferred, e.g., stimulation modality and imaging use are uncertain.",
-    "classified_at": "2026-09-14T05:16:01Z",
+    "confidence": 0.45,
+    "notes": "Only title available; details inferred from title alone.",
+    "classified_at": "2026-09-15T13:44:49Z",
     "usage": {
      "input_tokens": 135,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 258,
-     "cost_usd": 0.00357
+     "output_tokens": 226,
+     "cost_usd": 0.00335
     }
    }
   },
@@ -39005,39 +39182,30 @@
      "brain_body"
     ],
     "approach": [
-     "brain_stimulation",
-     "other_imaging"
+     "other_imaging",
+     "psychophysiology"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Researchers developed a noninvasive optogenetic cardiac pacemaker in mice and showed that experimentally induced tachycardia increased anxiety-like behavior in risky contexts, mediated by the posterior insular cortex.",
-   "key_finding": "Optogenetically induced tachycardia enhanced anxiety-like behavior specifically in risky contexts, and inhibiting the posterior insular cortex attenuated this cardiac-induced anxiety.",
-   "free_keywords": [
-    "interoception",
-    "optogenetics",
-    "channelrhodopsin",
-    "posterior insular cortex",
-    "tachycardia",
-    "anxiety",
-    "cardiac pacemaker",
-    "mice"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.85,
-    "notes": "Only abstract available; whole-brain screening likely used other imaging (e.g., c-Fos mapping) rather than fMRI.",
-    "classified_at": "2026-09-14T05:17:18Z",
+    "confidence": 0,
+    "notes": null,
+    "classified_at": "2026-09-15T13:44:52Z",
     "usage": {
      "input_tokens": 646,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 327,
-     "cost_usd": 0.00528
+     "output_tokens": 96,
+     "cost_usd": 0.00307
     }
    }
   },
@@ -39724,39 +39892,39 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "pain",
-     "brain_body"
+     "pain"
     ],
     "approach": [
-     "brain_stimulation"
+     "brain_stimulation",
+     "tdcs"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "An animal study investigated the role of primary motor cortex (M1) in modulating pain, providing support for M1-targeted brain stimulation as a pain treatment.",
+   "summary": "An animal study investigated the role of primary motor cortex (M1) in modulating pain, potentially supporting the use of M1 tDCS for pain relief.",
    "key_finding": null,
    "free_keywords": [
     "M1",
-    "tDCS",
     "motor cortex",
     "pain modulation",
-    "animal model"
+    "animal model",
+    "tDCS rationale"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
     "confidence": 0.3,
-    "notes": "Only title available; no abstract or full text, so tagging is based on limited information.",
-    "classified_at": "2026-09-14T05:17:47Z",
+    "notes": "Only title available; details on species, methods, and specific findings could not be verified.",
+    "classified_at": "2026-09-15T13:44:54Z",
     "usage": {
      "input_tokens": 144,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
      "output_tokens": 182,
-     "cost_usd": 0.00283
+     "cost_usd": 0.00293
     }
    }
   },
@@ -41427,42 +41595,42 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "stress"
+     "stress",
+     "reward_craving"
     ],
     "approach": [
      "machine_learning",
-     "behavioral",
-     "other_imaging"
+     "brain_stimulation"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Researchers recorded dopamine neuron activity and behavior in mice during social defeat stress, finding that resilient and susceptible mice show distinct dopaminergic activity patterns and behavioral strategies, with optogenetic stimulation promoting resilience.",
-   "key_finding": "Resilient mice showed greater NAc dopamine terminal activity when fighting back against the aggressor, and open-loop or fighting-back-timed optogenetic stimulation of NAc-projecting dopamine neurons promoted resilience-associated behavior.",
+   "summary": "Researchers recorded dopamine neuron activity in nucleus accumbens and tail striatum projections during social defeat stress in mice, finding distinct activity patterns and behavioral strategies between resilient and susceptible animals.",
+   "key_finding": "Optogenetic stimulation of nucleus accumbens-projecting dopamine neurons, whether random or timed to fighting-back behavior, promoted resilience and shifted behavior toward resilience-associated patterns.",
    "free_keywords": [
+    "dopamine",
     "nucleus accumbens",
-    "tail striatum",
-    "optogenetics",
     "social defeat stress",
-    "mesolimbic dopamine",
-    "closed-loop stimulation",
+    "resilience",
+    "optogenetics",
+    "mesolimbic system",
     "mouse model"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.85,
-    "notes": "Not fMRI/human neuroscience; included as animal model study relevant to stress and brain-body mechanisms; approach tags approximate given non-standard methods (fiber photometry, optogenetics, machine learning behavioral classification).",
-    "classified_at": "2026-09-14T05:19:05Z",
+    "confidence": 0.55,
+    "notes": "Animal (mouse) study using optogenetics rather than human neuroimaging or TMS/tDCS; tagged brain_stimulation generically since optogenetic stimulation has no specific taxonomy tag.",
+    "classified_at": "2026-09-15T13:45:03Z",
     "usage": {
      "input_tokens": 688,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 386,
-     "cost_usd": 0.00596
+     "output_tokens": 665,
+     "cost_usd": 0.00885
     }
    }
   },
@@ -41741,37 +41909,37 @@
     ],
     "approach": [
      "brain_stimulation",
-     "behavioral",
-     "pharmacology"
+     "tdcs",
+     "behavioral"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "A randomized trial in postoperative spine surgery patients found that active tDCS over M1 or DLPFC reduced dynamic pain scores and morphine consumption compared to sham stimulation.",
-   "key_finding": "Three sessions of anodal tDCS over M1 or DLPFC significantly reduced dynamic VAS pain and morphine consumption versus sham, with no difference between the two active stimulation sites.",
+   "summary": "A randomized trial tested anodal tDCS over M1 or DLPFC versus sham for three days after spine surgery, finding reduced dynamic pain scores and morphine consumption in both active groups compared to sham.",
+   "key_finding": "Active tDCS over M1 or DLPFC significantly reduced dynamic pain (DVAS) and morphine consumption versus sham, with no difference between the two active sites.",
    "free_keywords": [
-    "tDCS",
     "postoperative pain",
-    "morphine consumption",
     "spine surgery",
+    "opioid consumption",
     "M1 stimulation",
-    "DLPFC stimulation"
+    "DLPFC stimulation",
+    "VAS"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.9,
+    "confidence": 0.85,
     "notes": null,
-    "classified_at": "2026-09-14T05:19:15Z",
+    "classified_at": "2026-09-15T13:45:13Z",
     "usage": {
      "input_tokens": 661,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 265,
-     "cost_usd": 0.00469
+     "output_tokens": 264,
+     "cost_usd": 0.00478
     }
    }
   },
@@ -42400,30 +42568,36 @@
     ],
     "approach": [
      "other_imaging",
-     "brain_stimulation",
-     "machine_learning"
+     "brain_stimulation"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "placeholder",
-   "key_finding": "placeholder",
-   "free_keywords": [],
+   "summary": "Two-photon calcium imaging and optogenetics in mouse primary somatosensory cortex during a texture discrimination task revealed distinct decision-coding neurons alongside stimulus-coding neurons.",
+   "key_finding": "Photostimulation of decision-coding S1 neurons causally improved behavioral performance, showing S1 directly participates in decision-making rather than purely sensory processing.",
+   "free_keywords": [
+    "two-photon calcium imaging",
+    "optogenetics",
+    "texture discrimination",
+    "layer 2/3",
+    "mouse cortex",
+    "decision coding"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-14T05:19:41Z",
+    "confidence": 0.7,
+    "notes": "Non-human animal study using two-photon imaging/optogenetics, not fMRI; approach tags approximate categories not fully covered by taxonomy.",
+    "classified_at": "2026-09-15T13:45:26Z",
     "usage": {
      "input_tokens": 528,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 106,
-     "cost_usd": 0.00284
+     "output_tokens": 304,
+     "cost_usd": 0.00492
     }
    }
   },
@@ -48127,30 +48301,35 @@
     ],
     "approach": [
      "genetics",
-     "other_imaging",
-     "mega_analysis"
+     "other_imaging"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "placeholder",
-   "key_finding": "placeholder",
-   "free_keywords": [],
+   "summary": "The study examined whether genetic factors underlie the association between chronic pain and reduced regional grey matter using structural neuroimaging and genetic data-driven methods.",
+   "key_finding": "Genetic factors were found to contribute to the association between chronic pain conditions and decreased regional grey matter volume.",
+   "free_keywords": [
+    "grey matter",
+    "structural MRI",
+    "heritability",
+    "twin design",
+    "chronic pain genetics"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-14T05:24:10Z",
+    "confidence": 0.6,
+    "notes": "Only abstract available; full methods (e.g., specific genetic approach) inferred generally.",
+    "classified_at": "2026-09-15T13:45:30Z",
     "usage": {
      "input_tokens": 187,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 104,
-     "cost_usd": 0.00213
+     "output_tokens": 232,
+     "cost_usd": 0.00351
     }
    }
   },
@@ -49352,37 +49531,37 @@
     ],
     "approach": [
      "brain_stimulation",
-     "neuromarker",
-     "other_imaging"
+     "psychophysiology",
+     "neuromarker"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Researchers implanted a closed-loop deep brain stimulation device that used a personalized intracranial biomarker to detect high-depression states and trigger stimulation, producing rapid sustained symptom improvement in one patient with treatment-resistant depression.",
-   "key_finding": "Biomarker-driven closed-loop deep brain stimulation led to rapid and sustained improvement in depression symptoms in an n-of-1 case study.",
+   "summary": "Researchers implanted a closed-loop deep brain stimulation device in a single patient with treatment-resistant depression, using a personalized intracranial biomarker to trigger stimulation during high-symptom states.",
+   "key_finding": "Biomarker-driven closed-loop DBS produced rapid and sustained improvement in depression symptoms in this n-of-1 case study.",
    "free_keywords": [
     "deep brain stimulation",
-    "closed-loop",
+    "closed-loop therapy",
     "intracranial electrophysiology",
     "treatment-resistant depression",
-    "biomarker-triggered therapy",
-    "n-of-1 study"
+    "n-of-1 study",
+    "biomarker-triggered stimulation"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.8,
-    "notes": "Only abstract available; approach tags inferred from description of intracranial sensing/stimulation.",
-    "classified_at": "2026-09-14T05:24:59Z",
+    "confidence": 0.85,
+    "notes": "Uses intracranial electrical stimulation (DBS) which falls under brain_stimulation without a more specific tag (not TMS/tDCS/TIS).",
+    "classified_at": "2026-09-15T13:45:34Z",
     "usage": {
      "input_tokens": 417,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 308,
-     "cost_usd": 0.00463
+     "output_tokens": 316,
+     "cost_usd": 0.00481
     }
    }
   },
@@ -50451,43 +50630,43 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "clinical",
-     "perception"
+     "perception",
+     "clinical"
     ],
     "approach": [
-     "machine_learning",
      "ai_integration",
-     "other_imaging",
-     "brain_stimulation"
+     "machine_learning",
+     "other_imaging"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "A subdural electrode array over speech motor cortex enabled a paralyzed, anarthric patient to communicate via deep-learning decoding of attempted speech into words and sentences.",
-   "key_finding": "Sentences were decoded in real time at 15.2 words per minute with 25.6% word error rate, and 98% of word attempts were detected using stable cortical signals over 81 weeks.",
+   "summary": "Researchers implanted a subdural electrode array over sensorimotor speech cortex in a paralyzed anarthric patient and used deep-learning and natural-language models to decode attempted speech in real time.",
+   "key_finding": "The system decoded sentences at 15.2 words per minute with 25.6% word error rate, detecting 98% of word attempts and classifying words with 47.1% accuracy across 81 weeks.",
    "free_keywords": [
-    "speech neuroprosthesis",
     "brain-computer interface",
-    "electrocorticography",
+    "speech decoding",
+    "neuroprosthesis",
+    "ECoG",
     "anarthria",
-    "deep learning decoding",
-    "natural language model"
+    "spastic quadriparesis",
+    "sensorimotor cortex"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Type field key had a stray space in schema mapping; corrected as 'type'.",
-    "classified_at": "2026-09-14T05:25:39Z",
+    "confidence": 0.8,
+    "notes": "Uses intracranial electrocorticography, not fMRI; classified under other_imaging for invasive electrophysiology recording.",
+    "classified_at": "2026-09-15T13:45:38Z",
     "usage": {
      "input_tokens": 663,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 289,
-     "cost_usd": 0.00494
+     "output_tokens": 313,
+     "cost_usd": 0.00528
     }
    }
   },
@@ -55094,34 +55273,33 @@
    "tags": {
     "topic": [
      "brain_body",
-     "clinical"
+     "perception"
     ],
     "approach": [
      "other_imaging",
-     "open_tools",
-     "brain_stimulation"
+     "open_tools"
     ],
     "type": [
      "methods"
     ]
    },
-   "summary": "placeholder",
-   "key_finding": "placeholder",
+   "summary": "",
+   "key_finding": null,
    "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.5,
     "notes": null,
-    "classified_at": "2026-09-14T05:29:09Z",
+    "classified_at": "2026-09-15T13:45:41Z",
     "usage": {
      "input_tokens": 543,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 104,
-     "cost_usd": 0.00285
+     "output_tokens": 112,
+     "cost_usd": 0.00303
     }
    }
   },
@@ -55543,35 +55721,36 @@
     "approach": [
      "fmri",
      "brain_stimulation",
+     "tms",
      "neuroimaging_methods"
     ],
     "type": [
      "review"
     ]
    },
-   "summary": "This review discussed methodological and statistical considerations for combining transcranial magnetic stimulation with fMRI to probe and modulate brain circuits relevant to affective disorders.",
+   "summary": "This review discussed methods and study designs for combining transcranial magnetic stimulation with fMRI to probe and modulate brain circuits relevant to affective disorders.",
    "key_finding": null,
    "free_keywords": [
-    "TMS-fMRI",
-    "affective disorders",
     "concurrent TMS-fMRI",
-    "causal circuit probing",
-    "depression treatment mechanisms"
+    "affective disorders",
+    "circuit modulation",
+    "causal brain stimulation",
+    "treatment mechanisms"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.85,
-    "notes": "Abstract only; review with methodological guidance for a specific technique combination.",
-    "classified_at": "2026-09-14T05:29:26Z",
+    "notes": "Abstract only; type field key had a stray space corrected in output structure but included as 'type'.",
+    "classified_at": "2026-09-15T13:45:50Z",
     "usage": {
      "input_tokens": 427,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 221,
-     "cost_usd": 0.00378
+     "output_tokens": 224,
+     "cost_usd": 0.00391
     }
    }
   },
@@ -59145,31 +59324,23 @@
      "empirical"
     ]
    },
-   "summary": "Researchers used single-cell RNA sequencing and optogenetics in mice to map distinct neuron types in circumventricular organs underlying osmotic versus hypovolaemic thirst.",
-   "key_finding": "Unique combinations of excitatory and inhibitory neuron subtypes in lamina terminalis structures encode distinct thirst modalities, and optogenetic activation of specific cell types recapitulated water-specific versus non-specific fluid appetite.",
-   "free_keywords": [
-    "thirst",
-    "single-cell RNA sequencing",
-    "circumventricular organs",
-    "osmotic thirst",
-    "hypovolaemic thirst",
-    "optogenetics",
-    "lamina terminalis"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.55,
-    "notes": "This is a rodent physiology/neuroscience paper outside typical CANlab human affective neuroimaging scope; tags reflect closest matches but fit is imperfect.",
-    "classified_at": "2026-09-14T05:32:07Z",
+    "confidence": 0.1,
+    "notes": "invalid",
+    "classified_at": "2026-09-15T13:45:53Z",
     "usage": {
      "input_tokens": 547,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 330,
-     "cost_usd": 0.00511
+     "output_tokens": 98,
+     "cost_usd": 0.00289
     }
    }
   },
@@ -60127,40 +60298,33 @@
    "tags": {
     "topic": [
      "perception",
-     "cognitive_control"
+     "brain_body"
     ],
     "approach": [
      "fmri",
-     "machine_learning",
-     "brain_stimulation"
+     "machine_learning"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Used data-driven decoding of fMRI brain states to show that movie viewing reshapes resting-state bistable dynamics into reliable, temporally aligned functional state sequences tied to movie features and physiological engagement.",
-   "key_finding": "Movie viewing transformed bistable resting-state brain state transitions into a well-defined sequence of functional states temporally aligned with movie content and subjective engagement.",
-   "free_keywords": [
-    "naturalistic viewing",
-    "brain state dynamics",
-    "co-activation patterns",
-    "physiological states",
-    "engagement ratings"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.6,
-    "notes": "Only abstract available; brain_stimulation tag likely irrelevant but included due to ambiguity in approach list—should be reconsidered; no stimulation actually used, removing may be more accurate but left due to lack of full text clarity.",
-    "classified_at": "2026-09-14T05:32:54Z",
+    "confidence": 0.0,
+    "notes": null,
+    "classified_at": "2026-09-15T13:45:58Z",
     "usage": {
      "input_tokens": 411,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 329,
-     "cost_usd": 0.00483
+     "output_tokens": 99,
+     "cost_usd": 0.00263
     }
    }
   },
@@ -60372,29 +60536,36 @@
     ],
     "approach": [
      "fmri",
-     "brain_stimulation"
+     "brain_stimulation",
+     "tdcs"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "placeholder",
-   "key_finding": "placeholder",
-   "free_keywords": [],
+   "summary": "This study used transcranial stimulation over the right temporoparietal junction to show it enhances patience by shifting attention toward future outcomes and boosting future reward value representations.",
+   "key_finding": "Stimulating the right temporoparietal junction improved delay of gratification by strengthening neural representations of future reward values.",
+   "free_keywords": [
+    "intertemporal choice",
+    "delay discounting",
+    "attention",
+    "future thinking",
+    "tDCS"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-14T05:33:06Z",
+    "confidence": 0.6,
+    "notes": "Only abstract available; approach method (tDCS vs TMS) inferred from title mention of TPJ manipulation, exact stimulation type uncertain.",
+    "classified_at": "2026-09-15T13:46:09Z",
     "usage": {
      "input_tokens": 196,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 102,
-     "cost_usd": 0.00213
+     "output_tokens": 265,
+     "cost_usd": 0.00386
     }
    }
   },
@@ -61243,33 +61414,41 @@
      "placebo"
     ],
     "approach": [
-     "machine_learning",
      "psychophysiology",
+     "machine_learning",
      "pharmacology",
-     "brain_stimulation",
-     "mega_analysis"
+     "neuromarker",
+     "tms",
+     "brain_stimulation"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "placeholder",
-   "key_finding": "placeholder",
-   "free_keywords": [],
+   "summary": "Researchers developed a latent-space machine-learning algorithm applied to resting-state EEG data from a large placebo-controlled trial to identify a neural signature predicting antidepressant response.",
+   "key_finding": "An EEG signature specifically predicted sertraline (versus placebo) response, generalized across sites and samples, and indexed prefrontal neural responsivity measured via concurrent TMS-EEG.",
+   "free_keywords": [
+    "sertraline",
+    "resting-state EEG",
+    "depression biomarker",
+    "latent-space machine learning",
+    "TMS-EEG",
+    "personalized psychiatry"
+   ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-14T05:33:43Z",
+    "confidence": 0.85,
+    "notes": "Only abstract available; tagged based on described methods (EEG machine learning, pharmacology, TMS-EEG, placebo-controlled design).",
+    "classified_at": "2026-09-15T13:46:14Z",
     "usage": {
      "input_tokens": 535,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 125,
-     "cost_usd": 0.00304
+     "output_tokens": 330,
+     "cost_usd": 0.00519
     }
    }
   },
@@ -62512,34 +62691,34 @@
      "perception"
     ],
     "approach": [
-     "other_imaging"
+     "brain_stimulation"
     ],
     "type": [
      "commentary"
     ]
    },
-   "summary": "This commentary discussed a study mapping how cortical electrical stimulation effects related to distance from sensory/motor regions and contribution to consciousness.",
-   "key_finding": "Brain regions farther from sensory input or motor output structures were less likely to contribute to conscious perception when stimulated.",
+   "summary": "This commentary discussed a study showing that electrical stimulation of human cortex reveals a gradient in which regions farther from sensory-motor structures are less likely to contribute to conscious experience.",
+   "key_finding": "Cortical regions closer to primary sensory/motor areas were more likely to elicit conscious percepts upon electrical stimulation than higher-order regions.",
    "free_keywords": [
-    "intracranial stimulation",
     "consciousness",
-    "cortical mapping",
-    "electrical brain stimulation"
+    "intracranial stimulation",
+    "cortical hierarchy",
+    "direct electrical stimulation"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.6,
-    "notes": "Only abstract available; commentary on another group's neurosurgical stimulation study.",
-    "classified_at": "2026-09-14T05:34:31Z",
+    "confidence": 0.55,
+    "notes": "Only abstract available; specific stimulation modality (likely intracranial electrical stimulation) not clearly TMS/tDCS/TIS, so generic brain_stimulation tag used.",
+    "classified_at": "2026-09-15T13:46:18Z",
     "usage": {
      "input_tokens": 168,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 217,
-     "cost_usd": 0.00323
+     "output_tokens": 318,
+     "cost_usd": 0.00434
     }
    }
   },
@@ -62634,34 +62813,34 @@
     "approach": [
      "fmri",
      "machine_learning",
-     "brain_stimulation"
+     "neuromarker"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Developed a brain-machine interface using co-adaptive learning to modulate pain-related brain activity and reduce pain perception.",
-   "key_finding": "Co-adaptive brain-machine interface training reduced pain ratings by targeting real-time neural activity feedback.",
+   "summary": "Researchers developed a brain-machine interface that co-adaptively learned to modulate pain-related brain activity using real-time fMRI feedback, aiming to control pain.",
+   "key_finding": "A co-adaptive brain-machine interface could adjust its decoding model alongside participant learning to modulate pain-related neural signals and reduce pain.",
    "free_keywords": [
     "brain-machine interface",
-    "neurofeedback",
+    "real-time fMRI neurofeedback",
     "co-adaptive learning",
     "pain control"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.4,
-    "notes": "Only abstract available; approach details inferred, may include neurofeedback/psychophysiology not fully confirmed.",
-    "classified_at": "2026-09-14T05:34:41Z",
+    "confidence": 0.55,
+    "notes": "Only abstract available; limited methodological detail on decoding approach.",
+    "classified_at": "2026-09-15T13:46:21Z",
     "usage": {
      "input_tokens": 147,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 231,
-     "cost_usd": 0.00332
+     "output_tokens": 244,
+     "cost_usd": 0.00355
     }
    }
   },
@@ -66008,7 +66187,6 @@
    "tags": {
     "topic": [
      "pain",
-     "chronic_pain",
      "brain_body"
     ],
     "approach": [
@@ -66019,31 +66197,32 @@
      "empirical"
     ]
    },
-   "summary": "Researchers identified a population of GABAergic neurons in the mouse central amygdala activated by general anesthetics that, when optogenetically activated, potently suppressed pain and neuropathic hypersensitivity.",
-   "key_finding": "Optogenetic activation of CeAGA neurons suppressed pain behaviors across modalities and abolished neuropathic mechanical hypersensitivity, while inhibition exacerbated pain and blocked ketamine's analgesic effect.",
+   "summary": "Researchers identified a GABAergic neuron population in the mouse central amygdala activated by general anesthetics that, when optogenetically activated, suppressed pain and reduced neuropathic hypersensitivity.",
+   "key_finding": "Optogenetic activation of central amygdala GA-activated (CeAGA) neurons suppressed reflexive and affective pain behaviors and abolished neuropathic mechanical hypersensitivity, while inhibition exacerbated pain and blocked ketamine's analgesic effect.",
    "free_keywords": [
-    "central amygdala",
-    "general anesthesia",
+    "amygdala",
+    "anesthesia",
     "optogenetics",
+    "GABAergic neurons",
+    "calcium imaging",
     "ketamine",
     "neuropathic pain",
-    "GABAergic neurons",
-    "calcium imaging"
+    "mouse model"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.75,
-    "notes": "Animal (mouse) study using optogenetics and calcium imaging, not human fMRI; tagged based on abstract only.",
-    "classified_at": "2026-09-14T05:37:16Z",
+    "notes": "Animal study (mouse); no human fMRI. Approach tags based on optogenetics/pharmacology/in vivo calcium imaging, not standard neuroimaging.",
+    "classified_at": "2026-09-15T13:46:27Z",
     "usage": {
      "input_tokens": 503,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 329,
-     "cost_usd": 0.00502
+     "output_tokens": 356,
+     "cost_usd": 0.00539
     }
    }
   },
@@ -68553,35 +68732,36 @@
     ],
     "approach": [
      "brain_stimulation",
+     "tms",
      "behavioral"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "An open-label pilot trial tested a combined theta-burst and high-frequency TMS protocol targeting motor cortex in 21 patients with upper or lower extremity complex regional pain syndrome, finding significant pain reduction after treatment.",
-   "key_finding": "About 50-60% of participants achieved at least 30% pain reduction one to two weeks after single or five-session TMS treatment, with no significant differences between groups.",
+   "summary": "An open-label pilot trial applied individualized paired theta-burst and high-frequency TMS over motor cortex in 21 patients with complex regional pain syndrome, finding significant pain reduction after single and repeated sessions.",
+   "key_finding": "About 50-60% of participants achieved ≥30% pain reduction one to two weeks after TMS treatment, with no serious adverse events.",
    "free_keywords": [
     "complex regional pain syndrome",
     "theta burst stimulation",
-    "motor cortex",
-    "open-label trial",
-    "neuromodulation"
+    "motor cortex stimulation",
+    "pilot trial",
+    "chronic pain treatment"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.9,
+    "confidence": 0.85,
     "notes": null,
-    "classified_at": "2026-09-14T05:39:30Z",
+    "classified_at": "2026-09-15T13:46:30Z",
     "usage": {
      "input_tokens": 729,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 257,
-     "cost_usd": 0.00475
+     "output_tokens": 256,
+     "cost_usd": 0.00484
     }
    }
   },
@@ -70796,38 +70976,38 @@
     "approach": [
      "other_imaging",
      "pharmacology",
-     "brain_stimulation"
+     "psychophysiology"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Researchers used PET imaging, chemogenetics, and optogenetics in mice to show that the lateral neocortex is necessary for reconsolidation of contextual fear memory and is functionally connected to the amygdala.",
-   "key_finding": "Inhibiting the lateral neocortex during reconsolidation disrupted fear memory and altered amygdala glucose metabolism, revealing a monosynaptic lateral neocortex–amygdala connection critical for reconsolidation.",
+   "summary": "Using PET imaging, chemogenetics, and optogenetics in mice, researchers found the lateral neocortex is necessary for contextual fear memory reconsolidation and is functionally connected to the amygdala.",
+   "key_finding": "Inhibiting the lateral neocortex during reconsolidation altered amygdala glucose metabolism, and optogenetic/tracing evidence revealed a monosynaptic lateral neocortex-amygdala connection critical for fear memory reconsolidation.",
    "free_keywords": [
-    "reconsolidation",
     "fear memory",
+    "reconsolidation",
     "chemogenetics",
     "optogenetics",
-    "amygdala",
     "PET imaging",
-    "mice",
-    "retrograde tracing"
+    "amygdala",
+    "lateral neocortex",
+    "cholera toxin tracing"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.55,
-    "notes": "Rodent study, not human fMRI-based CANlab-style work, but relevant to fear/emotion circuitry.",
-    "classified_at": "2026-09-14T05:41:24Z",
+    "confidence": 0.6,
+    "notes": "Animal (mouse) study; approach tags approximate since this is not human fMRI/psychophysiology but PET imaging and neuronal recording; classified under other_imaging and psychophysiology loosely for recording-based methods.",
+    "classified_at": "2026-09-15T13:46:35Z",
     "usage": {
      "input_tokens": 518,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 330,
-     "cost_usd": 0.00506
+     "output_tokens": 377,
+     "cost_usd": 0.00563
     }
    }
   },
@@ -71402,8 +71582,8 @@
    "tags": {
     "topic": [
      "chronic_pain",
-     "clinical",
-     "brain_body"
+     "emotion",
+     "clinical"
     ],
     "approach": [
      "fmri",
@@ -71414,31 +71594,32 @@
      "empirical"
     ]
    },
-   "summary": "Researchers identified a serotonergic circuit from dorsal raphe to central amygdala interneurons to lateral habenula that mediates depression-like behavior in a mouse model of chronic pain, with corresponding altered amygdala-raphe connectivity in humans with comorbid depression.",
-   "key_finding": "Inhibiting the 5-HT DRN→SOM CeA pathway induced depressive behavior in chronic pain mice, while activating it reduced such behavior; human fMRI showed reduced CeA-DRN connectivity specifically in chronic pain patients with comorbid depression.",
+   "summary": "Researchers identified a serotonergic circuit from dorsal raphe to central amygdala interneurons to lateral habenula that mediates depression-like behavior in a mouse chronic pain model, and found reduced amygdala-DRN connectivity in chronic pain patients with comorbid depression.",
+   "key_finding": "Inhibiting the 5-HTDRN→SOMCeA pathway induced depression-like behavior in chronic pain mice, activating it reversed depression-like behavior, and human fMRI showed reduced centromedial amygdala-DRN connectivity specifically in chronic pain patients with comorbid depressive symptoms.",
    "free_keywords": [
     "dorsal raphe nucleus",
     "central amygdala",
-    "optogenetics",
     "lateral habenula",
+    "optogenetics",
+    "serotonin",
     "somatostatin interneurons",
     "mouse model",
-    "serotonin"
+    "comorbid depression"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Primarily an animal neuroscience study with a translational human fMRI component; abstract only available.",
-    "classified_at": "2026-09-14T05:41:50Z",
+    "confidence": 0.7,
+    "notes": "Primarily an animal circuit study with a translational human fMRI component; abstract only available.",
+    "classified_at": "2026-09-15T13:46:39Z",
     "usage": {
      "input_tokens": 515,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 366,
-     "cost_usd": 0.00541
+     "output_tokens": 386,
+     "cost_usd": 0.00571
     }
    }
   },
@@ -74036,8 +74217,7 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "chronic_pain",
-     "pain"
+     "chronic_pain"
     ],
     "approach": [
      "brain_stimulation",
@@ -74047,30 +74227,30 @@
      "empirical"
     ]
    },
-   "summary": "A multicenter retrospective review of 1660 patients treated with 10 kHz spinal cord stimulation found sustained pain relief and improved function, sleep, and quality of life over 12 months.",
-   "key_finding": "Over 70% of patients responded (≥50% pain relief) to 10 kHz spinal cord stimulation throughout 12 months, with 74.1% responding at last visit.",
+   "summary": "A large multicenter retrospective review examined outcomes of 10 kHz spinal cord stimulation in 1660 patients with chronic trunk and/or limb pain, finding sustained pain relief and functional improvements.",
+   "key_finding": "Over 70% of patients responded to 10 kHz SCS therapy with ≥50% pain relief sustained through 12 months, alongside improved function, sleep, and quality of life.",
    "free_keywords": [
     "spinal cord stimulation",
-    "10 kHz SCS",
     "chronic back pain",
     "real-world evidence",
-    "responder rate",
-    "quality of life"
+    "SENZA-RCT",
+    "neuromodulation",
+    "pain relief"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.85,
-    "notes": null,
-    "classified_at": "2026-09-14T05:44:17Z",
+    "confidence": 0.75,
+    "notes": "Spinal cord stimulation is a nerve/spinal stimulation method without a specific TMS/tDCS/TIS tag, so only brain_stimulation applies.",
+    "classified_at": "2026-09-15T13:46:43Z",
     "usage": {
      "input_tokens": 745,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 251,
-     "cost_usd": 0.00472
+     "output_tokens": 315,
+     "cost_usd": 0.00546
     }
    }
   },
@@ -74820,38 +75000,30 @@
      "social"
     ],
     "approach": [
-     "brain_stimulation",
+     "ai_integration",
      "other_imaging"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Researchers used cellular-resolution optogenetics and calcium imaging to identify distinct orbitofrontal cortex neuronal ensembles responding to feeding versus social stimuli in mice.",
-   "key_finding": "Activating feeding-responsive orbitofrontal neurons increased feeding, whereas activating social-responsive neurons inhibited feeding, revealing bidirectional cellular control of feeding by social context.",
-   "free_keywords": [
-    "orbitofrontal cortex",
-    "optogenetics",
-    "calcium imaging",
-    "feeding behavior",
-    "social behavior",
-    "single-cell resolution",
-    "mouse model"
-   ],
+   "summary": "placeholder",
+   "key_finding": null,
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.7,
-    "notes": "This is an animal (mouse) systems neuroscience paper using optogenetics/imaging, not fMRI; approach tags approximate given lack of exact vocabulary match for optogenetic/calcium imaging methods.",
-    "classified_at": "2026-09-14T05:44:54Z",
+    "confidence": 0.1,
+    "notes": "invalid",
+    "classified_at": "2026-09-15T13:46:48Z",
     "usage": {
      "input_tokens": 734,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 339,
-     "cost_usd": 0.00558
+     "output_tokens": 103,
+     "cost_usd": 0.00332
     }
    }
   },
@@ -76824,38 +76996,29 @@
      "pain"
     ],
     "approach": [
-     "pharmacology",
-     "behavioral"
+     "other_imaging"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Studied genetically modified mice lacking Piezo2 and found the mechanosensitive ion channel was required for acute mechanical nociception and for inflammation- or nerve injury-induced mechanical allodynia.",
-   "key_finding": "Piezo2-deficient mice showed impaired nocifensive responses, diminished Aδ- and C-fiber firing to mechanical stimuli, and absent punctate and dynamic allodynia after capsaicin injection or spared nerve injury.",
-   "free_keywords": [
-    "Piezo2",
-    "mechanotransduction",
-    "mechanical allodynia",
-    "optogenetics",
-    "nociceptors",
-    "skin-nerve preparation",
-    "spared nerve injury"
-   ],
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.85,
-    "notes": "Non-CANlab basic mouse molecular pain research paper; approach tags limited to pharmacology (capsaicin) and behavioral; no fMRI or neuroimaging involved.",
-    "classified_at": "2026-09-14T05:47:11Z",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-15T13:46:52Z",
     "usage": {
      "input_tokens": 837,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 345,
-     "cost_usd": 0.00584
+     "output_tokens": 84,
+     "cost_usd": 0.00333
     }
    }
   },
@@ -77290,42 +77453,35 @@
    "tags": {
     "topic": [
      "social",
-     "perception"
+     "cognitive_control"
     ],
     "approach": [
      "psychophysiology",
      "brain_stimulation",
+     "tms",
      "behavioral"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Researchers developed BrainNet, a multi-person EEG-TMS brain-to-brain interface allowing three subjects to collaborate on a Tetris-like task through direct brain communication.",
-   "key_finding": "Five groups achieved an average task accuracy of 0.813, and Receivers learned to weight information from more reliable Senders based on transmitted brain signals.",
-   "free_keywords": [
-    "brain-computer interface",
-    "brain-to-brain interface",
-    "EEG",
-    "TMS",
-    "collaborative decision-making",
-    "Tetris task",
-    "social network of brains"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.85,
-    "notes": "Not a typical CANlab-style paper; tagged based on closest matching categories (EEG/TMS methods, social interaction).",
-    "classified_at": "2026-09-14T05:47:43Z",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-15T13:46:55Z",
     "usage": {
      "input_tokens": 676,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 291,
-     "cost_usd": 0.00498
+     "output_tokens": 124,
+     "cost_usd": 0.00341
     }
    }
   },
@@ -77358,36 +77514,29 @@
      "perception"
     ],
     "approach": [
-     "brain_stimulation",
-     "other_imaging"
+     "brain_stimulation"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "The authors electrically stimulated the human cingulate cortex in patients and recorded resulting motor and emotional behaviours to map functional subregions.",
-   "key_finding": "Stimulation of different cingulate subregions elicited distinct motor responses and emotional/autonomic reactions, revealing functional heterogeneity along the cingulate cortex.",
-   "free_keywords": [
-    "cingulate cortex",
-    "intracranial electrical stimulation",
-    "epilepsy patients",
-    "emotional behavior",
-    "motor responses"
-   ],
+   "summary": "placeholder",
+   "key_finding": null,
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.55,
-    "notes": "Only abstract available; likely involves intracranial stimulation in epilepsy patients rather than fMRI, so approach tags are limited.",
-    "classified_at": "2026-09-14T05:47:46Z",
+    "confidence": 0.3,
+    "notes": "invalid",
+    "classified_at": "2026-09-15T13:47:03Z",
     "usage": {
      "input_tokens": 161,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 275,
-     "cost_usd": 0.00379
+     "output_tokens": 98,
+     "cost_usd": 0.00212
     }
    }
   },
@@ -77652,38 +77801,36 @@
     ],
     "approach": [
      "fmri",
-     "machine_learning",
-     "behavioral"
+     "machine_learning"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "The authors attempted to replicate Drysdale et al.'s (2017) resting-state fMRI biotypes of depression using canonical correlation analysis and clustering in an independent sample of 187 depressed and anxious participants.",
-   "key_finding": "The replication attempt failed to find statistically significant brain-clinical relationships or distinct depression subtypes, casting doubt on the original biotype findings.",
+   "summary": "The authors attempted to replicate Drysdale et al.'s 2017 depression biotypes study using resting-state fMRI and clinical data from 187 depression and anxiety patients but failed to find significant brain-symptom relationships or distinct subtypes.",
+   "key_finding": "Canonical correlation and clustering analyses did not replicate the original biotypes, finding no statistically significant relationship between resting-state connectivity and clinical symptoms and no clearly distinct subtypes.",
    "free_keywords": [
-    "depression subtypes",
-    "biotypes",
     "replication study",
+    "depression biotypes",
     "resting-state connectivity",
     "canonical correlation analysis",
     "hierarchical clustering",
     "TMS treatment response"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.9,
-    "notes": null,
-    "classified_at": "2026-09-14T05:47:55Z",
+    "confidence": 0.85,
+    "notes": "Only abstract available; tagged based on described methods (CCA, clustering as machine_learning; resampling as part of stability testing).",
+    "classified_at": "2026-09-15T13:47:08Z",
     "usage": {
      "input_tokens": 795,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 258,
-     "cost_usd": 0.00489
+     "output_tokens": 318,
+     "cost_usd": 0.00559
     }
    }
   },
@@ -78593,36 +78740,36 @@
     ],
     "approach": [
      "fmri",
-     "other_imaging",
-     "neuroimaging_methods"
+     "other_imaging"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Researchers combined optogenetics with fMRI to show that selectively activating specific excitatory neuron types produces positive BOLD signals and can map their downstream connections.",
-   "key_finding": "Optogenetic stimulation of defined excitatory neuron populations was sufficient to generate positive local and global BOLD signals, linking neuronal identity and wiring to fMRI responses.",
+   "summary": "Researchers combined optogenetics with fMRI in rats to show that stimulating specific excitatory neurons produced positive BOLD signals and traced downstream connectivity.",
+   "key_finding": "Optogenetic activation of specific excitatory neurons was sufficient to generate positive local and global BOLD signals, revealing wiring-based mapping of connections.",
    "free_keywords": [
     "optogenetics",
-    "BOLD signal",
-    "opto-fMRI",
+    "BOLD signal origin",
     "neurovascular coupling",
+    "opto-fMRI",
+    "rodent",
     "connectivity mapping"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.7,
-    "notes": "Only abstract available; brain_stimulation approach not applicable as optogenetics differs from clinical neuromodulation categories listed, so omitted.",
-    "classified_at": "2026-09-14T05:48:48Z",
+    "confidence": 0.75,
+    "notes": "Only abstract available; methodological/mechanistic study of BOLD signal origins using optogenetics, not a typical CANlab topic but included for its methodological relevance to fMRI interpretation.",
+    "classified_at": "2026-09-15T13:47:12Z",
     "usage": {
      "input_tokens": 230,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 292,
-     "cost_usd": 0.0041
+     "output_tokens": 296,
+     "cost_usd": 0.00424
     }
    }
   },
@@ -79051,42 +79198,40 @@
    "tags": {
     "topic": [
      "emotion",
-     "stress"
+     "perception"
     ],
     "approach": [
-     "computational_model",
-     "brain_stimulation"
+     "computational_model"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Researchers used calcium imaging and optogenetics in mice to show that a synaptic threshold mechanism between superior colliculus and periaqueductal grey neurons computes escape decisions in response to threat.",
-   "key_finding": "A weak, facilitating monosynaptic connection from medial superior colliculus to dorsal periaqueductal grey neurons acts as a synaptic threshold that determines whether and how vigorously mice escape threats.",
+   "summary": "Researchers used calcium imaging and optogenetics in freely behaving mice to show that a synaptic threshold mechanism between the superior colliculus and periaqueductal grey computes escape decisions from threat stimuli.",
+   "key_finding": "A weak, facilitating monosynaptic connection from mSC to dPAG glutamatergic neurons acts as a synaptic threshold that determines escape initiation and vigour based on threat saliency.",
    "free_keywords": [
     "escape behavior",
     "superior colliculus",
     "periaqueductal grey",
     "optogenetics",
     "calcium imaging",
-    "synaptic facilitation",
-    "innate defensive behavior",
-    "mouse model"
+    "rodent defensive behavior",
+    "synaptic facilitation"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.55,
-    "notes": "This is a rodent circuit neuroscience paper outside CANlab's typical human neuroimaging focus; taxonomy fit is approximate.",
-    "classified_at": "2026-09-14T05:49:09Z",
+    "confidence": 0.85,
+    "notes": "This is a rodent systems neuroscience paper unrelated to CANlab's typical human fMRI/pain/placebo focus, but tagged per taxonomy as closely as possible.",
+    "classified_at": "2026-09-15T13:47:16Z",
     "usage": {
      "input_tokens": 704,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 537,
-     "cost_usd": 0.0075
+     "output_tokens": 327,
+     "cost_usd": 0.0055
     }
    }
   },
@@ -81931,8 +82076,8 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "cognitive_control",
-     "perception"
+     "perception",
+     "cognitive_control"
     ],
     "approach": [
      "behavioral",
@@ -81942,30 +82087,30 @@
      "empirical"
     ]
    },
-   "summary": "Recordings and optogenetic silencing in rats showed that posterior parietal cortex neurons encode prior trial sensory history, and its silencing selectively reduced history-driven biases, improving current-trial task performance.",
-   "key_finding": "Silencing posterior parietal cortex in rats improved auditory discrimination by selectively reducing the influence of previous trial stimuli, and PPC neurons carried more information about past than current stimuli.",
+   "summary": "Researchers found that silencing posterior parietal cortex in rats improved performance on an auditory memory task by reducing biasing effects of previous trial stimuli, and PPC neurons encoded more information about past than current stimuli.",
+   "key_finding": "Silencing PPC selectively reduced the influence of previous trial sensory history, improving current-trial performance, and PPC neurons carried more information about prior than current stimuli.",
    "free_keywords": [
     "posterior parietal cortex",
-    "working memory",
     "sensory history",
-    "rat electrophysiology",
-    "optogenetics",
-    "auditory discrimination"
+    "working memory",
+    "rats",
+    "electrophysiology",
+    "auditory decision task"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.6,
-    "notes": "Only abstract available; this is a rodent electrophysiology/optogenetics study, not fMRI, but included due to relevance to cognitive control/perception topics in CANlab-adjacent literature.",
-    "classified_at": "2026-09-14T05:51:19Z",
+    "confidence": 0.7,
+    "notes": "Species is rats, not typical CANlab human fMRI focus; tags approximate based on abstract only.",
+    "classified_at": "2026-09-15T13:47:21Z",
     "usage": {
      "input_tokens": 354,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 328,
-     "cost_usd": 0.00471
+     "output_tokens": 286,
+     "cost_usd": 0.00439
     }
    }
   },
@@ -83734,42 +83879,44 @@
    "tags": {
     "topic": [
      "reward_craving",
+     "brain_body",
      "clinical"
     ],
     "approach": [
      "fmri",
      "other_imaging",
-     "brain_stimulation"
+     "psychophysiology"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Optogenetic manipulation of dopamine neurons and medial prefrontal cortex in rodents altered striatal activity, brainwide circuit dynamics, and reward-seeking behavior, resembling human psychiatric phenotypes.",
-   "key_finding": "Elevated excitability of medial prefrontal cortex pyramidal neurons reduced striatal responses to dopamine neuron stimulation and reduced reward-seeking behavior, producing anhedonic phenotypes resembling depression, addiction, and schizophrenia.",
+   "summary": "Researchers used optogenetics, brain imaging, electrophysiology, and behavioral testing in rodents to show that medial prefrontal cortex excitability regulates striatal responses to dopamine neuron stimulation and reward-seeking behavior.",
+   "key_finding": "Elevated excitability of medial prefrontal cortex pyramidal neurons reduced striatal responses to dopaminergic stimulation, decreased reward-seeking, and altered circuit synchrony producing anhedonic behavior resembling depression, addiction, and schizophrenia phenotypes.",
    "free_keywords": [
     "optogenetics",
-    "dopamine",
+    "dopamine neurons",
     "striatum",
     "medial prefrontal cortex",
     "anhedonia",
+    "in vivo electrophysiology",
     "circuit dynamics",
-    "animal model"
+    "rodent model"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.7,
-    "notes": "Animal (rodent) study using optogenetics and brain imaging; not human fMRI but included fMRI-like brain imaging methods; approach tags reflect imaging and stimulation methods used in vivo.",
-    "classified_at": "2026-09-14T05:52:44Z",
+    "confidence": 0.55,
+    "notes": "This is an animal (rodent) optogenetics/imaging study, not standard human fMRI CANlab work; tagged fmri/other_imaging loosely for brain imaging component described in abstract.",
+    "classified_at": "2026-09-15T13:47:26Z",
     "usage": {
      "input_tokens": 497,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 373,
-     "cost_usd": 0.00544
+     "output_tokens": 400,
+     "cost_usd": 0.00581
     }
    }
   },
@@ -83798,38 +83945,30 @@
     ],
     "approach": [
      "fmri",
-     "brain_stimulation",
-     "other_imaging"
+     "other_imaging",
+     "brain_stimulation"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Optogenetic stimulation of VTA dopamine neurons in rats combined with BOLD and CBV-weighted fMRI revealed widespread activation extending beyond limbic targets into non-innervated basal ganglia regions.",
-   "key_finding": "Phasic VTA dopamine neuron activation increased fMRI signals not only in ventral striatum but also strongly in dorsal striatum and globus pallidus, regions with sparse dopaminergic innervation.",
-   "free_keywords": [
-    "optogenetics",
-    "opto-fMRI",
-    "dopamine",
-    "ventral tegmental area",
-    "cerebral blood volume",
-    "basal ganglia",
-    "Th::Cre rats"
-   ],
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.85,
-    "notes": "Type field key had a formatting typo corrected in output; approach includes brain_stimulation for optogenetics and other_imaging for CBV-weighted imaging.",
-    "classified_at": "2026-09-14T05:52:58Z",
+    "confidence": 0,
+    "notes": null,
+    "classified_at": "2026-09-15T13:47:32Z",
     "usage": {
      "input_tokens": 734,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 346,
-     "cost_usd": 0.00565
+     "output_tokens": 120,
+     "cost_usd": 0.00349
     }
    }
   },
@@ -85216,42 +85355,43 @@
     "topic": [
      "clinical",
      "emotion",
-     "emotion_regulation",
-     "stress"
+     "emotion_regulation"
     ],
     "approach": [
      "fmri",
-     "brain_stimulation"
+     "brain_stimulation",
+     "tms",
+     "behavioral"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "In a randomized trial, PTSD patients' baseline fMRI activation during emotional reactivity and regulation tasks, plus TMS-induced amygdala inhibition, predicted symptom improvement from prolonged exposure therapy.",
-   "key_finding": "Greater dorsal prefrontal activation, less amygdala activation during reactivity, stronger TMS-induced amygdala inhibition, and greater ventromedial prefrontal/ventral striatal activation during conflict regulation predicted larger treatment-related symptom reductions.",
+   "summary": "In PTSD patients randomized to prolonged exposure or waitlist, baseline fMRI activation during emotional reactivity and regulation tasks, plus TMS-fMRI amygdala-prefrontal connectivity, predicted treatment-related symptom reduction.",
+   "key_finding": "Greater dorsal prefrontal and ventromedial prefrontal/ventral striatal activation, less amygdala activation during reactivity, and stronger TMS-induced dorsolateral prefrontal inhibition of the amygdala predicted better exposure therapy outcomes.",
    "free_keywords": [
     "PTSD",
     "prolonged exposure therapy",
     "amygdala",
     "dorsolateral prefrontal cortex",
-    "treatment prediction",
     "emotional conflict regulation",
+    "treatment prediction",
     "TMS-fMRI"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.85,
     "notes": null,
-    "classified_at": "2026-09-14T05:54:15Z",
+    "classified_at": "2026-09-15T13:47:45Z",
     "usage": {
      "input_tokens": 748,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 328,
-     "cost_usd": 0.0055
+     "output_tokens": 347,
+     "cost_usd": 0.00579
     }
    }
   },
@@ -85307,37 +85447,39 @@
     ],
     "approach": [
      "fmri",
-     "brain_stimulation"
+     "behavioral",
+     "brain_stimulation",
+     "tms"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "A randomized trial found that prolonged exposure therapy for PTSD selectively increased frontopolar cortex activity and its connectivity with ventromedial prefrontal cortex/ventral striatum during cognitive reappraisal, linked to symptom improvement.",
-   "key_finding": "Psychotherapy-induced increases in lateral frontopolar activation and connectivity with ventromedial prefrontal cortex/ventral striatum during reappraisal correlated with reduced hyperarousal symptoms, and concurrent TMS-fMRI showed frontopolar cortex causally influences ventromedial regions.",
+   "summary": "A randomized trial found that prolonged exposure therapy for PTSD selectively increased lateral frontopolar cortex activity and connectivity with ventromedial prefrontal cortex/ventral striatum during cognitive reappraisal, linked to symptom improvement.",
+   "key_finding": "Psychotherapy-induced increases in frontopolar activation and connectivity during reappraisal correlated with reduced hyperarousal symptoms, and concurrent TMS-fMRI showed frontopolar cortex causally influences ventromedial prefrontal/ventral striatal activity.",
    "free_keywords": [
     "PTSD",
     "prolonged exposure therapy",
     "frontopolar cortex",
-    "cognitive reappraisal",
-    "TMS-fMRI",
     "ventromedial prefrontal cortex",
-    "psychotherapy mechanism"
+    "emotion regulation",
+    "concurrent TMS-fMRI",
+    "resting-state dynamics"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.85,
-    "notes": null,
-    "classified_at": "2026-09-14T05:54:19Z",
+    "notes": "Type field key had stray space typo in draft but corrected to 'type' in final JSON.",
+    "classified_at": "2026-09-15T13:47:50Z",
     "usage": {
      "input_tokens": 749,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 356,
-     "cost_usd": 0.00578
+     "output_tokens": 383,
+     "cost_usd": 0.00615
     }
    }
   },
@@ -86438,31 +86580,23 @@
      "empirical"
     ]
    },
-   "summary": "Researchers found that sensory neurons in peripheral ganglia synthesize and release GABA, which modulates nociceptive transmission and pain behavior in rodents through local GABAergic signaling.",
-   "key_finding": "GABA release within dorsal root ganglia, manipulated via infusion, receptor antagonists, or chemogenetic/optogenetic depolarization, controls acute, neuropathic, and inflammatory pain by filtering nociceptive signals at fiber T-junctions.",
-   "free_keywords": [
-    "dorsal root ganglion",
-    "GABA",
-    "nociception",
-    "optogenetics",
-    "chemogenetics",
-    "neuropathic pain",
-    "peripheral nervous system"
-   ],
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Not a CANlab-style neuroimaging paper; this is an animal molecular/physiology study, tagged based on abstract only.",
-    "classified_at": "2026-09-14T05:55:16Z",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-15T13:47:52Z",
     "usage": {
      "input_tokens": 568,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 324,
-     "cost_usd": 0.0051
+     "output_tokens": 92,
+     "cost_usd": 0.00288
     }
    }
   },
@@ -88488,29 +88622,30 @@
      "perception"
     ],
     "approach": [
-     "brain_stimulation"
+     "brain_stimulation",
+     "other_imaging"
     ],
     "type": [
      "empirical"
     ]
    },
    "summary": "placeholder",
-   "key_finding": "placeholder",
+   "key_finding": null,
    "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.5,
     "notes": null,
-    "classified_at": "2026-09-14T05:57:10Z",
+    "classified_at": "2026-09-15T13:47:56Z",
     "usage": {
      "input_tokens": 297,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 93,
-     "cost_usd": 0.00224
+     "output_tokens": 116,
+     "cost_usd": 0.00257
     }
    }
   },
@@ -89665,30 +89800,30 @@
     ],
     "approach": [],
     "type": [
-     "empirical"
+     "review"
     ]
    },
-   "summary": "This paper appears to concern optogenetic manipulation techniques applied to pain research, likely in animal models, though full text was unavailable for detailed review.",
+   "summary": "The paper appears to discuss optogenetic approaches for studying pain mechanisms, likely reviewing methods for manipulating neural circuits involved in pain processing.",
    "key_finding": null,
    "free_keywords": [
     "optogenetics",
-    "pain modeling",
-    "animal model"
+    "pain circuits",
+    "neural manipulation"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.15,
-    "notes": "Only title available; no abstract or full text, so topic/approach/type tags are highly uncertain and based solely on title inference.",
-    "classified_at": "2026-09-14T05:58:06Z",
+    "confidence": 0.2,
+    "notes": "Only title available; no abstract or full text, so tagging is highly speculative regarding approach and type.",
+    "classified_at": "2026-09-15T13:47:59Z",
     "usage": {
      "input_tokens": 113,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 172,
-     "cost_usd": 0.00267
+     "output_tokens": 171,
+     "cost_usd": 0.00276
     }
    }
   },
@@ -89714,32 +89849,34 @@
     "topic": [
      "pain"
     ],
-    "approach": [],
+    "approach": [
+     "other_imaging"
+    ],
     "type": [
      "review"
     ]
    },
-   "summary": "This paper appears to discuss the use of optogenetic techniques for studying pain mechanisms, likely reviewing methods and findings in the field.",
+   "summary": "This paper, titled 'Pain Optogenetics,' likely reviewed the use of optogenetic techniques to study pain circuits, though no abstract or full text was available.",
    "key_finding": null,
    "free_keywords": [
     "optogenetics",
     "pain circuits",
-    "neural manipulation"
+    "nociception"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
     "confidence": 0.2,
-    "notes": "Only title available; content, approach, and empirical vs review nature inferred with low confidence.",
-    "classified_at": "2026-09-14T05:58:09Z",
+    "notes": "Only title available; tagging is a best guess based on title alone, likely a review chapter on optogenetic methods applied to pain research.",
+    "classified_at": "2026-09-15T13:48:02Z",
     "usage": {
      "input_tokens": 94,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 160,
-     "cost_usd": 0.00251
+     "output_tokens": 185,
+     "cost_usd": 0.00286
     }
    }
   },
@@ -89772,42 +89909,33 @@
    "tags": {
     "topic": [
      "cognitive_control",
-     "emotion",
      "emotion_regulation"
     ],
     "approach": [
-     "brain_stimulation",
-     "psychophysiology"
+     "psychophysiology",
+     "brain_stimulation"
     ],
     "type": [
      "empirical"
     ]
    },
-   "summary": "Optogenetic stimulation of infralimbic pyramidal cells in the medial prefrontal cortex increased their firing and inhibited prelimbic pyramidal output in anesthetized rats, revealing region-specific control of mPFC activity.",
-   "key_finding": "Optical activation of ChR2-expressing infralimbic pyramidal cells increased their firing in a light intensity-dependent, reversible manner and inhibited prelimbic pyramidal cell activity, but had no effect on interneurons.",
-   "free_keywords": [
-    "optogenetics",
-    "channelrhodopsin",
-    "infralimbic cortex",
-    "prelimbic cortex",
-    "single-unit recording",
-    "fear extinction",
-    "CaMKII promoter"
-   ],
+   "summary": "placeholder",
+   "key_finding": null,
+   "free_keywords": [],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.85,
-    "notes": "Animal electrophysiology/optogenetics study, no fMRI or human data; tagged based on relevance to prefrontal control of emotion circuits.",
-    "classified_at": "2026-09-14T05:58:13Z",
+    "confidence": 0.0,
+    "notes": null,
+    "classified_at": "2026-09-15T13:48:08Z",
     "usage": {
      "input_tokens": 874,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 362,
-     "cost_usd": 0.00609
+     "output_tokens": 112,
+     "cost_usd": 0.00369
     }
    }
   },
@@ -93192,29 +93320,29 @@
      "empirical"
     ]
    },
-   "summary": "Researchers used machine learning on structural MRI data to predict individual patient responses to electroconvulsive therapy for depression.",
-   "key_finding": "Structural MRI-based machine learning models predicted individual ECT treatment response, though specific accuracy metrics were not available from the title alone.",
+   "summary": "The study used machine learning on structural MRI data to predict individual patient response to electroconvulsive therapy (ECT).",
+   "key_finding": "Structural MRI-based machine learning could predict individual ECT treatment response, though specific accuracy details are unavailable from title alone.",
    "free_keywords": [
     "electroconvulsive therapy",
     "depression treatment",
     "structural MRI",
-    "treatment prediction",
+    "prediction",
     "gray matter"
    ],
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
     "confidence": 0.4,
-    "notes": "Only title available; no abstract or full text, so topic/approach tags are inferred with limited certainty.",
-    "classified_at": "2026-09-14T06:00:40Z",
+    "notes": "Only title available; details inferred from typical study design for this well-known paper.",
+    "classified_at": "2026-09-15T13:48:12Z",
     "usage": {
      "input_tokens": 164,
-     "cache_read_input_tokens": 3598,
+     "cache_read_input_tokens": 4104,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 233,
-     "cost_usd": 0.00338
+     "output_tokens": 216,
+     "cost_usd": 0.00331
     }
    }
   },
