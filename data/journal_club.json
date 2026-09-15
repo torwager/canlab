@@ -1,7 +1,84 @@
 {
- "updated": "2026-09-14",
+ "updated": "2026-09-15",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026justt",
+   "slack_ts": "1789479186.743779",
+   "shared_on": "2026-09-15",
+   "shared_by": "tor",
+   "message": "This is the article on population geometry I mentioned during lab meeting -- human iEEG.\ncell.com/cell/abstract/S0092-8674(26)00579-9 (https://www.cell.com/cell/abstract/S0092-8674(26)00579-9)\nThe central claim is a shared semantic geometry across two languages, with a rotated code that keeps the languages from interfering with one another.\n\nThis could be a key paper for representational geometry analyses. Key question in my mind is what the criteria for establishing a \"rotated code\" should be. Some papers claim separability of two codes through translation I think, some through rotation.\n\nMore concretely: The problem setup is pattern similarity (population code) among K objects (trials, time points, stimulus conditions), across two (or more) contexts (e.g., language A or B, placebo or control, etc.) . Each \"code\" is a set of relationships among the objects, e.g., an RSA/RDM matrix.  Orthogonal codes for the two contexts could just be different representations. You can test this using cross-classification (now sometimes called CCGP, cross-condition/classifier generalization performance).  But to establish a parallel code, you need to establish that there is a mapping of each object k (each member of K) across the two contexts. in the simplest case they could be translated versions of one another: Add a constant value across one or more axes. This keeps the codes parallel (same orientation) but separable in the sense that you can classify context A vs B if you want to. (i think this is the case in Pia O'Neill's 2026 nature paper). The codes could also be rotated. One criterion would be whether a procrustes transformation (orthogonal rotation) can be found that matches the K values across contexts A and B -- thus, whether the two contexts are \"hyperalignable\".  I believe that the minimal conditions for this is K > 2. With two conditions, i think any two different codes can be trivially aligned (up to magnitude scaling), meaning that there are not enough error degrees of freedom to falsify the mapping. Next proposition: some papers establish that there is an arbitrary linear mapping across contexts (Elsayed paper, preparation and movement contexts) that is not constrained to be orthogonal. Maybe this is too flexible? it's not just a \"rotated code\" (or equivalently \"separable subspace\"), it's a transformed code, more weakly distinguished from a \"different code\". Any two different codes may be weakly transformable into one another via a flexible linear mapping. So the criterion of an orthogonal rotation, and minimal experimental conditions of K > 2, seem like the strongest criterion. This is all off the top of the head, help me think through this formally!\n\n@member @member and others working on geometry!",
+   "comments": [],
+   "reactions": [],
+   "url": "https://www.cell.com/cell/abstract/S0092-8674(26)00579-9",
+   "doi": "10.1016/j.cell.2026.05.020",
+   "title": "Shared neural geometries for bilingual semantic representations in human hippocampal neurons",
+   "abstract": null,
+   "authors": [
+    "Yan, X.",
+    "Chavez, A. G.",
+    "Franch, M.",
+    "Katlowitz, K. A.",
+    "Gautam, I.",
+    "Kim, B.",
+    "Krishna, A.",
+    "Shrivastava, A.",
+    "Van Arsdel, K.",
+    "Belanger, J.",
+    "Chericoni, A.",
+    "Ismail, T.",
+    "Mickiewicz, E. A.",
+    "Paulo, D.",
+    "Zhu, H.",
+    "Goldman, A. M.",
+    "Krishnan, V.",
+    "Maheshwari, A.",
+    "Bartoli, E.",
+    "Provenza, N. R.",
+    "Yoo, S. B. M.",
+    "Hayden, B. Y.",
+    "Sheth, S. A."
+   ],
+   "journal": "Cell",
+   "year": 2026,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1789479186743779",
+   "publisher_url": "https://doi.org/10.1016/j.cell.2026.05.020",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception",
+     "cognitive_control"
+    ],
+    "approach": [
+     "psychophysiology",
+     "computational_model",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Placeholder",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.3,
+    "notes": "placeholder",
+    "classified_at": "2026-09-15T15:01:37Z",
+    "usage": {
+     "input_tokens": 112,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4104,
+     "output_tokens": 335,
+     "cost_usd": 0.01383
+    }
+   }
+  },
   {
    "id": "estrada2025holographic",
    "slack_ts": "1789364240.923429",
