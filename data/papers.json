@@ -383,7 +383,7 @@
    "classified_at": "2026-09-07T03:40:08Z"
   },
   "citation_original": "Lee, K. M., Rodriguez, J., Hartley, L., Zhang, J., Kragel, P. A., Chanes, L., Wager, T. D., Quigley, K. S., Wald, L. L., Bianciardi, M., Barret, L. F., Theriault, J. E., & Satpute, A. B. (2026) Functional Architecture of the Human Hypothalamus: Cortical Coupling and Subregional Organization Using 7-Tesla fMRI. Network Neuroscience.",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "zorinalichtenwalter2026gray",
@@ -886,7 +886,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lin, XM., Guo, LF., Ni, B., Zhang, JQ., Zhang, XS., Zhang, LB., Wei, ZX., Duan, YY., Hu, L., Zhang, M., Zhang, JY., Shao, M., Jiang, ZY., Huang, YJ., Liu, JX., Cheng, LM., Brooks, J. C. W., Wager, T. D., Tracey, I., Liu, YO., & Kong, YZ. (2026) A Corticospinal Signature for Interindividual Pain Sensitivity. Nature Communications 17, 445. [online link] [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "liu2026mitoception",
@@ -1007,7 +1007,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Liu, C. C., Huang, Q., Shaulson, E. D., Trumpff, C., Epel, E., Barrett, L. F., Belsky, D. W., Wilson, M. Z., Cohen, A. A., Wager T. D., & Picard, M. (in press) Mitoception Via the Metabokine GDF15 and Human Health. Biopsychosocial Science and Medicine. 88(6), 500–520.",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "fortner2026first",
@@ -2528,7 +2528,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kwon, M., Bo, K., Botvinik-Nezer, R. Kragel, P. A., Oudehove, L. V., Wager, T. D., and The Affective Neuroimaging Consortium (2026) Convergent and selective representations of pain, appetitive processes, aversive processes, and cognitive control in the insula. Nat Commun 17, 5186. [online link]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "burke2026harnessing",
@@ -6299,7 +6299,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Leroux, A., Crainiceanu, C., Zeger, S., Taub, M., Ansari, B., Wager, T. D., Bayman, E., Coffey, C., Langefeld, C., McCarthy, R., Tsodikov, A., Brummet, C., Clauw, D. J., Edwards, R. R., Lindquist, M. A., & ; A2CPS Consortium (2024). Statistical modeling of acute and chronic pain patient-reported outcomes obtained from ecological momentary assessment. PAIN 165(9):p 1955-1965. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "lee2024representations",
@@ -6404,7 +6404,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lee, S. A, Lee, J-J., Han, J., Choi, M., Wager, T. D., Woo, C-W. (2024) Brain Representations of Affective Valence and Intensity in Sustained Pleasure and Pain. PNAS, 121(25):e2310433121 [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "dehghani2024independent",
@@ -7258,7 +7258,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kelly, C., Trumpff, C., Acosta, C., Assuras, S., Baker, J., Basarrate, S., Behnke, A., Bo, K., Bobba-Alves, N., Champagne, F. A., Conklin, Q., Cross, M., De Jager, P., Engelstad, K., Epel, E., Franklin, S. G., Hirano, M., Huang, Q., Junker, A., Juster, R. P., … MiSBIE Study Group (2024). A platform to map the mind-mitochondria connection and the hallmarks of psychobiology: the MiSBIE study. Trends in endocrinology and metabolism: TEM, 35(10), 884–901. [online link] [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "berman2024modulating",
@@ -7577,7 +7577,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lewis-Peacock, J. A., Wager, T. D., & Braver, T. S. (2024) Decoding Mindfulness With Multivariate Predictive Models, Biol Psych CNNI, ISSN 2451-9022 [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "botviniknezerr2023advancing",
@@ -8172,7 +8172,7 @@
   "openalex_id": "https://openalex.org/W4312019342",
   "date": "2022-12-19",
   "abstract": "Craving is a core feature of substance use disorders. It is a strong predictor of substance use and relapse and is linked to overeating, gambling, and other maladaptive behaviors. Craving is measured via self-report, which is limited by introspective access and sociocultural contexts. Neurobiological markers of craving are both needed and lacking, and it remains unclear whether craving for drugs and food involve similar mechanisms. Across three functional magnetic resonance imaging studies (n = 99), we used machine learning to identify a cross-validated neuromarker that predicts self-reported intensity of cue-induced drug and food craving (P < 0.0002). This pattern, which we term the Neurobiological Craving Signature (NCS), includes ventromedial prefrontal and cingulate cortices, ventral striatum, temporal/parietal association areas, mediodorsal thalamus and cerebellum. Importantly, NCS responses to drug versus food cues discriminate drug users versus non-users with 82% accuracy. The NCS is also modulated by a self-regulation strategy. Transfer between separate neuromarkers for drug and food craving suggests shared neurobiological mechanisms. Future studies can assess the discriminant and convergent validity of the NCS and test whether it responds to clinical interventions and predicts long-term clinical outcomes.",
-  "cited_by_count": 157,
+  "cited_by_count": 159,
   "oa_status": "green",
   "oa_url": "https://hal.science/hal-03857887v1/document",
   "landing_url": "https://doi.org/10.1038/s41593-022-01228-w",
@@ -8247,7 +8247,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Koban, L., Wager, T.D. & Kober, H. (2023). A neuromarker for drug and food craving distinguishes drug users from non-users. Nat Neurosci 26, 316–325 . PMID: 36536243. [PDF] [Link to the signature]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "jung2023divergent",
@@ -9198,7 +9198,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kim, J., Andrews-Hanna, J.R., Eisenbarth, H., Lux, B.K., Kim, H.J., Lee, E., Lindquist, M.A., Losin, E.A.R., Wager, T.D., & Woo, C. (2023). A dorsomedial prefrontal cortex-based dynamic functional connectivity model of rumination. Nat Commun 14. PMID: 37321986. PMCID: PMC10272121. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "sluka2023predicting",
@@ -9786,7 +9786,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Koban, L., Andrews-Hanna, J. R., Ives, L., Wager, T. D., & Arch, J. J. (2023) Brain mediators of biased social learning of self-perception in social anxiety disorder. Translational Psychiatry 13, 292. PMID: 37978165. PMCID: PMC10656563. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "ashar2023reattribution",
@@ -11056,7 +11056,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kohoutová, L., Atlas, L.Y., Büchel, C., Buhle, J.T., Geuter, S., Jepma, M., Koban, L., Krishnan, A., Lee, D.H., Lee, S., Roy, M., Schafer, S.M., Schmidt, L., Wager, T.D. & Woo, C-W. (2022). Individual variability in brain representations of pain. Nature Neuroscience. 25(6):749–759. PMID: 35637368. PMCID: PMC9435464. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "coll2022neural",
@@ -11393,7 +11393,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Klein, S., Kruse, O., Tapia León, I., Van Oudenhove, L., Van ’t Hof, S.R., Klucken, T., Wager, T.D., & Stark, S. (2022). Cross-paradigm integration shows a common neural basis for aversive and appetitive conditioning. NeuroImage, 263, 119594. PMID: 36041642. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "wielgoszj2022neural",
@@ -12481,7 +12481,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lee, J., Kim, H. K., Čeko, M., 4, Park, B., Lee, S., Park, H., Roy, M., Kim, S., Wager, T. D. & Woo, C. W. (2021). A neuroimaging biomarker for sustained experimental and clinical pain. Nature Medicine. 27: 174-182. PMID: 33398159. [PDF], [Code], [Dataset]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "sicorello2021affective",
@@ -12908,7 +12908,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Koban, L., Gianaros, P.J. Kober, H. & Wager, T.D. (2021). The Self in Context: Brain Systems Linking Mental and Physical Health. Nature Reviews Neuroscience. 22 (5): 309–22. PMID: 33790441. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "ashar2021markers",
@@ -13554,7 +13554,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kragel, P.A., Čeko, M., Theriault, J., Chen, D., Satpute, A.B., Wald, L.W., Lindquist, M.A., Feldman Barret, L. & Wager, T.D. (2021). A human colliculus-pulvinar-amygdala pathway encodes negative emotion. Neuron. 109(15):2404-2412.e5 PMCID: PMC8349850. [PDF], [Brain Models and Maps], [fMRI Data], [“Multivariate Pathway Identification (MPathI)” by Drs. Wager and Kragel]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "zhang2021gender",
@@ -15150,7 +15150,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Landa, A., Fallon, B. A., Wang, Z., Duan, Y., Liu, F., Feng, L., Wager, T. D., Ochsner, K. & Peterson, B. S. (2020). When it hurts even more: The neural dynamics of pain and interpersonal emotions. Journal of Psychosomatic Research. 128: 109881. PMCID: PMC7055518. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "yu2020toward",
@@ -15439,7 +15439,7 @@
   "crossref_checked": true,
   "abstract_source": "pubmed",
   "citation_original": "Kohoutová, L., Heo, J., Cha, S., Lee, S., Moon, T., Wager, T. D. & Woo, C. W. (2020). Interpreting machine learning models in neuroimaging: Towards a unified framework. Nature Protocols. 15: 1399–1435. PMID: 32203486. [PDF], [Video Abstract]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "geuter2020multiple",
@@ -15849,7 +15849,7 @@
   "crossref_checked": true,
   "citation_original": "Leach, S.M, Gibbings, S.L., Tewari, A.D., Atif, S.M., Vestal, B., Danhorn, T., Janssen, W.J., Wager, T.D. & Jakubzick, C.V. (2020) Human and Mouse Transcriptome Profiling Identifies Cross-Species Homology in Pulmonary and Lymph Node Mononuclear Phagocytes. Cell Reports. 33(5):108337. PMID: 33147458. [PDF]",
   "preprint_doi": "10.1101/2020.04.30.070839",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "zhouf2020empathic",
@@ -16500,7 +16500,7 @@
   "crossref_checked": true,
   "citation_original": "Kragel, P., Han, X., Kraynak, T., Gianaros, P. J., & Wager, T.D. (2020). fMRI can be highly reliable, but it depends on what you measure. Psychological Science. 32(4):622-626. PMID: 33685310. [Preprint PDF]",
   "preprint_doi": "10.31234/osf.io/9eaxk",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "guevarra2020placebos",
@@ -17433,7 +17433,7 @@
   "crossref_checked": true,
   "citation_original": "Lindquist, M., Geuter, S., Wager, T. D., & Caffo, B. (2019). Modular preprocessing pipelines can reintroduce artifacts into fMRI data. Human Brain Mapping. 40(8): 2358-2376. PMID: 30666750. [PDF]",
   "preprint_doi": "10.1101/407676",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "kragel2019emotion",
@@ -17535,7 +17535,7 @@
   "crossref_checked": true,
   "citation_original": "Kragel, P. A., Reddan, M. C., LaBar, K. S., & Wager, T. D. (2019). Emotion schemas are embedded in the human visual system. Science Advances. 5(7): eaaw4358. PMCID: PMC6656543. [PDF], [EmoNet]",
   "preprint_doi": "10.1101/470237",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "munafo2019power",
@@ -17735,7 +17735,7 @@
   "openalex_id": null,
   "date": "2019-01-28",
   "abstract": "Sleep loss increases the experience of pain. However, the brain mechanisms underlying altered pain processing following sleep deprivation are unknown. Moreover, it remains unclear whether ecologically modest night-to-night changes in sleep, within an individual, confer consequential day-to-day changes in experienced pain. Here, we demonstrate that acute sleep deprivation amplifies pain reactivity within human (male and female) primary somatosensory cortex yet blunts pain reactivity in higher-order valuation and decision-making regions of the striatum and insula cortex. Consistent with this altered neural signature, we further show that sleep deprivation expands the temperature range for classifying a stimulus as painful, specifically through a lowering of pain thresholds. Moreover, the degree of amplified reactivity within somatosensory cortex following sleep deprivation significantly predicts this expansion of experienced pain across individuals. Finally, outside of the laboratory setting, we similarly show that even modest nightly changes in sleep quality (increases and decreases) within an individual determine consequential day-to-day changes in experienced pain (decreases and increases, respectively). Together, these data provide a novel framework underlying the impact of sleep loss on pain and, furthermore, establish that the association between sleep and pain is expressed in a night-to-day, bidirectional relationship within a sample of the general population. More broadly, our findings highlight sleep as a novel therapeutic target for pain management within and outside the clinic, including circumstances where sleep is frequently short yet pain is abundant (e.g., the hospital setting).",
-  "cited_by_count": 168,
+  "cited_by_count": 170,
   "oa_status": null,
   "oa_url": "https://www.jneurosci.org/content/jneuro/39/12/2291.full.pdf",
   "landing_url": "https://doi.org/10.1523/jneurosci.2408-18.2018",
@@ -17793,7 +17793,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Krause, A., Prather, A., Wager, T., Lindquist, M., & Walker, M. (2019). The pain of sleep loss: A brain characterization in humans.The Journal of Neuroscience. 39(12): 2291-2300. PMCID: PMC6433768. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "shackman2019emotional",
@@ -18300,7 +18300,7 @@
   "openalex_id": null,
   "date": "2019-06-03",
   "abstract": "Recent theoretical advances have motivated the hypothesis that the periaqueductal gray (PAG) participates in behaviors that involve changes in the autonomic control of visceromotor activity, including during cognitively demanding tasks. We used ultra-high-field (7 tesla) fMRI to measure human brain activity at 1.1 mm resolution while participants completed a working memory task. Consistent with prior work, participants were less accurate and responded more slowly with increasing memory load-signs of increasing task difficulty. Whole-brain fMRI analysis revealed increased activity in multiple cortical areas with increasing working memory load, including frontal and parietal cortex, dorsal cingulate, supplementary motor area, and anterior insula. Several dopamine-rich midbrain nuclei, such as the substantia nigra and ventral tegmental area, also exhibited load-dependent increases in activation. To investigate PAG involvement during cognitive engagement, we developed an automated method for segmenting and spatially normalizing the PAG. Analyses using cross-validated linear support vector machines showed that the PAG discriminated high versus low working memory load conditions with 95% accuracy in individual subjects based on activity increases in lateral and ventrolateral PAG. Effect sizes in the PAG were comparable in magnitude to those in many of the cortical areas. These findings suggest that cognitive control is not only associated with cortical activity in the frontal and parietal lobes, but also with increased activity in the subcortical PAG and other midbrain regions involved in the regulation of autonomic nervous system function.",
-  "cited_by_count": 63,
+  "cited_by_count": 62,
   "oa_status": null,
   "oa_url": "https://www.jneurosci.org/content/jneuro/39/31/6180.full.pdf",
   "landing_url": "https://doi.org/10.1523/jneurosci.2043-18.2019",
@@ -18371,7 +18371,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kragel, P. A., Bianciardi, M., Hartley, L., Matthewson, G., Choi, J. K., Quigley, K., Wald, L. L., Wager, T. D., Feldman Barrett, L. & Satpute, A. B. (2019). Functional Involvement of Human Periaqueductal Gray and Other Midbrain Nuclei in Cognitive Control. 39(31):6180 – 6189. The Journal of Neuroscience. PMCID: PMC6668211. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "lopezsola2019mechanisms",
@@ -18836,7 +18836,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Koban, L., Jempa, M., Lopez-Sola, M. & Wager, T. D. (2019). Different brain networks mediate the effects of social and conditioned expectations on pain. Nature Communications. 10(1):4096. PMCID: PMC6736972. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "chen2019socially",
@@ -19028,7 +19028,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kober, H., Buhle, J., Weber, J., Ochsner, K. N. & Wager, T. D. (2019). Let it be: Mindful-acceptance down-regulates pain and negative emotion. Social Cognitive and Affective Neuroscience. 14(11):1147-1158. PMCID: PMC7057281. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "lopezsola2018transforming",
@@ -19838,7 +19838,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kiehl, K.A., Anderson, N.E., Aharoni, E., Maurer, J.M., Harenski, K., Rao, V., Claus, E.D., Harenski, C.L., Koenigs, M., Decety, J., Kosson, D., Wager, T.D., Calhoun, V.D. & Steele, V.R. (2018). Age of Gray Matters: Neuroprediction of Recidivism. Neuroimage: Clinical. 19: 813-823. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "reddan2018attenuating",
@@ -20185,7 +20185,7 @@
   "openalex_id": null,
   "date": "2018-01-01",
   "abstract": "The medial frontal cortex, including anterior midcingulate cortex, has been linked to multiple psychological domains, including cognitive control, pain, and emotion. However, it is unclear whether this region encodes representations of these domains that are generalizable across studies and subdomains. Additionally, if there are generalizable representations, do they reflect a single underlying process shared across domains or multiple domain-specific processes? We decomposed multivariate patterns of functional MRI activity from 270 participants across 18 studies into study-specific, subdomain-specific, and domain-specific components and identified latent multivariate representations that generalized across subdomains but were specific to each domain. Pain representations were localized to anterior midcingulate cortex, negative emotion representations to ventromedial prefrontal cortex, and cognitive control representations to portions of the dorsal midcingulate. These findings provide evidence for medial frontal cortex representations that generalize across studies and subdomains but are specific to distinct psychological domains rather than reducible to a single underlying process.",
-  "cited_by_count": 305,
+  "cited_by_count": 303,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1038/s41593-017-0051-7",
@@ -20267,7 +20267,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kragel, P. A., Kano, M., Van Oudenhove, L., Ly, H. G., Dupont, P., Rubio, A., Delon-Martin, C., Bonaz, B. L., Manuck, S. B., Gianaros, P. J., Ceko, M., Losin, R. E. A., Woo, C. W., Nichols, T. E., Wager, T. D. (2018). Generalizable representations of pain, cognitive control, and negative emotion in medial frontal cortex. Nature neuroscience. 21(2): 283-289. PMCID: PMC5801068. [PDF], [Code], [Brain Model]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "koban2018generalization",
@@ -20359,7 +20359,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Koban, L., Kusko, D., & Wager, T. D. (2018). Generalization of learned pain modulation depends on explicit learning. Acta Psycholgica. 184: 75-84. PMCID: PMC5847433. [PDF], [Paradigm]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "samartsidis2018bayesian",
@@ -20492,7 +20492,7 @@
   "openalex_id": null,
   "date": "2018-07",
   "abstract": "Human neuroimaging research has transitioned from mapping local effects to developing predictive models of mental events that integrate information distributed across multiple brain systems. Here we review work demonstrating how multivariate predictive models have been utilized to provide quantitative, falsifiable predictions; establish mappings between brain and mind with larger effects than traditional approaches; and help explain how the brain represents mental constructs and processes. Although there is increasing progress toward the first two of these goals, models are only beginning to address the latter objective. By explicitly identifying gaps in knowledge, research programs can move deliberately and programmatically toward the goal of identifying brain representations underlying mental states and processes.",
-  "cited_by_count": 249,
+  "cited_by_count": 250,
   "oa_status": null,
   "oa_url": "http://www.cell.com/article/S089662731830477X/pdf",
   "landing_url": "https://doi.org/10.1016/j.neuron.2018.06.009",
@@ -20553,7 +20553,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kragel, P. A., Koban, L., Feldman Barrett, L., & Wager, T. D. (2018). Representation, Pattern Information, and Brain Signatures: From Neurons to Neuroimaging. Neuron. 99(2): 257-273. PMCID: PMC6296466. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "casey2018adolescent",
@@ -20850,7 +20850,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kraynak, T. E., Marsland, A. L., Wager, T. D., Gianaros, P. J. (2018). Functional neuroanatomy of peripheral inflammatory physiology: A meta-analysis of human neuroimaging studies. Neuroscience & Biobehavioral Reviews. 94: 76-92. PMCID: PMC6363360.[PDF], [Brain Model]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "zunhammer2018placebo",
@@ -21021,7 +21021,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kragel, P.A., Wager, T. D. (2018). Reproducible, generalizable brain models of affective processes. In M. Neta & I. Haas (Eds.) Nebraska Symposium on Motivation. New York, NY: Springer. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "satpute2018deconstructing",
@@ -22053,7 +22053,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Koban, L., Kross, E., Woo, C. W., Ruzic, L., & Wager, T. D. (2017). Frontal-Brainstem Pathways Mediating Placebo Effects on Social Rejection.The Journal of neuroscience : the official journal of the Society for Neuroscience, 37(13), 3621–3631 PMCID: PMC5373138 [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "ashar2017psychological",
@@ -23042,7 +23042,7 @@
    "notes": "The extracted full text for this batch entry appears to be a different paper (Benedetti & Amanzio, 'Mechanisms of the placebo response', Pulmonary Pharmacology & Therapeutics 2013) rather than Koban et al.'s actual article text; tags here rely on the (matching) title and abstract only, so approach/topic coverage may be incomplete.",
    "classified_at": "2026-09-07T03:40:08Z"
   },
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "kalisch2017resilience",
@@ -23386,7 +23386,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Koban, L., Schneider, R., Ashar, Y. K., Andrews-Hanna, J. R., Landy, L., Moscovitch, D. A., Wager, T. D. & Arch, J. J. (2017). Social anxiety is characterized by biased learning about performance and the self. Emotion. 17(8): 1144-1155. PMCID: PMC5623172. [PDF], [Paradigm]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "roy2017neuromatrix",
@@ -23641,7 +23641,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lindquist, K. A., Satpute, A. B., Wager, T. D., Weber, J., & Barrett, L. F. (2016). The brain basis of positive and negative affect: evidence from a meta-analysis of the human neuroimaging literature. Cerebral Cortex. 26(5):1910-1922. PMCID: PMC4830281. [PDF]",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "spicer2016prevention",
@@ -23955,7 +23955,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Koban, L., & Wager, T. D. (2016). Beyond conformity: Social influences on pain reports and physiology. Emotion. 16(1):24-32.PMCID: PMC4718820. [PDF], [Paradigm]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "pauli2016regional",
@@ -24754,7 +24754,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Krishnan, A., Woo, C. W., Chang, L. J., Ruzic, L., Gu, X., Lopez-Sola, M., Jackson, P. L., Pujol, J., Fan, J. & Wager, T. D. (2016). Somatic and vicarious pain are represented by dissociable multivariate brain patterns. eLife. 5:e15166. PMCID: PMC4907690. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "delavega2016largescale",
@@ -27667,7 +27667,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lindquist, M. A., Krishnan, A., Lopez-Sola, M., Jepma, M., Woo, C. W., Koban, L., Roy, M., Atlas, L. Y., Schmidt, L., Chang, L. J. & Losin, R. E. A. (2015). Group-regularized individual prediction: theory and application to pain. NeuroImage. 145(Pt B):274-287. PMCID: PMC5071107. [PDF]",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "chen2015highdimensional",
@@ -27843,7 +27843,7 @@
   },
   "abstract_source": "pdf",
   "citation_original": "Lindquist, M. A. & Wager, T. D. (2014). Principles of functional Magnetic Resonance Imaging. Handbook of Neuroimaging Data Analysis. London: Chapman & Hall, CRC Press. [PDF]",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "atlas2014specifying",
@@ -29954,7 +29954,7 @@
   "abstract_source": "crossref",
   "crossref_checked": true,
   "citation_original": "Koban, L., Ruzic, L., & Wager, T. D. (2013). Brain Predictors of Individual Differences in Placebo Responding. In L. Colloca, M. A. Flaten & K. Meissner (Eds.), Placebo and Pain: Elsevier/Academic Press. The Journal of Neuroscience. 31(2): 439–452. PMCID: PMC3735131. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "cribben2013detecting",
@@ -30980,7 +30980,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lindquist, M.A., Spicer, J., Asllani, I., &Wager, T.D. (2012). Estimating and testing variance components in a multi-level GLM. Neuroimage. 59(1):490-501. PMCID: PMC3195889. [PDF]",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "buhle2012distraction",
@@ -31467,7 +31467,7 @@
   "openalex_id": null,
   "date": "2012-05-23",
   "abstract": "Researchers have wondered how the brain creates emotions since the early days of psychological science. With a surge of studies in affective neuroscience in recent decades, scientists are poised to answer this question. In this target article, we present a meta-analytic summary of the neuroimaging literature on human emotion. We compare the locationist approach (i.e., the hypothesis that discrete emotion categories consistently and specifically correspond to distinct brain regions) with the psychological constructionist approach (i.e., the hypothesis that discrete emotion categories are constructed of more general brain networks not specific to those categories) to better understand the brain basis of emotion. We review both locationist and psychological constructionist hypotheses of brain-emotion correspondence and report meta-analytic findings bearing on these hypotheses. Overall, we found little evidence that discrete emotion categories can be consistently and specifically localized to distinct brain regions. Instead, we found evidence that is consistent with a psychological constructionist approach to the mind: A set of interacting brain regions commonly involved in basic psychological operations of both an emotional and non-emotional nature are active during emotion experience and perception across a range of discrete emotion categories.",
-  "cited_by_count": 2363,
+  "cited_by_count": 2364,
   "oa_status": null,
   "oa_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/80F95F093305C76BA2C66BBA48D4BC8A/S0140525X11000446a.pdf/div-class-title-the-brain-basis-of-emotion-a-meta-analytic-review-div.pdf",
   "landing_url": "https://doi.org/10.1017/s0140525x11000446",
@@ -31526,7 +31526,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lindquist, K. A., Wager, T. D., Kober, H., Mliss-Moreau, E. & Barrett, L. F. (2012). The Brain Basis of Emotion: A meta-analytic review. Behavioral and Brain Sciences. 35(3):121-143. PMID: 22617651. [PDF]",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "lindquist2012what",
@@ -31617,7 +31617,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lindquist, K. A., Wager, T. D., Bliss-Moreau, E., Kober, H., Barrett, L. F. (2012). What are emotions and how are they created in the brain? Behavioral and Brain Sciences. 35(3):172-202. PMID: 22783560. [PDF]",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "atlas2012expectations",
@@ -32248,7 +32248,7 @@
   },
   "abstract_source": "pdf",
   "citation_original": "Link, B. V., Kos, B., Wager, T. D., & Mozer, M. (2011). Past experience influences judgment of pain: Prediction of sequential dependencies. In Expanding the space of cognitive science: Proceedings of the 33rd Annual Meeting of the Cognitive Science Society (pp. 1248-1253). [PDF]",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "wager2011predicting",
@@ -32465,7 +32465,7 @@
   "openalex_id": null,
   "date": "2011-03-28",
   "abstract": "How similar are the experiences of social rejection and physical pain? Extant research suggests that a network of brain regions that support the affective but not the sensory components of physical pain underlie both experiences. Here we demonstrate that when rejection is powerfully elicited--by having people who recently experienced an unwanted break-up view a photograph of their ex-partner as they think about being rejected--areas that support the sensory components of physical pain (secondary somatosensory cortex; dorsal posterior insula) become active. We demonstrate the overlap between social rejection and physical pain in these areas by comparing both conditions in the same individuals using functional MRI. We further demonstrate the specificity of the secondary somatosensory cortex and dorsal posterior insula activity to physical pain by comparing activated locations in our study with a database of over 500 published studies. Activation in these regions was highly diagnostic of physical pain, with positive predictive values up to 88%. These results give new meaning to the idea that rejection \"hurts.\" They demonstrate that rejection and physical pain are similar not only in that they are both distressing--they share a common somatosensory representation as well.",
-  "cited_by_count": 695,
+  "cited_by_count": 697,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1073/pnas.1102693108",
@@ -32530,7 +32530,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kross, E., Berman, M. G., Mischel, W., Smith, E. E. & Wager, T. D. (2011). Social Rejection Shares Somatosensory Representations with Physical Pain. Proceedings of the National Academy of Sciences. 108(15):6270-5. PMCID: PMC3076808. [PDF], [Paradigm]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "yarkoni2011largescale",
@@ -32721,7 +32721,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kross, E., Berman, M. G., Mischel, W., Smith, E. E., & Wager, T. D. (2011). Reply to Iannetti and Mouraux: What functional MRI responses to physical pain tell us about why social rejection “hurts”. Proceedings of the National Academy of Sciences, 108(30), E344-E344. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "grinband2011conflict",
@@ -33216,7 +33216,7 @@
   "openalex_id": null,
   "date": "2010",
   "abstract": "Psychological research has placed great emphasis on inhibitory control due to its integral role in normal cognition and clinical disorders. The stop-signal task and associated measure--stop-signal reaction time (SSRT)--provides a well-established paradigm for measuring response inhibition. However, motivational influences on stop-signal performance and SSRT have not been examined. We conceptualize the stop-signal paradigm as a decision-making task involving the trade-off between fast responding and accurate inhibition. In 4 experiments, we demonstrate that performance trade-offs are influenced by inherent motivational biases and explicit strategic control. As a result, SSRT was lower when participants favored correct stopping over fast responding than when the same participants favored fast responding over correct stopping. We present a novel variant of the stop-signal task that uses monetary incentives to manipulate motivated speed-accuracy trade-offs. By sampling performance at multiple-trade-off settings, we obtain a measure of inhibitory ability that is independent of trade-off bias, and thus, more easily interpretable when comparing across participants. We present a working theoretical model to explain the effects of motivational context on response inhibition.",
-  "cited_by_count": 179,
+  "cited_by_count": 178,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1037/a0016802",
@@ -33271,7 +33271,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Leotti, L. A. & Wager, T. D. (2010). Motivational influences on response inhibition measures. Journal of Experimental Psychology: Human Perception and Performance. 36(2):430-47. PMID: 20364928. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "robinson2010changepoint",
@@ -33524,7 +33524,7 @@
   "abstract_source": "crossref",
   "crossref_checked": true,
   "citation_original": "Kober, H., & Wager, T. D. (2010). Meta-analyses of neuroimaging data. Wiley Interdisciplinary Reviews: Cognitive Science. 1(2): 293-300. PMID: 24052810. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "buhle2010using",
@@ -34459,7 +34459,7 @@
    "classified_at": "2026-09-06T19:26:20Z"
   },
   "citation_original": "Lane, R. D. & Wager, T. D. (2009). Introduction to a special issue of Neuroimage on brain-body medicine. Neuroimage. 47:1-4. PMID: 19524045. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "lane2009rebirth",
@@ -34576,7 +34576,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lane, R. D., Waldstein, S. R., Critchley, H. D., Derbyshire, S. W., Drossman, D. A., Wager, T. D., Schneiderman, N., Chesney, M. A., Jennings, J. R., Lovallo, W. R., Rose, R. M., Thayer, J. F. & Cameron, O. G. (2009). The rebirth of neuroscience in psychosomatic medicine, Part II: clinical applications and implications for research. Psychosomatic Medicine. 71:135-51. PMID: 19196806. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "lindquist2009modeling",
@@ -34665,7 +34665,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lindquist, M. A., Meh Loh, J., Atlas, L. Y. & Wager T. D. (2009). Modeling the hemodynamic response function in fMRI: efficiency, bias and mis-modeling. Neuroimage. 45:187-98. [PDF]",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "wager2009evaluating",
@@ -34936,7 +34936,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lieberman, M. D., Berkman, E. T., & Wager, T. D. (2009). Correlations in Social Neuroscience Aren’t Voodoo: Commentary on Vul et al. (2009) Perspectives on Psychological Science. 4:299-307. PMID: 19524045. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "vansnellenberg2009cognitive",
@@ -35105,7 +35105,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lane, R. D. & Wager, T. D. (2009). The new field of Brain-Body Medicine: what have we learned and where are we headed? Neuroimage. 47:1135-40. PMID: 19524045 . [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "wager2009mediators",
@@ -35437,7 +35437,7 @@
    "confidence": 0.4,
    "classified_at": "2026-09-07T03:40:32Z"
   },
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "loh2008residual",
@@ -35773,7 +35773,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lindquist, M. A. & Wager, T. D. (2008). Spatial smoothing in fMRI using prolate spheroidal wave functions. Human Brain Mapping. 29:1276-87. NIHMSID: NIHMS355898 PMCID: PMC3318970. [PDF]",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "kober2008functional",
@@ -35808,7 +35808,7 @@
   "openalex_id": null,
   "date": "2008-08",
   "abstract": "We performed an updated quantitative meta-analysis of 162 neuroimaging studies of emotion using a novel multi-level kernel-based approach, focusing on locating brain regions consistently activated in emotional tasks and their functional organization into distributed functional groups, independent of semantically defined emotion category labels (e.g., \"anger,\" \"fear\"). Such brain-based analyses are critical if our ways of labeling emotions are to be evaluated and revised based on consistency with brain data. Consistent activations were limited to specific cortical sub-regions, including multiple functional areas within medial, orbital, and inferior lateral frontal cortices. Consistent with a wealth of animal literature, multiple subcortical activations were identified, including amygdala, ventral striatum, thalamus, hypothalamus, and periaqueductal gray. We used multivariate parcellation and clustering techniques to identify groups of co-activated brain regions across studies. These analyses identified six distributed functional groups, including medial and lateral frontal groups, two posterior cortical groups, and paralimbic and core limbic/brainstem groups. These functional groups provide information on potential organization of brain regions into large-scale networks. Specific follow-up analyses focused on amygdala, periaqueductal gray (PAG), and hypothalamic (Hy) activations, and identified frontal cortical areas co-activated with these core limbic structures. While multiple areas of frontal cortex co-activated with amygdala sub-regions, a specific region of dorsomedial prefrontal cortex (dmPFC, Brodmann's Area 9/32) was the only area co-activated with both PAG and Hy. Subsequent mediation analyses were consistent with a pathway from dmPFC through PAG to Hy. These results suggest that medial frontal areas are more closely associated with core limbic activation than their lateral counterparts, and that dmPFC may play a particularly important role in the cognitive generation of emotional states.",
-  "cited_by_count": 1167,
+  "cited_by_count": 1166,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.neuroimage.2008.03.059",
@@ -35876,7 +35876,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Kober, H., Barrett, L. F., Joseph, J., Bliss-Moreau, E., Londquist, K. & Wager T. D. (2008). Functional grouping and cortical-subcortical interactions in emotion: a meta-analysis of neuroimaging studies. Neuroimage. 42:998-1031. PMID: 18579414. [PDF], [Brain Models]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "wager2008prefrontalsubcortical",
@@ -36321,7 +36321,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lindquist, M. A. & Wager, T. D. (2007). Validity and power in hemodynamic response modeling: a comparison study and a new approach. Human Brain Mapping. 8:764-84. [PDF]",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "nee2007interference",
@@ -36501,7 +36501,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Lindquist, M.A., Waugh, C., & Wager, T.D. (2007). Modeling state-related fMRI activity using change-point theory. NeuroImage. 35(3): 1125-1141. PMID: 17360198. [PDF]",
-  "citations_refreshed": "2026-09-10"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "wager2007metaanalysis",
@@ -37543,7 +37543,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Keller, M. C., Fredrickson, B. L., Ybarra, O., Cote, S., Johnson, K., Mikels, J. & Wager, T. D. (2005). A warm heart and a clear head: the effects of weather on human mood and cognition. Journal of Personality and Social Psychology. PMID: 16137259. [PDF]",
-  "citations_refreshed": "2026-09-09"
+  "citations_refreshed": "2026-09-16"
  },
  {
   "id": "wager2005differences",
