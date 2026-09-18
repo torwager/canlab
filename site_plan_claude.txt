@@ -176,9 +176,13 @@ Network: d3 force graph built in the browser from index.json; nodes = authors wi
   (cosine over tag profiles) modes; keyword menu; find box; side panel with tags, recent papers, link
   to the author's papers; node colour = current member (amber) / alumnus (steel) / other (grey) using
   people.json; "More to explore" tiles at the bottom.
-Bibliometrics: publications per year, topics by year, approaches by year (stacked, clickable), three
+Bibliometrics: publications per year, topics by year, approaches by year (stacked, clickable; top 8
+  plus neurostimulation forced in via opts.include, colour --s10), three
   tag-count panels, top co-authors (PI excluded), most-cited table (the ONLY place citation counts
   appear; OpenAlex/Crossref counts are otherwise hidden because Google Scholar counts cannot be pulled).
+  Google Scholar has no API and forbids automated access; OpenAlex runs lower than Scholar (NPS paper
+  ~1,700 vs Scholar's higher figure). A paid Scholar proxy (SerpApi's author endpoint) is the only
+  practical route to Scholar numbers; not adopted as of 2026-09-17.
 My list / Sign in: star lists in localStorage, named lists, import/export, export menu; account.js
   syncs through the worker when configured. About: how the site is built, tags, privacy, contributing.
 
@@ -270,6 +274,19 @@ Former Postdocs. Check photos actually show the named person (one was mislabelle
 5. Link the canlab Neuroimaging_Pattern_Masks repo: fetch its tree (gh api .../git/trees/master
    ?recursive=1), match "YYYY_Author_..." folders to papers by year + author, review by hand, add
    links of type maps. The NPS itself is not in the public repo.
+6. AUDIT DOIs AFTER ENRICHMENT (scripts/audit_dois.py, then a reviewed scripts/apply_doi_fixes.py). Title
+   matching alone attached the NEJM pain-signature paper to a same-titled chapter in a book summarising
+   it (1 citation instead of ~1,700); others got a meeting abstract, an SSRN copy, an eLife reviewer
+   comment, a Zenodo deposit. The audit compares each DOI's Crossref record with the old site's citation
+   (journal, year, PMID) and flags chapter/component DOIs on articles. Review by hand: most flags are
+   harmless (subtitles, abbreviations, online-first years), and the old site's PMIDs were themselves wrong
+   several times (a correction notice, an unrelated paper). The lab's paper is sometimes the "Reply".
+   Records without a DOI cannot have their counts refreshed, so find one or clear the count.
+7. AUTHOR LISTS: the scrape fused authors ("Woo, C.-W., Wager, T.D." as one entry, which showed as
+   "Woo CWWTD" among co-authors and removed the PI from the paper), truncated lists, and dotted initials
+   ("Wager T. D", "Lindquist M.A"). scripts/fix_fused_authors.py holds the explicit fixes;
+   build_site.canonical_author collapses dotted initials. Check: every paper should list the PI unless
+   authors_truncated.
 
 ------------------------------------------------------------------------------------------
 9. PDFs

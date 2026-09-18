@@ -21,11 +21,11 @@
 <link rel="stylesheet" href="assets/app.css?v=5">
 <style>
   .viz-root { --surface-1: #ffffff; --text-primary: #1a2332; --text-secondary: #646b75; --grid: #e8e4dc;
-    --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #008300; --s7: #4a3aa7; --s8: #e34948; --s9: #8a8f99; --seq: #2a78d6; }
+    --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #008300; --s7: #4a3aa7; --s8: #e34948; --s9: #8a8f99; --s10: #0f8b9c; --seq: #2a78d6; }
   @media (prefers-color-scheme: dark) { :root:where(:not([data-theme="light"])) .viz-root { --surface-1: #1a2029; --text-primary: #e8e6df; --text-secondary: #a9afa9; --grid: #2a303a;
-    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767; --s9: #6b717c; --seq: #3987e5; } }
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767; --s9: #6b717c; --s10: #2bb3c4; --seq: #3987e5; } }
   :root[data-theme="dark"] .viz-root { --surface-1: #1a2029; --text-primary: #e8e6df; --text-secondary: #a9afa9; --grid: #2a303a;
-    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767; --s9: #6b717c; --seq: #3987e5; }
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767; --s9: #6b717c; --s10: #2bb3c4; --seq: #3987e5; }
   .viz-grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
   @media (min-width: 900px) { .viz-grid { grid-template-columns: 1fr 1fr; } .viz-grid .wide { grid-column: 1 / -1; } }
   .viz { background: var(--surface-1); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1rem 1.1rem 1.1rem; display: grid; gap: .5rem; min-width: 0; align-content: start; }
@@ -91,7 +91,7 @@
   const { state } = await CL.loadCore();
   const B = await CL.getJSON("data/bibliometrics.json");
   const esc = CL.esc;
-  const S = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)", "var(--s5)", "var(--s6)", "var(--s7)", "var(--s8)"];
+  const S = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)", "var(--s5)", "var(--s6)", "var(--s7)", "var(--s8)", "var(--s10)"];
   const OTHER = "var(--s9)";
   const tip = document.getElementById("tip");
   function showTip(e, html) { tip.innerHTML = html; tip.style.opacity = 1; const x = Math.min(e.clientX + 14, window.innerWidth - 280), y = Math.min(e.clientY + 14, window.innerHeight - 90); tip.style.left = x + "px"; tip.style.top = y + "px"; }
@@ -134,7 +134,9 @@
   // (2-3) stacked bars by year: counts of the top-k keys, the rest folded into Other
   function stackedBars(series, axis, opts = {}) {
     const k = Math.min(opts.k || series.keys.length, series.keys.length);
-    const keys = series.keys.slice(0, k), hasOther = series.keys.length > k;
+    // opts.include: keys always shown as their own series even when outside the top k
+    const keys = series.keys.slice(0, k).concat((opts.include || []).filter(kk => series.keys.includes(kk) && series.keys.indexOf(kk) >= k));
+    const hasOther = series.keys.length > keys.length;
     const rows = series.rows.filter(r => r.slice(1).some(v => v > 0));
     if (rows.length < 2) return `<div class="empty">Not enough tagged papers yet.</div>`;
     const ys = rows.map(r => r[0]);
@@ -195,7 +197,7 @@
   const html = [
     card("Publications per year", "Number of papers published each year (the current year is lighter because it is incomplete). Click a bar to open that year's papers.", bars(years, B.per_year, { aria: "Publications per year" }) + table(years.map((y, i) => [y, B.per_year[i]]), ["Year", "Papers"]), true),
     card("Topics by year", "The eight most frequent topic tags; less frequent topics are folded into Other. A paper can carry several topics.", stackedBars(B.topic_by_year, "topic", { k: 8, aria: "Topics by year" })),
-    card("Approaches by year", "The eight most frequent approach tags (methods and study types); the rest are folded into Other.", stackedBars(B.approach_by_year, "approach", { k: 8, aria: "Approaches by year" })),
+    card("Approaches by year", "The eight most frequent approach tags (methods and study types) plus neurostimulation; the rest are folded into Other.", stackedBars(B.approach_by_year, "approach", { k: 8, include: ["brain_stimulation"], aria: "Approaches by year" })),
     card("Tags across the whole bibliography", "How many papers carry each topic, approach and article-type tag. Click a bar to open those papers.", `<div class="three">${axisPanel("topic", "var(--s7)")}${axisPanel("approach", "var(--s3)")}${axisPanel("type", "var(--s9)")}</div>`, true),
     card("Most frequent co-authors", "People who appear most often on the lab's papers, in any author position (Tor Wager excluded). Click to open their papers; the <a href=\"network.html\">collaborator network</a> shows how they connect.", hbars(coauthorRows, { k: 15, color: "var(--s5)", aria: "Most frequent co-authors", link: a => `publications.html?author=${encodeURIComponent(a)}` }) + table(coauthorRows, ["Author", "Papers"])),
     card("Most-cited papers", `Citation counts from OpenAlex${B.n_with_cites ? ` (available for ${B.n_with_cites.toLocaleString()} of ${B.n.toLocaleString()} papers)` : ""}.`, `<table><tr><th></th><th>Paper</th><th class="n">Citations (OpenAlex)</th></tr>${(B.most_cited || []).slice(0, 25).map((p, i) => `<tr><td class="rank">${i + 1}</td><td><a href="papers/${encodeURIComponent(p.id)}.html">${esc(p.t)}</a><div class="small muted">${esc(p.a)}${p.j ? ` · ${esc(p.j)}` : ""} · ${p.y || ""}</div></td><td class="n">${(p.cites || 0).toLocaleString()}</td></tr>`).join("")}</table>`, true),

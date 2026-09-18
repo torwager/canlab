@@ -68,6 +68,10 @@ AUTHOR_ALIASES = {"Feldman Barrett L": "Barrett LF", "Feldmann-Barrett L": "Barr
 
 def canonical_author(a):
     a = re.sub(r"Feldmann?[ -]Barrett", "Barrett", a).strip()
+    # "Wager T. D", "Wager. T. D", "Lindquist M.A" -> "Wager TD", "Lindquist MA" (dotted initials split one person in two)
+    m = re.match(r"^(.*?[^\s.])\.?\s+((?:[A-ZÀ-Ý]\.?\s*){1,4})$", a)
+    if m and re.search(r"[.\s]", m.group(2).strip()):
+        a = f"{m.group(1)} {re.sub(r'[^A-ZÀ-Ý]', '', m.group(2))}"
     if a in AUTHOR_ALIASES:
         return AUTHOR_ALIASES[a]
     return a
