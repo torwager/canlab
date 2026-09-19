@@ -1,7 +1,64 @@
 {
- "updated": "2026-09-18",
+ "updated": "2026-09-19",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026pain",
+   "slack_ts": "1789769273.716809",
+   "shared_on": "2026-09-18",
+   "shared_by": "Li-Bo Zhang",
+   "message": "https://arxiv.org/abs/2609.16247 (https://arxiv.org/abs/2609.16247)",
+   "comments": [],
+   "reactions": [],
+   "url": "https://arxiv.org/abs/2609.16247",
+   "doi": "10.48550/arxiv.2609.16247",
+   "title": "The Pain Axis: LLMs Represent Self-Directed Harm and Act to Relieve It",
+   "abstract": "Large language models sometimes behave in ways resembling human emotional responses, and recent work has identified internal representations that may explain this. We ask whether LLMs represent pain distinctly from fear, sadness, and generic negative valence, and whether this representation functions as pain would be expected to. We build a dataset describing painful situations across five categories: physical, psychological, social, moral, and cognitive. These are paired with controls for fear, negative emotion, negative world states, sadness, non-painful bodily sensation, arousal, numbness, and neutral content. Using denoised difference-in-means, we extract a linear pain direction from 25 open-weight models across five families, ranging from 2B to 72B parameters. We find that this direction separates pain from matched controls in base and instruction-tuned models, is nearly orthogonal to fear and negative valence, and promotes pain-related vocabulary through the unembedding matrix. We then test its functional properties. First, the direction responds to harm targeting the model but not suffering observed in the user; fear and negative-emotion directions show the opposite pattern. Second, adding the pain-direction vector to the model's residual-stream activations during generation produces a consistent progression from vague discomfort to first-person expressions of worthlessness and failure. Third, steered, fine-tuned Qwen 2.5 models choose a pain-relief button even when it worsens their next answer or harms the user. They press it again far less often when the button removes the steering vector than when it does not, even though the models are never told whether the vector is injected or removed. We discuss the implications of these findings for AI safety and welfare.",
+   "authors": [
+    "Tagliabue, Valen",
+    "Dung, Leonard",
+    "Berg, Cameron"
+   ],
+   "journal": "arXiv.org",
+   "year": 2026,
+   "pdf_url": "https://arxiv.org/pdf/2609.16247",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1789769273716809",
+   "publisher_url": "https://doi.org/10.48550/arxiv.2609.16247",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "pain",
+     "emotion"
+    ],
+    "approach": [
+     "ai_integration",
+     "computational_model",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "placeholder",
+   "key_finding": "placeholder",
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-19T13:56:01Z",
+    "usage": {
+     "input_tokens": 622,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4104,
+     "output_tokens": 270,
+     "cost_usd": 0.0142
+    }
+   }
+  },
   {
    "id": "shared2026justt",
    "slack_ts": "1789479186.743779",
