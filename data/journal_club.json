@@ -1,7 +1,77 @@
 {
- "updated": "2026-09-20",
+ "updated": "2026-09-21",
  "channel": null,
  "items": [
+  {
+   "id": "charbonneau2026comparative",
+   "slack_ts": "1790007623.472189",
+   "shared_on": "2026-09-21",
+   "shared_by": "Vivek Sagar",
+   "message": "A nice review on Insula. It seems to be involved in so many things. We are used to thinking of it as a pain processing region, but in chemosensory world it is often considered an olfactory-gustatory region. Then it has cognitive and non-nociceptive somatomotor roles. Interestingly, insula is also one of the few regions that has granular and agranular components.\nnature.com/articles/s41593-026-02380-3 (https://www.nature.com/articles/s41593-026-02380-3)",
+   "comments": [],
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41593-026-02380-3",
+   "doi": "10.1038/s41593-026-02380-3",
+   "title": "Comparative insights into insula structure and function",
+   "abstract": "The insular cortex has become an increasingly important focus of neuroscientific research because of its broad involvement in psychological and behavioral processes and its dysfunction in neuropsychiatric, developmental, degenerative and metabolic disorders. The insula is easily imaged in the human brain and is also a key target for both fundamental and translational studies in nonhuman animals. However, owing to a dearth of truly comparative studies on the insula, the extent to which this region shares structural and functional homologies between humans, monkeys and rodents remains incompletely understood. Here, we systematically evaluate current knowledge regarding homologies in the insula among model species and humans. We examine the strengths and limitations of various laboratory species for investigating the insula, and discuss how these factors influence the interpretation of findings and their application to the human insula. Finally, we propose research directions aimed at strengthening translational insula research and enhancing our understanding of cross-species similarities and differences. Charbonneau et al. compare how the insula is structured and functions in humans, monkeys and rodents, revealing similarities and differences across species that are likely to impact the translation of animal research to humans.",
+   "authors": [
+    "Charbonneau, J. A.",
+    "Carp, S. B.",
+    "Bennett, J. L.",
+    "Maw, S. M.",
+    "Moadab, G.",
+    "Christianson, J. P.",
+    "Baxter, M. G.",
+    "Bliss-Moreau, E."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41593-026-02380-3.pdf",
+   "type": "journal-article",
+   "pmid": "42563031",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/s41593-026-02380-3",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1790007623472189",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "brain_body",
+     "perception",
+     "emotion"
+    ],
+    "approach": [
+     "other_imaging"
+    ],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "This review compared structural and functional properties of the insular cortex across humans, monkeys and rodents to assess cross-species homologies and translational relevance.",
+   "key_finding": "The insula shows both conserved and divergent structural-functional features across species, complicating direct translation of animal findings to humans.",
+   "free_keywords": [
+    "insula",
+    "comparative neuroscience",
+    "translational research",
+    "interoception",
+    "cross-species homology"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.65,
+    "notes": "Abstract-only; topic/approach tags inferred broadly given insula's known functional roles.",
+    "classified_at": "2026-09-21T16:29:07Z",
+    "usage": {
+     "input_tokens": 461,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4104,
+     "output_tokens": 223,
+     "cost_usd": 0.01341
+    }
+   }
+  },
   {
    "id": "shared2026pain",
    "slack_ts": "1789769273.716809",
