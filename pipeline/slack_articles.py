@@ -19,6 +19,7 @@ import argparse, json, os, re, sys, time, urllib.parse
 import requests
 from . import config
 from .db import make_id
+from . import jc_social
 
 OUT = config.DATA / "journal_club.json"
 PRIVATE = ("message", "comments")  # lab members' words: used in memory only, never written to the public data file
@@ -30,7 +31,7 @@ def save(store):
 API = "https://slack.com/api/"
 UA = {"User-Agent": "canlab-site journal club/1.0"}
 DOI_RE = re.compile(r"10\.\d{4,9}/[^\s\"'<>|)\]}]+", re.I)
-SKIP_HOSTS = ("slack.com", "slack-files.com", "twitter.com", "x.com", "bsky.app", "youtube.com", "youtu.be", "google.com/search", "giphy.com")
+SKIP_HOSTS = ("slack.com", "slack-files.com", "youtube.com", "youtu.be", "google.com/search", "giphy.com")  # X/Bluesky posts are followed to the paper (jc_social)
 
 
 def slack(method, token, **params):
@@ -107,6 +108,8 @@ def links_in(msg):
         u = u.split("?utm")[0].strip()
         if any(h in u for h in SKIP_HOSTS) or u in out:
             continue
+        if not jc_social.kind(u) and re.match(r"https?://(www\.|mobile\.)?(twitter|x)\.com/|https?://(www\.)?bsky\.app/", u):
+            continue  # profile pages, searches: not posts
         out.append(u)
     return out
 
@@ -203,6 +206,7 @@ def main():
     ap.add_argument("--full", action="store_true", help="re-read the whole channel history (default: only messages newer than the last import)")
     ap.add_argument("--no-llm", action="store_true")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--social-only", action="store_true", help="only follow X/Bluesky posts (use with --full to backfill them)")
     a = ap.parse_args()
     token = os.environ.get("SLACK_BOT_TOKEN") or os.environ.get("SLACK_USER_TOKEN")
     if not token:
@@ -233,7 +237,17 @@ def main():
             continue
         unfurls = {x.get("original_url") or x.get("from_url") or x.get("title_link"): x for x in (m.get("attachments") or [])}
         for url in urls[:3]:
+            via = None
+            if jc_social.kind(url):  # a post announcing the paper: follow it to the paper
+                found = jc_social.paper_links(url)
+                if not found:
+                    continue
+                via, url = url, found[0]
+            elif a.social_only:
+                continue
             rec = resolve(url, unfurls.get(url) or {})
+            if via:
+                rec["via_url"], rec["via"] = via, jc_social.kind(via)
             key = rec.get("doi") or url
             it = by_key.get(key)
             if not it:

@@ -397,6 +397,12 @@ data/journal_club.json {updated, channel, items:[{id, slack_ts, shared_on, share
 title, authors, journal, year, abstract, pmid, pmcid, oa_url, pdf_url, publisher_url, permalink,
 n_comments, reactions:[{name,count}], tags, summary, key_finding, free_keywords}]}.
 Incremental by default (messages newer than the last slack_ts); --full re-reads everything.
+X/Twitter and Bluesky posts (2026-09-22): pipeline/jc_social.py follows the post to the paper it announces,
+via X's embed service (cdn.syndication.twimg.com/tweet-result, no login) and Bluesky's public AppView API
+(facets, link card, quoted post, the author's own replies), expanding short links and keeping only
+paper-like links (DOI or PAPER_HOSTS); else a quoted title must match Crossref near-exactly. The item gets
+via_url/via and a "Post on X/Bluesky" pill; posts with no paper are skipped. Backfill: journalclub.yml
+with full + social_only (python -m pipeline.slack_articles --full --social-only).
 journalclub.yml runs it daily and commits; the data push triggers the site build.
 site/journal-club.html: same filter sidebar/chips as Publications, MiniSearch over title/abstract/
 authors/comments, sort (recently shared, publication year, most discussed, relevance), tabs Papers |

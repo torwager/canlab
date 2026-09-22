@@ -9,6 +9,10 @@ on:
         description: "Re-read the whole channel history"
         type: boolean
         default: false
+      social_only:
+        description: "Only follow X/Bluesky posts to their papers (use with full to backfill)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -55,7 +59,7 @@ jobs:
         run: |
           if [ -z "$SLACK_BOT_TOKEN" ]; then echo "SLACK_BOT_TOKEN secret not set; skipping"; exit 0; fi
           for v in ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN OPENAI_API_KEY ANTHROPIC_WORKSPACE_ID ANTHROPIC_IDENTITY_TOKEN_FILE; do [ -z "${!v}" ] && unset "$v"; done  # an empty ANTHROPIC_API_KEY would shadow federation
-          python -m pipeline.slack_articles ${{ inputs.full && '--full' || '' }}
+          python -m pipeline.slack_articles ${{ inputs.full && '--full' || '' }} ${{ inputs.social_only && '--social-only' || '' }}
       - name: Commit the data
         id: commit
         run: |

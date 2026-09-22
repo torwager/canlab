@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Journal club | CANlab</title>
-<meta name="description" content="Papers shared and discussed in the CANlab journal club: searchable, tagged by topic and method, with a timeline per topic and the lab's discussion of each paper.">
+<meta name="description" content="Papers shared in the CANlab journal club: searchable, tagged by topic and method, with a timeline per topic.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <meta property="og:site_name" content="CANlab">
 <meta property="og:title" content="Journal club | CANlab">
-<meta property="og:description" content="Papers shared and discussed in the CANlab journal club, searchable and tagged, with a timeline per topic.">
+<meta property="og:description" content="Papers shared in the CANlab journal club, searchable and tagged, with a timeline per topic.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://torwager.github.io/canlab/journal-club.html">
 <meta property="og:image" content="https://torwager.github.io/canlab/assets/og.jpg">
@@ -129,6 +129,7 @@
     if (r.doi) out.push(`<a class="plink publisher" href="https://doi.org/${esc(r.doi)}" target="_blank" rel="noopener" title="Publisher page; the PDF there opens with institutional access (e.g. Dartmouth VPN)">Publisher ↗</a>`);
     else if (r.url) out.push(`<a class="plink publisher" href="${esc(r.url)}" target="_blank" rel="noopener">Link ↗</a>`);
     if (r.pmid) out.push(`<a class="plink" href="https://pubmed.ncbi.nlm.nih.gov/${esc(r.pmid)}/" target="_blank" rel="noopener">PubMed ↗</a>`);
+    if (r.via_url) out.push(`<a class="plink" href="${esc(r.via_url)}" target="_blank" rel="noopener" title="The post that was shared; the paper was found from it">Post on ${r.via === "bluesky" ? "Bluesky" : "X"} ↗</a>`);
     if (r.permalink) out.push(`<a class="plink" href="${esc(r.permalink)}" target="_blank" rel="noopener" title="Open the thread in Slack (lab members)">Slack thread ↗</a>`);
     return out.join("");
   }
