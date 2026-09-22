@@ -126,6 +126,46 @@ def biorxiv_meta(doi):
     return None
 
 
+def message_line(it):
+    """First line of the Slack message, without links or Scholar-alert markers. Used transiently to look the paper up;
+    the message itself is never saved or published (lab members' words stay in Slack)."""
+    msg = re.sub(r"https?://\S+", "", it.get("message") or "").strip().split("\n")[0].strip(" *_\"“”")
+    return re.sub(r"^\*?\[(HTML|PDF|BOOK|CITATION)\]\*?\s*", "", msg, flags=re.I).strip(" *_\"“”")
+
+
+def _norm(t):
+    return re.sub(r"[^a-z0-9]+", " ", re.sub(r"<[^>]+>", "", t or "").lower()).strip()
+
+
+def crossref_title_match(text):
+    """Crossref metadata when `text` is a real paper title (similarity >= 0.9), else None."""
+    if not (15 < len(text or "") < 300):
+        return None
+    import difflib
+    j = {}
+    for attempt in range(4):  # Crossref rate-limits bursts; a failed lookup must not be mistaken for "not a paper"
+        try:
+            r = requests.get("https://api.crossref.org/works", params={"query.bibliographic": text, "rows": 3, "select": "DOI,title"},
+                             headers={"User-Agent": "canlab-site journal club/1.0"}, timeout=30)
+            if r.status_code == 200:
+                j = r.json()
+                break
+        except Exception:
+            pass
+        time.sleep(3 * (attempt + 1))
+    for w in j.get("message", {}).get("items", []):
+        t = (w.get("title") or [""])[0]
+        if t and difflib.SequenceMatcher(None, _norm(t), _norm(text)).ratio() >= 0.9:
+            meta = crossref_meta(w["DOI"].lower())
+            if meta:
+                return {**meta, "doi": w["DOI"].lower()}
+    return None
+
+
+def neutral_title(it):
+    return f"Link on {host(it.get('url') or '')}"
+
+
 def is_paper(it):
     if it.get("doi") or it.get("pmid") or it.get("pmcid"): return True
     return any(host(it["url"]).endswith(h) for h in PAPER_HOSTS)
@@ -137,7 +177,7 @@ def curate(items):
         u2 = decode_redirect(it["url"])
         if u2 != it["url"]:
             it["url_original"], it["url"] = it["url"], u2
-        bad = not it.get("title") or it["title"] in (it.get("url"), it.get("url_original")) or bool(BAD_TITLES.match(it["title"].strip()))
+        bad = not it.get("title") or it["title"] in (it.get("url"), it.get("url_original")) or bool(BAD_TITLES.match(it["title"].strip())) or bool(it.get("title_unresolved"))
         if bad or not it.get("doi"):
             doi = it.get("doi") or doi_from_url(it["url"])
             meta = None
@@ -152,19 +192,28 @@ def curate(items):
                 it.setdefault("publisher_url", "https://doi.org/" + doi)
                 for k, v in meta.items():
                     if v and (bad or not it.get(k)): it[k] = v
-                if bad: n_fixed += 1
+                if bad:
+                    it.pop("title_unresolved", None)
+                    n_fixed += 1
             if doi: time.sleep(0.3)
         it["kind"] = "paper" if is_paper(it) else "link"
         n_paper += it["kind"] == "paper"
         it["title"] = strip_site_prefix(it.get("title"))
-        if BAD_TITLES.match((it.get("title") or "").strip()) or it["title"] in (it.get("url"), it.get("url_original")):
-            it["title_unresolved"] = True
-            msg = re.sub(r"https?://\S+", "", it.get("message") or "").strip().split("\n")[0].strip(" *_\"“”")
-            msg = re.sub(r"^\*?\[(HTML|PDF|BOOK|CITATION)\]\*?\s*", "", msg, flags=re.I).strip(" *_\"“”")  # Google Scholar alert markers
-            if 12 < len(msg) < 160:
-                it["title"] = msg
-        else:
-            it.pop("title_unresolved", None)
+        if BAD_TITLES.match((it.get("title") or "").strip()) or it["title"] in (it.get("url"), it.get("url_original")) or it.get("title_unresolved"):
+            # No usable title from the link. If the poster pasted the paper's title, Crossref confirms it;
+            # otherwise show a neutral label. Never publish the poster's own words as a title.
+            meta = crossref_title_match(message_line(it))
+            if meta:
+                for k, v in meta.items():
+                    if v: it[k] = v
+                it.setdefault("publisher_url", "https://doi.org/" + meta["doi"])
+                it["kind"] = "paper"
+                it.pop("title_unresolved", None)
+                n_fixed += 1
+            else:
+                it["title_unresolved"] = True
+                it["title"] = neutral_title(it)
+            time.sleep(0.3)
         if i and i % 100 == 0: print(f"  {i}/{len(items)} curated", file=sys.stderr, flush=True)
     return n_fixed, n_paper
 
@@ -172,6 +221,7 @@ def curate(items):
 def main():
     store = json.load(open(OUT))
     n_fixed, n_paper = curate(store["items"])
+    store["items"] = [{k: v for k, v in it.items() if k not in ("message", "comments")} for it in store["items"]]  # never publish lab members' words
     json.dump(store, open(OUT, "w"), indent=1, ensure_ascii=False)
     unresolved = sum(1 for it in store["items"] if it.get("title_unresolved"))
     print(f"{len(store['items'])} items: {n_paper} papers, {len(store['items']) - n_paper} other links; {n_fixed} titles repaired; {unresolved} still unresolved")

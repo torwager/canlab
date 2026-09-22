@@ -6,8 +6,9 @@ What it does (idempotent; re-run daily):
   2. Finds paper links in each message (DOI, publisher, PubMed, bioRxiv, Nature, ...), resolves the paper's
      metadata (Crossref by DOI, PubMed by DOI/title, Unpaywall for an open-access PDF), and keeps Slack's own
      unfurl title/text as a fallback when no DOI can be found.
-  3. Saves the thread replies and reactions as the paper's discussion, attributed by Slack display name
-     (users listed in JOURNAL_CLUB_ANON are shown as "lab member").
+  3. Records who shared the paper (Slack display name; users in JOURNAL_CLUB_ANON show as "lab member"), the
+     number of thread replies and the reactions. What lab members WRITE (the message and the replies) is
+     never saved: the data file is public, so the discussion stays in Slack (decision 2026-09-22).
   4. Tags each paper with the site's taxonomy using the LLM (pipeline.classify) from title + abstract.
 
 Environment: SLACK_BOT_TOKEN (required), SLACK_ARTICLES_CHANNEL (name or id, default "articles"),
@@ -20,6 +21,12 @@ from . import config
 from .db import make_id
 
 OUT = config.DATA / "journal_club.json"
+PRIVATE = ("message", "comments")  # lab members' words: used in memory only, never written to the public data file
+
+
+def save(store):
+    items = [{k: v for k, v in it.items() if k not in PRIVATE} for it in store["items"]]
+    json.dump({**store, "items": items}, open(OUT, "w"), indent=1, ensure_ascii=False)
 API = "https://slack.com/api/"
 UA = {"User-Agent": "canlab-site journal club/1.0"}
 DOI_RE = re.compile(r"10\.\d{4,9}/[^\s\"'<>|)\]}]+", re.I)
@@ -233,16 +240,16 @@ def main():
                 first = (rec.get("authors") or [""])[0].split(",")[0] or "shared"
                 it = {"id": make_id(first, rec.get("year") or time.strftime("%Y", time.gmtime(float(m["ts"]))), rec["title"], set(x["id"] for x in store["items"])),
                       "slack_ts": m["ts"], "shared_on": time.strftime("%Y-%m-%d", time.gmtime(float(m["ts"]))), "shared_by": user_name(token, m.get("user"), anon),
-                      "message": clean_text(m.get("text")), "comments": [], "reactions": []}
+                      "message": clean_text(m.get("text")), "n_comments": 0, "reactions": []}
                 it.update(rec); store["items"].append(it); by_key[key] = it; by_ts[m["ts"]] = it; new += 1
             it["permalink"] = it.get("permalink") or f"https://{team.get('url','').replace('https://','').rstrip('/')}/archives/{chan}/p{m['ts'].replace('.', '')}"
             if new and new % 15 == 0:
-                json.dump(store, open(OUT, "w"), indent=1, ensure_ascii=False)  # checkpoint so an interrupted run keeps its work
-            # 2. discussion: thread replies + reactions
+                save(store)  # checkpoint so an interrupted run keeps its work
+            # 2. discussion: how many replies and reactions (not what was said)
             it["reactions"] = [{"name": r["name"], "count": r["count"]} for r in (m.get("reactions") or [])]
             if m.get("reply_count"):
                 rep = slack("conversations.replies", token, channel=chan, ts=m["ts"], limit=200)["messages"][1:]
-                it["comments"] = [{"by": user_name(token, r.get("user"), anon), "date": time.strftime("%Y-%m-%d %H:%M", time.gmtime(float(r["ts"]))), "text": clean_text(r.get("text"))} for r in rep if clean_text(r.get("text"))]
+                it["n_comments"] = sum(1 for r in rep if clean_text(r.get("text")))  # a count only; reply text is not kept
             time.sleep(0.4)
     from .jc_curate import curate
     curate([it for it in store["items"] if not it.get("kind")])
@@ -259,18 +266,18 @@ def main():
                 for k in ("tags", "summary", "key_finding", "free_keywords", "classification"):
                     it[k] = rec.get(k)
                 if n % 15 == 0:
-                    json.dump(store, open(OUT, "w"), indent=1, ensure_ascii=False)
+                    save(store)
                 failures = 0
             except Exception as e:
                 failures += 1
                 print("tagging failed", it["id"], e)
                 if failures >= 3:
-                    json.dump(store, open(OUT, "w"), indent=1, ensure_ascii=False)
+                    save(store)
                     raise SystemExit("tagging keeps failing; stopping so the error is visible")
                 continue
     store["updated"] = time.strftime("%Y-%m-%d")
     store["items"].sort(key=lambda it: it["slack_ts"], reverse=True)
-    json.dump(store, open(OUT, "w"), indent=1, ensure_ascii=False)
+    save(store)
     print(f"{new} new papers; {len(store['items'])} total -> {OUT}")
 
 

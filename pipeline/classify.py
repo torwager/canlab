@@ -33,8 +33,9 @@ def apply(rec, data, model, input_mode, confidence=None):
         if parent and parent not in approach:
             approach.append(parent)
     rec["tags"] = {"topic": list(dict.fromkeys(tags.get("topic") or [])), "approach": approach, "type": [tags["type"]] if tags.get("type") else []}
-    rec["summary"] = (data.get("summary") or "").strip()
-    rec["key_finding"] = (data.get("key_finding") or "").strip() or None
+    junk = lambda t: (t or "").strip() if (t or "").strip().lower() not in ("placeholder", "n/a", "none", "null") else ""
+    rec["summary"] = junk(data.get("summary"))
+    rec["key_finding"] = junk(data.get("key_finding")) or None
     rec["free_keywords"] = [k.strip() for k in (data.get("free_keywords") or []) if k and k.strip()][:10]
     rec["classification"] = {"taxonomy_version": load_taxonomy()["taxonomy_version"], "prompt_version": PROMPT_VERSION, "model": model, "input_mode": input_mode,
                              "confidence": data.get("confidence"), "notes": data.get("notes") or None, "classified_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}

@@ -21,7 +21,7 @@ PATTERNS = {
 
 
 def blob(it):
-    parts = [str(it.get(k) or "") for k in ("title", "abstract", "summary", "key_finding", "journal", "message")]
+    parts = [str(it.get(k) or "") for k in ("title", "abstract", "summary", "key_finding", "journal")]
     parts += list(it.get("free_keywords") or [])
     return " ".join(parts)
 
@@ -31,6 +31,7 @@ def main():
     ap.add_argument("--file", default="data/journal_club.json")
     ap.add_argument("--match", default="STIM", help="a key of PATTERNS, or a regex")
     ap.add_argument("--also-tag", action="append", default=[], help="re-tag records already carrying this tag id")
+    ap.add_argument("--ids", help="file with one record id per line; re-tag exactly these (overrides --match)")
     ap.add_argument("--include-unresolved", action="store_true", help="also re-tag records whose title came from the Slack message")
     ap.add_argument("--apply", action="store_true", help="without this, only list what would be re-tagged")
     ap.add_argument("--limit", type=int)
@@ -41,6 +42,7 @@ def main():
     items = store["items"] if isinstance(store, dict) else store
     pat = re.compile(PATTERNS.get(a.match, a.match), re.I)
 
+    ids = set(Path(a.ids).read_text().split()) if a.ids else None
     todo = []
     for it in items:
         if it.get("kind", "paper") not in ("paper", "article", "chapter", "preprint", "proceedings", "other"):
@@ -48,6 +50,10 @@ def main():
         if not it.get("title") or (it.get("title_unresolved") and not a.include_unresolved):
             continue
         tagged = set((it.get("tags") or {}).get("approach") or [])
+        if ids is not None:
+            if it["id"] in ids:
+                todo.append(it)
+            continue
         if pat.search(blob(it)) or (tagged & set(a.also_tag)):
             todo.append(it)
     if a.limit:

@@ -16,6 +16,10 @@ on:
         description: "Also re-tag records already carrying this approach tag"
         type: string
         default: "brain_stimulation"
+      ids_file:
+        description: "Optional file in the repo listing record ids to re-tag (one per line); overrides match"
+        type: string
+        default: ""
       include_unresolved:
         description: "Include records whose title came from the Slack message"
         type: boolean
@@ -63,6 +67,7 @@ jobs:
           for v in ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN OPENAI_API_KEY ANTHROPIC_WORKSPACE_ID ANTHROPIC_IDENTITY_TOKEN_FILE; do [ -z "${!v}" ] && unset "$v"; done
           python scripts/retag.py --file "${{ inputs.file }}" --match "${{ inputs.match }}" \
             ${{ inputs.also_tag != '' && format('--also-tag {0}', inputs.also_tag) || '' }} \
+            ${{ inputs.ids_file != '' && format('--ids {0}', inputs.ids_file) || '' }} \
             ${{ inputs.include_unresolved && '--include-unresolved' || '' }} --apply
       - name: Commit the data
         id: commit
