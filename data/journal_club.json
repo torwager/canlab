@@ -127,6 +127,75 @@
    "free_keywords": []
   },
   {
+   "id": "miao2026reimagining",
+   "slack_ts": "1789683362.866969",
+   "shared_on": "2026-09-17",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41586-026-11044-y",
+   "doi": "10.1038/s41586-026-11044-y",
+   "title": "Reimagining research papers as interactive and reliable AI agents",
+   "abstract": "Here we introduce Paper2Agent, an automated framework that converts research papers into artificial intelligence (AI) agents. Paper2Agent transforms research output from passive artefacts into active systems that accelerate use and discovery. Conventional research papers require readers to understand and adapt the paper&#8217;s code, data and methods to their work, creating barriers to dissemination and reuse. Paper2Agent addresses this challenge by converting a paper into an AI agent that functions as a virtual corresponding author, exposing its manuscript, supplementary materials, datasets, code and workflows as active, agent-native knowledge rather than static text. It analyses the paper and codebase using multiple agents to construct a model context protocol (MCP) server, then generates and runs tests to refine and increase robustness of the MCP. These paper MCPs can be connected to a chat agent (such as Claude Code) to carry out complex scientific queries through natural language while invoking tools and workflows from the paper. We demonstrate Paper2Agent&#8217;s effectiveness through case studies. Paper2Agent created an agent that leveraged AlphaGenome1 to interpret genomic variants and agents based on Scanpy2 and TISSUE&amp;nbsp;(transcript imputation with spatial single-cell uncertainty estimation)3 to conduct single-cell and spatial transcriptomics analyses. We validate that these agents reproduce the results of the original papers and carry out novel user queries. Paper2Agent created multiple agents that collaborate to prioritize a causal gene for psoriasis. By turning static papers into interactive AI agents, Paper2Agent introduces a paradigm for knowledge dissemination and a collaborative ecosystem of AI co-scientists. Paper2Agent converts research papers into interactive artificial intelligence agents by turning manuscripts, code and data into model context protocol-based tool-invoking systems that reproduce original results, answer new scientific queries and collaborate to generate novel insights.",
+   "authors": [
+    "Miao, J.",
+    "Davis, J. R.",
+    "Zhang, Y.",
+    "Pritchard, J. K.",
+    "Zou, J."
+   ],
+   "journal": "Nature",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41586-026-11044-y.pdf",
+   "type": "journal-article",
+   "pmid": "42749808",
+   "pmcid": null,
+   "oa_url": "https://doi.org/10.1038/s41586-026-11044-y",
+   "publisher_url": "https://doi.org/10.1038/s41586-026-11044-y",
+   "via_url": "https://x.com/nature/status/2100516864686244066?s=12&amp;t=Miam8yyO5X-dxTsFPFcFIQ",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1789683362866969",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "ai_integration",
+     "open_tools"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "Researchers introduced Paper2Agent, a framework that automatically converts research papers into AI agents exposing their code, data, and workflows via a model context protocol server for interactive scientific querying.",
+   "key_finding": "Paper2Agent successfully reproduced results from genomics and single-cell/spatial transcriptomics papers and generated novel scientific insights, including prioritizing a candidate causal gene for psoriasis.",
+   "free_keywords": [
+    "model context protocol",
+    "AI co-scientist",
+    "AlphaGenome",
+    "Scanpy",
+    "TISSUE",
+    "genomics",
+    "spatial transcriptomics",
+    "reproducibility"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.6,
+    "notes": "Not a neuroscience paper; included as a general methods/AI paper unrelated to CANlab's typical topics.",
+    "classified_at": "2026-09-22T17:18:45Z",
+    "usage": {
+     "input_tokens": 751,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 296,
+     "cost_usd": 0.00528
+    }
+   }
+  },
+  {
    "id": "shared2026justt",
    "slack_ts": "1789479186.743779",
    "shared_on": "2026-09-15",
@@ -731,6 +800,94 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1788238633301369",
    "kind": "link",
    "n_comments": 0
+  },
+  {
+   "id": "garciagarcia2026granule",
+   "slack_ts": "1788228081.191179",
+   "shared_on": "2026-09-01",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 1
+    },
+    {
+     "name": "+1::skin-tone-3",
+     "count": 2
+    },
+    {
+     "name": "+1::skin-tone-2",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41586-026-10946-1",
+   "doi": "10.1038/s41586-026-10946-1",
+   "title": "Granule cells reorient cortical trajectories to separate contexts",
+   "abstract": "To learn effectively, animals must generalize across related contexts&amp;nbsp;yet distinguish between them. Generalization relies on low-dimensional neural manifolds throughout the neocortex1,2, which accelerate learning by constraining neural activity to task-relevant axes3.Conversely, context separation is thought to depend on&amp;nbsp;neural expansion layers that can project information into high-dimensional feature spaces4,5, most famously cerebellar granule cells (GrCs)6&#8211;8. Here, to investigate the generalization&#8211;separation trade-off, we simultaneously imaged key nodes in the universal cortico-cerebellar pathway9&#8212;premotor layer&#8201;5 pyramidal tract (L5PT) and GrCs&#8212;in mice during parallel learning of two distinct skills with a shared temporal structure. Rather than expanding the cortical representations, GrCs retained their low-rank encoding of each task. Across contexts, despite stable cortico-cerebellar coupling, L5PT activity patterns generalized, whereas GrC patterns temporally remapped. But rather than independently scrambling, GrC populations remapped coherently: their low-dimensional trajectories &#8216;rotated&#8217; apart between tasks, separating the contexts while preserving the cortical geometry of each. Moreover, GrC trajectories diverged most strongly in expert mice. This suggests a fundamental architectural division of labour: the cortex provides invariant dynamic primitives for smooth generalization, whereas cerebellar activity reconfigures them to drive context-specific output. Simultaneous imaging of premotor cortex and cerebellar granule cells in mice learning two skills in parallel shows that trajectories generalize in cortex but coherently reorient apart in granule cells, supporting generalization and separation between&amp;nbsp;contexts.",
+   "authors": [
+    "Garcia-Garcia, M. G.",
+    "Wójcik, M. J.",
+    "Thota, S.",
+    "Drake, L.",
+    "Otchere, A.",
+    "Akinwale, O.",
+    "Ramos, L.",
+    "Costa, R. P.",
+    "Wagner, M. J."
+   ],
+   "journal": "Nature",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41586-026-10946-1.pdf",
+   "type": "journal-article",
+   "pmid": "42649299",
+   "pmcid": "PMC13586484",
+   "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13586484/",
+   "publisher_url": "https://doi.org/10.1038/s41586-026-10946-1",
+   "via_url": "https://x.com/millerlabmit/status/2094059641084752015?s=12&amp;t=Miam8yyO5X-dxTsFPFcFIQ",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1788228081191179",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control"
+    ],
+    "approach": [
+     "other_imaging",
+     "computational_model"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Researchers imaged premotor cortex and cerebellar granule cells in mice learning two skills in parallel, finding cortical activity generalized across tasks while granule cell trajectories rotated apart to separate contexts.",
+   "key_finding": "Granule cell population trajectories coherently reoriented (rotated) between tasks to separate contexts while preserving cortical geometry, with divergence strongest in expert mice.",
+   "free_keywords": [
+    "cerebellum",
+    "granule cells",
+    "motor cortex",
+    "context separation",
+    "generalization",
+    "neural manifolds",
+    "two-photon imaging",
+    "mice"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.55,
+    "notes": "Non-human animal study outside typical CANlab human neuroimaging scope; approach tags approximate (calcium imaging, dimensionality reduction) since fMRI/behavioral categories don't directly apply.",
+    "classified_at": "2026-09-22T17:18:41Z",
+    "usage": {
+     "input_tokens": 720,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 321,
+     "cost_usd": 0.00547
+    }
+   }
   },
   {
    "id": "malescot2026modalityspecific",
@@ -2423,7 +2580,7 @@
      "cost_usd": 0.00488
     }
    },
-   "n_comments": 0
+   "n_comments": 1
   },
   {
    "id": "shared2026httpsdirectmiteduimagarticledoiimagagamerinthescannereventrelatedanalysisof",
@@ -2641,6 +2798,101 @@
     }
    },
    "n_comments": 1
+  },
+  {
+   "id": "deo2026mosaic",
+   "slack_ts": "1782267065.474689",
+   "shared_on": "2026-06-24",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41586-026-10653-x",
+   "doi": "10.1038/s41586-026-10653-x",
+   "title": "A mosaic of whole-body representations on the human precentral gyrus",
+   "abstract": "Understanding how the body is represented in the motor cortex is key to understanding how the brain controls movement. Although the motor cortex has been mapped in animal models at a fine scale1&#8211;10, characterization in humans remains primarily limited to low-resolution recording11&#8211;16 and stimulation techniques17&#8211;20. Here we created a comprehensive map of the human motor cortex at single-neuron resolution, spanning microelectrode array recordings from 20 arrays across 8 individuals with paralysis from spinal cord injury, amyotrophic lateral sclerosis or brainstem stroke, all enrolled in brain&#8211;computer interface clinical trials. These arrays broadly sample the crown of the precentral gyrus (PCG; thought to be composed largely of the premotor cortex (Brodmann area 6)). We found that body parts were highly intermixed, such that the entire body was represented in all sampled locations of the PCG, although the relative strength of body parts was roughly consistent with the motor homunculus17,18. We also found two speech-preferential areas with a broadly tuned, orofacial-dominant area in between them. Throughout the PCG, movement representations of the four limbs were interlinked, with homologous movements of different limbs (for example, toe curl and hand close) having correlated representations. These data provide evidence consistent with an intermixed, interrelated and behaviour-centred organization of the motor cortex3,21. The resulting map also provides important targeting information for brain&#8211;computer interfaces that seek to restore motor function. A comprehensive map of the human motor cortex at single-neuron resolution is described.",
+   "authors": [
+    "Deo, D. R.",
+    "Okorokova, E. V.",
+    "Pritchard, A. L.",
+    "Hahn, N. V.",
+    "Card, N. S.",
+    "Nason-Tomaszewski, S. R.",
+    "Jude, J.",
+    "Hosman, T.",
+    "Choi, E. Y.",
+    "Qiu, D.",
+    "Meng, Y.",
+    "Wairagkar, M.",
+    "Nicolas, C.",
+    "Kamdar, F. B.",
+    "Iacobacci, C.",
+    "Acosta, A.",
+    "Hochberg, L. R.",
+    "Cash, S. S.",
+    "Williams, Z. M.",
+    "Rubin, D. B.",
+    "Brandman, D. M.",
+    "Stavisky, S. D.",
+    "AuYong, N.",
+    "Pandarinath, C.",
+    "Downey, J. E.",
+    "Bensmaia, S. J.",
+    "Henderson, J. M.",
+    "Willett, F. R."
+   ],
+   "journal": "Nature",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41586-026-10653-x.pdf",
+   "type": "journal-article",
+   "pmid": "42310450",
+   "pmcid": "PMC13489936",
+   "oa_url": "https://doi.org/10.1038/s41586-026-10653-x",
+   "publisher_url": "https://doi.org/10.1038/s41586-026-10653-x",
+   "via_url": "https://x.com/nature/status/2069024353518280784?s=12&amp;t=Miam8yyO5X-dxTsFPFcFIQ",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1782267065474689",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception",
+     "clinical"
+    ],
+    "approach": [
+     "neuroimaging_methods",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Researchers mapped human precentral gyrus at single-neuron resolution using microelectrode arrays in eight paralyzed individuals, revealing an intermixed, behavior-centered representation of the whole body.",
+   "key_finding": "Body parts were highly intermixed across all sampled precentral gyrus locations, with homologous movements of different limbs showing correlated neural representations, and two speech-preferential areas flanking an orofacial-dominant zone.",
+   "free_keywords": [
+    "motor cortex",
+    "microelectrode arrays",
+    "brain-computer interface",
+    "spinal cord injury",
+    "ALS",
+    "brainstem stroke",
+    "precentral gyrus",
+    "single-neuron recording"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.6,
+    "notes": "Not a typical CANlab-style topic (pain/emotion/placebo); tagged based on closest available categories (perception, clinical) though this is primarily a motor neuroscience/BCI paper outside the core taxonomy focus.",
+    "classified_at": "2026-09-22T17:18:36Z",
+    "usage": {
+     "input_tokens": 629,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 362,
+     "cost_usd": 0.0057
+    }
+   }
   },
   {
    "id": "shared2026feynman",
@@ -6174,6 +6426,111 @@
     }
    },
    "n_comments": 5
+  },
+  {
+   "id": "shared2026httpswwwbiorxivorgcontentve",
+   "slack_ts": "1776896959.629149",
+   "shared_on": "2026-04-22",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 5,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 1
+    },
+    {
+     "name": "+1::skin-tone-2",
+     "count": 1
+    }
+   ],
+   "url": "https://www.biorxiv.org/content/10.64898/2026.04.21.717753v1",
+   "doi": "10.64898/2026.04.21.717753",
+   "title": "Parallel processing chains span cytoarchitectures to organize association cortex",
+   "abstract": "SUMMARY \n                 \n                  Task fMRI\n                   1 \n                  and electrophysiology\n                   2 \n                  have revealed distributed, linked cortical patches with shared category preferences (e.g., faces, objects, places)\n                   1,3–5 \n                  , smaller than cytoarchitectonic areas. Resting-state functional connectivity (RSFC) similarly showed that somato-cognitive action network (SCAN) nodes interleave with effectors (foot, hand, mouth), subdividing the precentral gyrus\n                   6 \n                  . Here, using multiple precision functional mapping (PFM) modalities (RSFC, task, lags), we discovered that most of association cortex is organized like face processing and SCAN, with small, discrete patches interconnected into chains. Such patch-chains densely tile prefrontal cortex but are largely absent from primary cortex. Cortico-striatal connectivity is organized such that patches of the same chain connect to the same striatal location. Within chains, infra-slow fMRI signals are ordered in time. RSFC-defined chains align with task fMRI localizers (e.g., visual, motor, pain). Chains are absent at birth and emerge in the first year of life, suggesting their formation is at least partially experience-driven. Cytoarchitectonic areas are subdivided by patches, and patches in the same chain are distributed across different cytoarchitectures. Chains represent parallel ordered processing streams that are separated by information domain and behavioral goals, not cytoarchitectonics. Functional subdivision of architectonics into smaller patches, interlinked to form cross-architecture chains, enable greater parallelization and flexible specialization of processing.",
+   "authors": [
+    "Gordon, E. M.",
+    "Rajesh, A.",
+    "Chauvin, R. J.",
+    "Labonte, A.",
+    "Adeyemo, B.",
+    "Dworetsky, A.",
+    "Lynch, C. J.",
+    "Krimmel, S. R.",
+    "Cho, P.",
+    "Wang, A.",
+    "Baden, N. J.",
+    "Scheidter, K. M.",
+    "Monk, J.",
+    "Metoki, A.",
+    "Ren, J.",
+    "Nishino, T.",
+    "Park, Y.",
+    "Rafka, E.",
+    "Pruett, J. R.",
+    "Kepecs, A.",
+    "Liu, H.",
+    "Fair, D. A.",
+    "Liston, C.",
+    "Woo, C.",
+    "Kay, B. P.",
+    "Marek, S.",
+    "Petersen, S. E.",
+    "Sylvester, C. M.",
+    "Schwarzlose, R. F.",
+    "Raichle, M. E.",
+    "Laumann, T. O.",
+    "Dosenbach, N. U."
+   ],
+   "journal": "",
+   "year": 2026,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.64898/2026.04.21.717753v1",
+   "via_url": "https://bsky.app/profile/gordonneuro.bsky.social/post/3mk4hbcbhas23",
+   "via": "bluesky",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1776896959629149",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception",
+     "cognitive_control",
+     "pain"
+    ],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods",
+     "other_imaging"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Using precision functional mapping across multiple fMRI modalities, researchers found that association cortex is organized into small interconnected patch-chains that cross cytoarchitectonic boundaries and emerge developmentally in infancy.",
+   "key_finding": "Association cortex, especially prefrontal cortex, is tiled by discrete functional patches forming temporally ordered chains that connect to shared striatal targets and align with task fMRI localizers, independent of cytoarchitecture; these chains are absent at birth and develop over the first year of life.",
+   "free_keywords": [
+    "precision functional mapping",
+    "resting-state functional connectivity",
+    "cortico-striatal connectivity",
+    "infra-slow signals",
+    "cytoarchitecture",
+    "infant brain development",
+    "somato-cognitive action network"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.7,
+    "notes": "Only abstract available; tagging based on described methods (RSFC, task fMRI, lags) and topics (motor, visual, pain localizers mentioned).",
+    "classified_at": "2026-09-22T17:18:31Z",
+    "usage": {
+     "input_tokens": 662,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 379,
+     "cost_usd": 0.00593
+    }
+   }
   },
   {
    "id": "landemard2026brainwide",
@@ -10920,6 +11277,67 @@
    "n_comments": 3
   },
   {
+   "id": "rosen2025distributed",
+   "slack_ts": "1765033274.093309",
+   "shared_on": "2025-12-06",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 3
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41583-025-00992-5",
+   "doi": "10.1038/s41583-025-00992-5",
+   "title": "How distributed is the brain-wide network that is recruited for cognition?",
+   "abstract": "Half a&amp;nbsp;century of neurophysiological recordings from single electrodes established a &#8216;localized&#8217; viewpoint on function in the brain &#8212; that complex behaviour results from computations that are carried out and representations that occur across distinct brain areas, each of which has a specialized role. Data generated from new techniques for specific, high-throughput measurement of neuronal activity and behaviour in rodents have prompted an alternative viewpoint, which posits that neural encoding of behavioural variables is distributed across a wide range of areas: &#8216;everything, everywhere, all at once&#8217;. After briefly introducing these paradigms, we evaluate which of them better describes cognition &#8212; the manipulation of internal variables that enables flexible behaviour. Measurements of neuronal activity in both&amp;nbsp;rodents and primates suggest that cognitive variables are reflected broadly but not ubiquitously across the brain, including, to a surprising degree, in regions engaged in controlling movement. We close by discussing why cognitive signals may appear in such areas, as well as the factors that affect the breadth of the brain-wide network that is recruited for cognition. Both localized and distributed views on the functional organization of the brain have been put forward. In this Perspective, Rosen and Freedman examine the degree to which these two views account for abstract cognition.",
+   "authors": [
+    "Rosen, M. C.",
+    "Freedman, D. J."
+   ],
+   "journal": "Nature Reviews Neuroscience",
+   "year": 2025,
+   "pdf_url": "https://www.nature.com/articles/s41583-025-00992-5.pdf",
+   "type": "journal-article",
+   "pmid": "41345295",
+   "pmcid": "PMC13242167",
+   "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13242167/",
+   "publisher_url": "https://doi.org/10.1038/s41583-025-00992-5",
+   "via_url": "https://x.com/millerlabmit/status/1997019724278882778?s=46&amp;t=Miam8yyO5X-dxTsFPFcFIQ",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1765033274093309",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control"
+    ],
+    "approach": [],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": "malformed",
+    "classified_at": "2026-09-22T17:18:26Z",
+    "usage": {
+     "input_tokens": 550,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 89,
+     "cost_usd": 0.00281
+    }
+   }
+  },
+  {
    "id": "habermann2025controllability",
    "slack_ts": "1764853751.346119",
    "shared_on": "2025-12-04",
@@ -12858,6 +13276,93 @@
     "small sample size",
     "predictive modeling"
    ]
+  },
+  {
+   "id": "yang2025attentional",
+   "slack_ts": "1762004403.918669",
+   "shared_on": "2025-11-01",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-2",
+     "count": 1
+    },
+    {
+     "name": "+1::skin-tone-3",
+     "count": 1
+    },
+    {
+     "name": "+1",
+     "count": 2
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41593-025-02098-8",
+   "doi": "10.1038/s41593-025-02098-8",
+   "title": "Attentional failures after sleep deprivation are locked to joint neurovascular, pupil and cerebrospinal fluid flow dynamics",
+   "abstract": "Sleep deprivation rapidly disrupts cognitive function and in the long term contributes to neurological disease. Why sleep deprivation has such profound effects on cognition is not well understood. Here we use simultaneous fast fMRI&#8211;EEG to test how sleep deprivation modulates cognitive, neural and fluid dynamics in the human brain. We demonstrate that attentional failures during wakefulness after sleep deprivation are tightly orchestrated in a series of brain&#8211;body changes, including neuronal shifts, pupil constriction and cerebrospinal fluid (CSF) flow pulsations, pointing to a coupled system of fluid dynamics and neuromodulatory state. CSF flow and hemodynamics are coupled to attentional function within the awake state, with CSF pulsations following attentional impairment. The timing of these dynamics is consistent with a vascular mechanism regulated by neuromodulatory state. The attentional costs of sleep deprivation may thus reflect an irrepressible need for rest periods driven by a central neuromodulatory system that regulates both neuronal and fluid physiology. Yang et al. show that moments of failed attention we experience after sleep deprivation reflect brief &#8216;sleep-like&#8217; episodes in the brain, corresponding to a brain- and body-wide event with altered brain activity, pupil size and brain fluid movement.",
+   "authors": [
+    "Yang, Z.",
+    "Williams, S. D.",
+    "Beldzik, E.",
+    "Anakwe, S.",
+    "Schimmelpfennig, E.",
+    "Lewis, L. D."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2025,
+   "pdf_url": "https://www.nature.com/articles/s41593-025-02098-8.pdf",
+   "type": "journal-article",
+   "pmid": "41162627",
+   "pmcid": "PMC12672380",
+   "oa_url": "https://www.nature.com/articles/s41593-025-02098-8.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41593-025-02098-8",
+   "via_url": "https://x.com/afornito/status/1984121490300924259?s=12&amp;t=Miam8yyO5X-dxTsFPFcFIQ",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1762004403918669",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control",
+     "brain_body",
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "psychophysiology",
+     "other_imaging"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Using simultaneous fast fMRI-EEG, researchers showed that attentional lapses after sleep deprivation coincide with coupled changes in pupil size, neural activity, and cerebrospinal fluid flow pulsations.",
+   "key_finding": "Attentional failures after sleep deprivation are tightly coupled to a coordinated sequence of neuronal shifts, pupil constriction, and CSF flow pulsations, with CSF pulsations following attentional impairment, suggesting a shared neuromodulatory mechanism.",
+   "free_keywords": [
+    "sleep deprivation",
+    "cerebrospinal fluid dynamics",
+    "pupillometry",
+    "fast fMRI-EEG",
+    "attentional lapses",
+    "neurovascular coupling",
+    "arousal state"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "Tagged based on abstract only; full methods details on EEG/pupil/CSF measures inferred from abstract.",
+    "classified_at": "2026-09-22T17:18:22Z",
+    "usage": {
+     "input_tokens": 584,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 363,
+     "cost_usd": 0.00562
+    }
+   }
   },
   {
    "id": "shared2025githubc",
@@ -16974,6 +17479,146 @@
    "n_comments": 0
   },
   {
+   "id": "shared2025just|",
+   "slack_ts": "1753378894.540489",
+   "shared_on": "2025-07-24",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 1
+    }
+   ],
+   "url": "https://jamanetwork.com/journals/jamaneurology/fullarticle/2836396",
+   "doi": null,
+   "title": "Link on jamanetwork.com",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://bsky.app/profile/daspainbrain.bsky.social/post/3luppqfeafc2j",
+   "via": "bluesky",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1753378894540489",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
+   "id": "shared2025just{",
+   "slack_ts": "1753311139.553749",
+   "shared_on": "2025-07-23",
+   "shared_by": "tor",
+   "n_comments": 8,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 1
+    },
+    {
+     "name": "astonished",
+     "count": 1
+    },
+    {
+     "name": "heart",
+     "count": 1
+    }
+   ],
+   "url": "https://jamanetwork.com/journals/jamaneurology/fullarticle/2836397",
+   "doi": null,
+   "title": "Link on jamanetwork.com",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://bsky.app/profile/olegolt.bsky.social/post/3luksri4aqd2k",
+   "via": "bluesky",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1753311139553749",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
+   "id": "shared2025converting",
+   "slack_ts": "1753202099.285929",
+   "shared_on": "2025-07-22",
+   "shared_by": "Ke Bo",
+   "n_comments": 18,
+   "reactions": [
+    {
+     "name": "fire",
+     "count": 1
+    }
+   ],
+   "url": "https://www.arxiv.org/abs/2507.13782",
+   "doi": "10.48550/arxiv.2507.13782",
+   "title": "Converting T1-weighted MRI from 3T to 7T quality using deep learning",
+   "abstract": "Abstract page for arXiv paper 2507.13782: Converting T1-weighted MRI from 3T to 7T quality using deep learning",
+   "authors": [
+    "Gicquel, Malo",
+    "Zhao, Ruoyi",
+    "Wuestefeld, Anika",
+    "Spotorno, Nicola",
+    "Strandberg, Olof",
+    "Åström, Kalle",
+    "Xiao, Yu",
+    "Wisse, Laura EM",
+    "van Westen, Danielle",
+    "Ossenkoppele, Rik",
+    "Mattsson-Carlgren, Niklas",
+    "Berron, David",
+    "Hansson, Oskar",
+    "Flood, Gabrielle",
+    "Vogel, Jacob"
+   ],
+   "journal": "arXiv",
+   "year": 2025,
+   "pdf_url": "https://arxiv.org/pdf/2507.13782",
+   "via_url": "https://x.com/_jakevogel_/status/1947495954384368089?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1753202099285929",
+   "publisher_url": "https://doi.org/10.48550/arxiv.2507.13782",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "ai_integration",
+     "neuroimaging_methods",
+     "other_imaging"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The authors developed a deep learning model to convert 3T T1-weighted MRI scans into images resembling 7T quality, improving image detail and resolution.",
+   "key_finding": "A deep learning approach successfully synthesized 7T-like MRI images from standard 3T scans, enhancing anatomical detail.",
+   "free_keywords": [
+    "image synthesis",
+    "super-resolution MRI",
+    "3T-to-7T conversion",
+    "structural MRI",
+    "deep learning"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.55,
+    "notes": "Only abstract available; specific network architecture and validation metrics unknown.",
+    "classified_at": "2026-09-22T17:18:18Z",
+    "usage": {
+     "input_tokens": 142,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 241,
+     "cost_usd": 0.00351
+    }
+   }
+  },
+  {
    "id": "wang2025interindividual",
    "slack_ts": "1752879196.888099",
    "shared_on": "2025-07-18",
@@ -18270,6 +18915,76 @@
     }
    },
    "n_comments": 1
+  },
+  {
+   "id": "shared2025justz",
+   "slack_ts": "1748627330.021419",
+   "shared_on": "2025-05-30",
+   "shared_by": "Ke Bo",
+   "n_comments": 3,
+   "reactions": [
+    {
+     "name": "party_parrot",
+     "count": 10
+    },
+    {
+     "name": "partying_face",
+     "count": 8
+    }
+   ],
+   "url": "https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00112-3?dgcid=raven_jbs_aip_email",
+   "doi": "10.1016/j.tics.2025.04.013",
+   "title": "The brain bases of emotion generation and emotion regulation",
+   "abstract": null,
+   "authors": [
+    "Zhang, J.",
+    "Bo, K.",
+    "Wager, T. D.",
+    "Gross, J. J."
+   ],
+   "journal": "Trends in Cognitive Sciences",
+   "year": 2025,
+   "pdf_url": null,
+   "via_url": "https://x.com/Boke89707488/status/1928502693753991461",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1748627330021419",
+   "publisher_url": "https://doi.org/10.1016/j.tics.2025.04.013",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "emotion",
+     "emotion_regulation"
+    ],
+    "approach": [
+     "fmri"
+    ],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "This paper reviewed the neural mechanisms underlying emotion generation and emotion regulation processes in the brain.",
+   "key_finding": null,
+   "free_keywords": [
+    "emotion generation",
+    "cognitive reappraisal",
+    "affective neuroscience"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.3,
+    "notes": "Only title available; tags inferred from title and typical CANlab review content.",
+    "classified_at": "2026-09-22T17:18:14Z",
+    "usage": {
+     "input_tokens": 112,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 163,
+     "cost_usd": 0.00267
+    }
+   }
   },
   {
    "id": "shared2025frontiersb",
@@ -21384,6 +22099,94 @@
     }
    },
    "n_comments": 0
+  },
+  {
+   "id": "ren2025deepprep",
+   "slack_ts": "1739032826.805669",
+   "shared_on": "2025-02-08",
+   "shared_by": "tor",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 4
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41592-025-02599-1",
+   "doi": "10.1038/s41592-025-02599-1",
+   "title": "DeepPrep: an accelerated, scalable and robust pipeline for neuroimaging preprocessing empowered by deep learning",
+   "abstract": "Neuroimaging has entered the era of big data. However, the advancement of preprocessing pipelines falls behind the rapid expansion of data volume, causing substantial computational challenges. Here we present DeepPrep, a pipeline empowered by deep learning and a workflow manager. Evaluated on over 55,000 scans, DeepPrep demonstrates tenfold acceleration, scalability and robustness compared to the state-of-the-art pipeline, thereby meeting the scalability requirements of neuroimaging. DeepPrep is a preprocessing pipeline for functional and structural MRI data from humans. Deep learning-based modules and an efficient workflow allow DeepPrep to handle large datasets.",
+   "authors": [
+    "Ren, J.",
+    "An, N.",
+    "Lin, C.",
+    "Zhang, Y.",
+    "Sun, Z.",
+    "Zhang, W.",
+    "Li, S.",
+    "Guo, N.",
+    "Cui, W.",
+    "Hu, Q.",
+    "Wang, W.",
+    "Wu, X.",
+    "Wang, Y.",
+    "Jiang, T.",
+    "Satterthwaite, T. D.",
+    "Wang, D.",
+    "Liu, H."
+   ],
+   "journal": "Nature Methods",
+   "year": 2025,
+   "pdf_url": "https://www.nature.com/articles/s41592-025-02599-1.pdf",
+   "type": "journal-article",
+   "pmid": "39915693",
+   "pmcid": "PMC11903312",
+   "oa_url": "https://www.nature.com/articles/s41592-025-02599-1.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41592-025-02599-1",
+   "via_url": "https://x.com/DavidRen555/status/1887803990454452446",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1739032826805669",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods",
+     "ai_integration",
+     "open_tools",
+     "other_imaging"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The authors developed DeepPrep, a deep learning-empowered neuroimaging preprocessing pipeline, and showed it achieved tenfold acceleration and improved scalability and robustness over standard pipelines on over 55,000 scans.",
+   "key_finding": "DeepPrep achieved tenfold speedup with comparable robustness to state-of-the-art preprocessing pipelines across more than 55,000 structural and functional MRI scans.",
+   "free_keywords": [
+    "preprocessing pipeline",
+    "deep learning",
+    "big data neuroimaging",
+    "workflow manager",
+    "scalability",
+    "structural MRI",
+    "functional MRI"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Only abstract available; general-purpose methods paper not tied to a specific topic domain.",
+    "classified_at": "2026-09-22T17:18:12Z",
+    "usage": {
+     "input_tokens": 350,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 307,
+     "cost_usd": 0.00459
+    }
+   }
   },
   {
    "id": "shared2025sciencedirect",
@@ -25708,6 +26511,36 @@
    "title_unresolved": true
   },
   {
+   "id": "shared2024httpsrdcubedniqwith",
+   "slack_ts": "1721229582.018229",
+   "shared_on": "2024-07-17",
+   "shared_by": "Rotem",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "heart",
+     "count": 9
+    },
+    {
+     "name": "partying_face",
+     "count": 6
+    }
+   ],
+   "url": "https://rdcu.be/dN6iqWith",
+   "doi": null,
+   "title": "Link on rdcu.be",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/rotembot/status/1813587486146478398",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1721229582018229",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
    "id": "kaelinjr2017publish",
    "slack_ts": "1721229496.783659",
    "shared_on": "2024-07-17",
@@ -27072,6 +27905,84 @@
    ]
   },
   {
+   "id": "feuerriegel2024causal",
+   "slack_ts": "1713983737.310899",
+   "shared_on": "2024-04-24",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-4",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41591-024-02902-1.epdf?sharing_token=BHCH9LTmDvPwdTcmL1YjJNRgN0jAjWel9jnR3ZoTv0N0aZozK8k2OIAXuHdNNUYLZW9GQdhrFtrUWyz1SNnK8W_2yU8hx9SXkVTuBnT4ngu7VGnVcoZSgIJ4RGkCdb7JOILZpslTLuLcup1Qs-np-n8DgtpTA5zeeAytKtxvAKM%3D",
+   "doi": "10.1038/s41591-024-02902-1",
+   "title": "Causal machine learning for predicting treatment outcomes",
+   "abstract": "Causal machine learning (ML) offers flexible, data-driven methods for predicting treatment outcomes including efficacy and toxicity, thereby supporting the assessment and safety of drugs. A key benefit of causal ML is that it allows for estimating individualized treatment effects, so that clinical decision-making can be personalized to individual patient profiles. Causal ML can be used in combination with both clinical trial data and real-world data, such as clinical registries and electronic health records, but caution is needed to avoid biased or incorrect predictions. In this Perspective, we discuss the benefits of causal ML (relative to traditional statistical or ML approaches) and outline the key components and steps. Finally, we provide recommendations for the reliable use of causal ML and effective translation into the clinic. Causal machine learning methods could be used to predict treatment outcomes for subgroups and even individual patients; this Perspective outlines the potential benefits and limitations of the approach, offering practical guidance for appropriate clinical use.",
+   "authors": [
+    "Feuerriegel, S.",
+    "Frauen, D.",
+    "Melnychuk, V.",
+    "Schweisthal, J.",
+    "Hess, K.",
+    "Curth, A.",
+    "Bauer, S.",
+    "Kilbertus, N.",
+    "Kohane, I. S.",
+    "van der Schaar, M."
+   ],
+   "journal": "Nature Medicine",
+   "year": 2024,
+   "pdf_url": "https://www.nature.com/articles/s41591-024-02902-1.pdf",
+   "type": "journal-article",
+   "pmid": "38641741",
+   "pmcid": null,
+   "oa_url": "https://arxiv.org/pdf/2410.08770",
+   "publisher_url": "https://doi.org/10.1038/s41591-024-02902-1",
+   "via_url": "https://x.com/PainUZH/status/1783110029463155128",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1713983737310899",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "clinical"
+    ],
+    "approach": [
+     "machine_learning",
+     "computational_model"
+    ],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "This perspective discussed how causal machine learning methods can be used to predict individualized treatment outcomes and effects from clinical trial and real-world data, outlining benefits, pitfalls, and recommendations for clinical translation.",
+   "key_finding": null,
+   "free_keywords": [
+    "causal inference",
+    "individualized treatment effect",
+    "precision medicine",
+    "electronic health records",
+    "clinical decision-making"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.55,
+    "notes": "No neuroimaging content; general clinical ML methods perspective, likely tangential to CANlab's usual scope but tagged based on described content.",
+    "classified_at": "2026-09-22T17:18:08Z",
+    "usage": {
+     "input_tokens": 422,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 230,
+     "cost_usd": 0.00396
+    }
+   }
+  },
+  {
    "id": "scheffer2022belief",
    "slack_ts": "1713925426.652769",
    "shared_on": "2024-04-24",
@@ -27651,6 +28562,102 @@
    "summary": "",
    "key_finding": null,
    "free_keywords": []
+  },
+  {
+   "id": "bo2024systems",
+   "slack_ts": "1711461806.607259",
+   "shared_on": "2024-03-26",
+   "shared_by": "Ke Bo",
+   "n_comments": 16,
+   "reactions": [
+    {
+     "name": "star-struck",
+     "count": 13
+    },
+    {
+     "name": "party_parrot",
+     "count": 12
+    },
+    {
+     "name": "clap::skin-tone-4",
+     "count": 2
+    },
+    {
+     "name": "clap::skin-tone-3",
+     "count": 2
+    },
+    {
+     "name": "clap",
+     "count": 4
+    },
+    {
+     "name": "clap::skin-tone-2",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41593-024-01605-7#Ack1",
+   "doi": "10.1038/s41593-024-01605-7",
+   "title": "A systems identification approach using Bayes factors to deconstruct the brain bases of emotion regulation",
+   "abstract": "Cognitive reappraisal is fundamental to cognitive therapies and everyday emotion regulation. Analyses using Bayes factors and an axiomatic systems identification approach identified four reappraisal-related components encompassing distributed neural activity patterns across two independent functional magnetic resonance imaging (fMRI) studies (n&#8201;=&#8201;182 and n&#8201;=&#8201;176): (1) an anterior prefrontal system selectively involved in cognitive reappraisal; (2) a fronto-parietal-insular system engaged by both reappraisal and emotion generation, demonstrating a general role in appraisal; (3) a largely subcortical system activated during negative emotion generation but unaffected by reappraisal, including amygdala, hypothalamus and periaqueductal gray; and (4) a posterior cortical system of negative emotion-related regions downregulated by reappraisal. These systems covaried with individual differences in reappraisal success and were differentially related to neurotransmitter binding maps, implicating cannabinoid and serotonin systems in reappraisal. These findings challenge &#8216;limbic&#8217;-centric models of reappraisal and provide new systems-level targets for assessing and enhancing emotion regulation. Two fMRI studies (n&#8201;=&#8201;358) show that cognitive regulation of negative emotion alters cortical activity but not amygdala or other subcortical areas. Regulation-related activity overlaps with emotion generation systems but also involves distinct areas.",
+   "authors": [
+    "Bo, K.",
+    "Kraynak, T. E.",
+    "Kwon, M.",
+    "Sun, M.",
+    "Gianaros, P. J.",
+    "Wager, T. D."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2024,
+   "pdf_url": "https://www.nature.com/articles/s41593-024-01605-7.pdf",
+   "type": "journal-article",
+   "pmid": "38519748",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/s41593-024-01605-7",
+   "via_url": "https://twitter.com/Boke89707488/status/1772251772532224190",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1711461806607259",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "emotion",
+     "emotion_regulation"
+    ],
+    "approach": [
+     "fmri",
+     "computational_model",
+     "mega_analysis"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Using a Bayes-factor-based systems identification approach across two large fMRI studies, the authors identified four distinct neural systems underlying cognitive reappraisal of emotion.",
+   "key_finding": "Cognitive reappraisal engaged an anterior prefrontal system unique to regulation and altered cortical but not amygdala/subcortical activity, with individual differences in reappraisal success linked to cannabinoid and serotonin receptor maps.",
+   "free_keywords": [
+    "cognitive reappraisal",
+    "Bayes factors",
+    "axiomatic systems identification",
+    "neurotransmitter maps",
+    "amygdala",
+    "prefrontal cortex"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Tagged based on abstract only; full methods details on neurotransmitter mapping and mediation not confirmed.",
+    "classified_at": "2026-09-22T17:18:04Z",
+    "usage": {
+     "input_tokens": 611,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 319,
+     "cost_usd": 0.00523
+    }
+   }
   },
   {
    "id": "shared2024oooh",
@@ -30359,6 +31366,82 @@
    "n_comments": 0
   },
   {
+   "id": "shared2023httpsarxivorgpdfpdfc",
+   "slack_ts": "1696512354.823639",
+   "shared_on": "2023-10-05",
+   "shared_by": "Rotem",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "eyes",
+     "count": 1
+    }
+   ],
+   "url": "https://arxiv.org/pdf/2310.01783.pdf",
+   "doi": "10.48550/arxiv.2310.01783",
+   "title": "Can large language models provide useful feedback on research papers? A large-scale empirical analysis",
+   "abstract": "Expert feedback lays the foundation of rigorous research. However, the rapid growth of scholarly production and intricate knowledge specialization challenge the conventional scientific feedback mechanisms. High-quality peer reviews are increasingly difficult to obtain. Researchers who are more junior or from under-resourced settings have especially hard times getting timely feedback. With the breakthrough of large language models (LLM) such as GPT-4, there is growing interest in using LLMs to generate scientific feedback on research manuscripts. However, the utility of LLM-generated feedback has not been systematically studied. To address this gap, we created an automated pipeline using GPT-4 to provide comments on the full PDFs of scientific papers. We evaluated the quality of GPT-4's feedback through two large-scale studies. We first quantitatively compared GPT-4's generated feedback with human peer reviewer feedback in 15 Nature family journals (3,096 papers in total) and the ICLR machine learning conference (1,709 papers). The overlap in the points raised by GPT-4 and by human reviewers (average overlap 30.85% for Nature journals, 39.23% for ICLR) is comparable to the overlap between two human reviewers (average overlap 28.58% for Nature journals, 35.25% for ICLR). The overlap between GPT-4 and human reviewers is larger for the weaker papers. We then conducted a prospective user study with 308 researchers from 110 US institutions in the field of AI and computational biology to understand how researchers perceive feedback generated by our GPT-4 system on their own papers. Overall, more than half (57.4%) of the users found GPT-4 generated feedback helpful/very helpful and 82.4% found it more beneficial than feedback from at least some human reviewers. While our findings show that LLM-generated feedback can help researchers, we also identify several limitations.",
+   "authors": [
+    "Liang, Weixin",
+    "Zhang, Yuhui",
+    "Cao, Hancheng",
+    "Wang, Binglu",
+    "Ding, Daisy",
+    "Yang, Xinyu",
+    "Vodrahalli, Kailas",
+    "He, Siyu",
+    "Smith, Daniel",
+    "Yin, Yian",
+    "McFarland, Daniel",
+    "Zou, James"
+   ],
+   "journal": "arXiv",
+   "year": 2023,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/jayvanbavel/status/1709646316026855563",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1696512354823639",
+   "publisher_url": "https://doi.org/10.48550/arxiv.2310.01783",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "ai_integration",
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Researchers built a GPT-4 pipeline to generate feedback on scientific papers and compared it with human peer review across thousands of manuscripts and a user study of researchers.",
+   "key_finding": "GPT-4 generated feedback overlapped with human reviewer comments at rates comparable to overlap between two human reviewers, and most surveyed researchers found the AI feedback helpful.",
+   "free_keywords": [
+    "GPT-4",
+    "peer review",
+    "scientific feedback",
+    "large language models",
+    "ICLR",
+    "Nature journals",
+    "user study"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Not related to CANlab's core cognitive/affective neuroscience topics; tagged minimally based on approach axis only.",
+    "classified_at": "2026-09-22T17:18:00Z",
+    "usage": {
+     "input_tokens": 726,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 267,
+     "cost_usd": 0.00494
+    }
+   }
+  },
+  {
    "id": "torresrodriguez2023parabrachial",
    "slack_ts": "1696127261.351749",
    "shared_on": "2023-10-01",
@@ -30831,6 +31914,80 @@
    "summary": "",
    "key_finding": null,
    "free_keywords": []
+  },
+  {
+   "id": "brown2023climate",
+   "slack_ts": "1694219856.268909",
+   "shared_on": "2023-09-09",
+   "shared_by": "Rotem",
+   "n_comments": 2,
+   "reactions": [
+    {
+     "name": "grimacing",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41586-023-06444-3",
+   "doi": "10.1038/s41586-023-06444-3",
+   "title": "Climate warming increases extreme daily wildfire growth risk in California",
+   "abstract": "California has experienced enhanced extreme wildfire behaviour in recent years1&#8211;3, leading to substantial loss of life and property4,5. Some portion of the change in wildfire behaviour is attributable to anthropogenic climate warming, but formally quantifying this contribution is difficult because of numerous confounding factors6,7 and because wildfires are below the grid scale of global climate models. Here we use machine learning to quantify empirical relationships between temperature (as well as the influence of temperature on aridity) and the risk of extreme daily wildfire growth (&amp;gt;10,000 acres) in California and find that the influence of temperature on the risk is primarily mediated through its influence on fuel moisture. We use the uncovered relationships to estimate the changes in extreme daily wildfire growth risk under anthropogenic warming by subjecting historical fires from 2003 to 2020 to differing background climatological temperatures and aridity conditions. We find that the influence of anthropogenic warming on the risk of extreme daily wildfire growth varies appreciably on a fire-by-fire and day-by-day basis, depending on whether or not climate warming pushes conditions over certain thresholds of aridity, such as 1.5&#8201;kPa of vapour-pressure deficit and 10% dead fuel moisture. So far, anthropogenic warming has enhanced the aggregate expected frequency of extreme daily wildfire growth by 25% (5&#8211;95 range of 14&#8211;36%), on average, relative to preindustrial conditions. But for some fires, there was approximately no change, and for other fires, the enhancement has been as much as 461%. When historical fires are subjected to a range of projected end-of-century conditions, the aggregate expected frequency of extreme daily wildfire growth events increases by 59% (5&#8211;95 range of 47&#8211;71%) under a low SSP1&#8211;2.6 emissions scenario compared with an increase of 172% (5&#8211;95 range of 156&#8211;188%) under a very high SSP5&#8211;8.5 emissions scenario, relative to preindustrial conditions. Quantification of climate warming in California using machine learning shows increased daily wildfire growth risk by 25%, with an expected increase of 59% and 172% in 2100, for low- and very-high-emissions scenarios, respectively.",
+   "authors": [
+    "Brown, P. T.",
+    "Hanley, H.",
+    "Mahesh, A.",
+    "Reed, C.",
+    "Strenfel, S. J.",
+    "Davis, S. J.",
+    "Kochanski, A. K.",
+    "Clements, C. B."
+   ],
+   "journal": "Nature",
+   "year": 2023,
+   "pdf_url": "https://www.nature.com/articles/s41586-023-06444-3.pdf",
+   "type": "journal-article",
+   "pmid": "37648863",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/s41586-023-06444-3",
+   "via_url": "https://twitter.com/PatrickTBrown31/status/1699016555844035045",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1694219856268909",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Researchers used machine learning to quantify how anthropogenic climate warming affects extreme daily wildfire growth risk in California, finding warming has already increased such risk by 25% and projecting further increases under future emissions scenarios.",
+   "key_finding": "Anthropogenic warming has increased the aggregate expected frequency of extreme daily wildfire growth by 25% (5–95 range 14–36%), with projected increases of 59% (low emissions) to 172% (high emissions) by 2100 relative to preindustrial conditions.",
+   "free_keywords": [
+    "wildfire",
+    "climate change",
+    "vapor pressure deficit",
+    "fuel moisture",
+    "California",
+    "extreme fire growth",
+    "SSP scenarios"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": "This paper is outside the typical CANlab neuroscience domain; it is an environmental/climate science study using machine learning, included here only for tagging per instructions.",
+    "classified_at": "2026-09-22T17:17:57Z",
+    "usage": {
+     "input_tokens": 871,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 331,
+     "cost_usd": 0.00587
+    }
+   }
   },
   {
    "id": "shared2023justf",
@@ -31726,6 +32883,30 @@
     }
    },
    "n_comments": 0,
+   "title_unresolved": true
+  },
+  {
+   "id": "shared2023httpsacademicoupcomabmadvancearticledoiabmkaad",
+   "slack_ts": "1688083802.029749",
+   "shared_on": "2023-06-30",
+   "shared_by": "Rotem",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://academic.oup.com/abm/advance-article/doi/10.1093/abm/kaad020/7190781",
+   "doi": "10.1093/abm/kaad020/7190781",
+   "title": "Link on academic.oup.com",
+   "abstract": "Side-effect concerns are a major barrier to vaccination against COVID-19 and other diseases. Identifying cost- and time-efficient interventions to improve vaccine experience and reduce vaccine hesitancy-without withholding information about side effects-is critical. Determine whether a brief symptom as positive signals mindset intervention can improve vaccine experience and reduce vaccine hesitancy after the COVID-19 vaccination. English-speaking adults (18+) were recruited during the 15-min wait period after receiving their second dose of the Pfizer COVID-19 vaccination and were randomly allocated to the symptom as positive signals mindset condition or the treatment as usual control. Participants in the mindset intervention viewed a 3:43-min video explaining how the body responds to vaccinations and how common side effects such as fatigue, sore arm, and fever are signs that the vaccination is helping the body boost immunity. The control group received standard vaccination center information. Mindset participants (N = 260) versus controls (N = 268) reported significantly less worry about symptoms at day 3 [t(506)=2.60, p=.01, d=0.23], fewer symptoms immediately following the vaccine [t(484)=2.75, p=.006, d=0.24], and increased intentions to vaccinate against viruses like COVID-19 in the future [t(514)=-2.57, p=.01, d=0.22]. No significant differences for side-effect frequency at day 3, coping, or impact. This study supports the use of a brief video aimed at reframing symptoms as positive signals to reduce worry and increase future vaccine intentions. Australian New Zealand Clinical Trials Registry: ACTRN12621000722897p. Side-effect concerns are a major barrier to vaccination against COVID-19 and other diseases. Therefore, the purpose of this study was to determine whether a brief symptom as positive signals mindset intervention could improve vaccine experience and reduce vaccine hesitancy after the COVID-19 vaccination. Participants were recruited during the 15-min wait period after receiving their second dose of the Pfizer COVID-19 vaccination and were randomly allocated to a treatment as usual control condition or to a mindset intervention condition which entailed watching a 3:43-min video explaining how the body responds to vaccinations and how common side effects such as fatigue, sore arm, and fever are signs that the vaccination is helping the body boost immunity. Compared with participants in the control condition, participants in the mindset intervention condition reported significantly less worry about symptoms at day 3, fewer symptoms immediately following the vaccine and increased intentions to vaccinate against viruses like COVID-19 in the future. No significant differences emerged for side-effect frequency at day 3, coping, or impact. These finding provide initial support for cost- and time-efficient interventions to improve vaccine experience and reduce vaccine hesitancy without withholding information about side effects.",
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "pmid": "37279932",
+   "pmcid": "PMC10578416",
+   "publisher_url": "https://doi.org/10.1093/abm/kaad020/7190781",
+   "via_url": "https://twitter.com/LCHeathcote/status/1674034440681447429",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1688083802029749",
+   "kind": "paper",
    "title_unresolved": true
   },
   {
@@ -33601,6 +34782,44 @@
    "n_comments": 2
   },
   {
+   "id": "shared2023justi",
+   "slack_ts": "1681749633.213859",
+   "shared_on": "2023-04-17",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "astonished",
+     "count": 8
+    },
+    {
+     "name": "tada",
+     "count": 6
+    },
+    {
+     "name": "heart",
+     "count": 4
+    },
+    {
+     "name": "+1::skin-tone-4",
+     "count": 1
+    }
+   ],
+   "url": "https://imaging-neuroscience.org",
+   "doi": null,
+   "title": "Link on imaging-neuroscience.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/ImagingNeurosci/status/1647966850045689858",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1681749633213859",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
    "id": "botviniknezer2023belief",
    "slack_ts": "1681139669.721809",
    "shared_on": "2023-04-10",
@@ -33686,6 +34905,87 @@
    "summary": "",
    "key_finding": null,
    "free_keywords": []
+  },
+  {
+   "id": "shared2023paper",
+   "slack_ts": "1681139669.721809",
+   "shared_on": "2023-04-10",
+   "shared_by": "Rotem",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "partying_face",
+     "count": 7
+    },
+    {
+     "name": "clap::skin-tone-2",
+     "count": 1
+    },
+    {
+     "name": "champagne",
+     "count": 6
+    },
+    {
+     "name": "heart",
+     "count": 5
+    },
+    {
+     "name": "clap",
+     "count": 2
+    },
+    {
+     "name": "clap::skin-tone-3",
+     "count": 1
+    },
+    {
+     "name": "clap::skin-tone-4",
+     "count": 1
+    }
+   ],
+   "url": "https://psyarxiv.com/yzcm7",
+   "doi": null,
+   "title": "OSF",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/rotembot/status/1466469484928057354",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1681139669721809",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "open_tools"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "This entry appeared to reference an Open Science Framework (OSF) resource but provided no abstract or content to determine its specific focus.",
+   "key_finding": null,
+   "free_keywords": [
+    "OSF",
+    "data sharing",
+    "open science"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.1,
+    "notes": "Only a title ('OSF') is available with no abstract or text, making it impossible to determine actual content, topic, or approach with confidence.",
+    "classified_at": "2026-09-22T17:17:52Z",
+    "usage": {
+     "input_tokens": 84,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 167,
+     "cost_usd": 0.00266
+    }
+   }
   },
   {
    "id": "malezieux2023neural",
@@ -34389,6 +35689,147 @@
    "title_unresolved": true
   },
   {
+   "id": "rosenbaum2022channels",
+   "slack_ts": "1678563281.892749",
+   "shared_on": "2023-03-11",
+   "shared_by": "Byeol",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 1
+    },
+    {
+     "name": "+1::skin-tone-4",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41583-022-00611-7",
+   "doi": "10.1038/s41583-022-00611-7",
+   "title": "TRP channels: a journey towards a molecular understanding of pain",
+   "abstract": "The perception of nociceptive signals, which are translated into pain, plays a fundamental role in the survival of organisms. Because pain is linked to a negative sensation, animals learn to avoid noxious signals. These signals are detected by receptors, which include some members of the transient receptor potential (TRP) family of ion channels that act as transducers of exogenous and endogenous noxious cues. These proteins have been in the focus of the field of physiology for several years, and much knowledge of how they regulate the function of the cell types and organs where they are expressed has been acquired. The last decade has been especially exciting because the &#8216;resolution revolution&#8217; has allowed us to learn the molecular intimacies of TRP channels using cryogenic electron microscopy. These findings, in combination with functional studies, have provided insights into the role played by these channels in the generation and maintenance of pain. Recent studies of transient receptor potential (TRP) channel structure have provided unique insight into the function of TRP channels in our normal sensations and in pain. In this Review, Rosenbaum et al. examine recent advances in the field of TRP ion channel structure&#8211;function relationships and their role in pain.",
+   "authors": [
+    "Rosenbaum, T.",
+    "Morales-Lázaro, S. L.",
+    "Islas, L. D."
+   ],
+   "journal": "Nature Reviews Neuroscience",
+   "year": 2022,
+   "pdf_url": "https://www.nature.com/articles/s41583-022-00611-7.pdf",
+   "type": "journal-article",
+   "pmid": "35831443",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/s41583-022-00611-7",
+   "via_url": "https://twitter.com/NatRevNeurosci/status/1554482159418675200?s=20",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1678563281892749",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "pain"
+    ],
+    "approach": [],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "This review examined recent structural biology advances, especially cryo-EM, in elucidating the molecular function of TRP ion channels and their role in nociception and pain.",
+   "key_finding": null,
+   "free_keywords": [
+    "TRP channels",
+    "cryo-EM",
+    "ion channel structure",
+    "nociception",
+    "molecular physiology"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Molecular/structural biology review, not neuroimaging-based; abstract only available.",
+    "classified_at": "2026-09-22T17:17:49Z",
+    "usage": {
+     "input_tokens": 484,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 176,
+     "cost_usd": 0.00355
+    }
+   }
+  },
+  {
+   "id": "ovsepian2023gene",
+   "slack_ts": "1678562975.914829",
+   "shared_on": "2023-03-11",
+   "shared_by": "Byeol",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-4",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41583-022-00673-7",
+   "doi": "10.1038/s41583-022-00673-7",
+   "title": "Gene therapy for chronic pain: emerging opportunities in target-rich peripheral nociceptors",
+   "abstract": "With sweeping advances in precision delivery systems and manipulation of the genomes and transcriptomes of various cell types, medical biotechnology offers unprecedented selectivity&amp;nbsp;for and control of a wide variety of biological processes, forging new opportunities for therapeutic interventions. This perspective summarizes state-of-the-art gene therapies enabled by recent innovations, with an emphasis on the expanding universe of molecular targets that govern the activity and function of primary sensory neurons and which might be exploited to effectively treat chronic pain. Ion channels in primary sensory neurons are molecular targets for the treatment of chronic pain. In this Perspective, Ovsepian and Waxman assess prospective gene therapies directed towards such targets and discuss their translational potential to enable precision pain medicine.",
+   "authors": [
+    "Ovsepian, S. V.",
+    "Waxman, S. G."
+   ],
+   "journal": "Nature Reviews Neuroscience",
+   "year": 2023,
+   "pdf_url": "https://www.nature.com/articles/s41583-022-00673-7.pdf",
+   "type": "journal-article",
+   "pmid": "36658346",
+   "pmcid": null,
+   "oa_url": "http://gala.gre.ac.uk/id/eprint/41638/7/41638_OVSEPIAN_%20Gene_therapy_for_chronic_pain_emerging_opportunities_in_target_rich_peripheral_nociceptors.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41583-022-00673-7",
+   "via_url": "https://twitter.com/NatRevNeurosci/status/1617863861209792513?s=20",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1678562975914829",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "pain",
+     "chronic_pain"
+    ],
+    "approach": [
+     "genetics"
+    ],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "This perspective reviewed emerging gene therapy approaches targeting ion channels and molecular pathways in peripheral primary sensory neurons for treating chronic pain.",
+   "key_finding": null,
+   "free_keywords": [
+    "gene therapy",
+    "nociceptors",
+    "ion channels",
+    "precision medicine",
+    "peripheral sensory neurons"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.7,
+    "notes": "Abstract-only review; no empirical data on neuroimaging.",
+    "classified_at": "2026-09-22T17:17:47Z",
+    "usage": {
+     "input_tokens": 384,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 188,
+     "cost_usd": 0.00347
+    }
+   }
+  },
+  {
    "id": "spisak2023multivariate",
    "slack_ts": "1678469432.976649",
    "shared_on": "2023-03-10",
@@ -34473,6 +35914,100 @@
     }
    },
    "n_comments": 0
+  },
+  {
+   "id": "tervoclemmens2023reply",
+   "slack_ts": "1678469432.976649",
+   "shared_on": "2023-03-10",
+   "shared_by": "Rotem",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-4",
+     "count": 1
+    },
+    {
+     "name": "+1::skin-tone-3",
+     "count": 1
+    },
+    {
+     "name": "+1::skin-tone-6",
+     "count": 1
+    },
+    {
+     "name": "+1",
+     "count": 1
+    },
+    {
+     "name": "+1::skin-tone-2",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41586-023-05746-w",
+   "doi": "10.1038/s41586-023-05746-w",
+   "title": "Reply to: Multivariate BWAS can be replicable with moderate sample sizes",
+   "abstract": null,
+   "authors": [
+    "Tervo-Clemmens, B.",
+    "Marek, S.",
+    "Chauvin, R. J.",
+    "Van, A. N.",
+    "Kay, B. P.",
+    "Laumann, T. O.",
+    "Thompson, W. K.",
+    "Nichols, T. E.",
+    "Yeo, B. T. T.",
+    "Barch, D. M.",
+    "Luna, B.",
+    "Fair, D. A.",
+    "Dosenbach, N. U. F."
+   ],
+   "journal": "Nature",
+   "year": 2023,
+   "pdf_url": "https://www.nature.com/articles/s41586-023-05746-w.pdf",
+   "type": "journal-article",
+   "pmid": "36890374",
+   "pmcid": "PMC9995264",
+   "oa_url": "https://www.nature.com/articles/s41586-023-05746-w.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41586-023-05746-w",
+   "via_url": "https://twitter.com/smarek0502/status/1633525817215971328",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1678469432976649",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "neuroimaging_methods",
+     "mega_analysis"
+    ],
+    "type": [
+     "commentary"
+    ]
+   },
+   "summary": "The authors replied to a critique defending their original findings on sample size requirements for replicable brain-wide association studies (BWAS).",
+   "key_finding": null,
+   "free_keywords": [
+    "brain-wide association studies",
+    "replicability",
+    "sample size",
+    "reply to comment"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.5,
+    "notes": "Only title available; tags inferred from known context of the Marek et al. BWAS replicability debate.",
+    "classified_at": "2026-09-22T17:17:44Z",
+    "usage": {
+     "input_tokens": 117,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 177,
+     "cost_usd": 0.00282
+    }
+   }
   },
   {
    "id": "shared2023improving",
@@ -34903,6 +36438,145 @@
    "n_comments": 2
   },
   {
+   "id": "jiang2023neurocomputational",
+   "slack_ts": "1676833320.444709",
+   "shared_on": "2023-02-19",
+   "shared_by": "marta",
+   "n_comments": 2,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-4",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41593-023-01258-y",
+   "doi": "10.1038/s41593-023-01258-y",
+   "title": "Neurocomputational mechanism of real-time distributed learning on social networks",
+   "abstract": "Social networks shape our decisions by constraining what information we learn and from whom. Yet, the mechanisms by which network structures affect individual learning and decision-making remain unclear. Here, by combining a real-time distributed learning task with functional magnetic resonance imaging, computational modeling and social network analysis, we studied how humans learn from observing others&#8217; decisions on seven-node networks with varying topological structures. We show that learning on social networks can be approximated by a well-established error-driven process for observational learning, supported by an action prediction error encoded in the lateral prefrontal cortex. Importantly, learning is flexibly weighted toward well-connected neighbors, according to activity in the dorsal anterior cingulate cortex, but only insofar as social observations contain secondhand, potentially intertwining, information. These data suggest a neurocomputational mechanism of network-based filtering on the sources of information, which may give rise to biased learning and the spread of misinformation in an interconnected society. Information flowing among connected peers shapes our beliefs and decisions. Jiang et al. show that learning on social networks is biased toward well-connected individuals, with the dorsal anterior cingulate cortex tracking connectedness on the network that routes learning.",
+   "authors": [
+    "Jiang, Y.",
+    "Mi, Q.",
+    "Zhu, L."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2023,
+   "pdf_url": "https://www.nature.com/articles/s41593-023-01258-y.pdf",
+   "type": "journal-article",
+   "pmid": "36797365",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/s41593-023-01258-y",
+   "via_url": "https://twitter.com/NatureNeuro/status/1626272398940012550",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1676833320444709",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "social",
+     "expectation_learning",
+     "cognitive_control"
+    ],
+    "approach": [
+     "fmri",
+     "computational_model"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Combined fMRI with a real-time distributed learning task and computational modeling to show that humans learn from observing others' decisions on social networks, weighting information toward well-connected neighbors.",
+   "key_finding": "Learning was biased toward well-connected neighbors via an action prediction error in lateral prefrontal cortex and network-connectedness weighting tracked by dorsal anterior cingulate cortex activity.",
+   "free_keywords": [
+    "social network analysis",
+    "observational learning",
+    "misinformation spread",
+    "action prediction error",
+    "network topology"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.8,
+    "notes": "Abstract-only; approach tags inferred from described methods (fMRI, computational modeling, social network analysis).",
+    "classified_at": "2026-09-22T17:17:41Z",
+    "usage": {
+     "input_tokens": 505,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 280,
+     "cost_usd": 0.00463
+    }
+   }
+  },
+  {
+   "id": "menon2023optogenetic",
+   "slack_ts": "1676687780.761319",
+   "shared_on": "2023-02-18",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41467-023-36616-8",
+   "doi": "10.1038/s41467-023-36616-8",
+   "title": "Optogenetic stimulation of anterior insular cortex neurons in male rats reveals causal mechanisms underlying suppression of the default mode network by the salience network",
+   "abstract": "Abstract The salience network (SN) and default mode network (DMN) play a crucial role in cognitive function. The SN, anchored in the anterior insular cortex (AI), has been hypothesized to modulate DMN activity during stimulus-driven cognition. However, the causal neural mechanisms underlying changes in DMN activity and its functional connectivity with the SN are poorly understood. Here we combine feedforward optogenetic stimulation with fMRI and computational modeling to dissect the causal role of AI neurons in dynamic functional interactions between SN and DMN nodes in the male rat brain. Optogenetic stimulation of Chronos-expressing AI neurons suppressed DMN activity, and decreased AI-DMN and intra-DMN functional connectivity. Our findings demonstrate that feedforward optogenetic stimulation of AI neurons induces dynamic suppression and decoupling of the DMN and elucidates previously unknown features of rodent brain network organization. Our study advances foundational knowledge of causal mechanisms underlying dynamic cross-network interactions and brain network switching.",
+   "authors": [
+    "Menon, V.",
+    "Cerri, D.",
+    "Lee, B.",
+    "Yuan, R.",
+    "Lee, S.",
+    "Shih, Y. I."
+   ],
+   "journal": "Nature Communications",
+   "year": 2023,
+   "pdf_url": "https://www.nature.com/articles/s41467-023-36616-8.pdf",
+   "type": "journal-article",
+   "pmid": "36797303",
+   "pmcid": "PMC9935890",
+   "oa_url": "https://www.nature.com/articles/s41467-023-36616-8.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41467-023-36616-8",
+   "via_url": "https://twitter.com/ShihYYI/status/1626372201485307905",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1676687780761319",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control",
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "computational_model",
+     "brain_stimulation"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [
+    "x"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-22T17:17:37Z",
+    "usage": {
+     "input_tokens": 492,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 106,
+     "cost_usd": 0.00286
+    }
+   }
+  },
+  {
    "id": "shared2023httpswwwbiorxivorgcontentvfullpdf",
    "slack_ts": "1676429433.090469",
    "shared_on": "2023-02-15",
@@ -35137,6 +36811,75 @@
     }
    },
    "n_comments": 0
+  },
+  {
+   "id": "vestergaard2023cellular",
+   "slack_ts": "1675969131.693529",
+   "shared_on": "2023-02-09",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 2
+    },
+    {
+     "name": "+1::skin-tone-4",
+     "count": 2
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41586-023-05705-5",
+   "doi": "10.1038/s41586-023-05705-5",
+   "title": "The cellular coding of temperature in the mammalian cortex",
+   "abstract": "Abstract Temperature is a fundamental sensory modality separate from touch, with dedicated receptor channels and primary afferent neurons for cool and warm 1–3 . Unlike for other modalities, however, the cortical encoding of temperature remains unknown, with very few cortical neurons reported that respond to non-painful temperature, and the presence of a ‘thermal cortex’ is debated 4–8 . Here, using widefield and two-photon calcium imaging in the mouse forepaw system, we identify cortical neurons that respond to cooling and/or warming with distinct spatial and temporal response properties. We observed a representation of cool, but not warm, in the primary somatosensory cortex, but cool and warm in the posterior insular cortex (pIC). The representation of thermal information in pIC is robust and somatotopically arranged, and reversible manipulations show a profound impact on thermal perception. Despite being positioned along the same one-dimensional sensory axis, the encoding of cool and that of warm are distinct, both in highly and broadly tuned neurons. Together, our results show that pIC contains the primary cortical representation of skin temperature and may help explain how the thermal system generates sensations of cool and warm.",
+   "authors": [
+    "Vestergaard, M.",
+    "Carta, M.",
+    "Güney, G.",
+    "Poulet, J. F. A."
+   ],
+   "journal": "Nature",
+   "year": 2023,
+   "pdf_url": "https://www.nature.com/articles/s41586-023-05705-5.pdf",
+   "type": "journal-article",
+   "pmid": "36755097",
+   "pmcid": "PMC9946826",
+   "oa_url": "https://www.nature.com/articles/s41586-023-05705-5.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41586-023-05705-5",
+   "via_url": "https://twitter.com/lauracrucianel1/status/1623706346745958400",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1675969131693529",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "other_imaging"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "test",
+   "key_finding": "test",
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-22T17:17:35Z",
+    "usage": {
+     "input_tokens": 488,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 87,
+     "cost_usd": 0.00267
+    }
+   }
   },
   {
    "id": "cao2023need",
@@ -35391,6 +37134,33 @@
     }
    },
    "n_comments": 6,
+   "title_unresolved": true
+  },
+  {
+   "id": "shared2023httpswwwbiorxivorgcontentvc",
+   "slack_ts": "1674607914.330039",
+   "shared_on": "2023-01-25",
+   "shared_by": "marta",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 5
+    }
+   ],
+   "url": "https://www.biorxiv.org/content/10.1101/2023.01.20.524897v1",
+   "doi": "10.1101/2023.01.20.524897v1",
+   "title": "Link on biorxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.1101/2023.01.20.524897v1",
+   "via_url": "https://twitter.com/markus_ploner/status/1617450871662727169",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1674607914330039",
+   "kind": "paper",
    "title_unresolved": true
   },
   {
@@ -36877,6 +38647,63 @@
    "n_comments": 3
   },
   {
+   "id": "shared2022scientific",
+   "slack_ts": "1666284282.936979",
+   "shared_on": "2022-10-20",
+   "shared_by": "Ke Bo",
+   "n_comments": 3,
+   "reactions": [
+    {
+     "name": "open_mouth",
+     "count": 5
+    }
+   ],
+   "url": "https://elifesciences.org/articles/83889",
+   "doi": null,
+   "title": "Scientific Publishing: Peer review without gatekeeping",
+   "abstract": "eLife is changing its editorial process to emphasize public reviews and assessments of preprints by eliminating accept/reject decisions after peer review.",
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/cshperspectives/status/1583053060116733952",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1666284282936979",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [],
+    "type": [
+     "commentary"
+    ]
+   },
+   "summary": "This commentary described eLife's shift to a publishing model emphasizing public reviews and assessments of preprints instead of traditional accept/reject decisions after peer review.",
+   "key_finding": null,
+   "free_keywords": [
+    "eLife",
+    "peer review",
+    "preprints",
+    "publishing reform",
+    "open science"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.9,
+    "notes": "Not a neuroscience research paper; falls outside the topic/approach taxonomy scope.",
+    "classified_at": "2026-09-22T17:17:31Z",
+    "usage": {
+     "input_tokens": 132,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 170,
+     "cost_usd": 0.00278
+    }
+   }
+  },
+  {
    "id": "willmore2022behavioural",
    "slack_ts": "1666238858.443259",
    "shared_on": "2022-10-20",
@@ -37410,6 +39237,28 @@
     }
    },
    "n_comments": 2,
+   "title_unresolved": true
+  },
+  {
+   "id": "shared2022httpswwwbiorxivorgcontentvd",
+   "slack_ts": "1663258106.889339",
+   "shared_on": "2022-09-15",
+   "shared_by": "Rotem",
+   "n_comments": 3,
+   "reactions": [],
+   "url": "https://www.biorxiv.org/content/10.1101/2022.09.12.506984v1",
+   "doi": "10.1101/2022.09.12.506984v1",
+   "title": "Link on biorxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.1101/2022.09.12.506984v1",
+   "via_url": "https://twitter.com/CamilleTestard/status/1570035115316871177",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1663258106889339",
+   "kind": "paper",
    "title_unresolved": true
   },
   {
@@ -38124,6 +39973,27 @@
    "n_comments": 0
   },
   {
+   "id": "shared2022paperd",
+   "slack_ts": "1661086581.736139",
+   "shared_on": "2022-08-21",
+   "shared_by": "Michael",
+   "n_comments": 2,
+   "reactions": [],
+   "url": "https://pubmed.ncbi.nlm.nih.gov/16255124/",
+   "doi": null,
+   "title": "Link on pubmed.ncbi.nlm.nih.gov",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/hakwanlau/status/1561285195340615686?s=12&amp;t=q38qlhaUGIgEPQHPFyuDFA",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1661086581736139",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
    "id": "shared2022httpsdocsgooglecomdocumentdyfbrovcxqhywcjladbzicaqsmqyrmarftzmedituspsharing",
    "slack_ts": "1660772625.245079",
    "shared_on": "2022-08-17",
@@ -38274,6 +40144,103 @@
    "n_comments": 6
   },
   {
+   "id": "shared2022sciencedirectm",
+   "slack_ts": "1660091847.168589",
+   "shared_on": "2022-08-10",
+   "shared_by": "Ke Bo",
+   "n_comments": 10,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 4
+    },
+    {
+     "name": "+1::skin-tone-4",
+     "count": 2
+    },
+    {
+     "name": "partying_face",
+     "count": 8
+    },
+    {
+     "name": "party_parrot",
+     "count": 9
+    },
+    {
+     "name": "star-struck",
+     "count": 6
+    },
+    {
+     "name": "heart",
+     "count": 6
+    },
+    {
+     "name": "+1::skin-tone-3",
+     "count": 2
+    }
+   ],
+   "url": "https://sciencedirect.com/science/article/pii/S1053811922006474",
+   "doi": "10.1016/j.neuroimage.2022.119532",
+   "title": "Decoding the temporal dynamics of affective scene processing",
+   "abstract": null,
+   "authors": [
+    "Bo, K.",
+    "Cui, L.",
+    "Yin, S.",
+    "Hu, Z.",
+    "Hong, X.",
+    "Kim, S.",
+    "Keil, A.",
+    "Ding, M."
+   ],
+   "journal": "NeuroImage",
+   "year": 2022,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/boke89707488/status/1557147366758678535?s=21&amp;t=l5DZpgU5iQNXQ00aCRpXWA",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1660091847168589",
+   "publisher_url": "https://doi.org/10.1016/j.neuroimage.2022.119532",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "emotion",
+     "perception"
+    ],
+    "approach": [
+     "machine_learning",
+     "psychophysiology"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The study used time-resolved multivariate decoding, likely of EEG/MEG data, to characterize the temporal dynamics of neural processing of affective visual scenes.",
+   "key_finding": null,
+   "free_keywords": [
+    "affective scenes",
+    "temporal dynamics",
+    "decoding",
+    "EEG/MEG",
+    "visual emotion processing"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.3,
+    "notes": "Only title available; approach and topic tags inferred from title, methods details unknown (EEG/MEG assumed given 'temporal dynamics' and 'decoding').",
+    "classified_at": "2026-09-22T17:17:29Z",
+    "usage": {
+     "input_tokens": 111,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 228,
+     "cost_usd": 0.00332
+    }
+   }
+  },
+  {
    "id": "shared2022httpswwwscienceorgdoiscitranslmedabjurlverzamprfridoriridcrossreforgamprfrdatcrpubpubmed",
    "slack_ts": "1660085832.861879",
    "shared_on": "2022-08-09",
@@ -38357,6 +40324,33 @@
     }
    },
    "n_comments": 3,
+   "title_unresolved": true
+  },
+  {
+   "id": "shared2022httpswwwmedrxivorgcontentvfullpdfhtml",
+   "slack_ts": "1659142999.187529",
+   "shared_on": "2022-07-30",
+   "shared_by": "marta",
+   "n_comments": 2,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-3",
+     "count": 3
+    }
+   ],
+   "url": "https://www.medrxiv.org/content/10.1101/2022.07.22.22277850v1.full.pdf+html",
+   "doi": "10.1101/2022.07.22.22277850v1.full.pdf+html",
+   "title": "Link on medrxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.1101/2022.07.22.22277850v1.full.pdf+html",
+   "via_url": "https://twitter.com/evp82/status/1553111285302272000?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1659142999187529",
+   "kind": "paper",
    "title_unresolved": true
   },
   {
@@ -38682,6 +40676,71 @@
    "n_comments": 0
   },
   {
+   "id": "shared2022paperc",
+   "slack_ts": "1657719143.865869",
+   "shared_on": "2022-07-13",
+   "shared_by": "Rotem",
+   "n_comments": 3,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 3
+    },
+    {
+     "name": "+1::skin-tone-3",
+     "count": 1
+    },
+    {
+     "name": "+1::skin-tone-4",
+     "count": 1
+    }
+   ],
+   "url": "https://psyarxiv.com/42yh6",
+   "doi": null,
+   "title": "OSF",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/eraneldar/status/1547186842742702080?s=20&amp;t=7TCkW0TlKL9VFLXlD_zJ1w",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1657719143865869",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "open_tools"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "This entry appeared to reference an Open Science Framework (OSF) resource with no further descriptive information available.",
+   "key_finding": null,
+   "free_keywords": [
+    "OSF",
+    "data sharing",
+    "repository"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.15,
+    "notes": "Only a title ('OSF') is available with no abstract or text, making substantive tagging highly uncertain.",
+    "classified_at": "2026-09-22T17:17:25Z",
+    "usage": {
+     "input_tokens": 85,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 150,
+     "cost_usd": 0.00249
+    }
+   }
+  },
+  {
    "id": "kuner2022sounding",
    "slack_ts": "1657551972.557609",
    "shared_on": "2022-07-11",
@@ -38792,6 +40851,37 @@
     }
    },
    "n_comments": 0
+  },
+  {
+   "id": "shared2022httpswwwbiorxivorgcontentvc",
+   "slack_ts": "1657293134.003109",
+   "shared_on": "2022-07-08",
+   "shared_by": "marta",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "partying_face",
+     "count": 9
+    },
+    {
+     "name": "heart",
+     "count": 3
+    }
+   ],
+   "url": "https://www.biorxiv.org/content/10.1101/2021.12.18.473276v1",
+   "doi": "10.1101/2021.12.18.473276v1",
+   "title": "Link on biorxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.1101/2021.12.18.473276v1",
+   "via_url": "https://twitter.com/ByeolStellaKim/status/1545080152236982272",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1657293134003109",
+   "kind": "paper",
+   "title_unresolved": true
   },
   {
    "id": "kang2018what",
@@ -39520,6 +41610,93 @@
    "n_comments": 0
   },
   {
+   "id": "shared2022httpsrdcubecopi",
+   "slack_ts": "1654192266.764049",
+   "shared_on": "2022-06-02",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://rdcu.be/cOP0i",
+   "doi": null,
+   "title": "Link on rdcu.be",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/theamygdaloid/status/1532382717593141248",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1654192266764049",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
+   "id": "lau2022mnemonic",
+   "slack_ts": "1654192266.764049",
+   "shared_on": "2022-06-02",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s44159-022-00068-6",
+   "doi": "10.1038/s44159-022-00068-6",
+   "title": "The mnemonic basis of subjective experience",
+   "abstract": "Conscious experiences involve subjective qualities, such as colours, sounds, smells and emotions. In this Perspective, we argue that these subjective qualities can be understood in terms of their similarity to other experiences. This account highlights the role of memory in conscious experience, even for simple percepts. How an experience feels depends on implicit memory of the relationships between different perceptual representations within the brain. With more complex experiences such as emotions, explicit memories are also recruited. We draw inspiration from work in machine learning as well as the cognitive neuroscience of learning and decision making to make our case and discuss how the account could be tested in future experiments. The resulting findings might help to reveal the functions of subjective experience and inform current theoretical debates on consciousness. Conscious experiences range from simple experiences of colour to rich experiences that combine sensory input and bodily states. In this Perspective, Lau and colleagues propose that simple experiences depend on similarity encoded in implicit memory and that complex experiences also require replay of explicit memory.",
+   "authors": [
+    "Lau, H.",
+    "Michel, M.",
+    "LeDoux, J. E.",
+    "Fleming, S. M."
+   ],
+   "journal": "Nature Reviews Psychology",
+   "year": 2022,
+   "pdf_url": "https://www.nature.com/articles/s44159-022-00068-6.pdf",
+   "type": "journal-article",
+   "oa_url": "https://philpapers.org/archive/LAUTMB.pdf",
+   "publisher_url": "https://doi.org/10.1038/s44159-022-00068-6",
+   "via_url": "https://twitter.com/NatRevPsych/status/1532022274001444865",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1654192266764049",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception",
+     "cognitive_control"
+    ],
+    "approach": [
+     "computational_model"
+    ],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "The authors proposed a theoretical framework suggesting subjective conscious experience arises from implicit and explicit memory encoding similarity relations among perceptual and emotional representations.",
+   "key_finding": null,
+   "free_keywords": [
+    "consciousness",
+    "subjective experience",
+    "memory",
+    "qualia",
+    "machine learning inspiration",
+    "perceptual similarity"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.7,
+    "notes": "Perspective/theoretical piece; no empirical data or fMRI reported.",
+    "classified_at": "2026-09-22T17:17:23Z",
+    "usage": {
+     "input_tokens": 426,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 196,
+     "cost_usd": 0.00363
+    }
+   }
+  },
+  {
    "id": "bartos2022communicating",
    "slack_ts": "1654184706.198789",
    "shared_on": "2022-06-02",
@@ -39623,6 +41800,177 @@
    "n_comments": 0
   },
   {
+   "id": "shared2022sciencedirectl",
+   "slack_ts": "1654038721.420519",
+   "shared_on": "2022-05-31",
+   "shared_by": "Ke Bo",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-3",
+     "count": 1
+    },
+    {
+     "name": "+1::skin-tone-6",
+     "count": 1
+    }
+   ],
+   "url": "https://www.sciencedirect.com/science/article/pii/S1053811922004499",
+   "doi": "10.1016/j.neuroimage.2022.119330",
+   "title": "Harmonization of multi-site MRS data with ComBat",
+   "abstract": null,
+   "authors": [
+    "Bell, T. K.",
+    "Godfrey, K. J.",
+    "Ware, A. L.",
+    "Yeates, K. O.",
+    "Harris, A. D."
+   ],
+   "journal": "NeuroImage",
+   "year": 2022,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/TiffanyBell0/status/1531695187411365890",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1654038721420519",
+   "publisher_url": "https://doi.org/10.1016/j.neuroimage.2022.119330",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "neuroimaging_methods",
+     "other_imaging",
+     "mega_analysis"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "Applied the ComBat harmonization method to correct for site-related batch effects in multi-site magnetic resonance spectroscopy (MRS) data.",
+   "key_finding": null,
+   "free_keywords": [
+    "MRS",
+    "ComBat",
+    "harmonization",
+    "multi-site data",
+    "batch effects"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.4,
+    "notes": "Only title available; inferred content from method name and known ComBat literature applications.",
+    "classified_at": "2026-09-22T17:17:19Z",
+    "usage": {
+     "input_tokens": 111,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 185,
+     "cost_usd": 0.00289
+    }
+   }
+  },
+  {
+   "id": "kohoutova2022individual",
+   "slack_ts": "1654012682.117039",
+   "shared_on": "2022-05-31",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "clap::skin-tone-2",
+     "count": 1
+    },
+    {
+     "name": "tada",
+     "count": 7
+    },
+    {
+     "name": "clap",
+     "count": 5
+    },
+    {
+     "name": "clap::skin-tone-4",
+     "count": 2
+    },
+    {
+     "name": "clap::skin-tone-3",
+     "count": 1
+    },
+    {
+     "name": "clap::skin-tone-6",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41593-022-01081-x",
+   "doi": "10.1038/s41593-022-01081-x",
+   "title": "Individual variability in brain representations of pain",
+   "abstract": "Characterizing cerebral contributions to individual variability in pain processing is crucial for personalized pain medicine, but has yet to be done. In the present study, we address this problem by identifying brain regions with high versus low interindividual variability in their relationship with pain. We trained idiographic pain-predictive models with 13 single-trial functional MRI datasets (n&#8201;=&#8201;404, discovery set) and quantified voxel-level importance for individualized pain prediction. With 21 regions identified as important pain predictors, we examined the interindividual variability of local pain-predictive weights in these regions. Higher-order transmodal regions, such as ventromedial and ventrolateral prefrontal cortices, showed larger individual variability, whereas unimodal regions, such as somatomotor cortices, showed more stable pain representations across individuals. We replicated this result in an independent dataset (n&#8201;=&#8201;124). Overall, our study identifies cerebral sources of individual differences in pain processing, providing potential targets for personalized assessment and treatment of pain. Pain experience is highly individual, but its individual-specific brain features remain unclear. The authors identify brain regions with consistent versus variable representations of pain across a large sample of individuals.",
+   "authors": [
+    "Kohoutová, L.",
+    "Atlas, L. Y.",
+    "Büchel, C.",
+    "Buhle, J. T.",
+    "Geuter, S.",
+    "Jepma, M.",
+    "Koban, L.",
+    "Krishnan, A.",
+    "Lee, D. H.",
+    "Lee, S.",
+    "Roy, M.",
+    "Schafer, S. M.",
+    "Schmidt, L.",
+    "Wager, T. D.",
+    "Woo, C."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2022,
+   "pdf_url": "https://www.nature.com/articles/s41593-022-01081-x.pdf",
+   "type": "journal-article",
+   "pmid": "35637368",
+   "pmcid": "PMC9435464",
+   "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9435464",
+   "publisher_url": "https://doi.org/10.1038/s41593-022-01081-x",
+   "via_url": "https://twitter.com/la_da_k/status/1531545197129216001",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1654012682117039",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "pain"
+    ],
+    "approach": [
+     "fmri",
+     "machine_learning",
+     "neuromarker",
+     "mega_analysis"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "they",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-22T17:17:15Z",
+    "usage": {
+     "input_tokens": 497,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 114,
+     "cost_usd": 0.00295
+    }
+   }
+  },
+  {
    "id": "chikazoe2022refining",
    "slack_ts": "1654012583.019849",
    "shared_on": "2022-05-31",
@@ -39701,6 +42049,91 @@
     }
    },
    "n_comments": 11
+  },
+  {
+   "id": "ceko2022common",
+   "slack_ts": "1654012583.019849",
+   "shared_on": "2022-05-31",
+   "shared_by": "marta",
+   "n_comments": 11,
+   "reactions": [
+    {
+     "name": "tada",
+     "count": 12
+    },
+    {
+     "name": "trophy",
+     "count": 3
+    },
+    {
+     "name": "clap::skin-tone-4",
+     "count": 1
+    },
+    {
+     "name": "clap",
+     "count": 1
+    },
+    {
+     "name": "clap::skin-tone-2",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41593-022-01082-w",
+   "doi": "10.1038/s41593-022-01082-w",
+   "title": "Common and stimulus-type-specific brain representations of negative affect",
+   "abstract": "The brain contains both generalized and stimulus-type-specific representations of aversive events, but models of how these are integrated and related to subjective experience are lacking. We combined functional magnetic resonance imaging with predictive modeling to identify representations of generalized (common) and stimulus-type-specific negative affect across mechanical pain, thermal pain, aversive sounds and aversive images of four intensity levels each. This allowed us to examine how generalized and stimulus-specific representations jointly contribute to aversive experience. Stimulus-type-specific negative affect was largely encoded in early sensory pathways, whereas generalized negative affect was encoded in a distributed set of midline, forebrain, insular and somatosensory regions. All models specifically predicted negative affect rather than general salience or arousal and accurately predicted negative affect in independent samples, demonstrating robustness and generalizability. Common and stimulus-type-specific models were jointly important for predicting subjective experience. Together, these findings offer an integrated account of how negative affect is constructed in the brain and provide predictive neuromarkers for future studies. Using multiple types of negative affect stimuli, functional magnetic resonance imaging and predictive modeling, &#268;eko et al. show that the brain integrates generalized and stimulus-type-specific representations of aversive events to jointly predict subjective experience.",
+   "authors": [
+    "Čeko, M.",
+    "Kragel, P. A.",
+    "Woo, C.",
+    "López-Solà, M.",
+    "Wager, T. D."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2022,
+   "pdf_url": "https://www.nature.com/articles/s41593-022-01082-w.pdf",
+   "type": "journal-article",
+   "pmid": "35637370",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/s41593-022-01082-w",
+   "via_url": "https://twitter.com/martaceko/status/1531656027187257344",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1654012583019849",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "emotion",
+     "pain",
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "machine_learning",
+     "neuromarker"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0,
+    "notes": null,
+    "classified_at": "2026-09-22T17:17:09Z",
+    "usage": {
+     "input_tokens": 540,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 101,
+     "cost_usd": 0.00291
+    }
+   }
   },
   {
    "id": "shared2022faculty",
@@ -40480,6 +42913,27 @@
    ]
   },
   {
+   "id": "shared2022justj",
+   "slack_ts": "1650422683.183089",
+   "shared_on": "2022-04-20",
+   "shared_by": "tor",
+   "n_comments": 1,
+   "reactions": [],
+   "url": "https://www.jneurosci.org/content/42/14/2973.abstract",
+   "doi": null,
+   "title": "Link on jneurosci.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/maramather/status/1515030904732803075?s=12&amp;t=PY-DlytzHN7BDnmMq88Q9w",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1650422683183089",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
    "id": "shared2022cerebrum",
    "slack_ts": "1650063158.124549",
    "shared_on": "2022-04-15",
@@ -40514,14 +42968,22 @@
    "reactions": [
     {
      "name": "+1",
-     "count": 2
+     "count": 5
     },
     {
-     "name": "+1::skin-tone-4",
+     "name": "female-scientist",
+     "count": 3
+    },
+    {
+     "name": "tada",
+     "count": 5
+    },
+    {
+     "name": "+1::skin-tone-3",
      "count": 1
     },
     {
-     "name": "+1::skin-tone-2",
+     "name": "female-scientist::skin-tone-3",
      "count": 1
     }
    ],
@@ -40682,6 +43144,162 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1648210450819179",
    "kind": "link",
    "n_comments": 0
+  },
+  {
+   "id": "nook2022linguistic",
+   "slack_ts": "1648070850.369629",
+   "shared_on": "2022-03-23",
+   "shared_by": "tor",
+   "n_comments": 1,
+   "reactions": [],
+   "url": "https://www.pnas.org/doi/10.1073/pnas.2114737119",
+   "doi": "10.1073/pnas.2114737119",
+   "title": "Linguistic measures of psychological distance track symptom levels and treatment outcomes in a large set of psychotherapy transcripts",
+   "abstract": "Significance Using language to “distance” ourselves from distressing situations (i.e., by talking less about ourselves and the present moment) can help us manage emotions. Here, we translate this basic research to discover that such “linguistic distancing” is a replicable measure of mental health in a large set of therapy transcripts ( N = 6,229). Additionally, clustering techniques showed that language alone could identify participants who differed on both symptom severity and treatment outcomes. These findings lay the foundation for 1) tools that can rapidly identify people in need of psychological services based on language alone and 2) linguistic interventions that can improve mental health.",
+   "authors": [
+    "Nook, E. C.",
+    "Hull, T. D.",
+    "Nock, M. K.",
+    "Somerville, L. H."
+   ],
+   "journal": "Proceedings of the National Academy of Sciences",
+   "year": 2022,
+   "pdf_url": null,
+   "type": "journal-article",
+   "pmid": "35316132",
+   "pmcid": "PMC9060508",
+   "oa_url": "https://doi.org/10.1073/pnas.2114737119",
+   "publisher_url": "https://doi.org/10.1073/pnas.2114737119",
+   "via_url": "https://twitter.com/leahsom/status/1506396326417899520?s=20&amp;t=I70icHrZit6IsymiDy7rbg",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1648070850369629",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "emotion_regulation",
+     "clinical"
+    ],
+    "approach": [
+     "machine_learning",
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Researchers analyzed linguistic distancing in over 6,000 psychotherapy transcripts and found it tracked symptom severity and treatment outcomes.",
+   "key_finding": "Linguistic distancing measures replicably correlated with mental health symptom levels, and clustering based on language distinguished participants by symptom severity and treatment outcome.",
+   "free_keywords": [
+    "natural language processing",
+    "psychological distancing",
+    "psychotherapy transcripts",
+    "clustering",
+    "mental health language markers"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.6,
+    "notes": "Only abstract available; approach tags inferred from mention of clustering techniques and large-scale text analysis, no fMRI or neuroimaging involved.",
+    "classified_at": "2026-09-22T17:17:06Z",
+    "usage": {
+     "input_tokens": 327,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 277,
+     "cost_usd": 0.00424
+    }
+   }
+  },
+  {
+   "id": "pomponio2019harmonization",
+   "slack_ts": "1647782689.026339",
+   "shared_on": "2022-03-20",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://doi.org/10.1101/784363",
+   "doi": "10.1101/784363",
+   "title": "Harmonization of large multi-site imaging datasets: Application to 10,232 MRIs for the analysis of imaging patterns of structural brain change throughout the lifespan",
+   "abstract": "Abstract As medical imaging enters its information era and presents rapidly increasing needs for big data analytics, robust pooling and harmonization of imaging data across diverse cohorts with varying acquisition protocols have become critical. We describe a comprehensive effort that merges and harmonizes a large-scale dataset of 10,232 structural brain MRI scans from participants without known neuropsychiatric disorder from 18 different studies that represent geographic diversity. We use this dataset and multi-atlas-based image processing methods to obtain a hierarchical partition of the brain from larger anatomical regions to individual cortical and deep structures and derive normative age trends of brain structure through the lifespan (3 to 96 years old). Critically, we present and validate a methodology for harmonizing this pooled dataset in the presence of nonlinear age trends. We provide a web-based visualization interface to generate and present the resulting age trends, enabling future studies of brain structure to compare their data with this normative reference of brain development and aging, and to examine deviations from normative ranges, potentially related to disease.",
+   "authors": [
+    "Pomponio, R.",
+    "Erus, G.",
+    "Habes, M.",
+    "Doshi, J.",
+    "Srinivasan, D.",
+    "Mamourian, E.",
+    "Bashyam, V.",
+    "Fan, Y.",
+    "Launer, L. J.",
+    "Masters, C. L.",
+    "Maruff, P.",
+    "Zhuo, C.",
+    "Nasrallah, I. M.",
+    "Völzke, H.",
+    "Johnson, S. C.",
+    "Fripp, J.",
+    "Koutsouleris, N.",
+    "Satterthwaite, T. D.",
+    "Wolf, D. H.",
+    "Gur, R.",
+    "Gur, R.",
+    "Morris, J.",
+    "Albert, M. S.",
+    "Grabe, H. J.",
+    "Resnick, S. M.",
+    "Bryan, R. N.",
+    "Wolk, D. A.",
+    "Shinohara, R. T.",
+    "Shou, H.",
+    "Davatzikos, C."
+   ],
+   "journal": "",
+   "year": 2019,
+   "pdf_url": null,
+   "type": "posted-content",
+   "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2019/09/26/784363.full.pdf",
+   "publisher_url": "https://doi.org/10.1101/784363",
+   "via_url": "https://twitter.com/chrisdav66/status/1203051918286868480?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1647782689026339",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods",
+     "mega_analysis",
+     "other_imaging",
+     "open_tools"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-22T17:17:02Z",
+    "usage": {
+     "input_tokens": 476,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 115,
+     "cost_usd": 0.00292
+    }
+   }
   },
   {
    "id": "shared2022metamatching",
@@ -41227,6 +43845,85 @@
     }
    },
    "n_comments": 0
+  },
+  {
+   "id": "carey2022ephemeral",
+   "slack_ts": "1643978907.382589",
+   "shared_on": "2022-02-04",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-4",
+     "count": 1
+    },
+    {
+     "name": "+1::skin-tone-3",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41562-021-01278-3",
+   "doi": "10.1038/s41562-021-01278-3",
+   "title": "The ephemeral effects of fact-checks on COVID-19 misperceptions in the United States, Great Britain and Canada",
+   "abstract": "Widespread misperceptions about COVID-19 and the novel coronavirus threaten to exacerbate the severity of the pandemic. We conducted preregistered survey experiments in the United States, Great Britain and Canada examining the effectiveness of fact-checks that seek to correct these false or unsupported beliefs. Across three countries with differing levels of political conflict over the pandemic response, we demonstrate that fact-checks reduce targeted misperceptions, especially among the groups who are most vulnerable to these claims, and have minimal spillover effects on the accuracy of related beliefs. However, these reductions in COVID-19 misperception beliefs do not persist over time in panel data even after repeated exposure. These results suggest that fact-checks can successfully change the COVID-19 beliefs of the people who would benefit from them most but that their effects are ephemeral. Experiments in the United States, Great Britain and Canada show that fact-checks can reduce belief in misperceptions about COVID-19, especially among the groups who are most vulnerable to these claims. However, these effects do not persist over time.",
+   "authors": [
+    "Carey, J. M.",
+    "Guess, A. M.",
+    "Loewen, P. J.",
+    "Merkley, E.",
+    "Nyhan, B.",
+    "Phillips, J. B.",
+    "Reifler, J."
+   ],
+   "journal": "Nature Human Behaviour",
+   "year": 2022,
+   "pdf_url": "https://www.nature.com/articles/s41562-021-01278-3.pdf",
+   "type": "journal-article",
+   "pmid": "35115678",
+   "pmcid": null,
+   "oa_url": "https://www.nature.com/articles/s41562-021-01278-3.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41562-021-01278-3",
+   "via_url": "https://twitter.com/brendannyhan/status/1489278179604893696?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1643978907382589",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "social"
+    ],
+    "approach": [
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Preregistered survey experiments in the US, UK, and Canada found that fact-checks reduced COVID-19 misperceptions, especially among vulnerable groups, but these effects did not persist over time.",
+   "key_finding": "Fact-checks reduced targeted misperceptions with minimal spillover but effects were not durable in panel data even after repeated exposure.",
+   "free_keywords": [
+    "misinformation",
+    "fact-checking",
+    "COVID-19",
+    "survey experiment",
+    "belief correction",
+    "panel study"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.55,
+    "notes": "This paper is outside the typical CANlab neuroscience domain; tags reflect best fit within the given taxonomy despite lack of neuroimaging or cognitive-affective neuroscience content.",
+    "classified_at": "2026-09-22T17:16:59Z",
+    "usage": {
+     "input_tokens": 474,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 363,
+     "cost_usd": 0.0054
+    }
+   }
   },
   {
    "id": "shared2022justb",
@@ -42102,6 +44799,145 @@
    "n_comments": 0
   },
   {
+   "id": "urai2022largescale",
+   "slack_ts": "1641445582.000500",
+   "shared_on": "2022-01-06",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41593-021-00980-9",
+   "doi": "10.1038/s41593-021-00980-9",
+   "title": "Large-scale neural recordings call for new insights to link brain and behavior",
+   "abstract": "Neuroscientists today can measure activity from more neurons than ever before, and are facing the challenge of connecting these brain-wide neural recordings to computation and behavior. In the present review, we first describe emerging tools and technologies being used to probe large-scale brain activity and new approaches to characterize behavior in the context of such measurements. We next highlight insights obtained from large-scale neural recordings in diverse model systems, and argue that some of these pose a challenge to traditional theoretical frameworks. Finally, we elaborate on existing modeling frameworks to interpret these data, and argue that the interpretation of brain-wide neural recordings calls for new theoretical approaches that may depend on the desired level of understanding. These advances in both neural recordings and theory development will pave the way for critical advances in our understanding of the brain. Neuroscientists can measure activity from more neurons than ever before, garnering new insights and posing challenges to traditional theoretical frameworks. New frameworks may help researchers use these observations to shed light on brain function.",
+   "authors": [
+    "Urai, A. E.",
+    "Doiron, B.",
+    "Leifer, A. M.",
+    "Churchland, A. K."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2022,
+   "pdf_url": "https://www.nature.com/articles/s41593-021-00980-9.pdf",
+   "type": "journal-article",
+   "pmid": "34980926",
+   "pmcid": null,
+   "oa_url": "https://www.nature.com/articles/s41593-021-00980-9.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41593-021-00980-9",
+   "via_url": "https://twitter.com/anne_churchland/status/1478079782289960960?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1641445582000500",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control"
+    ],
+    "approach": [
+     "neuroimaging_methods",
+     "computational_model"
+    ],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "This review discussed the challenges and opportunities of linking large-scale neural recordings to behavior, highlighting new technologies and calling for novel theoretical frameworks.",
+   "key_finding": null,
+   "free_keywords": [
+    "large-scale recordings",
+    "neural population dynamics",
+    "brain-behavior mapping",
+    "model systems",
+    "theoretical neuroscience"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.55,
+    "notes": "Not CANlab-typical topic; general systems neuroscience review, tagged loosely to cognitive_control as closest fit.",
+    "classified_at": "2026-09-22T17:16:55Z",
+    "usage": {
+     "input_tokens": 433,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 221,
+     "cost_usd": 0.0039
+    }
+   }
+  },
+  {
+   "id": "shared2022justi",
+   "slack_ts": "1641445039.000300",
+   "shared_on": "2022-01-06",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 1
+    }
+   ],
+   "url": "https://www.cell.com/cell-reports/fulltext/S2211-1247(21)01702-2#%20",
+   "doi": "10.1016/j.celrep.2021.110198",
+   "title": "Differential coding of goals and actions in ventral and dorsal corticostriatal circuits during goal-directed behavior",
+   "abstract": null,
+   "authors": [
+    "Tang, H.",
+    "Costa, V. D.",
+    "Bartolo, R.",
+    "Averbeck, B. B."
+   ],
+   "journal": "Cell Reports",
+   "year": 2022,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/hua_ibrain/status/1478421709464113152?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1641445039000300",
+   "publisher_url": "https://doi.org/10.1016/j.celrep.2021.110198",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "reward_craving",
+     "cognitive_control"
+    ],
+    "approach": [
+     "fmri"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "This study likely examined how ventral and dorsal corticostriatal circuits differentially encode goals versus actions during goal-directed behavior.",
+   "key_finding": null,
+   "free_keywords": [
+    "corticostriatal circuits",
+    "goal-directed behavior",
+    "ventral striatum",
+    "dorsal striatum"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.25,
+    "notes": "Only title available; no abstract or methods text, so tagging is highly speculative and may not reflect actual species (could be animal study) or imaging modality used.",
+    "classified_at": "2026-09-22T17:16:50Z",
+    "usage": {
+     "input_tokens": 125,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 210,
+     "cost_usd": 0.00317
+    }
+   }
+  },
+  {
    "id": "shared2021five",
    "slack_ts": "1640968679.109800",
    "shared_on": "2021-12-31",
@@ -42188,6 +45024,88 @@
     }
    },
    "n_comments": 10
+  },
+  {
+   "id": "chen2021mitigating",
+   "slack_ts": "1640129023.085200",
+   "shared_on": "2021-12-21",
+   "shared_by": "tor",
+   "n_comments": 3,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-3",
+     "count": 1
+    },
+    {
+     "name": "+1",
+     "count": 1
+    }
+   ],
+   "url": "https://onlinelibrary.wiley.com/doi/10.1002/hbm.25688",
+   "doi": "10.1002/hbm.25688",
+   "title": "Mitigating site effects in covariance for machine learning in neuroimaging data",
+   "abstract": "Abstract To acquire larger samples for answering complex questions in neuroscience, researchers have increasingly turned to multi‐site neuroimaging studies. However, these studies are hindered by differences in images acquired across multiple sites. These effects have been shown to bias comparison between sites, mask biologically meaningful associations, and even introduce spurious associations. To address this, the field has focused on harmonizing data by removing site‐related effects in the mean and variance of measurements. Contemporaneously with the increase in popularity of multi‐center imaging, the use of machine learning (ML) in neuroimaging has also become commonplace. These approaches have been shown to provide improved sensitivity, specificity, and power due to their modeling the joint relationship across measurements in the brain. In this work, we demonstrate that methods for removing site effects in mean and variance may not be sufficient for ML. This stems from the fact that such methods fail to address how correlations between measurements can vary across sites. Data from the Alzheimer's Disease Neuroimaging Initiative is used to show that considerable differences in covariance exist across sites and that popular harmonization techniques do not address this issue. We then propose a novel harmonization method called Correcting Covariance Batch Effects (CovBat) that removes site effects in mean, variance, and covariance. We apply CovBat and show that within‐site correlation matrices are successfully harmonized. Furthermore, we find that ML methods are unable to distinguish scanner manufacturer after our proposed harmonization is applied, and that the CovBat‐harmonized data retain accurate prediction of disease group.",
+   "authors": [
+    "Chen, A. A.",
+    "Beer, J. C.",
+    "Tustison, N. J.",
+    "Cook, P. A.",
+    "Shinohara, R. T.",
+    "Shou, H."
+   ],
+   "journal": "Human Brain Mapping",
+   "year": 2021,
+   "pdf_url": null,
+   "type": "journal-article",
+   "pmid": "34904312",
+   "pmcid": "PMC8837590",
+   "oa_url": "https://doi.org/10.1002/hbm.25688",
+   "publisher_url": "https://doi.org/10.1002/hbm.25688",
+   "via_url": "https://twitter.com/inm7_isn/status/1473049258924335105?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1640129023085200",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "clinical"
+    ],
+    "approach": [
+     "neuroimaging_methods",
+     "machine_learning",
+     "mega_analysis",
+     "other_imaging"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The authors developed CovBat, a novel harmonization method that removes site effects in mean, variance, and covariance of multi-site neuroimaging data, improving machine learning applications.",
+   "key_finding": "CovBat harmonization eliminated machine learning classifiers' ability to distinguish scanner manufacturer while preserving accurate disease group prediction using ADNI data.",
+   "free_keywords": [
+    "harmonization",
+    "ComBat",
+    "multi-site MRI",
+    "site effects",
+    "covariance",
+    "Alzheimer's Disease Neuroimaging Initiative",
+    "batch effects"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.9,
+    "notes": "type field key typo corrected to 'type' in output structure conceptually; ensure correct field name.",
+    "classified_at": "2026-09-22T17:16:47Z",
+    "usage": {
+     "input_tokens": 627,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 297,
+     "cost_usd": 0.00504
+    }
+   }
   },
   {
    "id": "shared2021justp",
@@ -42500,6 +45418,36 @@
    "n_comments": 5
   },
   {
+   "id": "shared2021httpselifesciencesorgarticles",
+   "slack_ts": "1639623257.061100",
+   "shared_on": "2021-12-16",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 2
+    },
+    {
+     "name": "joy",
+     "count": 1
+    }
+   ],
+   "url": "https://elifesciences.org/articles/72129",
+   "doi": null,
+   "title": "Link on elifesciences.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/misicbata/status/1470786598681907216?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1639623257061100",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
    "id": "shared2021representationalsimilarityrsardmmethods",
    "slack_ts": "1639589469.060600",
    "shared_on": "2021-12-15",
@@ -42597,6 +45545,64 @@
     }
    },
    "n_comments": 5,
+   "title_unresolved": true
+  },
+  {
+   "id": "shared2021httpswwwbiorxivorgcontentve",
+   "slack_ts": "1639153925.056300",
+   "shared_on": "2021-12-10",
+   "shared_by": "Ke Bo",
+   "n_comments": 5,
+   "reactions": [
+    {
+     "name": "brain",
+     "count": 3
+    }
+   ],
+   "url": "https://www.biorxiv.org/content/10.1101/2021.12.09.471939v1",
+   "doi": "10.1101/2021.12.09.471939v1",
+   "title": "Link on biorxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.1101/2021.12.09.471939v1",
+   "via_url": "https://twitter.com/PessoaBrain/status/1469319240435974147?s=20",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1639153925056300",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
+   "id": "shared2021httpswwwbiorxivorgcontentvd",
+   "slack_ts": "1639017452.054400",
+   "shared_on": "2021-12-09",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "eyes",
+     "count": 1
+    },
+    {
+     "name": "+1::skin-tone-3",
+     "count": 1
+    }
+   ],
+   "url": "https://www.biorxiv.org/content/10.1101/2021.12.06.471432v1",
+   "doi": "10.1101/2021.12.06.471432v1",
+   "title": "Link on biorxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.1101/2021.12.06.471432v1",
+   "via_url": "https://twitter.com/leahsom/status/1468615354658267142?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1639017452054400",
+   "kind": "paper",
    "title_unresolved": true
   },
   {
@@ -43903,6 +46909,141 @@
    "free_keywords": []
   },
   {
+   "id": "karlssonlinner2021multivariate",
+   "slack_ts": "1631130772.005200",
+   "shared_on": "2021-09-08",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41593-021-00908-3",
+   "doi": "10.1038/s41593-021-00908-3",
+   "title": "Multivariate analysis of 1.5 million people identifies genetic associations with traits related to self-regulation and addiction",
+   "abstract": "Behaviors and disorders related to self-regulation, such as substance use, antisocial behavior and attention-deficit/hyperactivity disorder, are collectively referred to as externalizing and have shared genetic liability. We applied a multivariate approach that leverages genetic correlations among externalizing traits for genome-wide association analyses. By pooling data from ~1.5 million people, our approach is statistically more powerful than single-trait analyses and identifies more than 500 genetic loci. The loci were enriched for genes expressed in the brain and related to nervous system development. A polygenic score constructed from our results predicts a range of behavioral and medical outcomes that were not part of genome-wide analyses, including traits that until now lacked well-performing polygenic scores, such as opioid use disorder, suicide, HIV infections, criminal convictions and unemployment. Our findings are consistent with the idea that persistent difficulties in self-regulation can be conceptualized as a neurodevelopmental trait with complex and far-reaching social and health correlates. This paper identified &amp;gt;500 genetic loci associated with behaviors and disorders related to self-regulation, including addiction and child behavior problems. The resulting genetic risk scores predict several behavioral, medical and social outcomes.",
+   "authors": [
+    "Karlsson Linnér, R.",
+    "Mallard, T. T.",
+    "Barr, P. B.",
+    "Sanchez-Roige, S.",
+    "Madole, J. W.",
+    "Driver, M. N.",
+    "Poore, H. E.",
+    "de Vlaming, R.",
+    "Grotzinger, A. D.",
+    "Tielbeek, J. J.",
+    "Johnson, E. C.",
+    "Liu, M.",
+    "Rosenthal, S. B.",
+    "Ideker, T.",
+    "Zhou, H.",
+    "Kember, R. L.",
+    "Pasman, J. A.",
+    "Verweij, K. J. H.",
+    "Liu, D. J.",
+    "Vrieze, S.",
+    "Porjesz, B.",
+    "Hesselbrock, V.",
+    "Foroud, T. M.",
+    "Agrawal, A.",
+    "Edenberg, H. J.",
+    "Nurnberger Jr, J. I.",
+    "Liu, Y.",
+    "Kuperman, S.",
+    "Kramer, J.",
+    "Meyer, J. L.",
+    "Kamarajan, C.",
+    "Pandey, A. K.",
+    "Bierut, L.",
+    "Rice, J.",
+    "Bucholz, K. K.",
+    "Schuckit, M. A.",
+    "Tischfield, J.",
+    "Brooks, A.",
+    "Hart, R. P.",
+    "Almasy, L.",
+    "Dick, D. M.",
+    "Salvatore, J. E.",
+    "Goate, A.",
+    "Kapoor, M.",
+    "Slesinger, P.",
+    "Scott, D. M.",
+    "Bauer, L.",
+    "Wetherill, L.",
+    "Xuei, X.",
+    "Lai, D.",
+    "O’Connor, S. J.",
+    "Plawecki, M. H.",
+    "Lourens, S.",
+    "Acion, L.",
+    "Chan, G.",
+    "Chorlian, D. B.",
+    "Zhang, J.",
+    "Kinreich, S.",
+    "Pandey, G.",
+    "Chao, M. J.",
+    "Anokhin, A. P.",
+    "McCutcheon, V. V.",
+    "Saccone, S.",
+    "Aliev, F.",
+    "Barr, P. B.",
+    "Chin, H.",
+    "Parsian, A.",
+    "Kranzler, H. R.",
+    "Gelernter, J.",
+    "Harris, K. M.",
+    "Tucker-Drob, E. M.",
+    "Waldman, I. D.",
+    "Palmer, A. A.",
+    "Harden, K. P.",
+    "Koellinger, P. D.",
+    "Dick, D. M."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2021,
+   "pdf_url": "https://www.nature.com/articles/s41593-021-00908-3.pdf",
+   "type": "journal-article",
+   "pmid": "34446935",
+   "pmcid": "PMC8484054",
+   "oa_url": "https://www.nature.com/articles/s41593-021-00908-3.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41593-021-00908-3",
+   "via_url": "https://twitter.com/NatureNeuro/status/1430933348067778567?s=20",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1631130772005200",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "reward_craving",
+     "cognitive_control",
+     "clinical"
+    ],
+    "approach": [
+     "genetics",
+     "mega_analysis"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-22T17:16:43Z",
+    "usage": {
+     "input_tokens": 536,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 107,
+     "cost_usd": 0.00296
+    }
+   }
+  },
+  {
    "id": "shared2021allostasis",
    "slack_ts": "1630932912.003800",
    "shared_on": "2021-09-06",
@@ -43955,6 +47096,33 @@
     }
    },
    "n_comments": 1
+  },
+  {
+   "id": "shared2021httpswwwbiorxivorgcontentvc",
+   "slack_ts": "1630861671.003600",
+   "shared_on": "2021-09-05",
+   "shared_by": "heejung",
+   "n_comments": 10,
+   "reactions": [
+    {
+     "name": "pray",
+     "count": 1
+    }
+   ],
+   "url": "https://www.biorxiv.org/content/10.1101/2021.02.22.432340v1",
+   "doi": "10.1101/2021.02.22.432340v1",
+   "title": "Link on biorxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.1101/2021.02.22.432340v1",
+   "via_url": "https://twitter.com/cvnlab/status/1433881122254036994?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1630861671003600",
+   "kind": "paper",
+   "title_unresolved": true
   },
   {
    "id": "shared2021think",
@@ -45189,6 +48357,74 @@
    "n_comments": 3
   },
   {
+   "id": "shared2021justq",
+   "slack_ts": "1624276668.023600",
+   "shared_on": "2021-06-21",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.cell.com/cell/fulltext/S0092-8674(20)31388-X",
+   "doi": "10.1016/j.cell.2020.10.024",
+   "title": "The Tolman-Eichenbaum Machine: Unifying Space and Relational Memory through Generalization in the Hippocampal Formation",
+   "abstract": null,
+   "authors": [
+    "Whittington, J. C.",
+    "Muller, T. H.",
+    "Mark, S.",
+    "Chen, G.",
+    "Barry, C.",
+    "Burgess, N.",
+    "Behrens, T. E."
+   ],
+   "journal": "Cell",
+   "year": 2020,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/jcrwhittington/status/1326596195150598147?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1624276668023600",
+   "publisher_url": "https://doi.org/10.1016/j.cell.2020.10.024",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control"
+    ],
+    "approach": [
+     "computational_model",
+     "ai_integration"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The paper introduced the Tolman-Eichenbaum Machine, a computational model unifying spatial and relational memory representations observed in the hippocampal formation through generalization.",
+   "key_finding": "The model reproduced diverse hippocampal and entorhinal representations (place cells, grid cells, and relational codes) as emergent properties of a single generalization mechanism.",
+   "free_keywords": [
+    "Tolman-Eichenbaum Machine",
+    "hippocampus",
+    "entorhinal cortex",
+    "grid cells",
+    "relational memory",
+    "generalization",
+    "neural network model"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.5,
+    "notes": "Only title available; tags inferred from known content of this well-known computational neuroscience paper.",
+    "classified_at": "2026-09-22T17:16:40Z",
+    "usage": {
+     "input_tokens": 130,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 485,
+     "cost_usd": 0.00593
+    }
+   }
+  },
+  {
    "id": "nieh2021geometry",
    "slack_ts": "1624276475.023500",
    "shared_on": "2021-06-21",
@@ -45437,6 +48673,91 @@
     }
    },
    "n_comments": 3
+  },
+  {
+   "id": "hagihara2021intercalated",
+   "slack_ts": "1622112461.009800",
+   "shared_on": "2021-05-27",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "ok_hand",
+     "count": 2
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41586-021-03593-1",
+   "doi": "10.1038/s41586-021-03593-1",
+   "title": "Intercalated amygdala clusters orchestrate a switch in fear state",
+   "abstract": "Adaptive behaviour necessitates the formation of&amp;nbsp;memories for fearful events, but also that these memories can be extinguished. Effective extinction prevents excessive and persistent reactions to perceived threat, as can occur in anxiety and &#8216;trauma- and stressor-related&#8217; disorders1. However, although there is evidence that fear learning and extinction are mediated by distinct neural circuits, the nature of the interaction between these circuits remains poorly understood2&#8211;6. Here, through a combination of in vivo calcium imaging, functional manipulations, and slice physiology, we show that distinct inhibitory clusters of intercalated neurons (ITCs) in the mouse amygdala exert diametrically opposed roles during the acquisition and retrieval of fear extinction memory. Furthermore, we find that the ITC clusters antagonize one another through mutual synaptic inhibition and differentially access functionally distinct cortical- and midbrain-projecting amygdala output pathways. Our findings show that the balance of activity between ITC clusters represents a unique regulatory motif that orchestrates a distributed neural circuitry, which in turn&amp;nbsp;regulates the switch between high- and low-fear states. These findings suggest that the ITCs have a broader role in a range of amygdala functions and associated brain states that underpins the capacity to adapt to salient environmental demands. Distinct clusters of inhibitory neurons in the mouse amygdala perform opposing roles in fear extinction.",
+   "authors": [
+    "Hagihara, K. M.",
+    "Bukalo, O.",
+    "Zeller, M.",
+    "Aksoy-Aksel, A.",
+    "Karalis, N.",
+    "Limoges, A.",
+    "Rigg, T.",
+    "Campbell, T.",
+    "Mendez, A.",
+    "Weinholtz, C.",
+    "Mahn, M.",
+    "Zweifel, L. S.",
+    "Palmiter, R. D.",
+    "Ehrlich, I.",
+    "Lüthi, A.",
+    "Holmes, A."
+   ],
+   "journal": "Nature",
+   "year": 2021,
+   "pdf_url": "https://www.nature.com/articles/s41586-021-03593-1.pdf",
+   "type": "journal-article",
+   "pmid": "34040259",
+   "pmcid": "PMC8402941",
+   "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8402941",
+   "publisher_url": "https://doi.org/10.1038/s41586-021-03593-1",
+   "via_url": "https://twitter.com/kentam_hagihara/status/1397569757050703878?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1622112461009800",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "emotion"
+    ],
+    "approach": [
+     "computational_model"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Using calcium imaging, functional manipulations, and slice physiology in mice, researchers found that distinct intercalated amygdala neuron clusters mutually inhibit each other to regulate the switch between high- and low-fear states during extinction.",
+   "key_finding": "Intercalated amygdala clusters exert opposing roles in fear extinction acquisition and retrieval via mutual synaptic inhibition and differential access to cortical- and midbrain-projecting amygdala outputs.",
+   "free_keywords": [
+    "amygdala",
+    "fear extinction",
+    "intercalated neurons",
+    "calcium imaging",
+    "mouse model",
+    "synaptic inhibition",
+    "fear conditioning"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": "This is an animal (mouse) study outside typical human neuroimaging scope of CANlab tags; approach tags poorly fit (no fMRI, no computational model per se, but includes circuit-level functional analysis).",
+    "classified_at": "2026-09-22T17:16:34Z",
+    "usage": {
+     "input_tokens": 600,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 341,
+     "cost_usd": 0.00543
+    }
+   }
   },
   {
    "id": "shared2021httpsjosstheojorgpapersjossfbclidiwarpckvgsjqyoggtanwpwaypgiifupxyjzmqzydkribwoby",
@@ -45880,6 +49201,28 @@
     }
    },
    "n_comments": 1
+  },
+  {
+   "id": "shared2021httpswwwbiorxivorgcontentvfullpdfhtml",
+   "slack_ts": "1620326652.066400",
+   "shared_on": "2021-05-06",
+   "shared_by": "Rotem",
+   "n_comments": 2,
+   "reactions": [],
+   "url": "https://www.biorxiv.org/content/10.1101/2020.05.06.080754v2.full.pdf+html",
+   "doi": "10.1101/2020.05.06.080754v2.full.pdf+html",
+   "title": "Link on biorxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.1101/2020.05.06.080754v2.full.pdf+html",
+   "via_url": "https://twitter.com/Neuro_Skeptic/status/1390368144133349376",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1620326652066400",
+   "kind": "paper",
+   "title_unresolved": true
   },
   {
    "id": "shared2021justh",
@@ -47296,6 +50639,73 @@
    ]
   },
   {
+   "id": "vanbergen2015sensory",
+   "slack_ts": "1615228357.033600",
+   "shared_on": "2021-03-08",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 2
+    }
+   ],
+   "url": "http://nature.com/articles/nn.4150",
+   "doi": "10.1038/nn.4150",
+   "title": "Sensory uncertainty decoded from visual cortex predicts behavior",
+   "abstract": "Using functional MRI and a novel model-based analysis, the authors find that the uncertainty in sensory representations can reliably be estimated from trial-by-trial activity in human visual cortex. Moreover, this uncertainty represented in cortical activity affects the way people make decisions. Bayesian theories of neural coding propose that sensory uncertainty is represented by a probability distribution encoded in neural population activity, but direct neural evidence supporting this hypothesis is currently lacking. Using fMRI in combination with a generative model-based analysis, we found that probability distributions reflecting sensory uncertainty could reliably be estimated from human visual cortex and, moreover, that observers appeared to use knowledge of this uncertainty in their perceptual decisions.",
+   "authors": [
+    "van Bergen, R. S.",
+    "Ji Ma, W.",
+    "Pratte, M. S.",
+    "Jehee, J. F. M."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2015,
+   "pdf_url": "https://www.nature.com/articles/nn.4150.pdf",
+   "type": "journal-article",
+   "pmid": "26502262",
+   "pmcid": "PMC4670781",
+   "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4670781",
+   "publisher_url": "https://doi.org/10.1038/nn.4150",
+   "via_url": "https://twitter.com/rubenvanbergen/status/1368528957021298688?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1615228357033600",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "computational_model",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-22T17:16:30Z",
+    "usage": {
+     "input_tokens": 349,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 95,
+     "cost_usd": 0.00247
+    }
+   }
+  },
+  {
    "id": "shared2021linear",
    "slack_ts": "1614649062.023600",
    "shared_on": "2021-03-02",
@@ -47427,6 +50837,88 @@
     }
    },
    "n_comments": 0
+  },
+  {
+   "id": "shared2021sciencedirectc",
+   "slack_ts": "1614183799.011500",
+   "shared_on": "2021-02-24",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "sunglasses",
+     "count": 1
+    }
+   ],
+   "url": "https://www.sciencedirect.com/science/article/pii/S2589004221001000",
+   "doi": "10.1016/j.isci.2021.102132",
+   "title": "The neural correlates of ongoing conscious thought",
+   "abstract": null,
+   "authors": [
+    "Smallwood, J.",
+    "Turnbull, A.",
+    "Wang, H.",
+    "Ho, N. S.",
+    "Poerio, G. L.",
+    "Karapanagiotidis, T.",
+    "Konu, D.",
+    "Mckeown, B.",
+    "Zhang, M.",
+    "Murphy, C.",
+    "Vatansever, D.",
+    "Bzdok, D.",
+    "Konishi, M.",
+    "Leech, R.",
+    "Seli, P.",
+    "Schooler, J. W.",
+    "Bernhardt, B.",
+    "Margulies, D. S.",
+    "Jefferies, E."
+   ],
+   "journal": "iScience",
+   "year": 2021,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/the_mindwanders/status/1364298459327700999?s=20",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1614183799011500",
+   "publisher_url": "https://doi.org/10.1016/j.isci.2021.102132",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control",
+     "perception"
+    ],
+    "approach": [
+     "fmri"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "This study examined neural correlates of ongoing conscious thought, likely using fMRI to relate patterns of spontaneous cognition to brain activity.",
+   "key_finding": null,
+   "free_keywords": [
+    "mind-wandering",
+    "conscious thought",
+    "spontaneous cognition",
+    "default mode network"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.3,
+    "notes": "Only title available; tags are inferred and low-confidence.",
+    "classified_at": "2026-09-22T17:16:27Z",
+    "usage": {
+     "input_tokens": 105,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 173,
+     "cost_usd": 0.00276
+    }
+   }
   },
   {
    "id": "shared2021massive",
@@ -49864,6 +53356,45 @@
    "n_comments": 2
   },
   {
+   "id": "shared2020httpswwwbiorxivorgcontentvfullpdf",
+   "slack_ts": "1607019116.137900",
+   "shared_on": "2020-12-03",
+   "shared_by": "marta",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-4",
+     "count": 3
+    },
+    {
+     "name": "brain",
+     "count": 4
+    },
+    {
+     "name": "eyes",
+     "count": 3
+    },
+    {
+     "name": "flushed",
+     "count": 1
+    }
+   ],
+   "url": "https://www.biorxiv.org/content/10.1101/2020.11.30.401323v1.full.pdf",
+   "doi": "10.1101/2020.11.30.401323v1.full.pdf",
+   "title": "Link on biorxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.1101/2020.11.30.401323v1.full.pdf",
+   "via_url": "https://twitter.com/NauMatt/status/1334051808466104320",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1607019116137900",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
    "id": "shared2020medial",
    "slack_ts": "1606838060.134500",
    "shared_on": "2020-12-01",
@@ -50295,6 +53826,27 @@
     }
    },
    "n_comments": 76
+  },
+  {
+   "id": "shared2020attention",
+   "slack_ts": "1605758341.094600",
+   "shared_on": "2020-11-19",
+   "shared_by": "tor",
+   "n_comments": 1,
+   "reactions": [],
+   "url": "https://biorxiv.org/cgi/content/short/2020.11.05.369793v1",
+   "doi": null,
+   "title": "Link on biorxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/biorxiv_neursci/status/1324867987325800448?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1605758341094600",
+   "kind": "paper",
+   "title_unresolved": true
   },
   {
    "id": "shared2020science",
@@ -55309,6 +58861,100 @@
    ]
   },
   {
+   "id": "shared2020httpsrdcubebwzv",
+   "slack_ts": "1596140709.236400",
+   "shared_on": "2020-07-30",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://rdcu.be/b5Wzv",
+   "doi": null,
+   "title": "Link on rdcu.be",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/guevarradarwin/status/1288884786631782400?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1596140709236400",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
+   "id": "shared2020paperd",
+   "slack_ts": "1596140624.236200",
+   "shared_on": "2020-07-30",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://psyarxiv.com/ncwez/",
+   "doi": null,
+   "title": "OSF",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/leesplez/status/1288592934791794696?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1596140624236200",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "open_tools"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "This entry appears to reference an OSF (Open Science Framework) repository or resource, likely for data or materials sharing, but no further details are available.",
+   "key_finding": null,
+   "free_keywords": [
+    "OSF",
+    "data sharing",
+    "open science"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.15,
+    "notes": "Only a title 'OSF' with no abstract or text is available, so topic and approach tags are highly uncertain.",
+    "classified_at": "2026-09-22T17:16:24Z",
+    "usage": {
+     "input_tokens": 85,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 163,
+     "cost_usd": 0.00262
+    }
+   }
+  },
+  {
+   "id": "shared2020justv",
+   "slack_ts": "1596140337.236000",
+   "shared_on": "2020-07-30",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://advances.sciencemag.org/content/6/31/eaba8245",
+   "doi": null,
+   "title": "Link on advances.sciencemag.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/simonaschiavi24/status/1288565513946308609?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1596140337236000",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
    "id": "shared2020httpslinkspringercomcontentpdfspdf",
    "slack_ts": "1596137620.228800",
    "shared_on": "2020-07-30",
@@ -55626,6 +59272,28 @@
    "n_comments": 14
   },
   {
+   "id": "shared2020httpswwwbiorxivorgcontentv",
+   "slack_ts": "1595994842.198400",
+   "shared_on": "2020-07-29",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.biorxiv.org/content/10.1101/309260v1",
+   "doi": "10.1101/309260v1",
+   "title": "Link on biorxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.1101/309260v1",
+   "via_url": "https://twitter.com/junaidsmerchant/status/1286813214240657408?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1595994842198400",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
    "id": "gilam2020what",
    "slack_ts": "1595074975.194500",
    "shared_on": "2020-07-18",
@@ -55902,6 +59570,67 @@
     }
    },
    "n_comments": 0
+  },
+  {
+   "id": "shared2020paperc",
+   "slack_ts": "1594832133.184200",
+   "shared_on": "2020-07-15",
+   "shared_by": "Mijin",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 4
+    },
+    {
+     "name": "+1::skin-tone-6",
+     "count": 2
+    }
+   ],
+   "url": "https://osf.io/preprints/psyarxiv/9eaxk",
+   "doi": null,
+   "title": "OSF",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/phkragel/status/1282737069027098625?s=20",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1594832133184200",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "open_tools"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "This entry appears to reference an OSF (Open Science Framework) resource associated with a CANlab publication, but no further content is available to summarize.",
+   "key_finding": null,
+   "free_keywords": [
+    "OSF",
+    "data sharing",
+    "repository"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.15,
+    "notes": "Only a title ('OSF') is available with no abstract or text, making substantive tagging highly uncertain; likely a data/code repository link rather than a standalone paper.",
+    "classified_at": "2026-09-22T17:16:21Z",
+    "usage": {
+     "input_tokens": 85,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 180,
+     "cost_usd": 0.00279
+    }
+   }
   },
   {
    "id": "shared2020fmri",
@@ -58517,6 +62246,63 @@
    ]
   },
   {
+   "id": "shared2020paperb",
+   "slack_ts": "1585797350.011000",
+   "shared_on": "2020-04-02",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-2",
+     "count": 3
+    }
+   ],
+   "url": "https://psyarxiv.com/7zj94",
+   "doi": null,
+   "title": "OSF",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/tobigerstenberg/status/1245102424806658049?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1585797350011000",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "open_tools"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "This entry appears to reference an OSF (Open Science Framework) repository or resource with no further descriptive information available.",
+   "key_finding": null,
+   "free_keywords": [
+    "OSF",
+    "data sharing",
+    "repository"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.15,
+    "notes": "Only a title 'OSF' with no abstract or text was available, so tagging is highly uncertain and based on inference that this is an open data/materials repository entry.",
+    "classified_at": "2026-09-22T17:16:19Z",
+    "usage": {
+     "input_tokens": 85,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 168,
+     "cost_usd": 0.00267
+    }
+   }
+  },
+  {
    "id": "shared2020httpsacademicoupcomcercoradvancearticledoicercorbhaaguestaccesskeyfdddbdadfaaaceffbd",
    "slack_ts": "1585584694.007200",
    "shared_on": "2020-03-30",
@@ -58833,6 +62619,36 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1585007553027600",
    "kind": "link",
    "n_comments": 0
+  },
+  {
+   "id": "shared2020justu",
+   "slack_ts": "1584978330.025700",
+   "shared_on": "2020-03-23",
+   "shared_by": "marta",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-2",
+     "count": 3
+    },
+    {
+     "name": "+1::skin-tone-4",
+     "count": 1
+    }
+   ],
+   "url": "https://journals.lww.com/pain/Abstract/publishahead/Enhanced_mindfulness_based_stress_reduction.98445.aspx",
+   "doi": null,
+   "title": "Link on journals.lww.com",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/daspainbrain/status/1241105892977684480",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1584978330025700",
+   "kind": "paper",
+   "title_unresolved": true
   },
   {
    "id": "shared2020parcellation",
@@ -64683,6 +68499,27 @@
    "n_comments": 0
   },
   {
+   "id": "shared2019attentionb",
+   "slack_ts": "1549931877.000900",
+   "shared_on": "2019-02-12",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "http://biorxiv.org/cgi/content/short/545954v1",
+   "doi": null,
+   "title": "Link on biorxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/martin_hebart/status/1094905583201865729",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1549931877000900",
+   "kind": "paper",
+   "title_unresolved": true
+  },
+  {
    "id": "stauss2019multicenter",
    "slack_ts": "1549733612.062800",
    "shared_on": "2019-02-09",
@@ -65145,6 +68982,36 @@
     }
    },
    "n_comments": 0,
+   "title_unresolved": true
+  },
+  {
+   "id": "shared2019justl",
+   "slack_ts": "1548435543.036300",
+   "shared_on": "2019-01-25",
+   "shared_by": "Yoni",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "hamster",
+     "count": 1
+    },
+    {
+     "name": "+1::skin-tone-3",
+     "count": 1
+    }
+   ],
+   "url": "https://journals.lww.com/pain/Abstract/publishahead/Machine_learning_based_prediction_of_clinical_pain.98833.aspx",
+   "doi": null,
+   "title": "Link on journals.lww.com",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/imawla/status/1055456821127856129",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1548435543036300",
+   "kind": "paper",
    "title_unresolved": true
   },
   {
@@ -65890,6 +69757,71 @@
     }
    },
    "n_comments": 1
+  },
+  {
+   "id": "huang2018identifying",
+   "slack_ts": "1544560587.005800",
+   "shared_on": "2018-12-11",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41586-018-0793-8",
+   "doi": "10.1038/s41586-018-0793-8",
+   "title": "Identifying the pathways required for coping behaviours associated with sustained pain",
+   "abstract": "Animals and humans display two types of response to noxious stimuli. The first includes reflexive defensive responses that prevent or limit injury; a well-known example of these responses is the quick withdrawal of one&#8217;s hand upon touching a hot object. When the first-line response fails to prevent tissue damage (for example, a finger is burnt), the resulting pain invokes a second-line coping response&#8212;such as licking the injured area to soothe suffering. However, the underlying neural circuits that drive these two strings of behaviour remain poorly understood. Here we show in mice that spinal neurons marked by coexpression of TAC1Cre and LBX1Flpo drive coping responses associated with pain. Ablation of these spinal neurons led to the loss of both persistent licking and conditioned aversion evoked by stimuli (including skin pinching and burn injury) that&#8212;in humans&#8212;produce sustained pain, without affecting any of the reflexive defensive reactions that we tested. This selective indifference to sustained pain resembles the phenotype seen in humans with lesions of medial thalamic nuclei1&#8211;3. Consistently, spinal TAC1-lineage neurons are connected to medial thalamic nuclei by direct projections and via indirect routes through the superior lateral parabrachial nuclei. Furthermore, the anatomical and functional segregation observed at the spinal level also applies to primary sensory neurons. For example, in response to noxious mechanical stimuli, MRGPRD- and TRPV1-positive nociceptors are required to elicit reflexive and coping responses, respectively. Our study therefore reveals a fundamental subdivision within the cutaneous somatosensory system, and challenges the validity of using reflexive defensive responses to measure sustained pain. In mice, the ablation of spinal neurons that co-express TAC1 and LBX1 leads to the loss of coping responses to sustained pain without affecting reflexive defensive reactions to external threats.",
+   "authors": [
+    "Huang, T.",
+    "Lin, S.",
+    "Malewicz, N. M.",
+    "Zhang, Y.",
+    "Zhang, Y.",
+    "Goulding, M.",
+    "LaMotte, R. H.",
+    "Ma, Q."
+   ],
+   "journal": "Nature",
+   "year": 2018,
+   "pdf_url": "https://www.nature.com/articles/s41586-018-0793-8.pdf",
+   "type": "journal-article",
+   "pmid": "30532001",
+   "pmcid": "PMC6461409",
+   "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6461409",
+   "publisher_url": "https://doi.org/10.1038/s41586-018-0793-8",
+   "via_url": "https://twitter.com/choongwanwoo/status/1072323143958618113?s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1544560587005800",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "pain",
+     "perception"
+    ],
+    "approach": [
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-09-22T17:16:16Z",
+    "usage": {
+     "input_tokens": 749,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 92,
+     "cost_usd": 0.00324
+    }
+   }
   },
   {
    "id": "shared2018associative",
@@ -77769,6 +81701,70 @@
    "n_comments": 0
   },
   {
+   "id": "kuner2016structural",
+   "slack_ts": "1481834007.000032",
+   "shared_on": "2016-12-15",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/nrn.2016.162",
+   "doi": "10.1038/nrn.2016.162",
+   "title": "Structural plasticity and reorganisation in chronic pain",
+   "abstract": "The mechanisms that underlie the transition of acute pain to a chronic intractable disorder are not well understood. In this Review, Kuner and Flor discuss how structural plasticity and reorganisation in somatosensory and emotional networks can contribute to chronic pain, integrating information available from animal models and human patients. Chronic pain is not simply a temporal continuum of acute pain. Studies on functional plasticity in neural circuits of pain have provided mechanistic insights and linked various modulatory factors to a change in perception and behaviour. However, plasticity also occurs in the context of structural remodelling and reorganisation of synapses, cells and circuits, potentially contributing to the long-term nature of chronic pain. This Review discusses maladaptive structural plasticity in neural circuits of pain, spanning multiple anatomical and spatial scales in animal models and human patients, and addresses key questions on structure&#8211;function relationships.",
+   "authors": [
+    "Kuner, R.",
+    "Flor, H."
+   ],
+   "journal": "Nature Reviews Neuroscience",
+   "year": 2016,
+   "pdf_url": "https://www.nature.com/articles/nrn.2016.162.pdf",
+   "type": "journal-article",
+   "pmid": "27974843",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/nrn.2016.162",
+   "via_url": "https://twitter.com/NatRevNeurosci/status/809386747834548224",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1481834007000032",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "chronic_pain",
+     "pain"
+    ],
+    "approach": [
+     "other_imaging"
+    ],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "This review synthesized animal and human studies on structural plasticity and neural reorganization underlying the transition from acute to chronic pain.",
+   "key_finding": null,
+   "free_keywords": [
+    "structural plasticity",
+    "synaptic remodeling",
+    "somatosensory cortex",
+    "central sensitization",
+    "neural reorganization"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.6,
+    "notes": "Abstract only; no fMRI data collected, imaging mentioned generally rather than a specific method, so other_imaging tagged cautiously.",
+    "classified_at": "2026-09-22T17:16:13Z",
+    "usage": {
+     "input_tokens": 403,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 206,
+     "cost_usd": 0.00369
+    }
+   }
+  },
+  {
    "id": "shared2016infrared",
    "slack_ts": "1481654090.000026",
    "shared_on": "2016-12-13",
@@ -78094,6 +82090,32 @@
    "kind": "link",
    "title_unresolved": true,
    "n_comments": 0
+  },
+  {
+   "id": "shared2016attentionc",
+   "slack_ts": "1480490429.000477",
+   "shared_on": "2016-11-30",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 2
+    }
+   ],
+   "url": "http://biorxiv.org/cgi/content/short/088278v1",
+   "doi": null,
+   "title": "Link on biorxiv.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/biorxivpreprint/status/803478717452480513",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1480490429000477",
+   "kind": "paper",
+   "title_unresolved": true
   },
   {
    "id": "shared2016psychiatric",
@@ -82286,6 +86308,71 @@
    "title_unresolved": true
   },
   {
+   "id": "shared2016sciencedirectx",
+   "slack_ts": "1465919236.000010",
+   "shared_on": "2016-06-14",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "http://www.sciencedirect.com/science/article/pii/S1053811916302385",
+   "doi": "10.1016/j.neuroimage.2016.06.011",
+   "title": "Spontaneous pupil dilations during the resting state are associated with activation of the salience network",
+   "abstract": null,
+   "authors": [
+    "Schneider, M.",
+    "Hathway, P.",
+    "Leuchs, L.",
+    "Sämann, P. G.",
+    "Czisch, M.",
+    "Spoormaker, V. I."
+   ],
+   "journal": "NeuroImage",
+   "year": 2016,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/martaceko/status/742745141308313600",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1465919236000010",
+   "publisher_url": "https://doi.org/10.1016/j.neuroimage.2016.06.011",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "brain_body"
+    ],
+    "approach": [
+     "fmri",
+     "psychophysiology"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The study examined spontaneous pupil dilations during resting-state fMRI and found they were linked to activation within the salience network.",
+   "key_finding": "Spontaneous pupil dilations during rest correlated with activation of salience network regions.",
+   "free_keywords": [
+    "pupillometry",
+    "resting state",
+    "salience network",
+    "arousal",
+    "autonomic"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.4,
+    "notes": "Only title available; inferred content from title.",
+    "classified_at": "2026-09-22T17:16:10Z",
+    "usage": {
+     "input_tokens": 120,
+     "cache_read_input_tokens": 4104,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 183,
+     "cost_usd": 0.00289
+    }
+   }
+  },
+  {
    "id": "kass2016simple",
    "slack_ts": "1465842796.000008",
    "shared_on": "2016-06-13",
@@ -82348,6 +86435,28 @@
     }
    },
    "n_comments": 0
+  },
+  {
+   "id": "shared2016httponlinelibrarywileycomdoihbmfull",
+   "slack_ts": "1465836072.000005",
+   "shared_on": "2016-06-13",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "http://onlinelibrary.wiley.com/doi/10.1002/hbm.23228/full",
+   "doi": "10.1002/hbm.23228/full",
+   "title": "Link on onlinelibrary.wiley.com",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.1002/hbm.23228/full",
+   "via_url": "https://twitter.com/martaceko/status/742396117589991426",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1465836072000005",
+   "kind": "paper",
+   "title_unresolved": true
   },
   {
    "id": "shared2016justr",
@@ -83581,6 +87690,70 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1461689407000054",
    "kind": "link",
    "n_comments": 0
+  },
+  {
+   "id": "shared2016sciencedirectw",
+   "slack_ts": "1461686684.000050",
+   "shared_on": "2016-04-26",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1",
+     "count": 2
+    }
+   ],
+   "url": "http://www.sciencedirect.com/science/article/pii/S1364661316300043",
+   "doi": "10.1016/j.tics.2016.03.011",
+   "title": "Decoding the Nature of Emotion in the Brain",
+   "abstract": null,
+   "authors": [
+    "Kragel, P. A.",
+    "LaBar, K. S."
+   ],
+   "journal": "Trends in Cognitive Sciences",
+   "year": 2016,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/martaceko/status/724992297092308992",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1461686684000050",
+   "publisher_url": "https://doi.org/10.1016/j.tics.2016.03.011",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "emotion"
+    ],
+    "approach": [
+     "fmri",
+     "machine_learning"
+    ],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "This review discussed how machine learning decoding approaches applied to fMRI data can help clarify the nature of emotion representation in the brain.",
+   "key_finding": null,
+   "free_keywords": [
+    "emotion decoding",
+    "affective neuroscience",
+    "pattern classification"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.4,
+    "notes": "Only title available; tags inferred from title and known topic of this TICS paper.",
+    "classified_at": "2026-09-22T17:16:07Z",
+    "usage": {
+     "input_tokens": 117,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4104,
+     "output_tokens": 166,
+     "cost_usd": 0.01215
+    }
+   }
   },
   {
    "id": "shared2016pressure",
@@ -85070,6 +89243,27 @@
    "kind": "paper",
    "title_unresolved": true,
    "n_comments": 0
+  },
+  {
+   "id": "shared2016httprdcubegau",
+   "slack_ts": "1459358632.000002",
+   "shared_on": "2016-03-30",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "http://rdcu.be/g4aU",
+   "doi": null,
+   "title": "Link on rdcu.be",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "via_url": "https://twitter.com/martaceko/status/715227620938371072",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1459358632000002",
+   "kind": "paper",
+   "title_unresolved": true
   },
   {
    "id": "shared2016justd",
