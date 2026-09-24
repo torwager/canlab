@@ -1,7 +1,69 @@
 {
- "updated": "2026-09-23",
+ "updated": "2026-09-24",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026sciencedirectm",
+   "slack_ts": "1790219310.961599",
+   "shared_on": "2026-09-24",
+   "shared_by": "Ben Graul",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.sciencedirect.com/science/article/pii/S2589004226028713",
+   "doi": "10.1016/j.isci.2026.117492",
+   "title": "Neural subspace reorganization reflects value-based decision-making",
+   "abstract": null,
+   "authors": [
+    "Li, H.",
+    "Chrysanthidis, N.",
+    "Brincat, S. L.",
+    "Rose, J.",
+    "Miller, E. K."
+   ],
+   "journal": "iScience",
+   "year": 2026,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1790219310961599",
+   "publisher_url": "https://doi.org/10.1016/j.isci.2026.117492",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "reward_craving",
+     "cognitive_control"
+    ],
+    "approach": [
+     "fmri",
+     "computational_model"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Investigated how neural population activity reorganizes into distinct subspaces during value-based decision-making using fMRI and computational modeling.",
+   "key_finding": null,
+   "free_keywords": [
+    "value-based decision-making",
+    "neural subspace",
+    "population geometry",
+    "decision-making"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.3,
+    "notes": "Only title available; tags inferred from limited information and may not fully capture methodology.",
+    "classified_at": "2026-09-24T15:06:50Z",
+    "usage": {
+     "input_tokens": 109,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4104,
+     "output_tokens": 180,
+     "cost_usd": 0.01228
+    }
+   }
+  },
   {
    "id": "charbonneau2026comparative",
    "slack_ts": "1790007623.472189",
