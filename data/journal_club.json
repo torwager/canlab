@@ -1,7 +1,73 @@
 {
- "updated": "2026-09-24",
+ "updated": "2026-09-25",
  "channel": null,
  "items": [
+  {
+   "id": "ashokkumar2026large",
+   "slack_ts": "1790303387.512559",
+   "shared_on": "2026-09-25",
+   "shared_by": "Xiaomin",
+   "n_comments": 2,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41586-026-10742-x",
+   "doi": "10.1038/s41586-026-10742-x",
+   "title": "Large language models can predict the results of social science experiments",
+   "abstract": "There is growing interest in how large language models (LLMs) can advance social and behavioural science1&#8211;5. Previous work has assessed LLMs&#8217; ability to predict survey responses6&#8211;9, but less is known about whether they can predict the outcomes of social science experiments10, particularly those absent from training data. Here we built an archive of 70 preregistered, nationally representative survey experiments in the USA&amp;nbsp;involving 469 experimental effects and 119,330 participants. We prompted an LLM to simulate how representative samples from American&amp;nbsp;individuals would respond to experimental stimuli, and then we inferred treatment effects by comparing simulated responses across conditions. Predictions derived from GPT-4, whose training-data cutoff predated the publication of many studies in our archive, were strongly correlated with actual treatment effects, achieving accuracy similar to pooled human forecasts. Correlations remained high for studies not published or publicly posted by the model&#8217;s training-data cutoff date and for predictions from prominent open-weight models. Despite high correlations, predictions systematically overestimated effect sizes. In a secondary archive of 15 megastudies featuring 606 effects, correlations were lower but comparable to&amp;nbsp;those of pooled expert forecasters. To assess implications for scientific practice, we surveyed 460 social scientists about probable uses and perceived risks and used our archives to assess several applications (pilot testing, intervention selection, identifying effects needing replication) and risks (bias, misuse). Together, these results indicate that LLMs can augment experimental methods in science and practice while raising important considerations for responsible use. Large language models can be used to&amp;nbsp;estimate the results&amp;nbsp;of social science experiments about as accurately as a group of&amp;nbsp;human forecasters&#8212;even for experiments published after&amp;nbsp;the models were&amp;nbsp;trained&#8212;although they tended to overestimate effect&amp;nbsp;sizes.",
+   "authors": [
+    "Ashokkumar, A.",
+    "Hewitt, L.",
+    "Ghezae, I.",
+    "Willer, R."
+   ],
+   "journal": "Nature",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41586-026-10742-x.pdf",
+   "type": "journal-article",
+   "pmid": "42420458",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/s41586-026-10742-x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1790303387512559",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "social"
+    ],
+    "approach": [
+     "ai_integration",
+     "behavioral",
+     "mega_analysis"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The authors tested whether GPT-4 and other LLMs could simulate survey responses and predict treatment effects from 70 preregistered social science experiments and 15 megastudies.",
+   "key_finding": "LLM-derived predictions correlated strongly with actual experimental effects, matching pooled human forecaster accuracy, but systematically overestimated effect sizes.",
+   "free_keywords": [
+    "GPT-4",
+    "forecasting",
+    "survey experiments",
+    "megastudies",
+    "simulated participants",
+    "replication"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.1.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Not a neuroscience paper but included as it uses AI/LLM methods relevant to CANlab's ai_integration tag; no neuroimaging data.",
+    "classified_at": "2026-09-25T15:16:47Z",
+    "usage": {
+     "input_tokens": 759,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4104,
+     "output_tokens": 276,
+     "cost_usd": 0.01454
+    }
+   }
+  },
   {
    "id": "shared2026sciencedirectm",
    "slack_ts": "1790219310.961599",
