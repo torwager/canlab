@@ -242,6 +242,7 @@ build), or is a review/methods/commentary explicitly about signatures, or its ma
 signature's validity (reliability, specificity, generalisation). Papers that merely use a signature (e.g. NPS) as
 an outcome do NOT get it. "Signature" in a title is not enough: Berardi 2022 and Wager 2025 (the A2CPS program)
 are not neuromarker papers. Journal-club items keep the model's tags; Willmore 2022 and Kafashan 2021 were untagged.
+The tagging prompt and taxonomy definition say the same (PROMPT_VERSION 1.2.0), so new papers are tagged this way.
 Genetics was added after the first pass and back-filled by keyword; expect to add values later too.
 Adding a value later (taxonomy 1.1.0 added the stimulation methods tms, tdcs and tis under the renamed
 umbrella brain_stimulation = "Neurostimulation (any)"): bump taxonomy_version and PROMPT_VERSION, say in
@@ -350,6 +351,12 @@ news.yml every 2 days: Google News RSS for the PI's name/lab/topics + Apple podc
 LLM relevance filter, keeps 180 days. form.yml every 30 min: reads the form's response sheet published
 as CSV (secret FORM_CSV_URL) and opens a GitHub issue per new row (the only way without Google API
 credentials; the in-app browser cannot open docs.google.com).
+Adding papers by hand (2026-09-30): pipeline/add_paper.py (identifier -> OpenAlex/Crossref/PubMed metadata, PI-author
+check, duplicate refusal, preprint->published merge, candidates-queue promotion, PDF to site/pdf, full-text tagging or
+--tags-json, cited GitHub repos reported as suggestions). Lab members use the "Add a paper" workflow
+(add-paper.yml, workflow_dispatch, write access only; opens a PR, never pushes to main) or Claude Code with the
+.claude/skills/add-paper skill; how-to for RAs in docs/adding-papers.md. The workflow needs "Allow GitHub Actions to
+create and approve pull requests" enabled. pipeline/refs.py holds the citation style (normalize_refs.py imports it).
 LLM credential: ANTHROPIC_API_KEY secret, or Workload Identity Federation (no stored key): Console
 → Settings → Workload identity → Connect workload → GitHub Actions (service account + issuer
 token.actions.githubusercontent.com + rule with subject_prefix repo:<owner>/<repo>:ref:refs/heads/main,

@@ -1,0 +1,114 @@
+name: Add a paper
+
+# Actions tab -> "Add a paper" -> Run workflow. Only people with write access to the repository can run it.
+# It fetches the metadata, saves the open-access PDF (or the one you link), tags the paper and opens a pull request;
+# nothing reaches the live site until the pull request is merged.
+
+on:
+  workflow_dispatch:
+    inputs:
+      identifiers:
+        description: "DOI, bioRxiv/medRxiv/arXiv link, PubMed id or PMC id (several: separate with spaces)"
+        required: true
+        type: string
+      pdf_url:
+        description: "Optional direct link to the PDF (single paper only; otherwise the open-access copy is used)"
+        type: string
+        default: ""
+      status:
+        description: "Publication status"
+        type: choice
+        options: ["auto", "published", "in press", "preprint", "under review"]
+        default: "auto"
+      code_url:
+        description: "Optional GitHub repository for the paper's code (single paper only)"
+        type: string
+        default: ""
+      note:
+        description: "Optional note for the reviewer"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: add-paper
+  cancel-in-progress: false
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Fetch a GitHub OIDC token for Anthropic Workload Identity Federation (only when configured)
+        if: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID != '' }}
+        run: |
+          fetch() { curl -sS -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://api.anthropic.com" | jq -r .value > /tmp/anthropic-jwt; }
+          fetch
+          (while sleep 240; do fetch; done) &
+      - name: Add the paper(s)
+        env:
+          IDS: ${{ inputs.identifiers }}
+          PDF_URL: ${{ inputs.pdf_url }}
+          CODE_URL: ${{ inputs.code_url }}
+          STATUS: ${{ inputs.status }}
+          BY: ${{ github.actor }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          ANTHROPIC_IDENTITY_TOKEN_FILE: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID != '' && '/tmp/anthropic-jwt' || '' }}
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          CANLAB_CONTACT_EMAIL: ${{ vars.CANLAB_CONTACT_EMAIL }}
+          CANLAB_LLM_MODEL: ${{ vars.CANLAB_LLM_MODEL }}
+        run: |
+          for v in ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN OPENAI_API_KEY ANTHROPIC_WORKSPACE_ID ANTHROPIC_IDENTITY_TOKEN_FILE; do [ -z "${!v}" ] && unset "$v"; done
+          : > /tmp/summary.md
+          read -ra LIST <<< "$IDS"
+          extra=()
+          if [ "$STATUS" != "auto" ]; then extra+=(--status "$STATUS"); fi
+          if [ ${#LIST[@]} -eq 1 ]; then
+            if [ -n "$PDF_URL" ]; then extra+=(--pdf "$PDF_URL"); fi
+            if [ -n "$CODE_URL" ]; then extra+=(--code "$CODE_URL"); fi
+          fi
+          ok=0
+          for id in "${LIST[@]}"; do
+            if python -m pipeline.add_paper "$id" "${extra[@]}" --by "$BY" --summary /tmp/summary.md; then ok=$((ok+1)); else
+              printf '### Not added: `%s`\n\nSee the workflow log for the reason (already listed, not a lab paper, or no metadata found).\n\n' "$id" >> /tmp/summary.md
+            fi
+          done
+          echo "ADDED=$ok" >> "$GITHUB_ENV"
+          cat /tmp/summary.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Check that the site still builds
+        if: env.ADDED != '0'
+        run: python -m pipeline.build_site
+      - name: Open a pull request
+        if: env.ADDED != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NOTE: ${{ inputs.note }}
+          IDS: ${{ inputs.identifiers }}
+        run: |
+          branch="add-paper/${GITHUB_RUN_ID}"
+          git config user.name "canlab-bot"
+          git config user.email "canlab-bot@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add data/papers.json data/candidates.json site/pdf
+          git commit -m "Add paper: ${IDS:0:120}" -m "Requested by @${GITHUB_ACTOR} via the Add a paper workflow."
+          git push origin "$branch"
+          { echo "Requested by @${GITHUB_ACTOR}."; if [ -n "$NOTE" ]; then printf '\n> %s\n' "$NOTE"; fi; echo; cat /tmp/summary.md;
+            echo "Check the tags and summary, then merge; the site rebuilds automatically after the merge."; } > /tmp/body.md
+          gh pr create --base main --head "$branch" --title "Add paper: ${IDS:0:80}" --body-file /tmp/body.md \
+            || echo "::warning::Could not open the pull request (enable Settings > Actions > General > 'Allow GitHub Actions to create and approve pull requests'). The branch $branch was pushed; open a PR from it by hand."
