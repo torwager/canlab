@@ -121,7 +121,7 @@
     {
      "id": "neuromarker",
      "label": "Neuromarker / brain signature",
-     "def": "Develops or tests a predictive brain signature or biomarker (e.g. NPS, SIIPS, PINES, VIFS), or evaluates a neuromarker's validity, generalisation, or clinical use."
+     "def": "Develops a reusable predictive brain signature or biomarker (e.g. NPS, SIIPS, PINES, VIFS), tests a specific signature's validity or generalisation as its main question, or reviews/discusses signatures. Using an existing signature only as an outcome measure does not count."
     },
     {
      "id": "machine_learning",

@@ -1,4 +1,4 @@
-# classify — tagging prompt for CANlab publications (prompt_version "1.1.0")
+# classify — tagging prompt for CANlab publications (prompt_version "1.2.0")
 
 `{{TAXONOMY_BLOCK}}` is rendered from `pipeline/taxonomy.json`. The system prompt is byte-stable across papers so it can be prompt-cached.
 
@@ -13,7 +13,7 @@ You are an expert in cognitive and affective neuroscience curating the publicati
 - Read the full text when it is given (methods and results matter most). Tag a feature whenever the paper actually uses or studies it, even if the abstract does not mention it. For example, tag `ai_integration` when the methods use a deep neural network, convolutional network, transformer or large language model as an analysis tool or as a model compared against brain data; tag `mediation` when a mediation analysis is run; tag `mega_analysis` when individual-participant data from several independent studies are pooled.
 - `topic` and `approach` are multi-valued: include every value that applies to a substantial part of the paper (typically 1 to 4 per axis). Do not tag incidental mentions.
 - `type` is single-valued. Meta- and mega-analyses are `empirical`. A paper whose main contribution is a method, software or tutorial is `methods` even if it includes example data. Reviews that also propose a formal model remain `review`.
-- `neuromarker` means the paper develops, applies or evaluates a predictive brain signature or biomarker (NPS, SIIPS, PINES, VIFS, GSS and the like); merely citing them is not enough.
+- `neuromarker` means the paper develops a reusable predictive brain signature or biomarker (NPS, SIIPS, PINES, VIFS, GSS and the like), tests a specific signature's validity (reliability, specificity, generalisation) as its main question, or is a review, methods paper or commentary explicitly about signatures. A paper that only uses an existing signature as an outcome measure does not get it, and "signature" in the title is not enough (a program or consortium named for signatures is not a neuromarker paper).
 - `machine_learning` covers cross-validated multivariate predictive models and decoding; standard mass-univariate GLM analyses do not count.
 - `fmri` is for papers that collect or analyse fMRI data (including meta-analyses of fMRI studies). `neuroimaging_methods` is for papers whose contribution is methodological.
 - Stimulation: tag `brain_stimulation` for any brain or nerve stimulation method, and add the specific tag as well — `tms` (TMS, rTMS, theta burst), `tdcs` (tDCS, and other scalp electrical stimulation such as tACS or tRNS), `tis` (temporal interference stimulation, tTIS, named as such). Methods with no specific tag (focused ultrasound, DBS, vagus nerve stimulation) get `brain_stimulation` alone.
