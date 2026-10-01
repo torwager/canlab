@@ -1,7 +1,158 @@
 {
- "updated": "2026-09-30",
+ "updated": "2026-10-01",
  "channel": null,
  "items": [
+  {
+   "id": "riishede2026plasma",
+   "slack_ts": "1790868754.228089",
+   "shared_on": "2026-10-01",
+   "shared_by": "Xiaomin",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41591-026-04326-5",
+   "doi": "10.1038/s41591-026-04326-5",
+   "title": "Plasma proteomic signature of the human menstrual cycle",
+   "abstract": "The menstrual cycle is one of the most fundamental biological rhythms in human physiology, yet its systemic molecular changes remain poorly understood. Here we show that the menstrual cycle is accompanied by widespread changes in the circulating proteome. By profiling nearly 3,000 plasma proteins in 2,760 women from the UK Biobank, we identified 198 proteins that vary across the cycle, forming distinct temporal patterns aligned with menstrual phases. These proteins include reproductive hormones, cytokines and growth factors, many of which are enriched in endometrial tissue and expressed in epithelial and stromal cell types, highlighting their biological specificity. Several proteins were linked to common reproductive disorders, including endometriosis, leiomyoma and abnormal bleeding. Finally, we developed a proteomic score on the basis of 75 proteins that accurately predicts menstrual cycle phase. Together, these findings provide a systems-level atlas of menstrual cycle biology and inform biomarker discovery in women&#8217;s health. This Resource presents a large-scale analysis of nearly 3,000 circulating plasma proteins across the menstrual cycle in over 2,700 women from the UK Biobank, revealing distinct proteomic patterns across menstrual phases. This work sheds light on female reproductive biology and gynecological disorders, and provides a proteomic signature for accurate prediction of the menstrual cycle phase.",
+   "authors": [
+    "Riishede, I.",
+    "Rode, L.",
+    "Lundegaard, P. R.",
+    "Rand, S. A.",
+    "Dyrskjøt, L.",
+    "Larsen, O. H.",
+    "Ekelund, C. K.",
+    "Pinborg, A.",
+    "Stender, S.",
+    "Ghouse, J."
+   ],
+   "journal": "Nature Medicine",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41591-026-04326-5.pdf",
+   "type": "journal-article",
+   "pmid": "41974910",
+   "pmcid": "PMC13279269",
+   "oa_url": "https://doi.org/10.1038/s41591-026-04326-5",
+   "publisher_url": "https://doi.org/10.1038/s41591-026-04326-5",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1790868754228089",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "brain_body",
+     "clinical"
+    ],
+    "approach": [
+     "mega_analysis",
+     "machine_learning",
+     "genetics"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Researchers profiled nearly 3,000 plasma proteins in 2,760 UK Biobank women and identified 198 proteins varying across menstrual cycle phases, developing a 75-protein score predicting cycle phase.",
+   "key_finding": "A 75-protein plasma proteomic score accurately predicted menstrual cycle phase and identified proteins linked to endometriosis, leiomyoma, and abnormal bleeding.",
+   "free_keywords": [
+    "UK Biobank",
+    "plasma proteomics",
+    "menstrual cycle",
+    "endometriosis",
+    "women's health",
+    "reproductive hormones",
+    "biomarker discovery"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.55,
+    "notes": "This paper is outside CANlab's typical neuroscience focus (no brain imaging); tags are approximate given lack of direct taxonomy fit for proteomics/reproductive biology.",
+    "classified_at": "2026-10-01T17:03:03Z",
+    "usage": {
+     "input_tokens": 574,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 339,
+     "cost_usd": 0.00538
+    }
+   }
+  },
+  {
+   "id": "mizrachi2026voluntary",
+   "slack_ts": "1790827973.288499",
+   "shared_on": "2026-10-01",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-2",
+     "count": 1
+    },
+    {
+     "name": "+1",
+     "count": 3
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41562-026-02541-1",
+   "doi": "10.1038/s41562-026-02541-1",
+   "title": "Voluntary attention regulates acute immune responses in humans",
+   "abstract": "Abstract Attention is a central mechanism for prioritizing and shaping sensory information. For example, directing attention away from injury reduces perceived pain. Whether such cognitive modulation extends to downstream biological processes has remained unknown. Here, across three pre-registered within-subjects experiments using acute skin inflammation as a model system, we show that directing attention towards bodily sensations, compared to attentional distraction, produces markedly more regulated immune responses, with distinct temporal dynamics. This effect was highly consistent (~90% of participants across two independent cohorts) and substantial, with ~1.5-fold smaller responses under internal attention. Mechanistically, two complementary pathways emerged: a sensory-dependent route, in which attentional modulation of identical input scaled inflammatory magnitude, and a top-down route engaging parasympathetic vagal activity. These results establish attention as a cognitive mechanism capable of regulating immune function in vivo. Situated within predictive and allostatic models of brain–body control, our results reframe perception as biologically consequential rather than merely experiential.",
+   "authors": [
+    "Mizrachi, N.",
+    "Rottem, M.",
+    "Rozenkrantz, L."
+   ],
+   "journal": "Nature Human Behaviour",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41562-026-02541-1.pdf",
+   "type": "journal-article",
+   "pmid": "42608466",
+   "pmcid": null,
+   "oa_url": "https://www.nature.com/articles/s41562-026-02541-1.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41562-026-02541-1",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1790827973288499",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "brain_body",
+     "perception",
+     "cognitive_control"
+    ],
+    "approach": [
+     "psychophysiology",
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Three pre-registered within-subject experiments showed that directing attention toward versus away from bodily sensations regulated acute skin inflammatory responses, with effects linked to vagal activity.",
+   "key_finding": "Internal attention produced about 1.5-fold smaller inflammatory responses than distraction, consistently across ~90% of participants in two cohorts, with evidence for both sensory-dependent and vagal-mediated top-down pathways.",
+   "free_keywords": [
+    "skin inflammation",
+    "interoception",
+    "allostasis",
+    "vagal activity",
+    "attentional modulation",
+    "brain-immune interaction"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.7,
+    "notes": "Only abstract available; tagging based on described methods (immune/physiological measures, attention manipulation, no fMRI mentioned).",
+    "classified_at": "2026-10-01T17:02:59Z",
+    "usage": {
+     "input_tokens": 457,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 310,
+     "cost_usd": 0.01457
+    }
+   }
+  },
   {
    "id": "kay2020temporal",
    "slack_ts": "1790527360.545349",
