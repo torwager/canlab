@@ -70,14 +70,14 @@
 <div id="site-header"></div>
 <main class="wrap">
   <div class="page-head" style="margin-bottom:.6rem"><p class="eyebrow">Collaborator network</p>
-    <p class="intro">Everyone who appears as an author on at least <span id="minp">3</span> of the lab's papers, shown as a map. <b>Co-authorship</b> links two people who have published together (thicker means more shared papers); <b>similarity</b> links people whose papers cover similar topics and methods, judged from the tags and keywords of their papers. Tor Wager is on nearly every paper, so his links are hidden by default; the <b>Show links to Wager</b> button restores them. Nodes are coloured by lab membership: current members in amber, alumni in blue, other collaborators in grey. Drag nodes, zoom with the buttons or the scroll wheel, hover over a node or link for details, and click a node to pin its details while you browse its papers. The keyword menu rebuilds the map from only the papers carrying that tag.</p>
+    <p class="intro">Everyone who appears as an author on at least <span id="minp">3</span> of the lab's papers, shown as a map; the <b>Show</b> menu narrows it to current and former lab members, or to the current lab only. <b>Co-authorship</b> links two people who have published together (thicker means more shared papers); <b>similarity</b> links people whose papers cover similar topics and methods, judged from the tags and keywords of their papers. Tor Wager is on nearly every paper, so his links are left out to keep the map readable. Nodes are coloured by lab membership: current members in amber, alumni in blue, other collaborators in grey. Drag nodes, zoom with the buttons or the scroll wheel, hover over a node or link for details, and click a node to pin its details while you browse its papers. The keyword menu rebuilds the map from only the papers carrying that tag.</p>
   </div>
   <div class="net-wrap">
     <div class="net" id="net">
       <div class="toolbar">
         <button class="btn on" id="mode-co">Co-authorship</button>
         <button class="btn" id="mode-sim">Similarity</button>
-        <button class="btn" id="wager" aria-pressed="false" title="Include Tor Wager's links in the layout">Show links to Wager</button>
+        <select id="who" aria-label="Whose network to show"><option value="all">All co-authors</option><option value="lab">Current &amp; former lab</option><option value="cur">Current lab only</option></select>
         <select id="kw" aria-label="Restrict to papers tagged with"><option value="">All papers</option></select>
         <input id="find" type="search" list="names" placeholder="Find a person…" aria-label="Find a person" autocomplete="off" style="width:160px">
         <datalist id="names"></datalist>
@@ -147,14 +147,19 @@
   }
   const params = new URLSearchParams(location.search);
   if (params.get("kw") && [...kwSel.options].some(o => o.value === params.get("kw"))) kwSel.value = params.get("kw");
-  let wagerOn = params.get("wager") === "1";
+  const wagerOn = false;  // Tor's links form a star over everything else, so they are never drawn
+  const whoSel = document.getElementById("who");
+  if (["all", "lab", "cur"].includes(params.get("who"))) whoSel.value = params.get("who");
+  const WHO = { all: null, lab: new Set(["cur", "alum"]), cur: new Set(["cur"]) };
 
   // ----- graph construction, in the browser -----
-  function buildGraph(subset) {
-    const minPapers = subset.length === papers.length ? 3 : Math.max(2, Math.min(3, Math.round(subset.length / 60)));
+  function buildGraph(subset, who = "all") {
+    const keep = WHO[who];
+    // lab views: every member with at least one paper (many current members have only one or two)
+    const minPapers = keep ? 1 : (subset.length === papers.length ? 3 : Math.max(2, Math.min(3, Math.round(subset.length / 60))));
     const papersOf = new Map();
     for (const r of subset) for (const a of new Set((r.au || []).map(canon))) { if (!papersOf.has(a)) papersOf.set(a, []); papersOf.get(a).push(r); }
-    const names = [...papersOf.entries()].filter(([, ps]) => ps.length >= minPapers).sort((a, b) => b[1].length - a[1].length).slice(0, MAX_NODES).map(([a]) => a);
+    const names = [...papersOf.entries()].filter(([a, ps]) => ps.length >= minPapers && (!keep || keep.has(kindOf(a)))).sort((a, b) => b[1].length - a[1].length).slice(0, MAX_NODES).map(([a]) => a);
     const idx = new Map(names.map((a, i) => [a, i]));
     const co = new Map(), shared = new Map();
     for (const r of subset) {
@@ -197,14 +202,17 @@
   let G, nodes, byId, r, mode = "coauthor", pinned = null, sim = null, link = linkLayer.selectAll("line"), node = nodeLayer.selectAll("g");
   const rad = d => d.kind === "pi" ? 24 : r(d.n);
 
-  function syncUrl() { const p = new URLSearchParams(location.search); const kw = kwSel.value; if (kw) p.set("kw", kw); else p.delete("kw"); if (wagerOn) p.set("wager", "1"); else p.delete("wager"); history.replaceState(null, "", location.pathname + (p.toString() ? "?" + p : "")); }
+  function syncUrl() { const p = new URLSearchParams(location.search); const kw = kwSel.value; if (kw) p.set("kw", kw); else p.delete("kw"); p.delete("wager"); if (whoSel.value !== "all") p.set("who", whoSel.value); else p.delete("who"); history.replaceState(null, "", location.pathname + (p.toString() ? "?" + p : "")); }
   function build() {
     const kw = kwSel.value; const [ax, val] = kw ? kw.split(":") : [null, null];
     const subset = kw ? papers.filter(p => ((p.tags || {})[ax] || []).includes(val)) : papers;
-    G = buildGraph(subset);
+    const who = whoSel.value;
+    G = buildGraph(subset, who);
     document.getElementById("minp").textContent = G.minPapers;
+    const whoTxt = { all: "people", lab: "current and former lab members", cur: "current lab members" }[who];
+    const minTxt = G.minPapers === 1 ? "at least one paper" : `at least ${G.minPapers} papers`;
     const nCur = G.nodes.filter(n => n.kind === "cur").length, nAlum = G.nodes.filter(n => n.kind === "alum").length;
-    document.getElementById("note").textContent = (kw ? `Showing ${G.nodes.length} people with at least ${G.minPapers} papers among the ${subset.length} papers tagged “${CL.label(ax, val)}”` : `Showing ${G.nodes.length} people with at least ${G.minPapers} papers`) + ` (${nCur} current lab member${nCur === 1 ? "" : "s"}, ${nAlum} alumni). Names are author strings as they appear on the papers (surname plus initials), so two people who share a name are merged and one person whose initials vary between papers may appear twice. Lab membership is matched from the people list by surname and first initial. The map is computed in your browser from the current bibliography.`;
+    document.getElementById("note").textContent = (kw ? `Showing ${G.nodes.length} ${whoTxt} with ${minTxt} among the ${subset.length} papers tagged “${CL.label(ax, val)}”` : `Showing ${G.nodes.length} ${whoTxt} with ${minTxt}`) + ` (${nCur} current lab member${nCur === 1 ? "" : "s"}, ${nAlum} alumni). Names are author strings as they appear on the papers (surname plus initials), so two people who share a name are merged and one person whose initials vary between papers may appear twice. Lab membership is matched from the people list by surname and first initial. The map is computed in your browser from the current bibliography.`;
     nodes = G.nodes; byId = new Map(nodes.map(n => [n.id, n]));
     const maxN = d3.max(nodes.filter(n => n.kind !== "pi"), n => n.n) || 10;
     r = d3.scaleSqrt().domain([G.minPapers, Math.max(G.minPapers + 1, maxN)]).range([3.5, 20]).clamp(true);
@@ -259,7 +267,7 @@
   function showNode(d, isPinned) {
     panel.classList.toggle("pinned", !!isPinned);
     const deg = edges().filter(e => (e.source.id ?? e.source) === d.id || (e.target.id ?? e.target) === d.id).length;
-    const degNote = d.kind === "pi" && !wagerOn ? "links hidden (use “Show links to Wager”)" : `${deg} ${mode === "coauthor" ? "co-author" : "similar researcher"}${deg === 1 ? "" : "s"} shown`;
+    const degNote = d.kind === "pi" && !wagerOn ? "links not drawn (Tor is on nearly every paper)" : `${deg} ${mode === "coauthor" ? "co-author" : "similar researcher"}${deg === 1 ? "" : "s"} shown`;
     panel.innerHTML = `${isPinned ? '<div class="pinnote">Pinned. Click the node again, or empty space on the map, to release.</div>' : ""}<h3>${esc(d.person ? d.person.name : d.name)}</h3>${d.person ? `<div class="kv" style="margin-bottom:.3rem">${esc(d.name)}</div>` : ""}${memberBadge(d)}<div class="kv">${d.n} paper${d.n === 1 ? "" : "s"}${d.y0 ? ` · ${d.y0}–${d.y1}` : ""} · ${degNote}</div>
       <div class="chips">${d.tags.map(([ax, v]) => chip(ax, v)).join("")}</div>
       <div class="small muted">Recent papers</div><ul>${d.papers.map(p => `<li><a href="papers/${encodeURIComponent(p.id)}.html">${esc(p.t)}</a> <span class="muted">(${p.y || ""})</span></li>`).join("")}</ul>
@@ -273,16 +281,14 @@
   }
   function idle() { panel.classList.remove("pinned"); panel.innerHTML = `<h3>Hover over a person</h3><p class="muted small">Details about the person or the connection appear here. Click a node to pin its details so you can open its papers; click it again, or empty space on the map, to release.</p><p class="muted small">Amber nodes are current lab members, blue nodes are alumni, grey nodes are collaborators from other groups.</p>`; }
   function setMode(m) { mode = m; document.getElementById("mode-co").classList.toggle("on", m === "coauthor"); document.getElementById("mode-sim").classList.toggle("on", m === "similarity"); document.getElementById("legend-links").textContent = m === "coauthor" ? "Node size = papers · link width = co-authored papers" : "Node size = papers · link = similar research profile"; pinned = null; render(); hi(null, null); idle(); }
-  function setWager(on) { wagerOn = on; const b = document.getElementById("wager"); b.classList.toggle("on", on); b.setAttribute("aria-pressed", String(on)); pinned = null; render(); hi(null, null); idle(); syncUrl(); }
   document.getElementById("mode-co").onclick = () => setMode("coauthor");
   document.getElementById("mode-sim").onclick = () => setMode("similarity");
-  document.getElementById("wager").onclick = () => setWager(!wagerOn);
-  document.getElementById("wager").classList.toggle("on", wagerOn); document.getElementById("wager").setAttribute("aria-pressed", String(wagerOn));
   document.getElementById("reset").onclick = () => { svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity); pinned = null; hi(null, null); idle(); document.getElementById("find").value = ""; };
   document.getElementById("zin").onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1.5);
   document.getElementById("zout").onclick = () => svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.5);
   svg.on("click", () => { pinned = null; hi(null, null); idle(); });
   kwSel.onchange = build;
+  whoSel.onchange = () => build();
   const findEl = document.getElementById("find");
   findEl.addEventListener("input", () => {
     const q = norm(findEl.value);

@@ -184,7 +184,9 @@ Join: sections Open positions (cards with poster image), Other ways to join, Par
   (study cards with screening link, email, compensation). Side nav; nav dropdown targets #team and
   #participate.
 Network: d3 force graph built in the browser from index.json; nodes = authors with >=3 papers (cap 400);
-  the PI's edges hidden by default (toggle) because they form a star; co-authorship vs similarity
+  the PI's edges are never drawn (they form a star; the "Show links to Wager" toggle was removed on
+  request 2026-10-02); a "Show" menu (?who=all|lab|cur) restricts to all co-authors, current + former
+  lab, or current lab only (lab views include members with >=1 paper); co-authorship vs similarity
   (cosine over tag profiles) modes; keyword menu; find box; side panel with tags, recent papers, link
   to the author's papers; node colour = current member (amber) / alumnus (steel) / other (grey) using
   people.json; "More to explore" tiles at the bottom.
