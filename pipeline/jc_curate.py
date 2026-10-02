@@ -46,7 +46,7 @@ def decode_redirect(u):
 
 def clean_doi(d):
     d = d.rstrip(".,;)").lower()
-    d = re.sub(r"(\.full(\.pdf)?|\.abstract|\.pdf|\.short)$", "", d)
+    d = re.sub(r"(\.full(\.pdf)?(\+html)?|\.abstract|\.pdf|\.short|\+html)$", "", d)
     d = re.sub(r"v\d+$", "", d) if d.startswith(("10.1101/", "10.64898/", "10.48550/")) else d
     return d
 
@@ -59,15 +59,29 @@ def doi_from_url(u):
     if h == "academic.oup.com":
         m = re.search(r"^/([a-z]+)/(?:article|article-abstract|advance-article)/(?:\d+/\d+/)?([A-Za-z0-9]+)/\d+", path)
         if m: return f"10.1093/{m.group(1)}/{m.group(2)}"
+    if h == "elifesciences.org":
+        m = re.search(r"/(?:articles|reviewed-preprints)/(\d{4,6})", path)
+        if m: return "10.7554/elife." + m.group(1)
     if h == "nature.com":
         m = re.search(r"/articles/([A-Za-z0-9.\-]+)", path)
         if m: return "10.1038/" + m.group(1).lower()
     if h in ("biorxiv.org", "medrxiv.org"):
+        m = re.search(r"/cgi/content/(?:short|abstract|full)/(\d{4}\.\d{2}\.\d{2}\.\d+|\d{6})v\d+", path)
+        if m: return "10.1101/" + m.group(1)
         m = re.search(r"/early/\d{4}/\d{2}/\d{2}/(\d{4}\.\d{2}\.\d{2}\.\d+)", path)
         if m: return ("10.64898/" if m.group(1) >= "2026" else "10.1101/") + m.group(1)
     if h == "arxiv.org":
         m = re.search(r"/(?:abs|pdf)/(\d{4}\.\d{4,5})", path)
         if m: return "10.48550/arxiv." + m.group(1)
+    if h == "pubmed.ncbi.nlm.nih.gov" or (h == "ncbi.nlm.nih.gov" and "/pubmed/" in path):
+        m = re.search(r"/(\d{6,9})", path)
+        if m:
+            try:
+                rec = requests.get("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi", params={"db": "pubmed", "id": m.group(1), "retmode": "json"}, timeout=30).json()["result"][m.group(1)]
+                d = next((a["value"] for a in rec.get("articleids", []) if a["idtype"] == "doi"), None)
+                if d: return d.lower()
+            except Exception:
+                pass
     pii = None
     if h == "cell.com":
         m = re.search(r"/(?:fulltext|abstract|pdf)/(S\d{4}-\d{4}\(\d{2}\)\d{5}-[\dX])", path)
@@ -179,7 +193,9 @@ def curate(items):
             it["url_original"], it["url"] = it["url"], u2
         bad = not it.get("title") or it["title"] in (it.get("url"), it.get("url_original")) or bool(BAD_TITLES.match(it["title"].strip())) or bool(it.get("title_unresolved"))
         if bad or not it.get("doi"):
-            doi = it.get("doi") or doi_from_url(it["url"])
+            doi = clean_doi(it["doi"]) if it.get("doi") else doi_from_url(it["url"])
+            if doi and doi.startswith("10.1093/"):
+                doi = re.sub(r"^(10\.1093/[a-z]+/[a-z0-9]+)/\d+$", r"\1", doi)  # OUP article URLs append a page id  # bioRxiv links carry "v1" suffixes that break lookups
             meta = None
             if doi and doi.startswith("10.48550/arxiv."):
                 meta = arxiv_meta(doi.split("arxiv.")[1])
