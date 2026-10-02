@@ -76,7 +76,7 @@ jobs:
           git config user.email "canlab-bot@users.noreply.github.com"
           git add "${{ inputs.file }}"
           if git diff --cached --quiet; then echo "no changes"; else
-            git commit -m "re-tag $(basename ${{ inputs.file }} .json) records matching ${{ inputs.match }}"
+            git commit -m "re-tag $(basename ${{ inputs.file }} .json) records ${{ inputs.ids_file != '' && format('listed in {0}', inputs.ids_file) || format('matching {0}', inputs.match) }}"
             git pull --rebase origin main
             git push origin HEAD:main
             echo "pushed=true" >> "$GITHUB_OUTPUT"
