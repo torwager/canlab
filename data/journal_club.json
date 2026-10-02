@@ -3460,31 +3460,46 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1781718057518829",
    "kind": "paper",
    "tags": {
-    "topic": [],
+    "topic": [
+     "clinical"
+    ],
     "approach": [
-     "meta_analysis"
+     "ai_integration",
+     "meta_analysis",
+     "open_tools"
     ],
     "type": [
-     "methods"
+     "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.2,
-    "notes": "Only title available; no abstract or full text provided, so topic and detailed approach tags are highly uncertain.",
-    "classified_at": "2026-09-14T04:45:45Z",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Not a neuroscience paper; falls outside typical CANlab topics but tagged based on closest matching categories (AI/LLM methods, meta-analysis, clinical evidence synthesis).",
+    "classified_at": "2026-10-02T19:16:22Z",
     "usage": {
-     "input_tokens": 112,
-     "cache_read_input_tokens": 3598,
-     "cache_creation_input_tokens": 0,
-     "output_tokens": 164,
-     "cost_usd": 0.00258
+     "input_tokens": 1084,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 349,
+     "cost_usd": 0.01622
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "A large language model-based workflow (otto-SR) was validated against human researchers for systematic review tasks, outperforming humans in screening and data extraction accuracy and successfully reproducing and updating Cochrane reviews.",
+   "key_finding": "otto-SR achieved 96.7% sensitivity/97.9% specificity in screening and 93.1% accuracy in data extraction, outperforming human researchers, and identified nearly twice as many eligible studies in Cochrane review updates.",
+   "free_keywords": [
+    "systematic review automation",
+    "large language models",
+    "evidence synthesis",
+    "risk of bias assessment",
+    "Cochrane reviews",
+    "data extraction",
+    "article screening"
+   ]
   },
   {
    "id": "shared2026builds",
@@ -4526,22 +4541,32 @@
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-14T04:47:13Z",
+    "confidence": 0.85,
+    "notes": "This paper is unrelated to CANlab's typical neuroscience topics; it is a scientometrics/meta-science critique included here likely by error or for broader relevance.",
+    "classified_at": "2026-10-02T19:16:26Z",
     "usage": {
-     "input_tokens": 489,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 487,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 85,
-     "cost_usd": 0.00255
+     "output_tokens": 298,
+     "cost_usd": 0.0048
     }
    },
-   "n_comments": 4
+   "n_comments": 4,
+   "summary": "The authors reanalyzed a widely cited study on declining scientific disruptiveness and found the reported decline was largely an artefact of mishandled zero-reference database entries rather than a true trend.",
+   "key_finding": "A plotting error hid outliers with CD index of one from zero-reference entries, and their relative decline—not actual citation behavior—drove the reported decrease in disruptiveness, as confirmed by Monte-Carlo simulations.",
+   "free_keywords": [
+    "CD index",
+    "citation networks",
+    "disruptiveness",
+    "scientometrics",
+    "dataset artefacts",
+    "reanalysis"
+   ]
   },
   {
    "id": "shared2026httpsarxivorgpdfc",
@@ -4648,32 +4673,45 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "clinical"
+     "clinical",
+     "cognitive_control"
     ],
     "approach": [
-     "fmri"
+     "fmri",
+     "neuroimaging_methods"
     ],
     "type": [
      "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.25,
-    "notes": "Only title available; no abstract or methods text, so tags are inferred and approach/topic may be incomplete.",
-    "classified_at": "2026-09-14T04:47:31Z",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "Abstract only; specific methodological details (e.g., resting-state parcellation methods) inferred from precision functional mapping approach.",
+    "classified_at": "2026-10-02T19:16:29Z",
     "usage": {
-     "input_tokens": 114,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 712,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 180,
-     "cost_usd": 0.00275
+     "output_tokens": 312,
+     "cost_usd": 0.00539
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "Using precision functional mapping with highly sampled individuals with OCD, researchers found an expansion of the salience network and contraction of frontoparietal networks, with longitudinal connectivity changes tracking symptom severity.",
+   "key_finding": "Salience network territory doubled at the expense of frontoparietal/executive networks in OCD, and frontostriatal connectivity changes over months tracked symptom severity.",
+   "free_keywords": [
+    "precision functional mapping",
+    "frontostriatal circuits",
+    "salience network",
+    "frontoparietal network",
+    "individual differences",
+    "longitudinal neuroimaging",
+    "precision psychiatry"
+   ]
   },
   {
    "id": "shared2026httpswwwtandfonlinecomdoifullabstract",
@@ -5725,34 +5763,46 @@
      "clinical"
     ],
     "approach": [
-     "fmri",
      "neuroimaging_methods",
-     "machine_learning",
      "ai_integration",
+     "machine_learning",
      "other_imaging",
-     "open_tools"
+     "open_tools",
+     "fmri"
     ],
     "type": [
      "methods"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.85,
-    "notes": "Type/topic tags approximate; corrected stray character in approach array.",
-    "classified_at": "2026-09-14T04:48:57Z",
+    "notes": "Abstract-only; classified as methods paper due to primary contribution being an automated analysis framework, though it includes empirical validation.",
+    "classified_at": "2026-10-02T19:16:33Z",
     "usage": {
-     "input_tokens": 762,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 760,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 371,
-     "cost_usd": 0.00595
+     "output_tokens": 382,
+     "cost_usd": 0.00618
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "The authors developed NeuroAgent, an LLM-driven multi-agent framework that automates preprocessing and analysis of multimodal neuroimaging data (sMRI, fMRI, dMRI, PET), tested on ADNI data for Alzheimer's classification.",
+   "key_finding": "NeuroAgent's multimodal ensemble achieved an AUC of 0.9518 for Alzheimer's Disease classification, outperforming single-modality baselines, with the best LLM backend reaching 84.8% end-to-end preprocessing accuracy.",
+   "free_keywords": [
+    "LLM agents",
+    "ADNI",
+    "Alzheimer's disease",
+    "multimodal imaging",
+    "automated preprocessing",
+    "Qwen3.5",
+    "human-in-the-loop",
+    "agentic AI"
+   ]
   },
   {
    "id": "lv2026three",
@@ -7912,32 +7962,37 @@
    "tags": {
     "topic": [
      "expectation_learning",
-     "emotion"
+     "emotion",
+     "cognitive_control"
     ],
     "approach": [
-     "psychophysiology"
+     "psychophysiology",
+     "computational_model"
     ],
     "type": [
      "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.25,
-    "notes": "Only a fragmentary, title-only record was available; details on methods and topic coverage are highly uncertain.",
-    "classified_at": "2026-09-14T04:51:47Z",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-02T19:16:35Z",
     "usage": {
-     "input_tokens": 139,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 525,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 190,
-     "cost_usd": 0.0029
+     "output_tokens": 108,
+     "cost_usd": 0.00297
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": []
   },
   {
    "id": "shared2026httpswwwmedrxivorgcontentv",
@@ -7976,30 +8031,42 @@
      "clinical"
     ],
     "approach": [
+     "brain_stimulation",
      "tdcs",
-     "brain_stimulation"
+     "behavioral"
     ],
     "type": [
-     "commentary"
+     "empirical"
     ]
    },
    "classification": {
     "taxonomy_version": "1.1.0",
-    "prompt_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.3,
-    "notes": "Title-only entry with no abstract or text; appears to be an internal lab communication rather than a research paper.",
-    "classified_at": "2026-09-15T13:42:05Z",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Abstract mentions brain connectivity assessment but no fMRI details provided, so fmri tag omitted given lack of methodological specifics in available text.",
+    "classified_at": "2026-10-02T19:16:38Z",
     "usage": {
-     "input_tokens": 120,
-     "cache_read_input_tokens": 4104,
+     "input_tokens": 620,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 170,
-     "cost_usd": 0.00276
+     "output_tokens": 324,
+     "cost_usd": 0.00532
     }
    },
-   "n_comments": 1
+   "n_comments": 1,
+   "summary": "A randomized sham-controlled trial compared optimized multichannel tDCS, conventional tDCS, and sham stimulation over DLPFC in 60 patients with unipolar depression across 30 sessions.",
+   "key_finding": "Both active tDCS protocols reduced depressive symptoms versus sham for up to 3 months, but optimized multichannel tDCS produced larger effect sizes and faster onset (by session 10) than conventional tDCS.",
+   "free_keywords": [
+    "major depressive disorder",
+    "DLPFC",
+    "multichannel stimulation",
+    "clinical trial",
+    "treatment response",
+    "cognitive function",
+    "brain connectivity"
+   ]
   },
   {
    "id": "shared2026sciencedirectg",
@@ -8364,29 +8431,49 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1774621422614709",
    "kind": "paper",
    "tags": {
-    "topic": [],
-    "approach": [],
+    "topic": [
+     "cognitive_control",
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods",
+     "brain_stimulation",
+     "tms",
+     "other_imaging"
+    ],
     "type": [
      "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.05,
-    "notes": "Only a placeholder title ('I just read this sentence:') was provided with no abstract or text, making tagging unreliable.",
-    "classified_at": "2026-09-14T04:52:08Z",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "Abstract only; tagging based on methodological focus combining TMS and diffusion fMRI to probe neurovascular coupling mechanisms.",
+    "classified_at": "2026-10-02T19:16:43Z",
     "usage": {
-     "input_tokens": 108,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 557,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 136,
-     "cost_usd": 0.0023
+     "output_tokens": 439,
+     "cost_usd": 0.00635
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "Researchers used interleaved subthreshold TMS-fMRI with diffusion-weighted imaging to characterize negative BOLD responses in human motor and somatosensory cortex, finding negative dfMRI but no ADC changes contralaterally and a positive dfMRI cluster ipsilaterally despite no BOLD response.",
+   "key_finding": "Negative BOLD in contralateral M1/S1 was accompanied by negative dfMRI but no ADC-fMRI response, while ipsilateral cortex showed no BOLD change yet a positive dfMRI cluster, suggesting diffusion fMRI detects subtle neural activity missed by BOLD.",
+   "free_keywords": [
+    "diffusion-weighted fMRI",
+    "apparent diffusion coefficient",
+    "negative BOLD",
+    "neurovascular coupling",
+    "subthreshold TMS",
+    "interleaved TMS-fMRI",
+    "primary motor cortex"
+   ]
   },
   {
    "id": "shared2026attentionb",
@@ -8742,26 +8829,38 @@
      "mega_analysis"
     ],
     "type": [
-     "empirical"
+     "methods"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.75,
-    "notes": "Topic tags are weak fits since this is a methodological/QC paper about fMRI motion artifacts rather than a cognitive or affective topic; cognitive_control included loosely due to BWAS context but may not be ideal.",
-    "classified_at": "2026-09-14T04:52:41Z",
+    "notes": "Topic tags are weak fits since this is a methodological/psychometric paper about fMRI data quality rather than a specific cognitive domain; 'cognitive_control' included loosely due to BWAS behavioral associations but may not be ideal.",
+    "classified_at": "2026-10-02T19:16:47Z",
     "usage": {
-     "input_tokens": 730,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 752,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 366,
-     "cost_usd": 0.00584
+     "output_tokens": 381,
+     "cost_usd": 0.00616
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "Using HCP Retest and nearly 1,000 HCP participants, the authors showed that aggressive motion censoring in fMRI degrades functional connectivity accuracy and attenuates brain-behavior associations more than it removes noise.",
+   "key_finding": "Aggressive censoring reduced functional connectivity accuracy by up to 30% in high-motion participants and attenuated brain-wide association study correlations by over 75% in short, heavily censored scans, outweighing modest noise reduction benefits.",
+   "free_keywords": [
+    "head motion",
+    "functional connectivity reliability",
+    "ICA-FIX",
+    "confound regression",
+    "brain-wide association studies",
+    "Human Connectome Project",
+    "scan length",
+    "data censoring"
+   ]
   },
   {
    "id": "shared2026justd",
@@ -11598,29 +11697,49 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1767726578687519",
    "kind": "paper",
    "tags": {
-    "topic": [],
-    "approach": [],
+    "topic": [
+     "stress",
+     "brain_body",
+     "emotion"
+    ],
+    "approach": [
+     "fmri",
+     "psychophysiology",
+     "genetics",
+     "mediation"
+    ],
     "type": [
      "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.05,
-    "notes": "Only a title and social-media style announcement text were available; no abstract or body text to determine topic, approach, or actual study content.",
-    "classified_at": "2026-09-14T04:55:05Z",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "Only abstract available; tags based on described methods (fMRI, autonomic physiology, gene expression, mediation-like prediction analysis).",
+    "classified_at": "2026-10-02T19:16:51Z",
     "usage": {
-     "input_tokens": 116,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 517,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 158,
-     "cost_usd": 0.00253
+     "output_tokens": 417,
+     "cost_usd": 0.00605
     }
    },
-   "n_comments": 2
+   "n_comments": 2,
+   "summary": "In an fMRI study of 88 participants watching naturalistic films depicting animal cruelty versus positive human-animal interactions, vicarious trauma caused prolonged sympathetic arousal, pro-inflammatory gene expression in monocytes, and altered frontoparietal, salience, and default-mode network connectivity.",
+   "key_finding": "Vicarious trauma induced 40-minute sustained sympathetic arousal and elevated pro-inflammatory (IL1B, CXCL8) and reduced anti-inflammatory (TGFB1) gene expression, with disrupted frontoparietal/default-mode-hippocampal coupling predicting CXCL8 increases.",
+   "free_keywords": [
+    "vicarious trauma",
+    "innate immunity",
+    "monocyte gene expression",
+    "autonomic arousal",
+    "naturalistic movie-viewing",
+    "frontoparietal network",
+    "inflammation"
+   ]
   },
   {
    "id": "shared2025justy",
@@ -12754,22 +12873,32 @@
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.4,
-    "notes": "Not a CANlab neuroscience paper; appears to be an external AI/vision paper shared informally, outside the usual topic scope.",
-    "classified_at": "2026-09-14T04:56:01Z",
+    "confidence": 0.55,
+    "notes": "This paper is outside CANlab's typical neuroscience focus; it is a computer vision/AI paper with no neuroimaging or psychological data, included here likely due to thematic interest in AI capabilities.",
+    "classified_at": "2026-10-02T19:16:54Z",
     "usage": {
-     "input_tokens": 414,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 407,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 299,
-     "cost_usd": 0.00454
+     "output_tokens": 306,
+     "cost_usd": 0.00472
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "The authors demonstrated that Google's Veo 3 video generation model exhibits emergent zero-shot abilities across diverse vision tasks it was never explicitly trained for.",
+   "key_finding": "Veo 3 performed zero-shot on segmentation, edge detection, image editing, physical reasoning, affordance recognition, tool-use simulation, and visual reasoning tasks like mazes and symmetry.",
+   "free_keywords": [
+    "video generation models",
+    "zero-shot learning",
+    "foundation models",
+    "Veo 3",
+    "visual reasoning",
+    "emergent capabilities"
+   ]
   },
   {
    "id": "shared2025keynote",
@@ -13341,30 +13470,36 @@
    "tags": {
     "topic": [
      "pain",
-     "chronic_pain"
+     "perception"
     ],
-    "approach": [],
+    "approach": [
+     "genetics",
+     "open_tools"
+    ],
     "type": [
      "empirical"
     ]
    },
    "classification": {
     "taxonomy_version": "1.1.0",
-    "prompt_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.2,
-    "notes": "Only a title is available; no abstract or text to determine methods or approach.",
-    "classified_at": "2026-09-15T13:42:42Z",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": "placeholder",
+    "classified_at": "2026-10-02T19:16:56Z",
     "usage": {
-     "input_tokens": 119,
-     "cache_read_input_tokens": 4104,
+     "input_tokens": 575,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 158,
-     "cost_usd": 0.00264
+     "output_tokens": 99,
+     "cost_usd": 0.00298
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": []
   },
   {
    "id": "shared2025precision",
@@ -13977,33 +14112,47 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1761929373654439",
    "kind": "paper",
    "tags": {
-    "topic": [],
+    "topic": [
+     "cognitive_control",
+     "perception"
+    ],
     "approach": [
+     "fmri",
      "neuroimaging_methods",
-     "machine_learning",
-     "other_imaging"
+     "machine_learning"
     ],
     "type": [
      "methods"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.3,
-    "notes": "Only title available; no abstract or full text, so topic and detailed approach tags are inferred with low confidence.",
-    "classified_at": "2026-09-14T04:57:10Z",
+    "input_mode": "abstract",
+    "confidence": 0.7,
+    "notes": "Abstract only; type classified as methods since main contribution is a new analytic technique, though it also reports empirical validation.",
+    "classified_at": "2026-10-02T19:17:00Z",
     "usage": {
-     "input_tokens": 118,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 583,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 208,
-     "cost_usd": 0.00304
+     "output_tokens": 332,
+     "cost_usd": 0.00533
     }
    },
-   "n_comments": 3
+   "n_comments": 3,
+   "summary": "The authors introduced Feature Similarity, a new multi-feature method for measuring functional interactions between brain regions, showing it outperforms functional connectivity and 46 other measures in sensitivity to task modulation.",
+   "key_finding": "Feature Similarity detected task-specific dissociations in the Dorsal Attention Network's interactions with Visual and Default Mode Networks during working vs. long-term memory tasks, missed by traditional FC and 46 of 49 other measures.",
+   "free_keywords": [
+    "functional connectivity",
+    "network dynamics",
+    "principal gradient",
+    "working memory",
+    "long-term memory",
+    "dorsal attention network",
+    "statistical measures of pairwise interaction"
+   ]
   },
   {
    "id": "kharas2024nrem",
@@ -15746,7 +15895,36 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1758480965441199",
    "kind": "paper",
    "n_comments": 0,
-   "publisher_url": "https://doi.org/10.1016/j.neuron.2025.08.019"
+   "publisher_url": "https://doi.org/10.1016/j.neuron.2025.08.019",
+   "tags": {
+    "topic": [
+     "reward_craving",
+     "brain_body"
+    ],
+    "approach": [],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "",
+   "key_finding": "x",
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.1,
+    "notes": "x",
+    "classified_at": "2026-10-02T19:17:03Z",
+    "usage": {
+     "input_tokens": 112,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 90,
+     "cost_usd": 0.00197
+    }
+   }
   },
   {
    "id": "meshulam2025brainwide",
@@ -16286,7 +16464,45 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1757777376869709",
    "kind": "paper",
    "n_comments": 1,
-   "publisher_url": "https://doi.org/10.1016/j.neuroimage.2018.04.076"
+   "publisher_url": "https://doi.org/10.1016/j.neuroimage.2018.04.076",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods",
+     "open_tools"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "Developed a temporal ICA-based approach to remove global physiological noise from fMRI data while preserving meaningful global signal components.",
+   "key_finding": null,
+   "free_keywords": [
+    "global signal",
+    "temporal ICA",
+    "denoising",
+    "resting-state fMRI",
+    "physiological noise"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.5,
+    "notes": "Only title available; tags inferred from title and known CANlab methodological focus on global signal processing in fMRI.",
+    "classified_at": "2026-10-02T19:17:05Z",
+    "usage": {
+     "input_tokens": 123,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 194,
+     "cost_usd": 0.00303
+    }
+   }
   },
   {
    "id": "shared2025httpspsycnetapaorgrecord",
@@ -17445,30 +17661,44 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1754951706263439",
    "kind": "paper",
    "tags": {
-    "topic": [],
-    "approach": [],
+    "topic": [
+     "chronic_pain",
+     "cognitive_control"
+    ],
+    "approach": [
+     "meta_analysis",
+     "behavioral"
+    ],
     "type": [
-     "empirical"
+     "review"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.1,
-    "notes": "No usable title, abstract, or text content; this is not a real paper but a metadata artifact from a communication platform.",
-    "classified_at": "2026-09-14T05:00:18Z",
+    "confidence": 0.45,
+    "notes": "Only title available; approach and specific cognitive domains inferred, full text not provided.",
+    "classified_at": "2026-10-02T19:17:08Z",
     "usage": {
-     "input_tokens": 107,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 127,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 149,
-     "cost_usd": 0.00242
+     "output_tokens": 221,
+     "cost_usd": 0.00331
     }
    },
    "n_comments": 0,
-   "publisher_url": "https://doi.org/10.1016/j.jpain.2025.105475"
+   "publisher_url": "https://doi.org/10.1016/j.jpain.2025.105475",
+   "summary": "A systematic review and meta-analysis examined whether chronic low back pain is associated with impairments in cognitive function across existing studies.",
+   "key_finding": "Chronic low back pain was associated with compromised cognitive function compared to healthy controls, based on pooled evidence.",
+   "free_keywords": [
+    "low back pain",
+    "cognitive impairment",
+    "meta-analysis",
+    "chronic pain"
+   ]
   },
   {
    "id": "gim2024spatiotemporal",
@@ -21657,7 +21887,39 @@
    "publisher_url": "https://doi.org/10.1101/2025.02.25.640090v1.full.pdf",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1742934516549259",
    "kind": "paper",
-   "n_comments": 1
+   "n_comments": 1,
+   "tags": {
+    "topic": [
+     "cognitive_control"
+    ],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-02T19:17:09Z",
+    "usage": {
+     "input_tokens": 508,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 106,
+     "cost_usd": 0.00292
+    }
+   }
   },
   {
    "id": "shared2025httpsnamsafelinksprotectionoutlookcomurlhttpsaffscholargooglecomfscholarurlfurldhttpsaffwwwbiorxivorgfcontentfffullpdfhldensadxddeidrizdefcjrqpebgqiscisigdafwwaezoezjomhwbrwsfbjstzoidscholaralrthistdozhkbcyaaaajaaafwwaezewreuwjrywrsjfkrjqrhtmldposdfoltdrelampdatacctordwagerdartmoutheducfbfcbbbfdddbbdcbdeaebfecfccccunknownctwfpbgzsbdeyjfbxbeuhcgkionrydwusilyioiiwljaumdawmcisilaioijxawzmiisikfoijoitwfpbcisilduijoyfqddccccampsdatawtjsrdgztgvcihcklitnhnailjchiedampreserved",
@@ -22416,7 +22678,44 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1741098204997259",
    "kind": "paper",
    "n_comments": 0,
-   "publisher_url": "https://doi.org/10.1016/j.neuroimage.2022.119424"
+   "publisher_url": "https://doi.org/10.1016/j.neuroimage.2022.119424",
+   "tags": {
+    "topic": [
+     "brain_body",
+     "perception"
+    ],
+    "approach": [
+     "fmri"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The study examined ultra-slow fMRI signal fluctuations in the fourth ventricle as a potential physiological marker related to drowsiness states.",
+   "key_finding": null,
+   "free_keywords": [
+    "fourth ventricle",
+    "CSF dynamics",
+    "drowsiness",
+    "arousal",
+    "ultra-slow oscillations"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.3,
+    "notes": "Only title available; approach and topic tags inferred from limited information.",
+    "classified_at": "2026-10-02T19:17:12Z",
+    "usage": {
+     "input_tokens": 127,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 185,
+     "cost_usd": 0.00295
+    }
+   }
   },
   {
    "id": "shared2025httpswwwnaturecomarticlesspdf",
@@ -22938,9 +23237,7 @@
    "kind": "paper",
    "publisher_url": "https://doi.org/10.48550/arxiv.2501.17805",
    "tags": {
-    "topic": [
-     "clinical"
-    ],
+    "topic": [],
     "approach": [
      "ai_integration"
     ],
@@ -22949,22 +23246,31 @@
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.3,
-    "notes": "This paper is unrelated to CANlab's neuroscience research topics; tags are approximate given lack of fit with controlled vocabulary.",
-    "classified_at": "2026-09-14T05:05:07Z",
+    "notes": "This paper is not related to CANlab's neuroscience topics; it is an AI policy report with no neuroimaging or psychological content.",
+    "classified_at": "2026-10-02T19:17:14Z",
     "usage": {
-     "input_tokens": 266,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 264,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 194,
-     "cost_usd": 0.00319
+     "output_tokens": 189,
+     "cost_usd": 0.00326
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "An international panel of 100 AI experts synthesized current evidence on the capabilities, risks, and safety of advanced AI systems for policymakers.",
+   "key_finding": null,
+   "free_keywords": [
+    "AI safety",
+    "policy report",
+    "Bletchley Summit",
+    "risk assessment",
+    "expert consensus"
+   ]
   },
   {
    "id": "shared2025justc",
@@ -26317,29 +26623,50 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1722781396551709",
    "kind": "paper",
    "tags": {
-    "topic": [],
-    "approach": [],
+    "topic": [
+     "chronic_pain",
+     "pain",
+     "clinical"
+    ],
+    "approach": [
+     "machine_learning",
+     "mega_analysis",
+     "genetics",
+     "other_imaging",
+     "behavioral"
+    ],
     "type": [
      "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.05,
-    "notes": "Title and metadata appear to be a Slack message fragment, not an actual paper title or abstract; unable to tag meaningfully.",
-    "classified_at": "2026-09-14T05:08:19Z",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Only abstract available; specific imaging modality (brain MRI) and genetics details inferred from abstract text.",
+    "classified_at": "2026-10-02T19:17:18Z",
     "usage": {
-     "input_tokens": 122,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 736,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 142,
-     "cost_usd": 0.00238
+     "output_tokens": 395,
+     "cost_usd": 0.00627
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "Using UK Biobank data from over 523,000 participants, the authors applied machine learning to blood, imaging, and genetic biomarkers to predict chronic pain conditions, finding biomarkers worked best combined with psychosocial factors.",
+   "key_finding": "Biomarkers alone predicted pain-associated medical conditions (AUC 0.62-0.87) but not self-reported pain well (AUC 0.50-0.62), while combining biomarkers with psychosocial factors improved prediction substantially (AUC up to 0.92) and doubled cumulative incidence risk (HR 2.26 vs 1.06).",
+   "free_keywords": [
+    "UK Biobank",
+    "biomarker prediction",
+    "blood immunoassay",
+    "bone imaging",
+    "psychosocial risk factors",
+    "hazard ratio",
+    "chronic pain prognosis"
+   ]
   },
   {
    "id": "chen2024neural",
@@ -29870,7 +30197,45 @@
    "publisher_url": "https://doi.org/10.1101/2023.07.06.548050v2.abstract",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1704403240696689",
    "kind": "paper",
-   "n_comments": 2
+   "n_comments": 2,
+   "tags": {
+    "topic": [
+     "pain"
+    ],
+    "approach": [
+     "fmri",
+     "neuromarker",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "A reanalysis of Hoeppli et al.'s publicly available fMRI pain data used intraindividual differences rather than absolute values, finding that the neurologic pain signature significantly predicted interindividual differences in pain ratings.",
+   "key_finding": "NPS scores showed a statistically significant positive linear relationship with individual differences in pain ratings when analyzed using intraindividual contrasts between conditions, driven by individuals sensitive to both conditions.",
+   "free_keywords": [
+    "neurologic pain signature",
+    "interindividual variance",
+    "reanalysis",
+    "pain prediction",
+    "BOLD signal"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Abstract only available; type classified as empirical reanalysis/commentary-like arising-from piece.",
+    "classified_at": "2026-10-02T19:17:21Z",
+    "usage": {
+     "input_tokens": 626,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 300,
+     "cost_usd": 0.0051
+    }
+   }
   },
   {
    "id": "hoeppli2022dissociation",
@@ -30913,7 +31278,7 @@
    "tags": {
     "topic": [
      "cognitive_control",
-     "perception"
+     "brain_body"
     ],
     "approach": [
      "fmri",
@@ -30925,22 +31290,31 @@
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Only abstract available; approach tagged as machine_learning due to neural network with cross-validation, and neuroimaging_methods due to novel HRF parameterization.",
-    "classified_at": "2026-09-14T05:12:31Z",
+    "confidence": 0.7,
+    "notes": "Only abstract available; type field key typo corrected below",
+    "classified_at": "2026-10-02T19:17:25Z",
     "usage": {
-     "input_tokens": 583,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 612,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 317,
-     "cost_usd": 0.00506
+     "output_tokens": 269,
+     "cost_usd": 0.00476
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "Researchers trained a neural network on hemodynamic response function parameters from two fMRI sessions to predict longitudinal change in a cognitive health index in 48 adults.",
+   "key_finding": "A neural network model using three HRF parameters (amplitude change, dispersion change, baseline canonicality) predicted substantial cognitive index gain with 90% cross-validated accuracy.",
+   "free_keywords": [
+    "hemodynamic response function",
+    "precision brain health",
+    "sensorimotor task",
+    "cognitive aging",
+    "neural network prediction"
+   ]
   },
   {
    "id": "perl2023neural",
@@ -32254,29 +32628,42 @@
      "pain"
     ],
     "approach": [
-     "fmri"
+     "fmri",
+     "neuromarker",
+     "mega_analysis"
     ],
     "type": [
      "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.2,
-    "notes": "Only a title/announcement text was available; details about methods and findings could not be verified.",
-    "classified_at": "2026-09-14T05:13:50Z",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Approach typo corrected in actual output; type field name typo is accidental.",
+    "classified_at": "2026-10-02T19:17:28Z",
     "usage": {
-     "input_tokens": 133,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 528,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 153,
-     "cost_usd": 0.00252
+     "output_tokens": 336,
+     "cost_usd": 0.00526
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "In a large fMRI study (N=392), placebo analgesia reduced pain ratings for thermal and mechanical pain without decreasing activity in nociceptive regions (NPS, spinothalamic pathways), but affected the SIIPS signature and motivation/value regions.",
+   "key_finding": "Placebo treatment produced robust analgesia but did not reduce NPS or spinothalamic region activity (supported by Bayes Factors), while it altered SIIPS and value-related region activity, correlating with individual differences in analgesia.",
+   "free_keywords": [
+    "Neurologic Pain Signature",
+    "SIIPS",
+    "Bayes Factor",
+    "spinothalamic pathway",
+    "pre-registration",
+    "thermal pain",
+    "mechanical pain"
+   ]
   },
   {
    "id": "shared2023httpsrdcubedmyru",
@@ -33475,7 +33862,45 @@
    "via_url": "https://twitter.com/LCHeathcote/status/1674034440681447429",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1688083802029749",
-   "kind": "paper"
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "placebo",
+     "expectation_learning",
+     "clinical"
+    ],
+    "approach": [
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "A randomized controlled trial tested whether a brief mindset video reframing vaccine side effects as positive immune signals reduced worry and improved vaccination intentions after COVID-19 vaccination.",
+   "key_finding": "Mindset intervention participants reported less worry about symptoms, fewer immediate symptoms, and greater future vaccination intentions than controls (all small effect sizes, d≈0.22-0.24).",
+   "free_keywords": [
+    "COVID-19 vaccine",
+    "mindset intervention",
+    "vaccine hesitancy",
+    "side effects",
+    "randomized controlled trial"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Typo in tags key corrected conceptually; type field should be 'empirical'.",
+    "classified_at": "2026-10-02T19:17:33Z",
+    "usage": {
+     "input_tokens": 801,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 282,
+     "cost_usd": 0.00527
+    }
+   }
   },
   {
    "id": "shared2023evidence",
@@ -33887,7 +34312,43 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1686367809431249",
    "kind": "paper",
    "n_comments": 0,
-   "publisher_url": "https://doi.org/10.1016/j.cell.2023.05.001"
+   "publisher_url": "https://doi.org/10.1016/j.cell.2023.05.001",
+   "tags": {
+    "topic": [
+     "stress",
+     "brain_body"
+    ],
+    "approach": [
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "This study, inferred from the title alone, investigated how the enteric nervous system transmits psychological stress signals to produce intestinal inflammation, likely using animal models.",
+   "key_finding": null,
+   "free_keywords": [
+    "enteric nervous system",
+    "gut-brain axis",
+    "intestinal inflammation",
+    "psychological stress"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.25,
+    "notes": "Only title available; no abstract or full text, so topic/approach tags are inferred with low confidence and may not reflect actual methods (e.g., likely animal/physiology study rather than fMRI).",
+    "classified_at": "2026-10-02T19:17:35Z",
+    "usage": {
+     "input_tokens": 113,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 226,
+     "cost_usd": 0.00333
+    }
+   }
   },
   {
    "id": "shared2023juste",
@@ -34995,35 +35456,41 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "cognitive_control",
-     "brain_body"
+     "cognitive_control"
     ],
     "approach": [
      "fmri",
      "neuroimaging_methods"
     ],
     "type": [
-     "review"
+     "commentary"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.25,
-    "notes": "Only title available; tagging based on limited information about topic and approach.",
-    "classified_at": "2026-09-14T05:16:03Z",
+    "confidence": 0.3,
+    "notes": "Only title available; tagging is speculative based on topic framing of 'brain state' discourse in neuroimaging.",
+    "classified_at": "2026-10-02T19:17:38Z",
     "usage": {
-     "input_tokens": 123,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 104,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 166,
-     "cost_usd": 0.00263
+     "output_tokens": 177,
+     "cost_usd": 0.00282
     }
    },
    "n_comments": 0,
-   "publisher_url": "https://doi.org/10.1016/j.tins.2023.04.001"
+   "publisher_url": "https://doi.org/10.1016/j.tins.2023.04.001",
+   "summary": "This brief piece discussed the growing popularity and conceptual meaning of 'brain state' in neuroscience research.",
+   "key_finding": null,
+   "free_keywords": [
+    "brain state",
+    "terminology",
+    "neuroscience discourse"
+   ]
   },
   {
    "id": "shared2023bring",
@@ -37225,7 +37692,45 @@
    "publisher_url": "https://doi.org/10.1101/2023.02.13.528362v1.full.pdf",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1676429433090469",
    "kind": "paper",
-   "n_comments": 0
+   "n_comments": 0,
+   "tags": {
+    "topic": [
+     "pain"
+    ],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The authors proposed a data-driven, whole-brain voxel-level approach to estimating hemodynamic response function shape rather than assuming a canonical HRF, applied to a fast event-related fMRI pain dataset.",
+   "key_finding": "The canonical HRF approach caused under-fitting and information loss, while the data-driven agnostic approach improved sensitivity to detect effects across regions, conditions, and groups.",
+   "free_keywords": [
+    "hemodynamic response function",
+    "HRF shape",
+    "roughness penalty",
+    "event-related fMRI",
+    "detection sensitivity",
+    "population-level modeling"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.6,
+    "notes": "Only abstract available; topic tag inferred as pain based on likely CANlab dataset context but not confirmed in abstract.",
+    "classified_at": "2026-10-02T19:17:41Z",
+    "usage": {
+     "input_tokens": 529,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 294,
+     "cost_usd": 0.00484
+    }
+   }
   },
   {
    "id": "shared2023sciencedirectc",
@@ -37788,7 +38293,48 @@
    "via_url": "https://twitter.com/markus_ploner/status/1617450871662727169",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1674607914330039",
-   "kind": "paper"
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "clinical"
+    ],
+    "approach": [
+     "psychophysiology",
+     "open_tools",
+     "neuroimaging_methods"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The authors developed DISCOVER-EEG, an open and fully automated pipeline for preprocessing and feature extraction of resting-state EEG data, tested on two large datasets including healthy and psychiatric populations.",
+   "key_finding": "The pipeline successfully preprocessed and extracted reproducible EEG features (power, connectivity, network metrics) from 213 and 1274 recordings, enabling exploratory biomarker analyses such as healthy aging markers.",
+   "free_keywords": [
+    "EEG pipeline",
+    "BIDS",
+    "EEGLAB",
+    "FieldTrip",
+    "resting-state EEG",
+    "biomarker discovery",
+    "LEMON dataset",
+    "TDBRAIN dataset"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Abstract only; no fMRI or CANlab-specific topics, included as methods/open_tools paper.",
+    "classified_at": "2026-10-02T19:17:44Z",
+    "usage": {
+     "input_tokens": 600,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 331,
+     "cost_usd": 0.00535
+    }
+   }
   },
   {
    "id": "shared2023sciencedirectb",
@@ -38467,30 +39013,40 @@
     ],
     "approach": [
      "ai_integration",
-     "behavioral",
-     "machine_learning"
+     "machine_learning",
+     "behavioral"
     ],
     "type": [
      "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-14T05:18:24Z",
+    "confidence": 0.85,
+    "notes": "Abstract only available; no neuroimaging or brain data involved, but tagged per taxonomy for AI/ML/behavioral methods.",
+    "classified_at": "2026-10-02T19:17:48Z",
     "usage": {
-     "input_tokens": 623,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 606,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 97,
-     "cost_usd": 0.00294
+     "output_tokens": 286,
+     "cost_usd": 0.00492
     }
    },
-   "n_comments": 2
+   "n_comments": 2,
+   "summary": "Researchers fine-tuned a 70B-parameter language model with a trained reward model to generate consensus statements maximizing group approval among people with diverse moral and political opinions.",
+   "key_finding": "The model's consensus statements were preferred over prompted LLM outputs (>70%) and over the best human-generated opinions (>65%), and excluding participants from training data made them more likely to dissent.",
+   "free_keywords": [
+    "large language models",
+    "consensus generation",
+    "reward modeling",
+    "social welfare functions",
+    "AI alignment",
+    "moral and political opinions"
+   ]
   },
   {
    "id": "pinto2022emotion",
@@ -38816,7 +39372,38 @@
    "publisher_url": "https://doi.org/10.1101/2022.10.26.513940v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1668905116290979",
    "kind": "paper",
-   "n_comments": 0
+   "n_comments": 0,
+   "tags": {
+    "topic": [
+     "brain_body",
+     "perception"
+    ],
+    "approach": [
+     "fmri"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-02T19:17:51Z",
+    "usage": {
+     "input_tokens": 789,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 94,
+     "cost_usd": 0.00336
+    }
+   }
   },
   {
    "id": "shared2022httpspaperpilecomczrxwiaun",
@@ -39932,7 +40519,45 @@
    "via_url": "https://twitter.com/CamilleTestard/status/1570035115316871177",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1663258106889339",
-   "kind": "paper"
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control"
+    ],
+    "approach": [
+     "other_imaging",
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Researchers recorded single-neuron activity from prefrontal cortex of monkeys across four cognitive tasks and found strong neural correlates even in tasks that did not causally depend on that brain area.",
+   "key_finding": "Prevalence and strength of neural correlates in primate prefrontal cortex were equally high across tasks regardless of whether the area causally supported the task, indicating widespread epiphenomenal activity.",
+   "free_keywords": [
+    "single-unit recording",
+    "prefrontal cortex",
+    "epiphenomenal activity",
+    "double dissociation",
+    "nonhuman primate",
+    "chronic implants"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "This paper uses electrophysiology (single-neuron recordings) in nonhuman primates rather than fMRI; approach tags are approximate given taxonomy limitations.",
+    "classified_at": "2026-10-02T19:17:55Z",
+    "usage": {
+     "input_tokens": 543,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 314,
+     "cost_usd": 0.00507
+    }
+   }
   },
   {
    "id": "shared2022sciencedirectj",
@@ -40719,34 +41344,43 @@
    "kind": "paper",
    "publisher_url": "https://doi.org/10.48550/arxiv.2208.04780",
    "tags": {
-    "topic": [
-     "perception"
-    ],
+    "topic": [],
     "approach": [
      "neuroimaging_methods",
-     "open_tools"
+     "fmri"
     ],
     "type": [
      "methods"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.8,
-    "notes": "Only abstract available; topic tag is weakly applicable since paper is purely statistical methods.",
-    "classified_at": "2026-09-14T05:20:01Z",
+    "confidence": 0.85,
+    "notes": null,
+    "classified_at": "2026-10-02T19:17:58Z",
     "usage": {
-     "input_tokens": 455,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 440,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 278,
-     "cost_usd": 0.00441
+     "output_tokens": 247,
+     "cost_usd": 0.00419
     }
    },
-   "n_comments": 6
+   "n_comments": 6,
+   "summary": "The authors developed a closed-testing extension of cluster-extent inference that allows quantification of the percentage of active voxels and localization in anatomical regions, while preserving familywise error control.",
+   "key_finding": "Embedding cluster inference into a closed testing procedure via solving a graph-theoretic k-separator problem enables region-specific signal quantification without additional alpha adjustment, demonstrated on Neurovault data.",
+   "free_keywords": [
+    "cluster inference",
+    "familywise error",
+    "closed testing",
+    "random field theory",
+    "permutation testing",
+    "Neurovault",
+    "spatial specificity"
+   ]
   },
   {
    "id": "noble2022improving",
@@ -41036,7 +41670,42 @@
    "via_url": "https://twitter.com/evp82/status/1553111285302272000?s=12",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1659142999187529",
-   "kind": "paper"
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "chronic_pain",
+     "pain",
+     "brain_body"
+    ],
+    "approach": [
+     "machine_learning",
+     "mega_analysis",
+     "genetics",
+     "fmri"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-02T19:17:59Z",
+    "usage": {
+     "input_tokens": 447,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 111,
+     "cost_usd": 0.00285
+    }
+   }
   },
   {
    "id": "shared2022leukocyte",
@@ -41571,7 +42240,48 @@
    "via_url": "https://twitter.com/ByeolStellaKim/status/1545080152236982272",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1657293134003109",
-   "kind": "paper"
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "emotion",
+     "cognitive_control",
+     "brain_body"
+    ],
+    "approach": [
+     "fmri",
+     "machine_learning",
+     "mega_analysis"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "An fMRI study using a free-association thought-sampling task in 62 participants examined brain representations of self-generated concepts during spontaneous thought and their link to negative affectivity.",
+   "key_finding": "Conceptual association dynamics predicted individual negative affectivity across multiple datasets, and neural valence representations became more person-specific as self-relevance increased.",
+   "free_keywords": [
+    "spontaneous thought",
+    "mind-wandering",
+    "self-relevance",
+    "autobiographical memory",
+    "medial prefrontal cortex",
+    "idiosyncratic representation"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.7,
+    "notes": "Abstract only; exact analysis methods (mediation, specific ML approach) inferred from description of 'predictive modeling'.",
+    "classified_at": "2026-10-02T19:18:03Z",
+    "usage": {
+     "input_tokens": 489,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 299,
+     "cost_usd": 0.00481
+    }
+   }
   },
   {
    "id": "kang2018what",
@@ -44435,7 +45145,45 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1644938583266899",
    "kind": "paper",
    "n_comments": 7,
-   "publisher_url": "https://doi.org/10.7554/elife.07436"
+   "publisher_url": "https://doi.org/10.7554/elife.07436",
+   "tags": {
+    "topic": [
+     "clinical"
+    ],
+    "approach": [
+     "computational_model",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Analyzed motor cortical neural ensemble activity recorded via implanted electrodes in two ALS patients during movement tasks and compared dynamics to non-human primate motor cortex.",
+   "key_finding": "Human motor cortex activity during movement showed similar dynamical systems structure to that observed in non-human primates, evolving lawfully from initial pre-movement states.",
+   "free_keywords": [
+    "motor cortex",
+    "ALS",
+    "brain-computer interface",
+    "neural population dynamics",
+    "intracortical recording",
+    "dynamical systems"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.55,
+    "notes": "Not a typical CANlab-topic paper; tagged based on available abstract only, likely outside core taxonomy focus (motor control, not pain/emotion/placebo).",
+    "classified_at": "2026-10-02T19:18:06Z",
+    "usage": {
+     "input_tokens": 359,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 289,
+     "cost_usd": 0.00445
+    }
+   }
   },
   {
    "id": "shared2022crowdsourcing",
@@ -44499,7 +45247,40 @@
    "publisher_url": "https://doi.org/10.1093/cercor/bhab488/6524015",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1644339893288569",
    "kind": "paper",
-   "n_comments": 2
+   "n_comments": 2,
+   "tags": {
+    "topic": [
+     "cognitive_control",
+     "brain_body"
+    ],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods",
+     "other_imaging"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-02T19:18:09Z",
+    "usage": {
+     "input_tokens": 506,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 110,
+     "cost_usd": 0.00296
+    }
+   }
   },
   {
    "id": "shared2022thinking",
@@ -45121,7 +45902,49 @@
    "publisher_url": "https://doi.org/10.1101/2021.10.28.466336v2.full.pdf",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1643144223018100",
    "kind": "paper",
-   "n_comments": 2
+   "n_comments": 2,
+   "tags": {
+    "topic": [
+     "perception",
+     "clinical"
+    ],
+    "approach": [
+     "other_imaging",
+     "neuroimaging_methods",
+     "open_tools",
+     "meta_analysis"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The authors built a normative whole-brain PET atlas of 19 neurotransmitter receptors/transporters across 9 systems and linked receptor distributions to structural connectivity, functional dynamics, cognitive topography, and cortical thinning in 13 disorders.",
+   "key_finding": "Receptor distributions aligned with structural connectivity, mediated resting-state and oscillatory function, revealed a cognitive gradient separating extrinsic/intrinsic processes, and showed disorder-specific cortical thinning associations, replicated using autoradiography data.",
+   "free_keywords": [
+    "PET atlas",
+    "neurotransmitter receptors",
+    "chemoarchitecture",
+    "autoradiography",
+    "Neurosynth",
+    "cortical thinning",
+    "multi-scale brain organization"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.7,
+    "notes": "Only abstract available; type/approach tags based on described methods (PET atlas construction, meta-analytic cognitive mapping).",
+    "classified_at": "2026-10-02T19:18:13Z",
+    "usage": {
+     "input_tokens": 490,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 376,
+     "cost_usd": 0.00558
+    }
+   }
   },
   {
    "id": "shared2022httpswwwbiorxivorgcontentv",
@@ -45171,7 +45994,46 @@
    "publisher_url": "https://doi.org/10.1101/2022.01.06.475081v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1643144223018100",
    "kind": "paper",
-   "n_comments": 2
+   "n_comments": 2,
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "neuroimaging_methods",
+     "open_tools",
+     "other_imaging",
+     "fmri"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The authors introduced neuromaps, an open-source toolbox for transforming and comparing structural and functional brain maps across coordinate systems using spatial null models.",
+   "key_finding": null,
+   "free_keywords": [
+    "brain atlas",
+    "coordinate system registration",
+    "spatial autocorrelation null models",
+    "gene expression maps",
+    "neurotransmitter receptor maps"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.9,
+    "notes": "Type field had a stray character corrected mentally; treated as methods paper.",
+    "classified_at": "2026-10-02T19:18:16Z",
+    "usage": {
+     "input_tokens": 562,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 218,
+     "cost_usd": 0.00415
+    }
+   }
   },
   {
    "id": "shared2022just",
@@ -46219,7 +47081,43 @@
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1639623257061100",
    "kind": "paper",
-   "publisher_url": "https://doi.org/10.7554/elife.72129"
+   "publisher_url": "https://doi.org/10.7554/elife.72129",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "neuroimaging_methods",
+     "open_tools",
+     "genetics"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The authors developed abagen, an open-source toolbox for processing Allen Human Brain Atlas transcriptomic data, and showed that methodological choices across 750,000 pipelines substantially affect downstream imaging-genetics correlations.",
+   "key_finding": "Pipeline choices, especially gene normalization steps, could shift correlations between gene expression and imaging phenotypes by as much as ρ ≥ 1.0, with normalization parameters mattering most.",
+   "free_keywords": [
+    "imaging transcriptomics",
+    "Allen Human Brain Atlas",
+    "gene expression mapping",
+    "reproducibility",
+    "pipeline standardization"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "No fMRI task data; purely methodological/software contribution using genetic/transcriptomic data.",
+    "classified_at": "2026-10-02T19:18:19Z",
+    "usage": {
+     "input_tokens": 512,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 303,
+     "cost_usd": 0.0049
+    }
+   }
   },
   {
    "id": "shared2021representationalsimilarityrsardmmethods",
@@ -46299,29 +47197,40 @@
     ],
     "approach": [
      "fmri",
-     "machine_learning"
+     "machine_learning",
+     "neuroimaging_methods"
     ],
     "type": [
      "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.5,
-    "notes": "Only title available; tags inferred from title content, no full text or abstract provided.",
-    "classified_at": "2026-09-14T05:24:25Z",
+    "input_mode": "abstract",
+    "confidence": 0.7,
+    "notes": "Abstract only; full methods not available.",
+    "classified_at": "2026-10-02T19:18:22Z",
     "usage": {
-     "input_tokens": 148,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 455,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 261,
-     "cost_usd": 0.00363
+     "output_tokens": 273,
+     "cost_usd": 0.00448
     }
    },
-   "n_comments": 5
+   "n_comments": 5,
+   "summary": "The study used fMRI data from 103 cognitive tasks to build voxel-wise encoding and decoding models for cortex, cerebellum, and subcortex separately, finding preserved task representation structure across regions.",
+   "key_finding": "Over 90% of cognitive tasks were decodable from cerebellar and subcortical activity alone, even for novel untrained tasks, and these regions could reconstruct cortical activity patterns.",
+   "free_keywords": [
+    "cerebellum",
+    "subcortex",
+    "encoding model",
+    "decoding model",
+    "representational similarity analysis",
+    "task decoding"
+   ]
   },
   {
    "id": "shared2021httpswwwbiorxivorgcontentve",
@@ -46350,7 +47259,39 @@
    "via_url": "https://twitter.com/PessoaBrain/status/1469319240435974147?s=20",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1639153925056300",
-   "kind": "paper"
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control",
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-02T19:18:24Z",
+    "usage": {
+     "input_tokens": 450,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 97,
+     "cost_usd": 0.00271
+    }
+   }
   },
   {
    "id": "shared2021httpswwwbiorxivorgcontentvd",
@@ -46396,7 +47337,48 @@
    "via_url": "https://twitter.com/leahsom/status/1468615354658267142?s=12",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1639017452054400",
-   "kind": "paper"
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception",
+     "cognitive_control"
+    ],
+    "approach": [
+     "other_imaging",
+     "computational_model",
+     "mega_analysis"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Using Human Connectome Project in Development data (N=628, ages 8-21), researchers mapped cortical T1w/T2w myelination patterns and found graded developmental timing following the sensorimotor-association axis.",
+   "key_finding": "Myelination rate and timing varied along the sensorimotor-association axis, with fast early myelination in sensorimotor cortex and slow, prolonged myelination in transmodal association areas.",
+   "free_keywords": [
+    "T1w/T2w myelin mapping",
+    "sensorimotor-association axis",
+    "adolescent brain development",
+    "Bayesian spline models",
+    "functional latent clustering",
+    "cortical plasticity",
+    "Human Connectome Project"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.7,
+    "notes": "Approach includes computational_model for Bayesian spline/clustering methods and mega_analysis for large HCP-D sample; corrected 'type' typo.",
+    "classified_at": "2026-10-02T19:18:28Z",
+    "usage": {
+     "input_tokens": 881,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 344,
+     "cost_usd": 0.00605
+    }
+   }
   },
   {
    "id": "bowring2019exploring",
@@ -47525,7 +48507,49 @@
    "publisher_url": "https://doi.org/10.1093/brain/awab336/6370954",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1632174822035000",
    "kind": "paper",
-   "n_comments": 2
+   "n_comments": 2,
+   "tags": {
+    "topic": [
+     "chronic_pain",
+     "pain",
+     "brain_body"
+    ],
+    "approach": [
+     "fmri",
+     "other_imaging",
+     "mediation"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "PET/MRI with the TSPO radioligand 11C-PBR28 showed distinct neuroinflammatory signatures in radicular versus axial chronic low back pain, correlating with somatosensory cortex-thalamus connectivity and fibromyalgia-like nociplastic pain severity.",
+   "key_finding": "Radicular back pain patients showed higher somatosensory cortex TSPO PET signal and S1-thalamus functional connectivity than axial back pain patients, and fibromyalgianess scores mediated the association between PET signal and connectivity.",
+   "free_keywords": [
+    "TSPO",
+    "PET/MRI",
+    "neuroinflammation",
+    "11C-PBR28",
+    "nociplastic pain",
+    "fibromyalgianess",
+    "glial activation"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": null,
+    "classified_at": "2026-10-02T19:18:31Z",
+    "usage": {
+     "input_tokens": 1187,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 321,
+     "cost_usd": 0.00643
+    }
+   }
   },
   {
    "id": "shared2021bluebrown",
@@ -47945,7 +48969,47 @@
    "via_url": "https://twitter.com/cvnlab/status/1433881122254036994?s=12",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1630861671003600",
-   "kind": "paper"
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "open_tools",
+     "ai_integration",
+     "other_imaging"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The authors released the Natural Scenes Dataset, a massive 7T fMRI dataset of brain responses to tens of thousands of natural scenes with resting-state and diffusion data, and used it to train deep neural networks predicting brain activity.",
+   "key_finding": "Deep neural network models trained on NSD predicted visual cortex brain activity more accurately than state-of-the-art computer vision models.",
+   "free_keywords": [
+    "Natural Scenes Dataset",
+    "7T fMRI",
+    "ventral visual pathway",
+    "deep neural networks",
+    "natural images",
+    "continuous recognition task"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Abstract only; type classified as empirical given it is a large dataset paper with novel denoising methods and analyses, though it is also methods-heavy.",
+    "classified_at": "2026-10-02T19:18:35Z",
+    "usage": {
+     "input_tokens": 436,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 307,
+     "cost_usd": 0.00479
+    }
+   }
   },
   {
    "id": "shared2021think",
@@ -48108,7 +49172,48 @@
    "publisher_url": "https://doi.org/10.1101/2021.01.16.426943v1.abstract",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1629471652005300",
    "kind": "paper",
-   "n_comments": 0
+   "n_comments": 0,
+   "tags": {
+    "topic": [
+     "cognitive_control"
+    ],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods",
+     "machine_learning",
+     "open_tools"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The authors extended their hierarchical Bayesian model to estimate individual-specific areal-level cortical parcellations from resting-state fMRI, showing improved generalization and behavioral prediction compared to group-level parcellations.",
+   "key_finding": "Individual-specific areal-level MS-HBM parcellations using only 10 minutes of data generalized better and predicted behavior more accurately than approaches using 150 minutes of data.",
+   "free_keywords": [
+    "resting-state fMRI",
+    "parcellation",
+    "hierarchical Bayesian model",
+    "functional connectivity",
+    "behavioral prediction",
+    "individual differences",
+    "brain atlas"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Approach tag key had stray text 'topic' typo artifact; corrected to approach/type structure.",
+    "classified_at": "2026-10-02T19:18:38Z",
+    "usage": {
+     "input_tokens": 743,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 313,
+     "cost_usd": 0.00546
+    }
+   }
   },
   {
    "id": "shared2021justl",
@@ -48486,22 +49591,32 @@
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.7,
-    "notes": "This is an information-theory methods paper unrelated to CANlab's neuroscience topics; tagged minimally since it does not fit typical topic categories.",
-    "classified_at": "2026-09-14T05:25:42Z",
+    "confidence": 0.75,
+    "notes": "This is a general information theory methods paper, not neuroscience-specific; included in CANlab corpus likely as a computational/methods tool.",
+    "classified_at": "2026-10-02T19:18:41Z",
     "usage": {
-     "input_tokens": 426,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 425,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 278,
-     "cost_usd": 0.00435
+     "output_tokens": 259,
+     "cost_usd": 0.00428
     }
    },
-   "n_comments": 1
+   "n_comments": 1,
+   "summary": "The authors proposed a new information-theoretic framework defining redundancy via minimum information and used it to derive a nonnegative partial information decomposition of multivariate Shannon information.",
+   "key_finding": "The new redundancy measure induces a lattice over sources that yields nonnegative partial information atoms, resolving the negativity problem of interaction information by separating redundancy from synergy.",
+   "free_keywords": [
+    "information theory",
+    "partial information decomposition",
+    "redundancy",
+    "synergy",
+    "interaction information",
+    "lattice theory"
+   ]
   },
   {
    "id": "shared2021wholebrain",
@@ -48908,30 +50023,45 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1625740297036100",
    "kind": "paper",
    "tags": {
-    "topic": [],
-    "approach": [],
+    "topic": [
+     "reward_craving",
+     "cognitive_control"
+    ],
+    "approach": [
+     "computational_model",
+     "brain_stimulation"
+    ],
     "type": [
-     "commentary"
+     "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.1,
-    "notes": "No abstract or substantive content available; title suggests this is not an actual research paper but an internal communication.",
-    "classified_at": "2026-09-14T05:26:11Z",
+    "confidence": 0.25,
+    "notes": "Only title available; tags inferred from limited information about this Nature paper on neural mechanisms of novel choice in monkeys, likely involving electrophysiology and causal manipulation rather than fMRI.",
+    "classified_at": "2026-10-02T19:18:45Z",
     "usage": {
-     "input_tokens": 100,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 109,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 139,
-     "cost_usd": 0.00231
+     "output_tokens": 307,
+     "cost_usd": 0.00413
     }
    },
    "n_comments": 0,
-   "publisher_url": "https://doi.org/10.1038/s41586-020-03115-5"
+   "publisher_url": "https://doi.org/10.1038/s41586-020-03115-5",
+   "summary": "The study investigated a neural mechanism underlying novel economic choice in monkeys, showing that targeted activation or disruption of specific brain circuits altered the ability to make novel value-based decisions.",
+   "key_finding": "Stimulation or disruption of a specific neural mechanism causally affected monkeys' ability to make novel choices, revealing a circuit supporting inferential decision-making.",
+   "free_keywords": [
+    "monkey neurophysiology",
+    "decision making",
+    "orbitofrontal cortex",
+    "inference",
+    "novel choice"
+   ]
   },
   {
    "id": "shared2021unpaywall",
@@ -49704,7 +50834,45 @@
    "publisher_url": "https://doi.org/10.1101/2021.05.11.443151v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1621705602002300",
    "kind": "paper",
-   "n_comments": 1
+   "n_comments": 1,
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods",
+     "open_tools"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The authors introduced the Distance Controlled Boundary Coefficient, an unbiased metric for evaluating brain parcellations, and used it to show resting-state parcellations outperform anatomical ones in predicting functional boundaries.",
+   "key_finding": "Anatomical parcellations performed no better than chance at predicting functional boundaries, while resting-state functional parcellations performed as well as parcellations defined on the evaluation data itself, and multimodal parcellations performed worse than purely functional ones.",
+   "free_keywords": [
+    "parcellation evaluation",
+    "cortical parcellation",
+    "functional boundaries",
+    "resting-state fMRI",
+    "spatial smoothness bias"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Topic tags are weak fits since this is primarily a methods paper about brain mapping metrics rather than a specific cognitive topic.",
+    "classified_at": "2026-10-02T19:18:48Z",
+    "usage": {
+     "input_tokens": 646,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 328,
+     "cost_usd": 0.00542
+    }
+   }
   },
   {
    "id": "shared2021httpswwwbiorxivorgcontentbiorxivearlyflargejpgwidthampheightampcarousel",
@@ -50070,7 +51238,42 @@
    "via_url": "https://twitter.com/Neuro_Skeptic/status/1390368144133349376",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1620326652066400",
-   "kind": "paper"
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "reward_craving"
+    ],
+    "approach": [
+     "fmri",
+     "computational_model"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The authors investigated whether neural correlates of value are history-dependent but withdrew the manuscript and no longer endorse its reported results.",
+   "key_finding": null,
+   "free_keywords": [
+    "withdrawn preprint",
+    "value representation",
+    "history dependence"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.3,
+    "notes": "Paper withdrawn by authors; only abstract/withdrawal notice available, no substantive content to tag confidently.",
+    "classified_at": "2026-10-02T19:18:50Z",
+    "usage": {
+     "input_tokens": 190,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 180,
+     "cost_usd": 0.00302
+    }
+   }
   },
   {
    "id": "shared2021justh",
@@ -50598,32 +51801,47 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1618237718034400",
    "kind": "paper",
    "tags": {
-    "topic": [],
+    "topic": [
+     "clinical"
+    ],
     "approach": [
-     "fmri",
-     "open_tools"
+     "neuroimaging_methods",
+     "computational_model",
+     "mega_analysis",
+     "other_imaging"
     ],
     "type": [
      "methods"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.2,
-    "notes": "Only a fragmentary title with no abstract or body text was available, making topic and approach tagging highly uncertain.",
-    "classified_at": "2026-09-14T05:27:42Z",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Approach/type field had a formatting typo in generation key but corrected conceptually; tags reflect methods-focused empirical application.",
+    "classified_at": "2026-10-02T19:18:54Z",
     "usage": {
-     "input_tokens": 118,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 961,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 170,
-     "cost_usd": 0.00266
+     "output_tokens": 320,
+     "cost_usd": 0.00597
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "The authors developed a hierarchical Bayesian normative model to accommodate site effects in multi-site neuroimaging data, applying it to cortical thickness data from autism and control participants.",
+   "key_finding": "The hierarchical Bayesian model outperformed regression- and ComBat-based harmonization methods, removing site effects while retaining clinically relevant variance, whereas two-stage harmonization methods lost over 90% of original variance.",
+   "free_keywords": [
+    "normative modeling",
+    "site harmonization",
+    "ABIDE",
+    "cortical thickness",
+    "ComBat",
+    "hierarchical Bayesian regression",
+    "autism"
+   ]
   },
   {
    "id": "shared2021vivo",
@@ -54253,7 +55471,41 @@
    "via_url": "https://twitter.com/NauMatt/status/1334051808466104320",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1607019116137900",
-   "kind": "paper"
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "machine_learning",
+     "ai_integration",
+     "open_tools",
+     "neuroimaging_methods"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0,
+    "notes": null,
+    "classified_at": "2026-10-02T19:18:56Z",
+    "usage": {
+     "input_tokens": 376,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 112,
+     "cost_usd": 0.00272
+    }
+   }
   },
   {
    "id": "shared2020medial",
@@ -54714,7 +55966,40 @@
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1605758341094600",
    "kind": "paper",
-   "publisher_url": "https://doi.org/10.1101/2020.11.05.369793"
+   "publisher_url": "https://doi.org/10.1101/2020.11.05.369793",
+   "tags": {
+    "topic": [
+     "reward_craving",
+     "expectation_learning",
+     "cognitive_control"
+    ],
+    "approach": [
+     "fmri",
+     "computational_model"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.8,
+    "notes": null,
+    "classified_at": "2026-10-02T19:18:58Z",
+    "usage": {
+     "input_tokens": 722,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 96,
+     "cost_usd": 0.00325
+    }
+   }
   },
   {
    "id": "shared2020science",
@@ -57231,35 +58516,46 @@
    "tags": {
     "topic": [
      "pain",
+     "emotion_regulation",
      "cognitive_control",
      "brain_body"
     ],
     "approach": [
      "fmri",
-     "pharmacology",
-     "other_imaging"
+     "computational_model"
     ],
     "type": [
      "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.3,
-    "notes": "Only title available; details inferred from limited information.",
-    "classified_at": "2026-09-14T05:33:18Z",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Tag type corrected manually for key formatting; approach includes fmri and computational_model (DCM); could also consider psychophysiology but not used.",
+    "classified_at": "2026-10-02T19:19:03Z",
     "usage": {
-     "input_tokens": 130,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 477,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 196,
-     "cost_usd": 0.00294
+     "output_tokens": 374,
+     "cost_usd": 0.00554
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "An fMRI study replicated findings linking locus coeruleus, rostroventromedial medulla, and periaqueductal grey to attentional analgesia, and used PPI and dynamic causal modelling to identify two parallel cortico-brainstem pathways modulating pain.",
+   "key_finding": "Dynamic causal modelling revealed two parallel cortico-brainstem circuits—an ACC-right LC bidirectional loop and a top-down ACC-PAG-RVM pathway—that are modulated by attentional demand during pain.",
+   "free_keywords": [
+    "locus coeruleus",
+    "periaqueductal grey",
+    "rostroventromedial medulla",
+    "dynamic causal modelling",
+    "psychophysiological interaction",
+    "attentional analgesia",
+    "brainstem"
+   ]
   },
   {
    "id": "shared2020functional",
@@ -59076,8 +60372,7 @@
    "publisher_url": "https://doi.org/10.48550/arxiv.2008.02961",
    "tags": {
     "topic": [
-     "cognitive_control",
-     "perception"
+     "cognitive_control"
     ],
     "approach": [
      "fmri",
@@ -59090,22 +60385,32 @@
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.75,
-    "notes": "Only abstract available; type/approach inferred as methods-oriented but empirical application to HCP data.",
-    "classified_at": "2026-09-14T05:35:00Z",
+    "confidence": 0.85,
+    "notes": "Abstract only; type classified as empirical given new model evaluation on data, though it is primarily a methods contribution.",
+    "classified_at": "2026-10-02T19:19:06Z",
     "usage": {
-     "input_tokens": 389,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 395,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 319,
-     "cost_usd": 0.00469
+     "output_tokens": 300,
+     "cost_usd": 0.00463
     }
    },
-   "n_comments": 1
+   "n_comments": 1,
+   "summary": "The authors developed a surface-based convolutional neural network (BrainSurfCNN) to predict individual task-evoked fMRI contrasts from resting-state functional connectivity fingerprints.",
+   "key_finding": "BrainSurfCNN improved prediction accuracy of task contrasts over baseline methods and outperformed test-retest reliability benchmarks in subject identification.",
+   "free_keywords": [
+    "connectome fingerprinting",
+    "surface-based CNN",
+    "resting-state fMRI",
+    "task contrast prediction",
+    "contrastive loss",
+    "subject identification"
+   ]
   },
   {
    "id": "shared2020confirmation",
@@ -59280,38 +60585,47 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "chronic_pain",
      "pain",
+     "chronic_pain",
      "social",
      "empathy",
-     "placebo"
+     "clinical"
     ],
     "approach": [
      "fmri",
-     "mediation",
-     "behavioral"
+     "mediation"
     ],
     "type": [
      "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.85,
     "notes": null,
-    "classified_at": "2026-09-14T05:35:12Z",
+    "classified_at": "2026-10-02T19:19:10Z",
     "usage": {
-     "input_tokens": 518,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 496,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 314,
-     "cost_usd": 0.0049
+     "output_tokens": 319,
+     "cost_usd": 0.00503
     }
    },
-   "n_comments": 1
+   "n_comments": 1,
+   "summary": "Using simultaneous fMRI hyperscanning of patient-clinician dyads, the study found that patient pain relief was mediated by nonverbal behavioral mirroring and brain-to-brain concordance in theory-of-mind and social mirroring regions, especially when rapport existed.",
+   "key_finding": "Patient analgesia was mediated by patient-clinician nonverbal mirroring and brain-to-brain concordance in theory-of-mind/social mirroring circuitry, with dynamic brain coupling occurring only in dyads with prior established rapport.",
+   "free_keywords": [
+    "hyperscanning",
+    "therapeutic alliance",
+    "theory-of-mind",
+    "psychosocial analgesia",
+    "clinical rapport",
+    "two-person neuroscience"
+   ]
   },
   {
    "id": "shared2020metabolic",
@@ -59870,7 +61184,42 @@
    "publisher_url": "https://doi.org/10.3758/s13423-017-1317-5.pdf",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1596137620228800",
    "kind": "paper",
-   "n_comments": 3
+   "n_comments": 3,
+   "tags": {
+    "topic": [
+     "cognitive_control"
+    ],
+    "approach": [
+     "computational_model"
+    ],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "This annotated reading list guided readers through eight key texts for learning Bayesian statistical reasoning and its application to cognitive science.",
+   "key_finding": null,
+   "free_keywords": [
+    "Bayesian statistics",
+    "reading list",
+    "tutorial",
+    "statistical inference"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.4,
+    "notes": "Title-only; not a typical CANlab empirical topic, likely a methods/teaching resource outside core taxonomy, tagged minimally.",
+    "classified_at": "2026-10-02T19:19:13Z",
+    "usage": {
+     "input_tokens": 138,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 188,
+     "cost_usd": 0.003
+    }
+   }
   },
   {
    "id": "shared2020pageb",
@@ -60191,7 +61540,46 @@
    "via_url": "https://twitter.com/junaidsmerchant/status/1286813214240657408?s=12",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1595994842198400",
-   "kind": "paper"
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control"
+    ],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods",
+     "mega_analysis",
+     "machine_learning"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "Analyzed multi-site ABCD fMRI data to show that scanner manufacturer, model, and individual scanner identity introduce detectable variance, and applied ComBat empirical Bayes harmonization to correct for these differences.",
+   "key_finding": "Scanner-related variance was detectable in resting-state and task fMRI across sites in the ABCD dataset and could be effectively harmonized using ComBat.",
+   "free_keywords": [
+    "ABCD study",
+    "scanner harmonization",
+    "ComBat",
+    "multi-site fMRI",
+    "developmental neuroimaging"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.8,
+    "notes": null,
+    "classified_at": "2026-10-02T19:19:16Z",
+    "usage": {
+     "input_tokens": 440,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 262,
+     "cost_usd": 0.00434
+    }
+   }
   },
   {
    "id": "gilam2020what",
@@ -61226,7 +62614,47 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1591630558143300",
    "kind": "paper",
    "n_comments": 6,
-   "publisher_url": "https://doi.org/10.7554/elife.53470"
+   "publisher_url": "https://doi.org/10.7554/elife.53470",
+   "tags": {
+    "topic": [
+     "cognitive_control",
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "other_imaging",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The authors used multi-shell diffusion MRI in 413 participants to map insular microstructural organization, linking it to functional circuitry with the anterior cingulate and to individual differences in cognitive control.",
+   "key_finding": "Insular microstructural subdivisions mirrored functional connectivity with salience network regions and predicted individual differences in cognitive control ability, with convergent findings in macaques.",
+   "free_keywords": [
+    "insula",
+    "diffusion MRI",
+    "cytoarchitecture",
+    "salience network",
+    "macaque comparison",
+    "microstructure"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.7,
+    "notes": "Only abstract available; approach inferred from described multi-shell diffusion modeling and predictive analysis.",
+    "classified_at": "2026-10-02T19:19:20Z",
+    "usage": {
+     "input_tokens": 467,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 282,
+     "cost_usd": 0.0046
+    }
+   }
   },
   {
    "id": "shared2020connected",
@@ -64141,34 +65569,41 @@
    "kind": "paper",
    "publisher_url": "https://doi.org/10.48550/arxiv.2002.06177",
    "tags": {
-    "topic": [
-     "cognitive_control"
-    ],
+    "topic": [],
     "approach": [
-     "ai_integration",
-     "computational_model"
+     "ai_integration"
     ],
     "type": [
-     "commentary"
+     "review"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.4,
-    "notes": "Not a CANlab neuroscience paper; appears unrelated to typical lab topics but tagged based on available abstract.",
-    "classified_at": "2026-09-14T05:39:20Z",
+    "confidence": 0.5,
+    "notes": "Not a neuroscience paper; included due to AI integration relevance but outside typical CANlab topics.",
+    "classified_at": "2026-10-02T19:19:22Z",
     "usage": {
-     "input_tokens": 204,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 223,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 216,
-     "cost_usd": 0.00329
+     "output_tokens": 202,
+     "cost_usd": 0.00331
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "The author argued that robust AI requires a hybrid, knowledge-driven, reasoning-based approach centered on cognitive models rather than purely scaling general-purpose machine learning.",
+   "key_finding": null,
+   "free_keywords": [
+    "artificial intelligence",
+    "cognitive models",
+    "hybrid AI",
+    "reasoning",
+    "symbolic AI",
+    "deep learning critique"
+   ]
   },
   {
    "id": "colloca2020placebo",
@@ -65562,29 +66997,40 @@
      "chronic_pain",
      "pain"
     ],
-    "approach": [],
+    "approach": [
+     "pharmacology"
+    ],
     "type": [
-     "commentary"
+     "review"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.3,
-    "notes": "Only a title/informal message is available, not an actual paper; tagging based on minimal context.",
-    "classified_at": "2026-09-14T05:40:44Z",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Review article with no CANlab-specific neuroimaging content; abstract only available.",
+    "classified_at": "2026-10-02T19:19:25Z",
     "usage": {
-     "input_tokens": 107,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 473,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 167,
-     "cost_usd": 0.0026
+     "output_tokens": 215,
+     "cost_usd": 0.00394
     }
    },
    "n_comments": 0,
-   "publisher_url": "https://doi.org/10.1111/bph.13957"
+   "publisher_url": "https://doi.org/10.1111/bph.13957",
+   "summary": "This review examined the role of ATP-gated P2X3, P2X4 and P2X7 receptor channels in chronic inflammatory, neuropathic and cancer pain and discussed pharmacological targeting opportunities.",
+   "key_finding": null,
+   "free_keywords": [
+    "P2X receptors",
+    "ATP signalling",
+    "neuropathic pain",
+    "ion channels",
+    "purinergic signalling"
+   ]
   },
   {
    "id": "smith2019widespread",
@@ -69334,6 +70780,7 @@
     "topic": [],
     "approach": [
      "neuroimaging_methods",
+     "machine_learning",
      "open_tools"
     ],
     "type": [
@@ -69341,23 +70788,33 @@
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
-    "input_mode": "title_only",
-    "confidence": 0.25,
-    "notes": "Only a title is available with no abstract or body text; tags are inferred from the method's known statistical/methodological nature rather than direct content, so confidence is low.",
-    "classified_at": "2026-09-14T05:44:11Z",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "General statistics/methods paper applied to brain imaging and genetics examples; topic tags left empty as it is domain-general methodology.",
+    "classified_at": "2026-10-02T19:19:29Z",
     "usage": {
-     "input_tokens": 126,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 416,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 232,
-     "cost_usd": 0.00329
+     "output_tokens": 316,
+     "cost_usd": 0.00484
     }
    },
    "n_comments": 0,
-   "publisher_url": "https://doi.org/10.7554/elife.41690"
+   "publisher_url": "https://doi.org/10.7554/elife.41690",
+   "summary": "The authors developed Multiscale Graph Correlation (MGC), a statistical dependence test combining k-nearest neighbors, kernel methods, and multiscale analysis to detect and characterize relationships across disparate data types.",
+   "key_finding": "MGC required far fewer samples than existing dependence tests to achieve equivalent statistical power across a wide benchmark of high-dimensional and nonlinear relationships, and successfully detected dependencies in brain imaging and cancer genetics data.",
+   "free_keywords": [
+    "dependence testing",
+    "statistical power",
+    "multiscale analysis",
+    "genomics",
+    "connectomics",
+    "nonparametric methods"
+   ]
   },
   {
    "id": "shared2019control",
@@ -69443,7 +70900,45 @@
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1549931877000900",
    "kind": "paper",
-   "publisher_url": "https://doi.org/10.1101/545954"
+   "publisher_url": "https://doi.org/10.1101/545954",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "ai_integration",
+     "open_tools"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The authors created THINGS, a database of 1,854 object concepts and over 26,000 naturalistic images, validated using semantic embeddings and deep neural network representations.",
+   "key_finding": "A deep convolutional neural network showed high selectivity for different object concepts while preserving within-concept image variability, validating the database's utility.",
+   "free_keywords": [
+    "object concepts",
+    "image database",
+    "semantic embedding",
+    "crowdsourcing",
+    "convolutional neural network",
+    "naturalistic images"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Primarily a resource/methods paper; approach tags limited by abstract-only text.",
+    "classified_at": "2026-10-02T19:19:32Z",
+    "usage": {
+     "input_tokens": 542,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 242,
+     "cost_usd": 0.00435
+    }
+   }
   },
   {
    "id": "stauss2019multicenter",
@@ -70964,35 +72459,42 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "pain",
-     "clinical"
+     "pain"
     ],
     "approach": [
      "fmri",
-     "neuromarker",
-     "machine_learning"
+     "neuromarker"
     ],
     "type": [
      "review"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.85,
-    "notes": "Fixed a stray key typo in output; type field corrected to 'type'.",
-    "classified_at": "2026-09-14T05:45:56Z",
+    "notes": "Abstract only available; no new data, classified as review discussing neuromarker validity.",
+    "classified_at": "2026-10-02T19:19:36Z",
     "usage": {
-     "input_tokens": 586,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 589,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 269,
+     "output_tokens": 256,
      "cost_usd": 0.00458
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "This review critically examined the evidence for functional neuroimaging-based pain biomarkers, arguing that many purported pain-specific brain responses can also occur in non-painful salience-related contexts.",
+   "key_finding": "Many brain responses used as pain biomarkers overlap with non-painful salient stimuli and can occur even in congenital analgesia, questioning their specificity and clinical utility.",
+   "free_keywords": [
+    "pain biomarkers",
+    "salience",
+    "congenital analgesia",
+    "mechanism-based stratification",
+    "clinical utility"
+   ]
   },
   {
    "id": "shared2018justj",
@@ -72564,21 +74066,30 @@
    },
    "classification": {
     "taxonomy_version": "1.1.0",
-    "prompt_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.5,
-    "notes": null,
-    "classified_at": "2026-09-15T13:46:55Z",
+    "confidence": 0.7,
+    "notes": "Type field had stray space key in draft; corrected in output structure.",
+    "classified_at": "2026-10-02T19:19:39Z",
     "usage": {
-     "input_tokens": 676,
-     "cache_read_input_tokens": 4104,
+     "input_tokens": 707,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 124,
-     "cost_usd": 0.00341
+     "output_tokens": 263,
+     "cost_usd": 0.00489
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "Researchers built a multi-person brain-to-brain interface combining EEG decoding and TMS stimulation to let three people collaboratively solve a Tetris-like task.",
+   "key_finding": "Five groups achieved an average task accuracy of 0.813, and Receivers learned to weight information from more reliable Senders based on transmitted brain signals alone.",
+   "free_keywords": [
+    "brain-to-brain interface",
+    "EEG decoding",
+    "collaborative cognition",
+    "Tetris task",
+    "social network of brains"
+   ]
   },
   {
    "id": "shared2018motor",
@@ -78454,30 +79965,40 @@
      "cognitive_control"
     ],
     "approach": [
-     "machine_learning",
-     "computational_model"
+     "computational_model",
+     "machine_learning"
     ],
     "type": [
      "methods"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.6,
-    "notes": "This paper is a quantum computing/machine learning methods paper unrelated to typical CANlab neuroscience topics; tags are approximate given lack of direct neuroscience content.",
-    "classified_at": "2026-09-14T05:52:41Z",
+    "confidence": 0.4,
+    "notes": "This paper is outside CANlab's typical neuroscience domain; it is a quantum computing/machine learning methods paper unrelated to affective or cognitive neuroscience topics in the taxonomy. Tags are approximate best fits.",
+    "classified_at": "2026-10-02T19:19:43Z",
     "usage": {
-     "input_tokens": 345,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 320,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 322,
-     "cost_usd": 0.00463
+     "output_tokens": 310,
+     "cost_usd": 0.00458
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "The authors developed a quantum computing implementation of the Hopfield neural network that encodes exponentially large networks into polynomially many qubits, achieving logarithmic computational complexity.",
+   "key_finding": "The quantum Hopfield network achieves logarithmic computational complexity in data dimension, demonstrated via a genetic sequence recognition application.",
+   "free_keywords": [
+    "quantum computing",
+    "Hopfield network",
+    "content-addressable memory",
+    "quantum algorithms",
+    "pattern recognition",
+    "genetic sequence recognition"
+   ]
   },
   {
    "id": "shared2017httpstcofvbobhwassrtrue",
@@ -79181,29 +80702,42 @@
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1505938656000432",
    "kind": "paper",
    "tags": {
-    "topic": [],
-    "approach": [],
+    "topic": [
+     "pain",
+     "perception"
+    ],
+    "approach": [
+     "machine_learning"
+    ],
     "type": [
-     "commentary"
+     "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.1,
-    "notes": "Only a fragmentary title suggesting a system-generated comment (e.g., from a collaborative platform) is available; no abstract or text to determine actual research content.",
-    "classified_at": "2026-09-14T05:53:25Z",
+    "confidence": 0.35,
+    "notes": "Only title available; inferred topic and approach from title text, limiting confidence.",
+    "classified_at": "2026-10-02T19:19:46Z",
     "usage": {
-     "input_tokens": 126,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 133,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 167,
-     "cost_usd": 0.00264
+     "output_tokens": 163,
+     "cost_usd": 0.00274
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "The study developed a machine learning approach to continuously estimate pain intensity from facial expression video data.",
+   "key_finding": null,
+   "free_keywords": [
+    "facial expression analysis",
+    "pain intensity estimation",
+    "computer vision",
+    "automatic pain detection"
+   ]
   },
   {
    "id": "shared2017google",
@@ -79583,8 +81117,7 @@
    "publisher_url": "https://doi.org/10.48550/arxiv.1708.04670",
    "tags": {
     "topic": [
-     "pain",
-     "perception"
+     "pain"
     ],
     "approach": [
      "machine_learning",
@@ -79592,26 +81125,36 @@
      "computational_model"
     ],
     "type": [
-     "empirical"
+     "methods"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
     "confidence": 0.85,
-    "notes": "Not a CANlab neuroimaging paper; based on facial expression and machine learning methods for pain estimation.",
-    "classified_at": "2026-09-14T05:53:47Z",
+    "notes": "Not a CANlab paper; computer vision/affective computing study on automatic pain estimation from facial expressions.",
+    "classified_at": "2026-10-02T19:19:49Z",
     "usage": {
-     "input_tokens": 552,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 570,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 313,
-     "cost_usd": 0.00495
+     "output_tokens": 296,
+     "cost_usd": 0.00494
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "The authors developed DeepFaceLIFT, a two-stage personalized neural network and Gaussian process model that estimated individuals' self-reported pain (VAS) from facial expressions.",
+   "key_finding": "Personalized modeling improved intra-class correlation for pain estimation from 19% (baseline) to 35%, while also identifying individualized pain-relevant facial regions.",
+   "free_keywords": [
+    "facial expression analysis",
+    "VAS pain scale",
+    "UNBC-McMaster Shoulder Pain Archive",
+    "Gaussian process regression",
+    "personalized modeling",
+    "multi-task learning"
+   ]
   },
   {
    "id": "shared2017whenisgood",
@@ -83052,7 +84595,38 @@
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1480490429000477",
    "kind": "paper",
-   "publisher_url": "https://doi.org/10.1101/088278"
+   "publisher_url": "https://doi.org/10.1101/088278",
+   "tags": {
+    "topic": [],
+    "approach": [],
+    "type": [
+     "commentary"
+    ]
+   },
+   "summary": "Presented ten simple rules for structuring scientific papers to help authors communicate their main ideas more effectively to readers.",
+   "key_finding": null,
+   "free_keywords": [
+    "scientific writing",
+    "manuscript structure",
+    "science communication",
+    "career development"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Non-empirical guidance piece unrelated to CANlab's core neuroscience topics; no topic/approach tags apply.",
+    "classified_at": "2026-10-02T19:19:51Z",
+    "usage": {
+     "input_tokens": 266,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 165,
+     "cost_usd": 0.00303
+    }
+   }
   },
   {
    "id": "shared2016psychiatric",
@@ -84511,10 +86085,13 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "pain"
+     "pain",
+     "chronic_pain",
+     "clinical",
+     "emotion"
     ],
     "approach": [
-     "other_imaging"
+     "fmri"
     ],
     "type": [
      "review"
@@ -84522,22 +86099,30 @@
    },
    "classification": {
     "taxonomy_version": "1.1.0",
-    "prompt_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.2,
-    "notes": "Only title available; tagging is a best guess based on title alone, likely a review chapter on optogenetic methods applied to pain research.",
-    "classified_at": "2026-09-15T13:48:02Z",
+    "confidence": 0.3,
+    "notes": "Only title available; type and approach inferred with low confidence, could be empirical rather than review.",
+    "classified_at": "2026-10-02T19:19:54Z",
     "usage": {
-     "input_tokens": 94,
-     "cache_read_input_tokens": 4104,
+     "input_tokens": 129,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 185,
-     "cost_usd": 0.00286
+     "output_tokens": 198,
+     "cost_usd": 0.00308
     }
    },
    "n_comments": 0,
-   "publisher_url": "https://doi.org/10.1016/j.biopsych.2014.08.004"
+   "publisher_url": "https://doi.org/10.1016/j.biopsych.2014.08.004",
+   "summary": "This paper discussed the anterior cingulate cortex as a key neural hub linking chronic pain to depression, likely synthesizing evidence from animal and human studies.",
+   "key_finding": null,
+   "free_keywords": [
+    "anterior cingulate cortex",
+    "pain-induced depression",
+    "comorbidity",
+    "chronic pain"
+   ]
   },
   {
    "id": "ji2012modulation",
@@ -85114,9 +86699,7 @@
    "kind": "paper",
    "publisher_url": "https://doi.org/10.48550/arxiv.1608.06548",
    "tags": {
-    "topic": [
-     "cognitive_control"
-    ],
+    "topic": [],
     "approach": [
      "open_tools"
     ],
@@ -85125,22 +86708,31 @@
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "abstract",
-    "confidence": 0.3,
-    "notes": "Only abstract available; content appears to be a broad perspective/commentary rather than empirical neuroscience, so most topic/approach tags may not strictly apply.",
-    "classified_at": "2026-09-14T05:58:38Z",
+    "confidence": 0.6,
+    "notes": "Abstract-only, broad policy/commentary piece not focused on CANlab's typical empirical topics.",
+    "classified_at": "2026-10-02T19:19:57Z",
     "usage": {
-     "input_tokens": 122,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 264,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 183,
-     "cost_usd": 0.00279
+     "output_tokens": 203,
+     "cost_usd": 0.0034
     }
    },
-   "n_comments": 0
+   "n_comments": 0,
+   "summary": "A group of over 60 neuroscientists convened to identify grand challenges in brain science across anatomy, physiology, and medicine, proposing an international computational infrastructure called The International Brain Station.",
+   "key_finding": null,
+   "free_keywords": [
+    "global brain initiative",
+    "neuroscience infrastructure",
+    "international collaboration",
+    "brain mapping",
+    "data sharing"
+   ]
   },
   {
    "id": "sudhof2016truth",
@@ -87226,33 +88818,39 @@
    "kind": "paper",
    "tags": {
     "topic": [
-     "clinical"
+     "cognitive_control",
+     "perception"
     ],
     "approach": [
+     "fmri",
+     "machine_learning",
      "other_imaging"
     ],
     "type": [
-     "commentary"
+     "empirical"
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
     "confidence": 0.3,
-    "notes": "Only title available; tags are inferred and speculative.",
-    "classified_at": "2026-09-14T06:00:04Z",
+    "notes": "invalid",
+    "classified_at": "2026-10-02T19:19:59Z",
     "usage": {
-     "input_tokens": 102,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 128,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 147,
-     "cost_usd": 0.00239
+     "output_tokens": 104,
+     "cost_usd": 0.00214
     }
    },
    "n_comments": 0,
-   "publisher_url": "https://doi.org/10.1016/j.neuroimage.2016.04.007"
+   "publisher_url": "https://doi.org/10.1016/j.neuroimage.2016.04.007",
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": []
   },
   {
    "id": "shared2016sciencedirectx",
@@ -87768,23 +89366,32 @@
     ]
    },
    "classification": {
-    "taxonomy_version": "1.0.0",
-    "prompt_version": "1.0.0",
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
     "model": "anthropic:claude-sonnet-5",
     "input_mode": "title_only",
-    "confidence": 0.4,
-    "notes": "Only title available; approach and specifics inferred minimally, actual analytic methods unknown.",
-    "classified_at": "2026-09-14T06:00:31Z",
+    "confidence": 0.35,
+    "notes": "Title-only; inferred as a narrative review given journal and topic; no methodological or imaging details available.",
+    "classified_at": "2026-10-02T19:20:02Z",
     "usage": {
-     "input_tokens": 124,
-     "cache_read_input_tokens": 3598,
+     "input_tokens": 116,
+     "cache_read_input_tokens": 4224,
      "cache_creation_input_tokens": 0,
-     "output_tokens": 178,
-     "cost_usd": 0.00275
+     "output_tokens": 173,
+     "cost_usd": 0.00281
     }
    },
    "n_comments": 0,
-   "publisher_url": "https://doi.org/10.1016/j.neuroscience.2016.05.017"
+   "publisher_url": "https://doi.org/10.1016/j.neuroscience.2016.05.017",
+   "summary": "This review discussed how brain reward circuitry modulates pain perception, nociceptive processing, and analgesic responses.",
+   "key_finding": null,
+   "free_keywords": [
+    "reward center",
+    "nucleus accumbens",
+    "analgesia",
+    "nociception",
+    "dopamine"
+   ]
   },
   {
    "id": "shared2016httpbrainoxfordjournalsorgcontentearlybrainawwb",
