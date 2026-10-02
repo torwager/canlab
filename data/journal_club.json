@@ -3412,12 +3412,49 @@
    "shared_by": "Byeol",
    "reactions": [],
    "url": "https://www.medrxiv.org/content/10.1101/2025.06.13.25329541v4",
-   "doi": "10.1101/2025.06.13.25329541v4",
-   "title": "Link on medrxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2025.06.13.25329541",
+   "title": "Automation of Systematic Reviews with Large Language Models",
+   "abstract": "ImportanceSystematic reviews (SRs) inform evidence-based decision making. Yet, many take over a year to complete, are labor intensive, prone to human error, and face reproducibility challenges; thus limiting access to timely and reliable information.\n\nObjectiveTo validate a large language model (LLM)-based workflow (otto-SR) to automate three of the most labour intensive tasks in performing SRs: article screening, data extraction, and risk of bias assessment; and to assess its feasibility in rapidly updating existing reviews.\n\nDesign, setting, and participantsWe conducted a validation study in four phases, with direct benchmarking against graduate-level human researchers in phases 1 and 2. Phase 1: article screening performance was measured across 32,357 citations from 5 systematic reviews. The reference standard consisted of the original reviews screening decisions after full-text screening. Phase 2: data extraction performance was measured across 4,495 data points from 495 studies in 7 reviews. Phase 3: risk of bias assessment (ROB2, Newcastle-Ottawa, QUADAS2) performance was measured across 345 studies from 12 reviews. Reference standards for Phase 2 and Phase 3 were created after blinded adjudication of the original review extraction and RoB assessments. Phase 4: otto-SR was used to reproduce and update the primary analysis from an issue of Cochrane reviews (n=12 reviews, 146,276 citations), with analytical comparisons to the original meta-analyzed findings. All discrepancies underwent dual human review.\n\nResultsotto-SR showed high performance in phase 1 article screening (otto-SR: 96.7% sensitivity, 97.9% specificity; human: 81.7% sensitivity, 98.1% specificity) and phase 2 data extraction (otto-SR: 93.1% accuracy; human: 79.7% accuracy). In phase 3, otto-SR demonstrated high interrater reliability for risk of bias judgements (ROB2 0.98, Newcastle-Ottawa 0.95, QUADAS2 0.74; Gwet AC2). In phase 4, otto-SR, reproduced and updated the primary analysis from an issue of Cochrane reviews. Across Cochrane reviews, otto-SR incorrectly excluded a median of 0 studies (IQR 0 to 0.25), and found nearly twice as many eligible studies compared to the original authors (n= 114 vs. 64). Meta-analyses based on otto-SR generated screening and extraction outputs, subsequently verified through dual human review, yielded newly statistically significant effect estimates in 2 reviews and negated significance in 1 review.\n\nConclusions and relevanceLLMs have high performance in article screening, data extraction, and risk of bias assessments. They can rapidly reproduce and update existing systematic reviews, laying the foundation for automated, scalable, and reliable evidence synthesis.",
+   "authors": [
+    "Cao, C.",
+    "Arora, R.",
+    "Cento, P.",
+    "Budak, A.",
+    "Manta, K.",
+    "Farahani, E.",
+    "Cecere, M.",
+    "Selemon, A.",
+    "Sang, J.",
+    "Gong, L. X.",
+    "Kloosterman, R.",
+    "Jiang, S.",
+    "Saleh, R.",
+    "Margalik, D.",
+    "Lin, J.",
+    "Jomy, J.",
+    "Xie, J.",
+    "Chen, D.",
+    "Gorla, J.",
+    "Lee, S.",
+    "Zhang, K.",
+    "Kuang, J.",
+    "Ware, H.",
+    "Whelan, M. G.",
+    "Teja, B.",
+    "Leung, A. A.",
+    "Arora, R. K.",
+    "Pillay, J.",
+    "Hartling, L.",
+    "Detsky, A.",
+    "Noetel, M.",
+    "Emerson, D. B.",
+    "Tricco, A. C.",
+    "Church, G. M.",
+    "Moher, D.",
+    "Bobrovitz, N."
+   ],
+   "journal": "medRxiv",
+   "year": 2026,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2025.06.13.25329541v4",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1781718057518829",
@@ -3447,8 +3484,7 @@
      "cost_usd": 0.00258
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2026builds",
@@ -4465,7 +4501,7 @@
    ],
    "url": "https://arxiv.org/abs/2402.14583",
    "doi": "10.48550/arxiv.2402.14583",
-   "title": "Link on arxiv.org",
+   "title": "Dataset Artefacts are the Hidden Drivers of the Declining Disruptiveness in Science",
    "abstract": "Park et al. [1] reported a decline in the disruptiveness of scientific and technological knowledge over time. Their main finding is based on the computation of CD indices, a measure of disruption in citation networks [2], across almost 45 million papers and 3.9 million patents. Due to a factual plotting mistake, database entries with zero references were omitted in the CD index distributions, hiding a large number of outliers with a maximum CD index of one, while keeping them in the analysis [1]. Our reanalysis shows that the reported decline in disruptiveness can be attributed to a relative decline of these database entries with zero references. Notably, this was not caught by the robustness checks included in the manuscript. The regression adjustment fails to control for the hidden outliers as they correspond to a discontinuity in the CD index. Proper evaluation of the Monte-Carlo simulations reveals that, because of the preservation of the hidden outliers, even random citation behaviour replicates the observed decline in disruptiveness. Finally, while these papers and patents with supposedly zero references are the hidden drivers of the reported decline, their source documents predominantly do make references, exposing them as pure dataset artefacts.",
    "authors": [
     "Holst, Vincent",
@@ -4474,7 +4510,7 @@
     "Wenmackers, Sylvia",
     "Ginis, Vincent"
    ],
-   "journal": "arXiv.org",
+   "journal": "arXiv",
    "year": 2024,
    "pdf_url": "https://arxiv.org/pdf/2402.14583",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1780534516647659",
@@ -4505,8 +4541,7 @@
      "cost_usd": 0.00255
     }
    },
-   "n_comments": 4,
-   "title_unresolved": true
+   "n_comments": 4
   },
   {
    "id": "shared2026httpsarxivorgpdfc",
@@ -4593,12 +4628,20 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2025.05.21.654808v1",
-   "doi": "10.1101/2025.05.21.654808v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2025.05.21.654808",
+   "title": "Frontostriatal salience network expands as executive networks contract in Obsessive-Compulsive Disorder",
+   "abstract": "Obsessive-compulsive disorder (OCD), marked by intrusive thoughts (obsessions) and repetitive behaviours (compulsions), is linked to dysfunction in frontostriatal circuits. However, neural differences potentially contributing to these alterations are often small, and conflicting evidence obscures the directionality and underlying mechanisms of these alterations. Like many psychiatric conditions, OCD follows a fluctuating symptom trajectory, with symptoms shifting dramatically over months--either naturally or due to treatment. Yet, the absence of longitudinal neuroimaging studies limits our understanding of the neural mechanisms driving these changes.\n\nHere, we used precision functional mapping in highly sampled individuals with OCD, uncovering a striking imbalance within frontostriatal networks. We identified a twofold expansion of the salience network in these individuals and a concomitant contraction of the frontoparietal network. Notably, salience network expansion was driven by border shifts, encroaching on adjacent executive networks and leading to their contraction. This imbalance within frontostriatal networks may relate to excessive attention to internal stimuli and lack of goal-directed control, which are classically observed in OCD. Longitudinal analyses of neuroimaging data collected over several months revealed frontostriatal connectivity changes tracking symptom severity. Overall, these findings pinpoint network-level features that may confer risk for individuals with OCD and highlight dynamic connectivity shifts tied to severity of OCD symptoms over time. By isolating frontostriatal abnormalities at the individual level in OCD and their relationship to symptom severity for the first time, this work paves the way for more targeted, personalized treatment strategies and identifies precision functional mapping as a model for precision psychiatry.",
+   "authors": [
+    "Vaghi, M. M.",
+    "Norgaard, M.",
+    "Shim, S.",
+    "Rios, J. A. H.",
+    "Bissett, P. G.",
+    "Rodriguez, C. I.",
+    "Poldrack, R. A."
+   ],
+   "journal": "bioRxiv",
+   "year": 2025,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2025.05.21.654808v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1780424707706749",
@@ -4630,8 +4673,7 @@
      "cost_usd": 0.00275
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2026httpswwwtandfonlinecomdoifullabstract",
@@ -5661,7 +5703,7 @@
    "reactions": [],
    "url": "https://arxiv.org/abs/2605.06584",
    "doi": "10.48550/arxiv.2605.06584",
-   "title": "Link on arxiv.org",
+   "title": "NeuroAgent: LLM Agents for Multimodal Neuroimaging Analysis and Research",
    "abstract": "Multimodal neuroimaging analysis often involves complex, modality-specific preprocessing workflows that require careful configuration, quality control, and coordination across heterogeneous toolchains. Beyond preprocessing, downstream statistical analysis and disease classification commonly require task-specific code, evaluation protocols, and data-format conventions, creating additional barriers between raw acquisitions and reproducible scientific analysis. We present NeuroAgent, an LLM-driven agentic framework that automates key preprocessing and analysis steps for heterogeneous neuroimaging data, including sMRI, fMRI, dMRI, and PET, and supports interactive downstream analysis through natural-language queries. NeuroAgent employs a hierarchical multi-agent architecture with a feedback-driven Generate-Execute-Validate engine: agents autonomously generate executable preprocessing code, detect and recover from runtime errors, and validate output integrity. We evaluate the system on 1,470 subjects pooled across all ADNI phases (CN=1,000, AD=470), where all subjects have sMRI and tabular data, with subsets also having Tau-PET (n=469), fMRI (n=278), and DTI ($n=620$). Pipeline ablation studies across multiple LLM backends show that capable models reach up to 100% intent-parsing accuracy, with the strongest backend (Qwen3.5-27B) reaching 84.8% end-to-end preprocessing step correctness. Automated recovery limits manual intervention to edge cases where human review is required via the Human-In-The-Loop interface. For Alzheimer's Disease classification using automatically preprocessed multimodal data, our agent ensemble achieves an AUC of 0.9518 with four modalities, outperforming all single-modality baselines. These results show that NeuroAgent can reduce the manual effort required for neuroimaging preprocessing and enable end-to-end automated analysis pipelines for neuroimaging research.",
    "authors": [
     "Zhong, Lujia",
@@ -5672,7 +5714,7 @@
     "Xia, Mingyang",
     "Shi, Yonggang"
    ],
-   "journal": "arXiv.org",
+   "journal": "arXiv",
    "year": 2026,
    "pdf_url": "https://arxiv.org/pdf/2605.06584",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1778595313817549",
@@ -5710,8 +5752,7 @@
      "cost_usd": 0.00595
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "lv2026three",
@@ -7840,12 +7881,30 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.64898/2026.03.13.711590v1.full.pdf",
-   "doi": "10.64898/2026.03.13.711590v1.full.pdf",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.64898/2026.03.13.711590",
+   "title": "Human claustrum neurons encode uncertainty and prediction errors during aversive learning",
+   "abstract": "Flexible behavior depends on continuous updating of internal models, yet the neural circuits coordinating this process remain poorly understood [1]. The claustrum -- reciprocally connected to nearly the entire neocortex -- is uniquely positioned to influence cortical processing. Here we report single-neuron recordings from the human claustrum during aversive learning [2], with anterior cingulate cortex and amygdala recordings for comparison. Claustrum and anterior cingulate neurons displayed structured, task-related responses. Distinct subpopulations encoded stimulus onset and action-contingent outcomes, with outcome representations diverging between regions. Critically, both regions encoded model-derived latent variables -- uncertainty and prediction error -- but with different temporal profiles: only the anterior cingulate carried uncertainty signals during the intertrial period, while both regions encoded uncertainty and prediction error during the active-avoidance period. The amygdala, by contrast, showed minimal latent-variable modulation. These findings provide evidence that human claustrum neurons track higher-order cognitive variables not directly observable from sensory input, and reveal dissociable roles for the claustrum and anterior cingulate cortex in tracking latent task states.",
+   "authors": [
+    "damisah, e. c.",
+    "Hu, M.",
+    "Dalvit, R.",
+    "Medina, M.",
+    "dougherty, m.",
+    "Zhou, Y.",
+    "barretonieves, j.",
+    "obaid, s.",
+    "Afrasiyabi, A.",
+    "Krishnaswamy, S.",
+    "Kaye, A. P.",
+    "Gunel, M.",
+    "krystal, j.",
+    "Sheth, K. N.",
+    "Gu, X.",
+    "Pittenger, C.",
+    "wise, t."
+   ],
+   "journal": "bioRxiv",
+   "year": 2026,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.64898/2026.03.13.711590v1.full.pdf",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1775143098918919",
@@ -7878,8 +7937,7 @@
      "cost_usd": 0.0029
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2026httpswwwmedrxivorgcontentv",
@@ -7893,12 +7951,22 @@
     }
    ],
    "url": "https://www.medrxiv.org/content/10.1101/2025.02.12.25322157v2",
-   "doi": "10.1101/2025.02.12.25322157v2",
-   "title": "Link on medrxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2025.02.12.25322157",
+   "title": "Optimized multichannel tDCS protocol for clinical use in patients with major depressive disorder",
+   "abstract": "Application of transcranial direct current stimulation (tDCS) has been increased in neuropsychiatric disorders, especially depression, in the last decade. Despite promising results, the clinical efficacy of tDCS is still under debate and researchers and clinicians try to maximize efficacy by developing optimized/individualized protocols. In this randomized sham-controlled, parallel-group clinical trial, we optimized a stimulation protocol for increasing and decreasing activity in the left and right dorsolateral prefrontal cortex (DLPFC). Sixty patients with unipolar depression received 30 sessions of conventional, optimized multichannel, or sham tDCS in parallel groups. In the multichannel optimized tDCS, electrical current was delivered via 7 small electrodes while in the conventional and sham tDCS large anodal and cathodal electrodes were used. Intervention efficacy and treatment response were evaluated before treatment and after the 10th, 20th, 30th sessions, and 1- and 3-months post-intervention. Cognitive functions and brain connectivity were also assessed. Compared to the sham group, both active tDCS groups significantly reduced depressive symptoms up to 3 months following the intervention, and the therapeutic effects were observed from session 10th only in the multichannel tDCS groups. Furthermore, the effect size from the optimized multichannel protocol was significantly larger than the conventional tDCS. These data suggest that optimized multichannel tDCS might maximize therapeutic efficacy in major depression.",
+   "authors": [
+    "Salehinejad, M. A.",
+    "Abdi, M.",
+    "Dadashi, M.",
+    "Hallajian, A.-H.",
+    "Sharifi, K.",
+    "Khadem, A.",
+    "Salvador, R.",
+    "Ruffini, G.",
+    "Nitsche, M. A."
+   ],
+   "journal": "medRxiv",
+   "year": 2025,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2025.02.12.25322157v2",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1775137988652119",
@@ -7931,8 +7999,7 @@
      "cost_usd": 0.00276
     }
    },
-   "n_comments": 1,
-   "title_unresolved": true
+   "n_comments": 1
   },
   {
    "id": "shared2026sciencedirectg",
@@ -8278,12 +8345,20 @@
    "shared_by": "tor",
    "reactions": [],
    "url": "https://www.biorxiv.org/content/10.64898/2026.03.20.713098v1.full.pdf",
-   "doi": "10.64898/2026.03.20.713098v1.full.pdf",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.64898/2026.03.20.713098",
+   "title": "Characterising the diffusion functional signature of negative BOLD with interleaved TMS-fMRI in the human brain",
+   "abstract": "The coupling between brain excitatory activity and positive blood oxygen level-dependent (BOLD) responses is well-established. Although often associated with inhibition, negative BOLD remains partially understood. Moving away from neurovascular coupling, apparent diffusion coefficient (ADC)-fMRI provides a more direct measure of excitatory activity, possibly mediated by transient cellular deformations. While decreases in ADC align with positive BOLD, the possible translation of negative BOLD into positive ADC has not been investigated in humans. Diffusion-weighted fMRI (dfMRI) combines vascular and microstructural contributions. Using interleaved subthreshold transcranial magnetic stimulation (TMS)-fMRI on the primary motor cortex (M1), we induced negative BOLD responses in contralateral M1 and primary somatosensory cortex (S1). This was accompanied by a negative dfMRI response, but no ADC-fMRI response, indicating minimal microstructural fluctuations. In ipsilateral M1/S1, no BOLD response was detected while dfMRI revealed a positive cluster, suggesting sensitivity to subtle neural activity. These findings provide new insights into vascular and neuronal responses underlying subthreshold TMS and negative BOLD.",
+   "authors": [
+    "de Riedmatten, I.",
+    "Spencer, A. P. C.",
+    "Martuzzi, R.",
+    "Rochas, V.",
+    "Perot, J.-B.",
+    "Szczepankiewicz, F.",
+    "Jelescu, I. O."
+   ],
+   "journal": "bioRxiv",
+   "year": 2026,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.64898/2026.03.20.713098v1.full.pdf",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1774621422614709",
@@ -8311,8 +8386,7 @@
      "cost_usd": 0.0023
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2026attentionb",
@@ -8641,7 +8715,7 @@
    "reactions": [],
    "url": "https://arxiv.org/pdf/2603.07380",
    "doi": "10.48550/arxiv.2603.07380",
-   "title": "Link on arxiv.org",
+   "title": "Excessive data censoring in fMRI undermines individual precision and weakens brain-behavior associations",
    "abstract": "Censoring high-motion volumes in fMRI is common practice to reduce effects of head motion on functional connectivity (FC). Although aggressive censoring removes more noise, it causes extensive data loss, creating a tradeoff that may ultimately improve or degrade FC accuracy. Here, we evaluate how censoring affects FC estimation and downstream brain-wide association studies (BWAS). Using extensively sampled participants from the Human Connectome Project (HCP) Retest dataset, we establish individual \"ground truth\" FC and assess the accuracy of FC estimated from 5-30 minute scans. We find that censoring degrades FC accuracy, with more aggressive censoring being more detrimental, particularly among participants exhibiting above-average motion. In these participants, aggressive censoring reduces FC accuracy by 30% for 30-minute scans denoised with ICA-FIX, an advanced denoising method, and by 3% for scans denoised with conventional confound regression. These effects reflect substantial data loss (34%) that outweighs comparatively modest noise reductions: 7% with ICA-FIX and 18% with confound regression. Compensating for this would require substantially longer scans (62% with confound regression; 76% with ICA-FIX), inflating data collection budgets. Introducing a repeated measures framework to separate motion trait from artifact, we find that standard QC metrics are dominated by motion trait and overstate motion bias, which is effectively mitigated with less aggressive censoring. Finally, using data from nearly 1,000 HCP participants, we demonstrate that unreliable FC substantially attenuates BWAS correlations: by ~30% under optimal conditions (longer ICA-FIX scans with no censoring) but exceeding 75% in short, aggressively censored scans. Our findings support the use of advanced denoising methods, limiting censoring, and collecting longer scans to maximize fidelity of FC and BWAS.",
    "authors": [
     "Mejia, Amanda",
@@ -8687,8 +8761,7 @@
      "cost_usd": 0.00584
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2026justd",
@@ -9602,7 +9675,7 @@
     }
    ],
    "url": "https://www.medrxiv.org/content/10.1101/2025.10.31.25339211v1.full-text",
-   "doi": "10.1101/2025.10.31.25339211v1.full-text",
+   "doi": null,
    "title": "Link on medrxiv.org",
    "abstract": null,
    "authors": [],
@@ -11506,12 +11579,20 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.64898/2026.01.05.697785v1",
-   "doi": "10.64898/2026.01.05.697785v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.64898/2026.01.05.697785",
+   "title": "Vicarious trauma primes innate immunity and reconfigures human brain networks",
+   "abstract": "Vicarious trauma--witnessing serious harm to others--produces systemic neuroimmune effects in animal models. However, its brain, autonomic, and immune consequences in humans remain unclear. We scanned 88 participants with fMRI during a naturalistic movie-viewing paradigm depicting either industrial cruelty to farm animals (Vicarious Trauma, VT) or positive human-animal interactions (Vicarious Community, VC) with concurrent autonomic physiology and gene expression in circulating monocytes. VT, compared to VC, evoked sustained sympathetic arousal lasting 40 minutes post-viewing and primed innate immune cells to elicit elevated pro-inflammatory (upregulating IL1B and CXCL8) and reduced anti-inflammatory (TGFB1) responses. VT reduced integration in a frontoparietal control system and increased coupling between a salience/action-mode system with paralimbic, basal ganglia, and sensorimotor regions. Disrupted negative coupling between frontoparietal/default-mode and hippocampal systems predicted VT-related CXCL8 increases. These findings shed light on how the brain translates vicarious trauma into the priming of innate immunity.",
+   "authors": [
+    "Lux, B. K.",
+    "Kos, M. C.",
+    "Ward, D.",
+    "Kolling, F. W.",
+    "Li, X.",
+    "Jakubzick, C. V.",
+    "Wager, T."
+   ],
+   "journal": "bioRxiv",
+   "year": 2026,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.64898/2026.01.05.697785v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1767726578687519",
@@ -11539,8 +11620,7 @@
      "cost_usd": 0.00253
     }
    },
-   "n_comments": 2,
-   "title_unresolved": true
+   "n_comments": 2
   },
   {
    "id": "shared2025justy",
@@ -12643,7 +12723,7 @@
    ],
    "url": "https://arxiv.org/pdf/2509.20328v2",
    "doi": "10.48550/arxiv.2509.20328",
-   "title": "Link on arxiv.org",
+   "title": "Video models are zero-shot learners and reasoners",
    "abstract": "The remarkable zero-shot capabilities of Large Language Models (LLMs) have propelled natural language processing from task-specific models to unified, generalist foundation models. This transformation emerged from simple primitives: large, generative models trained on web-scale data. Curiously, the same primitives apply to today's generative video models. Could video models be on a trajectory towards general-purpose vision understanding, much like LLMs developed general-purpose language understanding? We demonstrate that Veo 3 can solve a broad variety of tasks it wasn't explicitly trained for: segmenting objects, detecting edges, editing images, understanding physical properties, recognizing object affordances, simulating tool use, and more. These abilities to perceive, model, and manipulate the visual world enable early forms of visual reasoning like maze and symmetry solving. Veo's emergent zero-shot capabilities indicate that video models are on a path to becoming unified, generalist vision foundation models.",
    "authors": [
     "Wiedemer, Thaddäus",
@@ -12689,8 +12769,7 @@
      "cost_usd": 0.00454
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2025keynote",
@@ -13230,12 +13309,31 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2025.09.18.677119v1",
-   "doi": "10.1101/2025.09.18.677119v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2025.09.18.677119",
+   "title": "A multi-omic atlas of human autonomic and sensory ganglia implicates cell types in peripheral neuropathies",
+   "abstract": "The human peripheral nervous system (PNS) consists of many ganglia including sympathetic ganglia (SG) and dorsal root ganglia (DRG). These ganglia house the cell bodies of diverse PNS neurons that transmit autonomic and sensory signals, as well as a much larger number of non-neuronal cells. However, the molecular and cellular diversity of these human PNS cell types and their implications in human disease remain elusive. By generating an integrated single-cell multi-omic atlas of human SG and DRG, we provide comprehensive transcriptional and epigenomic landscapes of various cell types in these peripheral ganglia. While the major cell types and their cell-type-specific transcriptional and epigenomic features are similar between human SG and DRG, we identify key differences between SG and DRG cell types. These differences highlight the distinct molecular and cellular mechanisms underlying their specific functions. We also profiled key genomic regulatory networks that govern cell-type-specific gene expression in these peripheral ganglia. Moreover, by mapping the expression and chromatin accessibility of disease-associated genes in human SG and DRG, we identify cell types that may underlie various peripheral neuropathies. This atlas serves as a valuable resource for understanding the intricate cell-type-specific molecules and interactions in the human PNS and their implications in human health and diseases.",
+   "authors": [
+    "Yang, L.",
+    "Dourson, A. J.",
+    "Tao, R.",
+    "Boyer, K.",
+    "Meriau, P.",
+    "Del Rosario, J.",
+    "Yi, J.",
+    "Slivicki, R. A.",
+    "Bertels, Z.",
+    "Payne, M.",
+    "Mwirigi, J. M.",
+    "Gupta, P.",
+    "Lemen, J.",
+    "Copits, B. A.",
+    "Zhao, G.",
+    "Cavalli, V.",
+    "Chamessian, A.",
+    "Gereau, R. W."
+   ],
+   "journal": "bioRxiv",
+   "year": 2026,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2025.09.18.677119v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1762602193567819",
@@ -13266,8 +13364,7 @@
      "cost_usd": 0.00264
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2025precision",
@@ -13859,12 +13956,22 @@
    "shared_by": "Li-Bo Zhang",
    "reactions": [],
    "url": "https://www.biorxiv.org/content/10.1101/2024.11.13.623324v2",
-   "doi": "10.1101/2024.11.13.623324v2",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2024.11.13.623324",
+   "title": "Feature similarity: a sensitive method to capture the functional interaction of brain regions and networks to support flexible behavior",
+   "abstract": "The brain is a dynamic system where complex behaviours emerge from interactions across distributed regions. Accurately linking brain function to cognition requires tools that are sensitive to these dynamics. We introduce a novel technique, Feature Similarity (FS), which represents a conceptual advancement in measuring brain region interactions by integrating multiple features across various measures, moving beyond traditional methods that focus on a single measure. Our results show that FS can capture functional brain organisation: regions within the same functional network have greater FS compared to those in different networks, and FS also identifies the principal gradient that spans from unimodal to transmodal cortices. FS demonstrated greater sensitivity to task modulation than traditional functional connectivity (FC) and 46 out of 49 statistical measures of pairwise interactions (SPIs). Specifically, FS reveals interaction patterns missed by FC and most SPIs, such as a double dissociation in Dorsal Attention Network: greater interaction with Visual network during working memory tasks and greater interaction with default mode network during long-term memory tasks. These findings position FS as a powerful tool for capturing task-specific brain network dynamics and advancing our understanding of cognitive flexibility. Using FS to reanalyse existing fMRI data could resolve inconsistencies, lead to novel insights, and prompt revisions of existing theories or the development of new theoretical frameworks.",
+   "authors": [
+    "Wang, X.",
+    "Lyu, B.",
+    "Krieger-Redwood, K.",
+    "Souter, N. E.",
+    "Shafiei, G.",
+    "Lin, N.",
+    "Smallwood, J.",
+    "Jefferies, E.",
+    "Du, Y."
+   ],
+   "journal": "bioRxiv",
+   "year": 2025,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2024.11.13.623324v2",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1761929373654439",
@@ -13896,8 +14003,7 @@
      "cost_usd": 0.00304
     }
    },
-   "n_comments": 3,
-   "title_unresolved": true
+   "n_comments": 3
   },
   {
    "id": "kharas2024nrem",
@@ -15619,17 +15725,28 @@
     }
    ],
    "url": "https://www.cell.com/neuron/abstract/S0896-6273(25)00625-7",
-   "doi": null,
-   "title": "Link on cell.com",
+   "doi": "10.1016/j.neuron.2025.08.019",
+   "title": "The role of mesolimbic circuitry in aversive signaling and opioid dependence",
    "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Branco, P.",
+    "Cox, J.",
+    "Wu, Y.",
+    "Morison, S. L.",
+    "Parker, J. G.",
+    "Lerner, T. N.",
+    "Martina, M.",
+    "Awatramani, R.",
+    "Surmeier, D. J.",
+    "Apkarian, A. V."
+   ],
+   "journal": "Neuron",
+   "year": 2025,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1758480965441199",
    "kind": "paper",
-   "title_unresolved": true,
-   "n_comments": 0
+   "n_comments": 0,
+   "publisher_url": "https://doi.org/10.1016/j.neuron.2025.08.019"
   },
   {
    "id": "meshulam2025brainwide",
@@ -16150,17 +16267,26 @@
    "shared_by": "tor",
    "reactions": [],
    "url": "https://www.sciencedirect.com/science/article/pii/S1053811918303963#fig9",
-   "doi": null,
-   "title": "Link on sciencedirect.com",
+   "doi": "10.1016/j.neuroimage.2018.04.076",
+   "title": "Using temporal ICA to selectively remove global noise while preserving global signal in functional MRI data",
    "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Glasser, M. F.",
+    "Coalson, T. S.",
+    "Bijsterbosch, J. D.",
+    "Harrison, S. J.",
+    "Harms, M. P.",
+    "Anticevic, A.",
+    "Van Essen, D. C.",
+    "Smith, S. M."
+   ],
+   "journal": "NeuroImage",
+   "year": 2018,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1757777376869709",
    "kind": "paper",
-   "title_unresolved": true,
-   "n_comments": 1
+   "n_comments": 1,
+   "publisher_url": "https://doi.org/10.1016/j.neuroimage.2018.04.076"
   },
   {
    "id": "shared2025httpspsycnetapaorgrecord",
@@ -17296,12 +17422,25 @@
    "shared_by": "marta",
    "reactions": [],
    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1526590025007023",
-   "doi": null,
-   "title": "Link on sciencedirect.com",
+   "doi": "10.1016/j.jpain.2025.105475",
+   "title": "Chronic low back pain is associated with compromised cognitive function: A systematic review and meta-analysis",
    "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Sobott, N.",
+    "Crowther, M. E.",
+    "Vincent, G. E.",
+    "Belavý, D. L.",
+    "Buntine, P.",
+    "Ferguson, S. A.",
+    "Mundell, N. L.",
+    "Sprajcer, M.",
+    "Tagliaferri, S. D.",
+    "Tait, J. L.",
+    "Vincent, K.",
+    "Owen, P. J."
+   ],
+   "journal": "The Journal of Pain",
+   "year": 2025,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1754951706263439",
    "kind": "paper",
@@ -17329,7 +17468,7 @@
     }
    },
    "n_comments": 0,
-   "title_unresolved": true
+   "publisher_url": "https://doi.org/10.1016/j.jpain.2025.105475"
   },
   {
    "id": "gim2024spatiotemporal",
@@ -21502,17 +21641,22 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2025.02.25.640090v1.full.pdf",
-   "doi": "10.1101/2025.02.25.640090v1.full.pdf",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2025.02.25.640090",
+   "title": "Within-Individual Precision Mapping of Brain Networks Exclusively Using Task Data",
+   "abstract": "Precision mapping of brain networks within individuals has become a widely used tool that prevailingly relies on functional connectivity analysis of resting-state data. Here we explored whether networks could be precisely estimated solely using data acquired during active task paradigms. The straightforward strategy involved extracting residualized data after application of a task-based general linear model (GLM) and then applying standard functional connectivity analysis. Functional correlation matrices estimated from task data were highly similar to those derived from traditional resting-state fixation data. The largest factor affecting similarity between correlation matrices was the amount of data. Networks estimated within-individual from task data displayed strong spatial overlap with those estimated from resting-state fixation data and predicted the same triple functional dissociation in independent data. The implications of these findings are that (1) existing task data can be reanalyzed to estimate within-individual network organization, (2) restingstate fixation and task data can be pooled to increase statistical power, and (3) future studies can exclusively acquire task data to both estimate networks and extract task responses. Most broadly, the present results suggest that there is an underlying, stable network architecture that is idiosyncratic to the individual and persists across task states.",
+   "authors": [
+    "Du, J.",
+    "Elliott, M. L.",
+    "Ladopoulou, J.",
+    "Eldaief, M. C.",
+    "Buckner, R. L."
+   ],
+   "journal": "bioRxiv",
+   "year": 2025,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2025.02.25.640090v1.full.pdf",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1742934516549259",
    "kind": "paper",
-   "title_unresolved": true,
    "n_comments": 1
   },
   {
@@ -22257,17 +22401,22 @@
     }
    ],
    "url": "https://www.sciencedirect.com/science/article/pii/S1053811922005419?via%3Dihub",
-   "doi": null,
-   "title": "Link on sciencedirect.com",
+   "doi": "10.1016/j.neuroimage.2022.119424",
+   "title": "Ultra-slow fMRI fluctuations in the fourth ventricle as a marker of drowsiness",
    "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Gonzalez-Castillo, J.",
+    "Fernandez, I. S.",
+    "Handwerker, D. A.",
+    "Bandettini, P. A."
+   ],
+   "journal": "NeuroImage",
+   "year": 2022,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1741098204997259",
    "kind": "paper",
-   "title_unresolved": true,
-   "n_comments": 0
+   "n_comments": 0,
+   "publisher_url": "https://doi.org/10.1016/j.neuroimage.2022.119424"
   },
   {
    "id": "shared2025httpswwwnaturecomarticlesspdf",
@@ -22682,7 +22831,7 @@
    "reactions": [],
    "url": "https://arxiv.org/pdf/2501.17805",
    "doi": "10.48550/arxiv.2501.17805",
-   "title": "Link on arxiv.org",
+   "title": "International AI Safety Report",
    "abstract": "The first International AI Safety Report comprehensively synthesizes the current evidence on the capabilities, risks, and safety of advanced AI systems. The report was mandated by the nations attending the AI Safety Summit in Bletchley, UK. Thirty nations, the UN, the OECD, and the EU each nominated a representative to the report's Expert Advisory Panel. A total of 100 AI experts contributed, representing diverse perspectives and disciplines. Led by the report's Chair, these independent experts collectively had full discretion over the report's content.",
    "authors": [
     "Bengio, Yoshua",
@@ -22815,8 +22964,7 @@
      "cost_usd": 0.00319
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2025justc",
@@ -26144,12 +26292,26 @@
     }
    ],
    "url": "https://www.medrxiv.org/content/10.1101/2024.04.19.24306101v1",
-   "doi": "10.1101/2024.04.19.24306101v1",
-   "title": "Link on medrxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2024.04.19.24306101",
+   "title": "A Biomarker-Based Framework for the Prediction of Future Chronic Pain",
+   "abstract": "Chronic pain is a multifactorial condition presenting significant diagnostic and prognostic challenges. Biomarkers for the classification and the prediction of chronic pain are therefore critically needed. In this multi-dataset study of over 523,000 participants, we applied machine learning to multi-dimensional biological data from the UK Biobank to identify biomarkers for 35 medical conditions associated with pain (e.g., clinical diagnosis of rheumatoid arthritis, fibromyalgia, stroke, gout, etc.) or self-reported chronic pain (e.g., back pain, knee pain, etc). Biomarkers derived from blood immunoassays, brain and bone imaging, and genetics were effective in predicting medical conditions associated with chronic pain (area under the curve (AUC) 0.62-0.87) but not self-reported pain (AUC 0.50-0.62). Among the biomarkers identified was a composite blood-based signature that predicted the onset of various medical conditions approximately nine years in advance (AUC 0.59-0.72). Notably, all biomarkers worked in synergy with psychosocial factors, accurately predicting both medical conditions (AUC 0.69- 0.91) and self-report pain (AUC 0.71-0.92). Over a period of 15 years, individuals scoring high on both biomarkers and psychosocial risk factors had twice the cumulative incidence of diagnoses for pain-associated medical conditions (Hazard Ratio (HR): 2.26) compared to individuals scoring high on biomarkers but low on psychosocial risk factors (HR: 1.06). In summary, we identified various biomarkers for chronic pain conditions and showed that their predictive efficacy heavily depended on psychological and social influences. These findings underscore the necessity of adopting a holistic approach in the development of biomarkers to enhance their clinical utility.",
+   "authors": [
+    "Fillingim, M.",
+    "Tanguay-Sabourin, C.",
+    "Parisien, M.",
+    "Zare, A.",
+    "Guglietti, G. V.",
+    "Norman, J.",
+    "Petre, B.",
+    "Bortsov, A.",
+    "Ware, M.",
+    "Perez, J.",
+    "Roy, M.",
+    "Diatchenko, L.",
+    "Vachon-Presseau, E."
+   ],
+   "journal": "medRxiv",
+   "year": 2024,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2024.04.19.24306101v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1722781396551709",
@@ -26177,8 +26339,7 @@
      "cost_usd": 0.00238
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "chen2024neural",
@@ -29696,17 +29857,19 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2023.07.06.548050v2.abstract",
-   "doi": "10.1101/2023.07.06.548050v2.abstract",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2023.07.06.548050",
+   "title": "Improving fMRI-based prediction of individual pain ratings by accounting for interindividual variance",
+   "abstract": "We challenge the pessimistic conclusion of a recently published paper by Hoeppli et al that fMRI-BOLD measures are useless in predicting interindividual differences in pain perception. By conducting a re-analysis of publicly available data of their study, we propose an alternative analysis approach that addresses the issue of interindividual variance differences in BOLD readouts, aiming to enhance the predictive power of fMRI-based measures. Instead of using absolute values of both, pain ratings and BOLD measures, we make use of robust intraindividual differences between the two experimental conditions in their study. Our findings demonstrate a statistically significant positive linear relationship between the neurologic pain signature (NPS) score, a multivariate pain classifier based on BOLD fMRI, and individual differences in perceived pain ratings. This relationship is driven by individuals that report pain sensitivity to both experimental conditions and can clearly distinguish between the two. Our results provide evidence for the potential of fMRI-BOLD measures in predicting interindividual differences in pain perception and allow for a more optimistic conclusion regarding the ongoing debate whether fMRI can be used as an objective measure for pain perception.\n\nARISING FROMHoeppli, M.E., Nahman-Averbuch, H., Hinkle, W.A. et al. Dissociation between individual differences in self-reported pain intensity and underlying fMRI brain activation. Nat Commun 13, 3569 (2022). https://doi.org/10.1038/s41467-022-31039-3",
+   "authors": [
+    "Goltermann, O.",
+    "Buechel, C."
+   ],
+   "journal": "bioRxiv",
+   "year": 2023,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2023.07.06.548050v2.abstract",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1704403240696689",
    "kind": "paper",
-   "title_unresolved": true,
    "n_comments": 2
   },
   {
@@ -30729,12 +30892,18 @@
     }
    ],
    "url": "https://academic.oup.com/cercor/advance-article/doi/10.1093/cercor/bhad435/7423901",
-   "doi": "10.1093/cercor/bhad435/7423901",
-   "title": "Link on academic.oup.com",
-   "abstract": "The goal of precision brain health is to accurately predict individuals' longitudinal patterns of brain change. We trained a machine learning model to predict changes in a cognitive index of brain health from neurophysiologic metrics. A total of 48 participants (ages 21-65) completed a sensorimotor task during 2 functional magnetic resonance imaging sessions 6 mo apart. Hemodynamic response functions (HRFs) were parameterized using traditional (amplitude, dispersion, latency) and novel (curvature, canonicality) metrics, serving as inputs to a neural network model that predicted gain on indices of brain health (cognitive factor scores) for each participant. The optimal neural network model successfully predicted substantial gain on the cognitive index of brain health with 90% accuracy (determined by 5-fold cross-validation) from 3 HRF parameters: amplitude change, dispersion change, and similarity to a canonical HRF shape at baseline. For individuals with canonical baseline HRFs, substantial gain in the index is overwhelmingly predicted by decreases in HRF amplitude. For individuals with non-canonical baseline HRFs, substantial gain in the index is predicted by congruent changes in both HRF amplitude and dispersion. Our results illustrate that neuroimaging measures can track cognitive indices in healthy states, and that machine learning approaches using novel metrics take important steps toward precision brain health.",
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1093/cercor/bhad435",
+   "title": "Toward precision brain health: accurate prediction of a cognitive index trajectory using neuroimaging metrics",
+   "abstract": "Abstract \n                The goal of precision brain health is to accurately predict individuals’ longitudinal patterns of brain change. We trained a machine learning model to predict changes in a cognitive index of brain health from neurophysiologic metrics. A total of 48 participants (ages 21–65) completed a sensorimotor task during 2 functional magnetic resonance imaging sessions 6 mo apart. Hemodynamic response functions (HRFs) were parameterized using traditional (amplitude, dispersion, latency) and novel (curvature, canonicality) metrics, serving as inputs to a neural network model that predicted gain on indices of brain health (cognitive factor scores) for each participant. The optimal neural network model successfully predicted substantial gain on the cognitive index of brain health with 90% accuracy (determined by 5-fold cross-validation) from 3 HRF parameters: amplitude change, dispersion change, and similarity to a canonical HRF shape at baseline. For individuals with canonical baseline HRFs, substantial gain in the index is overwhelmingly predicted by decreases in HRF amplitude. For individuals with non-canonical baseline HRFs, substantial gain in the index is predicted by congruent changes in both HRF amplitude and dispersion. Our results illustrate that neuroimaging measures can track cognitive indices in healthy states, and that machine learning approaches using novel metrics take important steps toward precision brain health.",
+   "authors": [
+    "Spence, J. S.",
+    "Turner, M. P.",
+    "Rypma, B.",
+    "D’Esposito, M.",
+    "Chapman, S. B."
+   ],
+   "journal": "Cerebral Cortex",
+   "year": 2023,
    "pdf_url": null,
    "pmid": "37968568",
    "pmcid": null,
@@ -30771,8 +30940,7 @@
      "cost_usd": 0.00506
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "perl2023neural",
@@ -32063,12 +32231,19 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2023.09.21.558825v1",
-   "doi": "10.1101/2023.09.21.558825v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2023.09.21.558825",
+   "title": "Placebo treatment affects brain systems related to affective and cognitive processes, but not nociceptive pain",
+   "abstract": "Placebo analgesia is a replicable and well-studied phenomenon, yet it remains unclear to what degree it includes modulation of nociceptive processes. Some studies find effects consistent with nociceptive effects, but meta-analyses show that these effects are often small. We analyzed placebo analgesia in a large fMRI study (N = 392), including placebo effects on brain responses to noxious stimuli. Placebo treatment caused robust analgesia in both conditioned thermal and unconditioned mechanical pain. Placebo did not decrease fMRI activity in nociceptive pain regions, including the Neurologic Pain Signature (NPS) and pre-registered spinothalamic pathway regions, with strong support from Bayes Factor analyses. However, placebo treatment affected activity in pre-registered analyses of a second neuromarker, the Stimulus Intensity Independent Pain Signature (SIIPS), and several associated a priori brain regions related to motivation and value, in both thermal and mechanical pain. Individual differences in behavioral analgesia were correlated with neural changes in both thermal and mechanical pain. Our results indicate that processes related to affective and cognitive aspects of pain primarily drive placebo analgesia.",
+   "authors": [
+    "Botvinik-Nezer, R.",
+    "Petre, B.",
+    "Ceko, M.",
+    "Lindquist, M. A.",
+    "Friedman, N. P.",
+    "Wager, T. D."
+   ],
+   "journal": "bioRxiv",
+   "year": 2023,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2023.09.21.558825v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1695755788019029",
@@ -32101,8 +32276,7 @@
      "cost_usd": 0.00252
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2023httpsrdcubedmyru",
@@ -33277,12 +33451,23 @@
    "n_comments": 0,
    "reactions": [],
    "url": "https://academic.oup.com/abm/advance-article/doi/10.1093/abm/kaad020/7190781",
-   "doi": "10.1093/abm/kaad020/7190781",
-   "title": "Link on academic.oup.com",
-   "abstract": "Side-effect concerns are a major barrier to vaccination against COVID-19 and other diseases. Identifying cost- and time-efficient interventions to improve vaccine experience and reduce vaccine hesitancy-without withholding information about side effects-is critical. Determine whether a brief symptom as positive signals mindset intervention can improve vaccine experience and reduce vaccine hesitancy after the COVID-19 vaccination. English-speaking adults (18+) were recruited during the 15-min wait period after receiving their second dose of the Pfizer COVID-19 vaccination and were randomly allocated to the symptom as positive signals mindset condition or the treatment as usual control. Participants in the mindset intervention viewed a 3:43-min video explaining how the body responds to vaccinations and how common side effects such as fatigue, sore arm, and fever are signs that the vaccination is helping the body boost immunity. The control group received standard vaccination center information. Mindset participants (N = 260) versus controls (N = 268) reported significantly less worry about symptoms at day 3 [t(506)=2.60, p=.01, d=0.23], fewer symptoms immediately following the vaccine [t(484)=2.75, p=.006, d=0.24], and increased intentions to vaccinate against viruses like COVID-19 in the future [t(514)=-2.57, p=.01, d=0.22]. No significant differences for side-effect frequency at day 3, coping, or impact. This study supports the use of a brief video aimed at reframing symptoms as positive signals to reduce worry and increase future vaccine intentions. Australian New Zealand Clinical Trials Registry: ACTRN12621000722897p. Side-effect concerns are a major barrier to vaccination against COVID-19 and other diseases. Therefore, the purpose of this study was to determine whether a brief symptom as positive signals mindset intervention could improve vaccine experience and reduce vaccine hesitancy after the COVID-19 vaccination. Participants were recruited during the 15-min wait period after receiving their second dose of the Pfizer COVID-19 vaccination and were randomly allocated to a treatment as usual control condition or to a mindset intervention condition which entailed watching a 3:43-min video explaining how the body responds to vaccinations and how common side effects such as fatigue, sore arm, and fever are signs that the vaccination is helping the body boost immunity. Compared with participants in the control condition, participants in the mindset intervention condition reported significantly less worry about symptoms at day 3, fewer symptoms immediately following the vaccine and increased intentions to vaccinate against viruses like COVID-19 in the future. No significant differences emerged for side-effect frequency at day 3, coping, or impact. These finding provide initial support for cost- and time-efficient interventions to improve vaccine experience and reduce vaccine hesitancy without withholding information about side effects.",
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1093/abm/kaad020",
+   "title": "Changing Mindsets About Side Effects of the COVID-19 Vaccination: A Randomized Controlled Trial",
+   "abstract": "Abstract \n                \n                   Background \n                   Side-effect concerns are a major barrier to vaccination against COVID-19 and other diseases. Identifying cost- and time-efficient interventions to improve vaccine experience and reduce vaccine hesitancy—without withholding information about side effects—is critical. \n                \n                \n                   Purpose \n                   Determine whether a brief symptom as positive signals mindset intervention can improve vaccine experience and reduce vaccine hesitancy after the COVID-19 vaccination. \n                \n                \n                   Methods \n                   English-speaking adults (18+) were recruited during the 15-min wait period after receiving their second dose of the Pfizer COVID-19 vaccination and were randomly allocated to the symptom as positive signals mindset condition or the treatment as usual control. Participants in the mindset intervention viewed a 3:43-min video explaining how the body responds to vaccinations and how common side effects such as fatigue, sore arm, and fever are signs that the vaccination is helping the body boost immunity. The control group received standard vaccination center information. \n                \n                \n                   Results \n                   Mindset participants (N = 260) versus controls (N = 268) reported significantly less worry about symptoms at day 3 [t(506)=2.60, p=.01, d=0.23], fewer symptoms immediately following the vaccine [t(484)=2.75, p=.006, d=0.24], and increased intentions to vaccinate against viruses like COVID-19 in the future [t(514)=−2.57, p=.01, d=0.22]. No significant differences for side-effect frequency at day 3, coping, or impact. \n                \n                \n                   Conclusions \n                   This study supports the use of a brief video aimed at reframing symptoms as positive signals to reduce worry and increase future vaccine intentions. \n                \n                \n                   Clinical Trial information \n                   Australian New Zealand Clinical Trials Registry: ACTRN12621000722897p.",
+   "authors": [
+    "Crum, A. J.",
+    "Heathcote, L. C.",
+    "Morrison, Z.",
+    "Yielder, R.",
+    "Leibowitz, K.",
+    "Petousis-Harris, H.",
+    "Thomas, M. G.",
+    "Prober, C. G.",
+    "Berek, J. S.",
+    "Petrie, K. J."
+   ],
+   "journal": "Annals of Behavioral Medicine",
+   "year": 2023,
    "pdf_url": null,
    "pmid": "37279932",
    "pmcid": "PMC10578416",
@@ -33290,8 +33475,7 @@
    "via_url": "https://twitter.com/LCHeathcote/status/1674034440681447429",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1688083802029749",
-   "kind": "paper",
-   "title_unresolved": true
+   "kind": "paper"
   },
   {
    "id": "shared2023evidence",
@@ -33658,17 +33842,52 @@
    "shared_by": "tor",
    "reactions": [],
    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0092867423004750?dgcid=author",
-   "doi": null,
-   "title": "Link on sciencedirect.com",
+   "doi": "10.1016/j.cell.2023.05.001",
+   "title": "The enteric nervous system relays psychological stress to intestinal inflammation",
    "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Schneider, K. M.",
+    "Blank, N.",
+    "Alvarez, Y.",
+    "Thum, K.",
+    "Lundgren, P.",
+    "Litichevskiy, L.",
+    "Sleeman, M.",
+    "Bahnsen, K.",
+    "Kim, J.",
+    "Kardo, S.",
+    "Patel, S.",
+    "Dohnalová, L.",
+    "Uhr, G. T.",
+    "Descamps, H. C.",
+    "Kircher, S.",
+    "McSween, A. M.",
+    "Ardabili, A. R.",
+    "Nemec, K. M.",
+    "Jimenez, M. T.",
+    "Glotfelty, L. G.",
+    "Eisenberg, J. D.",
+    "Furth, E. E.",
+    "Henao-Mejia, J.",
+    "Bennett, F. C.",
+    "Pierik, M. J.",
+    "Romberg-Camps, M.",
+    "Mujagic, Z.",
+    "Prinz, M.",
+    "Schneider, C. V.",
+    "Wherry, E. J.",
+    "Bewtra, M.",
+    "Heuckeroth, R. O.",
+    "Levy, M.",
+    "Thaiss, C. A."
+   ],
+   "journal": "Cell",
+   "year": 2023,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1686367809431249",
    "kind": "paper",
-   "title_unresolved": true,
-   "n_comments": 0
+   "n_comments": 0,
+   "publisher_url": "https://doi.org/10.1016/j.cell.2023.05.001"
   },
   {
    "id": "shared2023juste",
@@ -34759,12 +34978,18 @@
     }
    ],
    "url": "https://www.cell.com/trends/neurosciences/fulltext/S0166-2236(23)00101-7",
-   "doi": null,
-   "title": "Link on cell.com",
+   "doi": "10.1016/j.tins.2023.04.001",
+   "title": "Why is everyone talking about brain state?",
    "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Greene, A. S.",
+    "Horien, C.",
+    "Barson, D.",
+    "Scheinost, D.",
+    "Constable, R. T."
+   ],
+   "journal": "Trends in Neurosciences",
+   "year": 2023,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1683740714672369",
    "kind": "paper",
@@ -34798,7 +35023,7 @@
     }
    },
    "n_comments": 0,
-   "title_unresolved": true
+   "publisher_url": "https://doi.org/10.1016/j.tins.2023.04.001"
   },
   {
    "id": "shared2023bring",
@@ -36981,17 +37206,25 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2023.02.13.528362v1.full.pdf",
-   "doi": "10.1101/2023.02.13.528362v1.full.pdf",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2023.02.13.528362",
+   "title": "BOLD response is more than just magnitude: improving detection sensitivity through capturing hemodynamic profiles",
+   "abstract": "Typical FMRI analyses assume a canonical hemodynamic response function (HRF) with a focus on the overshoot peak height, while other morphological aspects are largely ignored. Thus, in most reported analyses, the overall effect is reduced from a curve to a single scalar. Here, we adopt a data-driven approach to HRF estimation at the whole-brain voxel level, without assuming a response profile at the individual level. Then, we estimate the response in its entirety with a roughness penalty at the population level to improve predictive accuracy, inferential efficiency, and cross-study reproducibility. Using a fast event-related FMRI dataset, we demonstrate the extent of under-fitting and information loss that occurs when adopting the canonical approach. We also address the following questions:\n\nO_LIHow much does the HRF shape vary across regions, conditions, and groups?\nC_LIO_LIDoes an agnostic approach improve sensitivity to detect an effect compared to an assumed HRF?\nC_LIO_LICan examining HRF shape help validate the presence of an effect complementing statistical evidence?\nC_LIO_LICould the HRF shape provide evidence for whole-brain BOLD response during a simple task?\nC_LI",
+   "authors": [
+    "Chen, G.",
+    "Taylor, P. A.",
+    "Reynolds, R. C.",
+    "Leibenluft, E.",
+    "Pine, D. S.",
+    "Brotman, M. A.",
+    "Pagliaccio, D.",
+    "Haller, S. P."
+   ],
+   "journal": "bioRxiv",
+   "year": 2023,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2023.02.13.528362v1.full.pdf",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1676429433090469",
    "kind": "paper",
-   "title_unresolved": true,
    "n_comments": 0
   },
   {
@@ -37534,19 +37767,28 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2023.01.20.524897v1",
-   "doi": "10.1101/2023.01.20.524897v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2023.01.20.524897",
+   "title": "DISCOVER-EEG: an open, fully automated EEG pipeline for biomarker discovery in clinical neuroscience",
+   "abstract": "Biomarker discovery in neurological and psychiatric disorders critically depends on reproducible and transparent methods applied to large-scale datasets. Electroencephalography (EEG) is a promising tool for identifying biomarkers. However, recording, preprocessing, and analysis of EEG data is time-consuming and researcher- dependent. Therefore, we developed DISCOVER-EEG, an open and fully automated pipeline that enables easy and fast preprocessing, analysis, and visualization of resting state EEG data. Data in the Brain Imaging Data Structure (BIDS) standard are automatically preprocessed, and physiologically meaningful features of brain function (including oscillatory power, connectivity, and network characteristics) are extracted and visualized using two open-source and widely used Matlab toolboxes (EEGLAB and FieldTrip). We tested the pipeline in two large, openly available datasets, the LEMON dataset, containing 213 EEG recordings of healthy participants, and the TDBRAIN dataset, containing 1274 EEG recordings, mainly from patients with a psychiatric condition. Additionally, we performed an exploratory analysis of the LEMON dataset that could inspire biomarkers of healthy aging. Thus, the DISCOVER-EEG pipeline facilitates the aggregation, reuse, and analysis of large EEG datasets, promoting open and reproducible research on brain function.",
+   "authors": [
+    "Gil Avila, C.",
+    "Bott, F. S.",
+    "Tiemann, L.",
+    "Hohn, V. D.",
+    "May, E. S.",
+    "Nickel, M. M.",
+    "Zebhauser, P. T.",
+    "Gross, J.",
+    "Ploner, M."
+   ],
+   "journal": "bioRxiv",
+   "year": 2023,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2023.01.20.524897v1",
    "via_url": "https://twitter.com/markus_ploner/status/1617450871662727169",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1674607914330039",
-   "kind": "paper",
-   "title_unresolved": true
+   "kind": "paper"
   },
   {
    "id": "shared2023sciencedirectb",
@@ -38198,7 +38440,7 @@
    ],
    "url": "https://arxiv.org/pdf/2211.15006.pdf",
    "doi": "10.48550/arxiv.2211.15006",
-   "title": "Link on arxiv.org",
+   "title": "Fine-tuning language models to find agreement among humans with diverse preferences",
    "abstract": "Recent work in large language modeling (LLMs) has used fine-tuning to align outputs with the preferences of a prototypical user. This work assumes that human preferences are static and homogeneous across individuals, so that aligning to a a single \"generic\" user will confer more general alignment. Here, we embrace the heterogeneity of human preferences to consider a different challenge: how might a machine help people with diverse views find agreement? We fine-tune a 70 billion parameter LLM to generate statements that maximize the expected approval for a group of people with potentially diverse opinions. Human participants provide written opinions on thousands of questions touching on moral and political issues (e.g., \"should we raise taxes on the rich?\"), and rate the LLM's generated candidate consensus statements for agreement and quality. A reward model is then trained to predict individual preferences, enabling it to quantify and rank consensus statements in terms of their appeal to the overall group, defined according to different aggregation (social welfare) functions. The model produces consensus statements that are preferred by human users over those from prompted LLMs (>70%) and significantly outperforms a tight fine-tuned baseline that lacks the final ranking step. Further, our best model's consensus statements are preferred over the best human-generated opinions (>65%). We find that when we silently constructed consensus statements from only a subset of group members, those who were excluded were more likely to dissent, revealing the sensitivity of the consensus to individual contributions. These results highlight the potential to use LLMs to help groups of humans align their values with one another.",
    "authors": [
     "Bakker, Michiel A.",
@@ -38248,8 +38490,7 @@
      "cost_usd": 0.00294
     }
    },
-   "n_comments": 2,
-   "title_unresolved": true
+   "n_comments": 2
   },
   {
    "id": "pinto2022emotion",
@@ -38521,17 +38762,60 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2022.10.26.513940v1",
-   "doi": "10.1101/2022.10.26.513940v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2022.10.26.513940",
+   "title": "A mind-body interface alternates with effector-specific regions in motor cortex",
+   "abstract": "Primary motor cortex (M1) has been thought to form a continuous somatotopic homunculus extending down precentral gyrus from foot to face representations1,2. The motor homunculus has remained a textbook pillar of functional neuroanatomy, despite evidence for concentric functional zones3 and maps of complex actions4. Using our highest precision functional magnetic resonance imaging (fMRI) data and methods, we discovered that the classic homunculus is interrupted by regions with sharpy distinct connectivity, structure, and function, alternating with effector-specific (foot, hand, mouth) areas. These inter-effector regions exhibit decreased cortical thickness and strong functional connectivity to each other, and to prefrontal, insular, and subcortical regions of the Cingulo-opercular network (CON), critical for executive action5 and physiological control6, arousal7, and processing of errors8 and pain9. This interdigitation of action control-linked and motor effector regions was independently verified in the three largest fMRI datasets. Macaque and pediatric (newborn, infant, child) precision fMRI revealed potential cross-species analogues and developmental precursors of the inter-effector system. An extensive battery of motor and action fMRI tasks documented concentric somatotopies for each effector, separated by the CON-linked inter-effector regions. The inter-effector regions lacked movement specificity and co-activated during action planning (coordination of hands and feet), and axial body movement (e.g., abdomen, eyebrows). These results, together with prior work demonstrating stimulation-evoked complex actions4 and connectivity to internal organs (e.g., adrenal medulla)10, suggest that M1 is punctuated by an integrative system for implementing whole-body action plans. Thus, two parallel systems intertwine in motor cortex to form an integrate-isolate pattern: effector-specific regions (foot, hand, mouth) for isolating fine motor control, and a mind-body interface (MBI) for the integrative whole-organism coordination of goals, physiology, and body movement.",
+   "authors": [
+    "Gordon, E. M.",
+    "Chauvin, R. J.",
+    "Van, A. N.",
+    "Rajesh, A.",
+    "Nielsen, A.",
+    "Newbold, D. J.",
+    "Lynch, C. J.",
+    "Seider, N. A.",
+    "Krimmel, S. R.",
+    "Scheidter, K. M.",
+    "Monk, J.",
+    "Miller, R. L.",
+    "Metoki, A.",
+    "Montez, D. F.",
+    "Zheng, A.",
+    "Elbau, I.",
+    "Madison, T.",
+    "Nishino, T.",
+    "Myers, M. J.",
+    "Kaplan, S.",
+    "D'Andrea, C. B.",
+    "Demeter, D. V.",
+    "Feigelis, M.",
+    "Barch, D. M.",
+    "Smyser, C. D.",
+    "Rogers, C. E.",
+    "Zimmerman, J.",
+    "Botteron, K. N.",
+    "Pruett, J. R.",
+    "Willie, J. T.",
+    "Brunner, P.",
+    "Shimony, J. S.",
+    "Kay, B. P.",
+    "Marek, S.",
+    "Norris, S. A.",
+    "Gratton, C.",
+    "Sylvester, C. M.",
+    "Power, J. D.",
+    "Liston, C.",
+    "Greene, D. J.",
+    "Roland, J. L.",
+    "Petersen, S. E.",
+    "Rai"
+   ],
+   "journal": "bioRxiv",
+   "year": 2022,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2022.10.26.513940v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1668905116290979",
    "kind": "paper",
-   "title_unresolved": true,
    "n_comments": 0
   },
   {
@@ -39632,19 +39916,23 @@
    "n_comments": 3,
    "reactions": [],
    "url": "https://www.biorxiv.org/content/10.1101/2022.09.12.506984v1",
-   "doi": "10.1101/2022.09.12.506984v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2022.09.12.506984",
+   "title": "Epiphenomenal neural activity in the primate cortex",
+   "abstract": "When neuroscientists record neural activity from the brain, they often conclude that neural responses observed during task performance are indicative of the functional role of the brain area(s) studied. In humans and nonhuman primates, it is often hard to combine recordings and causal techniques within the same experiment, leaving the possibility that the activity recorded may be epiphenomenal rather than reflecting a specific functional role. Currently, the prevalence of epiphenomenal neural activity in the cortex is unknown. To estimate the extent of such activity in primates, we chronically recorded neural activity in the prefrontal cortex of the same monkeys using the same neural implants during the performance of four different cognitive tasks. The four tasks were carefully selected such that only one of them causally depends on the brain area recorded, as demonstrated by previous double dissociation studies. Using the four most common single neuron analyses methods in the field, we found that the prevalence and strength of neural correlates were just as high across all four tasks, including for the three tasks that do not depend on this brain area. These results suggest that the probability of observing epiphenomenal activity in primate cortex is high, which can mislead investigators relying on neural recording or imaging to map brain function.\n\nOne-Sentence SummaryTremblay, Testard and colleagues show that inferring a brain areas function from neural recordings alone could be misleading.",
+   "authors": [
+    "Tremblay, S.",
+    "Testard, C.",
+    "Inchauspe, J.",
+    "Petrides, M."
+   ],
+   "journal": "bioRxiv",
+   "year": 2023,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2022.09.12.506984v1",
    "via_url": "https://twitter.com/CamilleTestard/status/1570035115316871177",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1663258106889339",
-   "kind": "paper",
-   "title_unresolved": true
+   "kind": "paper"
   },
   {
    "id": "shared2022sciencedirectj",
@@ -40414,7 +40702,7 @@
    "reactions": [],
    "url": "https://arxiv.org/pdf/2208.04780.pdf",
    "doi": "10.48550/arxiv.2208.04780",
-   "title": "Link on arxiv.org",
+   "title": "Cluster extent inference revisited: quantification and localization of brain activity",
    "abstract": "Cluster inference based on spatial extent thresholding is the most popular analysis method for finding activated brain areas in neuroimaging. However, the method has several well-known issues. While powerful for finding brain regions with some activation, the method as currently defined does not allow any further quantification or localization of signal. In this paper we repair this gap. We show that cluster-extent inference can be used (1.) to infer the presence of signal in anatomical regions of interest and (2.) to quantify the percentage of active voxels in any cluster or region of interest. These additional inferences come for free, i.e. they do not require any further adjustment of the alpha-level of tests, while retaining full familywise error control. We achieve this extension of the possibilities of cluster inference by an embedding of the method into a closed testing procedure, and solving the graph-theoretic k-separator problem that results from this embedding. The new method can be used in combination with random field theory or permutations. We demonstrate the usefulness of the method in a large-scale application to neuroimaging data from the Neurovault database.",
    "authors": [
     "Goeman, Jelle J.",
@@ -40458,8 +40746,7 @@
      "cost_usd": 0.00441
     }
    },
-   "n_comments": 6,
-   "title_unresolved": true
+   "n_comments": 6
   },
   {
    "id": "noble2022improving",
@@ -40724,19 +41011,32 @@
     }
    ],
    "url": "https://www.medrxiv.org/content/10.1101/2022.07.22.22277850v1.full.pdf+html",
-   "doi": "10.1101/2022.07.22.22277850v1.full.pdf+html",
-   "title": "Link on medrxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2022.07.22.22277850",
+   "title": "A Data-Driven Biopsychosocial Framework Determining the Spreading of Chronic Pain",
+   "abstract": "Chronic pain conditions are complex syndromes characterized by a mosaic of biological, psychological, and social factors. We derived predictive models for the number of co- existing pain sites in the UK Biobank and identified a common risk score that classified different chronic pain conditions in cross-sectional data, predicted the development of chronic pain in pain-free individuals, and determined the spreading of chronic pain to multiple sites or its recovery nine years later. The features with the strongest prognosis included sleeplessness, feeling  fed-up, tiredness, stressful life events, and a BMI > 30. The risk score for pain was associated with an inflammatory blood marker, a polygenic risk score for pain, and a neuroimaging-based marker for sustained pain. The demonstration of a common biopsychosocial risk factor for different clinical pain conditions may help better characterize a general chronic pain syndrome, tailor research protocols, optimize patient randomization in clinical trials, and improve pain management.",
+   "authors": [
+    "Tanguay-Sabourin, C.",
+    "Fillingim, M.",
+    "Parisien, M.",
+    "Guglietti, G. V.",
+    "Zare, A.",
+    "Norman, J.",
+    "Da-ano, R.",
+    "Perez, J.",
+    "Thompson, S. J.",
+    "Martel, M. O.",
+    "Roy, M.",
+    "Diatchenko, L.",
+    "Vachon-Presseau, E."
+   ],
+   "journal": "medRxiv",
+   "year": 2022,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2022.07.22.22277850v1.full.pdf+html",
    "via_url": "https://twitter.com/evp82/status/1553111285302272000?s=12",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1659142999187529",
-   "kind": "paper",
-   "title_unresolved": true
+   "kind": "paper"
   },
   {
    "id": "shared2022leukocyte",
@@ -41254,19 +41554,24 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2021.12.18.473276v1",
-   "doi": "10.1101/2021.12.18.473276v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2021.12.18.473276",
+   "title": "When self comes to a wandering mind: Brain representations and dynamics of self-generated concepts in spontaneous thought",
+   "abstract": "AO_SCPLOWBSTRACTC_SCPLOWSelf-relevant concepts are major building blocks of spontaneous thought, and their dynamics in a natural stream of thought are likely to reveal ones internal states important for mental health. Here we conducted an fMRI experiment (n = 62) to examine brain representations and dynamics of self-generated concepts in the context of spontaneous thought using a newly developed free association-based thought sampling task. The dynamics of conceptual associations were predictive of individual differences in general negative affectivity, replicating across multiple datasets (n = 196). Reflecting on self-generated concepts strongly engaged brain regions linked to autobiographical memory, conceptual processes, emotion, and autonomic regulation, including the medial prefrontal and medial temporal subcortical structures. Multivariate pattern-based predictive modeling revealed that the neural representations of valence became more person-specific as the level of perceived self-relevance increased. Overall, this study provides a hint of how self-generated concepts in spontaneous thought construct inner affective states and idiosyncrasies.",
+   "authors": [
+    "Kim, B.",
+    "Andrews-Hanna, J. R.",
+    "Han, J.",
+    "Lee, E.",
+    "Woo, C.-W."
+   ],
+   "journal": "bioRxiv",
+   "year": 2021,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2021.12.18.473276v1",
    "via_url": "https://twitter.com/ByeolStellaKim/status/1545080152236982272",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1657293134003109",
-   "kind": "paper",
-   "title_unresolved": true
+   "kind": "paper"
   },
   {
    "id": "kang2018what",
@@ -44109,17 +44414,28 @@
     }
    ],
    "url": "https://elifesciences.org/articles/07436",
-   "doi": null,
-   "title": "Link on elifesciences.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.7554/elife.07436",
+   "title": "Neural population dynamics in human motor cortex during movements in people with ALS",
+   "abstract": "The prevailing view of motor cortex holds that motor cortical neural activity represents muscle or movement parameters. However, recent studies in non-human primates have shown that neural activity does not simply represent muscle or movement parameters; instead, its temporal structure is well-described by a dynamical system where activity during movement evolves lawfully from an initial pre-movement state. In this study, we analyze neuronal ensemble activity in motor cortex in two clinical trial participants diagnosed with Amyotrophic Lateral Sclerosis (ALS). We find that activity in human motor cortex has similar dynamical structure to that of non-human primates, indicating that human motor cortex contains a similar underlying dynamical system for movement generation. \n                   Clinical trial registration: NCT00912041.",
+   "authors": [
+    "Pandarinath, C.",
+    "Gilja, V.",
+    "Blabe, C. H.",
+    "Nuyujukian, P.",
+    "Sarma, A. A.",
+    "Sorice, B. L.",
+    "Eskandar, E. N.",
+    "Hochberg, L. R.",
+    "Henderson, J. M.",
+    "Shenoy, K. V."
+   ],
+   "journal": "eLife",
+   "year": 2015,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1644938583266899",
    "kind": "paper",
-   "title_unresolved": true,
-   "n_comments": 7
+   "n_comments": 7,
+   "publisher_url": "https://doi.org/10.7554/elife.07436"
   },
   {
    "id": "shared2022crowdsourcing",
@@ -44160,19 +44476,29 @@
     }
    ],
    "url": "https://academic.oup.com/cercor/advance-article/doi/10.1093/cercor/bhab488/6524015",
-   "doi": "10.1093/cercor/bhab488/6524015",
-   "title": "Link on academic.oup.com",
-   "abstract": "Skill learning induces changes in estimates of gray matter volume (GMV) in the human brain, commonly detectable with magnetic resonance imaging (MRI). Rapid changes in GMV estimates while executing tasks may however confound between- and within-subject differences. Fluctuations in arterial blood flow are proposed to underlie this apparent task-related tissue plasticity. To test this hypothesis, we acquired multiple repetitions of structural T1-weighted and functional blood-oxygen level-dependent (BOLD) MRI measurements from 51 subjects performing a finger-tapping task (FTT; &#xe1; 2&#xa0;min) repeatedly for 30-60&#xa0;min. Estimated GMV was decreased in motor regions during FTT compared with rest. Motor-related BOLD signal changes did not overlap nor correlate with GMV changes. Nearly simultaneous BOLD signals cannot fully explain task-induced changes in T1-weighted images. These sensitive and behavior-related GMV changes pose serious questions to reproducibility across studies, and morphological investigations during skill learning can also open new avenues on how to study rapid brain plasticity.",
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1093/cercor/bhab488",
+   "title": "Estimated gray matter volume rapidly changes after a short motor task",
+   "abstract": "Abstract \n                   Skill learning induces changes in estimates of gray matter volume (GMV) in the human brain, commonly detectable with magnetic resonance imaging (MRI). Rapid changes in GMV estimates while executing tasks may however confound between- and within-subject differences. Fluctuations in arterial blood flow are proposed to underlie this apparent task-related tissue plasticity. To test this hypothesis, we acquired multiple repetitions of structural T1-weighted and functional blood-oxygen level-dependent (BOLD) MRI measurements from 51 subjects performing a finger-tapping task (FTT; á 2 min) repeatedly for 30–60 min. Estimated GMV was decreased in motor regions during FTT compared with rest. Motor-related BOLD signal changes did not overlap nor correlate with GMV changes. Nearly simultaneous BOLD signals cannot fully explain task-induced changes in T1-weighted images. These sensitive and behavior-related GMV changes pose serious questions to reproducibility across studies, and morphological investigations during skill learning can also open new avenues on how to study rapid brain plasticity.",
+   "authors": [
+    "Olivo, G.",
+    "Lövdén, M.",
+    "Manzouri, A.",
+    "Terlau, L.",
+    "Jenner, B.",
+    "Jafari, A.",
+    "Petersson, S.",
+    "Li, T.",
+    "Fischer, H.",
+    "Månsson, K. N. T."
+   ],
+   "journal": "Cerebral Cortex",
+   "year": 2022,
    "pdf_url": null,
    "pmid": "35136959",
    "pmcid": "PMC9528898",
    "publisher_url": "https://doi.org/10.1093/cercor/bhab488/6524015",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1644339893288569",
    "kind": "paper",
-   "title_unresolved": true,
    "n_comments": 2
   },
   {
@@ -44742,17 +45068,59 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2021.10.28.466336v2.full.pdf",
-   "doi": "10.1101/2021.10.28.466336v2.full.pdf",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2021.10.28.466336",
+   "title": "Mapping neurotransmitter systems to the structural and functional organization of the human neocortex",
+   "abstract": "Neurotransmitter receptors support the propagation of signals in the human brain. How receptor systems are situated within macroscale neuroanatomy and how they shape emergent function remains poorly understood, and there exists no comprehensive atlas of receptors. Here we collate positron emission tomography data from >1 200 healthy individuals to construct a whole-brain 3-D normative atlas of 19 receptors and transporters across 9 different neurotransmitter systems. We find that receptor profiles align with structural connectivity and mediate function, including neurophysiological oscillatory dynamics and resting state hemodynamic functional connectivity. Using the Neurosynth cognitive atlas, we uncover a topographic gradient of overlapping receptor distributions that separates extrinsic and intrinsic psychological processes. Finally, we find both expected and novel associations between receptor distributions and cortical thinning patterns across 13 disorders. We replicate all findings in an independently collected autoradiography dataset. This work demonstrates how chemoarchitecture shapes brain structure and function, providing a new direction for studying multi-scale brain organization.",
+   "authors": [
+    "Hansen, J. Y.",
+    "Shafiei, G.",
+    "Markello, R. D.",
+    "Smart, K.",
+    "Cox, S. M.",
+    "Norgaard, M.",
+    "Beliveau, V.",
+    "Wu, Y.",
+    "Gallezot, J.-D.",
+    "Aumont, E.",
+    "Servaes, S.",
+    "Scala, S. G.",
+    "Dubois, J. M.",
+    "Wainstein, G.",
+    "Bezgin, G.",
+    "Funck, T.",
+    "Schmitz, T. W.",
+    "Spreng, R. N.",
+    "Galovic, M.",
+    "Koepp, M. J.",
+    "Duncan, J. S.",
+    "Coles, J. P.",
+    "Fryer, T. D.",
+    "Aigbirhio, F. I.",
+    "McGinnity, C. J.",
+    "Hammers, A.",
+    "Soucy, J.-P.",
+    "Baillet, S.",
+    "Guimond, S.",
+    "Hietala, J.",
+    "Bedard, M.-A.",
+    "Leyton, M.",
+    "Kobayashi, E.",
+    "Rosa-Neto, P.",
+    "Ganz, M.",
+    "Knudsen, G. M.",
+    "Palomero-Gallagher, N.",
+    "Shine, J.",
+    "Carson, R. E.",
+    "Tuominen, L.",
+    "Dagher, A.",
+    "Misic, B."
+   ],
+   "journal": "bioRxiv",
+   "year": 2022,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2021.10.28.466336v2.full.pdf",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1643144223018100",
    "kind": "paper",
-   "title_unresolved": true,
    "n_comments": 2
   },
   {
@@ -44779,17 +45147,30 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2022.01.06.475081v1",
-   "doi": "10.1101/2022.01.06.475081v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2022.01.06.475081",
+   "title": "Neuromaps: structural and functional interpretation of brain maps",
+   "abstract": "Imaging technologies are increasingly used to generate high-resolution reference maps of brain structure and function. Modern scientific discovery relies on making comparisons between new maps (e.g. task activations, group structural differences) and these reference maps. Although recent data sharing initiatives have increased the accessibility of such brain maps, data are often shared in disparate coordinate systems (or \"spaces\"), precluding systematic and accurate comparisons among them. Here we introduce the neuromaps toolbox, an open-access software package for accessing, transforming, and analyzing structural and functional brain annotations. We implement two registration frameworks to generate high-quality transformations between four standard coordinate systems commonly used in neuroimaging research. The initial release of the toolbox features >40 curated reference maps and biological ontologies of the human brain, including maps of gene expression, neurotransmitter receptors, metabolism, neurophysiological oscillations, developmental and evolutionary expansion, functional hierarchy, individual functional variability, and cognitive specialization. Robust quantitative assessment of map-to-map similarity is enabled via a suite of spatial autocorrelation-preserving null models. By combining open-access data with transparent functionality for standardizing and comparing brain maps, the neuromaps software package provides a systematic workflow for comprehensive structural and functional annotation enrichment analysis of the human brain.",
+   "authors": [
+    "Markello, R. D.",
+    "Hansen, J. Y.",
+    "Liu, Z.-Q.",
+    "Bazinet, V.",
+    "Shafiei, G.",
+    "Suarez, L. E.",
+    "Blostein, N.",
+    "Seidlitz, J.",
+    "Baillet, S.",
+    "Satterthwaite, T. D.",
+    "Chakravarty, M.",
+    "Raznahan, A.",
+    "Misic, B."
+   ],
+   "journal": "bioRxiv",
+   "year": 2022,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2022.01.06.475081v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1643144223018100",
    "kind": "paper",
-   "title_unresolved": true,
    "n_comments": 2
   },
   {
@@ -45820,18 +46201,25 @@
     }
    ],
    "url": "https://elifesciences.org/articles/72129",
-   "doi": null,
-   "title": "Link on elifesciences.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.7554/elife.72129",
+   "title": "Standardizing workflows in imaging transcriptomics with the abagen toolbox",
+   "abstract": "Gene expression fundamentally shapes the structural and functional architecture of the human brain. Open-access transcriptomic datasets like the Allen Human Brain Atlas provide an unprecedented ability to examine these mechanisms in vivo; however, a lack of standardization across research groups has given rise to myriad processing pipelines for using these data. Here, we develop the abagen toolbox, an open-access software package for working with transcriptomic data, and use it to examine how methodological variability influences the outcomes of research using the Allen Human Brain Atlas. Applying three prototypical analyses to the outputs of 750,000 unique processing pipelines, we find that choice of pipeline has a large impact on research findings, with parameters commonly varied in the literature influencing correlations between derived gene expression and other imaging phenotypes by as much as ρ ≥ 1.0. Our results further reveal an ordering of parameter importance, with processing steps that influence gene normalization yielding the greatest impact on downstream statistical inferences and conclusions. The presented work and the development of the abagen toolbox lay the foundation for more standardized and systematic research in imaging transcriptomics, and will help to advance future understanding of the influence of gene expression in the human brain.",
+   "authors": [
+    "Markello, R. D.",
+    "Arnatkeviciute, A.",
+    "Poline, J.",
+    "Fulcher, B. D.",
+    "Fornito, A.",
+    "Misic, B."
+   ],
+   "journal": "eLife",
+   "year": 2021,
    "pdf_url": null,
    "via_url": "https://twitter.com/misicbata/status/1470786598681907216?s=12",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1639623257061100",
    "kind": "paper",
-   "title_unresolved": true
+   "publisher_url": "https://doi.org/10.7554/elife.72129"
   },
   {
    "id": "shared2021representationalsimilarityrsardmmethods",
@@ -45891,12 +46279,15 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2021.12.09.471939v1.full.pdf",
-   "doi": "10.1101/2021.12.09.471939v1.full.pdf",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2021.12.09.471939",
+   "title": "Preserved representations and decodability of diverse cognitive functions across the cortex, cerebellum, and subcortex",
+   "abstract": "Which part of the brain contributes to our complex cognitive processes? Studies have revealed contributions of the cerebellum and subcortex to higher-order cognitive functions; however it is unclear whether such functional representations are preserved across the cortex, cerebellum, and subcortex. In this study, we used functional magnetic resonance imaging data with 103 cognitive tasks and constructed three voxel-wise encoding and decoding models independently using cortical, cerebellar, and subcortical voxels. Representational similarity analysis revealed that the structure of task representations is preserved across the three brain parts. Principal component analysis visualized distinct organizations of abstract cognitive functions in each part of the cerebellum and subcortex. More than 90% of the cognitive tasks were decodable from the cerebellum and subcortical activities, even for the novel tasks not included in model training. Furthermore, we discovered that the cerebellum and subcortex have sufficient information to reconstruct activity in the cerebral cortex.",
+   "authors": [
+    "Nakai, T.",
+    "Nishimoto, S."
+   ],
+   "journal": "bioRxiv",
+   "year": 2021,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2021.12.09.471939v1.full.pdf",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1639153925056300",
@@ -45930,8 +46321,7 @@
      "cost_usd": 0.00363
     }
    },
-   "n_comments": 5,
-   "title_unresolved": true
+   "n_comments": 5
   },
   {
    "id": "shared2021httpswwwbiorxivorgcontentve",
@@ -45946,19 +46336,21 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2021.12.09.471939v1",
-   "doi": "10.1101/2021.12.09.471939v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2021.12.09.471939",
+   "title": "Preserved representations and decodability of diverse cognitive functions across the cortex, cerebellum, and subcortex",
+   "abstract": "Which part of the brain contributes to our complex cognitive processes? Studies have revealed contributions of the cerebellum and subcortex to higher-order cognitive functions; however it is unclear whether such functional representations are preserved across the cortex, cerebellum, and subcortex. In this study, we used functional magnetic resonance imaging data with 103 cognitive tasks and constructed three voxel-wise encoding and decoding models independently using cortical, cerebellar, and subcortical voxels. Representational similarity analysis revealed that the structure of task representations is preserved across the three brain parts. Principal component analysis visualized distinct organizations of abstract cognitive functions in each part of the cerebellum and subcortex. More than 90% of the cognitive tasks were decodable from the cerebellum and subcortical activities, even for the novel tasks not included in model training. Furthermore, we discovered that the cerebellum and subcortex have sufficient information to reconstruct activity in the cerebral cortex.",
+   "authors": [
+    "Nakai, T.",
+    "Nishimoto, S."
+   ],
+   "journal": "bioRxiv",
+   "year": 2021,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2021.12.09.471939v1",
    "via_url": "https://twitter.com/PessoaBrain/status/1469319240435974147?s=20",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1639153925056300",
-   "kind": "paper",
-   "title_unresolved": true
+   "kind": "paper"
   },
   {
    "id": "shared2021httpswwwbiorxivorgcontentvd",
@@ -45977,19 +46369,34 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2021.12.06.471432v1",
-   "doi": "10.1101/2021.12.06.471432v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2021.12.06.471432",
+   "title": "Graded variation in cortical T1w/T2w myelination during adolescence",
+   "abstract": "Myelination influences brain connectivity during sensitive periods of development by enhancing neural signaling speed and regulating synapse formation to reduce plasticity. However, in vivo studies characterizing the maturational timing of cortical myelination during human development remain scant. Here, we take advantage of recent advances in high-resolution cortical T1w/T2w myelin mapping methods, including principled correction of B1+ transmit field effects, using data from the Human Connectome Project in Development (N=628, ages 8-21) to characterize the maturational timing of myelination from childhood through early adulthood throughout the cerebral neocortex. We apply Bayesian spline models and functional latent clustering analysis to demonstrate graded variation in the rate of cortical T1w/T2w myelin growth in neocortical areas that is strongly correlated with the sensorimotor-association (S-A) axis of cortical organization reported by others. In sensorimotor areas T1w/T2w myelin starts at high levels at early ages, increases at a fast pace, and decelerates at later ages (18-21). In intermediate multimodal areas along the S-A axis, T1w/T2w myelin tends to start at intermediate levels and increase linearly at an intermediate pace. In transmodal/paralimbic association areas high along the S-A axis, T1w/T2w myelin tends to start at low levels and increase linearly at the slowest pace. These data provide evidence for graded variation along the S-A axis in the rate of cortical myelination during adolescence, which could reflect ongoing plasticity underlying the development of complex information processing and psychological functioning.\n\nSignificance StatementMyelin is a lipid membrane that is essential to healthy brain function. Myelin wraps axons to increase neural signaling speed, enabling complex neuronal functioning underlying learning and cognition. Here we characterize the developmental timing of myelination across the cerebral cortex during adolescence using recent advances in non-invasive myelin mapping. Our results provide new evidence demonstrating graded variation across the cortex in the timing of myelination during adolescence, with rapid myelination in lower-order sensory areas and gradual myelination in higher-order association areas. This spatial pattern of microstructural brain development closely parallels the sensorimotor-to-association axis of cortical organization and plasticity during ontogeny.",
+   "authors": [
+    "Baum, G. L.",
+    "Flournoy, J. C.",
+    "Glasser, M. F.",
+    "Harms, M. P.",
+    "Mair, P.",
+    "Sanders, A.",
+    "Barch, D.",
+    "Buckner, R. L.",
+    "Bookheimer, S.",
+    "Dapretto, M.",
+    "Smith, S. M.",
+    "Thomas, K. M.",
+    "Yacoub, E.",
+    "Van Essen, D. C.",
+    "Somerville, L. H."
+   ],
+   "journal": "bioRxiv",
+   "year": 2021,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2021.12.06.471432v1",
    "via_url": "https://twitter.com/leahsom/status/1468615354658267142?s=12",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1639017452054400",
-   "kind": "paper",
-   "title_unresolved": true
+   "kind": "paper"
   },
   {
    "id": "bowring2019exploring",
@@ -47086,19 +47493,38 @@
    "shared_by": "marta",
    "reactions": [],
    "url": "https://academic.oup.com/brain/advance-article-abstract/doi/10.1093/brain/awab336/6370954",
-   "doi": "10.1093/brain/awab336/6370954",
-   "title": "Link on academic.oup.com",
-   "abstract": "We recently showed that patients with different chronic pain conditions (such as chronic low back pain, fibromyalgia, migraine and Gulf War illness) demonstrated elevated brain and/or spinal cord levels of the glial marker 18-kDa translocator protein (TSPO), which suggests that neuroinflammation might be a pervasive phenomenon observable across multiple aetiologically heterogeneous pain disorders. Interestingly, the spatial distribution of this neuroinflammatory signal appears to exhibit a degree of disease specificity (e.g. with respect to the involvement of the primary somatosensory cortex), suggesting that different pain conditions may exhibit distinct 'neuroinflammatory signatures'. To explore this hypothesis further, we tested whether neuroinflammatory signal can characterize putative aetiological subtypes of chronic low back pain patients based on clinical presentation. Specifically, we explored neuroinflammation in patients whose chronic low back pain either did or did not radiate to the leg (i.e. 'radicular' versus 'axial' back pain). Fifty-four patients with chronic low back pain, 26 with axial back pain [43.7 &#xb1; 16.6 years old (mean &#xb1; SD)] and 28 with radicular back pain (48.3 &#xb1; 13.2 years old), underwent PET/MRI with 11C-PBR28, a second-generation radioligand for TSPO. 11C-PBR28 signal was quantified using standardized uptake values ratio (validated against volume of distribution ratio; n = 23). Functional MRI data were collected simultaneously to the 11C-PBR28 data (i) to functionally localize the primary somatosensory cortex back and leg subregions; and (ii) to perform functional connectivity analyses (in order to investigate possible neurophysiological correlations of the neuroinflammatory signal). PET and functional MRI measures were compared across groups, cross-correlated with one another and with the severity of 'fibromyalgianess' (i.e. the degree of pain centralization, or 'nociplastic pain'). Furthermore, statistical mediation models were used to explore possible causal relationships between these three variables. For the primary somatosensory cortex representation of back/leg, 11C-PBR28 PET signal and functional connectivity to the thalamus were: (i) higher in radicular compared to axial back pain patients; (ii) positively correlated with each other; (iii) positively correlated with fibromyalgianess scores, across groups; and finally (iv) fibromyalgianess mediated the association between 11C-PBR28 PET signal and primary somatosensory cortex-thalamus connectivity across groups. Our findings support the existence of 'neuroinflammatory signatures' that are accompanied by neurophysiological changes and correlate with clinical presentation (in particular, with the degree of nociplastic pain) in chronic pain patients. These signatures may contribute to the subtyping of distinct pain syndromes and also provide information about interindividual variability in neuroimmune brain signals, within diagnostic groups, that could eventually serve as targets for mechanism-based precision medicine approaches.",
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1093/brain/awab336",
+   "title": "Neuroimmune signatures in chronic low back pain subtypes",
+   "abstract": "Abstract \n                   We recently showed that patients with different chronic pain conditions (such as chronic low back pain, fibromyalgia, migraine and Gulf War illness) demonstrated elevated brain and/or spinal cord levels of the glial marker 18-kDa translocator protein (TSPO), which suggests that neuroinflammation might be a pervasive phenomenon observable across multiple aetiologically heterogeneous pain disorders. Interestingly, the spatial distribution of this neuroinflammatory signal appears to exhibit a degree of disease specificity (e.g. with respect to the involvement of the primary somatosensory cortex), suggesting that different pain conditions may exhibit distinct ‘neuroinflammatory signatures’. To explore this hypothesis further, we tested whether neuroinflammatory signal can characterize putative aetiological subtypes of chronic low back pain patients based on clinical presentation. Specifically, we explored neuroinflammation in patients whose chronic low back pain either did or did not radiate to the leg (i.e. ‘radicular’ versus ‘axial’ back pain). \n                   Fifty-four patients with chronic low back pain, 26 with axial back pain [43.7 ± 16.6 years old (mean ± SD)] and 28 with radicular back pain (48.3 ± 13.2 years old), underwent PET/MRI with 11C-PBR28, a second-generation radioligand for TSPO. 11C-PBR28 signal was quantified using standardized uptake values ratio (validated against volume of distribution ratio; n = 23). Functional MRI data were collected simultaneously to the 11C-PBR28 data (i) to functionally localize the primary somatosensory cortex back and leg subregions; and (ii) to perform functional connectivity analyses (in order to investigate possible neurophysiological correlations of the neuroinflammatory signal). PET and functional MRI measures were compared across groups, cross-correlated with one another and with the severity of ‘fibromyalgianess’ (i.e. the degree of pain centralization, or ‘nociplastic pain’). Furthermore, statistical mediation models were used to explore possible causal relationships between these three variables. \n                   For the primary somatosensory cortex representation of back/leg, 11C-PBR28 PET signal and functional connectivity to the thalamus were: (i) higher in radicular compared to axial back pain patients; (ii) positively correlated with each other; (iii) positively correlated with fibromyalgianess scores, across groups; and finally (iv) fibromyalgianess mediated the association between 11C-PBR28 PET signal and primary somatosensory cortex–thalamus connectivity across groups. \n                   Our findings support the existence of ‘neuroinflammatory signatures’ that are accompanied by neurophysiological changes and correlate with clinical presentation (in particular, with the degree of nociplastic pain) in chronic pain patients. These signatures may contribute to the subtyping of distinct pain syndromes and also provide information about interindividual variability in neuroimmune brain signals, within diagnostic groups, that could eventually serve as targets for mechanism-based precision medicine approaches.",
+   "authors": [
+    "Alshelh, Z.",
+    "Brusaferri, L.",
+    "Saha, A.",
+    "Morrissey, E.",
+    "Knight, P.",
+    "Kim, M.",
+    "Zhang, Y.",
+    "Hooker, J. M.",
+    "Albrecht, D.",
+    "Torrado-Carvajal, A.",
+    "Placzek, M. S.",
+    "Akeju, O.",
+    "Price, J.",
+    "Edwards, R. R.",
+    "Lee, J.",
+    "Sclocco, R.",
+    "Catana, C.",
+    "Napadow, V.",
+    "Loggia, M. L."
+   ],
+   "journal": "Brain",
+   "year": 2021,
    "pdf_url": null,
    "pmid": "34528069",
    "pmcid": "PMC9128369",
    "publisher_url": "https://doi.org/10.1093/brain/awab336/6370954",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1632174822035000",
    "kind": "paper",
-   "title_unresolved": true,
    "n_comments": 2
   },
   {
@@ -47496,19 +47922,30 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2021.02.22.432340v1",
-   "doi": "10.1101/2021.02.22.432340v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2021.02.22.432340",
+   "title": "A massive 7T fMRI dataset to bridge cognitive and computational neuroscience",
+   "abstract": "Extensive sampling of neural activity during rich cognitive phenomena is critical for robust understanding of brain function. We present the Natural Scenes Dataset (NSD), in which high-resolution fMRI responses to tens of thousands of richly annotated natural scenes are measured while participants perform a continuous recognition task. To optimize data quality, we develop and apply novel estimation and denoising techniques. Simple visual inspections of the NSD data reveal clear representational transformations along the ventral visual pathway. Further exemplifying the inferential power of the dataset, we use NSD to build and train deep neural network models that predict brain activity more accurately than state-of-the-art models from computer vision. NSD also includes substantial resting-state and diffusion data, enabling network neuroscience perspectives to constrain and enhance models of perception and memory. Given its unprecedented scale, quality, and breadth, NSD opens new avenues of inquiry in cognitive and computational neuroscience.",
+   "authors": [
+    "Allen, E. J.",
+    "St-Yves, G.",
+    "Wu, Y.",
+    "Breedlove, J. L.",
+    "Dowdle, L. T.",
+    "Caron, B.",
+    "Pestilli, F.",
+    "Charest, I.",
+    "Hutchinson, J. B.",
+    "Naselaris, T.",
+    "Kay, K."
+   ],
+   "journal": "bioRxiv",
+   "year": 2021,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2021.02.22.432340v1",
    "via_url": "https://twitter.com/cvnlab/status/1433881122254036994?s=12",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1630861671003600",
-   "kind": "paper",
-   "title_unresolved": true
+   "kind": "paper"
   },
   {
    "id": "shared2021think",
@@ -47648,17 +48085,29 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2021.01.16.426943v1.abstract",
-   "doi": "10.1101/2021.01.16.426943v1.abstract",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2021.01.16.426943",
+   "title": "Individual-Specific Areal-Level Parcellations Improve Functional Connectivity Prediction of Behavior",
+   "abstract": "Resting-state functional MRI (rs-fMRI) allows estimation of individual-specific cortical parcellations. We have previously developed a multi-session hierarchical Bayesian model (MS-HBM) for estimating high-quality individual-specific network-level parcellations. Here, we extend the model to estimate individual-specific areal-level parcellations. While network-level parcellations comprise spatially distributed networks spanning the cortex, the consensus is that areal-level parcels should be spatially localized, i.e., should not span multiple lobes. There is disagreement about whether areal-level parcels should be strictly contiguous or comprise multiple non-contiguous components, therefore we considered three areal-level MS-HBM variants spanning these range of possibilities. Individual-specific MS-HBM parcellations estimated using 10min of data generalized better than other approaches using 150min of data to out-of-sample rs-fMRI and task-fMRI from the same individuals. Resting-state functional connectivity (RSFC) derived from MS-HBM parcellations also achieved the best behavioral prediction performance. Among the three MS-HBM variants, the strictly contiguous MS-HBM (cMS-HBM) exhibited the best resting-state homogeneity and most uniform within-parcel task activation. In terms of behavioral prediction, the gradient-infused MS-HBM (gMS-HBM) was numerically the best, but differences among MS-HBM variants were not statistically significant. Overall, these results suggest that areal-level MS-HBMs can capture behaviorally meaningful individual-specific parcellation features beyond group-level parcellations. Multi-resolution trained models and parcellations are publicly available (https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/brain_parcellation/Kong2022_ArealMSHBM).",
+   "authors": [
+    "Kong, R.",
+    "Yang, Q.",
+    "Gordon, E.",
+    "Xue, A.",
+    "Yan, X.",
+    "Orban, C.",
+    "Zuo, X.-N.",
+    "Spreng, N.",
+    "Ge, T.",
+    "Holmes, A.",
+    "Eickhoff, S.",
+    "Yeo, B. T. T."
+   ],
+   "journal": "bioRxiv",
+   "year": 2021,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2021.01.16.426943v1.abstract",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1629471652005300",
    "kind": "paper",
-   "title_unresolved": true,
    "n_comments": 0
   },
   {
@@ -48015,7 +48464,7 @@
    ],
    "url": "https://arxiv.org/pdf/1004.2515.pdf",
    "doi": "10.48550/arxiv.1004.2515",
-   "title": "Link on arxiv.org",
+   "title": "Nonnegative Decomposition of Multivariate Information",
    "abstract": "Of the various attempts to generalize information theory to multiple variables, the most widely utilized, interaction information, suffers from the problem that it is sometimes negative. Here we reconsider from first principles the general structure of the information that a set of sources provides about a given variable. We begin with a new definition of redundancy as the minimum information that any source provides about each possible outcome of the variable, averaged over all possible outcomes. We then show how this measure of redundancy induces a lattice over sets of sources that clarifies the general structure of multivariate information. Finally, we use this redundancy lattice to propose a definition of partial information atoms that exhaustively decompose the Shannon information in a multivariate system in terms of the redundancy between synergies of subsets of the sources. Unlike interaction information, the atoms of our partial information decomposition are never negative and always support a clear interpretation as informational quantities. Our analysis also demonstrates how the negativity of interaction information can be explained by its confounding of redundancy and synergy.",
    "authors": [
     "Williams, Paul L.",
@@ -48052,8 +48501,7 @@
      "cost_usd": 0.00435
     }
    },
-   "n_comments": 1,
-   "title_unresolved": true
+   "n_comments": 1
   },
   {
    "id": "shared2021wholebrain",
@@ -48443,12 +48891,19 @@
    "shared_by": "tor",
    "reactions": [],
    "url": "https://pubmed.ncbi.nlm.nih.gov/33408410/",
-   "doi": null,
-   "title": "Link on pubmed.ncbi.nlm.nih.gov",
+   "doi": "10.1038/s41586-020-03115-5",
+   "title": "Activation and disruption of a neural mechanism for novel choice in monkeys",
    "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Bongioanni, A.",
+    "Folloni, D.",
+    "Verhagen, L.",
+    "Sallet, J.",
+    "Klein-Flügge, M. C.",
+    "Rushworth, M. F. S."
+   ],
+   "journal": "Nature",
+   "year": 2021,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1625740297036100",
    "kind": "paper",
@@ -48476,7 +48931,7 @@
     }
    },
    "n_comments": 0,
-   "title_unresolved": true
+   "publisher_url": "https://doi.org/10.1038/s41586-020-03115-5"
   },
   {
    "id": "shared2021unpaywall",
@@ -49234,17 +49689,21 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2021.05.11.443151v1",
-   "doi": "10.1101/2021.05.11.443151v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2021.05.11.443151",
+   "title": "Evaluating brain parcellations using the distance controlled boundary coefficient",
+   "abstract": "One important approach to human brain mapping is to define a set of distinct regions that can be linked to unique functions. Numerous brain parcellations have been proposed, using cytoarchitectonic, structural or functional Magnetic Resonance Imaging (fMRI) data. The intrinsic smoothness of brain data, however, poses a problem for current methods seeking to compare different parcellations. For example, criteria that simply compare within-parcel to between-parcel similarity provide even random parcellations with a high value. Furthermore, the evaluation is biased by the spatial scale of the parcellation. To address this problem, we propose the Distance Controlled Boundary Coefficient (DCBC), an unbiased criterion to evaluate discrete parcellations. We employ this new criterion to evaluate existing parcellations of the human neocortex in their power to predict functional boundaries for an fMRI data set with many different tasks, as well as for resting-state data. We find that common anatomical parcellations do not perform better than chance, suggesting that task-based functional boundaries do not align well with sulcal landmarks. Parcellations based on resting-state fMRI data perform well; in some cases, as well as a parcellation defined on the evaluation data itself. Finally, multi-modal parcellations that combine functional and anatomical criteria perform substantially worse than those based on functional data alone, indicating that functionally homogeneous regions often span major anatomical landmarks. Overall, the DCBC advances the field of functional brain mapping by providing an unbiased metric that compares the predictive ability of different brain parcellations to define brain regions that are functionally maximally distinct.",
+   "authors": [
+    "Zhi, D.",
+    "King, M.",
+    "Hernandez-Castillo, C. R.",
+    "Diedrichsen, J."
+   ],
+   "journal": "bioRxiv",
+   "year": 2022,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2021.05.11.443151v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1621705602002300",
    "kind": "paper",
-   "title_unresolved": true,
    "n_comments": 1
   },
   {
@@ -49596,19 +50055,22 @@
    "n_comments": 2,
    "reactions": [],
    "url": "https://www.biorxiv.org/content/10.1101/2020.05.06.080754v2.full.pdf+html",
-   "doi": "10.1101/2020.05.06.080754v2.full.pdf+html",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2020.05.06.080754",
+   "title": "Neural Correlates of Value Are Intrinsically History Dependent",
+   "abstract": "The authors have withdrawn their manuscript since they no longer stand by the results reported in this preprint. Therefore, the authors do not wish this work to be cited as reference for the project. If you have any questions, please contact the corresponding author.",
+   "authors": [
+    "Lee, S.",
+    "Lerman, C.",
+    "Kable, J."
+   ],
+   "journal": "bioRxiv",
+   "year": 2021,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2020.05.06.080754v2.full.pdf+html",
    "via_url": "https://twitter.com/Neuro_Skeptic/status/1390368144133349376",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1620326652066400",
-   "kind": "paper",
-   "title_unresolved": true
+   "kind": "paper"
   },
   {
    "id": "shared2021justh",
@@ -50115,12 +50577,22 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2021.02.09.430363v1",
-   "doi": "10.1101/2021.02.09.430363v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2021.02.09.430363",
+   "title": "Accommodating site variation in neuroimaging data using normative and hierarchical Bayesian models",
+   "abstract": "AO_SCPLOWBSTRACTC_SCPLOWThe potential of normative modeling to make individualized predictions from neuroimaging data has enabled inferences that go beyond the case-control approach. However, site effects are often confounded with variables of interest in a complex manner and can bias estimates of normative models, which has impeded the application of normative models to large multi-site neuroimaging data sets. In this study, we suggest accommodating for these site effects by including them as random effects in a hierarchical Bayesian model. We compared the performance of a linear and a non-linear hierarchical Bayesian model in modeling the effect of age on cortical thickness. We used data of 570 healthy individuals from the ABIDE (autism brain imaging data exchange) data set in our experiments. In addition, we used data from individuals with autism to test whether our models are able to retain clinically useful information while removing site effects. We compared the proposed single stage hierarchical Bayesian method to several harmonization techniques commonly used to deal with additive and multiplicative site effects using a two stage regression, including regressing out site and harmonizing for site with ComBat, both with and without explicitly preserving variance related to age and sex as biological variation of interest. In addition, we made predictions from raw data, in which site has not been accommodated for. The proposed hierarchical Bayesian method showed the best predictive performance according to multiple metrics. Beyond that, the resulting z-scores showed little to no residual site effects, yet still retained clinically useful information. In contrast, performance was particularly poor for the regression model and the ComBat model in which age and sex were not explicitly modeled. In all two stage harmonization models, predictions were poorly scaled, suffering from a loss of more than 90 % of the original variance. Our results show the value of hierarchical Bayesian regression methods for accommodating site variation in neuroimaging data, which provides an alternative to harmonization techniques. While the approach we propose may have broad utility, our approach is particularly well suited to normative modelling where the primary interest is in accurate modelling of inter-subject variation and statistical quantification of deviations from a reference model.\n\n1 HighlightsO_LIDevelopment and presentation of normative modeling approach based on hierarchical Bayesian modeling that can be applied to large multi-site neuroimaging data sets.\nC_LIO_LIComparison of performance of Hierarchical Bayesian model including site as predictor to several common ways to harmonize for multi-site effects.\nC_LIO_LIPresentation of normative modeling as site correction tool.\nC_LI",
+   "authors": [
+    "Bayer, J. M. M.",
+    "Dinga, R.",
+    "Kia, S. M.",
+    "Kottaram, A. R.",
+    "Wolfers, T.",
+    "Lv, J.",
+    "Zalesky, A.",
+    "Schmaal, L.",
+    "Marquand, A."
+   ],
+   "journal": "bioRxiv",
+   "year": 2021,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2021.02.09.430363v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1618237718034400",
@@ -50151,8 +50623,7 @@
      "cost_usd": 0.00266
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2021vivo",
@@ -53767,19 +54238,22 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2020.11.30.401323v1.full.pdf",
-   "doi": "10.1101/2020.11.30.401323v1.full.pdf",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2020.11.30.401323",
+   "title": "MR-based camera-less eye tracking using deep neural networks",
+   "abstract": "Viewing behavior provides a window into many central aspects of human cognition and health, and it is an important variable of interest or confound in many fMRI studies. To make eye tracking freely and widely available for MRI research, we developed DeepMReye: a convolutional neural network that decodes gaze position from the MR-signal of the eyeballs. It performs camera-less eye tracking at sub-imaging temporal resolution in held-out participants with little training data and across a broad range of scanning protocols. Critically, it works even in existing datasets and when the eyes are closed. Decoded eye movements explain network-wide brain activity also in regions not associated with oculomotor function. This work emphasizes the importance of eye tracking for the interpretation of fMRI results and provides an open-source software solution that is widely applicable in research and clinical settings.",
+   "authors": [
+    "Frey, M.",
+    "Nau, M.",
+    "Doeller, C. F."
+   ],
+   "journal": "bioRxiv",
+   "year": 2020,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2020.11.30.401323v1.full.pdf",
    "via_url": "https://twitter.com/NauMatt/status/1334051808466104320",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1607019116137900",
-   "kind": "paper",
-   "title_unresolved": true
+   "kind": "paper"
   },
   {
    "id": "shared2020medial",
@@ -54222,18 +54696,25 @@
    "n_comments": 1,
    "reactions": [],
    "url": "https://biorxiv.org/cgi/content/short/2020.11.05.369793v1",
-   "doi": null,
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2020.11.05.369793",
+   "title": "Causal inference gates corticostriatal learning",
+   "abstract": "Attributing outcomes to your own actions or to external causes is essential for appropriately learning which actions lead to reward and which actions do not. Our previous work showed that this type of credit assignment is best explained by a Bayesian reinforcement learning model which posits that beliefs about the causal structure of the environment modulate reward prediction errors (RPEs) during action value updating. In this study, we investigated the neural circuits underlying reinforcement learning that are influenced by causal beliefs using functional magnetic resonance imaging (fMRI) while human participants (N = 31; 13 males, 18 females) completed a behavioral task that manipulated beliefs about causal structure. We found evidence that RPEs modulated by causal beliefs are represented in posterior putamen, while standard (unmodulated) RPEs are represented in ventral striatum. Further analyses revealed that beliefs about causal structure are represented in anterior insula and inferior frontal gyrus. Finally, structural equation modeling revealed effective connectivity from anterior insula to posterior putamen. Together, these results are consistent with a neural architecture in which causal beliefs in anterior insula are integrated with prediction error signals in posterior putamen to update action values.\n\nSignificance StatementLearning which actions lead to reward - a process known as reinforcement learning - is essential for survival. Inferring the causes of observed outcomes - a process known as causal inference - is crucial for appropriately assigning credit to ones own actions and restricting learning to effective action-outcome contingencies. Previous studies have linked reinforcement learning to the striatum and causal inference to prefrontal regions, yet how these neural processes interact to guide adaptive behavior remains poorly understood. Here, we found evidence that causal beliefs represented in the prefrontal cortex modulate action value updating in posterior striatum, separately from the unmodulated action value update in ventral striatum posited by standard reinforcement learning models.",
+   "authors": [
+    "Dorfman, H. M.",
+    "Tomov, M. S.",
+    "Cheung, B.",
+    "Clarke, D.",
+    "Gershman, S. J.",
+    "Hughes, B. L."
+   ],
+   "journal": "bioRxiv",
+   "year": 2020,
    "pdf_url": null,
    "via_url": "https://twitter.com/biorxiv_neursci/status/1324867987325800448?s=12",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1605758341094600",
    "kind": "paper",
-   "title_unresolved": true
+   "publisher_url": "https://doi.org/10.1101/2020.11.05.369793"
   },
   {
    "id": "shared2020science",
@@ -56729,12 +57210,20 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2020.02.20.955161v1.abstract",
-   "doi": "10.1101/2020.02.20.955161v1.abstract",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/2020.02.20.955161",
+   "title": "Parallel cortical-brainstem pathways to attentional analgesia",
+   "abstract": "Pain perception is diminished when attention is diverted. Our previous human fMRI study, using a 2x2 factorial design with thermal stimuli and concurrent visual attention task, linked the brainstem triad of locus coeruleus (LC), rostroventromedial medulla (RVM) and periaqueductal grey (PAG) to attentional analgesia. This study was repeated with a larger cohort, replicating our earlier findings. Pain intensity was encoded by the RVM, whilst activity in the contralateral LC correlated with the magnitude of attentional analgesia. Psycho-Physiological Interaction analysis informed subsequent Dynamic Causal Modelling and identified two parallel paths between forebrain and the brainstem regions involved in analgesia. These cortico-brainstem connections were modulated by attentional demand: a bidirectional anterior cingulate cortex (ACC) - right-LC loop, and a top-down influence of task on ACC-PAG-RVM. Under conditions of competing attentional demands the ACC recruits discrete brainstem circuits to modulate nociceptive input.",
+   "authors": [
+    "Oliva, V.",
+    "Gregory, R.",
+    "Davies, W.-E.",
+    "Harrison, L.",
+    "Moran, R.",
+    "Pickering, A. E.",
+    "Brooks, J. C. W."
+   ],
+   "journal": "bioRxiv",
+   "year": 2020,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2020.02.20.955161v1.abstract",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1601474806005800",
@@ -56770,8 +57259,7 @@
      "cost_usd": 0.00294
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2020functional",
@@ -58571,7 +59059,7 @@
    "reactions": [],
    "url": "https://arxiv.org/pdf/2008.02961.pdf",
    "doi": "10.48550/arxiv.2008.02961",
-   "title": "Link on arxiv.org",
+   "title": "From Connectomic to Task-evoked Fingerprints: Individualized Prediction of Task Contrasts from Resting-state Functional Connectivity",
    "abstract": "Resting-state functional MRI (rsfMRI) yields functional connectomes that can serve as cognitive fingerprints of individuals. Connectomic fingerprints have proven useful in many machine learning tasks, such as predicting subject-specific behavioral traits or task-evoked activity. In this work, we propose a surface-based convolutional neural network (BrainSurfCNN) model to predict individual task contrasts from their resting-state fingerprints. We introduce a reconstructive-contrastive loss that enforces subject-specificity of model outputs while minimizing predictive error. The proposed approach significantly improves the accuracy of predicted contrasts over a well-established baseline. Furthermore, BrainSurfCNN's prediction also surpasses test-retest benchmark in a subject identification task.",
    "authors": [
     "Ngo, Gia H.",
@@ -58617,8 +59105,7 @@
      "cost_usd": 0.00469
     }
    },
-   "n_comments": 1,
-   "title_unresolved": true
+   "n_comments": 1
   },
   {
    "id": "shared2020confirmation",
@@ -58767,12 +59254,26 @@
     }
    ],
    "url": "https://www.biorxiv.org/content/10.1101/2020.08.05.237511v1",
-   "doi": "10.1101/2020.08.05.237511v1",
-   "title": "Link on biorxiv.org",
-   "abstract": "The patient-clinician interaction can powerfully shape treatment out-comes such as pain, but is often considered an intangible 'art-of-medicine', and has largely eluded scientific inquiry. Although brain correlates of social processes such as empathy and theory-of-mind have been studied using single-subject designs, the specific behavioral and neural mechanisms underpinning the patient-clinician interaction are unknown. Using a two-person interactive design, we simultaneously recorded functional MRI (i.e. hyperscanning) in patient-clinician dyads, who interacted via live video while clinicians treated evoked pain in chronic pain patients. Our results show that patient analgesia is mediated by patient-clinician nonverbal behavioral mirroring and brain-to-brain concordance in circuitry implicated in theory-of-mind and social mirroring. Dyad-based analyses showed extensive dynamic coupling of these brain nodes with the partners' brain activity, yet only in dyads where clinical rapport had been established prior to the interaction. These findings point to a putatively key brain-behavioral mechanism for therapeutic alliance and psychosocial analgesia. ### Competing Interest Statement The authors have declared no competing interest.",
-   "authors": [],
+   "doi": "10.1101/2020.08.05.237511",
+   "title": "Dynamic brain-to-brain concordance and behavioral mirroring as a mechanism of the patient-clinician interaction",
+   "abstract": "The patient-clinician interaction can powerfully shape treatment out-comes such as pain, but is often considered an intangible 'art-of-medicine', and has largely eluded scientific inquiry. Although brain correlates of social processes such as empathy and theory-of-mind have been studied using single-subject designs, the specific behavioral and neural mechanisms underpinning the patient-clinician interaction are unknown. Using a two-person interactive design, we simultaneously recorded functional MRI (i.e. hyperscanning) in patient-clinician dyads, who interacted via live video while clinicians treated evoked pain in chronic pain patients. Our results show that patient analgesia is mediated by patient-clinician nonverbal behavioral mirroring and brain-to-brain concordance in circuitry implicated in theory-of-mind and social mirroring. Dyad-based analyses showed extensive dynamic coupling of these brain nodes with the partners' brain activity, yet only in dyads where clinical rapport had been established prior to the interaction. These findings point to a putatively key brain-behavioral mechanism for therapeutic alliance and psychosocial analgesia.",
+   "authors": [
+    "Ellingsen, D.-M.",
+    "Isenburg, K.",
+    "Jung, C.",
+    "Lee, J.",
+    "Gerber, J.",
+    "Mawla, I.",
+    "Sclocco, R.",
+    "Jensen, K. B.",
+    "Edwards, R. R.",
+    "Kelley, J. M.",
+    "Kirsch, I.",
+    "Kaptchuk, T. J.",
+    "Napadow, V."
+   ],
    "journal": "bioRxiv",
-   "year": null,
+   "year": 2020,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/2020.08.05.237511v1",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1596815069252300",
@@ -58810,8 +59311,7 @@
      "cost_usd": 0.0049
     }
    },
-   "n_comments": 1,
-   "title_unresolved": true
+   "n_comments": 1
   },
   {
    "id": "shared2020metabolic",
@@ -59354,17 +59854,22 @@
     }
    ],
    "url": "https://link.springer.com/content/pdf/10.3758/s13423-017-1317-5.pdf",
-   "doi": "10.3758/s13423-017-1317-5.pdf",
-   "title": "Link on link.springer.com",
+   "doi": "10.3758/s13423-017-1317-5",
+   "title": "How to become a Bayesian in eight easy steps: An annotated reading list",
    "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Etz, A.",
+    "Gronau, Q. F.",
+    "Dablander, F.",
+    "Edelsbrunner, P. A.",
+    "Baribault, B."
+   ],
+   "journal": "Psychonomic Bulletin &amp; Review",
+   "year": 2017,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.3758/s13423-017-1317-5.pdf",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1596137620228800",
    "kind": "paper",
-   "title_unresolved": true,
    "n_comments": 3
   },
   {
@@ -59667,19 +60172,26 @@
    "n_comments": 0,
    "reactions": [],
    "url": "https://www.biorxiv.org/content/10.1101/309260v1",
-   "doi": "10.1101/309260v1",
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/309260",
+   "title": "Detecting and harmonizing scanner differences in the ABCD study - annual release 1.0",
+   "abstract": "In order to obtain the sample sizes needed for robustly reproducible effects, it is often necessary to acquire data at multiple sites using different MRI scanners. This poses a challenge for investigators to account for the variance due to scanner, as balanced sampling is often not an option. Similarly, longitudinal studies must deal with known and unknown changes to scanner hardware and software over time. In this manuscript, we have explored scanner-related differences in the dataset recently released by the Adolescent Brain Cognitive Development (ABCD) project, a multi-site, longitudinal study of children age 9-10. We demonstrate that scanner manufacturer, model, as well as the individual scanner itself, are detectable in the resting and task-based fMRI results of the ABCD dataset. We further demonstrate that these differences can be harmonized using an empirical Bayes approach known as ComBat. We argue that accounting for scanner variance, including even minor differences in scanner hardware or software, is crucial for any analysis.",
+   "authors": [
+    "Nielson, D. M.",
+    "Pereira, F.",
+    "Zheng, C. Y.",
+    "Migineishvili, N.",
+    "Lee, J. A.",
+    "Thomas, A. G.",
+    "Bandettini, P. A."
+   ],
+   "journal": "bioRxiv",
+   "year": 2018,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1101/309260v1",
    "via_url": "https://twitter.com/junaidsmerchant/status/1286813214240657408?s=12",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1595994842198400",
-   "kind": "paper",
-   "title_unresolved": true
+   "kind": "paper"
   },
   {
    "id": "gilam2020what",
@@ -60696,17 +61208,25 @@
    "shared_by": "marta",
    "reactions": [],
    "url": "https://elifesciences.org/articles/53470",
-   "doi": null,
-   "title": "Link on elifesciences.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.7554/elife.53470",
+   "title": "Microstructural organization of human insula is linked to its macrofunctional circuitry and predicts cognitive control",
+   "abstract": "The human insular cortex is a heterogeneous brain structure which plays an integrative role in guiding behavior. The cytoarchitectonic organization of the human insula has been investigated over the last century using postmortem brains but there has been little progress in noninvasive in vivo mapping of its microstructure and large-scale functional circuitry. Quantitative modeling of multi-shell diffusion MRI data from 413 participants revealed that human insula microstructure differs significantly across subdivisions that serve distinct cognitive and affective functions. Insular microstructural organization was mirrored in its functionally interconnected circuits with the anterior cingulate cortex that anchors the salience network, a system important for adaptive switching of cognitive control systems. Furthermore, insular microstructural features, confirmed in Macaca mulatta, were linked to behavior and predicted individual differences in cognitive control ability. Our findings open new possibilities for probing psychiatric and neurological disorders impacted by insular cortex dysfunction, including autism, schizophrenia, and fronto-temporal dementia.",
+   "authors": [
+    "Menon, V.",
+    "Gallardo, G.",
+    "Pinsk, M. A.",
+    "Nguyen, V.",
+    "Li, J.",
+    "Cai, W.",
+    "Wassermann, D."
+   ],
+   "journal": "eLife",
+   "year": 2020,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1591630558143300",
    "kind": "paper",
-   "title_unresolved": true,
-   "n_comments": 6
+   "n_comments": 6,
+   "publisher_url": "https://doi.org/10.7554/elife.53470"
   },
   {
    "id": "shared2020connected",
@@ -63609,7 +64129,7 @@
    ],
    "url": "https://arxiv.org/pdf/2002.06177.pdf",
    "doi": "10.48550/arxiv.2002.06177",
-   "title": "Link on arxiv.org",
+   "title": "The Next Decade in AI: Four Steps Towards Robust Artificial Intelligence",
    "abstract": "Recent research in artificial intelligence and machine learning has largely emphasized general-purpose learning and ever-larger training sets and more and more compute. In contrast, I propose a hybrid, knowledge-driven, reasoning-based approach, centered around cognitive models, that could provide the substrate for a richer, more robust AI than is currently possible.",
    "authors": [
     "Marcus, Gary"
@@ -63648,8 +64168,7 @@
      "cost_usd": 0.00329
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "colloca2020placebo",
@@ -65025,12 +65544,16 @@
    "shared_by": "lukasvo",
    "reactions": [],
    "url": "https://www.ncbi.nlm.nih.gov/pubmed/28728214",
-   "doi": null,
-   "title": "Link on ncbi.nlm.nih.gov",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1111/bph.13957",
+   "title": "P2X receptor channels in chronic pain pathways",
+   "abstract": "Chronic pain is a highly prevalent debilitating condition for which treatment options remain limited for many patients. Ionotropic ATP signalling through excitatory and calcium‐permeable P2X receptor channels is now rightfully considered as a critical player in pathological pain generation and maintenance; therefore, their selective targeting represents a therapeutic opportunity with promising yet untapped potential. Recent advances in the structural, functional and pharmacological characterization of rodent and human ATP‐gated P2X receptor channels have shed brighter light on the role of specific subtypes in the pathophysiology of chronic inflammatory, neuropathic or cancer pain. Here, we will review the contribution of P2X3, P2X4 and P2X7 receptors to chronic pain and discuss the opportunities and challenges associated with the pharmacological manipulation of their function.    Linked Articles  This article is part of a themed section on Recent Advances in Targeting Ion Channels to Treat Chronic Pain. To view the other articles in this section visit  http://onlinelibrary.wiley.com/doi/10.1111/bph.v175.12/issuetoc",
+   "authors": [
+    "Bernier, L.",
+    "Ase, A. R.",
+    "Séguéla, P."
+   ],
+   "journal": "British Journal of Pharmacology",
+   "year": 2017,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1572615198022100",
    "kind": "paper",
@@ -65061,7 +65584,7 @@
     }
    },
    "n_comments": 0,
-   "title_unresolved": true
+   "publisher_url": "https://doi.org/10.1111/bph.13957"
   },
   {
    "id": "smith2019widespread",
@@ -68791,12 +69314,19 @@
    "shared_by": "tor",
    "reactions": [],
    "url": "https://elifesciences.org/articles/41690",
-   "doi": null,
-   "title": "Link on elifesciences.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.7554/elife.41690",
+   "title": "Discovering and deciphering relationships across disparate data modalities",
+   "abstract": "Understanding the relationships between different properties of data, such as whether a genome or connectome has information about disease status, is increasingly important. While existing approaches can test whether two properties are related, they may require unfeasibly large sample sizes and often are not interpretable. Our approach, ‘Multiscale Graph Correlation’ (MGC), is a dependence test that juxtaposes disparate data science techniques, including k-nearest neighbors, kernel methods, and multiscale analysis. Other methods may require double or triple the number of samples to achieve the same statistical power as MGC in a benchmark suite including high-dimensional and nonlinear relationships, with dimensionality ranging from 1 to 1000. Moreover, MGC uniquely characterizes the latent geometry underlying the relationship, while maintaining computational efficiency. In real data, including brain imaging and cancer genetics, MGC detects the presence of a dependency and provides guidance for the next experiments to conduct.",
+   "authors": [
+    "Vogelstein, J. T.",
+    "Bridgeford, E. W.",
+    "Wang, Q.",
+    "Priebe, C. E.",
+    "Maggioni, M.",
+    "Shen, C."
+   ],
+   "journal": "eLife",
+   "year": 2019,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1550095641003500",
    "kind": "paper",
@@ -68827,7 +69357,7 @@
     }
    },
    "n_comments": 0,
-   "title_unresolved": true
+   "publisher_url": "https://doi.org/10.7554/elife.41690"
   },
   {
    "id": "shared2019control",
@@ -68894,18 +69424,26 @@
    "n_comments": 0,
    "reactions": [],
    "url": "http://biorxiv.org/cgi/content/short/545954v1",
-   "doi": null,
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/545954",
+   "title": "THINGS: A database of 1,854 object concepts and more than 26,000 naturalistic object images",
+   "abstract": "In recent years, the use of a large number of object concepts and naturalistic object images has been growing enormously in cognitive neuroscience research. Classical databases of object concepts are based mostly on a manually-curated set of concepts. Further, databases of naturalistic object images typically consist of single images of objects cropped from their background, or a large number of uncontrolled naturalistic images of varying quality, requiring elaborate manual image curation. Here we provide a set of 1,854 diverse object concepts sampled systematically from concrete picturable and nameable nouns in the American English language. Using these object concepts, we conducted a large-scale web image search to compile a database of 26,107 high-quality naturalistic images of those objects, with 12 or more object images per concept and all images cropped to square size. Using crowdsourcing, we provide higher-level category membership for the 27 most common categories and validate them by relating them to representations in a semantic embedding derived from large text corpora. Finally, by feeding images through a deep convolutional neural network, we demonstrate that they exhibit high selectivity for different object concepts, while at the same time preserving variability of different object images within each concept. Together, the THINGS database provides a rich resource of object concepts and object images and offers a tool for both systematic and large-scale naturalistic research in the fields of psychology, neuroscience, and computer science.",
+   "authors": [
+    "Hebart, M. N.",
+    "Dickter, A. H.",
+    "Kidder, A.",
+    "Kwok, W. Y.",
+    "Corriveau, A.",
+    "Van Wicklin, C.",
+    "Baker, C. I."
+   ],
+   "journal": "bioRxiv",
+   "year": 2019,
    "pdf_url": null,
    "via_url": "https://twitter.com/martin_hebart/status/1094905583201865729",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1549931877000900",
    "kind": "paper",
-   "title_unresolved": true
+   "publisher_url": "https://doi.org/10.1101/545954"
   },
   {
    "id": "stauss2019multicenter",
@@ -70409,12 +70947,15 @@
     }
    ],
    "url": "https://academic.oup.com/brain/advance-article/doi/10.1093/brain/awy281/5194498",
-   "doi": "10.1093/brain/awy281/5194498",
-   "title": "Link on academic.oup.com",
+   "doi": "10.1093/brain/awy281",
+   "title": "The search for pain biomarkers in the human brain",
    "abstract": "Non-invasive functional brain imaging is used more than ever to investigate pain in health and disease, with the prospect of finding new means to alleviate pain and improve patient wellbeing. The observation that several brain areas are activated by transient painful stimuli, and that the magnitude of this activity is often graded with pain intensity, has prompted researchers to extract features of brain activity that could serve as biomarkers to measure pain objectively. However, most of the brain responses observed when pain is present can also be observed when pain is absent. For example, similar brain responses can be elicited by salient but non-painful auditory, tactile and visual stimuli, and such responses can even be recorded in patients with congenital analgesia. Thus, as argued in this review, there is still disagreement on the degree to which current measures of brain activity exactly relate to pain. Furthermore, whether more recent analysis techniques can be used to identify distributed patterns of brain activity specific for pain can be only warranted using carefully designed control conditions. On a more general level, the clinical utility of current pain biomarkers derived from human functional neuroimaging appears to be overstated, and evidence for their efficacy in real-life clinical conditions is scarce. Rather than searching for biomarkers of pain perception, several researchers are developing biomarkers to achieve mechanism-based stratification of pain conditions, predict response to medication and offer personalized treatments. Initial results with promising clinical perspectives need to be further tested for replicability and generalizability.",
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Mouraux, A.",
+    "Iannetti, G. D."
+   ],
+   "journal": "Brain",
+   "year": 2018,
    "pdf_url": null,
    "pmid": "30462175",
    "pmcid": "PMC6262221",
@@ -70451,8 +70992,7 @@
      "cost_usd": 0.00458
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2018justj",
@@ -71991,7 +72531,7 @@
    ],
    "url": "https://arxiv.org/pdf/1809.08632.pdf",
    "doi": "10.48550/arxiv.1809.08632",
-   "title": "Link on arxiv.org",
+   "title": "BrainNet: A Multi-Person Brain-to-Brain Interface for Direct Collaboration Between Brains",
    "abstract": "We present BrainNet which, to our knowledge, is the first multi-person non-invasive direct brain-to-brain interface for collaborative problem solving. The interface combines electroencephalography (EEG) to record brain signals and transcranial magnetic stimulation (TMS) to deliver information noninvasively to the brain. The interface allows three human subjects to collaborate and solve a task using direct brain-to-brain communication. Two of the three subjects are \"Senders\" whose brain signals are decoded using real-time EEG data analysis to extract decisions about whether to rotate a block in a Tetris-like game before it is dropped to fill a line. The Senders' decisions are transmitted via the Internet to the brain of a third subject, the \"Receiver,\" who cannot see the game screen. The decisions are delivered to the Receiver's brain via magnetic stimulation of the occipital cortex. The Receiver integrates the information received and makes a decision using an EEG interface about either turning the block or keeping it in the same position. A second round of the game gives the Senders one more chance to validate and provide feedback to the Receiver's action. We evaluated the performance of BrainNet in terms of (1) Group-level performance during the game; (2) True/False positive rates of subjects' decisions; (3) Mutual information between subjects. Five groups of three subjects successfully used BrainNet to perform the Tetris task, with an average accuracy of 0.813. Furthermore, by varying the information reliability of the Senders by artificially injecting noise into one Sender's signal, we found that Receivers are able to learn which Sender is more reliable based solely on the information transmitted to their brains. Our results raise the possibility of future brain-to-brain interfaces that enable cooperative problem solving by humans using a \"social network\" of connected brains.",
    "authors": [
     "Jiang, Linxing Preston",
@@ -72038,8 +72578,7 @@
      "cost_usd": 0.00341
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2018motor",
@@ -77896,7 +78435,7 @@
    ],
    "url": "https://arxiv.org/pdf/1710.03599.pdf",
    "doi": "10.48550/arxiv.1710.03599",
-   "title": "Link on arxiv.org",
+   "title": "Quantum Hopfield neural network",
    "abstract": "Quantum computing allows for the potential of significant advancements in both the speed and the capacity of widely used machine learning techniques. Here we employ quantum algorithms for the Hopfield network, which can be used for pattern recognition, reconstruction, and optimization as a realization of a content-addressable memory system. We show that an exponentially large network can be stored in a polynomial number of quantum bits by encoding the network into the amplitudes of quantum states. By introducing a classical technique for operating the Hopfield network, we can leverage quantum algorithms to obtain a quantum computational complexity that is logarithmic in the dimension of the data. We also present an application of our method as a genetic sequence recognizer.",
    "authors": [
     "Rebentrost, Patrick",
@@ -77938,8 +78477,7 @@
      "cost_usd": 0.00463
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2017httpstcofvbobhwassrtrue",
@@ -78628,12 +79166,16 @@
    "shared_by": "lab member",
    "reactions": [],
    "url": "https://link.springer.com/content/pdf/10.1007%2F978-3-642-33191-6_36.pdf",
-   "doi": "10.1007/978-3-642-33191-6_36.pdf",
-   "title": "Link on link.springer.com",
+   "doi": "10.1007/978-3-642-33191-6_36",
+   "title": "Continuous Pain Intensity Estimation from Facial Expressions",
    "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Kaltwang, S.",
+    "Rudovic, O.",
+    "Pantic, M."
+   ],
+   "journal": "Lecture Notes in Computer Science",
+   "year": 2012,
    "pdf_url": null,
    "publisher_url": "https://doi.org/10.1007/978-3-642-33191-6_36.pdf",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1505938656000432",
@@ -78661,8 +79203,7 @@
      "cost_usd": 0.00264
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2017google",
@@ -79024,7 +79565,7 @@
    "reactions": [],
    "url": "https://arxiv.org/pdf/1708.04670.pdf",
    "doi": "10.48550/arxiv.1708.04670",
-   "title": "Link on arxiv.org",
+   "title": "DeepFaceLIFT: Interpretable Personalized Models for Automatic Estimation of Self-Reported Pain",
    "abstract": "Previous research on automatic pain estimation from facial expressions has focused primarily on \"one-size-fits-all\" metrics (such as PSPI). In this work, we focus on directly estimating each individual's self-reported visual-analog scale (VAS) pain metric, as this is considered the gold standard for pain measurement. The VAS pain score is highly subjective and context-dependent, and its range can vary significantly among different persons. To tackle these issues, we propose a novel two-stage personalized model, named DeepFaceLIFT, for automatic estimation of VAS. This model is based on (1) Neural Network and (2) Gaussian process regression models, and is used to personalize the estimation of self-reported pain via a set of hand-crafted personal features and multi-task learning. We show on the benchmark dataset for pain analysis (The UNBC-McMaster Shoulder Pain Expression Archive) that the proposed personalized model largely outperforms the traditional, unpersonalized models: the intra-class correlation improves from a baseline performance of 19\\% to a personalized performance of 35\\% while also providing confidence in the model\\textquotesingle s estimates -- in contrast to existing models for the target task. Additionally, DeepFaceLIFT automatically discovers the pain-relevant facial regions for each person, allowing for an easy interpretation of the pain-related facial cues.",
    "authors": [
     "Liu, Dianbo",
@@ -79070,8 +79611,7 @@
      "cost_usd": 0.00495
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "shared2017whenisgood",
@@ -82498,18 +83038,21 @@
     }
    ],
    "url": "http://biorxiv.org/cgi/content/short/088278v1",
-   "doi": null,
-   "title": "Link on biorxiv.org",
-   "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "doi": "10.1101/088278",
+   "title": "Ten simple rules for structuring papers",
+   "abstract": "Good scientific writing is essential to career development and to the progress of science. A well-structured manuscript allows readers and reviewers to get excited about the subject matter, to understand and verify the papers contributions, and to integrate these contributions into a broader context. However, many scientists struggle with producing high-quality manuscripts and typically get little training in paper writing. Focusing on how readers consume information, we present a set of 10 simple rules to help you get across the main idea of your paper. These rules are designed to make your paper more influential and the process of writing more efficient and pleasurable.",
+   "authors": [
+    "Kording, K. P.",
+    "Mensh, B."
+   ],
+   "journal": "bioRxiv",
+   "year": 2017,
    "pdf_url": null,
    "via_url": "https://twitter.com/biorxivpreprint/status/803478717452480513",
    "via": "x",
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1480490429000477",
    "kind": "paper",
-   "title_unresolved": true
+   "publisher_url": "https://doi.org/10.1101/088278"
   },
   {
    "id": "shared2016psychiatric",
@@ -83905,7 +84448,7 @@
    "shared_by": "tor",
    "reactions": [],
    "url": "http://journals.plos.org/plosone/article/asset?id=10.1371/journal.pone.0117746.PDF",
-   "doi": "10.1371/journal.pone.0117746.pdf",
+   "doi": null,
    "title": "Link on journals.plos.org",
    "abstract": null,
    "authors": [],
@@ -83950,12 +84493,19 @@
    "shared_by": "tor",
    "reactions": [],
    "url": "http://www.sciencedirect.com/science/article/pii/S0006322314005976",
-   "doi": null,
-   "title": "Link on sciencedirect.com",
+   "doi": "10.1016/j.biopsych.2014.08.004",
+   "title": "The Anterior Cingulate Cortex Is a Critical Hub for Pain-Induced Depression",
    "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Barthas, F.",
+    "Sellmeijer, J.",
+    "Hugel, S.",
+    "Waltisperger, E.",
+    "Barrot, M.",
+    "Yalcin, I."
+   ],
+   "journal": "Biological Psychiatry",
+   "year": 2015,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1476335711000169",
    "kind": "paper",
@@ -83987,7 +84537,7 @@
     }
    },
    "n_comments": 0,
-   "title_unresolved": true
+   "publisher_url": "https://doi.org/10.1016/j.biopsych.2014.08.004"
   },
   {
    "id": "ji2012modulation",
@@ -84491,8 +85041,8 @@
    ],
    "url": "http://arxiv.org/abs/1608.06548",
    "doi": "10.48550/arxiv.1608.06548",
-   "title": "Link on arxiv.org",
-   "abstract": "Abstract page for arXiv paper 1608.06548: Grand Challenges for Global Brain Sciences",
+   "title": "Grand Challenges for Global Brain Sciences",
+   "abstract": "The next grand challenges for society and science are in the brain sciences. A collection of 60+ scientists from around the world, together with 10+ observers from national, private, and foundations, spent two days together discussing the top challenges that we could solve as a global community in the next decade. We eventually settled on three challenges, spanning anatomy, physiology, and medicine. Addressing all three challenges requires novel computational infrastructure. The group proposed the advent of The International Brain Station (TIBS), to address these challenges, and launch brain sciences to the next level of understanding.",
    "authors": [
     "Vogelstein, Joshua T.",
     "Amunts, Katrin",
@@ -84590,8 +85140,7 @@
      "cost_usd": 0.00279
     }
    },
-   "n_comments": 0,
-   "title_unresolved": true
+   "n_comments": 0
   },
   {
    "id": "sudhof2016truth",
@@ -84752,7 +85301,7 @@
    "shared_by": "tor",
    "reactions": [],
    "url": "http://journals.plos.org/plosone/article/asset?id=10.1371%2Fjournal.pone.0159915.PDF",
-   "doi": "10.1371/journal.pone.0159915.pdf",
+   "doi": null,
    "title": "Link on journals.plos.org",
    "abstract": null,
    "authors": [],
@@ -86662,12 +87211,16 @@
    "shared_by": "stephan",
    "reactions": [],
    "url": "http://www.sciencedirect.com/science/article/pii/S1053811916300404",
-   "doi": null,
-   "title": "Link on sciencedirect.com",
+   "doi": "10.1016/j.neuroimage.2016.04.007",
+   "title": "Estimating brain age using high-resolution pattern recognition: Younger brains in long-term meditation practitioners",
    "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Luders, E.",
+    "Cherbuin, N.",
+    "Gaser, C."
+   ],
+   "journal": "NeuroImage",
+   "year": 2016,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1466075122000015",
    "kind": "paper",
@@ -86699,7 +87252,7 @@
     }
    },
    "n_comments": 0,
-   "title_unresolved": true
+   "publisher_url": "https://doi.org/10.1016/j.neuroimage.2016.04.007"
   },
   {
    "id": "shared2016sciencedirectx",
@@ -87192,12 +87745,15 @@
    "shared_by": "wani",
    "reactions": [],
    "url": "http://www.sciencedirect.com/science/article/pii/S030645221630166X",
-   "doi": null,
-   "title": "Link on sciencedirect.com",
+   "doi": "10.1016/j.neuroscience.2016.05.017",
+   "title": "Modulation of pain, nociception, and analgesia by the brain reward center",
    "abstract": null,
-   "authors": [],
-   "journal": "",
-   "year": null,
+   "authors": [
+    "Mitsi, V.",
+    "Zachariou, V."
+   ],
+   "journal": "Neuroscience",
+   "year": 2016,
    "pdf_url": null,
    "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1464212422000232",
    "kind": "paper",
@@ -87228,7 +87784,7 @@
     }
    },
    "n_comments": 0,
-   "title_unresolved": true
+   "publisher_url": "https://doi.org/10.1016/j.neuroscience.2016.05.017"
   },
   {
    "id": "shared2016httpbrainoxfordjournalsorgcontentearlybrainawwb",
