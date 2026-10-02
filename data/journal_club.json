@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-01",
+ "updated": "2026-10-02",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026httpsieeexploreieeeorgdocument",
+   "slack_ts": "1790887124.824019",
+   "shared_on": "2026-10-01",
+   "shared_by": "Audrey",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "heavy_check_mark",
+     "count": 1
+    }
+   ],
+   "url": "https://ieeexplore.ieee.org/document/11666502",
+   "doi": null,
+   "title": "Link on ieeexplore.ieee.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1790887124824019",
+   "kind": "paper",
+   "title_unresolved": true
+  },
   {
    "id": "riishede2026plasma",
    "slack_ts": "1790868754.228089",
