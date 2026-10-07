@@ -307,6 +307,15 @@ Europe PMC/PMC (mark author manuscripts). Paywalled publishers (Wiley, Elsevier,
 Springer, OUP, Cambridge, IEEE) need the PI's institutional login: list them with direct PDF URLs and
 let the PI download them; never try to defeat CAPTCHAs. Detect author manuscripts by "HHS Public Access"
 / "Author manuscript" on page 1. Scanned PDFs have no text layer: keep them, skip verification.
+ONGOING (2026-10-06): pipeline/fetch_pdfs.py runs in daily.yml for every paper without a PDF: finds a missing
+DOI (Crossref, exact title + first author), then tries OpenAlex OA locations, Unpaywall (only if
+CANLAB_CONTACT_EMAIL is set), PubMed Central via NCBI's open-data bucket pmc-oa-opendata.s3.amazonaws.com (the
+PMC website and Europe PMC render now sit behind a proof-of-work bot check: do not use them), then the
+publisher page in a cookie session (citation_pdf_url, LWW: the /pdf/<doi>~<slug> twin of /fulltext/ works only
+after visiting the article page), then a preprint. A file is kept only if its first two pages contain the title.
+Records pdf_search {last,result,tried}; retries weekly (monthly for papers >3 years old). reports/missing_pdfs.md
+lists what is left with the file name to save it under: the PI saves site/pdf/<id>.pdf and pushes; build_site
+links such files immediately and the next daily run records the link. Paywalled publishers stay manual.
 
 ------------------------------------------------------------------------------------------
 10. AUTOMATION

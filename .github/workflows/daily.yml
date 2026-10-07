@@ -62,12 +62,19 @@ jobs:
         run: |
           for v in ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN OPENAI_API_KEY ANTHROPIC_WORKSPACE_ID ANTHROPIC_IDENTITY_TOKEN_FILE; do [ -z "${!v}" ] && unset "$v"; done  # an empty ANTHROPIC_API_KEY would shadow federation
           python -m pipeline.run_daily --days ${{ inputs.days || 14 }} --refresh-citations 60
+      - name: Find and attach PDFs for papers that lack one
+        if: ${{ github.event_name != 'push' && inputs.skip_search != true }}
+        continue-on-error: true
+        env:
+          CANLAB_CONTACT_EMAIL: ${{ vars.CANLAB_CONTACT_EMAIL }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python -m pipeline.fetch_pdfs
       - name: Commit data back to the repository
         if: ${{ github.event_name != 'push' && inputs.skip_search != true }}
         run: |
           git config user.name "canlab-bot"
           git config user.email "canlab-bot@users.noreply.github.com"
-          git add data/
+          git add data/ site/pdf/ reports/missing_pdfs.md
           if git diff --cached --quiet; then echo "no data changes"; else
             git commit -m "data: daily update $(date -u +%F)"
             git pull --rebase origin main

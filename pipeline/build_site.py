@@ -238,6 +238,15 @@ def rss(items):
 
 def main():
     papers = json.load(open(config.PAPERS))
+    # a PDF saved by hand as site/pdf/<id>.pdf (or author_manuscripts/<id>.pdf) shows up on the next build;
+    # the daily fetch_pdfs run records the link in data/papers.json
+    for r in papers:
+        if not pdf_link(r):
+            for sub, version, label in (("", "publisher", "PDF"), ("author_manuscripts/", "author_manuscript", "PDF (author manuscript)")):
+                if (config.ROOT / "site" / "pdf" / f"{sub}{r['id']}.pdf").exists():
+                    r["links"] = [{"type": "pdf", "label": label, "url": f"pdf/{sub}{r['id']}.pdf", "version": version}] + r.get("links", [])
+                    r["has_pdf"] = True
+                    break
     papers.sort(key=lambda r: (-(r.get("year") or 0), r.get("date") or "", r["id"]))
     merge_author_variants(papers)
     site = config.SITE_DATA

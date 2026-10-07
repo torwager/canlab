@@ -46,8 +46,16 @@
   "landing_url": "https://doi.org/10.1007/s00415-026-14117-0",
   "openalex_authors": [],
   "keywords": [],
-  "links": [],
-  "has_pdf": false,
+  "links": [
+   {
+    "type": "pdf",
+    "label": "PDF",
+    "url": "pdf/adams2026emotional.pdf",
+    "version": "publisher",
+    "url_original": "https://link.springer.com/content/pdf/10.1007/s00415-026-14117-0.pdf"
+   }
+  ],
+  "has_pdf": true,
   "section": "2026",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
@@ -81,7 +89,14 @@
    "classified_at": "2026-09-06T19:26:20Z"
   },
   "citation_original": "Adams, J., Gundem, D., Yargholi, E., Luo, Q., Sunaert, S., Peeters, R., de Winter, F-L., Wager, T. D. Vandenbulcke, M., & Van den Stocke, J. (2026) Emotional brain responses and pattern expressions in right temporal variant frontotemporal dementia. Journal of Neurology.",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "found:citation_pdf_url:publisher",
+   "tried": [
+    "citation_pdf_url"
+   ]
+  }
  },
  {
   "id": "chen2026modalityspecific",
@@ -174,7 +189,14 @@
    "classified_at": "2026-09-06T19:26:20Z"
   },
   "citation_original": "Chen, D., Barton-Zuckerman, M., Kross, Z., Kragel, P. A., Saoca, P. W., Wald, L. L. Bianciardi, M., Wager, T. D., Choi, J-K., Zhang, J., Quigley, K. S., Satpute, A. B., Barret, L. F., & Theriault, J. E (2026) Modality-specific reactive and predictive BOLD response in the human superior colliculus during visual and somatosensory processing. Nature Neuroscience.",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": [
+    "crossref-doi:none"
+   ]
+  }
  },
  {
   "id": "dehghani2026transcranial",
@@ -424,7 +446,7 @@
   "issue": null,
   "pages": null,
   "citation": "Zorina-Lichtenwalter, K., Bango, C. I., Petre, B., Rader, L., Čeko, M., Lindquist, M. A., Friedman, N. P., & Wager, T. D. (2026). Brain gray matter changes across chronic pain trajectories: MRI evidence from 35,000 individuals. Pain.",
-  "doi": null,
+  "doi": "10.1097/j.pain.0000000000004125",
   "pmid": null,
   "pmcid": null,
   "openalex_id": null,
@@ -436,8 +458,16 @@
   "landing_url": null,
   "openalex_authors": [],
   "keywords": [],
-  "links": [],
-  "has_pdf": false,
+  "links": [
+   {
+    "type": "pdf",
+    "label": "PDF",
+    "url": "pdf/zorinalichtenwalter2026gray.pdf",
+    "version": "publisher",
+    "url_original": "https://www.ovid.com/jnls/pain/pdf/10.1097/j.pain.0000000000004125~brain-gray-matter-changes-across-chronic-pain-trajectories"
+   }
+  ],
+  "has_pdf": true,
   "section": "2026",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
@@ -472,7 +502,15 @@
    "classified_at": "2026-09-07T03:40:08Z"
   },
   "citation_original": "Zorina-Lichtenwalter, K., Bango, C. I.,Petre, B., Rader, L., Čeko, M., Lindquist, M. A., Friedman, N. P., & Wager, T. D. (2026) Brain gray matter changes across chronic pain trajectories: MRI evidence from 35,000 individuals. PAIN.",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "found:page-link:publisher",
+   "tried": [
+    "crossref-doi:10.1097/j.pain.0000000000004125",
+    "page-link"
+   ]
+  }
  },
  {
   "id": "acild2026neuromarkers",
@@ -3569,7 +3607,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Kapri, D., Strum, G., Kelly, C., Bo, K., Liu, C., Wager, T. D., Trumpff, C., & Picard, M. (in press) Psychobiological and Metabolic Correlates of Time Perception in Humans: An Exploratory Study. Psychophysiology. 63, no. 9: e70383.",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "sun2026precision",
@@ -3664,7 +3709,14 @@
   },
   "date_added": "2026-09-27",
   "source": "manual (author proofs)",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": [
+    "crossref-doi:none"
+   ]
+  }
  },
  {
   "id": "ibonie2026prosocial",
@@ -7242,8 +7294,16 @@
    "Medicine",
    "Psychology"
   ],
-  "links": [],
-  "has_pdf": false,
+  "links": [
+   {
+    "type": "pdf",
+    "label": "PDF",
+    "url": "pdf/noesteinmuller2024reply.pdf",
+    "version": "publisher",
+    "url_original": "https://journals.lww.com/pain/pdf/10.1097/j.pain.0000000000003368~reply-to-wideman-et-al"
+   }
+  ],
+  "has_pdf": true,
   "section": "2024",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
@@ -7276,7 +7336,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Noe-Steinmüller, N., Scherbakov, D., Zhuravlyova, A., Wager, T. D., Goldstein, P., & Tesarz, J. (2024). Reply to Wideman et al. Pain, 165(10), 2388-2389.",
-  "citations_refreshed": "2026-09-30"
+  "citations_refreshed": "2026-09-30",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "found:lww:publisher",
+   "tried": [
+    "lww"
+   ]
+  }
  },
  {
   "id": "kelly2024platform",
@@ -9678,7 +9745,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Botvinik-Nezer, R. & Wager, T.D. (2023). Reproducibility in Neuroimaging Analysis: Challenges and Solutions.Biological Psychiatry: Cognitive Neuroscience and Neuroimaging, 8(8), 780–788. PMID: 36906444. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-03",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": []
+  }
  },
  {
   "id": "bogaerts2023mediators",
@@ -11429,6 +11501,13 @@
   "keywords": [],
   "links": [
    {
+    "type": "pdf",
+    "label": "PDF",
+    "url": "pdf/coll2022neural.pdf",
+    "version": "publisher",
+    "url_original": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9191656.1/PMC9191656.1.pdf"
+   },
+   {
     "type": "publisher",
     "label": "Link",
     "url": "https://pubmed.ncbi.nlm.nih.gov/35658082/"
@@ -11444,7 +11523,7 @@
     "url": "https://github.com/mpcoll/coll_painvalue_2021"
    }
   ],
-  "has_pdf": false,
+  "has_pdf": true,
   "section": "2022",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
@@ -11492,7 +11571,14 @@
     "url": "https://neuromarkers.io/marker/2022-coll-pain-monetary-reward-decision-value/",
     "img": "assets/img/neuromarkers/2022-coll-pain-monetary-reward-decision-value.jpg"
    }
-  ]
+  ],
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "found:pmc-opendata:publisher",
+   "tried": [
+    "pmc-opendata"
+   ]
+  }
  },
  {
   "id": "garavan2022abcd",
@@ -12181,7 +12267,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Pinto, A.M., Geenen, R., Wager, T.D., Lumley, M., Hauser, W., Kosek, E., Ablin, J., Amris, K., Branco, J., Buskila, D., Castelhano, J., Castelo-Branco, M., Crofford, L., Fitzcharles, M., López-Solà, M., Luís, M., Reis Marques, T., Mease, P., Palavra, F., Rhudy, J., Uddin, L., Castilho, P., Jacobs, J. & da Silva, J.A. (2022). Emotion Regulation and the Salience Network: A Hypothetical Integrative Model of Fibromyalgia. Nature Reviews Rheumatology, 19(1), 44–60. PMID: 36471023. [PDF]",
-  "citations_refreshed": "2026-10-01"
+  "citations_refreshed": "2026-10-01",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": [
+    "citation_pdf_url"
+   ]
+  }
  },
  {
   "id": "weberii2022confounds",
@@ -13133,6 +13226,13 @@
   "keywords": [],
   "links": [
    {
+    "type": "pdf",
+    "label": "PDF",
+    "url": "pdf/zunhammer2021metaanalysis.pdf",
+    "version": "publisher",
+    "url_original": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7925520.1/PMC7925520.1.pdf"
+   },
+   {
     "type": "maps",
     "label": "Treshholded Whole Brain Maps",
     "url": "https://osf.io/tbpr4/"
@@ -13148,7 +13248,7 @@
     "url": "https://github.com/mzunhammer/PlaceboImagingMetaAnalysis"
    }
   ],
-  "has_pdf": false,
+  "has_pdf": true,
   "section": "2021",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
@@ -13188,7 +13288,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Zunhammer, M., Spisák, T., Wager, T. D. & Bingel, U. & The Placebo Imaging Consortium (2021). Meta-analysis of neural systems underlying placebo analgesia from individual participant fMRI data. Nature Communications. 12(1):1391. PMID: 33654105. [PDF], [Treshholded Whole Brain Maps]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "found:pmc-opendata:publisher",
+   "tried": [
+    "pmc-opendata"
+   ]
+  }
  },
  {
   "id": "koban2021self",
@@ -14665,7 +14772,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Jung, H., Wager, T. D. & Carter, R. M. (2021). Novel cognitive functions arise at the convergence of macroscale gradients. Journal of Cognitive Neuroscience. 34 (3): 381–396. PMID: 34942643. [Link]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": []
+  }
  },
  {
   "id": "andrewshanna2021conceptual",
@@ -14933,7 +15045,12 @@
    "classified_at": "2026-09-06T19:26:20Z"
   },
   "citation_original": "Salman, M., Wager, T.D., Damaraju, E., Abrol, A. & Calhoun, V. (2020). Fully automated ordering and labeling of ICA components. Paper presented at IEEE International Conference on Bioinformatics and Biomedicine (BIBM). 1: 1110-1114. DOI:10.1109/BIBM49941.2020.9313309. [Link]",
-  "citations_refreshed": "2026-10-01"
+  "citations_refreshed": "2026-10-01",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": []
+  }
  },
  {
   "id": "bainter2020improving",
@@ -17153,7 +17270,12 @@
   "crossref_checked": true,
   "abstract_source": "pdf",
   "citation_original": "Hamann, S., Pessoa, L. & Wager T.D. (2020) Neuropsychologia special issue editorial: The neural basis of emotion. Neuropsychologia. 145:107507. PMID: 32479760.",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": []
+  }
  },
  {
   "id": "silvestrini2020distinct",
@@ -18137,7 +18259,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Munafo, M. R., Cremers, H. R., Wager, T. D., Yarkoni, T. (2019). Power and design considerations in imaging research. In: Raz, A., Thibault, R. T. (Eds.) Casting Light on the Dark Side of Brain Imaging (73-78). Cambridge: Academic Press. DOI: 10.1016/B978-0-12-816179-1.00011-6. [PDF]",
-  "citations_refreshed": "2026-09-30"
+  "citations_refreshed": "2026-09-30",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": []
+  }
  },
  {
   "id": "weber2019evidence",
@@ -23663,7 +23790,14 @@
    "notes": "The extracted full text for this batch entry appears to be a different paper (Benedetti & Amanzio, 'Mechanisms of the placebo response', Pulmonary Pharmacology & Therapeutics 2013) rather than Koban et al.'s actual article text; tags here rely on the (matching) title and abstract only, so approach/topic coverage may be incomplete.",
    "classified_at": "2026-09-07T03:40:08Z"
   },
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "kalisch2017resilience",
@@ -24029,20 +24163,19 @@
   "status": "published",
   "kind": "chapter",
   "journal": "The Routledge Handbook of Philosophy of Pain (J. Corns, Ed.), Routledge, pp. 87-97",
-  "volume": "2",
-  "issue": "11",
-  "pages": "838-855",
-  "citation": "Roy, M., & Wager, T. D. (2017). Neuromatrix theory of pain. In The Routledge Handbook of Philosophy of Pain (J. Corns, Ed.), Routledge, pp. 87-97, pp. 838–855. https://doi.org/10.1038/s41562-018-0455-8",
-  "doi": "10.1038/s41562-018-0455-8",
+  "volume": null,
+  "issue": null,
+  "pages": null,
+  "citation": "Roy, M., & Wager, T. D. (2017). Neuromatrix theory of pain. In The Routledge Handbook of Philosophy of Pain (J. Corns, Ed.), Routledge, pp. 87-97. https://doi.org/10.4324/9781315742205-8",
+  "doi": "10.4324/9781315742205-8",
   "pmid": "31558818",
   "pmcid": "PMC6768437",
-  "openalex_id": null,
-  "date": "2018-10-29",
+  "date": "2017-07-14",
   "abstract": "Beliefs and expectations often persist despite evidence to the contrary. Here we examine two potential mechanisms underlying such 'self-reinforcing' expectancy effects in the pain domain: modulation of perception and biased learning. In two experiments, cues previously associated with symbolic representations of high or low temperatures preceded painful heat. We examined trial-to-trial dynamics in participants' expected pain, reported pain and brain activity. Subjective and neural pain responses assimilated towards cue-based expectations, and pain responses in turn predicted subsequent expectations, creating a positive dynamic feedback loop. Furthermore, we found evidence for a confirmation bias in learning: higher- and lower-than-expected pain triggered greater expectation updating for high- and low-pain cues, respectively. Individual differences in this bias were reflected in the updating of pain-anticipatory brain activity. Computational modelling provided converging evidence that expectations influence both perception and learning. Together, perceptual assimilation and biased learning promote self-reinforcing expectations, helping to explain why beliefs can be resistant to change.",
-  "cited_by_count": 165,
+  "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": null,
+  "landing_url": "https://doi.org/10.4324/9781315742205-8",
   "openalex_authors": [],
   "keywords": [],
   "links": [],
@@ -24083,7 +24216,14 @@
    "notes": "The abstract and 'full text' extracted for this ID actually belong to a different paper (Jepma, Koban, van Doorn, Jones & Wager, 2018, Nature Human Behaviour, 'Behavioural and neural evidence for self-reinforcing expectancy effects on pain') -- apparently a metadata/PDF matching error. Tags here are based only on the title and chapter type, with low confidence; the real chapter's content could not be verified.",
    "classified_at": "2026-09-07T03:40:08Z"
   },
-  "citations_refreshed": "2026-10-01"
+  "citations_refreshed": "2026-10-01",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": [
+    "citation_pdf_url"
+   ]
+  }
  },
  {
   "id": "lopezsola2017when",
@@ -26053,7 +26193,14 @@
    "confidence": 0.4,
    "classified_at": "2026-09-07T03:40:32Z"
   },
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-03",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": [
+    "crossref-doi:none"
+   ]
+  }
  },
  {
   "id": "sprenger2015placebo",
@@ -26116,7 +26263,14 @@
    "confidence": 0.4,
    "classified_at": "2026-09-07T03:40:32Z"
   },
-  "citations_refreshed": "2026-10-02"
+  "citations_refreshed": "2026-10-02",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": [
+    "crossref-doi:none"
+   ]
+  }
  },
  {
   "id": "wager2015using",
@@ -36132,7 +36286,14 @@
    "confidence": 0.4,
    "classified_at": "2026-09-07T03:40:32Z"
   },
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": [
+    "crossref-doi:none"
+   ]
+  }
  },
  {
   "id": "loh2008residual",
@@ -38238,7 +38399,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Keller, M. C., Fredrickson, B. L., Ybarra, O., Cote, S., Johnson, K., Mikels, J. & Wager, T. D. (2005). A warm heart and a clear head: the effects of weather on human mood and cognition. Journal of Personality and Social Psychology. PMID: 16137259. [PDF]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-06",
+   "result": "not-found",
+   "tried": []
+  }
  },
  {
   "id": "wager2005differences",
