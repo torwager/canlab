@@ -1,7 +1,142 @@
 {
- "updated": "2026-10-06",
+ "updated": "2026-10-07",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026learnable",
+   "slack_ts": "1791387271.000389",
+   "shared_on": "2026-10-07",
+   "shared_by": "Xiaomin",
+   "n_comments": 3,
+   "reactions": [],
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10172131/",
+   "doi": null,
+   "title": "Learnable latent embeddings for joint behavioural and neural analysis",
+   "abstract": "Mapping behavioural actions to neural activity is a fundamental goal of neuroscience. As our ability to record large neural and behavioural data increases, there is growing interest in modelling neural dynamics during adaptive behaviours to probe ...",
+   "authors": [],
+   "journal": "PubMed Central (PMC)",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1791387271000389",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control"
+    ],
+    "approach": [
+     "machine_learning",
+     "computational_model",
+     "neuroimaging_methods"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The authors introduced a learnable latent embedding method (CEBRA) for jointly analyzing behavioral and neural time-series data to uncover consistent neural dynamics underlying adaptive behavior.",
+   "key_finding": "The method produced consistent, interpretable latent embeddings that mapped neural activity to behavior across datasets and species, outperforming existing dimensionality reduction methods.",
+   "free_keywords": [
+    "CEBRA",
+    "latent embeddings",
+    "joint behavioral-neural analysis",
+    "dimensionality reduction",
+    "self-supervised learning",
+    "contrastive learning"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.55,
+    "notes": "Based on abstract only; this appears to be a general neuroscience methods paper (CEBRA), not clearly CANlab-specific topic but included as per database context.",
+    "classified_at": "2026-10-07T17:26:05Z",
+    "usage": {
+     "input_tokens": 177,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 313,
+     "cost_usd": 0.01404
+    }
+   }
+  },
+  {
+   "id": "stoliker2026psychedelics",
+   "slack_ts": "1791387271.000389",
+   "shared_on": "2026-10-07",
+   "shared_by": "Xiaomin",
+   "n_comments": 3,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41586-026-10910-z#Sec28",
+   "doi": "10.1038/s41586-026-10910-z",
+   "title": "Psychedelics align brain activity with context",
+   "abstract": "Abstract Psychedelics can profoundly alter consciousness by reorganizing brain connectivity 1,2 , producing acute experiences that shape lasting psychological change 3,4 . Psychedelic dynamics are commonly described as desynchronized or entropically disordered 5,6 , yet the brain organization underlying self-dissolving and boundary-dissolving experiences that participants often report 7 , and how context shapes that organization 8 , remain unresolved. To address this, we acquired the largest single-site psychedelic neuroimaging dataset to date. Sixty-two adults underwent functional magnetic resonance imaging (fMRI) and electroencephalography (EEG) during rest and naturalistic stimuli (meditation, music and movie), before and on the day of psilocybin administration (fMRI ~ 80 min post-dose; EEG ~ 150 min post-dose). Half ranked the experience among the most meaningful of their lives 7 . Here, using machine learning to represent the brain dynamics of each individual as low-dimensional trajectories, we show that psilocybin reorganizes brain activity into structured, context-sensitive patterns that co-vary with the quality of subjective experience, revealing a latent order missed by time-averaged measures. Networks that ordinarily segregate internal and external processing integrated, producing cohesive context-aligned trajectories in participants reporting the felt experience of being continuous with, rather than separate from, the environment, a state we refer to as embeddedness. The strength of this context alignment scaled with both the depth of self-dissolving and boundary-dissolving experience and the next-day mindset change. Our findings recast apparent disorder as latent organization aligned with context, linking neurobiology to subjective experience and behavioural change.",
+   "authors": [
+    "Stoliker, D.",
+    "Novelli, L.",
+    "Khajehnejad, M.",
+    "Biabani, M.",
+    "Greaves, M. D.",
+    "Barta, T.",
+    "Williams, M.",
+    "Chopra, S.",
+    "Bazin, O.",
+    "Simonsson, O.",
+    "Chambers, R.",
+    "Barrett, F. S.",
+    "Deco, G.",
+    "Preller, K. H.",
+    "Carhart-Harris, R. L.",
+    "Seth, A. K.",
+    "Sundram, S.",
+    "Egan, G. F.",
+    "Razi, A."
+   ],
+   "journal": "Nature",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41586-026-10910-z.pdf",
+   "type": "journal-article",
+   "pmid": "42618786",
+   "pmcid": "PMC13518247",
+   "oa_url": "https://doi.org/10.1038/s41586-026-10910-z",
+   "publisher_url": "https://doi.org/10.1038/s41586-026-10910-z",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1791387271000389",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception",
+     "emotion",
+     "clinical"
+    ],
+    "approach": [
+     "fmri",
+     "machine_learning",
+     "psychophysiology",
+     "pharmacology"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-07T17:26:07Z",
+    "usage": {
+     "input_tokens": 667,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 111,
+     "cost_usd": 0.00329
+    }
+   }
+  },
   {
    "id": "shared2026httpsieeexploreieeeorgdocument",
    "slack_ts": "1790887124.824019",
