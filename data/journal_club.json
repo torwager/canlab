@@ -1,7 +1,95 @@
 {
- "updated": "2026-10-07",
+ "updated": "2026-10-08",
  "channel": null,
  "items": [
+  {
+   "id": "hu2026claustrum",
+   "slack_ts": "1791394990.447479",
+   "shared_on": "2026-10-07",
+   "shared_by": "Zhaoxing",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "+1::skin-tone-4",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41593-026-02475-x",
+   "doi": "10.1038/s41593-026-02475-x",
+   "title": "Human claustrum neurons encode uncertainty and prediction errors during aversive learning",
+   "abstract": "Flexible behavior depends on continuous updating of internal models, yet the neural circuits coordinating this process remain poorly understood. The claustrum, which is reciprocally connected to nearly the entire neocortex, is uniquely positioned to influence cortical processing. Here we report single-neuron recordings from the human claustrum during aversive learning, with anterior cingulate cortex and amygdala recordings for comparison. Claustrum and anterior cingulate neurons displayed structured, task-related responses. Distinct subpopulations encoded stimulus onset and action-contingent outcomes, with outcome representations diverging between regions. Critically, both regions encoded model-derived latent variables, including uncertainty and prediction error, but with different temporal profiles; only the anterior cingulate carried uncertainty signals during the intertrial period, whereas both regions encoded uncertainty and prediction error during the active-avoidance period. By contrast, the amygdala showed minimal latent-variable modulation. These findings provide evidence that human claustrum neurons track higher-order cognitive variables not directly observable from sensory input and reveal dissociable roles for the claustrum and anterior cingulate cortex in tracking latent task states. Human claustrum neurons track uncertainty and prediction errors during aversive learning, suggesting a role for the claustrum in updating beliefs and guiding adaptive behavior in dynamic environments.",
+   "authors": [
+    "Hu, M.",
+    "Dalvit, R.",
+    "Medina-Pizarro, M.",
+    "Dougherty, M.",
+    "Zhou, Y.",
+    "Barreto-Nieves, J.",
+    "Obaid, S.",
+    "Afrasiyabi, A.",
+    "Krishnaswamy, S.",
+    "Kaye, A. P.",
+    "Günel, M.",
+    "Krystal, J. H.",
+    "Sheth, K. N.",
+    "Gu, X.",
+    "Pittenger, C. P.",
+    "Wise, T.",
+    "Damisah, E. C."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41593-026-02475-x.pdf",
+   "type": "journal-article",
+   "pmid": "42839076",
+   "pmcid": null,
+   "oa_url": "https://doi.org/10.1038/s41593-026-02475-x",
+   "publisher_url": "https://doi.org/10.1038/s41593-026-02475-x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1791394990447479",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "expectation_learning",
+     "emotion",
+     "cognitive_control"
+    ],
+    "approach": [
+     "computational_model",
+     "psychophysiology"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Researchers recorded single-neuron activity from human claustrum, anterior cingulate cortex, and amygdala during aversive learning and found claustrum and ACC neurons encoded uncertainty and prediction error with distinct temporal profiles.",
+   "key_finding": "Claustrum and ACC neurons encoded model-derived uncertainty and prediction error during active avoidance, but only ACC carried uncertainty signals during the intertrial interval, while amygdala showed minimal latent-variable modulation.",
+   "free_keywords": [
+    "claustrum",
+    "single-unit recording",
+    "aversive learning",
+    "anterior cingulate cortex",
+    "amygdala",
+    "prediction error",
+    "uncertainty",
+    "intracranial electrophysiology"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.6,
+    "notes": "Approach tags are uncertain since only abstract was available; likely involves single-unit electrophysiology (human intracranial recordings) rather than fMRI, so fmri tag omitted; computational_model inferred from 'model-derived latent variables'.",
+    "classified_at": "2026-10-08T17:24:48Z",
+    "usage": {
+     "input_tokens": 570,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 389,
+     "cost_usd": 0.01559
+    }
+   }
+  },
   {
    "id": "shared2026learnable",
    "slack_ts": "1791387271.000389",
