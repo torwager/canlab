@@ -2260,7 +2260,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wake, A. H., Crawford, L. S., Meylakh, N., Ramachandran, A., Macefield, V. G., Macey, P. M., Wager, T., Bannister, K., Keay, K. A., & Henderson, L. A. (2026). Differential brainstem circuits mediating conditioned pain modulation induced analgesia and hyperalgesia: A cross-sectional, ultra-high field functional magnetic resonance imaging study. The Journal of Pain: Official Journal of the American Pain Society, 43(106275), 106275. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "miao2026common",
@@ -2487,7 +2487,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wei, Z., Spisak, T., Timmann, D., Scherrer, G., Bingel, U., Wager, T. D., & the Placebo Imaging Consortium. (preprint). Cerebellar activation in human placebo analgesia: Bridging findings from mice to humans. bioRxiv. [online link]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "kwon2026convergent",
@@ -2678,7 +2678,7 @@
   "openalex_id": "https://openalex.org/W7154447216",
   "date": "2026-04-15",
   "abstract": "In psychiatry and medicine, there is a long history of framing placebo effects primarily as nuisance factors and focusing on how they should be minimised in clinical trials. However, a new view on placebo effects has emerged with advances in understanding their complex neurobiology and observations of unexpectedly large placebo responses in recent psychiatric trials. In particular, novel therapeutic device trials for depression have shown placebo-group remission rates nearing 50%. Instead of considering these studies as a failure and moving on, questions should be raised on how such responses are possible and how these effects can be harnessed for the benefit of patients. There have also been important new insights into the mechanisms of nocebo effects and analogous questions on how best to mitigate the effect of negative expectations on symptoms and medication side-effects. In this Review, paper 1 of 2 on reconceptualising placebo and nocebo effects, we discuss the rationale, strategies, and ethical considerations related to harnessing placebo effects and mitigating nocebo effects in clinical practice, including discussion of target patient populations, traditional pure and impure placebos, authorised deception, honest open-label placebo, pharmacotherapy dose reduction via conditioned placebo, nocebo education, nocebo reframing, and other ways to apply principles underlying placebo and nocebo effects, such as shifting mindsets and enhancing the therapeutic context. Lastly, we highlight the centrality of this topic to psychiatry, but explore how better understanding the interactions of mind, brain, and body-epitomised by placebo and nocebo effects-has crucial relevance across medicine.",
-  "cited_by_count": 8,
+  "cited_by_count": 9,
   "oa_status": "closed",
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/s2215-0366(25)00340-2",
@@ -2762,7 +2762,7 @@
     "note": "Editorial introducing this paper"
    }
   ],
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "taylor2026measuring",
@@ -3418,7 +3418,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., (2026) Placebo Effects: Rethinking the mechanisms of morphine analgesia. Current Biology. 36(14), R802-R804. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "bo2026spatiotemporal",
@@ -5575,7 +5575,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Sutherland, S. P., Lindquist, M. A., Sluka, K. A., & The A2CPS Consortium. (2025) Accelerating discovery in pain science: the Acute to Chronic Pain Signatures program. PAIN 116(11), S95-098. [pdf]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "zhang2025cortical",
@@ -5810,7 +5810,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Zorina-Lichtenwalter, K., & Friedman, N. P. (in press) A new look at gray-matter decreases in chronic pain. Biological Psychiatry",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "rader2024familial",
@@ -6055,9 +6055,9 @@
   "openalex_id": "https://openalex.org/W4392639140",
   "date": "2024-03-08",
   "abstract": "ABSTRACT: Chronic pain remains poorly managed. The integration of immersive technologies (ie, virtual reality [VR]) with neuroscience-based principles may provide effective pain treatment by targeting cognitive and affective neural processes that maintain pain and therefore potentially changing neurobiological circuits associated with pain chronification and amplification. We tested the effectiveness of a novel VR neuroscience-based therapy (VRNT) to improve pain-related outcomes in n = 31 participants with chronic back pain, evaluated against usual care (waitlist control; n = 30) in a 2-arm randomized clinical trial ( NCT04468074) . We also conducted pre-treatment and post-treatment MRI to test whether VRNT affects brain networks previously linked to chronic pain and treatment effects. Compared with the control condition, VRNT led to significantly reduced pain intensity (g = 0.63) and pain interference (g = 0.84) at post-treatment vs pre-treatment, with effects persisting at 2-week follow-up. These improvements were partially mediated by reduced kinesiophobia and pain catastrophizing. Several secondary clinical outcomes were also improved by VRNT, including disability, quality of life, sleep, and fatigue. In addition, VRNT was associated with increases in dorsomedial prefrontal functional connectivity with the superior somatomotor, anterior prefrontal and visual cortices, and decreased white matter fractional anisotropy in the corpus callosum adjacent to the anterior cingulate, relative to the control condition. Thus, VRNT showed preliminary efficacy in significantly reducing pain and improving overall functioning, possibly through changes in somatosensory and prefrontal brain networks.",
-  "cited_by_count": 28,
+  "cited_by_count": 29,
   "oa_status": "closed",
-  "oa_url": null,
+  "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2023/07/27/2023.07.24.23293109.full.pdf",
   "landing_url": "https://doi.org/10.1097/j.pain.0000000000003198",
   "openalex_authors": [
    "Marta Čeko",
@@ -6125,7 +6125,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Ceko, M., Baeuerle, T., Webster, L., Wager, T. D., & Lumley, M. A. (in press) The Effects of Virtual Reality Neuroscience-based Therapy on Clinical and Neuroimaging Outcomes in Patients with Chronic Back Pain: A Randomized Clinical Trial. PAIN",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "bo2024systems",
@@ -11250,7 +11250,7 @@
   "openalex_id": null,
   "date": "2022-05-30",
   "abstract": "The brain contains both generalized and stimulus-type-specific representations of aversive events, but models of how these are integrated and related to subjective experience are lacking. We combined functional magnetic resonance imaging with predictive modeling to identify representations of generalized (common) and stimulus-type-specific negative affect across mechanical pain, thermal pain, aversive sounds and aversive images of four intensity levels each. This allowed us to examine how generalized and stimulus-specific representations jointly contribute to aversive experience. Stimulus-type-specific negative affect was largely encoded in early sensory pathways, whereas generalized negative affect was encoded in a distributed set of midline, forebrain, insular and somatosensory regions. All models specifically predicted negative affect rather than general salience or arousal and accurately predicted negative affect in independent samples, demonstrating robustness and generalizability. Common and stimulus-type-specific models were jointly important for predicting subjective experience. Together, these findings offer an integrated account of how negative affect is constructed in the brain and provide predictive neuromarkers for future studies.",
-  "cited_by_count": 138,
+  "cited_by_count": 124,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1038/s41593-022-01082-w",
@@ -11332,7 +11332,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Čeko, M., Kragel, P.A., Woo, C-W., López-Solà, M. & Wager, T.D. (2022). Common and stimulus-type-specific brain representations of negative affect. Nature Neuroscience. 25(6):760-770. PMID: 35637370. [PDF], [Brain Pattern Masks]",
-  "citations_refreshed": "2026-10-04",
+  "citations_refreshed": "2026-10-09",
   "neuromarkers": [
    {
     "id": "2021-ceko-mpa2-multiaversive",
@@ -11940,7 +11940,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wielgosz J., Kral, T.R.A., Perlman, D.M., Mumford, J.A., Wager, T.D. & Davidson, R.J. (2022) Neural Signatures of Pain Modulation in Short-Term and Long-Term Mindfulness Training: A Randomized Active-Control Trial. The American Journal of Psychiatry, 179(10), 758–767. PMID: 35899379. PMCID: PMC9529779. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2022unpacking",
@@ -12034,7 +12034,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. & Jung, H. (2022). Unpacking placebo and working memory training effects on cognitive performance. Proceedings of the National Academy of Sciences of the United States of America, 119(42), e2214268119. PMID: 36197960. PMCID: PMC9586315. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "jolly2022recovering",
@@ -12402,7 +12402,7 @@
   "abstract_source": "crossref",
   "crossref_checked": true,
   "citation_original": "Weber II, K.A., Teplin, Z.M., Wager, T.D., Law, C.S.W., Prabhakar, N., Ashar, Y.K., Gilam, G., Banerjee, S., Delp, S.L., Glover, G.H., Hastie, T.J., Mackey, S. (2022). Confounds in Neuroimaging: A Clear Case of Sex being a Confound in Brain Prediction. Frontiers in Neurology, 13, 960760. PMID: 36601297. PMCID: PMC9806266. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "dennis2021altered",
@@ -20007,7 +20007,7 @@
    "classified_at": "2026-09-06T19:26:20Z"
   },
   "citation_original": "Wager, T. D., Krishnan, A., Hitchcock, E. (2017). How are Emotions Organized in the Brain? In Fox, A. S., Lapate, R. C., Shackman, A. J. & Davidson, R. J. (Eds.). The nature of emotion. Fundamental questions (2nd edition). New York: Oxford University Press. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2018pinpointing",
@@ -20084,7 +20084,7 @@
    "classified_at": "2026-09-06T19:26:20Z"
   },
   "citation_original": "Wager, T. D. (2018) Pinpointing the pain gene. Nature. 556(7701): 308. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "xzhu2018exposurebased",
@@ -21249,7 +21249,7 @@
   "openalex_id": null,
   "date": "2018-08",
   "abstract": "The ABCD study is recruiting and following the brain development and health of over 10,000 9–10 year olds through adolescence. The imaging component of the study was developed by the ABCD Data Analysis and Informatics Center (DAIC) and the ABCD Imaging Acquisition Workgroup. Imaging methods and assessments were selected, optimized and harmonized across all 21 sites to measure brain structure and function relevant to adolescent development and addiction. This article provides an overview of the imaging procedures of the ABCD study, the basis for their selection and preliminary quality assurance and results that provide evidence for the feasibility and age-appropriateness of procedures and generalizability of ﬁndings to the existent literature.",
-  "cited_by_count": 2484,
+  "cited_by_count": 2267,
   "oa_status": null,
   "oa_url": "https://www.sciencedirect.com/science/article/pii/S1878929317301214/pdf",
   "landing_url": null,
@@ -21305,7 +21305,7 @@
   "abstract_source": "pdf",
   "crossref_checked": true,
   "citation_original": "Casey, B. J., Cannonier, T., Conley, M. I., Cohen, A. O., Barch, D. M., Heitzeg, M. M., Soules, M. E., Teslovich, T., Dellarco, D. V., Garavan, H., Orr, C. A., Wager, T. D., … Dale, A. M., ABCD Imaging Acquisition Workgroup (2018). The adolescent brain cognitive development (ABCD) study: Imaging acquisition across 21 sites. Developmental Cognitive Neuroscience 32: 43-54. PMCID: PMC5999559. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "jepma2018behavioural",
@@ -23575,7 +23575,7 @@
   "openalex_id": null,
   "date": "2017-07-26",
   "abstract": "Spatial normalization of brains to a standardized space is a widely used approach for group studies in functional magnetic resonance imaging (fMRI) data. Commonly used template-based approaches are complicated by signal dropout and distortions in echo planar imaging (EPI) data. The most widely used software packages implement two common template-based strategies: (1) affine transformation of the EPI data to an EPI template followed by nonlinear registration to an EPI template (EPInorm) and (2) affine transformation of the EPI data to the anatomic image for a given subject, followed by nonlinear registration of the anatomic data to an anatomic template, which produces a transformation that is applied to the EPI data (T1norm). EPI distortion correction can be used to adjust for geometric distortion of EPI relative to the T1 images. However, in practice, this EPI distortion correction step is often skipped. We compare these template-based strategies empirically in four large datasets. We find that the EPInorm approach consistently shows reduced variability across subjects, especially in the case when distortion correction is not applied. EPInorm also shows lower estimates for coregistration distances among subjects (i.e., within-dataset similarity is higher). Finally, the EPInorm approach shows higher T values in a task-based dataset. Thus, the EPInorm approach appears to amplify the power of the sample compared to the T1norm approach when not using distortion correction (i.e., the EPInorm boosts the effective sample size by 12-25%). In sum, these results argue for the use of EPInorm over the T1norm when no distortion correction is used. Hum Brain Mapp 38:5331-5342, 2017. © 2017 The Authors Human Brain Mapping Published by Wiley Periodicals, Inc.",
-  "cited_by_count": 342,
+  "cited_by_count": 323,
   "oa_status": null,
   "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.23737",
   "landing_url": "https://doi.org/10.1002/hbm.23737",
@@ -23638,7 +23638,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Calhoun, V. D., Wager, T. D., Krishnan, A., Rosch, K. S., Seymour, K. E., Nebel, M. B., Mostofsky, S. H., Nyalakanai, P. and Kiehl, K. (2017). The impact of T1 versus EPI spatial normalization templates for fMRI data analyses. Human Brain Mapping. 38(11): 5331-5342. PMID: 28745021. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "davis2017imaging",
@@ -25323,7 +25323,7 @@
   "openalex_id": null,
   "date": "2016-04-19",
   "abstract": "Proceedings of the National Academy of Sciences (PNAS), a peer reviewed journal of the National Academy of Sciences (NAS) - an authoritative source of high-impact, original research that broadly spans the biological, physical, and social sciences.",
-  "cited_by_count": 171,
+  "cited_by_count": 163,
   "oa_status": null,
   "oa_url": "https://www.pnas.org/content/pnas/113/18/E2474.full.pdf",
   "landing_url": null,
@@ -25375,7 +25375,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Atlas, L. Y., Botvinick, M.M., Chang, L. J., Coghill, R. C., Davis, K.D., Iannetti, G.D., Poldrack, R.A., Shackman, A.J. & Yarkoni, T. (2016). Pain in the ACC? Proceedings of the National Academy of Sciences. 113(18): E2474-E2475. PMCID: PMC4983860. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "ashar2016towards",
@@ -26402,7 +26402,7 @@
    "classified_at": "2026-09-06T19:26:20Z"
   },
   "citation_original": "Wager, T. D. (2015). Using Neuroimaging to Understand Pain: Pattern Recognition and the Path from Brain Mapping to Mechanisms. In: Apkarian, V. (Eds.) The Brain Adapting with Pain. Wolters Kluwer Press. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "woo2015predictive",
@@ -26880,7 +26880,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Chang, L. J., Reddan, M., Ashar, Y. K., Eisenbarth, H., & Wager, T. D. (2015). The challenges of forecasting resilience. Behavioral and Brain Sciences. 38. PMID: 26785725. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "woo2015distinct",
@@ -27095,7 +27095,7 @@
   "openalex_id": null,
   "date": "2015-02-11",
   "abstract": "Functional magnetic resonance imaging offers an unprecedented opportunity to evaluate and compare drug effects on human brain activity and to provide systems-level predictions for how new drugs for chronic pain will affect the brain, thus accelerating drug discovery and repurposing (Duff et al., this issue).",
-  "cited_by_count": 9,
+  "cited_by_count": 8,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1126/scitranslmed.3010342",
@@ -27152,7 +27152,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. & Woo, C. W. (2015). fMRI in analgesic drug discovery. Science Translational Medicine. 7(274):274fs6. PMID: 25673760. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "robinson2015dynamic",
@@ -27372,7 +27372,7 @@
   "openalex_id": null,
   "date": "2015-04-08",
   "abstract": "Understanding emotion is critical for a science of healthy and disordered brain function, but the neurophysiological basis of emotional experience is still poorly understood. We analyzed human brain activity patterns from 148 studies of emotion categories (2159 total participants) using a novel hierarchical Bayesian model. The model allowed us to classify which of five categories--fear, anger, disgust, sadness, or happiness--is engaged by a study with 66% accuracy (43-86% across categories). Analyses of the activity patterns encoded in the model revealed that each emotion category is associated with unique, prototypical patterns of activity across multiple brain systems including the cortex, thalamus, amygdala, and other structures. The results indicate that emotion categories are not contained within any one region or system, but are represented as configurations across multiple brain networks. The model provides a precise summary of the prototypical patterns for each emotion category, and demonstrates that a sufficient characterization of emotion categories relies on (a) differential patterns of involvement in neocortical systems that differ between humans and other species, and (b) distinctive patterns of cortical-subcortical interactions. Thus, these findings are incompatible with several contemporary theories of emotion, including those that emphasize emotion-dedicated brain systems and those that propose emotion is localized primarily in subcortical activity. They are consistent with componential and constructionist views, which propose that emotions are differentiated by a combination of perceptual, mnemonic, prospective, and motivational elements. Such brain-based models of emotion provide a foundation for new translational and clinical approaches.",
-  "cited_by_count": 284,
+  "cited_by_count": 265,
   "oa_status": null,
   "oa_url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1004066&type=printable",
   "landing_url": "https://doi.org/10.1371/journal.pcbi.1004066",
@@ -27438,7 +27438,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Kang. J., Johnson, T. D., Nichols, T. E., Satpute, A. B. & Feldman, Barret, L. (2015). A Bayesian Model of Category-Specific Emotional Brain Responses. PLoS Computational Biology. 11(4): e1004066. PMCID: PMC4390279. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "schafer2015conditioned",
@@ -27727,7 +27727,7 @@
   "openalex_id": null,
   "date": "2015-06-19",
   "abstract": "Placebo effects are beneficial effects that are attributable to the brain-mind responses to the context in which a treatment is delivered rather than to the specific actions of the drug. They are mediated by diverse processes--including learning, expectations and social cognition--and can influence various clinical and physiological outcomes related to health. Emerging neuroscience evidence implicates multiple brain systems and neurochemical mediators, including opioids and dopamine. We present an empirical review of the brain systems that are involved in placebo effects, focusing on placebo analgesia, and a conceptual framework linking these findings to the mind-brain processes that mediate them. This framework suggests that the neuropsychological processes that mediate placebo effects may be crucial for a wide array of therapeutic approaches, including many drugs.",
-  "cited_by_count": 866,
+  "cited_by_count": 844,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1038/nrn3976",
@@ -27788,7 +27788,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., & Atlas, L. Y. (2015). The neuroscience of placebo effects: connecting context, learning and health. Nature Reviews Neuroscience. 16(7):403-418. PMCID: PMC6013051. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "chang2015sensitive",
@@ -27821,7 +27821,7 @@
   "openalex_id": null,
   "date": "2015-06-22",
   "abstract": "Neuroimaging has identified many correlates of emotion but has not yet yielded brain representations predictive of the intensity of emotional experiences in individuals. We used machine learning to identify a sensitive and specific signature of emotional responses to aversive images. This signature predicted the intensity of negative emotion in individual participants in cross validation (n =121) and test (n = 61) samples (high-low emotion = 93.5% accuracy). It was unresponsive to physical pain (emotion-pain = 92% discriminative accuracy), demonstrating that it is not a representation of generalized arousal or salience. The signature was comprised of mesoscale patterns spanning multiple cortical and subcortical systems, with no single system necessary or sufficient for predicting experience. Furthermore, it was not reducible to activity in traditional \"emotion-related\" regions (e.g., amygdala, insula) or resting-state networks (e.g., \"salience,\" \"default mode\"). Overall, this work identifies differentiable neural components of negative emotion and pain, providing a basis for new, brain-based taxonomies of affective processes.",
-  "cited_by_count": 397,
+  "cited_by_count": 356,
   "oa_status": null,
   "oa_url": "https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1002180&type=printable",
   "landing_url": "https://doi.org/10.1371/journal.pbio.1002180",
@@ -27887,7 +27887,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Chang, L. J., Gianaros, P. J., Manuck, S. B., Krishnan, A., & Wager, T. D. (2015). A Sensitive and Specific Neural Signature for Picture-Induced Negative Affect. PLoS Biology. 13(6): e1002180. PMCID: PMC4476709. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-10-04",
+  "citations_refreshed": "2026-10-09",
   "neuromarkers": [
    {
     "id": "2015-chang-plosbiology-pines",
@@ -28587,7 +28587,7 @@
   "openalex_id": null,
   "date": "2017-06-15",
   "abstract": "Mediation analysis is an important tool in the behavioral sciences for investigating the role of intermediate variables that lie in the path between a treatment and an outcome variable. The influence of the intermediate variable on the outcome is often explored using a linear structural equation model (LSEM), with model coefficients interpreted as possible effects. While there has been significant research on the topic, little work has been done when the intermediate variable (mediator) is a high-dimensional vector. In this work, we introduce a novel method for identifying potential mediators in this setting called the directions of mediation (DMs). DMs linearly combine potential mediators into a smaller number of orthogonal components, with components ranked based on the proportion of the LSEM likelihood each accounts for. This method is well suited for cases when many potential mediators are measured. Examples of high-dimensional potential mediators are brain images composed of hundreds of thousands of voxels, genetic variation measured at millions of single nucleotide polymorphisms (SNPs), or vectors of thousands of variables in large-scale epidemiological studies. We demonstrate the method using a functional magnetic resonance imaging study of thermal pain where we are interested in determining which brain locations mediate the relationship between the application of a thermal stimulus and self-reported pain.",
-  "cited_by_count": 136,
+  "cited_by_count": 124,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1093/biostatistics/kxx027",
@@ -28647,7 +28647,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Chén, O. Y., Crainiceanu, C. M., Ogburn, E. L., Caffo, B. S., Wager, T. D., & Lindquist, M. A. (2015). High-dimensional Multivariate Mediation: with Application to Neuroimaging Data. Biostatsica. 19(2):121-136. PMCID: PMC5862274. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "lindquist2014principles",
@@ -29391,7 +29391,7 @@
   "openalex_id": null,
   "date": "2014-05",
   "abstract": "Cluster-extent based thresholding is currently the most popular method for multiple comparisons correction of statistical maps in neuroimaging studies, due to its high sensitivity to weak and diffuse signals. However, cluster-extent based thresholding provides low spatial specificity; researchers can only infer that there is signal somewhere within a significant cluster and cannot make inferences about the statistical significance of specific locations within the cluster. This poses a particular problem when one uses a liberal cluster-defining primary threshold (i.e., higher p-values), which often produces large clusters spanning multiple anatomical regions. In such cases, it is impossible to reliably infer which anatomical regions show true effects. From a survey of 814 functional magnetic resonance imaging (fMRI) studies published in 2010 and 2011, we show that the use of liberal primary thresholds (e.g., p<.01) is endemic, and that the largest determinant of the primary threshold level is the default option in the software used. We illustrate the problems with liberal primary thresholds using an fMRI dataset from our laboratory (N=33), and present simulations demonstrating the detrimental effects of liberal primary thresholds on false positives, localization, and interpretation of fMRI findings. To avoid these pitfalls, we recommend several analysis and reporting procedures, including 1) setting primary p<.001 as a default lower limit; 2) using more stringent primary thresholds or voxel-wise correction methods for highly powered studies; and 3) adopting reporting practices that make the level of spatial precision transparent to readers. We also suggest alternative and supplementary analysis methods.",
-  "cited_by_count": 1332,
+  "cited_by_count": 1265,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.neuroimage.2013.12.058",
@@ -29448,7 +29448,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Woo, C. W., Krishnan, A. & Wager, T. D. (2014). Cluster-extent based thresholding in fMRI analyses: Pitfalls and recommendations. Neuroimage. 91:412-9. PMCID: PMC4214144. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2014social",
@@ -29531,7 +29531,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. & Gianaros, P. J. (2014). The Social Brain, Stress, and Psychopathology. JAMA psychiatry. 71(6):622-624. PMID: 24740473. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "jepma2014dynamics",
@@ -30764,7 +30764,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Fields, H. (2013). Placebo analgesia. In: Wall, P. D., Melzack, R. (Eds.), Textbook of Pain. 362-373. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "koban2011predictors",
@@ -31130,7 +31130,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. & Atlas, L. Y. (2013). How Is Pain Influenced by Cognition? Neuroimaging Weighs In. Perspectives on Psychological Science. 8(1):91-97. PMCID: PMC3994173. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2013fmribased",
@@ -31349,7 +31349,7 @@
   "openalex_id": null,
   "date": "2013-06-13",
   "abstract": "In recent years, an explosion of neuroimaging studies has examined cognitive reappraisal, an emotion regulation strategy that involves changing the way one thinks about a stimulus in order to change its affective impact. Existing models broadly agree that reappraisal recruits frontal and parietal control regions to modulate emotional responding in the amygdala, but they offer competing visions of how this is accomplished. One view holds that control regions engage ventromedial prefrontal cortex (vmPFC), an area associated with fear extinction, that in turn modulates amygdala responses. An alternative view is that control regions modulate semantic representations in lateral temporal cortex that indirectly influence emotion-related responses in the amygdala. Furthermore, while previous work has emphasized the amygdala, whether reappraisal influences other regions implicated in emotional responding remains unknown. To resolve these questions, we performed a meta-analysis of 48 neuroimaging studies of reappraisal, most involving downregulation of negative affect. Reappraisal consistently 1) activated cognitive control regions and lateral temporal cortex, but not vmPFC, and 2) modulated the bilateral amygdala, but no other brain regions. This suggests that reappraisal involves the use of cognitive control to modulate semantic representations of an emotional stimulus, and these altered representations in turn attenuate activity in the amygdala.",
-  "cited_by_count": 1960,
+  "cited_by_count": 1904,
   "oa_status": null,
   "oa_url": "https://academic.oup.com/cercor/article-pdf/24/11/2981/855752/bht154.pdf",
   "landing_url": "https://doi.org/10.1093/cercor/bht154",
@@ -31416,7 +31416,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J., Silvers, J.A., Wager, T.D., Lopez, R., Onyemekwu, C., Kober, H., Weber, J. & Ochsner, K.N. (2013). Cognitive reappraisal of emotion: A meta-analysis of human neuroimaging studies. Cerebral Cortex. 24(11):2981-90. PMCID: PMC4193464. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "outhred2013acute",
@@ -31648,7 +31648,7 @@
   "openalex_id": null,
   "date": "2013-12-24",
   "abstract": "A major difference between humans and other animals is our capacity to maintain information in working memory (WM) while performing secondary tasks, which enables sustained, complex cognition. A common assumption is that the lateral prefrontal cortex (PFC) is critical for WM performance in the presence of distracters, but direct evidence is scarce. We assessed the relationship between fMRI activity and WM performance within subjects, with performance matched across distracter and no-distracter conditions. Activity in the ventrolateral PFC during WM encoding and maintenance positively predicted performance in both conditions, whereas activity in the presupplementary motor area (pre-SMA) predicted performance only under distraction. Other parts of the dorsolateral and ventrolateral PFCs predicted performance only in the no-distracter condition. These findings challenge a lateral-PFC-centered view of distracter resistance, and suggest that the lateral PFC supports a type of WM representation that is efficient for dealing with task-irrelevant input but is, nonetheless, easily disrupted by dual-task demands.",
-  "cited_by_count": 21,
+  "cited_by_count": 20,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.3758/s13415-013-0226-y",
@@ -31705,7 +31705,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Spicer, J., Insler, R. & Smith, E. E., (2013). The neural bases of distracter-resistant working memory. Cognitive Affective Behavioral Neuroscience. 14(1):90-105. PMCID: PMC3972280. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "plassmann2013expectancies",
@@ -31905,7 +31905,7 @@
   "openalex_id": null,
   "date": "2012-01-18",
   "abstract": "An explosion of recent research has studied whether placebo treatments influence health-related outcomes and their biological markers, but almost no research has examined the psychological processes required for placebo effects to occur. This study tested whether placebo treatment and cognitive distraction reduce pain through shared or independent processes. We tested the joint effects of performance of an executive working memory task and placebo treatment on thermal pain perception. An interactive effect of these two manipulations would constitute evidence for shared mechanisms, whereas additive effects would imply separate mechanisms. Participants ( N = 33) reported reduced pain both when they performed the working memory task and when they received the placebo treatment, but the reductions were additive, a result indicating that the executive demands of the working memory task did not interfere with placebo analgesia. Furthermore, placebo analgesia did not impair task performance. Together, these data suggest that placebo analgesia does not depend on active redirection of attention and that expectancy and distraction can be combined to maximize pain relief.",
-  "cited_by_count": 107,
+  "cited_by_count": 105,
   "oa_status": null,
   "oa_url": null,
   "landing_url": null,
@@ -31959,7 +31959,7 @@
   "abstract_source": "crossref",
   "crossref_checked": true,
   "citation_original": "Buhle, J. T., Stevens, B. L., Friedman, J. J. & Wager, T. D. (2012). Distraction and Placebo: Two Separate Routes to Pain Control. Psychological Science. 23(3)246-53 PMID: 22261568. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "thayer2012metaanalysis",
@@ -32134,7 +32134,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. & Yarkoni, T. (2012). Establishing homology between monkey and human brains. Nature Methods. 9(3): 237-239. PMID: 22348890. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "roy2012ventromedial",
@@ -32266,7 +32266,7 @@
   "openalex_id": null,
   "date": "2012-03-24",
   "abstract": "Human neuroimaging offers a powerful way to connect animal and human research on emotion, with profound implications for psychological science. However, the gulf between animal and human studies remains a formidable obstacle: human studies typically focus on the cortex and a few subcortical regions such as the amygdala, whereas deeper structures such as the brainstem periaqueductal gray (PAG) play a key role in animal models. Here, we directly assessed the role of PAG in human affect by interleaving in a single fMRI session two conditions known to elicit strong emotional responses--physical pain and negative image viewing. Negative affect and PAG activity increased in both conditions. We next examined eight independent data sets, half featuring pain stimulation and half negative image viewing. In sum, these data sets comprised 198 additional participants. We found increased activity in PAG in all eight studies. Taken together, these findings suggest PAG is a key component of human affective responses.",
-  "cited_by_count": 102,
+  "cited_by_count": 101,
   "oa_status": null,
   "oa_url": "https://academic.oup.com/scan/article-pdf/8/6/609/27107551/nss038.pdf",
   "landing_url": "https://doi.org/10.1093/scan/nss038",
@@ -32330,7 +32330,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J. T., Kober, H., Ochsner K. N., Mende-Siedlecki, P., Weber, J., Hughes, B., Kross, E., Atlas, L. Y., McRae, K. & Wager, T. D. (2012). Common representation of pain and negative emotion in the midbrain periaqueductal gray. Social Cognitive and Affective Neuroscience. 8(6):609-16.PMCID: PMC3739905. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "lindquist2012basis",
@@ -33175,7 +33175,7 @@
   "openalex_id": null,
   "date": "2011-01-12",
   "abstract": "Recent studies have identified brain correlates of placebo analgesia, but none have assessed how accurately patterns of brain activity can predict individual differences in placebo responses. We reanalyzed data from two fMRI studies of placebo analgesia (N = 47), using patterns of fMRI activity during the anticipation and experience of pain to predict new subjects' scores on placebo analgesia and placebo-induced changes in pain processing. We used a cross-validated regression procedure, LASSO-PCR, which provided both unbiased estimates of predictive accuracy and interpretable maps of which regions are most important for prediction. Increased anticipatory activity in a frontoparietal network and decreases in a posterior insular/temporal network predicted placebo analgesia. Patterns of anticipatory activity across the cortex predicted a moderate amount of variance in the placebo response (∼12% overall, ∼40% for study 2 alone), which is substantial considering the multiple likely contributing factors. The most predictive regions were those associated with emotional appraisal, rather than cognitive control or pain processing. During pain, decreases in limbic and paralimbic regions most strongly predicted placebo analgesia. Responses within canonical pain-processing regions explained significant variance in placebo analgesia, but the pattern of effects was inconsistent with widespread decreases in nociceptive processing. Together, the findings suggest that engagement of emotional appraisal circuits drives individual variation in placebo analgesia, rather than early suppression of nociceptive processing. This approach provides a framework that will allow prediction accuracy to increase as new studies provide more precise information for future predictive models.",
-  "cited_by_count": 343,
+  "cited_by_count": 334,
   "oa_status": null,
   "oa_url": "https://www.jneurosci.org/content/jneuro/31/2/439.full.pdf",
   "landing_url": "https://doi.org/10.1523/jneurosci.3420-10.2011",
@@ -33240,7 +33240,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Atlas, L. Y., Leotti, L. A., & Rilling, J. K. (2011). Predicting individual differences in placebo analgesia: Contributions of brain activity during anticipation and pain experience. The Journal of Neuroscience. 31(2):439-452. NIHMSID: NIHMS355850 PMID: 21228154. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-10-03",
+  "citations_refreshed": "2026-10-09",
   "neuromarkers": [
    {
     "id": "2011-wager-jneuro-placebo-prediction",
@@ -33894,7 +33894,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Lindquist, M. A. (2011). Essentials of Functional Magnetic Resonance Imaging. In: Decety, J., Cacioppo, J. T. (Eds.), Handbook of Social Neuroscience. Oxford University Press. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "miele2011dissociating",
@@ -34513,7 +34513,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J., Wager, T. D., & Smith, E. E. (2010). Using the Stroop Task to study emotion regulation. In: Hassin, R. R., Oschner, K. N., Trope, T. (Eds.), Self Control in Society, Mind, and Brain. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "buhle2010performancedependent",
@@ -34540,7 +34540,7 @@
   "openalex_id": null,
   "date": "2010-04",
   "abstract": "It is widely assumed that distraction reduces pain. Similarly, it is assumed that pain distracts from concurrent, unrelated cognitive processing, reducing performance on difficult tasks. Taken together, these assumptions suggest pain processing and cognitive function engage an overlapping set of domain-general, capacity-limited mental resources. However, experimental tests of this proposal have yielded mixed results, leading to alternative proposals that challenge the common model of a bidirectional relationship between concurrent pain and task performance. We tested these contrasting positions using a novel concurrent pain and executive working memory paradigm. Both task difficulty and nociceptive stimulus intensity were individually calibrated for each participant. Participants reported less pain during the working memory task than a visually matched control condition. Conversely, increasing levels of heat incrementally reduced task performance. Path analyses showed that variations in pain completely mediated this effect, and that even within a given heat level, trial-by-trial fluctuations in pain predicted decrements in performance. In sum, these findings argue that overlapping cognitive resources play a role in both pain processing and executive working memory. Future studies could use this paradigm to understand more precisely which components of executive function or other cognitive resources contribute to the experience of pain.",
-  "cited_by_count": 261,
+  "cited_by_count": 251,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.pain.2009.10.027",
@@ -34596,7 +34596,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J. & Wager, T. D. (2010). Performance-dependent inhibition of pain by an executive working memory task. PAIN. 149:19-26. NIHMS157612. PMID: 20129735. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2010separate",
@@ -34679,7 +34679,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. & Roy, M. (2010). Separate mechanisms for placebo and opiate analgesia? PAIN. 150:8-9. PMID: 20347523. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "etkin2010systems",
@@ -34791,7 +34791,7 @@
   "openalex_id": null,
   "date": "2010-09",
   "abstract": "1Department of Psychology, Columbia University, 406 Schermerhorn Hall, 1190 Amsterdam Avenue, New York, NY 10027, Mail Code 5501, USA Tel.: +1 212 854 1860; fax: +1 212 854 9648. 2Department of Psychology and Neuroscience, University of Colorado, Muenzinger D244, 345 UCB, Boulder, Colorado, 80309–0345, USA Tel.: +1 303 492 7487; fax: +1 303 492 2967. E-mail addresses:[email protected], [email protected]",
-  "cited_by_count": 23,
+  "cited_by_count": 22,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.pain.2010.05.004",
@@ -34847,7 +34847,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J., & Wager, T. D. (2010). Does meditation training lead to enduring changes in the anticipation and experience of pain? PAIN. 150:382-3. PMID: 20546996. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "atlas2010mediators",
@@ -35602,7 +35602,7 @@
   "openalex_id": null,
   "date": "2009-03",
   "abstract": "Making sense of a neuroimaging literature that is growing in scope and complexity will require increasingly sophisticated tools for synthesizing findings across studies. Meta-analysis of neuroimaging studies fills a unique niche in this process: It can be used to evaluate the consistency of findings across different laboratories and task variants, and it can be used to evaluate the specificity of findings in brain regions or networks to particular task types. This review discusses examples, implementation, and considerations when choosing meta-analytic techniques. It focuses on the multilevel kernel density analysis (MKDA) framework, which has been used in recent studies to evaluate consistency and specificity of regional activation, identify distributed functional networks from patterns of co-activation, and test hypotheses about functional cortical-subcortical pathways in healthy individuals and patients with mental disorders. Several tests of consistency and specificity are described.",
-  "cited_by_count": 259,
+  "cited_by_count": 245,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.neuroimage.2008.10.061",
@@ -35662,7 +35662,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Lindquist, M. A., Nichols, H., Kober, H. & Van Snellenberg, J. X.. (2009). Evaluating the consistency and specificity of neuroimaging data using meta-analysis. Neuroimage. 45(1): S210-S221. NIHMSID: NIHMS355887 PMCID: PMC3318962. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "salimikhorshidi2009metaanalysis",
@@ -36044,7 +36044,7 @@
   "openalex_id": null,
   "date": "2009-09",
   "abstract": "Social threat is a key component of mental \"stress\" and a potent generator of negative emotions and physiological responses in the body. How the human brain processes social context and drives peripheral physiology, however, is relatively poorly understood. Human neuroimaging and animal studies implicate the dorsal medial prefrontal cortex (MPFC), though this heterogeneous region is likely to contain multiple sub-regions with diverse relationships with physiological reactivity and regulation. We used fMRI combined with a novel multi-level path analysis approach to identify brain mediators of the effects of a public speech preparation task (social evaluative threat, SET) on heart rate (HR). This model provides tests of functional pathways linking experimentally manipulated threat, regional fMRI activity, and physiological output, both across time (within person) and across individuals (between persons). It thus integrates time series connectivity and individual difference analyses in the same path model. The results provide evidence for two dissociable, inversely coupled sub-regions of MPFC that independently mediated HR responses. SET caused activity increases in a more dorsal pregenual cingulate region, whose activity was coupled with HR increases. Conversely, SET caused activity decreases in a right ventromedial/medial orbital region, which were coupled with HR increases. Individual differences in coupling strength in each pathway independently predicted individual differences in HR reactivity. These results underscore both the importance and heterogeneity of MPFC in generating physiological responses to threat.",
-  "cited_by_count": 432,
+  "cited_by_count": 405,
   "oa_status": null,
   "oa_url": null,
   "landing_url": null,
@@ -36099,7 +36099,7 @@
   "crossref_checked": true,
   "abstract_source": "pubmed",
   "citation_original": "Wager, T. D., Waugh, C. E., Lindquist, M., Noll, D. C., Fredrickson, B. L. & Taylor, S. F. (2009). Brain mediators of cardiovascular responses to social threat: part I: Reciprocal dorsal and ventral sub-regions of the medial prefrontal cortex and heart-rate reactivity. Neuroimage. 47:821-35. PMCID: PMC3275821. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2009mediatorsb",
@@ -36134,7 +36134,7 @@
   "openalex_id": null,
   "date": "2009-09",
   "abstract": "Social evaluative threat (SET) is a potent stressor in humans that causes autonomic changes, endocrine responses, and multiple health problems. Neuroimaging has recently begun to elucidate the brain correlates of SET, but as yet little is known about the mediating cortical-brainstem pathways in humans. This paper replicates and extends findings in a companion paper (Wager et al., 2009) using an independent cohort of participants and different image acquisition parameters. Here, we focused specifically on relationships between the medial prefrontal cortex (MPFC), midbrain periaqueductal gray (PAG), and heart rate (HR). We applied multi-level path analysis to localize brain mediators of SET effects on HR and self-reported anxiety. HR responses were mediated by opposing signals in two distinct sub-regions of the MPFC-increases in rostral dorsal anterior cingulate cortex (rdACC) and de-activation in ventromedial prefrontal cortex (vmPFC). In addition, HR responses were mediated by PAG. Additional path analyses provided support for two cortical-subcortical pathways: one linking vmPFC, PAG, and HR, and another linking rdACC, thalamus, and HR. PAG responses were linked with HR changes both before and during SET, whereas cortical regions showed stronger connectivity with HR during threat. Self-reported anxiety showed a partially overlapping, but weaker, pattern of mediators, including the vmPFC, dorsomedial prefrontal cortex, and lateral frontal cortex, as well as substantial individual differences that were largely unexplained. Taken together, these data suggest pathways for the translation of social threats into both physiological and experiential responses, and provide targets for future research on the generation and regulation of emotion.",
-  "cited_by_count": 276,
+  "cited_by_count": 265,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.neuroimage.2009.05.044",
@@ -36196,7 +36196,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., van Ast, V. A., Hughes B. L., Davidson, M. L., Lindquist, M. A. & Ochsner, K. N. (2009). Brain mediators of cardiovascular responses to social threat, part II: Prefrontal-subcortical pathways and relationship with anxiety. Neuroimage. 47:836-51. PMID: 19465135. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wagertd2009essentials",
@@ -36282,7 +36282,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager. T. D., Lindquist, M., & Hernandez, L. (2009). Essentials of functional neuroimaging. In: Handbook of Neuroscience for the Behavioral Sciences. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "lindquist2008application",
@@ -36602,7 +36602,7 @@
   },
   "citation_original": "Wager, T. D., Barrett, L. F., Bliss-Moreau, E., Lindquist, K., Duncan, S., Kober, H. et al. (2008). The Neuroimaging of Emotion. In M. Lewis (Ed.), Handbook of Emotion. [PDF]",
   "authors_truncated": true,
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "lindquist2008spatial",
@@ -36820,7 +36820,7 @@
   "openalex_id": null,
   "date": "2008-09",
   "abstract": "Although prefrontal cortex has been implicated in the cognitive regulation of emotion, the cortical-subcortical interactions that mediate this ability remain poorly understood. To address this issue, we identified a right ventrolateral prefrontal region (vlPFC) whose activity correlated with reduced negative emotional experience during cognitive reappraisal of aversive images. We then applied a pathway-mapping analysis on subcortical regions to locate mediators of the association between vlPFC activity and reappraisal success (i.e., reductions in reported emotion). Results identified two separable pathways that together explained approximately 50% of the reported variance in self-reported emotion: (1) a path through nucleus accumbens that predicted greater reappraisal success, and (2) a path through ventral amygdala that predicted reduced reappraisal success (i.e., more negative emotion). These results provide direct evidence that vlPFC is involved in both the generation and regulation of emotion through different subcortical pathways, suggesting a general role for this region in appraisal processes.",
-  "cited_by_count": 1814,
+  "cited_by_count": 1766,
   "oa_status": null,
   "oa_url": "http://www.cell.com/article/S0896627308007538/pdf",
   "landing_url": "https://doi.org/10.1016/j.neuron.2008.09.006",
@@ -36880,7 +36880,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Davidson, M. L., Hughes, B. L., Lindquist, M. A. & Ochsner, K. N. (2008). Prefrontal-subcortical pathways mediating successful emotion regulation. Neuron. 59:1037-50. PMID: 18817740. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "waugh2008neural",
@@ -36913,7 +36913,7 @@
   "openalex_id": null,
   "date": "2008-09-02",
   "abstract": "A facet of emotional resilience critical for adapting to adversity is flexible use of emotional resources. We hypothesized that in threatening situations, this emotional flexibility enables resilient people to use emotional resources during appropriately emotional events, and conserve emotional resources during innocuous events. We tested this hypothesis using functional magnetic resonance imaging in a repeated recovery from threat task with low- and high-trait resilient individuals (LowR and HighR, respectively, as measured by ER89). In an event-related design, 13 HighR and 13 LowR participants viewed 'threat' cues, which signaled either an aversive or neutral picture with equal probabilities, or 'nonthreat' cues, which signaled a neutral picture. Results show that when under threat, LowR individuals exhibited prolonged activation in the anterior insula to both the aversive and neutral pictures, whereas HighR individuals exhibited insula activation only to the aversive pictures. These data provide neural evidence that in threatening situations, resilient people flexibly and appropriately adjust the level of emotional resources needed to meet the demands of the situation.",
-  "cited_by_count": 176,
+  "cited_by_count": 174,
   "oa_status": null,
   "oa_url": "https://academic.oup.com/scan/article-pdf/3/4/322/27105323/nsn024.pdf",
   "landing_url": "https://doi.org/10.1093/scan/nsn024",
@@ -36973,7 +36973,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Waugh, C. E., Wager, T. D., Fredrickson, B. L., Noll, D. C., Taylor, S. F. (2008). The neural correlates of trait resilience when anticipating and recovering from threat. Social Cognitive and Affect Neuroscience. 3:322-32. PMID: 19015078.[PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "grinband2008detection",
@@ -37149,7 +37149,7 @@
    "classified_at": "2026-09-06T19:26:20Z"
   },
   "citation_original": "Wager, T. D., Hernandez, L., Jonides, J., & Lindquist, M. (2007). Elements of functional neuroimaging. In J. T. Cacioppo, L. G. Tassinary & G. G. Berntson (Eds.), Handbook of Psychophysiology (4th ed., pp. 19-55). Cambridge: Cambridge University Press. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "lindquist2007validity",
@@ -37441,7 +37441,7 @@
   "openalex_id": null,
   "date": "2007-06-01",
   "abstract": "Meta-analysis is an increasingly popular and valuable tool for summarizing results across many neuroimaging studies. It can be used to establish consensus on the locations of functional regions, test hypotheses developed from patient and animal studies and develop new hypotheses on structure-function correspondence. It is particularly valuable in neuroimaging because most studies do not adequately correct for multiple comparisons; based on statistical thresholds used, we estimate that roughly 10-20% of reported activations in published studies are false positives. In this article, we briefly summarize some of the most popular meta-analytic approaches and their limitations, and we outline a revised multilevel approach with increased validity for establishing consistency across studies. We also discuss multivariate methods by which meta-analysis can be used to develop and test hypotheses about co-activity of brain regions. Finally, we argue that meta-analyses can make a uniquely valuable contribution to predicting psychological states from patterns of brain activity, and we briefly discuss some methods for making such predictions.",
-  "cited_by_count": 458,
+  "cited_by_count": 438,
   "oa_status": null,
   "oa_url": "https://academic.oup.com/scan/article-pdf/2/2/150/27104743/nsm015.pdf",
   "landing_url": "https://doi.org/10.1093/scan/nsm015",
@@ -37500,7 +37500,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Lindquist, M. & Kaplan, L. (2007). Meta-analysis of functional neuroimaging data: current and future directions. Social Cognitive and Affective Neuroscience. 2:150-158. PMID: 18985131. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2007placebo",
@@ -37529,7 +37529,7 @@
   "openalex_id": null,
   "date": "2007-06-26",
   "abstract": "Placebo-induced expectancies have been shown to decrease pain in a manner reversible by opioid antagonists, but little is known about the central brain mechanisms of opioid release during placebo treatment. This study examined placebo effects in pain by using positron-emission tomography with [(11)C]carfentanil, which measures regional mu-opioid receptor availability in vivo. Noxious thermal stimulation was applied at the same temperature for placebo and control conditions. Placebo treatment affected endogenous opioid activity in a number of predicted mu-opioid receptor-rich regions that play central roles in pain and affect, including periaqueductal gray and nearby dorsal raphe and nucleus cuneiformis, amygdala, orbitofrontal cortex, insula, rostral anterior cingulate, and lateral prefrontal cortex. These regions appeared to be subdivided into two sets, one showing placebo-induced opioid activation specific to noxious heat and the other showing placebo-induced opioid reduction during warm stimulation in anticipation of pain. These findings suggest that a mechanism of placebo analgesia is the potentiation of endogenous opioid responses to noxious stimuli. Opioid activity in many of these regions was correlated with placebo effects in reported pain. Connectivity analyses on individual differences in endogenous opioid system activity revealed that placebo treatment increased functional connectivity between the periaqueductal gray and rostral anterior cingulate, as hypothesized a priori, and also increased connectivity among a number of limbic and prefrontal regions, suggesting increased functional integration of opioid responses. Overall, the results suggest that endogenous opioid release in core affective brain regions is an integral part of the mechanism whereby expectancies regulate affective and nociceptive circuits.",
-  "cited_by_count": 567,
+  "cited_by_count": 564,
   "oa_status": null,
   "oa_url": "https://www.pnas.org/doi/pdf/10.1073/pnas.0702413104",
   "landing_url": "https://doi.org/10.1073/pnas.0702413104",
@@ -37587,7 +37587,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Scott, D. J. & Zubieta, J. K. (2007). Placebo effects on human mu-opioid activity during pain. Proceedings of the National Academy of Sciences. 104:11056-11061. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "zaki2007different",
@@ -38014,7 +38014,7 @@
    "classified_at": "2026-09-07T03:40:08Z"
   },
   "citation_original": "Wager, T.D. (2006). Do We Need to Study the Brain to Understand the Mind? APS Observer. 19(9):25-27. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "summerfield2006neocortical",
@@ -38135,7 +38135,7 @@
   "openalex_id": null,
   "date": "2006-05",
   "abstract": "Placebo treatment may affect multiple components of pain, including inhibition of nociceptive input, automatic or deliberative appraisal of pain, or cognitive judgments involved in pain reporting. If placebo analgesia is due in part to an attenuation of early nociceptive processing, then pain-evoked event-related potentials (ERPs) should be reduced with placebo. In this study, we tested for placebo effects in P2 laser-evoked potentials at midline scalp electrodes. We found that placebo treatment produced significant decreases in P2 amplitude, and that P2 placebo responses were large enough to reflect a meaningful difference in nociceptive processing. However, we also found evidence that the very robust placebo-induced decreases in reported pain are not solely explained by early reductions in P2. N2 amplitude was affected by neither placebo nor reduction of laser intensity. These results suggest that placebo treatment affects early nociceptive processing, but that another component of placebo effects in reported pain occurs later, either in evaluation of pain or cognitive judgments about pain reports.",
-  "cited_by_count": 144,
+  "cited_by_count": 141,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.bbi.2006.01.007",
@@ -38192,7 +38192,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Matre, D., Casey, K. L. (2006). Placebo effects in laser-evoked pain potentials. Brain Behaviour, and Immunity. 3:219-30. PMCID: PMC3735137. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2006individual",
@@ -38277,7 +38277,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Jonides, J., Smith, E. E. (2006). Individual differences in multiple types of shifting attention. Memory & Cognition. 8:1730-43. PMID: 17489298. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "benedetti2005neurobiological",
@@ -38547,7 +38547,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. & Ochsner, K. N. (2005). Sex differences in the emotional brain. Neuroreport. 16:85-7. PMID: 15671851. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2005accounting",
@@ -38578,7 +38578,7 @@
   "openalex_id": null,
   "date": "2005-03",
   "abstract": "Nonlinear effects in fMRI BOLD data may substantially influence estimates of task-related activations, particularly in rapid event-related designs. If the BOLD response to each stimulus is assumed to be independent of the stimulation history, nonlinear interactions create a prediction error that may reduce sensitivity. When stimulus density differs among conditions, nonlinear effects can cause artifactual differences in activation. This situation can occur in rapid event-related designs or when comparing blocks of unequal lengths. We present data showing substantial nonlinear history effects for stimuli 1 s apart and use estimates of nonlinearities in response magnitude, onset time, and time to peak to form a low-dimensional parameterization of these nonlinear effects. Our estimates of nonlinearity appear relatively consistent throughout the brain, and these estimates can be used to form adjusted linear predictors for future rapid event-related fMRI studies. Adjusting the linear model for these known nonlinear effects results in a substantially better model fit. The biggest advantages to using predictors adjusted for known nonlinear effects are (1) higher sensitivity at the individual subject level of analysis, (2) better control of confounds related to nonlinear effects, and (3) more accurate estimates of design efficiency in experimental fMRI design.",
-  "cited_by_count": 123,
+  "cited_by_count": 119,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.neuroimage.2004.11.008",
@@ -38635,7 +38635,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Vazquez, A., Hernandez, l. & Noll, D. C. (2005). Accounting for nonlinear BOLD effects in fMRI: parameter estimates and a model for prediction in rapid event-related studies. Neuroimage. 25:206-18. PMID: 15734356. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2005neuralb",
@@ -38717,7 +38717,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. (2005). The neural bases of placebo effects in anticipation and pain. Seminars in Pain Medicine. 3(1):22-30. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "nichols2005valid",
@@ -38837,7 +38837,7 @@
   "openalex_id": null,
   "date": "2005-05",
   "abstract": "Robust regression techniques are a class of estimators that are relatively insensitive to the presence of one or more outliers in the data. They are especially well suited to data that require large numbers of statistical tests and may contain outliers due to factors not of experimental interest. Both these issues apply particularly to neuroimaging data analysis. We use simulations to compare several robust techniques against ordinary least squares (OLS) regression, and we apply robust regression to second-level (group \"random effects\") analyses in three fMRI datasets. Our results show that robust iteratively reweighted least squares (IRLS) at the 2nd level is a computationally efficient technique that both increases statistical power and decreases false positive rates in the presence of outliers. The benefits of IRLS are apparent with small samples (n = 10) and increase with larger sample sizes (n = 40) in the typical range of group neuroimaging experiments. When no true effects are present, IRLS controls false positive rates at an appropriate level. We show that IRLS can have substantial benefits in analysis of group data and in estimating hemodynamic response shapes from time series data. We provide software to implement IRLS in group neuroimaging analyses.",
-  "cited_by_count": 303,
+  "cited_by_count": 292,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.neuroimage.2005.01.011",
@@ -38893,7 +38893,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Keller, M. C., Lacey, S. C. & Jonides, J. (2005). Increased sensitivity in neuroimaging analyses using robust regression. Neuroimage. 26:99-113. PMID: 15862210. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2005expectations",
@@ -38974,7 +38974,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. (2005). Expectations and anxiety as mediators of placebo effects in pain. PAIN. 115(3):225-226. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2005toward",
@@ -39060,7 +39060,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Jonides, J., Smith, E. E. & Nichols, T. E. (2005). Toward a taxonomy of attention shifting: individual differences in fMRI during multiple shift types. Cognitive, Affective, & Behavioral Neuroscience. 2:127-43. PMID: 16180620. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2005placebo",
@@ -39144,7 +39144,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. & Nitschke, J. (2005). Placebo effects in the brain: Linking mental and physiological processes. Brain, Behavior, and Immunity. 19:281-282. PMID: 15908179. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2005common",
@@ -39179,7 +39179,7 @@
   "openalex_id": null,
   "date": "2005-08",
   "abstract": "The ability to inhibit inappropriate responses is central to cognitive control, but whether the same brain mechanisms mediate inhibition across different tasks is not known. We present evidence for a common set of frontal and parietal regions engaged in response inhibition across three tasks: a go/no-go task, a flanker task, and a stimulus-response compatibility task. Regions included bilateral anterior insula/frontal operculum and anterior prefrontal, right dorsolateral and premotor, and parietal cortices. Insula activity was positively correlated with interference costs in behavioral performance in each task. Principal components analysis showed a coherent pattern of individual differences in these regions that was also positively correlated with performance in all three tasks. However, correlations among tasks were low, for both brain activity and performance. We suggest that common interference detection and/or resolution mechanisms are engaged across tasks, and that inter-task correlations in behavioral performance are low because they conflate measurements of common mechanisms with measurements of individual biases unique to each task.",
-  "cited_by_count": 500,
+  "cited_by_count": 490,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.neuroimage.2005.01.054",
@@ -39237,7 +39237,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Sylvester, C. Y., Lacey S. C., Nee, D. E., Franklin, M. & Jonides, J. (2005). Common and unique components of response inhibition revealed by fMRI. Neuroimage. 27:323-40. PMID: 16019232. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2005neural",
@@ -39317,7 +39317,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. (2005). The neural bases of placebo effects. Current Directions in Psychological Science. 14(4):175-179. [PDF]",
-  "citations_refreshed": "2026-10-03"
+  "citations_refreshed": "2026-10-09"
  },
  {
   "id": "wager2004painful",
