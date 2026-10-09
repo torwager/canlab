@@ -1,7 +1,73 @@
 {
- "updated": "2026-10-08",
+ "updated": "2026-10-09",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026languageb",
+   "slack_ts": "1791557830.950819",
+   "shared_on": "2026-10-09",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "heart",
+     "count": 1
+    }
+   ],
+   "url": "https://arxiv.org/abs/2609.35591",
+   "doi": "10.48550/arxiv.2609.35591",
+   "title": "Language Models Act on Hidden Valence",
+   "abstract": "Language models describe some internal states as good and others as bad. But whether models have a stake in them is an open question. Simply asking models is unlikely to be informative. Any answer may be consistent with genuine introspection, superficial pattern-matching, or with fixed scripts learned in character training. We therefore study revealed preference. Rather than asking about a state, we use activation steering to attach a positively or negatively valenced activation pattern to one of two otherwise meaningless 'zones', switch steering off, and then observe which zone the model prefers. A model with a stake in that state should choose accordingly. Across seven open-weight models from five families, this is indeed what we find. First, steering changes the passages models write about each zone, and those words shift later choice. Second, this shift persists when all surface-level tokens are held fixed and only the hidden KV cache differs. Third, the effect also remains when all text is generated without steering and valence is only injected during cache construction. Thus, the hidden state is sufficient to move choice in proportion to the steering dose. Fourth, the dependence of choice on hidden valence is nearly absent in a base model and emerges during DPO, consistent with a link between valence and goal-directed behaviour formed in training. Finally, given tools to self-steer, a model does not tend to induce a positive state, but it regularly removes an imposed negative state. It does so at a dose-dependent rate and significantly more often than it removes random-direction interventions. Overall we demonstrate that valence-related activation patterns leave hidden traces that predictably govern later choices, even when all visible tokens are identical across conditions. Whether these traces are accompanied by any subjective experience relevant to model welfare remains unclear.",
+   "authors": [
+    "Berg, Cameron",
+    "Kaiser, Caspar"
+   ],
+   "journal": "arXiv.org",
+   "year": 2026,
+   "pdf_url": "https://arxiv.org/pdf/2609.35591",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1791557830950819",
+   "publisher_url": "https://doi.org/10.48550/arxiv.2609.35591",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "emotion"
+    ],
+    "approach": [
+     "ai_integration",
+     "computational_model"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Researchers used activation steering to inject hidden positive or negative valence states into open-weight language models and found that this hidden state predictably influenced models' later choices between neutral options, even without visible textual cues.",
+   "key_finding": "Hidden valence injected via steering or KV-cache manipulation shifted later model choices in a dose-dependent way, this effect emerged through DPO training (not in base models), and models tended to remove imposed negative states more than positive ones.",
+   "free_keywords": [
+    "activation steering",
+    "language models",
+    "revealed preference",
+    "DPO training",
+    "KV cache",
+    "AI welfare",
+    "valence"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": "This is an AI/machine learning paper studying valence in language models, not a human neuroscience study; taxonomy fit is approximate.",
+    "classified_at": "2026-10-09T17:00:01Z",
+    "usage": {
+     "input_tokens": 633,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 460,
+     "cost_usd": 0.01643
+    }
+   }
+  },
   {
    "id": "hu2026claustrum",
    "slack_ts": "1791394990.447479",
