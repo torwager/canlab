@@ -34,7 +34,7 @@
 </main>
 <div id="site-footer"></div>
 <script src="assets/config.js?v=7"></script>
-<script src="assets/app.js?v=7"></script>
+<script src="assets/app.js?v=8"></script>
 <script src="assets/layout.js?v=7"></script>
 <script src="assets/account.js?v=7"></script>
 <script>
@@ -70,7 +70,8 @@
       ${r.doi ? `<dt>DOI</dt><dd class="mono"><a href="https://doi.org/${CL.esc(r.doi)}">${CL.esc(r.doi)}</a></dd>` : ""}
       ${r.pmid ? `<dt>PMID</dt><dd class="mono"><a href="https://pubmed.ncbi.nlm.nih.gov/${CL.esc(r.pmid)}/">${CL.esc(r.pmid)}</a></dd>` : ""}
       ${r.cited_by_count != null ? `<dt>Citations</dt><dd class="tnum">${r.cited_by_count.toLocaleString()} (OpenAlex)</dd>` : ""}
-      ${(r.links || []).some(l => l.type === "pdf" && l.version === "author_manuscript") ? `<dt>PDF</dt><dd class="small muted">This is the PubMed Central author manuscript; the publisher's version is available from the journal link above.</dd>` : ""}
+      ${(r.links || []).some(l => l.type === "pdf" && l.version === "author_manuscript") ? `<dt>PDF</dt><dd class="small muted">This is the authors' manuscript, not the journal's typeset version; the published version is available from the journal link above.</dd>` : ""}
+      ${(r.links || []).some(l => l.type === "pdf" && l.version === "preprint") ? `<dt>PDF</dt><dd class="small muted">This is the preprint${r.st === "preprint" ? "" : "; the published version is available from the journal link above"}.</dd>` : ""}
       ${cls.model ? `<dt>Tagging</dt><dd class="muted small">Tags and summary were assigned by ${CL.esc(cls.model)} from the ${fullText ? "full text" : (cls.input_mode === "abstract" ? "abstract" : "title")}${cls.confidence != null ? ` <span class="tnum">(confidence ${cls.confidence})</span>` : ""}. <a href="https://github.com/${CL.config.repo}/issues/new?title=${encodeURIComponent("Tag correction: " + r.title.slice(0, 80))}&body=${encodeURIComponent("Paper: " + id + "\n\nSuggested change:\n")}" target="_blank" rel="noopener">Suggest a correction</a>.</dd>` : ""}
     </dl>`;
   CL.bindStars(el);

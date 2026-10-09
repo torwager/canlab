@@ -30,6 +30,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 import urllib.parse
 from pathlib import Path
 
@@ -49,7 +50,7 @@ MAX_BYTES = 60_000_000
 
 # ---------------------------------------------------------------- helpers
 def norm(t):
-    t = htmllib.unescape(re.sub(r"<[^>]+>", " ", t or "")).lower()
+    t = unicodedata.normalize("NFKC", htmllib.unescape(re.sub(r"<[^>]+>", " ", t or ""))).lower()  # NFKC: "ﬁ" -> "fi"
     return re.sub(r"[^a-z0-9]+", " ", t).strip()
 
 
@@ -118,6 +119,69 @@ def matches_title(data, title):
 def is_author_manuscript(data):
     t = pdf_text(data, pages=1).lower()
     return "hhs public access" in t or "author manuscript" in t
+
+
+PAPERWORK = re.compile(r"licen[cs]e to publish|copyright transfer|transfer of copyright|author(?:'s)? (?:publishing )?agreement form|"
+                       r"consent to publish|dear (?:dr\.?|prof\.?|editor)|cover letter|response to (?:the )?reviewers|reviewer #?\d|"
+                       r"^\s*supplementa(?:ry|l) (?:material|information|methods)\b|proof(?:s)? for (?:your )?approval|author query", re.I | re.M)
+AM_MARK = re.compile(r"hhs public access|author manuscript|accepted manuscript|manuscript draft|running head|first proof|"
+                     r"uncorrected proof|this article has been accepted for publication|in press at", re.I)
+PRE_MARK = re.compile(r"(?<!reviewed )\bpreprint\b(?!\s+posted)|\barxiv\b|biorxiv|medrxiv|psyarxiv|not peer.reviewed|^posted:", re.I | re.M)
+DOI_ON_PAGE = re.compile(r"10\.\d{4,9}/[^\s\"'<>()\[\]]+", re.I)
+
+
+def verify(data, p):
+    """Problems that mean `data` is not this paper (empty list = acceptable). The title alone is not enough:
+    a journal's licence-to-publish form carries the full title (that is how a wrong PDF got onto the site)."""
+    try:
+        import pymupdf
+    except ImportError:
+        import fitz as pymupdf
+    try:
+        d = pymupdf.open(stream=data, filetype="pdf")
+    except Exception:
+        return ["not a readable PDF"]
+    p1 = d[0].get_text() if d.page_count else ""
+    text = "\n".join(d[i].get_text() for i in range(min(2, d.page_count)))
+    if len(norm(text)) < 200:
+        return ["no text layer"]
+    out = []
+    if not matches_title(data, p["title"]):
+        out.append("title not on first pages")
+    m = PAPERWORK.search(p1)
+    if m:
+        out.append("paperwork: " + " ".join(m.group(0).split()))
+    if p.get("doi"):
+        mine = p["doi"].lower()
+        dois = {x.rstrip(".,;").lower() for x in DOI_ON_PAGE.findall(p1.replace("\u200b", ""))}
+        if dois and not any(x.startswith(mine) or mine.startswith(x) for x in dois) and not any(x.startswith(("10.1101/", "10.48550/", "10.31234/")) for x in dois):
+            out.append("page 1 shows another DOI: " + sorted(dois)[0])
+    if d.page_count == 1 and p.get("kind") == "article" and len(norm(text)) < 2500:
+        out.append("single page")
+    return out
+
+
+def pdf_version(data, p):
+    """publisher | author_manuscript | preprint, judged from the first page."""
+    try:
+        import pymupdf
+    except ImportError:
+        import fitz as pymupdf
+    d = pymupdf.open(stream=data, filetype="pdf")
+    p1 = d[0].get_text() if d.page_count else ""
+    two = p1 + (d[1].get_text() if d.page_count > 1 else "")
+    if p.get("status") == "preprint" or norm(p.get("journal")) in ("biorxiv", "medrxiv", "psyarxiv", "arxiv"):
+        return "preprint"
+    if AM_MARK.search(p1):
+        return "author_manuscript"
+    if PRE_MARK.search(p1):
+        return "preprint"
+    if p.get("doi") and p["doi"].lower() in two.lower().replace("\u200b", "").replace(" ", ""):
+        return "publisher"
+    j = norm(p.get("journal"))
+    if j and (j in norm(two) or (len(j.split()) > 2 and " ".join(j.split()[:3]) in norm(two))):
+        return "publisher"
+    return "unknown"
 
 
 # ---------------------------------------------------------------- DOI discovery
@@ -257,10 +321,11 @@ def add_pdf_link(p, path, version, source_url):
     p["has_pdf"] = True
 
 
-def process(p, sess, dry=False):
+def process(p, sess, dry=False, want_published=False):
+    """want_published: only accept the publisher's version (used to upgrade a manuscript already on the site)."""
     tried = []
     # 0. a file saved by hand
-    for path, version in ((PDF_DIR / f"{p['id']}.pdf", "publisher"), (AM_DIR / f"{p['id']}.pdf", "author_manuscript")):
+    for path, version in () if want_published else ((PDF_DIR / f"{p['id']}.pdf", "publisher"), (AM_DIR / f"{p['id']}.pdf", "author_manuscript")):
         if path.exists():
             if not dry:
                 add_pdf_link(p, path, version, None)
@@ -283,7 +348,8 @@ def process(p, sess, dry=False):
     if doi:
         pub, referer = publisher_candidates(sess, doi)
         cands += pub
-    cands += preprint_candidates(p)
+    if not want_published:
+        cands += preprint_candidates(p)
     # published versions first, then author manuscripts, then preprints
     rank = {"publisher": 0, "pmc": 1, "author_manuscript": 1, "preprint": 2}
     cands.sort(key=lambda c: rank.get(c[1], 3))
@@ -292,11 +358,15 @@ def process(p, sess, dry=False):
         data = download(sess, url, referer)
         if not data:
             continue
-        if not matches_title(data, p["title"]):
-            tried[-1] += ":wrong-or-unreadable"
+        problems = verify(data, p)
+        if problems:
+            tried[-1] += ":rejected(" + problems[0] + ")"
             continue
-        if version == "author_manuscript" or src == "pmc-opendata":
-            version = "author_manuscript" if (version == "author_manuscript" or is_author_manuscript(data)) else "publisher"
+        seen = pdf_version(data, p)
+        if want_published and seen != "publisher":
+            tried[-1] += ":not-published-version"
+            continue
+        version = seen if seen != "unknown" else ("author_manuscript" if version in ("pmc", "author_manuscript") else version)
         path = (AM_DIR if version == "author_manuscript" else PDF_DIR) / f"{p['id']}.pdf"
         if not dry:
             path.parent.mkdir(parents=True, exist_ok=True)
@@ -319,6 +389,17 @@ def write_report(papers):
         url = ("https://doi.org/" + p["doi"]) if p.get("doi") else (p.get("landing_url") or "")
         t = p["title"].replace("|", "/")
         lines.append(f"| {p.get('year') or ''} | {t[:110]} | {url or 'no DOI found'} | `{p['id']}.pdf` |")
+    # published papers whose PDF on the site is a manuscript or preprint: replace with the publisher's version when you can
+    pre = lambda p: p.get("status") == "preprint" or norm(p.get("journal")) in ("biorxiv", "medrxiv", "psyarxiv", "arxiv")
+    ms = [(p, l) for p in papers for l in p.get("links", []) if l.get("type") == "pdf" and l.get("version") in ("author_manuscript", "preprint") and not pre(p)]
+    ms.sort(key=lambda x: (-(x[0].get("year") or 0), x[0]["id"]))
+    lines += ["", "## Published papers whose PDF is a manuscript or preprint", "",
+              f"{len(ms)} papers. The site labels these \"PDF (author manuscript)\" or \"PDF (preprint)\". The daily run looks for an "
+              "open-access published version once a month; to replace one by hand, save the publisher's PDF over the file named here and push.", "",
+              "| Year | Paper | Now | Publisher link | File |", "|---|---|---|---|---|"]
+    for p, l in ms:
+        url = ("https://doi.org/" + p["doi"]) if p.get("doi") else (p.get("landing_url") or "")
+        lines.append(f"| {p.get('year') or ''} | {p['title'].replace('|', '/')[:100]} | {l['version'].replace('_', ' ')} | {url or 'no DOI'} | `site/{l['url']}` |")
     REPORT.parent.mkdir(exist_ok=True)
     REPORT.write_text("\n".join(lines) + "\n")
     return len(missing)
@@ -345,6 +426,29 @@ def main(argv=None):
         found += result != "not-found"
         p["pdf_search"] = {"last": today.isoformat(), "result": result, "tried": tried[:12]}
         print(f"  {p['id']}: {result}  ({', '.join(tried[:8])})", flush=True)
+        time.sleep(1)
+    # monthly: papers whose PDF is an author manuscript or preprint, though the paper is published, are re-checked
+    # for the publisher's open-access version, which replaces the manuscript when found
+    def upgradable(p):
+        l = next((l for l in p.get("links", []) if l.get("type") == "pdf"), None)
+        if not l or l.get("version") in (None, "publisher") or not p.get("doi") or p.get("status") == "preprint":
+            return False
+        if norm(p.get("journal")) in ("biorxiv", "medrxiv", "psyarxiv", "arxiv"):
+            return False
+        last = (p.get("pdf_upgrade") or {}).get("last")
+        return a.force or not last or (today - dt.date.fromisoformat(last)).days >= 30
+    up = [p for p in papers if not ids and upgradable(p)][: max(0, a.max - len(todo))]
+    for p in up:
+        l = next(l for l in p["links"] if l["type"] == "pdf")
+        old = ROOT / "site" / l["url"]
+        result, tried = process(p, sess, a.dry_run, want_published=True)
+        if result.startswith("found") and not a.dry_run:
+            new = ROOT / "site" / next(x for x in p["links"] if x["type"] == "pdf")["url"]
+            if old.exists() and old.resolve() != new.resolve():
+                old.unlink()
+            found += 1
+        p["pdf_upgrade"] = {"last": today.isoformat(), "result": result, "tried": tried[:12]}
+        print(f"  upgrade {p['id']}: {result}", flush=True)
         time.sleep(1)
     if not a.dry_run:
         PAPERS.write_text(json.dumps(papers, indent=1, ensure_ascii=False))

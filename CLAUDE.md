@@ -348,6 +348,17 @@ after visiting the article page), then a preprint. A file is kept only if its fi
 Records pdf_search {last,result,tried}; retries weekly (monthly for papers >3 years old). reports/missing_pdfs.md
 lists what is left with the file name to save it under: the PI saves site/pdf/<id>.pdf and pushes; build_site
 links such files immediately and the next daily run records the link. Paywalled publishers stay manual.
+PDF AUDIT (2026-10-09, after a licence-to-publish form had been posted as the Kwon 2026 paper): a title match is NOT
+enough (licence forms carry the full title). fetch_pdfs.verify() also rejects paperwork (licence/copyright forms,
+letters, reviewer responses, supplements), PDFs whose page 1 shows another paper's DOI, and single pages;
+pdf_version() labels publisher | author_manuscript | preprint from page-1 markers (eLife VORs print "Preprint posted",
+so that phrase is not a preprint marker). Links carry the version; the site labels "PDF (author manuscript)" /
+"PDF (preprint)" with a note on the paper page. scripts/audit_pdfs.py re-checks every file; fix_pdf_audit_2026_10.py
+holds the reviewed corrections (6 wrong files incl. an erratum, a letter, a whole 409-page book cut to its chapter).
+Published papers with only a manuscript PDF are re-checked monthly for an OA publisher version (pdf_upgrade) and listed
+in reports/missing_pdfs.md. Publisher links: scripts/audit_links.py (doi.org handle + Crossref title/author/year;
+explicit links fetched, sites that refuse robots verified by mapping the PII/DOI in the URL); eLife DOIs ending
+.sa1/.sa2 are peer-review reports, not the article. preprint_doi values are shown as "Preprint" links.
 
 ------------------------------------------------------------------------------------------
 10. AUTOMATION

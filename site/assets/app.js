@@ -86,7 +86,7 @@ window.CL = (function () {
       const url = l.type === "pdf" ? pdfUrl(l) : l.url;
       if (seen.has(url)) continue; seen.add(url);
       const lab = l.label && !/^(pdf|online link|link|full text|read online)$/i.test(l.label) ? l.label : (LINK_LABELS[l.type] || "Link");
-      out.push(`<a class="plink ${l.type}" href="${esc(url)}" target="_blank" rel="noopener"${l.version === "author_manuscript" ? ' title="PubMed Central author manuscript"' : ""}>${esc(lab)}${l.type === "pdf" ? "" : " ↗"}</a>`);
+      out.push(`<a class="plink ${l.type}" href="${esc(url)}" target="_blank" rel="noopener"${l.version === "author_manuscript" ? ' title="Authors\' manuscript, not the journal\'s typeset version"' : (l.version === "preprint" ? ' title="Preprint version"' : "")}>${esc(lab)}${l.type === "pdf" ? "" : " ↗"}</a>`);
     }
     for (const m of r.nm || []) out.push(`<a class="plink nm" href="${esc(m.url)}" target="_blank" rel="noopener" title="Explore ${esc(m.name)} in the Neuromarker Gallery">Neuromarker gallery ↗</a>`);
     if (r.doi && !(r.links || []).some(l => l.type === "publisher")) out.push(`<a class="plink publisher" href="https://doi.org/${esc(r.doi)}" target="_blank" rel="noopener">Publisher ↗</a>`);

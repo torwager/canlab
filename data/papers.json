@@ -100,7 +100,7 @@
  },
  {
   "id": "chen2026modalityspecific",
-  "title": "Modality-specific reactive and predictive BOLD response in the human superior colliculus during visual and somatosensory processing",
+  "title": "Modality-specific reactive and predictive responses in the human superior colliculus",
   "authors": [
    "Chen, D.",
    "Barton-Zuckerman, M.",
@@ -140,17 +140,16 @@
   "volume": null,
   "issue": null,
   "pages": null,
-  "citation": "Chen, D., Barton-Zuckerman, M., Kross, Z., Kragel, P. A., Saoca, P. W., Wald, L. L., Bianciardi, M., Wager, T. D., Choi, J.-K., Zhang, J., Quigley, K. S., Satpute, A. B., Barrett, L. F., & Theriault, J. E. (2026). Modality-specific reactive and predictive BOLD response in the human superior colliculus during visual and somatosensory processing. Nature Neuroscience.",
-  "doi": null,
+  "citation": "Chen, D., Barton-Zuckerman, M., Kross, Z., Kragel, P. A., Saoca, P. W., Wald, L. L., Bianciardi, M., Wager, T. D., Choi, J.-K., Zhang, J., Quigley, K. S., Satpute, A. B., Barrett, L. F., & Theriault, J. E. (2026). Modality-specific reactive and predictive responses in the human superior colliculus. Nature Neuroscience. https://doi.org/10.1038/s41593-026-02480-0",
+  "doi": "10.1038/s41593-026-02480-0",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": null,
   "abstract": "",
   "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": null,
+  "landing_url": "https://doi.org/10.1038/s41593-026-02480-0",
   "openalex_authors": [],
   "keywords": [],
   "links": [
@@ -298,7 +297,7 @@
  },
  {
   "id": "lee2026functional",
-  "title": "Functional Architecture of the Human Hypothalamus: Cortical Coupling and Subregional Organization Using 7-Tesla fMRI",
+  "title": "Intrinsic Functional Subregions of the Human Hypothalamus: Cortical Coupling and Subregional Organization Using 7-Tesla fMRI",
   "authors": [
    "Lee, K. M.",
    "Rodriguez, J.",
@@ -310,7 +309,7 @@
    "Quigley, K. S.",
    "Wald, L. L.",
    "Bianciardi, M.",
-   "Barret, L. F.",
+   "Barrett, L. F.",
    "Theriault, J. E.",
    "Satpute, A. B."
   ],
@@ -325,7 +324,7 @@
    "Quigley KS",
    "Wald LL",
    "Bianciardi M",
-   "Barret LF",
+   "Barrett LF",
    "Theriault JE",
    "Satpute AB"
   ],
@@ -336,17 +335,16 @@
   "volume": null,
   "issue": null,
   "pages": null,
-  "citation": "Lee, K. M., Rodriguez, J., Hartley, L., Zhang, J., Kragel, P. A., Chanes, L., Wager, T. D., Quigley, K. S., Wald, L. L., Bianciardi, M., Barret, L. F., Theriault, J. E., & Satpute, A. B. (2026). Functional Architecture of the Human Hypothalamus: Cortical Coupling and Subregional Organization Using 7-Tesla fMRI. Network Neuroscience.",
-  "doi": null,
+  "citation": "Lee, K. M., Rodriguez, J., Hartley, L., Zhang, J., Kragel, P. A., Chanes, L., Wager, T. D., Quigley, K. S., Wald, L. L., Bianciardi, M., Barrett, L. F., Theriault, J. E., & Satpute, A. B. (2026). Intrinsic Functional Subregions of the Human Hypothalamus: Cortical Coupling and Subregional Organization Using 7-Tesla fMRI. Network Neuroscience. https://doi.org/10.1162/netn.a.609",
+  "doi": "10.1162/netn.a.609",
   "pmid": "40503021",
   "pmcid": null,
-  "openalex_id": "https://openalex.org/W4411256818",
   "date": null,
   "abstract": "The hypothalamus plays an important role in the regulation of the body's metabolic state and behaviors related to survival. Despite its importance however, many questions exist regarding the intrinsic and extrinsic connections of the hypothalamus in humans, especially its relationship with the cerebral cortex. As a heterogeneous structure, it is possible that the hypothalamus is composed of different subregions, which have their own distinct relationships with the cerebral cortex. Previous work on functional connectivity in the human hypothalamus have either treated it as a unitary structure or relied on methodological approaches that are limited in modeling its intrinsic functional architecture. Here, we used resting-state data from ultra-high field 7-Tesla fMRI and a data-driven analytical approach to identify functional subregions of the human hypothalamus. Our approach identified four functional hypothalamic subregions based on intrinsic functional connectivity, which in turn showed distinct patterns of functional connectivity with the cerebral cortex. Overall, all hypothalamic subregions showed stronger connectivity with a cortical network (Cortical Network 1) composed primarily of frontal, midline, and limbic cortical areas and weaker connectivity with a second cortical network composed largely of posterior sensorimotor regions (Cortical Network 2). Of the hypothalamic subregions, the anterior hypothalamus showed the strongest connection to Cortical Network 1, while a more ventral subregion containing the anterior hypothalamus extending to the tuberal region showed the weakest connectivity. The findings support the use of ultra-high field, high-resolution imaging in providing a more incisive investigation of the human hypothalamus that respects its complex internal structure and extrinsic functional architecture.",
-  "cited_by_count": 0,
+  "cited_by_count": null,
   "oa_status": "green",
   "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12156108",
-  "landing_url": "https://pubmed.ncbi.nlm.nih.gov/40503021",
+  "landing_url": "https://doi.org/10.1162/netn.a.609",
   "openalex_authors": [
    "Kent M. Lee",
    "Joshua Rodriguez",
@@ -377,10 +375,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/lee2026functional.pdf",
     "url_original": "pdf/lee2026functional.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -624,6 +622,11 @@
     "type": "code",
     "label": "Code (GitHub)",
     "url": "https://github.com/ldmk/2025_MentalizingSignatures"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/2025.03.10.642438"
    }
   ],
   "has_pdf": true,
@@ -752,6 +755,11 @@
     "type": "code",
     "label": "Code (GitHub)",
     "url": "https://github.com/pni-lab/placebo-conditioning-meta-analysis"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/2025.05.21.655287"
    }
   ],
   "has_pdf": true,
@@ -1029,10 +1037,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/liu2026mitoception.pdf",
     "url_original": "pdf/liu2026mitoception.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -1075,7 +1083,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Liu, C. C., Huang, Q., Shaulson, E. D., Trumpff, C., Epel, E., Barrett, L. F., Belsky, D. W., Wilson, M. Z., Cohen, A. A., Wager T. D., & Picard, M. (in press) Mitoception Via the Metabokine GDF15 and Human Health. Biopsychosocial Science and Medicine. 88(6), 500–520.",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "fortner2026first",
@@ -1141,10 +1154,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/fortner2026first.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2026/01/2025.12.15.690312v1.full_.pdf",
-    "version": "publisher"
+    "version": "preprint"
    }
   ],
   "has_pdf": true,
@@ -1250,10 +1263,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/luxvicarious.pdf",
     "url_original": "pdf/luxvicarious.pdf",
-    "version": "publisher"
+    "version": "preprint"
    },
    {
     "type": "publisher",
@@ -1474,10 +1487,15 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/sun2026fatigue.pdf",
     "url_original": "pdf/sun2026fatigue.pdf",
-    "version": "publisher"
+    "version": "preprint"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.64898/2026.02.02.26345387"
    }
   ],
   "has_pdf": true,
@@ -1785,7 +1803,7 @@
    {
     "type": "publisher",
     "label": "online link",
-    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1526590025008715?via%3Dihub"
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1526590025008715"
    },
    {
     "type": "maps",
@@ -1841,7 +1859,12 @@
     "url": "https://neuromarkers.io/marker/2026-murillo-pifonem/",
     "img": "assets/img/neuromarkers/2026-murillo-pifonem.jpg"
    }
-  ]
+  ],
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "rader2026adolescent",
@@ -1940,7 +1963,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Rader, L., Zorina-Lichtenwalter, K., Gustavson, D., Wager, T. D., & Friedman, N. (in press) Adolescent pain reports share genetic overlap with adult chronic pain conditions: a polygenic score analysis using the ABCD study. The journal of pain, 43, 106260.",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "rader2026genetic",
@@ -2078,17 +2106,16 @@
   "volume": "13",
   "issue": null,
   "pages": "RP98725",
-  "citation": "Englert, R., Kincses, B., Kotikalapudi R, Gallitto, G., Li, J., Hoffschlag, K., Woo, C. W., Wager, T. D., Timmann, D., Bingel, U., & Spisak, T. (2026). Functional connectivity-based attractor dynamics of the human brain in rest, task, and disease. eLife, 13, RP98725. https://doi.org/10.7554/elife.98725.3.sa2",
-  "doi": "10.7554/elife.98725.3.sa2",
+  "citation": "Englert, R., Kincses, B., Kotikalapudi R, Gallitto, G., Li, J., Hoffschlag, K., Woo, C. W., Wager, T. D., Timmann, D., Bingel, U., & Spisak, T. (2026). Functional connectivity-based attractor dynamics of the human brain in rest, task, and disease. eLife, 13, RP98725. https://doi.org/10.7554/elife.98725",
+  "doi": "10.7554/elife.98725",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": "2026-03-18",
   "abstract": "Functional brain connectivity has been instrumental in uncovering the large-­scale organization of the brain and its relation to various behavioral and clinical phenotypes. Understanding how this functional architecture relates to the brain’s dynamic activity repertoire is an essential next step towards interpretable generative models of brain function. We propose functional connectivity-­ based Attractor Neural Networks (fcANNs), a theoretically inspired model of macro-­scale brain dynamics, simulating recurrent activity flow among brain regions based on first principles of self-­ organization. In the fcANN framework, brain dynamics are understood in relation to attractor states; neurobiologically meaningful activity configurations that minimize the free energy of the system. We provide the first evidence that large-­scale brain attractorsas reconstructed by fcANNsexhibit an approximately orthogonal organization, which is a signature of the self-­orthogonalization mechanism of the underlying theoretical framework of free-­energy-­minimizing attractor networks. Analyses of seven distinct human neuroimaging datasets demonstrate that fcANNs can accurately reconstruct and predict brain dynamics under a wide range of conditions, including resting and task states, and brain disorders. By establishing a formal link between connectivity and activity, fcANNs offer a simple and interpretable computational alternative to conventional descriptive analyses. Research Article *For correspondence: tamas.spisak@uk-essen.de Competing interest: The authors declare that no competing interests exist. Funding: See page 27 Preprint posted 11 April 2024 Sent for Review 28 May 2024 Reviewed preprint posted 05 September 2024 Reviewed preprint revised 24 December 2025 Version of Record published 18 March 2026 Reviewing Editor: Spase Petkoski, Institut de Neurosciences des Systèmes, Marseille, France ‍ ‍ Copyright Englert et al. This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited.",
-  "cited_by_count": 0,
+  "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": "https://doi.org/10.7554/elife.98725.3.sa2",
+  "landing_url": "https://doi.org/10.7554/elife.98725",
   "openalex_authors": [],
   "keywords": [],
   "links": [
@@ -2145,7 +2172,12 @@
   "crossref_checked": true,
   "abstract_source": "pdf",
   "citation_original": "Englert, R., Kincses, B., Kotikalapudi R., Gallitto, G., Li, J., Hoffschlag, K., Woo, C. W., Wager, T. D., Timmann, D., Bingel, U.,& Spisak, T. (2026) Functional connectivity-based attractor dynamics of the human brain in rest, task, and disease. eLife 13:RP98725. [PDF]",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "wake2026differential",
@@ -2315,8 +2347,8 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/miao2026common.pdf",
-    "url_original": "pdf/miao2026common.pdf",
-    "version": "publisher"
+    "version": "publisher",
+    "url_original": "https://www.nature.com/articles/s41467-026-71151-2_reference.pdf"
    },
    {
     "type": "publisher",
@@ -2369,7 +2401,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Miao, Z., Jung, H., Kragel, P. A., Sadil, P., Lindquist, M. A., & Wager, T. D. (2026) Common and distinct neural correlates of social interaction processing and theory of mind in narratives. Nature Communications. 1-17. [online link]",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "found:openalex:publisher",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "weicerebellar",
@@ -2431,10 +2470,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/weicerebellar.pdf",
     "url_original": "pdf/weicerebellar.pdf",
-    "version": "publisher"
+    "version": "preprint"
    },
    {
     "type": "publisher",
@@ -2585,7 +2624,7 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/kwon2026convergent.pdf",
-    "url_original": "pdf/kwon2026convergent.pdf",
+    "url_original": "https://www.nature.com/articles/s41467-026-71568-9.pdf",
     "version": "publisher"
    },
    {
@@ -2956,10 +2995,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/dehghanitemporal.pdf",
     "url_original": "pdf/dehghanitemporal.pdf",
-    "version": "publisher"
+    "version": "preprint"
    },
    {
     "type": "publisher",
@@ -3177,10 +3216,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/zhangintensitydependent.pdf",
     "url_original": "pdf/zhangintensitydependent.pdf",
-    "version": "publisher"
+    "version": "preprint"
    },
    {
     "type": "publisher",
@@ -3463,10 +3502,15 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/bo2026spatiotemporal.pdf",
     "url_original": "pdf/bo2026spatiotemporal.pdf",
-    "version": "publisher"
+    "version": "preprint"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.64898/2026.08.18.745530"
    }
   ],
   "has_pdf": true,
@@ -3671,9 +3715,9 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/sun2026precision.pdf",
-    "version": "publisher"
+    "version": "preprint"
    },
    {
     "type": "code",
@@ -4168,10 +4212,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/bo2025placebo.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2025/01/2024_Bo_Wager_Placebo_Emotion_Reg_Chapter_Benedetti_book-prefinal.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -4216,7 +4260,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Bo, K., & Wager, T. D. (2025). Placebo effects and emotion regulation: conceptual and neural similarities and differences. Handbook of clinical neurology, 213, 17–29. [PDF]",
-  "citations_refreshed": "2026-10-08"
+  "citations_refreshed": "2026-10-08",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "tripathi2025default",
@@ -4300,7 +4349,7 @@
    {
     "type": "publisher",
     "label": "online link",
-    "url": "https://www.sciencedirect.com/science/article/abs/pii/S2451902225000151?via%3Dihub"
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S2451902225000151"
    }
   ],
   "has_pdf": true,
@@ -4393,15 +4442,20 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/he2025comparing.pdf",
     "url_original": "pdf/he2025comparing.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    },
    {
     "type": "publisher",
     "label": "online link",
     "url": "https://doi.org/10.1093/cercor/bhaf189"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.31234/osf.io/xbhc4_v1"
    }
   ],
   "has_pdf": true,
@@ -4442,7 +4496,12 @@
   "crossref_checked": true,
   "citation_original": "He, Z., Cohen, N., Shu, J., Bo, K., Wager, T., & Ochsner, K. (2025). Comparing the neural bases of self- and social-reappraisal, Cerebral Cortex, Volume 35, Issue 8, August 2025, bhaf189. [online link]",
   "preprint_doi": "10.31234/osf.io/xbhc4_v1",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "zorinalichtenwalter2025patterns",
@@ -4817,7 +4876,7 @@
    {
     "type": "publisher",
     "label": "online link",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1364661325001123?dgcid=author"
+    "url": "https://www.sciencedirect.com/science/article/pii/S1364661325001123"
    }
   ],
   "has_pdf": true,
@@ -5428,8 +5487,8 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/bott2025exploring.pdf",
-    "url_original": "pdf/bott2025exploring.pdf",
-    "version": "publisher"
+    "version": "publisher",
+    "url_original": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12517086.1/PMC12517086.1.pdf"
    },
    {
     "type": "publisher",
@@ -5476,7 +5535,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Bott, F. S., Zebhauser, P. T., Hohn, V. D., Turgut, Ö., May, E. S., Tiemann, L., Gil Ávila, C., Heitmann, H., Nickel, M. M., Day, M. A., Adhia, D. B., Ashar, Y. K., Wager, T. D., Granovsky, Y., Yarnitsky, D., Jansen, M. P., Gross, J., & Ploner, M. (2025) Exploring electroencephalographic chronic pain biomarkers: a mega-analysis. eBioMedicine, 120 (105955). ISSN 2352-3964. [Online Link]",
-  "citations_refreshed": "2026-10-08"
+  "citations_refreshed": "2026-10-08",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "found:pmc-opendata:publisher",
+   "tried": [
+    "pmc-opendata"
+   ]
+  }
  },
  {
   "id": "wager2025accelerating",
@@ -5768,10 +5834,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/wager2024look.pdf",
     "url_original": "pdf/wager2024look.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -5810,7 +5876,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Zorina-Lichtenwalter, K., & Friedman, N. P. (in press) A new look at gray-matter decreases in chronic pain. Biological Psychiatry",
-  "citations_refreshed": "2026-10-09"
+  "citations_refreshed": "2026-10-09",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "rader2024familial",
@@ -7116,7 +7189,7 @@
    {
     "type": "publisher",
     "label": "online link",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0006322324015567?utm_campaign=STMJ_219742_AUTH_SERV_PA&utm_medium=email&utm_acid=113171371&SIS_ID=&dgcid=STMJ_219742_AUTH_SERV_PA&CMX_ID=&utm_in=DM504168&utm_source=AC_"
+    "url": "https://www.sciencedirect.com/science/article/pii/S0006322324015567"
    }
   ],
   "has_pdf": true,
@@ -7212,10 +7285,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/ashar2024openlabel.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2024/07/Ashar-OLP-JAMA-Net-Open-accepted.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -7257,7 +7330,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Ashar, Y. K., Sun, M., Knight, K., Flood, T. F., Anderson, Z., Kaptchuk, T. J., & Wager, T. D. (2024). Open-label placebo injection for chronic back pain: A randomized trial with functional neuroimaging. JAMA Network Open. [PDF]",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "noesteinmuller2024reply",
@@ -7497,7 +7577,7 @@
    {
     "type": "publisher",
     "label": "online link",
-    "url": "https://www.sciencedirect.com/science/article/pii/S104327602400225X?via%3Dihub"
+    "url": "https://www.sciencedirect.com/science/article/pii/S104327602400225X"
    }
   ],
   "has_pdf": true,
@@ -7773,7 +7853,17 @@
     "url": "https://neuromarkers.io/marker/2024-feps-facial-expressions-of-pain-signature/",
     "img": "assets/img/neuromarkers/2024-feps-facial-expressions-of-pain-signature.jpg"
    }
-  ]
+  ],
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex:rejected(title not on first pages)",
+    "pmc-opendata:not-published-version",
+    "openalex",
+    "openalex"
+   ]
+  }
  },
  {
   "id": "lewispeacock2024decoding",
@@ -7894,26 +7984,25 @@
   "volume": null,
   "issue": null,
   "pages": null,
-  "citation": "Botvinik-Nezer R, & Wager T.D (2023). Advancing cognitive neuroscience. In Boyle, G. J., Northoff, G., Barbey, A. K., Fregni, F., Jahanshahi, M., Pascual-Leone, A., & Sahakian, B. J. (Eds.).",
-  "doi": null,
+  "citation": "Botvinik-Nezer R, & Wager T.D (2023). Advancing cognitive neuroscience. In Boyle, G. J., Northoff, G., Barbey, A. K., Fregni, F., Jahanshahi, M., Pascual-Leone, A., & Sahakian, B. J. (Eds.). https://doi.org/10.4135/9781529616613.n34",
+  "doi": "10.4135/9781529616613.n34",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": null,
   "abstract": "",
   "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": null,
+  "landing_url": "https://doi.org/10.4135/9781529616613.n34",
   "openalex_authors": [],
   "keywords": [],
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/botviniknezerr2023advancing.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2025/03/Ch.-45-Vol.-1-FINAL-Botvinik-Nezer-Wager-Advancing-Cognitive-Neuroscience-14903-words.docx",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -7961,7 +8050,7 @@
  },
  {
   "id": "branco2023predictability",
-  "title": "Predictability of placebo responses and their clinical implications. In Colloca, L., Noel, J., Frankin, P. D., & Seneviratne, C. (eds)",
+  "title": "Predictability of placebo responses and their clinical implications",
   "authors": [
    "Branco, P.",
    "Vachon-Presseau, E.",
@@ -7983,7 +8072,7 @@
   "volume": null,
   "issue": null,
   "pages": "57-75",
-  "citation": "Branco, P., Vachon-Presseau, E., Hall, K. T., Wager, T. D., & Apkarian, A. V. (2023). Predictability of placebo responses and their clinical implications. In Colloca, L., Noel, J., Frankin, P. D., & Seneviratne, C. (eds). Placebo Effects Through the Lens of Translational Research, 57–75. https://doi.org/10.1093/med/9780197645444.003.0005",
+  "citation": "Branco, P., Vachon-Presseau, E., Hall, K. T., Wager, T. D., & Apkarian, A. V. (2023). Predictability of placebo responses and their clinical implications. Placebo Effects Through the Lens of Translational Research, 57–75. https://doi.org/10.1093/med/9780197645444.003.0005",
   "doi": "10.1093/med/9780197645444.003.0005",
   "pmid": null,
   "pmcid": null,
@@ -8179,10 +8268,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/ross2023resolution.pdf",
     "url_original": "https://www.medrxiv.org/content/10.1101/2021.06.24.21259102v1.full.pdf",
-    "version": "publisher"
+    "version": "preprint"
    }
   ],
   "has_pdf": true,
@@ -8820,19 +8909,12 @@
   ],
   "links": [
    {
-    "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/speer2023multivariate.pdf",
-    "url_original": "https://www.sciencedirect.com/science/article/pii/S1053811923001362?via%3Dihub",
-    "version": "publisher"
-   },
-   {
     "type": "maps",
     "label": "Link to the signature",
     "url": "https://github.com/canlab/Neuroimaging_Pattern_Masks/tree/master/Multivariate_signature_patterns/2023_Speer_Brain_Reward_Signature_BRS"
    }
   ],
-  "has_pdf": true,
+  "has_pdf": false,
   "section": "2023",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
@@ -8879,7 +8961,14 @@
     "url": "https://neuromarkers.io/marker/2023-speer-brain-reward-signature-brs/",
     "img": "assets/img/neuromarkers/2023-speer-brain-reward-signature-brs.jpg"
    }
-  ]
+  ],
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "not-found",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "spisak2023multivariate",
@@ -10306,10 +10395,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/zhang2023social.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2023/12/ZhangWagerKoban_R1_20231030.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    },
    {
     "type": "data",
@@ -10355,7 +10444,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Zhang, L., Wager, T. D., & Koban, L. (2023) Social cues influence perception of others’ pain. European Journal of Pain, 28(5), 845-854. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "han2022effect",
@@ -10436,6 +10532,11 @@
     "type": "code",
     "label": "Code (GitHub)",
     "url": "https://github.com/XiaochunHan/NPS_measurement_properties"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/2021.05.29.445964"
    }
   ],
   "has_pdf": true,
@@ -10540,10 +10641,15 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/amir2022testretest.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2021/03/2022_Amir_JPain.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.31234/osf.io/wk7y6"
    }
   ],
   "has_pdf": true,
@@ -10583,11 +10689,18 @@
   "crossref_checked": true,
   "citation_original": "Amir, C., Rose-McCandlish, M., Weger, R., Dildine, T. C., Mischkowski, D. Necka, E. A., Lee, I.S., Wager, T.D., Pine, D.S. & Atlas, L. Y. (2022). Test-retest reliability of an adaptive thermal pain calibration procedure in healthy volunteers. The Journal of Pain, 23(9), 1543–1555. PMID: 35189353. PMCID: PMC9644806. [PDF]",
   "preprint_doi": "10.31234/osf.io/wk7y6",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "pmc-opendata:not-published-version"
+   ]
+  }
  },
  {
   "id": "ashar2022pain",
-  "title": "Pain Reprocessing Therapy for Chronic Back Pain: A Randomized Controlled Trial with Functional Neuroimaging",
+  "title": "Effect of Pain Reprocessing Therapy vs Placebo and Usual Care for Patients With Chronic Back Pain: A Randomized Clinical Trial",
   "authors": [
    "Ashar, Y.K.",
    "Gordon, A.",
@@ -10613,7 +10726,7 @@
   "volume": "79",
   "issue": "1",
   "pages": "13-23",
-  "citation": "Ashar, Y.K., Gordon, A., Schubiner, H., Uipi, C., Knight, K., Anderson, A., & Carlisle, J., et al. (2022). Pain Reprocessing Therapy for Chronic Back Pain: A Randomized Controlled Trial with Functional Neuroimaging. JAMA Psychiatry, 79(1), 13–23. https://doi.org/10.1001/jamapsychiatry.2021.2669",
+  "citation": "Ashar, Y.K., Gordon, A., Schubiner, H., Uipi, C., Knight, K., Anderson, A., & Carlisle, J., et al. (2022). Effect of Pain Reprocessing Therapy vs Placebo and Usual Care for Patients With Chronic Back Pain: A Randomized Clinical Trial. JAMA Psychiatry, 79(1), 13–23. https://doi.org/10.1001/jamapsychiatry.2021.2669",
   "doi": "10.1001/jamapsychiatry.2021.2669",
   "pmid": "34586357",
   "pmcid": "PMC8482298",
@@ -12436,10 +12549,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/dennis2021altered.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2021/03/2021_Dennis-et-al_MolcPsych.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    },
    {
     "type": "preprint",
@@ -12490,7 +12603,16 @@
   "citation_original": "Dennis, E.L. et al. (2021). Altered white matter microstructure organization in posts traumatic stress disorder across 3047 adults results from the PGC-ENIGMA PTSD consortium. Molecular Psychiatry. 26(8):4315-4330. PMCID: PMC7302988. [PDF]",
   "authors_truncated": true,
   "preprint_doi": "10.1101/677153",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex",
+    "citation_pdf_url",
+    "pmc-opendata:not-published-version"
+   ]
+  }
  },
  {
   "id": "salman2021approach",
@@ -12541,15 +12663,20 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/salman2021approach.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2021/03/2021_Salman_BrainConnect.pdf",
-    "version": "publisher"
+    "version": "preprint"
    },
    {
     "type": "code",
     "label": "Code (GitHub)",
     "url": "https://github.com/esalman/autolabeller"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/2020.08.31.275578"
    }
   ],
   "has_pdf": true,
@@ -12593,7 +12720,14 @@
   "crossref_checked": true,
   "citation_original": "Salman, M. S., Wager, T. D., Damaraju, E. C., Abrol, A., Vergara, V. M., Fu, Z., & Calhoun, V. D. (2021). An Approach to Automatically Label & Order Brain Activity/Component Maps. Brain Connectivity. 12(1):85-95. PMCID: PMC8867103. [PDF]",
   "preprint_doi": "10.1101/2020.08.31.275578",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "busch2021hybrid",
@@ -12665,6 +12799,11 @@
     "type": "code",
     "label": "Code (GitHub)",
     "url": "https://github.com/ericabusch/hybrid_hyperalignment_neuroimage"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/2020.11.25.398883"
    }
   ],
   "has_pdf": true,
@@ -13034,6 +13173,11 @@
     "type": "code",
     "label": "Code (GitHub)",
     "url": "https://github.com/MaurizioSicorello/MVPAemoDys_Analyses"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/2021.02.03.21251077"
    }
   ],
   "has_pdf": true,
@@ -13605,6 +13749,11 @@
     "url": "pdf/wang2021dorsal.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2021/03/2021_Wang_elife.pdf",
     "version": "publisher"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/2021.05.02.442354"
    }
   ],
   "has_pdf": true,
@@ -13698,8 +13847,8 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/ashar2021effects.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2021/03/2021_Ashar_SocCogAffNeurosci.pdf",
-    "version": "publisher"
+    "version": "publisher",
+    "url_original": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8483284.1/PMC8483284.1.pdf"
    },
    {
     "type": "code",
@@ -13744,11 +13893,19 @@
   },
   "crossref_checked": true,
   "citation_original": "Ashar, Y.K., Andrews-Hanna, J.R., Halifax, J., Dimidjian, S. & Wager, T.D. (2021). Effects of compassion training on brain responses to suffering others. Social Cognitive and Affective Neuroscience. PMID: 33948660. [PDF]",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "found:pmc-opendata:publisher",
+   "tried": [
+    "openalex",
+    "pmc-opendata"
+   ]
+  }
  },
  {
   "id": "harrison2021investigating",
-  "title": "Investigating the specificity of the  against breathlessness and finger opposition",
+  "title": "Investigating the specificity of the neurologic pain signature against breathlessness and finger opposition",
   "authors": [
    "Harrison, O. K.",
    "Hayen, A.",
@@ -13768,7 +13925,7 @@
   "volume": "162",
   "issue": "12",
   "pages": "2933-2944",
-  "citation": "Harrison, O. K., Hayen, A., Wager, T.D., & Pattinson, K.T.S. (2021). Investigating the specificity of the  against breathlessness and finger opposition. Pain, 162(12), 2933–2944. https://doi.org/10.1097/j.pain.0000000000002327",
+  "citation": "Harrison, O. K., Hayen, A., Wager, T.D., & Pattinson, K.T.S. (2021). Investigating the specificity of the neurologic pain signature against breathlessness and finger opposition. Pain, 162(12), 2933–2944. https://doi.org/10.1097/j.pain.0000000000002327",
   "doi": "10.1097/j.pain.0000000000002327",
   "pmid": "33990110",
   "pmcid": "PMC8600542",
@@ -13897,10 +14054,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/reeck2021framing.pdf",
     "url_original": "pdf/reeck2021framing.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    },
    {
     "type": "publisher",
@@ -13946,7 +14103,12 @@
   "crossref_checked": true,
   "abstract_source": "pdf",
   "citation_original": "Reeck, C., Figner, B.F., Weber, E.U., Steffener, J., Krosch, A.R., Wager, T.D. & Johnson, E.J. (2021). Framing the Future First: Medial Temporal Lobe Activation Discriminates Delay and Acceleration Framing in Intertemporal Choice. Journal of Neuroscience, Psychology, and Economics. 14(2), 71–80. [Link]",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "kragel2021colliculuspulvinaramygdala",
@@ -14762,7 +14924,7 @@
    {
     "type": "publisher",
     "label": "Link",
-    "url": "https://direct.mit.edu/jocn/article-abstract/34/3/381/108892/Novel-Cognitive-Functions-Arise-at-the-Convergence?redirectedFrom=fulltext"
+    "url": "https://direct.mit.edu/jocn/article-abstract/34/3/381/108892/Novel-Cognitive-Functions-Arise-at-the-Convergence"
    }
   ],
   "has_pdf": true,
@@ -14953,10 +15115,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/po2020superconsistent.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2020/09/2020_Poß_RoyalStatsSociety.pdf",
-    "version": "publisher"
+    "version": "preprint"
    }
   ],
   "has_pdf": true,
@@ -14996,7 +15158,14 @@
   },
   "abstract_source": "pdf",
   "citation_original": "Poß, D., Liebl, D., Kneip, A., Eisenbarth, H., Wager, T. D. & Feldman Barrett, L. (2020). Super-Consistent Estimation of Points of Impact in Nonparametric Regression with Functional Predictor. Journal of the Royal Statistical Society. Series B 82(4): 1115-1140. [PDF]",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "salman2020fully",
@@ -15142,6 +15311,11 @@
     "type": "code",
     "label": "Web-Based Tool for SVSS (stochastic search variable selection)",
     "url": "https://ssvsforpsych.shinyapps.io/ssvsforpsych/"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.31234/osf.io/j8t7s"
    }
   ],
   "has_pdf": true,
@@ -15267,6 +15441,11 @@
     "url": "pdf/rosenberg2020behavioral.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2020/06/2020_Rosenberg_JNeurosci.pdf",
     "version": "publisher"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/659409"
    }
   ],
   "has_pdf": true,
@@ -15378,6 +15557,11 @@
     "type": "maps",
     "label": "Brain pattern (signature)",
     "url": "https://github.com/canlab/Neuroimaging_Pattern_Masks/tree/master/Multivariate_signature_patterns/2019_Yu_Koban_Guilt"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/835520"
    }
   ],
   "has_pdf": true,
@@ -15945,7 +16129,7 @@
  },
  {
   "id": "kohoutova2020interpreting",
-  "title": "Interpreting machine learning models in neuroimaging: Towards a unified framework",
+  "title": "Toward a unified framework for interpreting machine-learning models in neuroimaging",
   "authors": [
    "Kohoutová, L.",
    "Heo, J.",
@@ -15971,7 +16155,7 @@
   "volume": "15",
   "issue": "4",
   "pages": "1399-1435",
-  "citation": "Kohoutová, L., Heo, J., Cha, S., Lee, S., Moon, T., Wager, T. D., & Woo, C. W. (2020). Interpreting machine learning models in neuroimaging: Towards a unified framework. Nature Protocols, 15(4), 1399–1435. https://doi.org/10.1038/s41596-019-0289-5",
+  "citation": "Kohoutová, L., Heo, J., Cha, S., Lee, S., Moon, T., Wager, T. D., & Woo, C. W. (2020). Toward a unified framework for interpreting machine-learning models in neuroimaging. Nature Protocols, 15(4), 1399–1435. https://doi.org/10.1038/s41596-019-0289-5",
   "doi": "10.1038/s41596-019-0289-5",
   "pmid": "32203486",
   "pmcid": "PMC9533325",
@@ -16171,7 +16355,7 @@
  },
  {
   "id": "duff2020inferring",
-  "title": "Inferring the infant pain experience: a translational fMRI-based signature study",
+  "title": "Inferring pain experience in infants using quantitative whole-brain functional MRI signatures: a cross-sectional, observational study",
   "authors": [
    "Duff, E. P.",
    "Moultrie, F.",
@@ -16201,17 +16385,16 @@
   "volume": "2",
   "issue": null,
   "pages": "E458-E467",
-  "citation": "Duff, E. P., Moultrie, F., van der Vaart, M., Goksan, S., Abos, A., Fitzgibbon, S. P., Baxter, L., Wager, T. D., & Slater, R. (2020). Inferring the infant pain experience: a translational fMRI-based signature study. The Lancet Digital Health, 2, E458–E467.",
-  "doi": null,
+  "citation": "Duff, E. P., Moultrie, F., van der Vaart, M., Goksan, S., Abos, A., Fitzgibbon, S. P., Baxter, L., Wager, T. D., & Slater, R. (2020). Inferring pain experience in infants using quantitative whole-brain functional MRI signatures: a cross-sectional, observational study. The Lancet Digital Health, 2, E458–E467. https://doi.org/10.1016/s2589-7500(20)30168-0",
+  "doi": "10.1016/s2589-7500(20)30168-0",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": "2020-04-02",
   "abstract": "Abstract \n                 \n                   Background \n                   In the absence of verbal communication it is challenging to infer an individual’s sensory and emotional experience. In adults, fMRI has been used to develop multivariate brain activity signatures, which reliably capture elements of human pain experience. We translate whole-brain fMRI signatures that encode pain perception in adults to the newborn infant brain, to advance understanding of functional brain development and pain perception in early life. \n                 \n                 \n                   Methods \n                   A cohort of adults (n=10; mean age=28.3 years) and 2 cohorts of healthy infants (Cohort A: n=15; Cohort B: n=22; mean postnatal age=3 days) were stimulated with low intensity nociceptive stimuli (64-512mN) during acquisition of functional MRI data. fMRI pain signatures were applied directly to the adult data and transformed such that they could be applied to the infant brain. In each cohort, we assessed the concordance of the signatures with the brain responses using cosine-similarity scores, and we assessed stimulus intensity encoding of the signature responses using Spearman rank correlation. Brain activity in ‘pro-pain’ and ‘anti-pain’ brain regions were also examined. \n                 \n                 \n                   Findings \n                   The Neurologic Pain Signature (NPS), which reflects aspects of nociceptive pain experience, was activated in both the adults and infants, and reliably encoded stimulus intensity. However, the Stimulus Intensity Independent Pain Signature (SIIPS1), which reflects higher-level cognitive modulation of nociceptive input, was only expressed in adults. ‘Pro-pain’ brain regions showed similar activation patterns in adults and infants, whereas, ‘anti-pain’ brain regions exhibited divergent responses. \n                 \n                 \n                   Interpretation \n                   Basic intensity encoding of nociceptive information is similar in adults and infants. However, translation of adult brain signatures into infants reveals significant differences in infant cerebral processing of nociceptive information, which may reflect their lack of expectation, motivation and contextualisation. This study expands the use of brain activity pain signatures to non-verbal patients and provides a potential approach to assess analgesic interventions in infancy. \n                 \n                 \n                   Funding \n                   This work was funded by Wellcome (Senior Research Fellowship awarded to Prof. Rebeccah Slater) and SSNAP “Support for Sick and Newborn Infants and their Parents” Medical Research Fund (University of Oxford Excellence Fellowship awarded to Dr Eugene Duff). \n                 \n                 \n                   Research in context \n                   \n                     Evidence before this study \n                     We searched PubMed for research articles published prior to March 2020 using terms including ‘fMRI’, ‘infant or neonate’, and ‘pain or nociception’ in the title or abstract. Due to the relatively new emergence of this field, and the experimental and analytical challenges involved in studying cerebral processing of pain in the MRI environment in healthy newborn infants, only five fMRI studies have examined infant brain responses to nociceptive input. \n                     In a foundational pilot study, Williams et al., applied an experimental noxious stimulus to a single infant, evoking widespread brain activity that included several brain regions involved in pain processing in adults. Goksan et al., subsequently performed an observational cohort study and used regional analyses to compare active brain regions in infants (n=10) and adults (n=10), concluding that the evoked patterns of brain activity were broadly similar in infants and adults. Further follow-up analysis in the infant cohort revealed that the functional connectivity of brain regions involved in descending pain modulation influences the magnitude of pain-related brain activity. Two further studies focused on methodological advances, providing evidence-based recommendations for fMRI acquisition parameters and image processing in order to maximise the quality of infant data, and these methods have been implemented in this study. \n                   \n                   \n                     Added value of this study \n                     This study translates validated adult pain fMRI brain signatures to a nonverbal patient population in which the assessment and management of pain presents a significant clinical challenge. Application of fMRI brain signatures to newborn infants expands on previous fMRI studies that provided only qualitative evidence that noxious stimulation commonly activates brain regions in the adult and infant brain. Here we demonstrate that the basic encoding of the sensory discriminative aspects of pain, as represented by the Neurologic Pain Signature (NPS), occurs in both adults and infants, whereas higher-level cognitive modulation of pain, represented by the Stimulus Intensity Independent Pain Signature (SIIPS1) is only present in adults and not observed in infants. The differences in how the immature infant brain processes pain, relative to the mature adult brain, are likely to reflect differences in their expectation, motivation and contextualisation of external events rather than differences in their core nociceptive cerebral processing of pain. This work allows us to use quantitative fMRI observations to make stronger inferences related to pain experience in nonverbal infants. \n                   \n                   \n                     Implications of all the available evidence \n                     Behavioural pain scores used in neonatal clinical care offer limited sensitivity and specificity to pain. Neonatal clinical trials that use these scores as outcome measures frequently report a lack of efficacy of common analgesic interventions, resulting in few evidence-based drugs for treating pain. The value of using brain-based neuroimaging markers of pain as a means of providing objective evidence of analgesic efficacy in early proof of concept studies is well recognised in adults, even in the absence of behavioural pain modulation. Similarly, in infants EEG-based measures of noxious-evoked brain activity have been used as outcome measures in clinical trials of analgesics to overcome some of the inherent limitations of using behavioural observations to quantify analgesic efficacy. Considering the successful translation of the Neurologic Pain Signature (NPS) and its sensitivity to analgesic modulation in adults, this novel methodology represents an objective brain-based fMRI approach that could be used to advance the discovery and assessment of analgesic interventions in infancy.",
   "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": "https://doi.org/10.1101/2020.04.01.998864",
+  "landing_url": "https://doi.org/10.1016/s2589-7500(20)30168-0",
   "openalex_authors": [
    "Eugene P. Duff",
    "Fiona Moultrie",
@@ -16231,6 +16414,11 @@
     "url": "pdf/duff2020inferring.pdf",
     "url_original": null,
     "version": "publisher"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/2020.04.01.998864"
    }
   ],
   "has_pdf": true,
@@ -16435,6 +16623,11 @@
     "url": "pdf/leach2020mouse.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2023/12/leach-gibbings-wager-et-al-2020.pdf",
     "version": "publisher"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/2020.04.30.070839"
    }
   ],
   "has_pdf": true,
@@ -16511,17 +16704,16 @@
   "volume": "9",
   "issue": null,
   "pages": "e56929",
-  "citation": "Zhou, F., Li, J., Zhao, W., Xu, L., Zheng, X., Fu, M., Yao, S., Kendrick, K. M., Wager, T. D., & Becker, B. (2020). Empathic pain evoked by sensory and emotional-communicative cues share common and process-specific neural representation. eLife, 9, e56929. https://doi.org/10.7554/elife.56929.sa1",
-  "doi": "10.7554/elife.56929.sa1",
+  "citation": "Zhou, F., Li, J., Zhao, W., Xu, L., Zheng, X., Fu, M., Yao, S., Kendrick, K. M., Wager, T. D., & Becker, B. (2020). Empathic pain evoked by sensory and emotional-communicative cues share common and process-specific neural representation. eLife, 9, e56929. https://doi.org/10.7554/elife.56929",
+  "doi": "10.7554/elife.56929",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": "2020-06-03",
   "abstract": "Pain empathy can be evoked by multiple cues, particularly observation of acute pain inflictions or facial expressions of pain. Previous studies suggest that these cues commonly activate the insula and anterior cingulate, yet vicarious pain encompasses pain-specific responses as well as unspecific processes (e.g. arousal) and overlapping activations are not sufficient to determine process-specific shared neural representations. We employed multivariate pattern analyses to fMRI data acquired during observation of noxious stimulation of body limbs (NS) and painful facial expressions (FE) and found spatially and functionally similar cross-modality (NS versus FE) wholebrain vicarious pain-predictive patterns. Further analyses consistently identified shared neural representations in the bilateral mid-insula. The vicarious pain patterns were not sensitive to respond to non-painful high-arousal negative stimuli but predicted self-experienced thermal pain. Finally, a domain-general vicarious pain pattern predictive of self-experienced pain but not arousal was developed. Our findings demonstrate shared pain-associated neural representations of vicarious pain.",
-  "cited_by_count": 0,
+  "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": "https://doi.org/10.7554/elife.56929.sa1",
+  "landing_url": "https://doi.org/10.7554/elife.56929",
   "openalex_authors": [],
   "keywords": [],
   "links": [
@@ -16625,17 +16817,16 @@
   "volume": "4",
   "issue": null,
   "pages": "517–530",
-  "citation": "Losin, R. E. A., Woo, C. W., Medina, N. A., Andrews-Hanna, J. R., Eisenbarth, H., & Wager, T. D. (2020). Neural and Sociocultural Mediators of Ethnic Differences in Pain. Nature Human Behaviour, 4, 517–530. https://doi.org/10.26686/wgtn.12431009.v1",
-  "doi": "10.26686/wgtn.12431009.v1",
+  "citation": "Losin, R. E. A., Woo, C. W., Medina, N. A., Andrews-Hanna, J. R., Eisenbarth, H., & Wager, T. D. (2020). Neural and Sociocultural Mediators of Ethnic Differences in Pain. Nature Human Behaviour, 4, 517–530. https://doi.org/10.1038/s41562-020-0819-8",
+  "doi": "10.1038/s41562-020-0819-8",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": "2020-06-04",
   "abstract": "© 2020, The Author(s), under exclusive licence to Springer Nature Limited. Understanding ethnic differences in pain is important for addressing disparities in pain care. A common belief is that African Americans are hyposensitive to pain compared to Whites, but African Americans show increased pain sensitivity in clinical and laboratory settings. The neurobiological mechanisms underlying these differences are unknown. We studied an ethnicity- and gender-balanced sample of African Americans, Hispanics and non-Hispanic Whites using functional magnetic resonance imaging during thermal pain. Higher pain report in African Americans was mediated by discrimination and increased frontostriatal circuit activations associated with pain rating, discrimination, experimenter trust and extranociceptive aspects of pain elsewhere. In contrast, the neurologic pain signature, a neuromarker sensitive and specific to nociceptive pain, mediated painful heat effects on pain report largely similarly in African American and other groups. Findings identify a brain basis for higher pain in African Americans related to interpersonal context and extranociceptive central pain mechanisms and suggest that nociceptive pain processing may be similar across ethnicities.",
-  "cited_by_count": 7,
+  "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": "https://doi.org/10.26686/wgtn.12431009.v1",
+  "landing_url": "https://doi.org/10.1038/s41562-020-0819-8",
   "openalex_authors": [
    "EAR Losin",
    "CW Woo",
@@ -16817,8 +17008,8 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/davis2020discovery.pdf",
-    "url_original": "https://www.nature.com/articles/s41582-020-0362-2.pdf",
-    "version": "publisher"
+    "version": "publisher",
+    "url_original": "https://www.nature.com/articles/s41582-020-0362-2.pdf"
    }
   ],
   "has_pdf": true,
@@ -16859,7 +17050,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Davis, K. D., Aghaeepour, N., Ahn, A. H., Angst, M. S., Borsook, D., Brenton, A., Burczynski, M. E., Crean, C., Edwards, R., Gaudilliere, B., Hergenroeder, G. W., Iadarola, M. J., Iyengar, S., Jiang, Y., Kong, J., Mackey, S., Saab, C. Y., Sang, C. N., Scholz, J., Segerdahl, M., Tracey, I., Veasley, C., Wang, J., Wager, T. D., Wasan, A. D. & Pelleymounter, M. A. (2020). Discovery and validation of biomarkers to aid the development of safe and effective pain therapeutics: challenges & opportunities. Nature Reviews Neurology. 16: 381–400. PMCID: PMC7326705. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "found:openalex:publisher",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "gilam2020what",
@@ -17049,7 +17247,7 @@
  },
  {
   "id": "kragel2020fmri",
-  "title": "fMRI can be highly reliable, but it depends on what you measure",
+  "title": "Functional MRI Can Be Highly Reliable, but It Depends on What You Measure: A Commentary on Elliott et al. (2020)",
   "authors": [
    "Kragel, P.",
    "Han, X.",
@@ -17071,7 +17269,7 @@
   "volume": "32",
   "issue": "4",
   "pages": "622-626",
-  "citation": "Kragel, P., Han, X., Kraynak, T., Gianaros, P. J., & Wager, T.D. (2020). fMRI can be highly reliable, but it depends on what you measure. Psychological Science, 32(4), 622–626. https://doi.org/10.1177/0956797621989730",
+  "citation": "Kragel, P., Han, X., Kraynak, T., Gianaros, P. J., & Wager, T.D. (2020). Functional MRI Can Be Highly Reliable, but It Depends on What You Measure: A Commentary on Elliott et al. (2020). Psychological Science, 32(4), 622–626. https://doi.org/10.1177/0956797621989730",
   "doi": "10.1177/0956797621989730",
   "pmid": "33685310",
   "pmcid": null,
@@ -17093,10 +17291,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/kragel2020fmri.pdf",
     "url_original": "pdf/kragel2020fmri.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    },
    {
     "type": "preprint",
@@ -17145,11 +17343,16 @@
   "crossref_checked": true,
   "citation_original": "Kragel, P., Han, X., Kraynak, T., Gianaros, P. J., & Wager, T.D. (2020). fMRI can be highly reliable, but it depends on what you measure. Psychological Science. 32(4):622-626. PMID: 33685310. [Preprint PDF]",
   "preprint_doi": "10.31234/osf.io/9eaxk",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "guevarra2020placebos",
-  "title": "Placebos without deception reduce a neurophysiological marker of emotional distress",
+  "title": "Placebos without deception reduce self-report and neural measures of emotional distress",
   "authors": [
    "Guevarra, D. A.",
    "Moser, J. S.",
@@ -17169,7 +17372,7 @@
   "volume": "11",
   "issue": "1",
   "pages": "3785",
-  "citation": "Guevarra, D. A., Moser, J. S., Wager, T. D., & Kross, E. (2020). Placebos without deception reduce a neurophysiological marker of emotional distress. Nature Communications, 11(1), 3785. https://doi.org/10.1038/s41467-020-17654-y",
+  "citation": "Guevarra, D. A., Moser, J. S., Wager, T. D., & Kross, E. (2020). Placebos without deception reduce self-report and neural measures of emotional distress. Nature Communications, 11(1), 3785. https://doi.org/10.1038/s41467-020-17654-y",
   "doi": "10.1038/s41467-020-17654-y",
   "pmid": "32728026",
   "pmcid": "PMC7391658",
@@ -17966,10 +18169,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/matthewson2019cognitive.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2020/01/2019_Matthewson_Pain.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    },
    {
     "type": "code",
@@ -17985,6 +18188,11 @@
     "type": "paradigm",
     "label": "Paradigm (GitHub)",
     "url": "https://github.com/canlab/Paradigms_Public/tree/master/2018_Woo_Matthewson_CRB_autonomic_physio_pain"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/361519"
    }
   ],
   "has_pdf": true,
@@ -18030,7 +18238,14 @@
   "crossref_checked": true,
   "citation_original": "Matthewson, G., Woo, C. W., Reddan, M. C., & Wager, T. D. (2019). Cognitive self-regulation influences pain-related physiology [PDF]. PAIN. 160(10): 2338-2349. PMID: 31145211. [Data and scripts repository]",
   "preprint_doi": "10.1101/361519",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex:not-published-version"
+   ]
+  }
  },
  {
   "id": "lindquist2019modular",
@@ -18075,10 +18290,15 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/lindquist2019modular.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/10/2018_Lindquist_HBM_modular_preproc.pdf",
-    "version": "publisher"
+    "version": "preprint"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/407676"
    }
   ],
   "has_pdf": true,
@@ -18120,7 +18340,14 @@
   "crossref_checked": true,
   "citation_original": "Lindquist, M., Geuter, S., Wager, T. D., & Caffo, B. (2019). Modular preprocessing pipelines can reintroduce artifacts into fMRI data. Human Brain Mapping. 40(8): 2358-2376. PMID: 30666750. [PDF]",
   "preprint_doi": "10.1101/407676",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex:not-published-version"
+   ]
+  }
  },
  {
   "id": "kragel2019emotion",
@@ -18179,6 +18406,11 @@
     "type": "maps",
     "label": "Brain pattern (signature)",
     "url": "https://github.com/canlab/Neuroimaging_Pattern_Masks/tree/master/Multivariate_signature_patterns/2019_Kragel_Emotion_Schemas"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/470237"
    }
   ],
   "has_pdf": true,
@@ -18306,7 +18538,7 @@
   "citation_original": "Munafo, M. R., Cremers, H. R., Wager, T. D., Yarkoni, T. (2019). Power and design considerations in imaging research. In: Raz, A., Thibault, R. T. (Eds.) Casting Light on the Dark Side of Brain Imaging (73-78). Cambridge: Academic Press. DOI: 10.1016/B978-0-12-816179-1.00011-6. [PDF]",
   "citations_refreshed": "2026-10-07",
   "pdf_search": {
-   "last": "2026-10-06",
+   "last": "2026-10-09",
    "result": "not-found",
    "tried": []
   }
@@ -18451,15 +18683,20 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/woo2019falsepositive.pdf",
     "url_original": "https://doi.org/10.1101/514521",
-    "version": "publisher"
+    "version": "author_manuscript"
    },
    {
     "type": "code",
     "label": "Code (GitHub)",
     "url": "https://github.com/cocoanlab/falsepositiveneuroimaging"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/514521"
    }
   ],
   "has_pdf": true,
@@ -18502,7 +18739,14 @@
   "crossref_checked": true,
   "citation_original": "Woo, C. W., Hong, Y. W., Yoo, Y. J., Han, J., & Wager, T. D. (2019). False-positive neuroimaging: Undisclosed flexibility in testing spatial hypotheses allows presenting anything as a replicated finding. NeuroImage. 195: 384-395. PMID: 30946952. [PDF]",
   "preprint_doi": "10.1101/514521",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "krause2019pain",
@@ -18593,7 +18837,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Krause, A., Prather, A., Wager, T., Lindquist, M., & Walker, M. (2019). The pain of sleep loss: A brain characterization in humans.The Journal of Neuroscience. 39(12): 2291-2300. PMCID: PMC6433768. [PDF]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "shackman2019emotional",
@@ -18681,7 +18932,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Shackman, A. J., & Wager, T. D. (2019). The emotional brain: Fundamental questions and strategies for future research. Neuroscience Letters. 693:68-74. PMCID PMC6370519. [PDF]",
-  "citations_refreshed": "2026-10-08"
+  "citations_refreshed": "2026-10-08",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "banich2019turning",
@@ -18965,7 +19221,12 @@
   "crossref_checked": true,
   "citation_original": "Reddan MC & Wager T. D. (2019). Brain systems at the intersection of chronic pain and self-regulation. Neuroscience Letters. 702: 24-33. PMID: 30503923. [PDF].",
   "citations_refreshed": "2026-10-07",
-  "authors_truncated": false
+  "authors_truncated": false,
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "kragel2019functional",
@@ -19451,7 +19712,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Zilcha-Mano, S., Wang, Z., Peterson, B., Wall, M. M., Chen, Y., Wager, T. D., Brown, P. B., Roose, S. P., & Rutherford, B. R. (2019). Neural Mechanisms of Expectancy-Based Placebo Effects in Antidepressant Clinical Trials. Journal of Psychiatric Research. 116: 19-25. PMCID: PMC6790474. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "koban2019different",
@@ -19742,7 +20008,7 @@
  },
  {
   "id": "lopezsola2018transforming",
-  "title": "Transforming pain with prosocial meaning: an fMRI study",
+  "title": "Transforming Pain With Prosocial Meaning: A Functional Magnetic Resonance Imaging Study",
   "authors": [
    "López-Solà, M.",
    "Koban, L.",
@@ -19760,7 +20026,7 @@
   "volume": "80",
   "issue": "9",
   "pages": "814-825",
-  "citation": "López-Solà, M., Koban, L., & Wager, T. D. (2018). Transforming pain with prosocial meaning: an fMRI study. Psychosomatic Medicine, 80(9), 814–825. https://doi.org/10.1097/psy.0000000000000609",
+  "citation": "López-Solà, M., Koban, L., & Wager, T. D. (2018). Transforming Pain With Prosocial Meaning: A Functional Magnetic Resonance Imaging Study. Psychosomatic Medicine, 80(9), 814–825. https://doi.org/10.1097/psy.0000000000000609",
   "doi": "10.1097/psy.0000000000000609",
   "pmid": "29846310",
   "pmcid": null,
@@ -19776,10 +20042,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/lopezsola2018transforming.pdf",
     "url_original": "https://www.ncbi.nlm.nih.gov/pubmed/29846310",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -19821,7 +20087,12 @@
   },
   "abstract_source": "pdf",
   "citation_original": "López-Solà, M., Koban, L., & Wager, T. D. (2018). Transforming pain with prosocial meaning: an fMRI study. Psychosomatic Medicine. 80(9): 814-825. PMID: 29846310. [PDF].",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "price2018transition",
@@ -19965,10 +20236,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/wager2017emotions.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/10/Wager_Nature_of_Emotion_final.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -20011,7 +20282,7 @@
  },
  {
   "id": "wager2018pinpointing",
-  "title": "Pinpointing the pain gene",
+  "title": "The long search for the pain gene",
   "authors": [
    "Wager, T. D."
   ],
@@ -20025,17 +20296,16 @@
   "volume": "556",
   "issue": null,
   "pages": "308",
-  "citation": "Wager, T. D. (2018). Pinpointing the pain gene. Nature, 556, 308.",
-  "doi": null,
+  "citation": "Wager, T. D. (2018). The long search for the pain gene. Nature, 556, 308. https://doi.org/10.1038/d41586-018-04560-z",
+  "doi": "10.1038/d41586-018-04560-z",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": null,
   "abstract": "",
   "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": null,
+  "landing_url": "https://doi.org/10.1038/d41586-018-04560-z",
   "openalex_authors": [],
   "keywords": [],
   "links": [
@@ -20527,8 +20797,8 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/kiehl2018gray.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2019/10/Kiehl_neuroage_predict_2017.pdf",
-    "version": "publisher"
+    "version": "publisher",
+    "url_original": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6024200.1/PMC6024200.1.pdf"
    }
   ],
   "has_pdf": true,
@@ -20569,7 +20839,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Kiehl, K.A., Anderson, N.E., Aharoni, E., Maurer, J.M., Harenski, K., Rao, V., Claus, E.D., Harenski, C.L., Koenigs, M., Decety, J., Kosson, D., Wager, T.D., Calhoun, V.D. & Steele, V.R. (2018). Age of Gray Matters: Neuroprediction of Recidivism. Neuroimage: Clinical. 19: 813-823. [PDF]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "found:pmc-opendata:publisher",
+   "tried": [
+    "pmc-opendata"
+   ]
+  }
  },
  {
   "id": "muller2018simple",
@@ -21004,7 +21281,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Koban, L., Kusko, D., & Wager, T. D. (2018). Generalization of learned pain modulation depends on explicit learning. Acta Psycholgica. 184: 75-84. PMCID: PMC5847433. [PDF], [Paradigm]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "samartsidis2018bayesian",
@@ -21448,10 +21730,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/kraynak2018functional.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2020/01/2018_Kraynak_NeurosciBiobehavRev.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    },
    {
     "type": "maps",
@@ -21499,7 +21781,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Kraynak, T. E., Marsland, A. L., Wager, T. D., Gianaros, P. J. (2018). Functional neuroanatomy of peripheral inflammatory physiology: A meta-analysis of human neuroimaging studies. Neuroscience & Biobehavioral Reviews. 94: 76-92. PMCID: PMC6363360.[PDF], [Brain Model]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "reddan2018attenuating",
@@ -21920,10 +22207,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/geuter2017fundamentals.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2017_Geuter_Cambridge-University-Press.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -21964,7 +22251,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Geuter, S., Lindquist, M. A., & Wager, T. D. (2017). Fundamentals of Functional Neuroimaging. In: Handbook of Psychophysiology, 4th ed. (Cacioppo JT, Tassinary LG, Berntson GG, eds), pp 41-73. Cambridge: Cambridge University Press. [PDF]",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "lopezsola2017towards",
@@ -22134,6 +22426,11 @@
     "type": "code",
     "label": "Code (GitHub)",
     "url": "https://github.com/adelavega/neurosynth-lfc"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/083352"
    }
   ],
   "has_pdf": true,
@@ -23086,10 +23383,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/chen2017highdimensional.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2017_Chén_Biostatistics.pdf",
-    "version": "publisher"
+    "version": "preprint"
    }
   ],
   "has_pdf": true,
@@ -23130,7 +23427,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Chén, O. Y., Crainiceanu, C. M., Ogburn, E. L., Caffo, B. S., Wager, T. D., & Lindquist, M. A. (2017). High-dimensional Multivariate Mediation: with Application to Neuroimaging Data. Biostatistics. 19(2): 121-136. PMCID: PMC5862274. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "losin2017feelings",
@@ -23366,7 +23668,12 @@
    "notes": null,
    "classified_at": "2026-09-07T03:40:08Z"
   },
-  "citations_refreshed": "2026-10-08"
+  "citations_refreshed": "2026-10-08",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "roy2017neuromatrix",
@@ -24227,10 +24534,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/koban2017social.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2020/01/2017_Koban_Emotion.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    },
    {
     "type": "paradigm",
@@ -24278,7 +24585,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Koban, L., Schneider, R., Ashar, Y. K., Andrews-Hanna, J. R., Landy, L., Moscovitch, D. A., Wager, T. D. & Arch, J. J. (2017). Social anxiety is characterized by biased learning about performance and the self. Emotion. 17(8): 1144-1155. PMCID: PMC5623172. [PDF], [Paradigm]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "lopezsola2017when",
@@ -26250,7 +26562,7 @@
   },
   "citations_refreshed": "2026-10-08",
   "pdf_search": {
-   "last": "2026-10-06",
+   "last": "2026-10-09",
    "result": "not-found",
    "tried": [
     "crossref-doi:none"
@@ -26320,7 +26632,7 @@
   },
   "citations_refreshed": "2026-10-08",
   "pdf_search": {
-   "last": "2026-10-06",
+   "last": "2026-10-09",
    "result": "not-found",
    "tried": [
     "crossref-doi:none"
@@ -26406,7 +26718,7 @@
  },
  {
   "id": "woo2015predictive",
-  "title": "The predictive mapping approach in neuroimaging. Advances in Computational Psychophysiology",
+  "title": "The predictive mapping approach in neuroimaging",
   "authors": [
    "Woo, C. W.",
    "Wager, T. D."
@@ -26418,11 +26730,11 @@
   "year": 2015,
   "status": "published",
   "kind": "article",
-  "journal": "Science",
+  "journal": "Advances in Computational Psychophysiology (Science/AAAS custom supplement)",
   "volume": "350",
   "issue": null,
   "pages": "114",
-  "citation": "Woo, C. W., & Wager, T. D. (2015). The predictive mapping approach in neuroimaging. Advances in Computational Psychophysiology. Science, 350, 114.",
+  "citation": "Woo, C. W., & Wager, T. D. (2015). The predictive mapping approach in neuroimaging. Advances in Computational Psychophysiology (Science/AAAS custom supplement), 350, 114.",
   "doi": null,
   "pmid": null,
   "pmcid": null,
@@ -26649,10 +26961,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/vansnellenberg2015dynamic.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2015_Van-Snellenberg_HumBrainMapp.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -26691,7 +27003,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Van Snellenberg, J., Slifstein, M., Read, C., Weber, J. L., Thompson, J., Wager, T. D., Shohamy, D., Abi-Dargham, A. & Smith, E. E. (2015). Dynamic Shifts in Brain Network Activation During Supracapacity Working Memory Task Performance. Human Brain Mapping. 36(4):1245-64. PMCID: PMC4722876. [PDF]",
-  "citations_refreshed": "2026-10-08"
+  "citations_refreshed": "2026-10-08",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "cremers2015altered",
@@ -26790,7 +27107,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Cremers, H. R., Veer, I. M., Spinhoven, P., Rombouts, S. A. R. B., Yarkoni, T., Wager, T. D., & Roelofs, K. (2015). Altered cortical-amygdala coupling in social anxiety disorder during the anticipation of giving a public speech. Psychological Medicine. 45(7):1521-9. PMCID: PMC6892398. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "citation_pdf_url"
+   ]
+  }
  },
  {
   "id": "chang2015challenges",
@@ -27637,17 +27961,16 @@
   "volume": "3",
   "issue": null,
   "pages": "e1089",
-  "citation": "Yarkoni, T., Ashar, Y. K., & Wager, T. D. (2015). Interactions between donor Agreeableness and recipient characteristics in predicting charitable donation and positive social evaluation. PeerJ, 3, e1089. https://doi.org/10.7287/peerj.preprints.1182v1",
-  "doi": "10.7287/peerj.preprints.1182v1",
+  "citation": "Yarkoni, T., Ashar, Y. K., & Wager, T. D. (2015). Interactions between donor Agreeableness and recipient characteristics in predicting charitable donation and positive social evaluation. PeerJ, 3, e1089. https://doi.org/10.7717/peerj.1089",
+  "doi": "10.7717/peerj.1089",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": "2015-06-16",
   "abstract": "Agreeable people are more likely to display prosocial attitudes and helpful behavior in a broad range of situations. Here we show that this tendency interacts with the personal characteristics of interaction partners. In an online study (n = 284), participants were given the opportunity to report attitudes toward and make monetary donations to needy individuals who were described in dynamically generated biographies. Using a machine learning and multilevel modeling framework, we tested three potential explanations for the facilitatory influence of Agreeableness on charitable behavior. We find that Agreeableness preferentially increased donations and prosocial attitudes toward targets normatively rated as being more deserving, but not to targets considered less deserving. Our results advance understanding of person-by-situation interactions in the context of charitable behavior and prosocial attitudes.",
-  "cited_by_count": 0,
+  "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": "https://doi.org/10.7287/peerj.preprints.1182v1",
+  "landing_url": "https://doi.org/10.7717/peerj.1089",
   "openalex_authors": [
    "Tal Yarkoni",
    "Yoni K Ashar",
@@ -27661,6 +27984,11 @@
     "url": "pdf/yarkoni2015interactions.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2015_Yarkoni_PeerJ.pdf",
     "version": "publisher"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.7287/peerj.preprints.1182v1"
    }
   ],
   "has_pdf": true,
@@ -27700,7 +28028,8 @@
   },
   "crossref_checked": true,
   "citation_original": "Yarkoni, T., Ashar, Y. K., & Wager, T. D. (2015). Interactions between donor Agreeableness and recipient characteristics in predicting charitable donation and positive social evaluation. PeerJ. 3: e1089. PMCID: PMC4548474. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "preprint_doi": "10.7287/peerj.preprints.1182v1"
  },
  {
   "id": "wager2015neuroscience",
@@ -28060,7 +28389,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Woo, C. W., & Wager, T. D. (2015). Neuroimaging-based biomarker discovery and validation. PAIN. 156(8):1379-1381. PMCID: PMC4504798. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "schafer2015partial",
@@ -28238,7 +28572,12 @@
   "abstract_source": "crossref",
   "crossref_checked": true,
   "citation_original": "Jepma, M. & Wager, T. D. (2015). Conceptual Conditioning: Mechanisms Mediating Conditioning Effects on Pain. Psychological Science. 26(11):1728-39. PMCID: PMC4646733. [PDF]",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "yamamoto2015influence",
@@ -28264,17 +28603,16 @@
   "volume": "156",
   "issue": null,
   "pages": "e241",
-  "citation": "Yamamoto, D. J., Woo, C. W., Wager, T. D., Regner, M. F., & Tanabe, J. (2015). Influence of dorsolateral prefrontal cortex and ventral striatum on risk avoidance in addiction: A mediation analysis. Drug and Alcohol Dependence, 156, e241. https://doi.org/10.1016/j.drugalcdep.2015.07.650",
-  "doi": "10.1016/j.drugalcdep.2015.07.650",
+  "citation": "Yamamoto, D. J., Woo, C. W., Wager, T. D., Regner, M. F., & Tanabe, J. (2015). Influence of dorsolateral prefrontal cortex and ventral striatum on risk avoidance in addiction: A mediation analysis. Drug and Alcohol Dependence, 156, e241. https://doi.org/10.1016/j.drugalcdep.2014.12.026",
+  "doi": "10.1016/j.drugalcdep.2014.12.026",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": "2015-11",
   "abstract": "Background—Alterations in frontal and striatal function are hypothesized to underlie risky decision-making in drug users, but how these regions interact to affect behavior is incompletely understood. We used mediation analysis to investigate how prefrontal cortex and ventral striatum together influence risk avoidance in abstinent drug users. Method—Thirty-seven abstinent substance-dependent individuals (SDI) and 43 controls underwent fMRI while performing a decision-making task involving risk and reward. Analyses of a priori regions-of-interest tested whether activity in dorsolateral prefrontal cortex (DLPFC) and ventral striatum (VST) explained group differences in risk avoidance. Whole-brain analysis was conducted to identify brain regions influencing the negative VST-risk avoidance relationship. Results—Right DLPFC (RDLPFC) positively mediated the group-risk avoidance relationship (p < 0.05); RDLPFC activity was higher in SDI and predicted higher risk avoidance across groups, controlling for SDI vs. controls. Conversely, VST activity negatively influenced risk avoidance (p < 0.05); it was higher in SDI, and predicted lower risk avoidance. Whole-brain analysis revealed that, across group, RDLPFC and left temporal-parietal junction positively (p ≤ 0.001) while right *Supplementary material can be found by accessing the online version of this paper at http://dx.doi.org and by entering doi:…",
-  "cited_by_count": 0,
+  "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": "https://doi.org/10.1016/j.drugalcdep.2015.07.650",
+  "landing_url": "https://doi.org/10.1016/j.drugalcdep.2014.12.026",
   "openalex_authors": [
    "Dorothy Yamamoto",
    "Choong-Wan Woo",
@@ -28285,10 +28623,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/yamamoto2015influence.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2015_Yamamoto_DrugAlcoholDepend.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -28330,7 +28668,12 @@
   "crossref_checked": true,
   "abstract_source": "pdf",
   "citation_original": "Yamamoto, D. J., Woo, C. W., Wager, T. D., Regner, M. F., & Tanabe, J. (2015). Influence of dorsolateral prefrontal cortex and ventral striatum on risk avoidance in addiction: A mediation analysis. Drug and Alcohol Dependence. 149, 10-17. PMCID: PMC4361089. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "satpute2015involvement",
@@ -28506,10 +28849,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/lindquist2015groupregularized.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2015_Lindquist_Neuroimage.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -28552,7 +28895,14 @@
   "crossref_checked": true,
   "citation_original": "Lindquist, M. A., Krishnan, A., Lopez-Sola, M., Jepma, M., Woo, C. W., Koban, L., Roy, M., Atlas, L. Y., Schmidt, L., Chang, L. J. & Losin, R. E. A. (2015). Group-regularized individual prediction: theory and application to pain. NeuroImage. 145(Pt B):274-287. PMCID: PMC5071107. [PDF]",
   "citations_refreshed": "2026-10-07",
-  "authors_truncated": false
+  "authors_truncated": false,
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "chen2015highdimensional",
@@ -28603,10 +28953,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/chen2015highdimensional.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2017_Chén_Biostatistics-1.pdf",
-    "version": "publisher"
+    "version": "preprint"
    }
   ],
   "has_pdf": true,
@@ -28647,7 +28997,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Chén, O. Y., Crainiceanu, C. M., Ogburn, E. L., Caffo, B. S., Wager, T. D., & Lindquist, M. A. (2015). High-dimensional Multivariate Mediation: with Application to Neuroimaging Data. Biostatsica. 19(2):121-136. PMCID: PMC5862274. [PDF]",
-  "citations_refreshed": "2026-10-09"
+  "citations_refreshed": "2026-10-09",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "lindquist2014principles",
@@ -28683,10 +29038,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/lindquist2014principles.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2014_Lindquist_Handbook-of-Neuroimaging-Data-Analysis.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -28818,7 +29173,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Atlas, L. Y., Wielgosz, J., Whittington, R. & Wager, T. D. (2014). Specifying the non-specific factors underlying opioid analgesia: Expectancy, attention, and affect. Psychopharmacology. 231(5):813-23. PMCID: PMC3945427. [PDF]",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "citation_pdf_url"
+   ]
+  }
  },
  {
   "id": "atlas2014metaanalysis",
@@ -29278,7 +29640,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Cordes, D., Nandy, R.R., Schafer, S. & Wager, T.D. (2014). Characterization and Reduction of Cardiac- and Respiratory- Induced Noise as a Function of the Sampling Rate (TR) in fMRI Corresponding. NeuroImage. 89: 314–330. PMCID: PMC4209749. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "silvers2014worse",
@@ -29448,7 +29815,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Woo, C. W., Krishnan, A. & Wager, T. D. (2014). Cluster-extent based thresholding in fMRI analyses: Pitfalls and recommendations. Neuroimage. 91:412-9. PMCID: PMC4214144. [PDF]",
-  "citations_refreshed": "2026-10-09"
+  "citations_refreshed": "2026-10-09",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "wager2014social",
@@ -29573,10 +29945,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/jepma2014dynamics.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2014_Jempa_JPain.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -29616,7 +29988,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Jepma, M., Jones, M., & Wager, T.D. (2014). The dynamics of pain: Evidence for simultaneous site-specific habituation and site-nonspecific sensitization in thermal pain. The Journal of Pain. 15(7):734-46. PMCID: PMC4083082. [PDF]",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "schambra2014your",
@@ -29664,10 +30041,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/schambra2014your.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2014_Schambra_BrainStimul.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -29707,7 +30084,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Schambra, H. M., Bikson, M., Wager, T. D., DosSantos, M. F., & DaSilva, A. F. (2014). It’s all in your head: reinforcing the placebo response with tDCS. Brain Stimulation. 7(4): 623–624. PMCID: PMC4108558. [PDF]",
-  "citations_refreshed": "2026-10-08"
+  "citations_refreshed": "2026-10-08",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "atlas2014mediators",
@@ -29752,10 +30134,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/atlas2014mediators.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2014_Atlas_Pain.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -29796,7 +30178,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Atlas, L. Y., Lindquist, M. A., Bolger, N., & Wager, T. D. (2014). Brain mediators of the effects of noxious heat on pain. PAIN. 155(8), 1632-1648. PMCID: PMC4104234. [PDF]",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "xue2014identifying",
@@ -29887,7 +30274,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Xue, W., Kang, J., Bowman, F. D., Wager, T. D., & Guo, J. (2014). Identifying functional co-activation patterns in neuroimaging studies via poisson graphical models. Biometrics. 70(4):812-822. PMCID: PMC4276452. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "shvil2014differences",
@@ -29987,7 +30379,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Shvil, E., Sullivan, G. M., Schafer, S., Markowitz, J. C., Campeas, M., Wager, T. D., & Neria, Y. (2014). Sex differences in extinction recall in posttraumatic stress disorder: a pilot fMRI study. Neurobiology of learning and memory, 113, 101-108. PMCID: PMC4053517. [PDF]",
-  "citations_refreshed": "2026-10-08"
+  "citations_refreshed": "2026-10-08",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "kang2014bayesian",
@@ -30034,8 +30431,8 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/kang2014bayesian.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2014_Kang_Ann-Appl-Stat.pdf",
-    "version": "publisher"
+    "version": "publisher",
+    "url_original": "https://projecteuclid.org/journals/annals-of-applied-statistics/volume-8/issue-3/A-Bayesian-hierarchical-spatial-point-process-model-for-multi-type/10.1214/14-AOAS757.pdf"
    }
   ],
   "has_pdf": true,
@@ -30076,7 +30473,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Kang, J., Nichols, T. E., Wager, T. D., & Johnson, T. D. (2014). A Bayesian hierarchical spatial point process model for multi-type neuroimaging meta-analysis. The Annals of Applied Statistics. 8(3):1800–1824. PMCID: PMC4241351. [PDF]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "found:openalex:publisher",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "vanast2014mechanisms",
@@ -30327,10 +30731,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/schmidt2014mind.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2014_Schmidt_NatNeurosci.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    },
    {
     "type": "paradigm",
@@ -30380,11 +30784,19 @@
   },
   "crossref_checked": true,
   "citation_original": "Schmidt, L., Braun, E. K., Wager, T. D., & Shohamy, D. (2014). Mind matters: Placebo enhances reward learning in Parkinson’s disease. Nature Neuroscience. 17(12):1793-7. PMCID: PMC4503317. [PDF], [Paradigm]",
-  "citations_refreshed": "2026-10-08"
+  "citations_refreshed": "2026-10-08",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "citation_pdf_url",
+    "pmc-opendata:not-published-version"
+   ]
+  }
  },
  {
   "id": "lopezsola2014altered",
-  "title": "Altered fMRI responses to non-painful sensory stimulation in fibromyalgia patients",
+  "title": "Altered Functional Magnetic Resonance Imaging Responses to Nonpainful Sensory Stimulation in Fibromyalgia Patients",
   "authors": [
    "Lopez-Sola, M.",
    "Pujol, J.",
@@ -30420,7 +30832,7 @@
   "volume": "66",
   "issue": "11",
   "pages": "3200-3209",
-  "citation": "Lopez-Sola, M., Pujol, J., Wager, T. D., Garcia-Fontanals, A., Blanco-Hinojo, L., Garcia-Blanco, S., Poca-Dias, V., Harrison, B. J., Contreras-Rodriguez, O., Monfort, J., Garcia-Fructuoso, F., & Deus J (2014). Altered fMRI responses to non-painful sensory stimulation in fibromyalgia patients. Arthritis & Rheumatology, 66(11), 3200–3209. https://doi.org/10.1002/art.38781",
+  "citation": "Lopez-Sola, M., Pujol, J., Wager, T. D., Garcia-Fontanals, A., Blanco-Hinojo, L., Garcia-Blanco, S., Poca-Dias, V., Harrison, B. J., Contreras-Rodriguez, O., Monfort, J., Garcia-Fructuoso, F., & Deus J (2014). Altered Functional Magnetic Resonance Imaging Responses to Nonpainful Sensory Stimulation in Fibromyalgia Patients. Arthritis & Rheumatology, 66(11), 3200–3209. https://doi.org/10.1002/art.38781",
   "doi": "10.1002/art.38781",
   "pmid": "25220783",
   "pmcid": null,
@@ -30480,7 +30892,12 @@
   "abstract_source": "crossref",
   "crossref_checked": true,
   "citation_original": "Lopez-Sola, M., Pujol, J., Wager, T. D., Garcia-Fontanals, A., Blanco-Hinojo, L., Garcia-Blanco, S., Poca-Dias, V., Harrison, B. J., Contreras-Rodriguez, O., Monfort, J., Garcia-Fructuoso, F. & Deus J. (2014). Altered fMRI responses to non-painful sensory stimulation in fibromyalgia patients. Arthritis & Rheumatology. 66(11):3200-9. PMCID: PMC4410766 [PDF]",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "woo2014separate",
@@ -30539,8 +30956,8 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/woo2014separate.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2014_Woo_NatCommun.pdf",
-    "version": "publisher"
+    "version": "publisher",
+    "url_original": "https://www.nature.com/articles/ncomms6380.pdf"
    },
    {
     "type": "maps",
@@ -30597,7 +31014,14 @@
     "url": "https://neuromarkers.io/marker/2015-woo-naturecomms-rejection/",
     "img": "assets/img/neuromarkers/2015-woo-naturecomms-rejection.jpg"
    }
-  ]
+  ],
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "found:openalex:publisher",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "atlas2013expectations",
@@ -30633,10 +31057,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/atlas2013expectations.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2013_Atlas_The-Oxford-Handbook-of-Cognitive-Neuroscience.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -30717,10 +31141,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/wager2013placebo.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2013_Wager_Textbook-of-Pain.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -30786,29 +31210,20 @@
   "volume": null,
   "issue": null,
   "pages": null,
-  "citation": "Koban, L., Ruzic, L., & Wager, T. D. (2013). Brain predictors of individual differences in placebo responding. In Placebo and Pain: From Bench to Bedside (L. Colloca, M. A. Flaten & K. Meissner, Eds.), Elsevier/Academic Press.",
-  "doi": null,
+  "citation": "Koban, L., Ruzic, L., & Wager, T. D. (2013). Brain predictors of individual differences in placebo responding. In Placebo and Pain: From Bench to Bedside (L. Colloca, M. A. Flaten & K. Meissner, Eds.), Elsevier/Academic Press. https://doi.org/10.1016/b978-0-12-397928-5.00010-6",
+  "doi": "10.1016/b978-0-12-397928-5.00010-6",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": "2011-01-12",
   "abstract": "Recent studies have identified brain correlates of placebo analgesia, but none have assessed how accurately patterns of brain activity can predict individual differences in placebo responses. We reanalyzed data from two fMRI studies of placebo analgesia ( N = 47), using patterns of fMRI activity during the anticipation and experience of pain to predict new subjects' scores on placebo analgesia and placebo-induced changes in pain processing. We used a cross-validated regression procedure, LASSO-PCR, which provided both unbiased estimates of predictive accuracy and interpretable maps of which regions are most important for prediction. Increased anticipatory activity in a frontoparietal network and decreases in a posterior insular/temporal network predicted placebo analgesia. Patterns of anticipatory activity across the cortex predicted a moderate amount of variance in the placebo response (∼12% overall, ∼40% for study 2 alone), which is substantial considering the multiple likely contributing factors. The most predictive regions were those associated with emotional appraisal, rather than cognitive control or pain processing. During pain, decreases in limbic and paralimbic regions most strongly predicted placebo analgesia. Responses within canonical pain-processing regions explained significant variance in placebo analgesia, but the pattern of effects was inconsistent with widespread decreases in nociceptive processing. Together, the findings suggest that engagement of emotional appraisal circuits drives individual variation in placebo analgesia, rather than early suppression of nociceptive processing. This approach provides a framework that will allow prediction accuracy to increase as new studies provide more precise information for future predictive models.",
-  "cited_by_count": 292,
+  "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": null,
+  "landing_url": "https://doi.org/10.1016/b978-0-12-397928-5.00010-6",
   "openalex_authors": [],
   "keywords": [],
-  "links": [
-   {
-    "type": "pdf",
-    "label": "PDF",
-    "url": "pdf/koban2011predictors.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2011_Koban-JNeurosci.pdf",
-    "version": "publisher"
-   }
-  ],
-  "has_pdf": true,
+  "links": [],
+  "has_pdf": false,
   "section": "2011",
   "source": "dartmouth-site",
   "date_added": "2026-09-06",
@@ -30848,7 +31263,12 @@
   "abstract_source": "crossref",
   "crossref_checked": true,
   "citation_original": "Koban, L., Ruzic, L., & Wager, T. D. (2013). Brain Predictors of Individual Differences in Placebo Responding. In L. Colloca, M. A. Flaten & K. Meissner (Eds.), Placebo and Pain: Elsevier/Academic Press. The Journal of Neuroscience. 31(2): 439–452. PMCID: PMC3735131. [PDF]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "not-found",
+   "tried": []
+  }
  },
  {
   "id": "cribben2013detecting",
@@ -31130,7 +31550,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D. & Atlas, L. Y. (2013). How Is Pain Influenced by Cognition? Neuroimaging Weighs In. Perspectives on Psychological Science. 8(1):91-97. PMCID: PMC3994173. [PDF]",
-  "citations_refreshed": "2026-10-09"
+  "citations_refreshed": "2026-10-09",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "wager2013fmribased",
@@ -31310,7 +31735,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Jepma, M., & Wager, T. D. (2013). Multiple potential mechanisms for context effects on pain. PAIN. 154(5):629-3. PMCID: PMC4057098. [PDF]",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "buhle2013cognitive",
@@ -31664,8 +32094,8 @@
     "type": "pdf",
     "label": "PDF",
     "url": "pdf/wager2013neural.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2013_Wager_Cogn-Affect-Behav-Neurosci.pdf",
-    "version": "publisher"
+    "version": "publisher",
+    "url_original": "https://link.springer.com/content/pdf/10.3758/s13415-013-0226-y.pdf"
    }
   ],
   "has_pdf": true,
@@ -31705,7 +32135,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Spicer, J., Insler, R. & Smith, E. E., (2013). The neural bases of distracter-resistant working memory. Cognitive Affective Behavioral Neuroscience. 14(1):90-105. PMCID: PMC3972280. [PDF]",
-  "citations_refreshed": "2026-10-09"
+  "citations_refreshed": "2026-10-09",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "found:citation_pdf_url:publisher",
+   "tried": [
+    "citation_pdf_url"
+   ]
+  }
  },
  {
   "id": "plassmann2013expectancies",
@@ -31831,10 +32268,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/lindquist2012estimating.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2012_Lindquist_Neuroimage.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -31874,7 +32311,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Lindquist, M.A., Spicer, J., Asllani, I., &Wager, T.D. (2012). Estimating and testing variance components in a multi-level GLM. Neuroimage. 59(1):490-501. PMCID: PMC3195889. [PDF]",
-  "citations_refreshed": "2026-10-07"
+  "citations_refreshed": "2026-10-07",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "buhle2012distraction",
@@ -33850,10 +34292,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/wager2011essentials.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2011_wager_Handbook-of-Social-Neuroscience-.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -33894,7 +34336,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Lindquist, M. A. (2011). Essentials of Functional Magnetic Resonance Imaging. In: Decety, J., Cacioppo, J. T. (Eds.), Handbook of Social Neuroscience. Oxford University Press. [PDF]",
-  "citations_refreshed": "2026-10-09"
+  "citations_refreshed": "2026-10-09",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "miele2011dissociating",
@@ -34132,10 +34579,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/leotti2010motivational.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2010_Leotti_JExpPsycholHumPerceptPerform.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -34175,7 +34622,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Leotti, L. A. & Wager, T. D. (2010). Motivational influences on response inhibition measures. Journal of Experimental Psychology: Human Perception and Performance. 36(2):430-47. PMID: 20364928. [PDF]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "robinson2010changepoint",
@@ -34384,10 +34836,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/kober2010metaanalyses.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2010_Kober_Wiley-Interdiscip-Rev-Cogn-Sci.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -34428,7 +34880,12 @@
   "abstract_source": "crossref",
   "crossref_checked": true,
   "citation_original": "Kober, H., & Wager, T. D. (2010). Meta-analyses of neuroimaging data. Wiley Interdisciplinary Reviews: Cognitive Science. 1(2): 293-300. PMID: 24052810. [PDF]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "buhle2010using",
@@ -34945,7 +35402,7 @@
   "authors": [
    "Colloca, L.",
    "Petrovic, P.",
-   "Wager. T. D",
+   "Wager, T. D.",
    "Ingvar, M.",
    "Benedetti, F."
   ],
@@ -34963,7 +35420,7 @@
   "volume": "151",
   "issue": "2",
   "pages": "430-439",
-  "citation": "Colloca, L., Petrovic, P., Wager. T. D, Ingvar, M., & Benedetti, F. (2010). How the number of learning trials affects placebo and nocebo responses. Pain, 151(2), 430–439. https://doi.org/10.1016/j.pain.2010.08.007",
+  "citation": "Colloca, L., Petrovic, P., Wager, T. D., Ingvar, M., & Benedetti, F. (2010). How the number of learning trials affects placebo and nocebo responses. Pain, 151(2), 430–439. https://doi.org/10.1016/j.pain.2010.08.007",
   "doi": "10.1016/j.pain.2010.08.007",
   "pmid": "20817355",
   "pmcid": "PMC2955814",
@@ -35074,10 +35531,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/yarkoni2010cognitive.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2010_Yarkoni_TrendsCognSci.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -35119,14 +35576,19 @@
   },
   "crossref_checked": true,
   "citation_original": "Yarkoni, T., Poldrack, R. A., Van Essen, D. C., & Wager, T. D. (2010). Cognitive neuroscience 2.0: building a cumulative science of human brain function. Trends Cognitive Science. 14(11):489-496. PMCID: PMC2963679. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "atlas2009neural",
   "title": "The neural bases of placebo effects",
   "authors": [
    "Atlas, L.Y.",
-   "Wager. T. D"
+   "Wager, T. D."
   ],
   "authors_short": [
    "Atlas LY",
@@ -35139,7 +35601,7 @@
   "volume": null,
   "issue": null,
   "pages": null,
-  "citation": "Atlas, L.Y., & Wager. T. D (2009). The neural bases of placebo effects. In Imagination and Medicine: The Future of Healing in an Age of Neuroscience (S. Raz & T. Raz, Eds.), Jason Aronson.",
+  "citation": "Atlas, L.Y., & Wager, T. D. (2009). The neural bases of placebo effects. In Imagination and Medicine: The Future of Healing in an Age of Neuroscience (S. Raz & T. Raz, Eds.), Jason Aronson.",
   "doi": null,
   "pmid": null,
   "pmcid": null,
@@ -35206,10 +35668,10 @@
  },
  {
   "id": "atlas2009placebo",
-  "title": "Placebo effects",
+  "title": "The Placebo Response",
   "authors": [
    "Atlas, L.Y.",
-   "Wager. T. D"
+   "Wager, T. D."
   ],
   "authors_short": [
    "Atlas LY",
@@ -35222,26 +35684,25 @@
   "volume": null,
   "issue": null,
   "pages": "201-216",
-  "citation": "Atlas, L.Y., & Wager. T. D (2009). Placebo effects. In Encyclopedia of Consciousness (W. P. Banks, Ed.), Elsevier, pp. 201–216.",
-  "doi": null,
+  "citation": "Atlas, L.Y., & Wager, T. D. (2009). The Placebo Response. In Encyclopedia of Consciousness (W. P. Banks, Ed.), Elsevier, pp. 201–216. https://doi.org/10.1016/b978-012373873-8.00029-3",
+  "doi": "10.1016/b978-012373873-8.00029-3",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": null,
   "abstract": "",
   "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": null,
+  "landing_url": "https://doi.org/10.1016/b978-012373873-8.00029-3",
   "openalex_authors": [],
   "keywords": [],
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/atlas2009placebo.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2009_Atlas_Encyclopedia-of-Consciousness.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -35525,10 +35986,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/lindquist2009modeling.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2009_Linquist_Neuroimage.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -35569,7 +36030,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Lindquist, M. A., Meh Loh, J., Atlas, L. Y. & Wager T. D. (2009). Modeling the hemodynamic response function in fMRI: efficiency, bias and mis-modeling. Neuroimage. 45:187-98. [PDF]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "wager2009evaluating",
@@ -36202,7 +36668,7 @@
   "id": "wagertd2009essentials",
   "title": "Essentials of functional neuroimaging",
   "authors": [
-   "Wager. T. D",
+   "Wager, T. D.",
    "Lindquist, M.",
    "Hernandez, L."
   ],
@@ -36218,7 +36684,7 @@
   "volume": null,
   "issue": null,
   "pages": null,
-  "citation": "Wager. T. D, Lindquist, M., & Hernandez, L. (2009). Essentials of functional neuroimaging. Handbook of Neuroscience for the Behavioral Sciences. https://doi.org/10.1002/9780470478509.neubb001010",
+  "citation": "Wager, T. D., Lindquist, M., & Hernandez, L. (2009). Essentials of functional neuroimaging. Handbook of Neuroscience for the Behavioral Sciences. https://doi.org/10.1002/9780470478509.neubb001010",
   "doi": "10.1002/9780470478509.neubb001010",
   "pmid": null,
   "pmcid": null,
@@ -36238,10 +36704,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/wagertd2009essentials.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2009_Wager_Handbook-of-Neuroscience-for-the-Behavioral-Sciences.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -36282,7 +36748,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager. T. D., Lindquist, M., & Hernandez, L. (2009). Essentials of functional neuroimaging. In: Handbook of Neuroscience for the Behavioral Sciences. [PDF]",
-  "citations_refreshed": "2026-10-09"
+  "citations_refreshed": "2026-10-09",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "lindquist2008application",
@@ -36302,17 +36773,16 @@
   "volume": null,
   "issue": null,
   "pages": null,
-  "citation": "Lindquist, M. A., & Wager, T. D. (2008). Application of change-point theory to modeling state-related activity in fMRI. In Applied Data Analytic Techniques for Turning Points Research (P. Cohen, Ed.), Routledge.",
-  "doi": null,
+  "citation": "Lindquist, M. A., & Wager, T. D. (2008). Application of change-point theory to modeling state-related activity in fMRI. In Applied Data Analytic Techniques for Turning Points Research (P. Cohen, Ed.), Routledge. https://doi.org/10.4324/9780203843147-11",
+  "doi": "10.4324/9780203843147-11",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": null,
   "abstract": "",
   "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": null,
+  "landing_url": "https://doi.org/10.4324/9780203843147-11",
   "openalex_authors": [],
   "keywords": [],
   "links": [],
@@ -36343,11 +36813,9 @@
   },
   "citations_refreshed": "2026-10-06",
   "pdf_search": {
-   "last": "2026-10-06",
+   "last": "2026-10-09",
    "result": "not-found",
-   "tried": [
-    "crossref-doi:none"
-   ]
+   "tried": []
   }
  },
  {
@@ -36556,10 +37024,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/wager2008neuroimaging.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2008_Wager_Handbook-of-Emotion.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -36735,10 +37203,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/kober2008functional.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2008_Kober_Neuroimage.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    },
    {
     "type": "maps",
@@ -36787,7 +37255,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Kober, H., Barrett, L. F., Joseph, J., Bliss-Moreau, E., Londquist, K. & Wager T. D. (2008). Functional grouping and cortical-subcortical interactions in emotion: a meta-analysis of neuroimaging studies. Neuroimage. 42:998-1031. PMID: 18579414. [PDF], [Brain Models]",
-  "citations_refreshed": "2026-10-06"
+  "citations_refreshed": "2026-10-06",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "wager2008prefrontalsubcortical",
@@ -36835,10 +37308,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/wager2008prefrontalsubcortical.pdf",
     "url_original": null,
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -36880,7 +37353,14 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Davidson, M. L., Hughes, B. L., Lindquist, M. A. & Ochsner, K. N. (2008). Prefrontal-subcortical pathways mediating successful emotion regulation. Neuron. 59:1037-50. PMID: 18817740. [PDF]",
-  "citations_refreshed": "2026-10-09"
+  "citations_refreshed": "2026-10-09",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "openalex"
+   ]
+  }
  },
  {
   "id": "waugh2008neural",
@@ -37021,10 +37501,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/grinband2008detection.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2008_Grinband_Neuroimage.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -37065,7 +37545,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Grinband, J., Wager, T. D., Lindquist, M., Ferrera, V. P. & Hirsch, J. (2008). Detection of time-varying signals in event-related fMRI designs. Neuroimage. 43:509-20. PMID: 18775784. [PDF]",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "wager2007elements",
@@ -37089,17 +37574,16 @@
   "volume": null,
   "issue": null,
   "pages": "19-55",
-  "citation": "Wager, T. D., Hernandez, L., Jonides, J., & Lindquist, M. (2007). Elements of functional neuroimaging. In Handbook of Psychophysiology, 3rd ed. (J. T. Cacioppo, L. G. Tassinary & G. G. Berntson, Eds.), Cambridge University Press, pp. 19–55.",
-  "doi": null,
+  "citation": "Wager, T. D., Hernandez, L., Jonides, J., & Lindquist, M. (2007). Elements of functional neuroimaging. In Handbook of Psychophysiology, 3rd ed. (J. T. Cacioppo, L. G. Tassinary & G. G. Berntson, Eds.), Cambridge University Press, pp. 19–55. https://doi.org/10.1017/cbo9780511546396.002",
+  "doi": "10.1017/cbo9780511546396.002",
   "pmid": null,
   "pmcid": null,
-  "openalex_id": null,
   "date": null,
   "abstract": "",
   "cited_by_count": null,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": null,
+  "landing_url": "https://doi.org/10.1017/cbo9780511546396.002",
   "openalex_authors": [],
   "keywords": [],
   "links": [
@@ -37635,10 +38119,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/zaki2007different.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2007_Zaki_Soc-Neurosci.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -37679,7 +38163,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Zaki, J., Ochsner, K. N., Hanelin, J., Wager, T. D. & Mackey, S. C. (2007). Different circuits for different pain: patterns of functional connectivity reveal distinct networks for processing pain in self and others. Social Neuroscience. 2:276-91. PMID: 18633819. [PDF]",
-  "citations_refreshed": "2026-10-04"
+  "citations_refreshed": "2026-10-04",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "etkin2007functional",
@@ -37818,10 +38307,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/stern2007preparatory.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2007_Stern_Brain-Res.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -37861,7 +38350,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Stern, E. R., Wager, T. D., Egner, T., Hirsch, J. & Mangels, J. A. (2007). Preparatory neural activity predicts performance on a conflict task. Brain Research. 1176:92-102. [PDF]",
-  "citations_refreshed": "2026-10-08"
+  "citations_refreshed": "2026-10-08",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "feldmannbarrett2006structure",
@@ -38148,10 +38642,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/wager2006placebo.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2006_Wager_BrainBehavImmun.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -38192,7 +38686,12 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Matre, D., Casey, K. L. (2006). Placebo effects in laser-evoked pain potentials. Brain Behaviour, and Immunity. 3:219-30. PMCID: PMC3735137. [PDF]",
-  "citations_refreshed": "2026-10-09"
+  "citations_refreshed": "2026-10-09",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": []
+  }
  },
  {
   "id": "wager2006individual",
@@ -39355,6 +39854,11 @@
     "url": "pdf/wager2004painful.pdf",
     "url_original": null,
     "version": "publisher"
+   },
+   {
+    "type": "publisher",
+    "label": "Publisher (letter and response)",
+    "url": "https://doi.org/10.1126/science.304.5674.1109c"
    }
   ],
   "has_pdf": true,
@@ -39808,10 +40312,15 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (preprint)",
     "url": "pdf/wager2004affect.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2004_Wager_bioRxiv.pdf",
-    "version": "publisher"
+    "version": "preprint"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/102368"
    }
   ],
   "has_pdf": true,
@@ -39990,10 +40499,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/jonides2003modules.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2003_Jonides_wm_chapter_textonly.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -40034,13 +40543,20 @@
   },
   "crossref_checked": true,
   "citation_original": "Jonides, J., Sylvester, C. Y. C., Lacey, S .C., Wager, T. D., Nichols, T.E. and Awh, E. (2003). Modules of Working Memory. In R. H. Kluwe, G. Luer, and F. Rosler (Eds.). Principles of Working Memory. Boston: Birkhaeuser Publishing Ltd. [PDF]",
-  "citations_refreshed": "2026-10-05"
+  "citations_refreshed": "2026-10-05",
+  "pdf_search": {
+   "last": "2026-10-09",
+   "result": "no-published-version",
+   "tried": [
+    "citation_pdf_url"
+   ]
+  }
  },
  {
   "id": "slyvester2003switching",
   "title": "Switching attention and resolving interference: fMRI measures of executive functions",
   "authors": [
-   "Slyvester, C. Y.",
+   "Sylvester, C. Y.",
    "Wager, T. D.",
    "Lacey, S. C.",
    "Hernandez, L.",
@@ -40049,7 +40565,7 @@
    "Jonides, J."
   ],
   "authors_short": [
-   "Slyvester CY",
+   "Sylvester CY",
    "Wager TD",
    "Lacey SC",
    "Hernandez L",
@@ -40064,7 +40580,7 @@
   "volume": "41",
   "issue": "3",
   "pages": "357-370",
-  "citation": "Slyvester, C. Y., Wager, T. D., Lacey, S. C., Hernandez, L., Nochols, T. E., Smith E. E, & Jonides, J. (2003). Switching attention and resolving interference: fMRI measures of executive functions. Neuropsychologia, 41(3), 357–370. https://doi.org/10.1016/s0028-3932(02)00167-7",
+  "citation": "Sylvester, C. Y., Wager, T. D., Lacey, S. C., Hernandez, L., Nochols, T. E., Smith E. E, & Jonides, J. (2003). Switching attention and resolving interference: fMRI measures of executive functions. Neuropsychologia, 41(3), 357–370. https://doi.org/10.1016/s0028-3932(02)00167-7",
   "doi": "10.1016/s0028-3932(02)00167-7",
   "pmid": "12457760",
   "pmcid": null,
@@ -40345,10 +40861,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/hernandez2002introduction.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/12/2002_Hernandez_introimaging_msformat.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
@@ -40428,10 +40944,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF",
+    "label": "PDF (author manuscript)",
     "url": "pdf/jonides2002neuroimaging.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2019/10/jonides_neuroimaging_memory_encyc_1.pdf",
-    "version": "publisher"
+    "version": "author_manuscript"
    }
   ],
   "has_pdf": true,
