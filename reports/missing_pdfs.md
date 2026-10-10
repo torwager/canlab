@@ -1,6 +1,6 @@
 # Lab papers without a PDF on the site
 
-Updated 2026-10-09 by `pipeline/fetch_pdfs.py` (runs daily). 6 papers.
+Updated 2026-10-10 by `pipeline/fetch_pdfs.py` (runs daily). 6 papers.
 
 No open-access copy could be found for these. To add one: download the PDF from the publisher link (institutional access, e.g. on the Dartmouth VPN), save it as `site/pdf/<file name>` in the repository and push; the next daily run links it on the site. Author manuscripts go in `site/pdf/author_manuscripts/`.
 
