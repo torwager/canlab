@@ -34,13 +34,17 @@
      "label": "Lectures on YouTube",
      "url": "https://www.youtube.com/watch?v=ZL-Tr1KSMKY&list=PLcvMDPDk-dSmTBejANv7kY2mFo1ni_gkA"
     }
-   ]
+   ],
+   "thumb": "course-coursera.jpg",
+   "thumb_alt": "Martin Lindquist and Tor Wager in the course videos"
   },
   {
    "title": "Functional MRI 2",
    "provider": "Coursera",
    "url": "https://www.coursera.org/learn/functional-mri-2",
-   "blurb": "Part 2 of the Coursera course by Martin Lindquist and Tor Wager: the general linear model, multiple comparisons, connectivity, multivariate methods and reproducibility."
+   "blurb": "Part 2 of the Coursera course by Martin Lindquist and Tor Wager: the general linear model, multiple comparisons, connectivity, multivariate methods and reproducibility.",
+   "thumb": "course-coursera.jpg",
+   "thumb_alt": "Martin Lindquist and Tor Wager in the course videos"
   },
   {
    "title": "fMRI Image Acquisition and Analysis with SPM and ICA",
