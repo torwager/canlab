@@ -93,8 +93,8 @@ each shows its topic (brain map for the gallery, a MATLAB snippet for code, a vi
 sequence for paradigms, real screenshots of the journal-club search, a starred list, the network and a
 bibliometrics bar chart). The Tools & training tool thumbnails use the same pictures (tool-code, tool-data,
 tool-paradigm-design, tool-neuromarker-gallery). Course cards take a wide 2:1 thumb (course-mind.jpg = Tor |
-Kent | Vince headshots from the MIND course site); the Coursera cards need a still of Tor and Martin from the
-videos (coursera.org is unreachable from the sandbox, so the PI supplies it). Tools & training lists the
+Kent | Vince headshots from the MIND course site); both Coursera cards use course-coursera.jpg (a
+still of Martin and Tor from the videos, supplied by the PI). Tools & training lists the
   Neuromarker Gallery first among the tools. "My list", "Sign in",
   "About this site" live only in the footer. No Discussion board (removed on request).
 - Brand mark: the brain outline cropped from the lab logo, bold-stroked, in a 34px amber tile beside
