@@ -149,7 +149,11 @@ Publications: header (left) + hero (right); three "book tiles" (Elements of fMRI
   within an axis, AND across axes); sort (year, relevance, most cited, oldest), year range, Export ▾
   (BibTeX, RIS, DOI list, CSV, formatted citations), "my list" and "with PDF" toggles, and a
   "Simple reference list" toggle (CV-style: books first, then years descending, title linked to PDF,
-  [PDF] [link] [Brain maps] etc. after each). Cards show: star, title (links to the paper page),
+  [PDF] [link] [Brain maps] etc. after each), and a "Citation list" button (2026-10-12): a dialog with every paper
+  the current search/author/filters show, in the current sort, as citations whose titles link to the publisher
+  (DOI; or the PDF / paper page on canlab.science) followed by [PDF] [Brain Model] [Code] [Data] [Paradigm]
+  [Neuromarker gallery] links, numbered optional; Copy puts rich HTML + plain text on the clipboard (pastes into
+  Word/Google Docs with links), downloads as .html (opens in Word/Docs) or .txt. Cards show: star, title (links to the paper page),
   authors (et al. when truncated), year, journal/vol/pages, status badges (preprint, in press,
   chapter), summary sentence, tag chips (clickable to filter), link pills (PDF amber, Brain maps steel,
   Publisher, PubMed, Details), and a "commentary" bubble for editorials written about the paper.

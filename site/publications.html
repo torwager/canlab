@@ -46,6 +46,16 @@
   .reflist .ref .extra a { margin-left: .5em; }
   .reflist .books { margin: .3rem 0 1rem; }
   body.simple .layout { grid-template-columns: 1fr; }
+  #citedlg { width: min(920px, calc(100vw - 2rem)); max-height: calc(100vh - 3rem); border: 1px solid var(--line); border-radius: 18px; padding: 0; background: var(--bg); color: var(--ink); box-shadow: 0 24px 60px rgba(0,0,0,.25); }
+  #citedlg::backdrop { background: rgba(26,35,50,.45); }
+  #citedlg .cd-head { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.3rem .4rem; }
+  #citedlg h2 { margin: 0; font-size: 1.35rem; }
+  #citedlg .cd-opts, #citedlg .cd-actions { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; align-items: center; padding: .3rem 1.3rem; font-size: .88rem; }
+  #citedlg .cd-actions { padding-bottom: .8rem; border-bottom: 1px solid var(--line); }
+  #citedlg select { font: inherit; font-size: .88rem; padding: .25em .5em; border-radius: 8px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); }
+  #citedlg .cd-list { padding: .9rem 1.3rem 1.3rem; overflow: auto; max-height: calc(100vh - 14rem); font-size: .92rem; line-height: 1.5; }
+  #citedlg .cd-list p { margin: 0 0 .7rem; padding-left: 1.6em; text-indent: -1.6em; }
+  #citedlg .cd-list a { color: var(--steel-deep); }
   body.simple .filters, body.simple .paper-only { display: none !important; }
 </style>
 </head>
@@ -85,6 +95,7 @@
           <label>Sort <select id="sort"><option value="year">by year</option><option value="rel">relevance</option><option value="cited">most cited</option><option value="old">oldest first</option></select></label>
           <label>Year <select id="yfrom"><option value="">any</option></select> – <select id="yto"><option value="">any</option></select></label>
           <span id="exportwrap"></span>
+          <button class="btn" id="citebtn" title="The papers shown, as a list of citations to copy into a document or download">Citation list</button>
           <button class="btn" id="viewtoggle" title="Switch between the tagged card view and a plain reference list">Simple reference list</button>
           <label><input type="checkbox" id="onlyList"> my list</label>
           <label><input type="checkbox" id="onlyPdf"> with PDF</label>
@@ -97,6 +108,16 @@
     </section>
   </div>
 </main>
+<dialog id="citedlg" aria-labelledby="citehead">
+  <div class="cd-head"><h2 id="citehead">Citations</h2><button class="btn link" id="citeclose" aria-label="Close">✕</button></div>
+  <div class="cd-opts">
+    <label>Title links to <select id="citelink"><option value="pub">publisher (DOI)</option><option value="pdf">PDF on canlab.science</option><option value="page">paper page on canlab.science</option></select></label>
+    <label><input type="checkbox" id="citeextras" checked> brain models, code, data and paradigm links</label>
+    <label><input type="checkbox" id="citenum"> numbered</label>
+  </div>
+  <div class="cd-actions"><button class="btn primary" id="citecopy">Copy</button><button class="btn" id="citehtml">Download for Word / Google Docs (.html)</button><button class="btn" id="citetxt">Download plain text (.txt)</button><span class="small muted" id="citemsg" role="status"></span></div>
+  <div class="cd-list" id="citelist"></div>
+</dialog>
 <div id="site-footer"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/minisearch/7.2.0/umd/index.min.js"></script>
 <script src="assets/config.js?v=7"></script>
@@ -228,6 +249,75 @@
   });
   document.getElementById("exportwrap").innerHTML = CL.exportMenu("exp");
   CL.bindExport(document.getElementById("exportwrap"), () => lastShown.slice(0, 2000), "canlab-publications");
+
+  // ---- citation list: the papers shown (search, author, filters, sort), as citations with linked titles, to copy or download
+  const citeDlg = document.getElementById("citedlg"), citeEl = document.getElementById("citelist");
+  const SITE = /^https?:/.test(location.protocol) ? new URL(".", location.href).href : (CL.config.siteUrl.replace(/\/$/, "") + "/");
+  const absUrl = u => /^https?:/.test(u) ? u : SITE + u.replace(/^\//, "");
+  const EXTRA_TYPES = ["maps", "code", "data", "paradigm", "video", "supplement", "preprint"];
+  function citeParts(r) {
+    const linkTo = document.getElementById("citelink").value;
+    const pdf = r.pdf ? absUrl(CL.pdfUrl({ url: r.pdf })) : null;
+    const page = SITE + "papers/" + encodeURIComponent(r.id) + ".html";
+    const pub = r.doi ? "https://doi.org/" + r.doi : (r.u || null);
+    const href = linkTo === "pdf" ? (pdf || pub || page) : (linkTo === "page" ? page : (pub || pdf || page));
+    const au = (r.al || r.a || "") + (r.trunc ? ", et al." : "");
+    const yr = r.st === "in press" ? "in press" : (r.st === "under review" ? "under review" : (r.st === "preprint" ? "preprint" : (r.y || "n.d.")));
+    const chapter = r.kind === "chapter";
+    const extras = document.getElementById("citeextras").checked ? (r.links || []).filter(l => EXTRA_TYPES.includes(l.type)).map(l => ({ label: l.label || l.type, url: absUrl(l.url) })) : [];
+    if (document.getElementById("citeextras").checked && pdf && linkTo !== "pdf") extras.unshift({ label: "PDF", url: pdf });
+    for (const m of (document.getElementById("citeextras").checked ? (r.nm || []) : [])) extras.push({ label: "Neuromarker gallery", url: m.url });
+    return { au, yr, title: r.t, href, venue: r.j || "", chapter, vol: r.vol || "", issue: r.issue || "", pg: r.pg ? String(r.pg).replace(/-/g, "–") : "", doi: r.doi, extras };
+  }
+  function citeHtml(recs) {
+    const num = document.getElementById("citenum").checked;
+    return recs.map((r, i) => {
+      const c = citeParts(r), e = CL.esc;
+      const venue = c.venue ? (c.chapter ? `In ${e(c.venue)}` : `<i>${e(c.venue)}</i>`) : "";
+      const vol = c.vol ? `, ${c.chapter ? e(c.vol) : `<i>${e(c.vol)}</i>`}${c.issue ? `(${e(c.issue)})` : ""}` : "";
+      const ex = c.extras.map(x => ` [<a href="${e(x.url)}">${e(x.label)}</a>]`).join("");
+      return `<p>${num ? `${i + 1}. ` : ""}${e(c.au)} (${e(String(c.yr))}). <a href="${e(c.href)}">${e(c.title)}</a>. ${venue}${vol}${c.pg ? `, ${e(c.pg)}` : ""}.${ex}</p>`;
+    }).join("\n");
+  }
+  function citeText(recs) {
+    const num = document.getElementById("citenum").checked;
+    return recs.map((r, i) => {
+      const c = citeParts(r);
+      const venue = c.venue ? (c.chapter ? `In ${c.venue}` : c.venue) : "";
+      const vol = c.vol ? `, ${c.vol}${c.issue ? `(${c.issue})` : ""}` : "";
+      const ex = c.extras.map(x => `\n   ${x.label}: ${x.url}`).join("");
+      return `${num ? `${i + 1}. ` : ""}${c.au} (${c.yr}). ${c.title}. ${venue}${vol}${c.pg ? `, ${c.pg}` : ""}. ${c.href}${ex}`;
+    }).join("\n\n");
+  }
+  function citeRecs() { return lastShown.slice(0, 2000); }
+  function citeRender() {
+    const recs = citeRecs();
+    document.getElementById("citehead").textContent = `${recs.length} citation${recs.length === 1 ? "" : "s"}`;
+    citeEl.innerHTML = recs.length ? citeHtml(recs) : '<p class="muted">No papers match the current search.</p>';
+    document.getElementById("citemsg").textContent = "";
+  }
+  function citeSave(text, mime, ext) {
+    const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], { type: mime + ";charset=utf-8" }));
+    a.download = `canlab-citations-${new Date().toISOString().slice(0, 10)}.${ext}`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  }
+  const citeDoc = body => `<!doctype html><html><head><meta charset="utf-8"><title>CANlab citations</title><style>body{font-family:Georgia,serif;font-size:12pt;line-height:1.45;max-width:46em;margin:2em auto}p{margin:0 0 .8em;padding-left:2em;text-indent:-2em}</style></head><body>\n${body}\n</body></html>`;
+  document.getElementById("citebtn").onclick = () => { citeRender(); citeDlg.showModal(); };
+  document.getElementById("citeclose").onclick = () => citeDlg.close();
+  citeDlg.addEventListener("click", e => { if (e.target === citeDlg) citeDlg.close(); });
+  ["citelink", "citeextras", "citenum"].forEach(id => document.getElementById(id).addEventListener("change", citeRender));
+  document.getElementById("citecopy").onclick = async () => {
+    const recs = citeRecs(), html = citeHtml(recs), text = citeText(recs), msg = document.getElementById("citemsg");
+    try {
+      await navigator.clipboard.write([new ClipboardItem({ "text/html": new Blob([html], { type: "text/html" }), "text/plain": new Blob([text], { type: "text/plain" }) })]);
+      msg.textContent = `Copied ${recs.length}; paste into Word or Google Docs to keep the links.`;
+    } catch (err) {
+      const range = document.createRange(); range.selectNodeContents(citeEl); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(range);
+      const ok = document.execCommand("copy"); sel.removeAllRanges();
+      msg.textContent = ok ? `Copied ${recs.length}.` : "Copy was blocked by the browser: select the list and copy it by hand.";
+    }
+  };
+  document.getElementById("citehtml").onclick = () => citeSave(citeDoc(citeHtml(citeRecs())), "text/html", "html");
+  document.getElementById("citetxt").onclick = () => citeSave(citeText(citeRecs()), "text/plain", "txt");
   els.go.onclick = () => { page = 1; els.sort.value = els.q.value.trim() ? "rel" : "year"; run(); };
   els.q.addEventListener("keydown", e => { if (e.key === "Enter") els.go.onclick(); });
   els.qa.addEventListener("keydown", e => { if (e.key === "Enter") els.go.onclick(); });
