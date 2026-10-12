@@ -73,7 +73,7 @@ window.CL = (function () {
       document.querySelectorAll(`[data-star="${CSS.escape(b.dataset.star)}"]`).forEach(x => { x.classList.toggle("on", on); x.setAttribute("aria-pressed", on); x.textContent = on ? "★" : "☆"; x.title = on ? "Remove from my list" : "Add to my list"; });
     });
   }
-  function updateListBadge() { document.querySelectorAll(".nav a[href='mylist.html'], .site-footer a[href='mylist.html']").forEach(a => { const n = list.size(); a.innerHTML = `My list${n ? ` <span class="navcount">${n}</span>` : ""}`; }); }
+  function updateListBadge() { document.querySelectorAll(".nav a[href='mylist.html'], .site-footer a[href='mylist.html']").forEach(a => { if (!a.dataset.baseLabel) a.dataset.baseLabel = a.textContent.trim(); const n = list.size(); a.innerHTML = `${a.dataset.baseLabel}${n ? ` <span class="navcount">${n}</span>` : ""}`; }); }
   document.addEventListener("cl:list", updateListBadge);
 
   // ---- links on a paper: PDF (mirror with original as fallback), publisher, PubMed, maps/code/data/video
@@ -140,7 +140,7 @@ window.CL = (function () {
     return true;
   }
   function countValues(recs, axis) { const counts = {}; for (const r of recs) for (const v of ((r.tags || {})[axis] || [])) counts[v] = (counts[v] || 0) + 1; return counts; }
-  function renderFilters(container, recs, filters, onChange, axes = FILTER_AXES) {
+  function renderFilters(container, recs, filters, onChange, axes = FILTER_AXES, openByDefault = true) {
     const parts = [];
     for (const ax of axes) {
       const def = state.axes[ax]; if (!def) continue;
@@ -149,7 +149,8 @@ window.CL = (function () {
       if (!vals.length) continue;
       const mode = dark() ? "dark" : "light";
       const axColor = ((def.color || {})[mode] || {}).fg || "var(--ink-2)";
-      parts.push(`<details open style="--ax:${axColor}"><summary>${esc(def.label)}<span class="cnt">${vals.length}</span></summary><div class="chipset">` +
+      const open = openByDefault || (filters[ax] && filters[ax].size);
+      parts.push(`<details${open ? " open" : ""} style="--ax:${axColor}"><summary>${esc(def.label)}<span class="cnt">${vals.length}</span></summary><div class="chipset">` +
         vals.sort((a, b) => (counts[b.id] || 0) - (counts[a.id] || 0)).map(v => {
           const on = filters[ax] && filters[ax].has(v.id);
           return `<span class="chip${on ? " on" : ""}" role="button" tabindex="0" data-axis="${ax}" data-value="${esc(v.id)}" style="${chipColors(ax, v.id)}" title="${esc(v.def || "")}">${esc(v.label)} <span class="muted tnum">${counts[v.id] || 0}</span></span>`;

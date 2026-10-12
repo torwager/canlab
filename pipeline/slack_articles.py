@@ -16,6 +16,7 @@ JOURNAL_CLUB_ANON (comma-separated Slack user ids to anonymise), plus the LLM ke
 Usage: python -m pipeline.slack_articles [--full] [--no-llm] [--limit N]
 """
 import argparse, json, os, re, sys, time, urllib.parse
+import emoji
 import requests
 from . import config
 from .db import make_id
@@ -23,6 +24,25 @@ from . import jc_social
 
 OUT = config.DATA / "journal_club.json"
 PRIVATE = ("message", "comments")  # lab members' words: used in memory only, never written to the public data file
+
+# Slack reaction names are shortcodes (e.g. "heart", "+1::skin-tone-4"); convert to the actual
+# glyph for display. Custom workspace emoji with no Unicode equivalent (e.g. "party_parrot") fall
+# back to the raw name, handled client-side.
+_SKIN_TONES = {"2": "\U0001F3FB", "3": "\U0001F3FC", "4": "\U0001F3FD", "5": "\U0001F3FE", "6": "\U0001F3FF"}
+_MANUAL_EMOJI = {"simple_smile": "🙂", "thumbsup_all": "👍", "thankyou": "🙏"}
+
+
+def emoji_glyph(name):
+    m = re.match(r"^(.*)::skin-tone-(\d)$", name)
+    base, tone = (m.group(1), m.group(2)) if m else (name, None)
+    e = emoji.emojize(f":{base}:", language="alias")
+    if e == f":{base}:" and "-" in base:
+        e = emoji.emojize(f":{base.replace('-', '_')}:", language="alias")
+    if e == f":{base}:":
+        e = _MANUAL_EMOJI.get(base, name)
+    elif tone in _SKIN_TONES:
+        e += _SKIN_TONES[tone]
+    return e
 
 
 def save(store):
@@ -260,7 +280,7 @@ def main():
             if new and new % 15 == 0:
                 save(store)  # checkpoint so an interrupted run keeps its work
             # 2. discussion: how many replies and reactions (not what was said)
-            it["reactions"] = [{"name": r["name"], "count": r["count"]} for r in (m.get("reactions") or [])]
+            it["reactions"] = [{"name": emoji_glyph(r["name"]), "count": r["count"]} for r in (m.get("reactions") or [])]
             if m.get("reply_count"):
                 rep = slack("conversations.replies", token, channel=chan, ts=m["ts"], limit=200)["messages"][1:]
                 it["n_comments"] = sum(1 for r in rep if clean_text(r.get("text")))  # a count only; reply text is not kept

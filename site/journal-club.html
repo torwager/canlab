@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://torwager.github.io/canlab/journal-club.html">
 <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="assets/app.css?v=9">
+<link rel="stylesheet" href="assets/app.css?v=10">
 <style>
   .jc-tabs { display: flex; gap: .4rem; margin: .2rem 0 1rem; }
   .jc-tabs button { border: 1px solid var(--line-2); background: var(--surface); border-radius: 999px; padding: .45em 1.1em; font: inherit; font-size: .9rem; font-weight: 500; color: var(--ink-2); cursor: pointer; }
@@ -56,7 +56,6 @@
     <h1>Papers the lab is reading</h1>
     <p>Every paper shared in the lab's <b>#articles</b> Slack channel, collected daily and tagged by topic and method the same way as the lab's own publications. Search or filter, switch to the timeline to see how a topic developed over time, and open a paper for its abstract and links to the publisher's page or PDF (publisher PDFs open with institutional access, for example on the Dartmouth VPN). The lab's discussion of each paper stays in Slack.</p>
   </div>
-  <div class="stat-row" id="stats"></div>
   <div class="layout jc">
     <aside class="filters" id="filtersWrap" aria-label="Filter by keyword">
       <div class="hint">Tags are assigned by an AI model from the title and abstract; <a href="about.html#tags">how tagging works</a>.</div>
@@ -82,31 +81,27 @@
 <div id="site-footer"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/minisearch/7.2.0/umd/index.min.js"></script>
 <script src="assets/config.js?v=7"></script>
-<script src="assets/app.js?v=8"></script>
-<script src="assets/layout.js?v=7"></script>
+<script src="assets/app.js?v=10"></script>
+<script src="assets/layout.js?v=11"></script>
 <script>
 (async function () {
   const esc = CL.esc;
-  const els = Object.fromEntries(["q", "go", "count", "active", "clear", "sort", "results", "stats", "filters", "tlTag", "tlCount", "timeline", "papersTab", "timelineTab", "showLinks", "pager"].map(k => [k, document.getElementById(k)]));
+  const els = Object.fromEntries(["q", "go", "count", "active", "clear", "sort", "results", "filters", "tlTag", "tlCount", "timeline", "papersTab", "timelineTab", "showLinks", "pager"].map(k => [k, document.getElementById(k)]));
   const PAGE = 60; let page = 1;
   await CL.loadCore();
   const state = CL.state;
   const { filters, params } = CL.filtersFromQuery();
   let jc = { items: [], updated: null };
   try { jc = await CL.getJSON("data/journal_club.json"); } catch (e) { /* not built yet */ }
-  const allItems = (jc.items || []).map(r => ({ ...r, tags: r.tags || {}, reactions: r.reactions || [], year: r.year ? +r.year : null, n_comments: r.n_comments || 0, n_react: (r.reactions || []).reduce((a, x) => a + (x.count || 0), 0) }));
+  const allItems = (jc.items || []).filter(r => !r.link_broken).map(r => ({ ...r, tags: r.tags || {}, reactions: r.reactions || [], year: r.year ? +r.year : null, n_comments: r.n_comments || 0, n_react: (r.reactions || []).reduce((a, x) => a + (x.count || 0), 0) }));
 
   let showLinks = params.get("links") === "1"; els.showLinks.checked = showLinks;
   const papersOnly = allItems.filter(r => (r.kind || "paper") === "paper");
   let items = showLinks ? allItems : papersOnly;
   if (!allItems.length) {
     els.results.innerHTML = `<div class="setup"><h3 style="margin:0 0 .4rem">Not connected yet</h3><p class="small" style="margin:0">The journal club fills itself from the lab's Slack <b>#articles</b> channel once the <code>SLACK_BOT_TOKEN</code> secret is set in the repository (see the README). Papers and tags are then imported every day.</p></div>`;
-    els.stats.innerHTML = ""; els.count.textContent = ""; document.getElementById("filtersWrap").hidden = true; return;
+    els.count.textContent = ""; document.getElementById("filtersWrap").hidden = true; return;
   }
-
-  // ---- stats
-  const years = allItems.map(r => r.shared_on).filter(Boolean).sort();
-  els.stats.innerHTML = `<div class="stat"><b class="tnum">${papersOnly.length}</b><span>papers shared</span></div><div class="stat"><b class="tnum">${allItems.length - papersOnly.length}</b><span>other links</span></div><div class="stat"><b class="tnum">${allItems.reduce((a, r) => a + r.n_comments, 0)}</b><span>replies in Slack</span></div><div class="stat"><b class="tnum">${years.length ? years[0].slice(0, 4) + "–" + years[years.length - 1].slice(0, 4) : ""}</b><span>years</span></div><div class="stat"><b class="tnum">${CL.fmtDate(jc.updated)}</b><span>last import</span></div>`;
 
   // ---- search index
   const ms = new MiniSearch({ fields: ["title", "abstract", "authors", "journal", "summary", "kw"], storeFields: ["id"], searchOptions: { prefix: true, fuzzy: 0.15, boost: { title: 3, summary: 2 } } });
@@ -137,9 +132,9 @@
     const isOpen = open === r.id;
     const au = (r.authors || []).slice(0, 3).join("; ") + ((r.authors || []).length > 3 ? " et al." : "");
     return `<article class="paper${isOpen ? " open" : ""}" id="${esc(r.id)}" data-id="${esc(r.id)}">
-      <div class="title"><a href="#${esc(r.id)}" data-open="${esc(r.id)}">${esc(r.title_unresolved ? (r.url || r.title).replace(/^https?:\/\//, "") : r.title)}</a>${(r.kind || "paper") !== "paper" ? '<span class="badge" title="Not a journal article: news, blog, tool or other link">link</span>' : ""}</div>
+      <div class="title"><a href="#${esc(r.id)}" data-open="${esc(r.id)}">${esc(r.title)}</a>${(r.kind || "paper") !== "paper" ? '<span class="badge" title="Not a journal article: news, blog, tool or other link">link</span>' : ""}</div>
       <div class="meta"><span class="authors">${esc(au)}</span>${r.journal ? `<span>${esc(r.journal)}</span>` : ""}${r.year ? `<span class="date">${r.year}</span>` : ""}</div>
-      <div class="shared">Shared ${CL.fmtDate(r.shared_on)}${r.shared_by ? ` by <b>${esc(r.shared_by)}</b>` : ""}${r.n_comments ? `<span class="cc">${r.n_comments} repl${r.n_comments > 1 ? "ies" : "y"} in Slack</span>` : ""}${r.reactions.length ? `<span class="rx">${r.reactions.slice(0, 4).map(x => `<span>:${esc(x.name)}: ${x.count}</span>`).join("")}</span>` : ""}</div>
+      <div class="shared">Shared ${CL.fmtDate(r.shared_on)}${r.shared_by ? ` by <b>${esc(r.shared_by)}</b>` : ""}${r.n_comments ? `<span class="cc">${r.n_comments} repl${r.n_comments > 1 ? "ies" : "y"} in Slack</span>` : ""}${r.reactions.length ? `<span class="rx">${r.reactions.slice(0, 4).map(x => `<span>${esc(x.name)} ${x.count}</span>`).join("")}</span>` : ""}</div>
       ${r.summary ? `<div class="summary">${esc(r.summary)}</div>` : ""}
       <div class="chips">${CL.chipsFor(r, true)}</div>
       <div class="links">${linkPills(r)}</div>
@@ -167,7 +162,7 @@
     els.count.textContent = `${shown.length} paper${shown.length === 1 ? "" : "s"}`;
     els.active.innerHTML = CL.activeChips(filters);
     els.clear.hidden = !(q || Object.values(filters).some(s => s.size));
-    CL.renderFilters(els.filters, q ? items.filter(r => hits.has(r.id)) : items, filters, run);
+    CL.renderFilters(els.filters, q ? items.filter(r => hits.has(r.id)) : items, filters, run, CL.FILTER_AXES, false);
     CL.filtersToQuery(filters, { q, sort: sort !== "shared" ? sort : "", tab: tab === "timeline" ? "timeline" : "", links: showLinks ? "1" : "" });
     if (open && shown.some(r => r.id === open)) page = Math.floor(shown.findIndex(r => r.id === open) / PAGE) + 1;
     const pages = Math.max(1, Math.ceil(shown.length / PAGE)); page = Math.min(Math.max(1, page), pages);

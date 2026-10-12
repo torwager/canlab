@@ -286,7 +286,10 @@ mark { background: var(--amber-soft); color: inherit; padding: 0 .1em; border-ra
 .detail .related li { margin: .3rem 0; }
 
 /* People */
-.people-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+.people-grid { display: grid; gap: 1rem; grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 860px) { .people-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) { .people-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 420px) { .people-grid { grid-template-columns: 1fr; } }
 .person { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); overflow: hidden; display: grid; grid-template-rows: auto 1fr; transition: transform .3s var(--ease), box-shadow .3s var(--ease); cursor: pointer; }
 .person:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 .person .ph { aspect-ratio: 1 / 1; background: var(--surface-2); overflow: hidden; }

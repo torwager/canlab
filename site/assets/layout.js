@@ -8,7 +8,7 @@
     { title: "Open data", url: "https://github.com/canlab/CANlab_data_public", img: "data.jpg", blurb: "Shared behavioural and physiological datasets from published studies." },
     { title: "Task paradigms", url: "https://github.com/canlab/Paradigms_Public", img: "paradigms.jpg", blurb: "Experimental task code from published studies, ready to run." },
     { title: "Journal club", url: "journal-club.html", img: "journal-club.jpg", blurb: "Papers the lab is reading, searchable by topic and method." },
-    { title: "My reading list", url: "mylist.html", img: "mylist.jpg", blurb: "Star papers into lists and export them to your reference manager." },
+    { title: "My list", url: "mylist.html", img: "mylist.jpg", blurb: "Star papers into lists and export them to your reference manager." },
     { title: "Collaborator network", url: "network.html", img: "network.jpg", blurb: "An interactive map of the lab's co-authors." },
     { title: "Bibliometrics", url: "bibliometrics.html", img: "bibliometrics.jpg", blurb: "Publications, topics and methods over the years." },
     { title: "Science of Placebo", url: "https://scienceofplacebo.org", img: "placebo.jpg", blurb: "A research hub on placebo and nocebo effects." },
@@ -23,7 +23,8 @@
     <nav class="nav" id="nav" aria-label="Main">
       <a href="research.html">Research</a>
       <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
+      <div class="menu"><a href="publications.html" class="menu-btn" aria-haspopup="true" aria-expanded="false">Publications ▾</a>
+        <div class="menu-list"><a href="publications.html"><b>All publications</b></a><a href="mylist.html">My list</a></div></div>
       <a href="news.html">News</a>
       <a href="resources.html">Tools &amp; training</a>
       <div class="menu"><a href="explore.html" class="menu-btn" aria-haspopup="true" aria-expanded="false">Explore ▾</a>

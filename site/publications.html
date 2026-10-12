@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://torwager.github.io/canlab/publications.html">
 <link rel="alternate" type="application/rss+xml" title="CANlab: new papers" href="feed.xml">
 <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="assets/app.css?v=9">
+<link rel="stylesheet" href="assets/app.css?v=10">
 <style>
   .head-hero { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
   .head-hero .page-head { margin-bottom: .8rem; }
@@ -122,8 +122,8 @@
 <div id="site-footer"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/minisearch/7.2.0/umd/index.min.js"></script>
 <script src="assets/config.js?v=7"></script>
-<script src="assets/app.js?v=8"></script>
-<script src="assets/layout.js?v=7"></script>
+<script src="assets/app.js?v=10"></script>
+<script src="assets/layout.js?v=11"></script>
 <script src="assets/account.js?v=7"></script>
 <script src="assets/hero.js?v=7"></script>
 <script>
@@ -188,7 +188,7 @@
     let pool = state.index.filter(r => (!hits || hits.has(r.id)) && authorHit(r) && (!els.onlyList.checked || CL.list.has(r.id)) && (!els.onlyPdf.checked || r.pdf));
     const yf = +els.yfrom.value || 0, yt = +els.yto.value || 9999;
     pool = pool.filter(r => (r.y || 0) >= yf && (r.y || 0) <= yt);
-    CL.renderFilters(els.filters, pool, filters, () => { page = 1; run(); });
+    CL.renderFilters(els.filters, pool, filters, () => { page = 1; run(); }, CL.FILTER_AXES, false);
     const shown = pool.filter(r => CL.matches(r, filters));
     const sort = els.sort.value;
     const byDate = (a, b) => ((b.y || 0) - (a.y || 0)) || (b.d || "").localeCompare(a.d || "") || (a.st === "preprint" ? -1 : 0);

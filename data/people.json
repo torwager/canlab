@@ -182,6 +182,16 @@
   "source_url": "https://sites.dartmouth.edu/canlab/people/hsin-yun-tsai"
  },
  {
+  "id": "yi-hsuan-lin",
+  "name": "Yi-Hsuan Lin",
+  "role": "Postdoc, Dartmouth College",
+  "section": "Postdocs",
+  "current": true,
+  "img": "yi-hsuan-lin.jpg",
+  "bio": [],
+  "links": []
+ },
+ {
   "id": "zizhuang-miao",
   "name": "Zizhuang Miao",
   "role": "Graduate Student, Dartmouth College",
@@ -335,7 +345,7 @@
  {
   "id": "oleh-pavchak",
   "name": "Oleh Pavchak",
-  "role": "Dartmouth College",
+  "role": "Undergraduate RA, Dartmouth College",
   "section": "Undergraduate Research Assistants",
   "current": true,
   "img": "2026_06_img_8156_480.jpg",

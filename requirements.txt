@@ -5,3 +5,4 @@ anthropic>=1.0
 openai>=1.50
 python-dateutil>=2.8
 pymupdf>=1.24
+emoji>=2.0

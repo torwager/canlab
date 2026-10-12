@@ -191,7 +191,7 @@ def curate(items):
         u2 = decode_redirect(it["url"])
         if u2 != it["url"]:
             it["url_original"], it["url"] = it["url"], u2
-        bad = not it.get("title") or it["title"] in (it.get("url"), it.get("url_original")) or bool(BAD_TITLES.match(it["title"].strip())) or bool(it.get("title_unresolved"))
+        bad = not it.get("title") or it["title"] in (it.get("url"), it.get("url_original")) or bool(BAD_TITLES.match(it["title"].strip())) or bool(it.get("title_unresolved")) or it["title"].strip().lower().startswith(("http://", "https://"))
         if bad or not it.get("doi"):
             doi = clean_doi(it["doi"]) if it.get("doi") else doi_from_url(it["url"])
             if doi and doi.startswith("10.1093/"):
@@ -215,7 +215,7 @@ def curate(items):
         it["kind"] = "paper" if is_paper(it) else "link"
         n_paper += it["kind"] == "paper"
         it["title"] = strip_site_prefix(it.get("title"))
-        if BAD_TITLES.match((it.get("title") or "").strip()) or it["title"] in (it.get("url"), it.get("url_original")) or it.get("title_unresolved"):
+        if BAD_TITLES.match((it.get("title") or "").strip()) or it["title"] in (it.get("url"), it.get("url_original")) or it.get("title_unresolved") or it["title"].strip().lower().startswith(("http://", "https://")):
             # No usable title from the link. If the poster pasted the paper's title, Crossref confirms it;
             # otherwise show a neutral label. Never publish the poster's own words as a title.
             meta = crossref_title_match(message_line(it))
