@@ -1805,10 +1805,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF (author manuscript)",
-    "url": "pdf/author_manuscripts/murillo2026gray.pdf",
-    "url_original": "pdf/author_manuscripts/murillo2026gray.pdf",
-    "version": "author_manuscript"
+    "label": "PDF",
+    "url": "pdf/murillo2026gray.pdf",
+    "url_original": "https://doi.org/10.1016/j.jpain.2025.105644",
+    "version": "publisher"
    },
    {
     "type": "publisher",
@@ -1876,9 +1876,8 @@
    "tried": []
   },
   "pdf_upgrade": {
-   "last": "2026-10-10",
-   "result": "not-found",
-   "tried": []
+   "last": "2026-10-12",
+   "result": "replaced by hand with the publisher PDF"
   }
  },
  {
