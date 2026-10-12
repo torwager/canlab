@@ -73,7 +73,22 @@
      "url": "https://github.com/canlab/Neuroimaging_Pattern_Masks"
     }
    ],
-   "thumb": "tool-neuromarker-gallery.jpg"
+   "thumb": "tool-neuromarker-gallery.jpg",
+   "group": "Brain signatures & atlases"
+  },
+  {
+   "title": "Neuroimaging Pattern Masks",
+   "url": "https://github.com/canlab/Neuroimaging_Pattern_Masks",
+   "blurb": "Brain signature patterns (SIIPS, PINES, VPS and others), atlases of regions, and meta-analysis masks for neuroimaging data analysis.",
+   "extra": [
+    {
+     "label": "CANlab Brain Patterns website",
+     "url": "https://sites.google.com/dartmouth.edu/canlab-brainpatterns/home"
+    }
+   ],
+   "thumb": "tool-masks.jpg",
+   "note": "The Neurologic Pain Signature (NPS) is not in the public repository; it is available on request by emailing Prof. Wager.",
+   "group": "Brain signatures & atlases"
   },
   {
    "title": "canlab.github.io",
@@ -89,68 +104,64 @@
      "url": "https://canlab.github.io/walkthroughs/"
     }
    ],
-   "thumb": "tool-canlab-github.jpg"
-  },
-  {
-   "title": "Neuroimaging Pattern Masks",
-   "url": "https://github.com/canlab/Neuroimaging_Pattern_Masks",
-   "blurb": "Brain signature patterns (SIIPS, PINES, VPS and others), atlases of regions, and meta-analysis masks for neuroimaging data analysis.",
-   "extra": [
-    {
-     "label": "CANlab Brain Patterns website",
-     "url": "https://sites.google.com/dartmouth.edu/canlab-brainpatterns/home"
-    }
-   ],
-   "thumb": "tool-masks.jpg",
-   "note": "The Neurologic Pain Signature (NPS) is not in the public repository; it is available on request by emailing Prof. Wager."
+   "thumb": "tool-canlab-github.jpg",
+   "group": "CANlab GitHub hub"
   },
   {
    "title": "CANlab Core Tools",
    "url": "https://github.com/canlab/CanlabCore",
    "blurb": "Interactive, object-oriented data visualization and analysis, and multivariate prediction, in MATLAB.",
-   "thumb": "tool-code.jpg"
+   "thumb": "tool-code.jpg",
+   "group": "CANlab Core toolboxes"
   },
   {
    "title": "CANlab Help Examples",
    "url": "https://github.com/canlab/CANlab_help_examples",
    "blurb": "Walkthroughs and help examples for CANlab Core, plus group analysis and prediction scripts.",
-   "thumb": "tool-examples.jpg"
+   "thumb": "tool-examples.jpg",
+   "group": "CANlab Core toolboxes"
   },
   {
    "title": "Mediation Toolbox",
    "url": "https://github.com/canlab/MediationToolbox",
    "blurb": "Single- and multi-level mediation analysis, and mediation brain search (M3).",
-   "thumb": "tool-mediation.jpg"
+   "thumb": "tool-mediation.jpg",
+   "group": "CANlab Core toolboxes"
   },
   {
    "title": "MKDA neuroimaging meta-analysis",
    "url": "https://github.com/canlab/Canlab_MKDA_MetaAnalysis",
    "blurb": "Coordinate-based meta-analysis for neuroimaging using Multilevel Kernel Density Analysis and related statistical tools.",
-   "thumb": "tool-mkda.jpg"
+   "thumb": "tool-mkda.jpg",
+   "group": "CANlab Core toolboxes"
   },
   {
    "title": "Robust Toolbox",
    "url": "https://github.com/canlab/RobustToolbox",
    "blurb": "Robust regression for second-level (group) analysis.",
-   "thumb": "tool-robust.jpg"
+   "thumb": "tool-robust.jpg",
+   "group": "CANlab Core toolboxes"
   },
   {
    "title": "Paradigms",
    "url": "https://github.com/canlab/Paradigms_Public",
    "blurb": "Experimental paradigms, code and stimuli.",
-   "thumb": "tool-paradigm-design.jpg"
+   "thumb": "tool-paradigm-design.jpg",
+   "group": "CANlab Core toolboxes"
   },
   {
    "title": "CANlab Datasets",
    "url": "https://github.com/canlab/CANlab_data_public",
    "blurb": "Datasets from published CANlab papers.",
-   "thumb": "tool-data.jpg"
+   "thumb": "tool-data.jpg",
+   "group": "CANlab Core toolboxes"
   },
   {
    "title": "Preprocessing Pipeline",
    "url": "https://github.com/canlab/preprocess",
    "blurb": "The CANlab SPM-based fMRI preprocessing pipeline.",
-   "thumb": "tool-preprocess.jpg"
+   "thumb": "tool-preprocess.jpg",
+   "group": "CANlab Core toolboxes"
   }
  ],
  "chapters_intro": "There is some overlap across chapters, but each covers some unique topics.",

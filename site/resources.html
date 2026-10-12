@@ -18,7 +18,7 @@
 <meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
 <link rel="canonical" href="https://torwager.github.io/canlab/resources.html">
 <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="assets/app.css?v=7">
+<link rel="stylesheet" href="assets/app.css?v=9">
 <style>
   .book { display: grid; grid-template-columns: auto 1fr; gap: 1.2rem; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; box-shadow: var(--shadow); max-width: 900px; }
   .book .coverimg { width: 120px; border-radius: 6px; box-shadow: 0 10px 20px -10px rgba(26,35,50,.5); display: block; }
@@ -27,9 +27,29 @@
   .res-card .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s var(--ease); }
   .res-card:hover .thumb img { transform: scale(1.08); }
   .res-card.has-thumb > div { display: grid; gap: .35rem; }
-  .res-card.has-thumb.wide { grid-template-columns: 152px minmax(0, 1fr); }
-  .res-card.has-thumb.wide .thumb { width: 152px; height: 76px; }
-  @media (max-width: 560px) { .res-card.has-thumb.wide { grid-template-columns: 1fr; } .res-card.has-thumb.wide .thumb { width: 100%; height: auto; aspect-ratio: 2 / 1; } }
+  .res-card.has-thumb.stacked { grid-template-columns: 1fr; }
+  .res-card.has-thumb.stacked .thumb { width: 100%; height: auto; aspect-ratio: 2 / 1; }
+  .courses-grid { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 900px) { .courses-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px) { .courses-grid { grid-template-columns: 1fr; } }
+  .tools-list { grid-template-columns: 1fr; gap: .5rem; }
+  .tools-list .res-card { padding: .6rem .8rem; }
+  .tools-list .res-card.has-thumb { grid-template-columns: 44px minmax(0, 1fr); gap: .6rem; }
+  .tools-list .res-card .thumb { width: 44px; height: 44px; border-radius: 8px; }
+  .tools-list .res-card h3 { font-size: .95rem; }
+  .tools-list .res-card p { font-size: .82rem; }
+  .tools-group { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin-top: .6rem; }
+  .tools-group-h { font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--amber-deep); font-weight: 600; padding: .8rem .9rem .2rem; }
+  .tool-row { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: .6rem; align-items: center; padding: .55rem .9rem; border-top: 1px solid var(--line); }
+  .tool-row:first-of-type { border-top: none; }
+  .tool-row > div { display: grid; gap: .15rem; }
+  .tool-row .thumb { display: block; width: 44px; height: 44px; border-radius: 8px; overflow: hidden; background: var(--surface-2); }
+  .tool-row .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .tool-row h3 { font-size: .95rem; margin: 0; }
+  .tool-row h3 a { color: var(--ink); text-decoration: none; }
+  .tool-row h3 a:hover { color: var(--steel-deep); }
+  .tool-row p { font-size: .82rem; margin: 0; color: var(--ink-2); }
+  .tool-row .extra { display: flex; flex-wrap: wrap; gap: .5rem .9rem; font-size: .78rem; }
   .book .cover { width: 90px; height: 120px; border-radius: 6px; background: linear-gradient(160deg, var(--steel-deep), var(--steel)); color: #fff; font-family: var(--serif); display: grid; place-items: center; text-align: center; font-size: .8rem; padding: .5rem; box-shadow: 0 10px 20px -10px rgba(26,35,50,.5); }
   .book h3 { margin: 0 0 .2rem; }
   .book p { margin: 0 0 .5rem; color: var(--ink-2); font-size: .95rem; }
@@ -61,10 +81,23 @@
     <div class="section" id="books" style="margin-top:0"><h2>Books</h2></div>
     <div style="display:grid;gap:1rem">${r.books.map(b => `<div class="book rv in">${b.cover ? `<a href="${esc(b.url)}" target="_blank" rel="noopener"><img class="coverimg" src="assets/img/${esc(b.cover)}" alt="Cover of ${esc(b.title)}"></a>` : `<div class="cover">${esc(b.title)}</div>`}<div><h3><a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.title)} ↗</a></h3><p class="small muted" style="margin-bottom:.3rem">${esc(b.authors)}</p><p>${esc(b.blurb)}</p><div style="display:flex;gap:.5rem;flex-wrap:wrap"><a class="btn primary" href="${esc(b.url)}" target="_blank" rel="noopener">${b.url.includes("mitpress") ? "MIT Press" : "Get the e-book"} ↗</a>${(b.extra || []).map(x => `<a class="btn" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)} ↗</a>`).join("")}</div></div></div>`).join("")}</div>
     <div class="section" id="courses"><h2>Courses</h2><span class="muted">Free video lectures, self-quizzes and workshops</span></div>
-    <div class="res-grid">${r.courses.map(c => `<article class="res-card${c.thumb ? " has-thumb wide" : ""}">${c.thumb ? `<a class="thumb" href="${esc(c.url)}" target="_blank" rel="noopener"><img src="assets/img/${esc(c.thumb)}" alt="${esc(c.thumb_alt || "")}" loading="lazy"></a>` : ""}<div><span class="prov">${esc(c.provider)}</span><h3><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></h3><p>${esc(c.blurb)}</p>${extra(c.extra)}</div></article>`).join("")}</div>
+    <div class="res-grid courses-grid">${r.courses.map(c => `<article class="res-card${c.thumb ? " has-thumb stacked" : ""}">${c.thumb ? `<a class="thumb" href="${esc(c.url)}" target="_blank" rel="noopener"><img src="assets/img/${esc(c.thumb)}" alt="${esc(c.thumb_alt || "")}" loading="lazy"></a>` : ""}<div><span class="prov">${esc(c.provider)}</span><h3><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)} ↗</a></h3><p>${esc(c.blurb)}</p>${extra(c.extra)}</div></article>`).join("")}</div>
     <div class="section" id="tools"><h2>Open-source neuroimaging analysis tools</h2></div>
     <p class="prose" style="margin-bottom:1rem">${esc(r.tools_intro)}</p>
-    <div class="res-grid">${r.tools.map(t => `<article class="res-card${t.thumb ? " has-thumb" : ""}">${t.thumb ? `<a class="thumb" href="${esc(t.url)}" target="_blank" rel="noopener"><img src="assets/img/${esc(t.thumb)}" alt="" loading="lazy"></a>` : ""}<div><h3><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.title)} ↗</a></h3><p>${esc(t.blurb)}</p>${t.note ? `<p class="small muted" style="margin:.2rem 0 0">${esc(t.note)}</p>` : ""}${extra(t.extra)}</div></article>`).join("")}</div>
+    ${(() => {
+      const runs = [];
+      r.tools.forEach(t => {
+        const key = t.group || null;
+        const last = runs[runs.length - 1];
+        if (last && last.key === key) last.items.push(t); else runs.push({ key, items: [t] });
+      });
+      const card = t => `<article class="res-card${t.thumb ? " has-thumb" : ""}">${t.thumb ? `<a class="thumb" href="${esc(t.url)}" target="_blank" rel="noopener"><img src="assets/img/${esc(t.thumb)}" alt="" loading="lazy"></a>` : ""}<div><h3><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.title)} ↗</a></h3><p>${esc(t.blurb)}</p>${t.note ? `<p class="small muted" style="margin:.2rem 0 0">${esc(t.note)}</p>` : ""}${extra(t.extra)}</div></article>`;
+      const row = t => `<div class="tool-row">${t.thumb ? `<a class="thumb" href="${esc(t.url)}" target="_blank" rel="noopener"><img src="assets/img/${esc(t.thumb)}" alt="" loading="lazy"></a>` : ""}<div><h3><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.title)} ↗</a></h3><p>${esc(t.blurb)}</p>${t.note ? `<p class="small muted" style="margin:.2rem 0 0">${esc(t.note)}</p>` : ""}${extra(t.extra)}</div></div>`;
+      return runs.map(run => run.key
+        ? `<div class="tools-group"><div class="tools-group-h">${esc(run.key)}</div>${run.items.map(row).join("")}</div>`
+        : `<div class="res-grid tools-list">${run.items.map(card).join("")}</div>`
+      ).join("");
+    })()}
     <div class="section" id="chapters"><h2>fMRI methods chapters</h2><span class="muted">${esc(r.chapters_intro)}</span></div>
     <div class="res-list">${r.chapters.map(c => `<div class="res"><span class="name"><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a></span><span class="country">PDF ↗</span><span class="sub">${esc(c.where)}</span></div>`).join("")}</div>
     <div class="section" id="elsewhere"><h2>Elsewhere</h2></div>
