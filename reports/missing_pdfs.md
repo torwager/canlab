@@ -1,24 +1,22 @@
 # Lab papers without a PDF on the site
 
-Updated 2026-10-12 by `pipeline/fetch_pdfs.py` (runs daily). 6 papers.
+Updated 2026-10-12 by `pipeline/fetch_pdfs.py` (runs daily). 3 papers.
 
 No open-access copy could be found for these. To add one: download the PDF from the publisher link (institutional access, e.g. on the Dartmouth VPN), save it as `site/pdf/<file name>` in the repository and push; the next daily run links it on the site. Author manuscripts go in `site/pdf/author_manuscripts/`.
 
 | Year | Paper | Publisher link | Save as |
 |---|---|---|---|
-| 2023 | A multivariate brain signature for reward | https://doi.org/10.1016/j.neuroimage.2023.119990 | `speer2023multivariate.pdf` |
-| 2019 | Power and design considerations in imaging research | https://doi.org/10.1016/b978-0-12-816179-1.00011-6 | `munafo2019power.pdf` |
 | 2015 | Pharmacological fMRI | no DOI found | `borsook2015pharmacological.pdf` |
 | 2015 | Placebo and activity in the central nervous system | no DOI found | `sprenger2015placebo.pdf` |
-| 2013 | Brain predictors of individual differences in placebo responding | https://doi.org/10.1016/b978-0-12-397928-5.00010-6 | `koban2011predictors.pdf` |
 | 2008 | Application of change-point theory to modeling state-related activity in fMRI | https://doi.org/10.4324/9780203843147-11 | `lindquist2008application.pdf` |
 
 ## Published papers whose PDF is a manuscript or preprint
 
-73 papers. The site labels these "PDF (author manuscript)" or "PDF (preprint)". The daily run looks for an open-access published version once a month; to replace one by hand, save the publisher's PDF over the file named here and push.
+75 papers. The site labels these "PDF (author manuscript)" or "PDF (preprint)". The daily run looks for an open-access published version once a month; to replace one by hand, save the publisher's PDF over the file named here and push.
 
 | Year | Paper | Now | Publisher link | File |
 |---|---|---|---|---|
+| 2026 | Mitochondrial Psychobiology | author manuscript | no DOI | `site/pdf/andreazza2026mitochondrial.pdf` |
 | 2026 | Spatiotemporal Dissociation of Human Amygdala Response to Negative Affect | preprint | https://doi.org/10.64898/2026.08.18.745530 | `site/pdf/bo2026spatiotemporal.pdf` |
 | 2026 | Intrinsic Functional Subregions of the Human Hypothalamus: Cortical Coupling and Subregional Organiz | author manuscript | https://doi.org/10.1162/netn.a.609 | `site/pdf/lee2026functional.pdf` |
 | 2026 | Mitoception Via the Metabokine GDF15 and Human Health | author manuscript | https://doi.org/10.31219/osf.io/ekj54_v3 | `site/pdf/liu2026mitoception.pdf` |
@@ -72,6 +70,7 @@ No open-access copy could be found for these. To add one: download the PDF from 
 | 2014 | Identifying functional co-activation patterns in neuroimaging studies via poisson graphical models | author manuscript | https://doi.org/10.1111/biom.12216 | `site/pdf/author_manuscripts/xue2014identifying.pdf` |
 | 2013 | Expectations and beliefs: Insights from cognitive neuroscience | author manuscript | no DOI | `site/pdf/atlas2013expectations.pdf` |
 | 2013 | Multiple potential mechanisms for context effects on pain | author manuscript | https://doi.org/10.1016/j.pain.2013.02.011 | `site/pdf/author_manuscripts/jepma2013multiple.pdf` |
+| 2013 | Brain predictors of individual differences in placebo responding | author manuscript | https://doi.org/10.1016/b978-0-12-397928-5.00010-6 | `site/pdf/author_manuscripts/koban2011predictors.pdf` |
 | 2013 | How Is Pain Influenced by Cognition? Neuroimaging Weighs In | author manuscript | https://doi.org/10.1177/1745691612469631 | `site/pdf/author_manuscripts/wager2013pain.pdf` |
 | 2013 | Placebo analgesia | author manuscript | https://doi.org/10.1007/978-3-540-29805-2_3363 | `site/pdf/wager2013placebo.pdf` |
 | 2012 | Estimating and testing variance components in a multi-level GLM | author manuscript | https://doi.org/10.1016/j.neuroimage.2011.07.077 | `site/pdf/lindquist2012estimating.pdf` |
