@@ -153,8 +153,12 @@ main.wrap { padding-top: 104px; padding-bottom: 4rem; }
 .paper .links { display: flex; flex-wrap: wrap; gap: .9rem; font-size: .84rem; }
 .badge { font-size: .68rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: .1rem .45rem; border-radius: 5px; background: var(--surface-2); color: var(--ink-2); }
 .badge.new { background: var(--ok-soft); color: var(--ok); }
+.badge.new.fresh { background: #d3e87f; color: #435200; text-decoration: none; }
+a.badge.new.fresh:hover { background: #c4dc63; }
 .badge.adjacent { background: var(--warn-soft); color: var(--warn); }
 .badge.oa { background: var(--steel-soft); color: var(--steel-deep); }
+.badge.preprint { background: #f9c9dc; color: #a3245b; text-decoration: none; }
+a.badge.preprint:hover { background: #f4b3cd; }
 .week-head { font-size: .74rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin: .9rem 0 .1rem; display: flex; align-items: center; gap: .7rem; }
 .week-head::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 
@@ -162,6 +166,11 @@ main.wrap { padding-top: 104px; padding-bottom: 4rem; }
 .searchbar { display: flex; gap: .5rem; margin-bottom: .9rem; }
 .searchbar input { flex: 1; font: inherit; font-size: 1rem; padding: .7em 1em; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); }
 .searchbar input:focus { border-color: var(--amber-deep); outline: none; }
+.ac-wrap { position: relative; }
+.ac-wrap input { width: 100%; box-sizing: border-box; }
+.ac-list { position: absolute; z-index: 30; top: calc(100% + 6px); left: 0; right: 0; min-width: 240px; background: var(--surface); border: 1px solid var(--line-2); border-radius: 14px; box-shadow: 0 10px 30px rgba(26, 35, 50, .14); padding: .3rem; }
+.ac-item { display: flex; justify-content: space-between; gap: .8rem; padding: .45rem .7rem; border-radius: 9px; cursor: pointer; font-size: .92rem; }
+.ac-item.on, .ac-item:hover { background: var(--amber-soft); }
 .sortbar { display: flex; gap: .7rem; align-items: center; font-size: .86rem; color: var(--ink-2); flex-wrap: wrap; }
 select, input[type="search"] { font: inherit; }
 select { font-size: .86rem; padding: .3rem .5rem; border-radius: 8px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); }

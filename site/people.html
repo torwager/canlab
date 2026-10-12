@@ -18,7 +18,7 @@
 <meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
 <link rel="canonical" href="https://torwager.github.io/canlab/people.html">
 <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="assets/app.css?v=10">
+<link rel="stylesheet" href="assets/app.css?v=19">
 <style>
   .ph.none { display: grid; place-items: center; background: linear-gradient(135deg, var(--amber-soft), var(--steel-soft)); }
   .ph .initials { font-family: var(--serif); font-size: 2.6rem; color: var(--ink-3); letter-spacing: .02em; }
@@ -54,8 +54,8 @@
 </main>
 <div id="site-footer"></div>
 <script src="assets/config.js?v=7"></script>
-<script src="assets/app.js?v=10"></script>
-<script src="assets/layout.js?v=11"></script><script>
+<script src="assets/app.js?v=17"></script>
+<script src="assets/layout.js?v=12"></script><script>
 (async function () {
   const people = await CL.getJSON("data/people.json");
   const esc = CL.esc;
@@ -70,7 +70,7 @@
         <div class="links">${(pi.links || []).map(l => `<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("")}<a class="btn" href="publications.html?author=Wager%20TD">Publications</a></div></div></section>`;
   const card = p => `<article class="person${p.current ? "" : " alum"}" id="${esc(p.id)}" tabindex="0" role="button" aria-expanded="false">
       <div class="ph${p.img ? "" : " none"}">${p.img ? `<img src="assets/img/${esc(p.img)}" alt="${esc(p.name)}" loading="lazy">` : `<span class="initials" aria-hidden="true">${esc(p.name.split(/\s+/).filter(Boolean).map(w => w[0]).slice(0, 2).join(""))}</span>`}</div>
-      <div class="who"><b>${esc(p.name)}</b><span>${esc(p.role)}</span></div>
+      <div class="who"><b>${esc(p.name)}</b><span${p.section === "Postdocs" && p.role === "Postdoc, Dartmouth College" ? ' style="white-space:nowrap"' : ""}>${esc(p.role)}</span></div>
       <div class="bio"><span class="close" data-close>Close ×</span><h3>${esc(p.name)}</h3><div class="role">${esc(p.role)}</div>${(p.bio || []).length ? p.bio.map(b => `<p>${esc(b)}</p>`).join("") : '<p class="muted">No bio on file.</p>'}
         <div class="plinks">${(p.links || []).map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("")}<a href="publications.html?author=${encodeURIComponent(surnameKey(p.name))}">Publications with the lab</a></div></div>
     </article>`;
