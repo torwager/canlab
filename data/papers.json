@@ -99,6 +99,130 @@
   }
  },
  {
+  "title": "Mitochondrial Psychobiology",
+  "authors": [
+   "Andreazza, A. C.",
+   "Behnke, A.",
+   "Bolanos, J. P.",
+   "de Juan-Sanz, J.",
+   "Epel, E.",
+   "Evans, M. K.",
+   "Barrett, L. F.",
+   "Gyllenhammer, L. E.",
+   "Hirabayashi, Y.",
+   "Hirano, M.",
+   "Hollis, F.",
+   "Kelly, D. P.",
+   "Kempes, C.",
+   "Kolassa, I.-T.",
+   "Lane, N.",
+   "Lobo, M. K.",
+   "Mujica-Parodi, L. R.",
+   "O'Donovan, A.",
+   "Ongur, D.",
+   "Picard, M.",
+   "Pressman, S. D.",
+   "Sandi, C.",
+   "Shirihai, O.",
+   "Trumpff, C.",
+   "Van Oudenhove, L.",
+   "Wager, T. D."
+  ],
+  "year": 2026,
+  "journal": "Neuroscience & Biobehavioral Reviews",
+  "status": "in press",
+  "kind": "article",
+  "abstract": "A field that uses mitochondria to unify biological and psychological sciences and to better understand the basis of health has emerged—Mitochondrial Psychobiology. Mitochondria are the body’s cellular hubs for energy transformation and signaling. Mitochondria regulate functions as diverse as metabolism, gene expression, and stress adaptation; consequently, their dysregulation is linked to most chronic illnesses and aging. Here, we propose that mitochondria provide a mechanistic bridge between body and the measurable functions of the mind, including perception, cognition, emotion, and behavior. From this perspective, mitochondria provide a scientifically tractable interface through which bioenergetic processes relate to subjective experiences and behaviors. We outline foundational principles for Mitochondrial Psychobiology, discuss the key gaps that the field needs to address to advance our understanding of mind-mitochondria relationships across the lifecourse, and review emerging approaches to probe the mind-mitochondria connection across levels. This stimulating scientific challenge is a unique opportunity to train the next generation of interdisciplinary scientists, resolve conceptual and technical challenges spanning temporal and spatial scales, and develop a more accurate, holistic model of health. Rooted in general energetic principles, mitochondrial psychobiology is poised to productively steer biomedicine over the coming decades.",
+  "abstract_source": "author manuscript",
+  "keywords": [
+   "stress",
+   "resilience",
+   "modeling",
+   "brain",
+   "bioenergetics",
+   "mitochondria",
+   "regulation",
+   "evolution",
+   "robustness",
+   "environment",
+   "psychopathology",
+   "transdisciplinary"
+  ],
+  "links": [
+   {
+    "type": "pdf",
+    "label": "PDF (author manuscript)",
+    "url": "pdf/andreazza2026mitochondrial.pdf",
+    "url_original": "pdf/andreazza2026mitochondrial.pdf",
+    "version": "author_manuscript"
+   }
+  ],
+  "source": "manual (added by Neena)",
+  "authors_short": [
+   "Andreazza AC",
+   "Behnke A",
+   "Bolanos JP",
+   "de Juan-Sanz J",
+   "Epel E",
+   "Evans MK",
+   "Barrett LF",
+   "Gyllenhammer LE",
+   "Hirabayashi Y",
+   "Hirano M",
+   "Hollis F",
+   "Kelly DP",
+   "Kempes C",
+   "Kolassa IT",
+   "Lane N",
+   "Lobo MK",
+   "Mujica-Parodi LR",
+   "O'Donovan A",
+   "Ongur D",
+   "Picard M",
+   "Pressman SD",
+   "Sandi C",
+   "Shirihai O",
+   "Trumpff C",
+   "Van Oudenhove L",
+   "Wager TD"
+  ],
+  "id": "andreazza2026mitochondrial",
+  "date_added": "2026-10-12",
+  "has_pdf": true,
+  "tags": {
+   "topic": [
+    "brain_body",
+    "stress"
+   ],
+   "approach": [
+    "computational_model"
+   ],
+   "type": [
+    "review"
+   ]
+  },
+  "summary": "This consensus review by participants of the inaugural Banbury Mitochondrial Psychobiology meeting proposed mitochondria as a mechanistic bridge between the body and mental functions, outlining seven foundational principles, key open questions and methods for studying mind-mitochondria links across the lifecourse.",
+  "key_finding": "Proposes Mitochondrial Psychobiology as a field built on seven energetic principles linking mitochondrial bioenergetics and signaling to perception, cognition, emotion and behavior.",
+  "free_keywords": [
+   "mitochondria",
+   "bioenergetics",
+   "energy budgeting",
+   "mitochondrial psychobiology",
+   "allostasis",
+   "Banbury meeting"
+  ],
+  "classification": {
+   "taxonomy_version": "1.1.0",
+   "prompt_version": "1.2.0",
+   "model": "Claude Code (manual)",
+   "input_mode": "full_text",
+   "confidence": 0.7,
+   "notes": "Theoretical review; computational_model for its first-principles energetic modeling framework; low certainty on that approach tag.",
+   "classified_at": "2026-10-12T16:50:09Z"
+  },
+  "citation": "Andreazza, A. C., Behnke, A., Bolanos, J. P., de Juan-Sanz, J., Epel, E., Evans, M. K., Barrett, L. F., Gyllenhammer, L. E., Hirabayashi, Y., Hirano, M., Hollis, F., Kelly, D. P., Kempes, C., Kolassa, I.-T., Lane, N., Lobo, M. K., Mujica-Parodi, L. R., O'Donovan, A., Ongur, D., … Wager, T. D. (in press). Mitochondrial Psychobiology. Neuroscience & Biobehavioral Reviews."
+ },
+ {
   "id": "chen2026modalityspecific",
   "title": "Modality-specific reactive and predictive responses in the human superior colliculus",
   "authors": [
