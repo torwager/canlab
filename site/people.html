@@ -20,18 +20,17 @@
 <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
 <link rel="stylesheet" href="assets/app.css?v=7">
 <style>
-  .sec-nav { display: flex; flex-wrap: wrap; gap: .4rem; margin: .4rem 0 1.4rem; }
   .ph.none { display: grid; place-items: center; background: linear-gradient(135deg, var(--amber-soft), var(--steel-soft)); }
   .ph .initials { font-family: var(--serif); font-size: 2.6rem; color: var(--ink-3); letter-spacing: .02em; }
-  .head-row { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 2rem; align-items: start; margin-bottom: .6rem; }
-  @media (max-width: 860px) { .head-row { grid-template-columns: 1fr; } }
-  .net-tile { min-height: 0; padding: 1.1rem 1.2rem; margin-top: 2.2rem; }
-  .net-tile .ic.thumb { width: 56px; height: 56px; overflow: hidden; padding: 0; margin-bottom: .6rem; }
+  .head-row { margin-bottom: .6rem; }
+  .net-tile { min-height: 0; width: 100%; display: flex; flex-direction: row; align-items: center; gap: 1.2rem; padding: 1.1rem 1.4rem; margin-top: 1.2rem; }
+  .net-tile .ic.thumb { width: 56px; height: 56px; overflow: hidden; padding: 0; margin: 0; flex: none; }
   .net-tile .ic.thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .net-tile h3 { font-size: 1.1rem; margin: 0 0 .25rem; }
-  .net-tile p { font-size: .84rem; margin: 0 0 .7rem; }
-  .sec-nav a { font-size: .84rem; padding: .35em .8em; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink-2); font-weight: 500; }
-  .sec-nav a:hover { border-color: var(--amber-deep); color: var(--ink); }
+  .net-tile .net-text { flex: 1 1 auto; min-width: 0; }
+  .net-tile h3 { font-size: 1.1rem; margin: 0 0 .2rem; }
+  .net-tile p { font-size: .84rem; margin: 0; }
+  .net-tile .go { flex: none; }
+  @media (max-width: 640px) { .net-tile { flex-wrap: wrap; } }
 </style>
 </head>
 <body>
@@ -43,9 +42,8 @@
       <h1>The lab</h1>
       <p>Click a person to read their bio. The lab has been at Dartmouth College since 2019, and before that at the University of Colorado Boulder and Columbia University; alumni from all three are listed below.</p>
     </div>
-    <a class="tile glow net-tile" href="network.html"><div><div class="ic thumb"><img src="assets/img/tile-network.jpg" alt=""></div><h3>Collaborator network</h3><p>An interactive map of the people who publish with the lab, linked by co-authorship or by the topics they study.</p></div><span class="go">Explore the network <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a class="tile glow net-tile" href="network.html"><div class="ic thumb"><img src="assets/img/tile-network.jpg" alt=""></div><div class="net-text"><h3>Collaborator network</h3><p>An interactive map of the people who publish with the lab, linked by co-authorship or by the topics they study.</p></div><span class="go">Explore the network <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
   </div>
-  <nav class="sec-nav" id="secnav" aria-label="Sections"></nav>
   <div class="with-sidenav">
     <aside class="sidenav" id="sidenav" aria-label="Jump to a section"></aside>
     <div>
@@ -57,8 +55,7 @@
 <div id="site-footer"></div>
 <script src="assets/config.js?v=7"></script>
 <script src="assets/app.js?v=8"></script>
-<script src="assets/layout.js?v=7"></script>
-<script>
+<script src="assets/layout.js?v=7"></script><script>
 (async function () {
   const people = await CL.getJSON("data/people.json");
   const esc = CL.esc;
@@ -66,7 +63,6 @@
   const ORDER = ["Postdocs", "Graduate Students", "Staff", "Undergraduate Research Assistants", "Visiting Scholars", "Former Ph.D. Students", "Former Postdocs", "Former Visiting Faculty and Scholars", "Former Staff", "Former Undergraduate RAs"];
   const secs = [...new Set(people.map(p => p.section))].filter(s => s !== "Principal Investigator").sort((a, b) => (ORDER.indexOf(a) + 1 || 99) - (ORDER.indexOf(b) + 1 || 99));
   const sid = s => s.toLowerCase().replace(/[^a-z]+/g, "-").replace(/(^-|-$)/g, "");
-  document.getElementById("secnav").innerHTML = [`<a href="#pi">Principal investigator</a>`].concat(secs.map(s => `<a href="#${sid(s)}">${esc(s)}</a>`)).join("");
   if (pi) document.getElementById("pi-wrap").innerHTML = `<h2 class="people-section" id="pi-h" style="margin-top:.4rem"><span>Principal investigator</span></h2><section class="pi rv in" id="pi">
       <img src="assets/img/${esc(pi.img)}" alt="${esc(pi.name)}" width="240">
       <div><h2>${esc(pi.name)}, PhD</h2><div class="role">${esc(pi.title || pi.role)}</div>${pi.bio.map(b => `<p>${esc(b)}</p>`).join("")}
