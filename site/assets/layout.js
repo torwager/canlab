@@ -29,8 +29,7 @@
       <a href="resources.html">Tools &amp; training</a>
       <div class="menu"><a href="explore.html" class="menu-btn" aria-haspopup="true" aria-expanded="false">Explore ▾</a>
         <div class="menu-list"><a href="explore.html"><b>All resources</b></a>${EXPLORE.map(e => `<a href="${e.url}"${ext(e.url)}>${e.title}</a>`).join("")}</div></div>
-      <div class="menu"><a href="join.html" class="menu-btn" aria-haspopup="true" aria-expanded="false">Join ▾</a>
-        <div class="menu-list"><a href="join.html#team">Join our team</a><a href="join.html#participate">Participate in research</a></div></div>
+      <a href="join.html">Join</a>
     </nav></div></header>`;
   const footer = `<footer class="site-footer"><div class="wrap">
     <div><strong>Cognitive and Affective Neuroscience Lab</strong>Dartmouth College, Hanover NH. Directed by Tor Wager. We study the neurophysiology of pain, emotion, stress and empathy, and how they are shaped by beliefs, expectations and social context. <span id="foot-updated"></span></div>

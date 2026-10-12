@@ -111,17 +111,22 @@ window.CL = (function () {
     return `${esc(r.j || "")}${vol}${pg}`;
   }
   function statusBadge(r) {
-    if (r.st === "preprint" || r.kind === "preprint") return '<span class="badge oa" title="Not yet peer reviewed">preprint</span>';
+    if (r.st === "preprint" || r.kind === "preprint") return '<a class="badge preprint" href="publications.html?preprint=1" title="Not yet peer reviewed. Click to see all preprints">preprint</a>';
     if (r.st === "in press") return '<span class="badge new">in press</span>';
     if (r.st === "under review") return '<span class="badge adjacent">under review</span>';
     if (r.kind === "chapter") return '<span class="badge">chapter</span>';
     return "";
   }
+  // added to the database or published in the last 30 days, ignoring anything dated before the current year
+  function isNewPaper(r) {
+    const now = new Date(), cut = new Date(Math.max(now - 30 * 864e5, new Date(now.getFullYear(), 0, 1))).toISOString().slice(0, 10);
+    return (!!r.added && r.added >= cut) || (!!r.d && r.d >= cut && r.d <= new Date().toISOString().slice(0, 10));
+  }
   function paperCard(r, opts = {}) {
-    const isNew = opts.newSince && r.added >= opts.newSince;
+    const isNew = isNewPaper(r);
     return `<article class="paper" data-id="${esc(r.id)}" id="p-${esc(r.id)}">
-      <div class="title">${starBtn(r.id)}<a href="papers/${encodeURIComponent(r.id)}.html">${esc(r.t)}</a></div>
-      <div class="meta"><span class="authors">${esc(r.al || r.a)}${r.trunc ? ", et al." : ""}</span><span class="date tnum">${r.y || ""}</span><span class="journal">${citeLine(r)}</span>${isNew ? '<span class="badge new">new</span>' : ""}${statusBadge(r)}${r.cit != null && r.cit > 0 ? `<span class="cites tnum" title="Citations (OpenAlex)">${r.cit.toLocaleString()} citations</span>` : ""}</div>
+      <div class="title">${starBtn(r.id)}${isNew ? '<a class="badge new fresh" href="publications.html?new=1" title="Added or published in the last 30 days. Click to see all new papers">new</a> ' : ""}<a href="papers/${encodeURIComponent(r.id)}.html">${esc(r.t)}</a></div>
+      <div class="meta"><span class="authors">${esc(r.al || r.a)}${r.trunc ? ", et al." : ""}</span><span class="date tnum">${r.y || ""}</span><span class="journal">${citeLine(r)}</span>${statusBadge(r)}${r.cit != null && r.cit > 0 ? `<span class="cites tnum" title="Citations (OpenAlex)">${r.cit.toLocaleString()} citations</span>` : ""}</div>
       ${r.s ? `<div class="summary">${esc(r.s)}</div>` : ""}
       <div class="chips">${chipsFor(r, true)}</div>
       <div class="links">${linkList(r)}</div>
@@ -208,5 +213,5 @@ window.CL = (function () {
     function update() { let cur = secs[0]; for (const s of secs) if (s.getBoundingClientRect().top <= 120) cur = s; links.forEach(a => a.classList.toggle("on", cur && a.getAttribute("href") === "#" + cur.id)); }
     window.addEventListener("scroll", update, { passive: true }); update();
   }
-  return { state, config: C, loadCore, sideNav, getJSON, chipsFor, paperCard, linkList, nmTiles, citeLine, cite, matches, list, starBtn, bindStars, updateListBadge, exportRefs, exportMenu, bindExport, renderFilters, activeChips, toggle, filtersToQuery, filtersFromQuery, bindCardChips, label, esc, fmtDate, chipColors, pdfUrl, CARD_AXES, FILTER_AXES };
+  return { state, config: C, loadCore, sideNav, getJSON, chipsFor, paperCard, isNewPaper, linkList, nmTiles, citeLine, cite, matches, list, starBtn, bindStars, updateListBadge, exportRefs, exportMenu, bindExport, renderFilters, activeChips, toggle, filtersToQuery, filtersFromQuery, bindCardChips, label, esc, fmtDate, chipColors, pdfUrl, CARD_AXES, FILTER_AXES };
 })();

@@ -179,7 +179,7 @@ Paper pages (site/papers/<id>.html, generated from paper.html): full head meta +
 News: two columns. Left: tabs All / Lab posts / In the media, feed of posts (full HTML, image thumb)
   and auto-collected media items (title, source, date, snippet). Right (sticky): "Pinned" pane
   (posts with pinned:true, kept out of the feed) and "New papers" pane (data/newpapers.json built on
-  every run: papers with date_added within 180 days + candidates marked "new").
+  every run: papers added or published within 30 days, none dated before the current year, + candidates marked "new"; the Publications page shows the same papers in a "New" group at the top with a lime "new" tag before the title, computed in the browser by CL.isNewPaper in app.js).
 Tools & training: Books (covers, MIT Press, tutorials), Courses (Coursera x2, MIND course at
   torwager.github.io/mindfmricourse), Open-source tools (10 cards, each with a brain THUMBNAIL and link
   to GitHub), fMRI methods chapters (PDF links), Elsewhere (open-tools papers filter, Science of
