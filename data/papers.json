@@ -3840,13 +3840,13 @@
   "authors_truncated": false,
   "year": 2026,
   "date": "2026-09-14",
-  "status": "in press",
+  "status": "published",
   "kind": "article",
   "journal": "Nature Communications",
   "volume": null,
   "issue": null,
   "pages": null,
-  "doi": null,
+  "doi": "10.1038/s41467-026-78186-5",
   "pmid": null,
   "pmcid": null,
   "openalex_id": null,
@@ -3854,14 +3854,20 @@
   "abstract_source": "author proofs",
   "cited_by_count": null,
   "oa_url": null,
-  "landing_url": null,
+  "landing_url": "https://doi.org/10.1038/s41467-026-78186-5",
   "keywords": [],
   "links": [
    {
     "type": "pdf",
-    "label": "PDF (preprint)",
+    "label": "PDF",
     "url": "pdf/sun2026precision.pdf",
-    "version": "preprint"
+    "url_original": "pdf/sun2026precision.pdf",
+    "version": "publisher"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.1101/2025.08.06.668906"
    },
    {
     "type": "code",
@@ -3875,7 +3881,7 @@
    }
   ],
   "has_pdf": true,
-  "citation": "Sun, M., Petre, B., Bo, K., Bango, C. I., Hershkop, M., Shohan, S. L., Jung, H., & Wager, T. D. (2026). Precision functional mapping of imagined and experienced pain. Nature Communications. In press.",
+  "citation": "Sun, M., Petre, B., Bo, K., Bango, C. I., Hershkop, M., Shohan, S. L., Jung, H., & Wager, T. D. (2026). Precision functional mapping of imagined and experienced pain. Nature Communications. https://doi.org/10.1038/s41467-026-78186-5",
   "tags": {
    "topic": [
     "pain",
@@ -3918,7 +3924,8 @@
    "last": "2026-10-08",
    "result": "linked-local",
    "tried": []
-  }
+  },
+  "preprint_doi": "10.1101/2025.08.06.668906"
  },
  {
   "id": "ibonie2026prosocial",
