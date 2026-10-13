@@ -3860,11 +3860,6 @@
     "version": "publisher"
    },
    {
-    "type": "preprint",
-    "label": "Preprint",
-    "url": "https://doi.org/10.1101/2025.08.06.668906"
-   },
-   {
     "type": "code",
     "label": "Code and source data (GitHub)",
     "url": "https://github.com/canlab/2026_Sun_et_al_Pain_Imagination"
