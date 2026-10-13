@@ -220,7 +220,7 @@ mark { background: var(--amber-soft); color: inherit; padding: 0 .1em; border-ra
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); padding: 2.6rem 0 2.2rem; color: var(--muted); font-size: .88rem; margin-top: 3rem; }
 .site-footer .wrap { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
-@media (min-width: 760px) { .site-footer .wrap { grid-template-columns: 1.4fr 1fr 1fr; } }
+.site-footer .wrap > div:first-child { max-width: 62ch; }
 .site-footer strong { color: var(--ink); font-weight: 600; display: block; margin-bottom: .4rem; }
 .site-footer a { color: var(--ink-2); text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 3px; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
