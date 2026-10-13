@@ -1,6 +1,6 @@
 # Lab papers without a PDF on the site
 
-Updated 2026-10-12 by `pipeline/fetch_pdfs.py` (runs daily). 3 papers.
+Updated 2026-10-13 by `pipeline/fetch_pdfs.py` (runs daily). 3 papers.
 
 No open-access copy could be found for these. To add one: download the PDF from the publisher link (institutional access, e.g. on the Dartmouth VPN), save it as `site/pdf/<file name>` in the repository and push; the next daily run links it on the site. Author manuscripts go in `site/pdf/author_manuscripts/`.
 
@@ -12,17 +12,15 @@ No open-access copy could be found for these. To add one: download the PDF from 
 
 ## Published papers whose PDF is a manuscript or preprint
 
-75 papers. The site labels these "PDF (author manuscript)" or "PDF (preprint)". The daily run looks for an open-access published version once a month; to replace one by hand, save the publisher's PDF over the file named here and push.
+73 papers. The site labels these "PDF (author manuscript)" or "PDF (preprint)". The daily run looks for an open-access published version once a month; to replace one by hand, save the publisher's PDF over the file named here and push.
 
 | Year | Paper | Now | Publisher link | File |
 |---|---|---|---|---|
 | 2026 | Mitochondrial Psychobiology | author manuscript | no DOI | `site/pdf/andreazza2026mitochondrial.pdf` |
-| 2026 | Spatiotemporal Dissociation of Human Amygdala Response to Negative Affect | preprint | https://doi.org/10.64898/2026.08.18.745530 | `site/pdf/bo2026spatiotemporal.pdf` |
 | 2026 | Intrinsic Functional Subregions of the Human Hypothalamus: Cortical Coupling and Subregional Organiz | author manuscript | https://doi.org/10.1162/netn.a.609 | `site/pdf/lee2026functional.pdf` |
 | 2026 | Mitoception Via the Metabokine GDF15 and Human Health | author manuscript | https://doi.org/10.31219/osf.io/ekj54_v3 | `site/pdf/liu2026mitoception.pdf` |
 | 2026 | Adolescent pain reports share genetic overlap with adult chronic pain conditions: a polygenic score  | author manuscript | https://doi.org/10.1016/j.jpain.2026.106260 | `site/pdf/author_manuscripts/rader2026adolescent.pdf` |
 | 2026 | Fatigue Links Sociodemographic Risk to Pain Intensity and Spread in Two Surgical Cohorts | preprint | https://doi.org/10.64898/2026.02.02.26345387 | `site/pdf/sun2026fatigue.pdf` |
-| 2026 | Precision functional mapping of imagined and experienced pain | preprint | no DOI | `site/pdf/sun2026precision.pdf` |
 | 2025 | Placebo effects and emotion regulation: conceptual and neural similarities and differences | author manuscript | https://doi.org/10.1016/b978-0-443-29884-4.00004-2 | `site/pdf/bo2025placebo.pdf` |
 | 2025 | Comparing the neural bases of self- and social-reappraisal | author manuscript | https://doi.org/10.1093/cercor/bhaf189 | `site/pdf/he2025comparing.pdf` |
 | 2024 | Open-label placebo injection for chronic back pain: A randomized trial with functional neuroimaging | author manuscript | https://doi.org/10.1001/jamanetworkopen.2024.32427 | `site/pdf/ashar2024openlabel.pdf` |
