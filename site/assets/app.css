@@ -341,7 +341,7 @@ mark { background: var(--amber-soft); color: inherit; padding: 0 .1em; border-ra
 .pi .links .btn { padding: .3em .7em; border-radius: 0; font-size: .78rem; font-weight: 500; gap: .35em; border-color: var(--line-2); }
 
 /* Research */
-.theme { display: grid; grid-template-columns: 1.1fr 1fr; gap: 2.2rem; align-items: center; padding: clamp(28px, 4vw, 52px) 0; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
+.theme { display: grid; grid-template-columns: 1fr; gap: 1.4rem; align-items: start; padding: clamp(28px, 4vw, 52px) 0; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
 .theme.flip { direction: rtl; }
 .theme.flip > * { direction: ltr; }
 @media (max-width: 860px) { .theme { grid-template-columns: 1fr; gap: 1.2rem; } .theme.flip { direction: ltr; } }
