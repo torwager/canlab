@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research | CANlab</title>
-<meta name="description" content="Research themes of the Cognitive and Affective Neuroscience Lab at Dartmouth: the neuroscience of belief, brain-body interactions, affect and emotion, pain systems and biomarkers, desire and drug craving, and individualized spatial topology.">
+<meta name="description" content="Research topics of the Cognitive and Affective Neuroscience Lab at Dartmouth: the neuroscience of belief, brain-body interactions, affect and emotion, pain systems and biomarkers, desire and drug craving, and individualized spatial topology.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <meta property="og:site_name" content="CANlab">
@@ -18,7 +18,7 @@
 <meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
 <link rel="canonical" href="https://torwager.github.io/canlab/research.html">
 <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="assets/app.css?v=33">
+<link rel="stylesheet" href="assets/app.css?v=35">
 <style>
   .head-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; align-items: center; margin-bottom: 1rem; }
   .head-hero .page-head { margin-bottom: .8rem; }
@@ -33,15 +33,14 @@
     <div>
       <div class="page-head">
         <p class="eyebrow">Research</p>
-        <h1>Research themes</h1>
+        <h1>Research topics</h1>
         <p id="intro"></p>
       </div>
-      <nav class="theme-nav" id="themenav" aria-label="Research themes"></nav>
     </div>
     <div class="hero-canvas-wrap" role="img" aria-label="An interactive network graph"><canvas id="hero-canvas"></canvas></div>
   </div>
   <div class="with-sidenav">
-    <aside class="sidenav" id="sidenav" aria-label="Jump to a theme"></aside>
+    <aside class="sidenav" id="sidenav" aria-label="Jump to a topic"></aside>
     <div id="themes"><div class="spinner">Loading…</div></div>
   </div>
 </main>
@@ -55,12 +54,10 @@
   const r = await CL.getJSON("data/research.json");
   const esc = CL.esc;
   document.getElementById("intro").textContent = r.intro;
-  document.getElementById("themenav").innerHTML = r.themes.map(t => `<a href="#${esc(t.id)}">${esc(t.title)}</a>`).join("");
-  // link each theme to the matching publication tags
+  // link each topic to the matching publication tags
   const TAGS = { belief: "topic=expectation_learning,placebo", "brain-body": "topic=brain_body", affect: "topic=emotion", pain: "topic=pain,chronic_pain&approach=neuromarker", craving: "topic=reward_craving", topology: "approach=machine_learning,neuroimaging_methods" };
   document.getElementById("themes").innerHTML = r.themes.map((t, i) => `<section class="theme${i % 2 ? " flip" : ""} rv" id="${esc(t.id)}">
       <div>
-        <p class="eyebrow">Theme ${i + 1}</p>
         <h2>${esc(t.title)}</h2>
         ${t.question ? `<p class="q">${esc(t.question)}</p>` : ""}
         ${t.paragraphs.map(p => `<p>${esc(p)}</p>`).join("")}
@@ -68,7 +65,7 @@
       </div>
       ${t.image ? `<figure><a href="assets/img/${esc(t.image)}" target="_blank" rel="noopener"><img src="assets/img/${esc(t.image)}" alt="Figure illustrating ${esc(t.title)}" loading="lazy"></a></figure>` : `<figure class="placeholder" style="border:none;box-shadow:none;background:none"></figure>`}
     </section>`).join("");
-  CL.sideNav(document.getElementById("sidenav"), r.themes.map(t => ({ id: t.id, label: t.title })), "Themes");
+  CL.sideNav(document.getElementById("sidenav"), r.themes.map(t => ({ id: t.id, label: t.title })), "Topics");
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const rvs = document.querySelectorAll("#themes .rv");
   if (reduce || !("IntersectionObserver" in window)) rvs.forEach(el => el.classList.add("in"));
