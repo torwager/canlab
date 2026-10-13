@@ -18,7 +18,7 @@
 <meta name="twitter:image" content="https://torwager.github.io/canlab/assets/og.jpg">
 <link rel="canonical" href="{{URL}}">
 <link rel="icon" href="../assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="../assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="../assets/app.css?v=19">
+<link rel="stylesheet" href="../assets/app.css?v=22">
 <script type="application/ld+json">{{JSONLD}}</script>
 <base href="../">
 </head>
@@ -34,7 +34,7 @@
 </main>
 <div id="site-footer"></div>
 <script src="assets/config.js?v=7"></script>
-<script src="assets/app.js?v=17"></script>
+<script src="assets/app.js?v=18"></script>
 <script src="assets/layout.js?v=12"></script>
 <script src="assets/account.js?v=7"></script>
 <script>
@@ -61,7 +61,6 @@
     <div class="plinks">${links}<span class="btn" style="padding:.45em .9em">${CL.starBtn(id)} <span class="small">My list</span></span></div>
     ${(r.commentaries || []).length ? `<div class="comms">${r.commentaries.map(c => `<a class="comm" href="${CL.esc(c.pdf || (c.doi ? "https://doi.org/" + c.doi : "#"))}" target="_blank" rel="noopener"><span class="ic">✎</span><span><b>${CL.esc(c.note || "Commentary")}:</b> ${CL.esc(c.title)} <span class="muted">(${CL.esc(c.authors || "")}${c.journal ? ", " + CL.esc(c.journal) : ""}${c.year ? " " + c.year : ""})</span></span></a>`).join("")}</div>` : ""}
     ${CL.nmTiles(slim)}
-    ${r.summary ? `<div class="callout"><b>In one sentence.</b> ${CL.esc(r.summary)}${r.key_finding ? " " + CL.esc(r.key_finding) : ""}</div>` : ""}
     <div><h3 style="margin-bottom:.3rem">Abstract</h3><div class="abstract">${r.abstract ? CL.esc(r.abstract) : '<span class="muted">No abstract available; see the PDF or publisher page.</span>'}</div></div>
     <div><h3 style="margin-bottom:.5rem">Keywords</h3><div style="display:grid;gap:.5rem">${axisRows || '<span class="muted small">Not yet tagged.</span>'}
       ${(r.free_keywords || []).length ? `<div class="axis-row"><span class="axis">Free keywords</span><span>${r.free_keywords.map(k => `<a class="chip static" href="publications.html?q=${encodeURIComponent(k)}" style="cursor:pointer">${CL.esc(k)}</a>`).join(" ")}</span></div>` : ""}</div></div>
@@ -72,7 +71,7 @@
       ${r.cited_by_count != null ? `<dt>Citations</dt><dd class="tnum">${r.cited_by_count.toLocaleString()} (OpenAlex)</dd>` : ""}
       ${(r.links || []).some(l => l.type === "pdf" && l.version === "author_manuscript") ? `<dt>PDF</dt><dd class="small muted">This is the authors' manuscript, not the journal's typeset version; the published version is available from the journal link above.</dd>` : ""}
       ${(r.links || []).some(l => l.type === "pdf" && l.version === "preprint") ? `<dt>PDF</dt><dd class="small muted">This is the preprint${r.st === "preprint" ? "" : "; the published version is available from the journal link above"}.</dd>` : ""}
-      ${cls.model ? `<dt>Tagging</dt><dd class="muted small">Tags and summary were assigned by ${CL.esc(cls.model)} from the ${fullText ? "full text" : (cls.input_mode === "abstract" ? "abstract" : "title")}${cls.confidence != null ? ` <span class="tnum">(confidence ${cls.confidence})</span>` : ""}. <a href="https://github.com/${CL.config.repo}/issues/new?title=${encodeURIComponent("Tag correction: " + r.title.slice(0, 80))}&body=${encodeURIComponent("Paper: " + id + "\n\nSuggested change:\n")}" target="_blank" rel="noopener">Suggest a correction</a>.</dd>` : ""}
+      ${cls.model ? `<dt>Tagging</dt><dd class="muted small">Tags were assigned by ${CL.esc(cls.model)} from the ${fullText ? "full text" : (cls.input_mode === "abstract" ? "abstract" : "title")}${cls.confidence != null ? ` <span class="tnum">(confidence ${cls.confidence})</span>` : ""}. <a href="https://github.com/${CL.config.repo}/issues/new?title=${encodeURIComponent("Tag correction: " + r.title.slice(0, 80))}&body=${encodeURIComponent("Paper: " + id + "\n\nSuggested change:\n")}" target="_blank" rel="noopener">Suggest a correction</a>.</dd>` : ""}
     </dl>`;
   CL.bindStars(el);
   document.querySelector('.nav a[href="publications.html"]')?.classList.add("active");

@@ -127,7 +127,6 @@ window.CL = (function () {
     return `<article class="paper" data-id="${esc(r.id)}" id="p-${esc(r.id)}">
       <div class="title">${starBtn(r.id)}${isNew ? '<a class="badge new fresh" href="publications.html?new=1" title="Added or published in the last 30 days. Click to see all new papers">new</a> ' : ""}<a href="papers/${encodeURIComponent(r.id)}.html">${esc(r.t)}</a></div>
       <div class="meta"><span class="authors">${esc(r.al || r.a)}${r.trunc ? ", et al." : ""}</span><span class="date tnum">${r.y || ""}</span><span class="journal">${citeLine(r)}</span>${statusBadge(r)}${r.cit != null && r.cit > 0 ? `<span class="cites tnum" title="Citations (OpenAlex)">${r.cit.toLocaleString()} citations</span>` : ""}</div>
-      ${r.s ? `<div class="summary">${esc(r.s)}</div>` : ""}
       <div class="chips">${chipsFor(r, true)}</div>
       <div class="links">${linkList(r)}</div>
       ${(r.comm || []).length ? `<div class="comms">${r.comm.map(c => `<a class="comm" href="${esc(c.pdf || (c.doi ? "https://doi.org/" + c.doi : "#"))}" target="_blank" rel="noopener" title="${esc(c.note || "Commentary on this paper")}"><span class="ic">✎</span><span><b>${esc(c.note || "Commentary")}:</b> ${esc(c.title)} <span class="muted">(${esc(c.authors || "")}${c.journal ? ", " + esc(c.journal) : ""}${c.year ? " " + c.year : ""})</span></span></a>`).join("")}</div>` : ""}
