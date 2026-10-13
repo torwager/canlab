@@ -3619,14 +3619,14 @@
    "Wager TD"
   ],
   "year": 2026,
-  "status": "under review",
+  "status": "published",
   "kind": "article",
   "journal": "eLife",
-  "volume": null,
+  "volume": "15",
   "issue": null,
-  "pages": null,
-  "citation": "Bo, K., Lindquist, M. A., Gianaros, P. J., & Wager, T. D. (under review). Spatiotemporal Dissociation of Human Amygdala Response to Negative Affect. eLife.",
-  "doi": null,
+  "pages": "RP112871",
+  "citation": "Bo, K., Lindquist, M. A., Gianaros, P. J., & Wager, T. D. (2026). Spatiotemporal Dissociation of Human Amygdala Response to Negative Affect. eLife, 15, RP112871. https://doi.org/10.7554/eLife.112871.1",
+  "doi": "10.7554/eLife.112871.1",
   "pmid": null,
   "pmcid": null,
   "openalex_id": null,
@@ -3635,7 +3635,7 @@
   "cited_by_count": 0,
   "oa_status": null,
   "oa_url": null,
-  "landing_url": "https://doi.org/10.64898/2026.08.18.745530",
+  "landing_url": "https://doi.org/10.7554/eLife.112871.1",
   "openalex_authors": [
    "Ke Bo",
    "Martin A. Lindquist",
@@ -3646,10 +3646,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF (preprint)",
+    "label": "PDF",
     "url": "pdf/bo2026spatiotemporal.pdf",
     "url_original": "pdf/bo2026spatiotemporal.pdf",
-    "version": "preprint"
+    "version": "publisher"
    },
    {
     "type": "preprint",
