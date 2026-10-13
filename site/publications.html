@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://torwager.github.io/canlab/publications.html">
 <link rel="alternate" type="application/rss+xml" title="CANlab: new papers" href="feed.xml">
 <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="assets/app.css?v=22">
+<link rel="stylesheet" href="assets/app.css?v=27">
 <style>
   .head-hero { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
   .head-hero .page-head { margin-bottom: .8rem; }
@@ -180,6 +180,12 @@
     return `<div class="ref" id="p-${CL.esc(r.id)}">${CL.esc(au)} (${yr}). ${t}. ${venue}${vol}${pg}.${(r.comm || []).map(c => ` <span class="badge" title="${CL.esc(c.title)}">+ commentary</span>`).join("")} <span class="extra">${pdf ? `<a href="${CL.esc(pdf)}" target="_blank" rel="noopener">[PDF]</a>` : ""}${pub}${extras}</span></div>`;
   }
   const BOOKS = `<div class="books reflist"><div class="ref">Wager, T. D., &amp; Lindquist, M. A. (2026). <a class="t" href="https://mitpress.mit.edu/9780262045049/elements-of-functional-magnetic-resonance-imaging/" target="_blank" rel="noopener">Elements of Functional Magnetic Resonance Imaging</a>. <i>MIT Press</i>. <span class="extra"><a href="https://torwager.github.io/elements-of-fmri-tutorials" target="_blank" rel="noopener">[tutorials]</a></span></div><div class="ref">Wager, T. D., &amp; Lindquist, M. A. (2015). <a class="t" href="https://leanpub.com/principlesoffmri" target="_blank" rel="noopener">Principles of fMRI</a>. <i>Leanpub</i>. <span class="extra"><a href="https://leanpub.com/principlesoffmri" target="_blank" rel="noopener">[e-book]</a></span></div></div>`;
+  // timeline of years: one small dot per year, click to jump; the New button stays in front
+  function timelineHtml(ys, counts, withData, hasNew) {
+    const dot = () => 4;
+    const yrs = ys.map(y => `<a class="tl-yr" href="#y${y}"${withData ? ` data-y="${y}"` : ""} title="${y || "Undated"}: ${counts.get(y)} paper${counts.get(y) === 1 ? "" : "s"}"><span class="tl-dot"><i style="width:${dot(counts.get(y))}px;height:${dot(counts.get(y))}px"></i></span><span class="tl-lab">${y || "n.d."}</span></a>`).join("");
+    return (hasNew ? '<a class="tl-new" href="#ynew" data-y="new">New</a>' : "") + `<div class="tl-track"><div class="tl-inner">${yrs}</div></div>`;
+  }
   async function run() {
     const q = els.q.value.trim();
     let hits = null;
@@ -193,11 +199,12 @@
     CL.renderFilters(els.filters, pool, filters, () => { page = 1; run(); }, CL.FILTER_AXES, false);
     const shown = pool.filter(r => CL.matches(r, filters));
     const sort = els.sort.value;
+    const np = r => CL.isNewPaper(r) ? 1 + (r.pin || 0) : 0; // new papers first; pin_new in papers.json (a number, higher = earlier) leads the group
     const byDate = (a, b) => ((b.y || 0) - (a.y || 0)) || (b.d || "").localeCompare(a.d || "") || (a.st === "preprint" ? -1 : 0);
     if (sort === "rel" && hits) shown.sort((a, b) => hits.get(b.id) - hits.get(a.id));
     else if (sort === "old") shown.sort((a, b) => -byDate(a, b));
     else if (sort === "cited") shown.sort((a, b) => ((b.cit ?? -1) - (a.cit ?? -1)) || byDate(a, b));
-    else shown.sort(sort === "year" ? (a, b) => (CL.isNewPaper(b) - CL.isNewPaper(a)) || byDate(a, b) : byDate);
+    else shown.sort(sort === "year" ? (a, b) => (np(b) - np(a)) || byDate(a, b) : byDate);
     lastShown = shown;
     const pages = Math.max(1, Math.ceil(shown.length / PAGE));
     page = Math.min(Math.max(1, page), pages);
@@ -215,7 +222,7 @@
       // the simple list shows everything on one page: books first, then years in descending order
       const counts = new Map(); for (const r of shown) counts.set(r.y || 0, (counts.get(r.y || 0) || 0) + 1);
       const ys = [...counts.keys()].sort((a, b) => sort === "old" ? a - b : b - a);
-      els.yearnav.innerHTML = ys.map(y => `<a href="#y${y}">${y || "n.d."}</a>`).join("");
+      els.yearnav.innerHTML = timelineHtml(ys, counts, false, false);
       let html = (q || qa || Object.values(filters).some(s => s.size)) ? "" : `<h2 class="year-head" id="ybooks">Books</h2>${BOOKS}`;
       let cur = null; html += '<div class="reflist">';
       const order = shown.slice().sort(sort === "rel" && hits ? (a, b) => hits.get(b.id) - hits.get(a.id) : byDate);
@@ -231,9 +238,9 @@
       const grp = r => sort === "year" && CL.isNewPaper(r) ? "new" : (r.y || 0);
       const counts = new Map(); for (const r of shown) counts.set(grp(r), (counts.get(grp(r)) || 0) + 1);
       const ys = [...counts.keys()].filter(y => y !== "new").sort((a, b) => sort === "old" ? a - b : b - a);
-      els.yearnav.innerHTML = (counts.has("new") ? '<a href="#ynew" data-y="new">New</a>' : "") + ys.map(y => `<a href="#y${y}" data-y="${y}">${y || "n.d."}</a>`).join("");
+      els.yearnav.innerHTML = timelineHtml(ys, counts, true, counts.has("new"));
       let html = "", cur = null;
-      for (const r of slice) { const g = grp(r); if (g !== cur) { cur = g; html += g === "new" ? `<h2 class="year-head" id="ynew">New<span class="n">${counts.get("new")} paper${counts.get("new") === 1 ? "" : "s"}, added in the last 30 days</span></h2>` : yearHead(g, counts.get(g)); } html += CL.paperCard(r); }
+      for (const r of slice) { const g = grp(r); if (g !== cur) { cur = g; html += g === "new" ? `<h2 class="year-head" id="ynew">New<span class="n">${counts.get("new")} paper${counts.get("new") === 1 ? "" : "s"}</span></h2>` : yearHead(g, counts.get(g)); } html += CL.paperCard(r); }
       els.results.innerHTML = html || '<div class="empty">No papers match. Try fewer filters or a broader search.</div>';
     } else {
       els.yearnav.innerHTML = "";
