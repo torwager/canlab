@@ -116,7 +116,7 @@ def slim(r):
         "j": r.get("journal") or "", "vol": r.get("volume"), "issue": r.get("issue"), "pg": r.get("pages"),
         "doi": r.get("doi"), "pmid": r.get("pmid"), "u": publisher_url(r),
         "pdf": (pdf.get("mirror") or pdf["url"]) if pdf else None, "oa": r.get("oa_url"),
-        "links": r.get("links", []), "cit": r.get("cited_by_count"),
+        "links": r.get("links", []), "pin": int(r.get("pin_new") or 0), "cit": r.get("cited_by_count"),
         "tags": tags, "kw": (r.get("free_keywords") or [])[:8], "added": r.get("date_added") or "", "ab": bool(r.get("abstract")),
         "comm": r.get("commentaries") or [], "trunc": bool(r.get("authors_truncated")),
         "nm": r.get("neuromarkers") or [],

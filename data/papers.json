@@ -643,7 +643,8 @@
     "crossref-doi:10.1097/j.pain.0000000000004125",
     "page-link"
    ]
-  }
+  },
+  "pin_new": 1
  },
  {
   "id": "acild2026neuromarkers",
@@ -3915,7 +3916,8 @@
    "result": "linked-local",
    "tried": []
   },
-  "preprint_doi": "10.1101/2025.08.06.668906"
+  "preprint_doi": "10.1101/2025.08.06.668906",
+  "pin_new": 2
  },
  {
   "id": "ibonie2026prosocial",
