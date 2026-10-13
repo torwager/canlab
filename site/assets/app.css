@@ -149,7 +149,8 @@ main.wrap { padding-top: 104px; padding-bottom: 4rem; }
 .paper .meta { font-size: .86rem; color: var(--ink-2); display: flex; flex-wrap: wrap; gap: .25rem .7rem; align-items: baseline; }
 .paper .meta .date { font-family: var(--mono); font-size: .76rem; color: var(--muted); }
 .paper .summary { color: var(--ink-2); font-size: .95rem; max-width: 80ch; }
-.paper .chips { display: flex; flex-wrap: wrap; gap: .3rem; }
+.paper .chips { display: flex; flex-wrap: wrap; gap: .25rem; }
+.paper .chip { font-size: .64rem; padding: .08rem .45rem; gap: .2rem; }
 .paper .links { display: flex; flex-wrap: wrap; gap: .9rem; font-size: .84rem; }
 .badge { font-size: .68rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: .1rem .45rem; border-radius: 5px; background: var(--surface-2); color: var(--ink-2); }
 .badge.new { background: var(--ok-soft); color: var(--ok); }
@@ -265,7 +266,7 @@ mark { background: var(--amber-soft); color: inherit; padding: 0 .1em; border-ra
 .paper .meta .authors { font-weight: 500; color: var(--ink); }
 .paper .meta .journal i { font-style: italic; }
 .paper .meta .cites { color: var(--muted); font-size: .8rem; }
-.paper .links a.plink { display: inline-flex; align-items: center; gap: .3em; padding: .2em .65em; border-radius: 999px; border: 1px solid var(--line-2); color: var(--ink-2); text-decoration: none; font-size: .8rem; font-weight: 500; background: var(--surface); transition: border-color .2s, background .2s; }
+.paper .links a.plink { display: inline-flex; align-items: center; gap: .3em; padding: .2em .65em; border-radius: 0; border: 1px solid var(--line-2); color: var(--ink-2); text-decoration: none; font-size: .8rem; font-weight: 500; background: var(--surface); transition: border-color .2s, background .2s; }
 .paper .links a.plink:hover, .detail .plinks a.plink:hover { border-color: var(--ink); text-decoration: none; }
 .paper .links a.plink.pdf, .detail .plinks a.plink.pdf { background: var(--amber-soft); border-color: transparent; color: var(--ink); font-weight: 600; }
 .paper .links a.plink.maps, .detail .plinks a.plink.maps { background: var(--steel-soft); border-color: transparent; color: var(--steel-deep); }
@@ -289,7 +290,7 @@ mark { background: var(--amber-soft); color: inherit; padding: 0 .1em; border-ra
 .year-nav a { font-size: .78rem; padding: .2em .55em; border-radius: 999px; border: 1px solid var(--line); color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .year-nav a:hover { border-color: var(--amber-deep); color: var(--ink); }
 .detail .plinks { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; }
-.detail .plinks a.plink { display: inline-flex; align-items: center; gap: .3em; padding: .45em .95em; border-radius: 999px; border: 1px solid var(--line-2); color: var(--ink-2); text-decoration: none; font-size: .88rem; font-weight: 600; background: var(--surface); }
+.detail .plinks a.plink { display: inline-flex; align-items: center; gap: .3em; padding: .45em .95em; border-radius: 0; border: 1px solid var(--line-2); color: var(--ink-2); text-decoration: none; font-size: .88rem; font-weight: 600; background: var(--surface); }
 .detail .chips { display: flex; flex-wrap: wrap; gap: .3rem; }
 .detail .chip[data-axis] { cursor: pointer; }
 .detail .related li { margin: .3rem 0; }

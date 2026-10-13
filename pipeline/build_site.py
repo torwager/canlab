@@ -116,7 +116,7 @@ def slim(r):
         "j": r.get("journal") or "", "vol": r.get("volume"), "issue": r.get("issue"), "pg": r.get("pages"),
         "doi": r.get("doi"), "pmid": r.get("pmid"), "u": publisher_url(r),
         "pdf": (pdf.get("mirror") or pdf["url"]) if pdf else None, "oa": r.get("oa_url"),
-        "links": r.get("links", []), "s": r.get("summary") or "", "cit": r.get("cited_by_count"),
+        "links": r.get("links", []), "cit": r.get("cited_by_count"),
         "tags": tags, "kw": (r.get("free_keywords") or [])[:8], "added": r.get("date_added") or "", "ab": bool(r.get("abstract")),
         "comm": r.get("commentaries") or [], "trunc": bool(r.get("authors_truncated")),
         "nm": r.get("neuromarkers") or [],
@@ -132,7 +132,7 @@ def paper_page(r, s, tax, related):
     if PAPER_TEMPLATE is None:
         PAPER_TEMPLATE = (config.SITE / "paper.html").read_text()
     title = r["title"]
-    desc = (r.get("summary") or (r.get("abstract") or "")[:200] or f"{s['al']} ({r.get('year')}). {r.get('journal', '')}").strip()
+    desc = ((r.get("abstract") or "")[:200] or f"{s['al']} ({r.get('year')}). {r.get('journal', '')}").strip()
     url = f"{SITE_URL}/papers/{r['id']}.html"
     pdf = pdf_link(r)
     ld = {"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": title, "name": title, "url": url,
@@ -161,7 +161,6 @@ def paper_page(r, s, tax, related):
     <div class="small">{esc(s['al'])}</div>
     <div class="links" style="display:flex;gap:.5rem;flex-wrap:wrap">{''.join(links)}</div>
     {('<div class="nm-tiles">' + nm + '</div>') if nm else ''}
-    {('<div class="callout"><b>In one sentence.</b> ' + esc(r['summary']) + '</div>') if r.get('summary') else ''}
     <div><h3 style="margin-bottom:.3rem">Abstract</h3><div class="abstract">{esc(r.get('abstract') or 'No abstract available; see the publisher page.')}</div></div>
     <div><h3 style="margin-bottom:.5rem">Keywords</h3><div class="chips">{chips}</div></div>
     <p class="small muted">Citation: {esc(r.get('citation') or '')}</p>"""
@@ -231,7 +230,7 @@ def rss(items):
            "<description>New publications from the Cognitive and Affective Neuroscience Lab at Dartmouth.</description>", f"<lastBuildDate>{now}</lastBuildDate>"]
     for r in items:
         out.append(f"<item><title>{escape(r['t'])}</title><link>{SITE_URL}/papers/{escape(r['id'])}.html</link><guid isPermaLink=\"true\">{SITE_URL}/papers/{escape(r['id'])}.html</guid>"
-                   f"<description>{escape((r['al'] + ' (' + str(r['y']) + '). ' + r['j'] + '. ' + r['s']).strip())}</description></item>")
+                   f"<description>{escape((r['al'] + ' (' + str(r['y']) + '). ' + r['j'] + '.').strip())}</description></item>")
     out.append("</channel></rss>")
     return "\n".join(out)
 
