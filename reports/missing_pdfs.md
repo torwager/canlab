@@ -1,18 +1,16 @@
 # Lab papers without a PDF on the site
 
-Updated 2026-10-14 by `pipeline/fetch_pdfs.py` (runs daily). 3 papers.
+Updated 2026-10-15 by `pipeline/fetch_pdfs.py` (runs daily). 1 papers.
 
 No open-access copy could be found for these. To add one: download the PDF from the publisher link (institutional access, e.g. on the Dartmouth VPN), save it as `site/pdf/<file name>` in the repository and push; the next daily run links it on the site. Author manuscripts go in `site/pdf/author_manuscripts/`.
 
 | Year | Paper | Publisher link | Save as |
 |---|---|---|---|
-| 2015 | Pharmacological fMRI | no DOI found | `borsook2015pharmacological.pdf` |
 | 2015 | Placebo and activity in the central nervous system | no DOI found | `sprenger2015placebo.pdf` |
-| 2008 | Application of change-point theory to modeling state-related activity in fMRI | https://doi.org/10.4324/9780203843147-11 | `lindquist2008application.pdf` |
 
 ## Published papers whose PDF is a manuscript or preprint
 
-73 papers. The site labels these "PDF (author manuscript)" or "PDF (preprint)". The daily run looks for an open-access published version once a month; to replace one by hand, save the publisher's PDF over the file named here and push.
+74 papers. The site labels these "PDF (author manuscript)" or "PDF (preprint)". The daily run looks for an open-access published version once a month; to replace one by hand, save the publisher's PDF over the file named here and push.
 
 | Year | Paper | Now | Publisher link | File |
 |---|---|---|---|---|
@@ -48,6 +46,7 @@ No open-access copy could be found for these. To add one: download the PDF from 
 | 2017 | Fundamentals of Functional Neuroimaging | author manuscript | https://doi.org/10.1017/9781107415782.004 | `site/pdf/geuter2017fundamentals.pdf` |
 | 2017 | Social anxiety is characterized by biased learning about performance and the self | author manuscript | https://doi.org/10.1037/emo0000296 | `site/pdf/koban2017social.pdf` |
 | 2017 | The potential role of sensory testing, skin biopsy, and functional brain imaging as biomarkers in ch | author manuscript | https://doi.org/10.1016/j.jpain.2017.02.429 | `site/pdf/author_manuscripts/smith2017potential.pdf` |
+| 2015 | Pharmacological fMRI | author manuscript | no DOI | `site/pdf/author_manuscripts/borsook2015pharmacological.pdf` |
 | 2015 | High-dimensional Multivariate Mediation: with Application to Neuroimaging Data | preprint | https://doi.org/10.1093/biostatistics/kxx027 | `site/pdf/chen2015highdimensional.pdf` |
 | 2015 | Altered cortical-amygdala coupling in social anxiety disorder during the anticipation of giving a pu | author manuscript | https://doi.org/10.1017/s0033291714002657 | `site/pdf/author_manuscripts/cremers2015altered.pdf` |
 | 2015 | Conceptual Conditioning: Mechanisms Mediating Conditioning Effects on Pain | author manuscript | https://doi.org/10.1177/0956797615597658 | `site/pdf/author_manuscripts/jepma2015conceptual.pdf` |
