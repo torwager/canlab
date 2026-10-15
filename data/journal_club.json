@@ -1,7 +1,72 @@
 {
- "updated": "2026-10-14",
+ "updated": "2026-10-15",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026taskguided",
+   "slack_ts": "1792020372.350699",
+   "shared_on": "2026-10-14",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://arxiv.org/abs/2606.15989",
+   "doi": "10.48550/arxiv.2606.15989",
+   "title": "Task-guided cross-subject latent alignment: a multi-encoder-decoder VAE",
+   "abstract": "Aligning neural activity across subjects offers the promise of discovering shared computational principles and generalizable decoders. However, traditional alignment methods require shared stimuli across subjects, a constraint that limits applicability to naturalistic paradigms with limited or non-overlapping data. We introduce a Multi-Encoder-Decoder Variational Autoencoder (MED-VAE) that achieves cross-subject alignment without shared stimuli by anchoring representations to a common scaffold provided by a pretrained ANN. Using the Natural Scenes Dataset, we show that MED-VAE creates common latent spaces with superior semantic organisation, achieving higher cross-subject alignment than common methods while maintaining robust generalisation to held-out stimuli where traditional methods degrade. Reconstructing from these common spaces back to each subject's original neural space, MED-VAE preserves equal stimulus-driven signal in its cross-subject latent space. Finally, we show that this superior alignment directly enables cross-subject neural prediction, as demonstrated via cross-subject image decoding. In summary, we introduce a framework to identify generalisable common subspaces for cross-subject predictions and downstream tasks, demonstrated here for visual cortex responses to static images.",
+   "authors": [
+    "Papathanasiou, Angeliki",
+    "Achterberg, Jascha",
+    "Nichols, Thomas E.",
+    "Costa, Rui Ponte"
+   ],
+   "journal": "arXiv.org",
+   "year": 2026,
+   "pdf_url": "https://arxiv.org/pdf/2606.15989",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1792020372350699",
+   "publisher_url": "https://doi.org/10.48550/arxiv.2606.15989",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "machine_learning",
+     "ai_integration",
+     "neuroimaging_methods",
+     "open_tools"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "Introduced a Multi-Encoder-Decoder VAE that aligns neural activity across subjects without shared stimuli by anchoring representations to a pretrained ANN scaffold, tested on the Natural Scenes Dataset.",
+   "key_finding": "MED-VAE achieved higher cross-subject alignment and semantic organisation than traditional methods and enabled successful cross-subject image decoding, including for held-out stimuli.",
+   "free_keywords": [
+    "Natural Scenes Dataset",
+    "variational autoencoder",
+    "cross-subject alignment",
+    "visual cortex",
+    "representational alignment",
+    "neural decoding"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "Abstract only; type tag typo corrected conceptually to 'methods'.",
+    "classified_at": "2026-10-15T15:01:41Z",
+    "usage": {
+     "input_tokens": 518,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 307,
+     "cost_usd": 0.01467
+    }
+   }
+  },
   {
    "id": "shared2026languageb",
    "slack_ts": "1791557830.950819",
