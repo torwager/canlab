@@ -1,7 +1,80 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "channel": null,
  "items": [
+  {
+   "id": "chen2026targeted",
+   "slack_ts": "1792122493.606479",
+   "shared_on": "2026-10-16",
+   "shared_by": "Amin",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍🏼",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41586-026-11174-3",
+   "doi": "10.1038/s41586-026-11174-3",
+   "title": "Targeted stimulation of motor cortex ensembles drives learned movements",
+   "abstract": "During the execution of learned motor skills, the neural population in layer 2/3 (L2/3) of primary motor cortex (M1) expresses a reproducible spatiotemporal activity pattern1. It is debated whether M1 actively participates in generating this learned pattern and whether this pattern causally drives the learned movement2&#8211;5. Here we combined in vivo two-photon calcium imaging and holographic optogenetic stimulation of functionally defined M1 L2/3 ensembles in mice performing a skilled lever-pressing task. Brief synchronous stimulation of about 20 neurons whose activity onset precedes voluntary movement onset induced movements resembling the learned movement, while producing activity patterns in other M1 neurons resembling the learned activity. Moreover, trial-by-trial variability of optogenetically triggered population activity correlated with variability in the induced movements. These variabilities were predicted by the initial state of M1 activity preceding stimulation. In some trials, stimulation induced the learned activity without&amp;nbsp;inducing movements, indicating that the learned activity is not simply a reflection of movements but can arise internally. Stimulation failed to generate movements or learned activity in task-disengaged mice. Stimulation of neurons whose activity followed movement onsets failed to induce the learned movement in task-engaged mice. Together, the learned activity in M1 L2/3 can be generated when M1 is prepared at the optimal initial state and receives precise triggering inputs, supporting the active role of M1 in generating learned activity and learned movements. Optogenetic stimulation of motor-cortex neuron ensembles shows that precisely timed activity in the primary motor cortex can generate learned neural patterns and movements, demonstrating an active role in skilled motor control.",
+   "authors": [
+    "Chen, Q.",
+    "Wu, A.",
+    "Yu, B.",
+    "Chae, S.",
+    "Tan, Z.",
+    "Ramot, A.",
+    "Aljadeff, J.",
+    "Komiyama, T."
+   ],
+   "journal": "Nature",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41586-026-11174-3.pdf",
+   "type": "journal-article",
+   "pmid": "42875492",
+   "pmcid": null,
+   "oa_url": "https://doi.org/10.5281/zenodo.22216380",
+   "publisher_url": "https://doi.org/10.1038/s41586-026-11174-3",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1792122493606479",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [
+     "brain_stimulation"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Researchers used two-photon imaging and holographic optogenetics in mice performing a learned lever-press task to show that precise stimulation of small M1 neuron ensembles can trigger both learned movement and learned population activity patterns.",
+   "key_finding": "Stimulating ~20 pre-movement-active M1 neurons reproduced learned movement-related activity and behavior, but only when the cortex was in an appropriate initial state and the mouse was task-engaged, indicating M1 actively generates learned motor patterns rather than merely reflecting them.",
+   "free_keywords": [
+    "motor cortex",
+    "optogenetics",
+    "two-photon calcium imaging",
+    "lever-press task",
+    "neural ensembles",
+    "mice",
+    "motor learning"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.3,
+    "notes": "This paper is outside CANlab's typical human affective/pain neuroscience scope (animal motor cortex optogenetics study); taxonomy fit is poor.",
+    "classified_at": "2026-10-16T14:51:58Z",
+    "usage": {
+     "input_tokens": 681,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 922,
+     "cost_usd": 0.02114
+    }
+   }
+  },
   {
    "id": "shared2026taskguided",
    "slack_ts": "1792020372.350699",
