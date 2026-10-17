@@ -1,7 +1,87 @@
 {
- "updated": "2026-10-16",
+ "updated": "2026-10-17",
  "channel": null,
  "items": [
+  {
+   "id": "sun2026precision",
+   "slack_ts": "1792201742.399849",
+   "shared_on": "2026-10-17",
+   "shared_by": "Zizhuang",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "❤️",
+     "count": 6
+    },
+    {
+     "name": "🎉",
+     "count": 9
+    },
+    {
+     "name": "🥳",
+     "count": 7
+    },
+    {
+     "name": "dancing_lisa",
+     "count": 5
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41467-026-78186-5?error=cookies_not_supported&amp;code=dc5dbf3a-c892-4973-8230-f993f4814e22",
+   "doi": "10.1038/s41467-026-78186-5",
+   "title": "Precision functional mapping of imagined and experienced pain",
+   "abstract": "Abstract Imagination is a principal human capacity, enabling simulation of sensations and situations for planning, learning, and empathy. We examined neural representations of experienced and imagined pain across eight body sites using deep-phenotyping, precision functional MRI with over seven hours of scanning per participant (N = 9). Here we show, using conventional mapping, pattern classification, and representational similarity analyses, that both imagined and experienced pain activated nociceptive regions (e.g., dorsoposterior insula) and non-nociceptive regions (e.g., premotor areas and inferior inter-effector motor cortex). However, imagined pain did not reliably reactivate body site-selective nociceptive patterns in any region. Instead, imagined and experienced pain shared multivariate representations across widespread cortical and subcortical regions, particularly transmodal cortical areas including dorsomedial and lateral prefrontal cortex, hippocampus, and thalamus. These findings suggest that imagination generates distributed pain-like activity, but with separable neural codes for imagined and experienced pain. This distinction may explain the difficulty of vividly imagining pain and clarify its potential roles in empathy, planning, and pain chronification.",
+   "authors": [
+    "Sun, M.",
+    "Petre, B.",
+    "Bo, K.",
+    "Bango, C. I.",
+    "Hershkop, M.",
+    "Shohan, S. L.",
+    "Jung, H.",
+    "Wager, T. D."
+   ],
+   "journal": "Nature Communications",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41467-026-78186-5.pdf",
+   "type": "journal-article",
+   "oa_url": "https://www.nature.com/articles/s41467-026-78186-5_reference.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41467-026-78186-5",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1792201742399849",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "pain",
+     "perception",
+     "empathy"
+    ],
+    "approach": [
+     "fmri",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-17T13:43:45Z",
+    "usage": {
+     "input_tokens": 488,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 99,
+     "cost_usd": 0.01253
+    }
+   }
+  },
   {
    "id": "chen2026targeted",
    "slack_ts": "1792122493.606479",
