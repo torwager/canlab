@@ -1,7 +1,252 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-19",
  "channel": null,
  "items": [
+  {
+   "id": "mickle2026independent",
+   "slack_ts": "1792380011.700159",
+   "shared_on": "2026-10-19",
+   "shared_by": "tor",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 4
+    }
+   ],
+   "url": "https://acrjournals.onlinelibrary.wiley.com/doi/abs/10.1002/acr.80189",
+   "doi": "10.1002/acr.80189",
+   "title": "The Independent and Combined Effects of Mindfulness Meditation and Transcranial Direct Current Stimulation on Central Pain Processing in Adults with Knee Osteoarthritis",
+   "abstract": "Objective The Pain Relief for OsteoArthritis through Combined Treatment (PROACT) was a proof‐of‐principle mechanistic randomized controlled trial to examine the effects of Breathing and Attention Training (BAT), and transcranial direct current stimulation (tDCS) on pain modulatory balance, pain‐related brain function, and clinical pain in middle‐aged to older adults with knee osteoarthritis (OA). Methods Participants completed baseline health screening, clinical knee pain assessment, quantitative sensory testing (QST), and functional magnetic resonance imaging (fMRI) in response to mechanical pain evocation of the index knee. They were randomized to receive concurrent sham BAT/sham tDCS, active BAT/sham tDCS, sham BAT/active tDCS or active BAT/active tDCS. Participants completed 20‐minute interventions for five consecutive days. After, participants repeated the clinical knee pain assessment, QST, and fMRI. Results Adjusted analyses of 226 completers revealed no significant main effects of treatment on clinical pain or pain modulatory balance. However, average pain‐evoked cerebral blood flow across pain‐related regions of interest was significantly lower for active tDCS (‐3.14 [CI:‐4.83‐ ‐1.45]) vs. sham tDCS (‐0.51 [CI:‐2.19‐1.17]), though this finding did not survive multiple correction. Pre‐planned follow‐up comparisons revealed that the active BAT/active tDCS group showed lower post‐intervention pain‐evoked cerebral blood flow than the sham BAT/sham tDCS group. Conclusions The PROACT study found that mindfulness meditation in combination with tDCS may reduce pain‐evoked cerebral blood flow in adults with knee OA. Future research is needed to determine if a longer duration of exposure to the combined active BAT/active tDCS treatment beneficially influences pain modulatory balance and clinical knee pain in this population. image",
+   "authors": [
+    "Mickle, A. M.",
+    "Tanner, J. J.",
+    "Wu, S. S.",
+    "Dai, Y.",
+    "Rubio, S.",
+    "Thomas, P. A.",
+    "Kusko, D. A.",
+    "Pratscher, S. D.",
+    "Lai, S.",
+    "Riggs, K. R.",
+    "Ahn, H.",
+    "Woods, A. J.",
+    "Staud, R.",
+    "Sibille, K. T.",
+    "Sorge, R. E.",
+    "Zeidan, F.",
+    "Fillingim, R. B.",
+    "Goodin, B. R."
+   ],
+   "journal": "Arthritis Care &amp; Research",
+   "year": 2026,
+   "pdf_url": null,
+   "type": "journal-article",
+   "pmid": "42867018",
+   "pmcid": null,
+   "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/acr.80189",
+   "publisher_url": "https://doi.org/10.1002/acr.80189",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1792380011700159",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "chronic_pain",
+     "pain",
+     "emotion_regulation"
+    ],
+    "approach": [
+     "fmri",
+     "brain_stimulation",
+     "tdcs",
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "A randomized controlled trial tested mindfulness meditation and tDCS, alone and combined, on pain-evoked brain function and clinical pain in knee osteoarthritis patients using fMRI and quantitative sensory testing.",
+   "key_finding": "Combined active mindfulness training and active tDCS reduced pain-evoked cerebral blood flow compared to sham-sham controls, though no significant effects on clinical pain or pain modulatory balance were found.",
+   "free_keywords": [
+    "knee osteoarthritis",
+    "mindfulness meditation",
+    "tDCS",
+    "cerebral blood flow",
+    "quantitative sensory testing",
+    "pain modulatory balance",
+    "RCT"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Typo in JSON key 'type' corrected mentally; treat as type field.",
+    "classified_at": "2026-10-19T16:59:53Z",
+    "usage": {
+     "input_tokens": 827,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 330,
+     "cost_usd": 0.0058
+    }
+   }
+  },
+  {
+   "id": "shared2026httpscdnclinicaltrialsgovlargedocsnctprotsappdf",
+   "slack_ts": "1792380011.700159",
+   "shared_on": "2026-10-19",
+   "shared_by": "tor",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 4
+    }
+   ],
+   "url": "https://cdn.clinicaltrials.gov/large-docs/72/NCT04375072/Prot_SAP_001.pdf",
+   "doi": null,
+   "title": "Link on cdn.clinicaltrials.gov",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1792380011700159",
+   "kind": "link",
+   "title_unresolved": true
+  },
+  {
+   "id": "shared2026httpswwwmedrxivorgcontentvfullpdf",
+   "slack_ts": "1792380011.700159",
+   "shared_on": "2026-10-19",
+   "shared_by": "tor",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 4
+    }
+   ],
+   "url": "https://www.medrxiv.org/content/10.64898/2026.02.02.26345407v1.full.pdf",
+   "doi": "10.64898/2026.02.02.26345407",
+   "title": "Neural and psychophysical predictors of treatment response to transcranial direct current stimulation and mindfulness-based meditation for knee osteoarthritis pain",
+   "abstract": "AimWe investigated the heterogeneity of treatment effects in transcranial direct current stimulation (tDCS) with mindfulness-based meditation (MBM) and within each individual study group (tDCS alone, MBM alone, and sham) among individuals with symptomatic knee osteoarthritis. We also explored participant characteristics underlying this heterogeneity.\n\nMethodsThis secondary analysis drew on a double-blind, randomized, sham-controlled, phase II, parallel-group trial in which 200 participants were assigned to one of four groups: (1) active tDCS + active MBM, (2) active tDCS + sham MBM, (3) sham tDCS + active MBM, or (4) sham tDCS + sham MBM. Participants received ten 20-minute tDCS sessions (active or sham) administered concurrently with MBM (active or sham). Latent class growth analysis was used to identify subgroups with distinct treatment response trajectories (responders vs. non-responders) based on changes in clinical pain (Numeric Rating Scale) from baseline to post-intervention. Generalized linear models were then applied to determine baseline factors associated with participants response classification, including demographic, clinical, and psychological characteristics; quantitative sensory testing battery; and pain-related cortical hemodynamic activity measured using functional near-infrared spectroscopy (fNIRS) in response to punctate and thermal stimuli.\n\nResultsResponders in the active tDCS + active MBM and active tDCS + sham MBM groups demonstrated greater improvements in clinical pain from baseline to post-intervention than non-responders (p < 0.001). In the active tDCS + active MBM group, greater cortical activation in the fNIRS channel S06-D06 of the left somatosensory cortex in response to punctate stimuli, identifying as white, and lower conditioned pain modulation (reflecting less efficient endogenous pain modulation), were significantly associated with being responders (p < 0.05). In the active tDCS + sham MBM group, younger age and lower heat pain tolerance at the knee were significantly associated with being responders (p < 0.05). No clear response patterns were observed in the remaining groups.\n\nConclusionFactors underlying heterogeneity of treatment effects, including somatosensory cortical activation and pain modulatory profiles, may provide preliminary insights to inform the development of personalized neuromodulation (stimulation) protocols.",
+   "authors": [
+    "Lee, C.",
+    "Park, J.",
+    "Miao, H.",
+    "Ahn, H."
+   ],
+   "journal": "medRxiv",
+   "year": 2026,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.64898/2026.02.02.26345407v1.full.pdf",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1792380011700159",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "chronic_pain",
+     "pain",
+     "emotion_regulation"
+    ],
+    "approach": [
+     "brain_stimulation",
+     "tdcs",
+     "behavioral",
+     "other_imaging",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "A secondary analysis of a randomized trial of tDCS and mindfulness-based meditation for knee osteoarthritis identified responder subgroups via latent class growth analysis and examined baseline predictors including fNIRS cortical activity and quantitative sensory testing.",
+   "key_finding": "In the active tDCS plus active meditation group, greater fNIRS-measured somatosensory cortex activation to punctate stimuli, white race, and lower conditioned pain modulation predicted being a treatment responder, while in active tDCS alone younger age and lower heat pain tolerance predicted response.",
+   "free_keywords": [
+    "knee osteoarthritis",
+    "fNIRS",
+    "quantitative sensory testing",
+    "conditioned pain modulation",
+    "latent class growth analysis",
+    "mindfulness meditation",
+    "personalized neuromodulation"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "Abstract only; fNIRS is not strictly fMRI but tagged as other_imaging; machine_learning tag reflects latent class growth analysis/GLM classification approach, though not cross-validated predictive modeling in strict sense.",
+    "classified_at": "2026-10-19T16:59:58Z",
+    "usage": {
+     "input_tokens": 946,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 440,
+     "cost_usd": 0.00714
+    }
+   }
+  },
+  {
+   "id": "shared2026only",
+   "slack_ts": "1792353339.335959",
+   "shared_on": "2026-10-18",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://arxiv.org/abs/2206.02069",
+   "doi": "10.48550/arxiv.2206.02069",
+   "title": "Only what exists can cause: An intrinsic powers view of free will",
+   "abstract": "This essay addresses the implications of integrated information theory (IIT) for free will. IIT is a theory of what consciousness is and of how its presence and quality can be accounted for in physical terms. According to IIT, the presence of consciousness is accounted for by a maximum of cause-effect power in the brain. Moreover, the way an experience feels is accounted for by how that cause-effect power is structured. If IIT is right, we do have free will in a genuine sense: we have alternatives, reasons, and values, we make decisions, and we-not our neurons or atoms-are the cause of our willed actions and bear responsibility for them. IIT's argument for genuine free will hinges on the proper understanding of consciousness as intrinsic existence, captured by its intrinsic powers ontology: what exists absolutely, in physical terms, are intrinsic entities, and only what exists can cause.",
+   "authors": [
+    "Tononi, Giulio",
+    "Albantakis, Larissa",
+    "Boly, Melanie",
+    "Cirelli, Chiara",
+    "Grasso, Matteo",
+    "Koch, Christof"
+   ],
+   "journal": "arXiv.org",
+   "year": 2022,
+   "pdf_url": "https://arxiv.org/pdf/2206.02069",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1792353339335959",
+   "publisher_url": "https://doi.org/10.48550/arxiv.2206.02069",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "The essay argued that integrated information theory implies humans possess genuine free will because consciousness constitutes intrinsic cause-effect power that makes the whole person, not just neurons, the true cause of actions.",
+   "key_finding": null,
+   "free_keywords": [
+    "integrated information theory",
+    "free will",
+    "consciousness",
+    "intrinsic powers ontology",
+    "philosophy of mind"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Philosophical essay unrelated to CANlab's empirical neuroscience topics; no fMRI or empirical methods used.",
+    "classified_at": "2026-10-19T16:59:49Z",
+    "usage": {
+     "input_tokens": 373,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 204,
+     "cost_usd": 0.01335
+    }
+   }
+  },
   {
    "id": "sun2026precision",
    "slack_ts": "1792201742.399849",
