@@ -1,7 +1,85 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-20",
  "channel": null,
  "items": [
+  {
+   "id": "jung2026mechanistic",
+   "slack_ts": "1792435439.027939",
+   "shared_on": "2026-10-19",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 2,
+   "reactions": [
+    {
+     "name": "👍🏽",
+     "count": 1
+    },
+    {
+     "name": "👍",
+     "count": 3
+    },
+    {
+     "name": "👍🏼",
+     "count": 1
+    }
+   ],
+   "url": "https://www.pnas.org/doi/full/10.1073/pnas.2609630123",
+   "doi": "10.1073/pnas.2609630123",
+   "title": "Mechanistic versus descriptive interpretation of brain activity pattern reconstruction",
+   "abstract": "The geometric eigenmodes, derived from the shape of the cortical surface, have been suggested as a better model for explaining brain function due to their high accuracy in reconstructing patterns of both spontaneous and stimulus-evoked brain activity patterns captured by functional MRI, when contrasted with alternative models including structural connectome derived bases. While a descriptive representation offers valuable utility for neuroimaging studies, it is necessary to examine the extent to which it supports a mechanistic explanation for human brain function. Although the observation that geometric eigenmodes accurately fit brain activity is intriguing, we argue that accepting them as a model of brain function risks conflating descriptive and mechanistic interpretations. While a representation that effectively describes the underlying geometry is inherently adept at fitting patterns within that geometric space; it does not necessarily shed light on mechanisms that give rise to the brain’s functional attributes. To this end, we provide two lines of empirical results: a) geometric eigenmodes demonstrate a high flexibility when fit to a range of manipulated patterns, and b) localized parcel-based representations can reconstruct activity patterns as well. Based on those results, theoretical considerations, and previous data, we argue that more consideration is needed regarding the complementary roles of descriptive representation and mechanistic explanation in neuroimaging research. While we recognize the potential role of the brain’s geometry in influencing its dynamics, assertions regarding its efficacy should be weighed against its inherent lack of specificity, biological interpretability, and anatomical evidence.",
+   "authors": [
+    "Jung, K.",
+    "Eickhoff, S. B.",
+    "Patil, K. R."
+   ],
+   "journal": "Proceedings of the National Academy of Sciences",
+   "year": 2026,
+   "pdf_url": null,
+   "type": "journal-article",
+   "pmid": "42879487",
+   "pmcid": null,
+   "oa_url": "https://doi.org/10.1073/pnas.2609630123",
+   "publisher_url": "https://doi.org/10.1073/pnas.2609630123",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1792435439027939",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods",
+     "computational_model"
+    ],
+    "type": [
+     "commentary"
+    ]
+   },
+   "summary": "The authors critically examined geometric eigenmode models of brain activity, showing they are highly flexible and no better than localized parcel-based models, arguing this reflects descriptive rather than mechanistic explanation.",
+   "key_finding": "Geometric eigenmodes fit a wide range of manipulated patterns and parcel-based representations reconstruct activity equally well, undermining claims that eigenmodes mechanistically explain brain function.",
+   "free_keywords": [
+    "geometric eigenmodes",
+    "cortical surface geometry",
+    "mechanistic vs descriptive models",
+    "structural connectome",
+    "model specificity"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "Commentary/theoretical critique with some empirical demonstrations.",
+    "classified_at": "2026-10-20T15:06:45Z",
+    "usage": {
+     "input_tokens": 629,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 285,
+     "cost_usd": 0.01467
+    }
+   }
+  },
   {
    "id": "mickle2026independent",
    "slack_ts": "1792380011.700159",
