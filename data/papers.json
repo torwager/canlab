@@ -1674,7 +1674,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Rader, L., Zorina-Lichtenwalter, K., Gustavson, D., Wager, T. D., & Friedman, N. (in press) Adolescent pain reports share genetic overlap with adult chronic pain conditions: a polygenic score analysis using the ABCD study. The journal of pain, 43, 106260.",
-  "citations_refreshed": "2026-10-14",
+  "citations_refreshed": "2026-10-21",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -1719,7 +1719,7 @@
   "openalex_id": null,
   "date": "2026-03-17",
   "abstract": "Chronic pain and substance use disorders frequently co-occur and may share general addiction-related and substance-specific genetic pathways. Additionally, substance consumption and problematic use may differ in their genetic associations with pain subtypes. We applied genomic structural equation modeling to assess shared genetic and neurological enrichment between general and musculoskeletal-specific chronic pain to general addiction liability, substance use disorder-specific risk and substance use. Cross-trait genomic structural equation modeling using genome-wide association study (GWAS) summary statistics from large-scale global consortia. Data were aggregated from international research collaborations and biobanks in the United States and Europe. Participants were individuals (n = 63 982 to 2 428 851) with European-like ancestry from population-based and clinical cohorts. We analyzed a General Chronic Pain factor from 24 chronic pain GWASs and a Musculoskeletal-specific Pain factor from 11 overlapping conditions. We constructed an Addiction factor from GWASs of alcohol, tobacco, cannabis and opioid use disorders, and partitioned out substance-specific genetic risk. We used alcohol and smoking consumption GWASs to distinguish use from problematic use. We applied molecular neurological annotations to assess brain cell type enrichment in shared genetic effects. The Addiction factor was genetically correlated with General Chronic Pain [genetic correlation (r General chronic pain appears to share substantial genetic overlap and neuronal enrichment with addiction risk and shows distinct associations with problematic alcohol use, alcohol consumption and cigarette use, reflecting both a broad transdiagnostic mechanism as well as substance-specific paths. In contrast, musculoskeletal-specific pain appears to be more narrowly linked to tobacco use disorder and alcohol use frequency, but not to general addiction liability.",
-  "cited_by_count": 0,
+  "cited_by_count": 1,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1111/add.70387",
@@ -1784,7 +1784,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Rader, L., Zorina-Lichtenwalter, K., Hatoum, A. S., Stallings, M. C., Wager, T. D., & Friedman, N. P. (2026) Genetic overlap of chronic pain, musculoskeletal-specific pain, substance use disorders, and substance use consumption: Common addiction and substance-specific effects. Addiction. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "englert2026functional",
@@ -2517,7 +2517,7 @@
     "note": "Editorial introducing this paper"
    }
   ],
-  "citations_refreshed": "2026-10-15"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "taylor2026measuring",
@@ -4211,7 +4211,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Rader, L., Wager, T. D., & Friedman, N. P. (2025) Chronic pain is specifically associated with updating working memory: a longitudinal twin study. PAIN 166(1):p 212-221 [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "noesteinmuller2025reply",
@@ -5177,7 +5177,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Reddan, M.C., Ong, D., Wager T.D., Mattek, A., Kahhale, I., & Zaki, J. (2025) Neural signatures of emotion intent and inference align during social consensus. Nature Communications, 16(1), 6156. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "gopalakrishnan2025neurophysiological",
@@ -6148,7 +6148,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Rader, L., Reineberg, A. E., Petre, B., Wager, T. D., & Friedman, N. P. (2024). Familial effects account for association between chronic pain and past month smoking. European journal of pain (London, England), 28(7), 1144–1155. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "noesteinmuller2024defining",
@@ -6358,7 +6358,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Ceko, M., Baeuerle, T., Webster, L., Wager, T. D., & Lumley, M. A. (in press) The Effects of Virtual Reality Neuroscience-based Therapy on Clinical and Neuroimaging Outcomes in Patients with Chronic Back Pain: A Randomized Clinical Trial. PAIN",
-  "citations_refreshed": "2026-10-15"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "bo2024systems",
@@ -7110,7 +7110,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Botvinik-Nezer R., Petre B., Ceko M., Lindquist M.A., Friedman N.P., & Wager T.D. (2024). Placebo treatment affects brain systems related to affective and cognitive processes, but not nociceptive pain. Nature Communications. [PDF]",
-  "citations_refreshed": "2026-10-15"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "quide2024enigmachronic",
@@ -7135,7 +7135,7 @@
   "openalex_id": "https://openalex.org/W4401013957",
   "date": "2024-07-26",
   "abstract": "Chronic pain has a profound societal burden, affecting 20% to 30% of the world population,10,13,14,47 and is associated with high rates of comorbid mental health conditions, especially depression and anxiety.15 Women and people of increasing age are disproportionately affected by chronic pain,14,32 and while there are pharmacological and nonpharmacological treatments available, many individuals still do not benefit from these treatments.11,16,19,31,35,45 One significant challenge in providing effective pain-relieving treatments arises from our incomplete understanding of the mechanisms underlying the development and maintenance of chronic pain. Some of these mechanisms include changes in brain morphology and function.2,8,12,18,25,28,37 One approach to better understand these mechanisms is to combine neuroimaging studies of diverse populations with the purpose of identifying common phenotypes and neuroimaging correlates. Phenotyping to explore both similarities and heterogeneity across pain conditions is necessary to inform disease prognosis and elucidate common treatment targets. To this endeavor, the Enhancing Neuroimaging and Genetics through Meta-Analysis (ENIGMA)-Chronic Pain working group was formed in November 2022. ENIGMA-Chronic Pain has since welcomed over 70 pain investigators from all over the world, to pool and integrate existing neuroimaging and clinical data from approximately 2000 chronic pain and 4000 pain-free healthy individuals, from over 30 international and independently collected datasets. 1. What is ENIGMA? What are the aims of the ENIGMA-Chronic Pain Working Group? Founded in 2009, the aim of the ENIGMA Consortium is to address the growing replication problems in neuroimaging research. ENIGMA is a global collaboration of more than 2000 scientists from over 45 countries studying the human brain, in health and over 30 neurological, mental, and neurogenetic diseases.42 ENIGMA coordinates large-scale neuroimaging analyses, pooling existing datasets from around the world,6,34,39 actively coordinating the reuse of data, while accommodating data privacy safeguards, bringing rich resources and expertise to answer fundamental questions related to major brain disorders. By integrating available existing datasets and building on the growing infrastructure of the ENIGMA consortium, ENIGMA-Chronic Pain provides a platform and a resource to the chronic pain community allowing for data findability, accessibility, interoperability, and44 reusability—all vital aspects of reproducible research. Using a cost-effective and innovative global approach by merging the resources and data of leading chronic pain neuroimaging centers, ENIGMA-Chronic Pain offers a unique opportunity to obtain detailed, reproducible, and reliable data on brain mechanisms associated with chronic pain. ENIGMA-Chronic Pain integrates single studies of specific chronic pain conditions, including precursor data repositories (eg, OpenPain), and larger population-based biobanks with recorded indices of chronic pain (eg, UK Biobank).8 Recent advances in machine learning and artificial intelligence technologies also offer new and powerful ways to analyze these existing neuroimaging data. Through a worldwide collaboration of pain researchers and clinicians, ENIGMA-Chronic Pain will aim to (1) determine common and pain condition-specific brain correlates of chronic pain through multimodal neuroimaging (relative to pain-free healthy controls); (2) examine the interactions between chronic pain and comorbid mental health conditions on brain morphology and function; and (3) identify the roles of key sociodemographic factors and medication on brain morphology and function. 2. Determine common and pain condition-specific brain correlates of chronic pain through multimodal neuroimaging ENIGMA-Chronic Pain combines smaller datasets from heterogeneous chronic pain conditions. This approach maximizes the power of planned analyses and is necessary to identify brain correlates shared across chronic pain conditions. Through planned follow-up analyses on pooled datasets of similar pain types, pain locations across the body, or specific diagnoses, ENIGMA-Chronic Pain will identify correlates specific to the studied conditions at a larger scale than has previously been possible. ENIGMA-Chronic Pain will begin with examining brain topography of chronic pain by using common processing pipelines and software such as FreeSurfer for T1-weighted structural magnetic resonance imaging scans (sMRI)17,20,21 or Functional MRI of the Brain Software Library (FSL) for diffusion MRI (dMRI).23,38 Further to brain-wide region-of-interest analyses, investigation of multimodal correlates and brain networks of chronic pain will be conducted using whole-brain analyses, including standardized indices of functional connectivity from resting-state functional MRI (rs-fMRI) processed with ENIGMA's HALFpipe,43 voxel-based morphometry, and machine learning approaches to fuse multimodal features from sMRI, dMRI, and rs-fMRI to make diagnostic classification or prediction of a future clinical state. 3. Examine the interactions between chronic pain and comorbid mental health conditions on brain morphology and function Chronic pain is often accompanied by comorbid mental health conditions that can prevent treatment success.46 For example, 5% to 85% of individuals with chronic pain (depending on the study populations and settings) experience depression.1,9 The ENIGMA Consortium has extensively investigated the detailed brain and genetic markers of most common mental health conditions and reported alterations in brain regions similar to those commonly reported in smaller chronic pain studies.4,36 Evidence for shared or specific brain mechanisms between chronic pain and depression and anxiety is now growing,33,40,49,50 but no definite conclusion can be drawn from these smaller studies. Using advanced statistical models, our unique sample size, and availability of indices of comorbid mental health conditions, the pooled dataset from ENIGMA-Chronic Pain will aim to disentangle the fine morphological and functional brain alterations across all pain conditions, but also within specific pain types. This approach will contribute to identify plausible targets for more effective treatments for people living with both chronic pain and these comorbid conditions. 4. Examine the roles of key sociodemographic factors and medication on brain morphology and function Sex and age are key factors that can influence the transition to chronic pain.48 Women have greater prevalence rates for chronic pain conditions compared with men and experience more frequent, intense, and longer-lasting pain across the lifespan.14,24,30 These sex-specific differences can affect treatment choice, side effect profiles, and therapeutic responses.3 Although incompletely understood, many processes including genetic,29 neuroendocrine/neuroimmune,26 or brain-based differences,22 contribute to sex differences observed in chronic pain. Chronic pain is also highly prevalent in people of increasing age,14 along with other age-related pathologies, but the relationship between increasing age and chronic pain on brain morphology and function is still to be clearly determined. The inclusion of studies with comorbidity information that may inform causal modeling (eg, traumatic injuries, repetitive stress injuries, osteoporosis, metabolic disorders like diabetes, etc.) will clarify some of the brain–body connections at play. Existing preliminary evidence for the influence of these key sociodemographic factors needs further replication and refinement using large datasets. Another critical factor impacting brain morphology and function in chronic pain is the use of various types of pharmacological treatments,27 including tricyclic antidepressants, serotonin–norepinephrine reuptake inhibitors, antiepileptics, nonsteroidal anti-inflammatory drugs, and benzodiazepines.11,35 Using the available and detailed medication information recorded within ENIGMA-Chronic Pain, the aim of this study is to determine the variations in brain morphology and function associated with specific pharmacological treatment categories or combinations of thereof. 5. ENIGMA-Chronic Pain: expanding to other imaging modalities ENIGMA-Chronic Pain builds on the experience of the Consortium to host the largest and most comprehensive dataset for neuroimaging studies of chronic pain. In addition to sMRI, dMRI, and rs-fMRI data, ENIGMA-Chronic Pain will leverage the contribution of chronic pain researchers and clinicians with data and expertise in other neuroimaging modalities, including resting-state electroencephalography (EEG), task-based fMRI and EEG, event-related potentials, magnetoencephalography, functional near-infrared spectroscopy, and magnetic resonance spectroscopy. In addition, the aim of ENIGMA-Chronic Pain is to include neuromodulation studies, such as repetitive transcranial magnetic resonance stimulation, TMS-EEG, transcranial direct current stimulation, or transcranial alternating current stimulation studies, to examine potential causal associations.7 Finally, following work from the ENIGMA-Clinical Endpoint working group,41 a long-term goal includes building a framework of standardized questionnaires and tools for future research, to be applied to most, if not all, chronic pain conditions and to integrate genetics data to better understand the relationship between genetic and environmental risks on brain phenotypes of chronic pain overall and for available subtypes. 6. Conclusions ENIGMA-Chronic Pain will establish the largest worldwide platform for neuroimaging data dedicated to chronic pain research. This approach enables large-scale collaborative opportunities to identify the common and specific brain correlates of chronic pain conditions, as well as the role of mental health comorbidities, key sociodemographic factors, and pharmacological treatment on these alterations. This initiative will provide invaluable new knowledge based on adequately powered neuroimaging datasets. Future aims of the working group could include extending the scope to the earliest periods of the human lifespan, leveraging neonatal MRI and EEG datasets with pain-relevant paradigms,5 to investigate the potential developmental origins of chronic pain susceptibility in later years. Last, we extend the call to additional groups to join, contribute their expertise, and share their neuroimaging, genetic, psychological, and clinical data from healthy controls and individuals with chronic pain (see information and contact details on https://enigma.ini.usc.edu/ongoing/enigma-chronic-pain/). Through the inclusion of most, if not all, chronic pain neuroimaging research groups, we hope to grow the working group and thereby fulfill its goals. Conflict of interest statement None of the authors declare any conflicts of interest. The views expressed in this article are those of the authors and do not necessarily reflect the position or policy of the Department of Veterans Affairs or the United States government, or those of the NHS, the NIHR, or the Department of Health from the United Kingdom.",
-  "cited_by_count": 27,
+  "cited_by_count": 28,
   "oa_status": "hybrid",
   "oa_url": "https://doi.org/10.1097/j.pain.0000000000003317",
   "landing_url": "https://doi.org/10.1097/j.pain.0000000000003317",
@@ -7285,7 +7285,7 @@
   "crossref_checked": true,
   "citation_original": "Quidé, Y. et al. (in press) ENIGMA-Chronic Pain: a worldwide initiative to identify brain correlates of chronic pain. PAIN",
   "authors_truncated": true,
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "riegner2024mindfulness",
@@ -7391,7 +7391,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Riegner, G., Dean, J., Wager, T. D., & Zeidan, F. (2024) Mindfulness meditation and placebo modulate distinct multivariate neural signatures to reduce pain. Biological Psychiatry [online link]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "ashar2024openlabel",
@@ -8012,7 +8012,7 @@
   "crossref_checked": true,
   "abstract_source": "pdf",
   "citation_original": "Picard, M-E., Kunz, M., Chen, J-I., Coll, M-P., Vachon-Presseau, E., Wager, T.D., & Rainville, P. (2024) A distributed brain response predicting the facial expression of acute nociceptive pain eLife 12:RP87962 [PDF]",
-  "citations_refreshed": "2026-10-14",
+  "citations_refreshed": "2026-10-21",
   "neuromarkers": [
    {
     "id": "2024-feps-facial-expressions-of-pain-signature",
@@ -8488,7 +8488,7 @@
   "crossref_checked": true,
   "citation_original": "Ross, M.C., Cisler, J.M., Koch S.B.J, Olff, M., Veltman, D.J., Nawijn, L., Frijling, J.L., van Zuiden, M., Zhu, X., Neria, Y., Suarez-Jimenez, B., Wager, T.D., et al. (preprint) Resolution limit-free community detection reveals unique patterns of resting-state network connectivity in posttraumatic stress disorder: A PGC-ENIGMA PTSD Consortium investigation. [PDF]",
   "authors_truncated": true,
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "singh2023variation",
@@ -9360,7 +9360,7 @@
   "crossref_checked": true,
   "citation_original": "Pinto, A.M., Geenen, R., Wager, T.D., et al. (2023). Reply to “Imbalance of threat and soothing systems in fibromyalgia: rephrasing an established mechanistic model.” Nature Reviews Rheumatology, 19(5), 319–320.. PMID: 36959282. [PDF]",
   "authors_truncated": true,
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "botviniknezer2023belief",
@@ -11314,7 +11314,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Reineberg, A.E., Banich, M.T., Wager, T.D., & Friedman, N.P. (2022). Context-specific activations are a hallmark of the neural basis of individual differences in general executive function. NeuroImage. 249: 118845. PMID: 34963651.[PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "berardi2022multisite",
@@ -11555,7 +11555,7 @@
   "openalex_id": null,
   "date": "2022-05-30",
   "abstract": "The brain contains both generalized and stimulus-type-specific representations of aversive events, but models of how these are integrated and related to subjective experience are lacking. We combined functional magnetic resonance imaging with predictive modeling to identify representations of generalized (common) and stimulus-type-specific negative affect across mechanical pain, thermal pain, aversive sounds and aversive images of four intensity levels each. This allowed us to examine how generalized and stimulus-specific representations jointly contribute to aversive experience. Stimulus-type-specific negative affect was largely encoded in early sensory pathways, whereas generalized negative affect was encoded in a distributed set of midline, forebrain, insular and somatosensory regions. All models specifically predicted negative affect rather than general salience or arousal and accurately predicted negative affect in independent samples, demonstrating robustness and generalizability. Common and stimulus-type-specific models were jointly important for predicting subjective experience. Together, these findings offer an integrated account of how negative affect is constructed in the brain and provide predictive neuromarkers for future studies.",
-  "cited_by_count": 122,
+  "cited_by_count": 123,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1038/s41593-022-01082-w",
@@ -11637,7 +11637,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Čeko, M., Kragel, P.A., Woo, C-W., López-Solà, M. & Wager, T.D. (2022). Common and stimulus-type-specific brain representations of negative affect. Nature Neuroscience. 25(6):760-770. PMID: 35637370. [PDF], [Brain Pattern Masks]",
-  "citations_refreshed": "2026-10-15",
+  "citations_refreshed": "2026-10-21",
   "neuromarkers": [
    {
     "id": "2021-ceko-mpa2-multiaversive",
@@ -12516,7 +12516,7 @@
   "openalex_id": "https://openalex.org/W4310777997",
   "date": "2022-12-05",
   "abstract": "Fibromyalgia is characterized by widespread pain, fatigue, sleep disturbances and other symptoms, and has a substantial socioeconomic impact. Current biomedical and psychosocial treatments are unsatisfactory for many patients, and treatment progress has been hindered by the lack of a clear understanding of the pathogenesis of fibromyalgia. We present here a model of fibromyalgia that integrates current psychosocial and neurophysiological observations. We propose that an imbalance in emotion regulation, reflected by an overactive 'threat' system and underactive 'soothing' system, might keep the 'salience network' (also known as the midcingulo-insular network) in continuous alert mode, and this hyperactivation, in conjunction with other mechanisms, contributes to fibromyalgia. This proposed integrative model, which we term the Fibromyalgia: Imbalance of Threat and Soothing Systems (FITSS) model, should be viewed as a working hypothesis with limited supporting evidence available. We hope, however, that this model will shed new light on existing psychosocial and biological observations, and inspire future research to address the many gaps in our knowledge about fibromyalgia, ultimately stimulating the development of novel therapeutic interventions.",
-  "cited_by_count": 138,
+  "cited_by_count": 139,
   "oa_status": "green",
   "oa_url": "https://dspace.library.uu.nl/handle/1874/426650",
   "landing_url": "https://doi.org/10.1038/s41584-022-00873-6",
@@ -12600,7 +12600,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Pinto, A.M., Geenen, R., Wager, T.D., Lumley, M., Hauser, W., Kosek, E., Ablin, J., Amris, K., Branco, J., Buskila, D., Castelhano, J., Castelo-Branco, M., Crofford, L., Fitzcharles, M., López-Solà, M., Luís, M., Reis Marques, T., Mease, P., Palavra, F., Rhudy, J., Uddin, L., Castilho, P., Jacobs, J. & da Silva, J.A. (2022). Emotion Regulation and the Salience Network: A Hypothetical Integrative Model of Fibromyalgia. Nature Reviews Rheumatology, 19(1), 44–60. PMID: 36471023. [PDF]",
-  "citations_refreshed": "2026-10-14",
+  "citations_refreshed": "2026-10-21",
   "pdf_search": {
    "last": "2026-10-08",
    "result": "linked-local",
@@ -12921,7 +12921,7 @@
   "crossref_checked": true,
   "citation_original": "Salman, M. S., Wager, T. D., Damaraju, E. C., Abrol, A., Vergara, V. M., Fu, Z., & Calhoun, V. D. (2021). An Approach to Automatically Label & Order Brain Activity/Component Maps. Brain Connectivity. 12(1):85-95. PMCID: PMC8867103. [PDF]",
   "preprint_doi": "10.1101/2020.08.31.275578",
-  "citations_refreshed": "2026-10-14",
+  "citations_refreshed": "2026-10-21",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -13428,7 +13428,7 @@
   "crossref_checked": true,
   "citation_original": "Sicorello, M., Herzog, J., Wager, T.D., Ende, G., Müller-Engelmann, M., Herpertz, S.C., Bohus, M., Schmahl, C., Paret, C. & Niedtfeld, I. (2021). Affective neural signatures do not distinguish women with emotion dysregulation from healthy controls: A mega-analysis across three task-based fMRI studies. Neuroimage: Reports. 1: 2. https://doi.org/10.1016/j.ynirp.2021.100019. [PDF]",
   "preprint_doi": "10.1101/2021.02.03.21251077",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "mollick2021neural",
@@ -13927,7 +13927,7 @@
   "openalex_id": null,
   "date": "2021-05-02",
   "abstract": "Abstract \n                 Escape from threats has paramount importance for survival. However, it is unknown if a single circuit controls escape from innate and conditioned threats. The hypothalamic dorsal premammillary nucleus (PMd) may control escape, as it is activated by escape-inducing threats and projects to the region most implicated in flight, the dorsolateral periaqueductal gray (dlPAG). We show that in mice cholecystokinin (cck)-expressing PMd cells are activated during escape, but not other defensive behaviors. PMd-cck ensemble activity can also predict future escape. Furthermore, PMd inhibition decreases escape speed from both innate and conditioned threats. Inhibition of the PMd-cck projection to the dlPAG also decreased escape speed. Lastly, human fMRI data show that a posterior hypothalamic-to-dlPAG pathway increased activity during exposure to aversive images, indicating that a similar pathway may possibly have a related role in humans. Our data identify the PMd as a central node of the escape network.",
-  "cited_by_count": 38,
+  "cited_by_count": 39,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1101/2021.05.02.442354",
@@ -14005,7 +14005,7 @@
   "crossref_checked": true,
   "citation_original": "Wang, W., Schuette, P.J., La-Vu, M.Q., Torossian, A., Tobias, B.C., Ceko, M., Kragel, P.A., Reis, F.M., Ji, S., Sehgal, M., Maesta-Pereira, S., Chakerian, M., Silva, A.J., Canteras, N.S., Wager, T.D., Kao, J.C. & Adhikari, A. (2021). Dorsal premammillary projection to periaqueductal gray controls escape vigor from innate and conditioned threats. Elife. 10, e69178. PMCID: PMC8457830. [PDF]",
   "preprint_doi": "10.1101/2021.05.02.442354",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "ashar2021effects",
@@ -14311,7 +14311,7 @@
   "crossref_checked": true,
   "abstract_source": "pdf",
   "citation_original": "Reeck, C., Figner, B.F., Weber, E.U., Steffener, J., Krosch, A.R., Wager, T.D. & Johnson, E.J. (2021). Framing the Future First: Medial Temporal Lobe Activation Discriminates Delay and Acceleration Framing in Intertemporal Choice. Journal of Neuroscience, Psychology, and Economics. 14(2), 71–80. [Link]",
-  "citations_refreshed": "2026-10-14",
+  "citations_refreshed": "2026-10-21",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -14589,7 +14589,7 @@
   "openalex_id": null,
   "date": "2021-10-05",
   "abstract": "Myeloid, T, and NK cells are key players in the elimination phase of cancer immunoediting, also referred to as cancer immunosurveillance. However, the role of B cells and NAbs, which are present prior to the encounter with cognate antigens, has been overlooked. One reason is due to the popular use of a single B cell-deficient mouse model, muMT mice. Cancer models using muMT mice display a similar tumor burden as their wild-type (WT) counterparts. Empirically, we observe what others have previously reported with muMT mice. However, using two other B cell-deficient mouse models (IgHELMD4 and CD19",
-  "cited_by_count": 32,
+  "cited_by_count": 33,
   "oa_status": null,
   "oa_url": "https://cdn.elifesciences.org/articles/69713/elife-69713-fig4-data1-v3.pdf",
   "landing_url": "https://doi.org/10.7554/elife.69713",
@@ -14646,7 +14646,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Rawat, K., Tewari, A., Morrisson, M.J., Wager, T.D., & Jakubzick, C.V. (2021). Redefining innate natural antibodies as important contributors to anti-tumor immunity. Elife. 10:e69713. PMCID: PMC8547949. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "singh2021variation",
@@ -15371,7 +15371,7 @@
   },
   "abstract_source": "pdf",
   "citation_original": "Poß, D., Liebl, D., Kneip, A., Eisenbarth, H., Wager, T. D. & Feldman Barrett, L. (2020). Super-Consistent Estimation of Points of Impact in Nonparametric Regression with Functional Predictor. Journal of the Royal Statistical Society. Series B 82(4): 1115-1140. [PDF]",
-  "citations_refreshed": "2026-10-14",
+  "citations_refreshed": "2026-10-21",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -15472,7 +15472,7 @@
    "classified_at": "2026-09-06T19:26:20Z"
   },
   "citation_original": "Salman, M., Wager, T.D., Damaraju, E., Abrol, A. & Calhoun, V. (2020). Fully automated ordering and labeling of ICA components. Paper presented at IEEE International Conference on Bioinformatics and Biomedicine (BIBM). 1: 1110-1114. DOI:10.1109/BIBM49941.2020.9313309. [Link]",
-  "citations_refreshed": "2026-10-14",
+  "citations_refreshed": "2026-10-21",
   "pdf_search": {
    "last": "2026-10-08",
    "result": "linked-local",
@@ -15706,7 +15706,7 @@
   "crossref_checked": true,
   "citation_original": "Rosenberg, M. D., Martinez, S. A., Rapuano, K. M., Conley, M. I., Cohen, A. O., Corenjo, M. D., Hagler, D. J., Anderson, K. M., Wager, T. D., Feczko, E., Earl, E., Fair, D. A., Barch, D. M., Watts, R. & Casey, B. J. (2020). Behavioral and neural signatures of working memory in childhood. The Journal of Neuroscience. 40 (26): 5090-5104. PMCID: PMC7314411. [PDF]",
   "preprint_doi": "10.1101/659409",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "yu2020generalizable",
@@ -15826,7 +15826,7 @@
   "crossref_checked": true,
   "citation_original": "Yu, H., Koban, L., Chang, L. J., Wagner, U., Krishnan, A., Vuilleumier, P., Zhou, X. & Wager, T. D. (2020). A Generalizable Multivariate Brain Pattern for Interpersonal Guilt. Cerebral Cortex. 30(6): 3558–3572. PMCID: PMC7232998. [PDF], [Brain Model]",
   "preprint_doi": "10.1101/835520",
-  "citations_refreshed": "2026-10-14",
+  "citations_refreshed": "2026-10-21",
   "neuromarkers": [
    {
     "id": "2019-yu-koban-guilt",
@@ -16712,7 +16712,7 @@
   "openalex_id": null,
   "date": "2020-04-17",
   "abstract": "Interpersonal touch and social support can influence physical health, mental well-being and pain. However, the mechanisms by which supportive touch promotes analgesia are not well understood. In Study 1, we tested how three kinds of social support from a romantic partner (passive presence, gentle stroking and handholding) affect pain ratings and skin conductance responses (SCRs). Overall, support reduced pain ratings in women, but not men, relative to baseline. Support decreased pain-related SCRs in both women and men. Though there were no significant differences across the three support conditions, effects were largest during handholding. Handholding also reduced SCRs in the supportive partner. Additionally, synchronicity in couples' SCR was correlated with reductions in self-reported pain, and individual differences in synchrony were correlated with the partner's trait empathy. In Study 2, we re-analyzed an existing dataset to explore fMRI activity related to individual differences in handholding analgesia effects in women. Increased activity in a distributed set of brain regions, including valuation-encoding frontostriatal areas, was correlated with lower pain ratings. These results may suggest that social support can reduce pain by changing the value of nociceptive signals. This reduction may be moderated by interpersonal synchrony and relationship dynamics.",
-  "cited_by_count": 92,
+  "cited_by_count": 93,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1093/scan/nsaa048",
@@ -16779,7 +16779,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Reddan, M. C., Young, H., Falkner, J., López-Solà, M. & Wager, T. D. (2020). Touch and social support influence interpersonal synchrony and pain. Social Cognitive and Affective Neuroscience. 15(10): 1064-1075. PMID: 32301998. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "leach2020mouse",
@@ -18881,7 +18881,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Weber, K. A., Wager, T. D., Mackey, S., Elliott, J. M., Liu, W. & Sparks, C.L. (2019). Evidence for decreased Neurologic Pain Signature activation following thoracic spinal manipulation in healthy volunteers and participants with neck pain. Neuroimage: Clinical. 24: 102042. PMCID: PMC6831903. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "woo2019falsepositive",
@@ -18914,7 +18914,7 @@
   "openalex_id": null,
   "date": "2019-01-09",
   "abstract": "Abstract \n                 \n                  Hypothesis testing in neuroimaging studies relies heavily on treating named anatomical regions (e.g., “the amygdala”) as unitary entities. Though data collection and analyses are conducted at the voxel level, inferences are often based on anatomical regions. The discrepancy between the unit of analysis and the unit of inference leads to ambiguity and flexibility in analyses that can create a false sense of reproducibility. For example, hypothesizing effects on “amygdala activity” does not provide a falsifiable and reproducible definition of precisely which voxels or which patterns of activation should be observed. Rather, it comprises a large number of unspecified sub-hypotheses, leaving room for flexible interpretation of findings, which we refer to as “model degrees of freedom.” From a survey of 135 functional Magnetic Resonance Imaging studies in which researchers claimed replications of previous findings, we found that 42.2% of the studies did not report any quantitative evidence for replication such as activation peaks. Only 14.1% of the papers used exact coordinate-based or\n                   a priori \n                  pattern-based models. Of the studies that reported peak information, 42.9% of the ‘replicated’ findings had peak coordinates more than 15 mm away from the ‘original’ findings, suggesting that different brain locations were activated, even when studies claimed to replicate prior results. To reduce the flexible and qualitative region-level tests in neuroimaging studies, we recommend adopting quantitative spatial models and tests to assess the spatial reproducibility of findings. Techniques reviewed here include permutation tests on peak distance, Bayesian MANOVA, and\n                   a priori \n                  multivariate pattern-based models. These practices will help researchers to establish precise and falsifiable spatial hypotheses, promoting a cumulative science of neuroimaging.",
-  "cited_by_count": 51,
+  "cited_by_count": 50,
   "oa_status": null,
   "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2019/03/27/514521.full.pdf",
   "landing_url": "https://doi.org/10.1101/514521",
@@ -18985,7 +18985,7 @@
   "crossref_checked": true,
   "citation_original": "Woo, C. W., Hong, Y. W., Yoo, Y. J., Han, J., & Wager, T. D. (2019). False-positive neuroimaging: Undisclosed flexibility in testing spatial hypotheses allows presenting anything as a replicated finding. NeuroImage. 195: 384-395. PMID: 30946952. [PDF]",
   "preprint_doi": "10.1101/514521",
-  "citations_refreshed": "2026-10-14",
+  "citations_refreshed": "2026-10-21",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -19485,7 +19485,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Reddan MC & Wager T. D. (2019). Brain systems at the intersection of chronic pain and self-regulation. Neuroscience Letters. 702: 24-33. PMID: 30503923. [PDF].",
-  "citations_refreshed": "2026-10-14",
+  "citations_refreshed": "2026-10-21",
   "authors_truncated": false,
   "pdf_search": {
    "last": "2026-10-09",
@@ -20478,7 +20478,7 @@
    "classified_at": "2026-09-06T19:26:20Z"
   },
   "citation_original": "Price, T. J., Basbaum, A. I., Bresnahan, J., Chambers, J. F., De Koninck, Y., Edwards, R. R., Ji, R., Annemieke, K., Levine, J. D., Porter, L., Schechter, N., Sluka, K. A., Terman, G. W., Wager, T. D., Yaksh, T. L. & Dworkin, R. H. (2018). Transition to chronic pain: opportunities for novel therapeutics. Nature Reviews. Neuroscience. 19(7): 383-384. PMCID: PMC6237656. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "wager2017emotions",
@@ -20733,7 +20733,7 @@
   },
   "abstract_source": "pdf",
   "citation_original": "X. Zhu, B. Suarez-Jimenez, A. Lazarov, L. Helpman, S. Papini, A. Lowell, A. Durosky, M. A. Lindquist, J. C. Markowitz, F. Schneier, T. D. Wager & Y. Neria, (2018). Exposure-Based Therapy Changes Amygdala and Hippocampus Resting-State Functional Connectivity in Patients with PTSD. Depression and Anxiety. 35(10): 974-984. PMCID: PMC6168398. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "montagna2018spatial",
@@ -20909,7 +20909,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Reddan, M. C., & Wager, T. D. (2018). Modeling Pain Using fMRI: From Regions to Biomarkers. Neuroscience Bulletin. 34(1): 208-215. PMCID: PMC5799128. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "evers2018implications",
@@ -21673,7 +21673,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Samartsidis, P., Eickhoff, C. R., Eickhoff, S. B., Wager, T. D., Barrett, L. F., Atzil, S., Johnson, T. D., & Nichols, T. E. (2018). Bayesian log-Gaussian Cox process regression: applications to a meta-analysis of neuroimaging working memory studies. Journal of Royal Statistical Society: Series C (Applied Statistics). 68(1): 217-234. PMCID: PMC6430202. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "kragel2018representation",
@@ -21816,7 +21816,7 @@
   "openalex_id": null,
   "date": "2018-08",
   "abstract": "The ABCD study is recruiting and following the brain development and health of over 10,000 9–10 year olds through adolescence. The imaging component of the study was developed by the ABCD Data Analysis and Informatics Center (DAIC) and the ABCD Imaging Acquisition Workgroup. Imaging methods and assessments were selected, optimized and harmonized across all 21 sites to measure brain structure and function relevant to adolescent development and addiction. This article provides an overview of the imaging procedures of the ABCD study, the basis for their selection and preliminary quality assurance and results that provide evidence for the feasibility and age-appropriateness of procedures and generalizability of ﬁndings to the existent literature.",
-  "cited_by_count": 2208,
+  "cited_by_count": 2214,
   "oa_status": null,
   "oa_url": "https://www.sciencedirect.com/science/article/pii/S1878929317301214/pdf",
   "landing_url": null,
@@ -21872,7 +21872,7 @@
   "abstract_source": "pdf",
   "crossref_checked": true,
   "citation_original": "Casey, B. J., Cannonier, T., Conley, M. I., Cohen, A. O., Barch, D. M., Heitzeg, M. M., Soules, M. E., Teslovich, T., Dellarco, D. V., Garavan, H., Orr, C. A., Wager, T. D., … Dale, A. M., ABCD Imaging Acquisition Workgroup (2018). The adolescent brain cognitive development (ABCD) study: Imaging acquisition across 21 sites. Developmental Cognitive Neuroscience 32: 43-54. PMCID: PMC5999559. [PDF]",
-  "citations_refreshed": "2026-10-15"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "jepma2018behavioural",
@@ -22105,7 +22105,7 @@
   "openalex_id": null,
   "date": "2018-11",
   "abstract": "",
-  "cited_by_count": 114,
+  "cited_by_count": 116,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.neuron.2018.10.047",
@@ -22177,7 +22177,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Reddan, M. C., Wager T. D., & Schiller D. (2018). Attenuating Neural Threat Expression with Imagination. Neuron. 100(4): 994-1005. PMCID: PMC6314478. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-10-14",
+  "citations_refreshed": "2026-10-21",
   "neuromarkers": [
    {
     "id": "2018-reddan-threat-conditioning-imex",
@@ -22394,7 +22394,7 @@
   "openalex_id": null,
   "date": "2019-02",
   "abstract": "Arousal plays a central role in a wide variety of phenomena, including wakefulness, autonomic function, affect and emotion. Despite its importance, it remains unclear as to how the neural mechanisms for arousal are organized across them. In this article, we review neuroscience findings for three of the most common origins of arousal: wakeful arousal, autonomic arousal, and affective arousal. Our review makes two overarching points. First, research conducted primarily in non-human animals underscores the importance of several subcortical nuclei that contribute to various sources of arousal, motivating the need for an integrative framework. Thus, we outline an integrative neural reference space as a key first step in developing a more systematic understanding of central nervous system contributions to arousal. Second, there is a translational gap between research on non-human animals, which emphasizes subcortical nuclei, and research on humans using non-invasive neuroimaging techniques, which focuses more on gross anatomical characterizations of cortical (e.g. network architectures including the default mode network) and subcortical structures. We forecast the importance of high-field neuroimaging in bridging this gap to examine how the various networks within the neural reference space for arousal operate across varieties of arousal-related phenomena.",
-  "cited_by_count": 109,
+  "cited_by_count": 110,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.neulet.2018.01.042",
@@ -22455,7 +22455,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Satpute, A. B., Kragel, P. A., Barrett, L. F., Wager, T. D., & Bianciardi, M. (2018). Deconstructing arousal into wakeful, autonomic and affective varieties. Neuroscience Letters. 693: 19-28. PMCID: PMC6068010. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "geuter2017fundamentals",
@@ -23279,7 +23279,7 @@
   "openalex_id": null,
   "date": "2017-03-01",
   "abstract": "A central goal of translational neuroimaging is to establish robust links between brain measures and clinical outcomes.Success hinges on the development of brain biomarkers with large effect sizes.With large enough effects, a measure may be diagnostic of outcomes at the individual patient level.Surprisingly, however, standard brain-mapping analyses are not designed to estimate or optimize the effect sizes of brain-outcome relationships, and estimates are often biased.Here, we review these issues and how to estimate effect sizes in neuroimaging research.Effect size is a unit-free description of the strength of an effect, independent of sample size.Examples include Cohen d, Pearson r, and number needed to treat.1,2 For a given sample size (N), these can be converted to a t or z score (eg, Cohen d is t/[N] 1/2 ).But t, z, F, and P values are sample size dependent and relate to the presence of an effect (statistical significance), not its magnitude.By contrast, effect size describes a finding's practical significance, which determines its clinical importance.This is an important distinction because small effects can reach statistical significance given a large enough sample, even if they are unlikely to be of practical importance or replicable across diverse samples.3 Traditional neuroimaging studies are not designed to estimate effect sizes.A typical analysis tests for effects at each of 50 000 to 350 000 brain voxels.Post hoc effect sizes are selectively reported for a small subset of significant voxels.This practice creates bias, making effect size estimates larger than their true values.4 It is like a mediocre golfer who plays 5000 holes over the course of his career but only reports his 10 best holes.Bias is introduced because the best performance, selected post hoc, is not representative of expected performance.The Figure shows a simulation in which the true effect size in a set of voxels is d = 0.5.Once noise is added and a statistical test (t test) is conducted across 30 individuals, all significant voxels have an estimated effect size greater than the true effect.Why does this occur?Voxels tend to be significant if they show a true effect and have noise that favors the hypothesis.Correcting for multiple comparisons reduces false positives but actually increases this optimistic bias.6 As statistical thresholds become more stringent, an increasingly small subset of tests with favorable noise will reach significance, making the estimated post hoc effect size grow.In sum, conducting a large number of tests inher-",
-  "cited_by_count": 124,
+  "cited_by_count": 123,
   "oa_status": null,
   "oa_url": "https://jamanetwork.com/journals/jamapsychiatry/articlepdf/2597706/jamapsychiatry_reddan_2017_vp_160014.pdf",
   "landing_url": "https://doi.org/10.1001/jamapsychiatry.2016.3356",
@@ -23336,7 +23336,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Reddan, M. C., Lindquist, M. A., & Wager, T.D. (2017). Effect Size Estimation in Neuroimaging. JAMA Psychiatry. 74(3):207-208. PMID: 28099973. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "koban2017frontalbrainstem",
@@ -24004,7 +24004,7 @@
   "pmcid": "PMC6768437",
   "date": "2017-07-14",
   "abstract": "Beliefs and expectations often persist despite evidence to the contrary. Here we examine two potential mechanisms underlying such 'self-reinforcing' expectancy effects in the pain domain: modulation of perception and biased learning. In two experiments, cues previously associated with symbolic representations of high or low temperatures preceded painful heat. We examined trial-to-trial dynamics in participants' expected pain, reported pain and brain activity. Subjective and neural pain responses assimilated towards cue-based expectations, and pain responses in turn predicted subsequent expectations, creating a positive dynamic feedback loop. Furthermore, we found evidence for a confirmation bias in learning: higher- and lower-than-expected pain triggered greater expectation updating for high- and low-pain cues, respectively. Individual differences in this bias were reflected in the updating of pain-anticipatory brain activity. Computational modelling provided converging evidence that expectations influence both perception and learning. Together, perceptual assimilation and biased learning promote self-reinforcing expectations, helping to explain why beliefs can be resistant to change.",
-  "cited_by_count": 7,
+  "cited_by_count": 8,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.4324/9781315742205-8",
@@ -24055,7 +24055,7 @@
    "notes": "The abstract and 'full text' extracted for this ID actually belong to a different paper (Jepma, Koban, van Doorn, Jones & Wager, 2018, Nature Human Behaviour, 'Behavioural and neural evidence for self-reinforcing expectancy effects on pain') -- apparently a metadata/PDF matching error. Tags here are based only on the title and chapter type, with low confidence; the real chapter's content could not be verified.",
    "classified_at": "2026-09-07T03:40:08Z"
   },
-  "citations_refreshed": "2026-10-14",
+  "citations_refreshed": "2026-10-21",
   "pdf_search": {
    "last": "2026-10-08",
    "result": "linked-local",
@@ -24250,7 +24250,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Calhoun, V. D., Wager, T. D., Krishnan, A., Rosch, K. S., Seymour, K. E., Nebel, M. B., Mostofsky, S. H., Nyalakanai, P. and Kiehl, K. (2017). The impact of T1 versus EPI spatial normalization templates for fMRI data analyses. Human Brain Mapping. 38(11): 5331-5342. PMID: 28745021. [PDF]",
-  "citations_refreshed": "2026-10-15"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "davis2017imaging",
@@ -27719,7 +27719,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Raison C. L., Hale M. W., Williams L.E., Wager T. D. & Lowry C. A. (2015). Somatic influences on subjective well-being and affective disorders: the convergence of thermosensory and central serotonergic systems. Frontiers in Psychology. 5:1580. PMCID: PMC4292224. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "wager2015fmri",
@@ -27893,7 +27893,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Robinson, L. F., Atlas, L. Y., & Wager, T. D. (2015). Dynamic functional connectivity using state-based dynamic community structure: Method and application to opioid analgesia. NeuroImage. 108: 274-291. PMID: 25534114. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "losin2015psychological",
@@ -29113,7 +29113,7 @@
    "notes": null,
    "classified_at": "2026-09-07T03:40:08Z"
   },
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "lindquist2015groupregularized",
@@ -29726,7 +29726,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Reinen, J., Smith, E. E., Insel, C., Kribs, R., Shohamy, D., Wager, T. D. & Jarskog, L. F. (2014). Patients with schizophrenia are impaired when learning in the context of pursuing rewards. Schizophrenia Research. 152(1):309-10. PMID: 24332796. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "insel2014antipsychotic",
@@ -31014,7 +31014,7 @@
   "openalex_id": null,
   "date": "2014-10-05",
   "abstract": "Pain is a primary driver of learning and motivated action. It is also a target of learning, as nociceptive brain responses are shaped by learning processes. We combined an instrumental pain avoidance task with an axiomatic approach to assessing fMRI signals related to prediction errors (PEs), which drive reinforcement-based learning. We found that pain PEs were encoded in the periaqueductal gray (PAG), a structure important for pain control and learning in animal models. Axiomatic tests combined with dynamic causal modeling suggested that ventromedial prefrontal cortex, supported by putamen, provides an expected value-related input to the PAG, which then conveys PE signals to prefrontal regions important for behavioral regulation, including orbitofrontal, anterior mid-cingulate and dorsomedial prefrontal cortices. Thus, pain-related learning involves distinct neural circuitry, with implications for behavior and pain dynamics.",
-  "cited_by_count": 248,
+  "cited_by_count": 246,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1038/nn.3832",
@@ -31080,7 +31080,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Roy, M., Shohamy, D., Daw, N., Jepma, M., Wimmer, G. E., & Wager, T. D. (2014). Representation of aversive prediction errors in the human periaqueductal gray. Nature Neuroscience. 17(11), 1607-1612. PMCID: PMC4213247. [PDF], [Paradigm]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "schmidt2014mind",
@@ -31880,7 +31880,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Poldrack, R.A., Barch, D.M., Mitchell, J., Wager, T.D., Wagner, A.D., Devlin, J.T., Cumba, C., Koyejo, O. & Milham, M. (2013). Towards open sharing of task-based fMRI data: The OpenfMRI project. Frontiers in Neuroinformatics. 7:12. PMCID: PMC3703526. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "wager2013pain",
@@ -32014,7 +32014,7 @@
   "openalex_id": null,
   "date": "2013-04-11",
   "abstract": "This case focuses on fMRI-based neurologic signatures of physical pain by asking the question: Can functional magnetic resonance imaging (fMRI) be used to identify sensitive and specific brain measures of experimental thermal pain in healthy volunteers? This fMRI study identified an interpretable and reproducible neurologic signature of cutaneous pain elicited by noxious heat in healthy volunteers. The interpretation of fMRI neurologic signatures could be useful in situations in which patients are unable to communicate the perception of pain effectively. Further studies are needed to assess whether this signature predicts clinical pain.",
-  "cited_by_count": 1595,
+  "cited_by_count": 1596,
   "oa_status": null,
   "oa_url": "https://www.nejm.org/doi/pdf/10.1056/NEJMoa1204471?articleTools=true",
   "landing_url": "https://doi.org/10.1056/nejmoa1204471",
@@ -32074,7 +32074,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Wager, T. D., Atlas, L. T., Lindquist, M. A., Roy, M., Choong-Wan, W. & Kross, E. (2013). An fMRI-Based Neurologic Signature of Physical Pain. The New England Journal of Medicine. 368:1388-1397. PMID: 23574118. [PDF], [Brain Model], [Supplementary materials].",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "jepma2013multiple",
@@ -32208,7 +32208,7 @@
   "openalex_id": null,
   "date": "2013-06-13",
   "abstract": "In recent years, an explosion of neuroimaging studies has examined cognitive reappraisal, an emotion regulation strategy that involves changing the way one thinks about a stimulus in order to change its affective impact. Existing models broadly agree that reappraisal recruits frontal and parietal control regions to modulate emotional responding in the amygdala, but they offer competing visions of how this is accomplished. One view holds that control regions engage ventromedial prefrontal cortex (vmPFC), an area associated with fear extinction, that in turn modulates amygdala responses. An alternative view is that control regions modulate semantic representations in lateral temporal cortex that indirectly influence emotion-related responses in the amygdala. Furthermore, while previous work has emphasized the amygdala, whether reappraisal influences other regions implicated in emotional responding remains unknown. To resolve these questions, we performed a meta-analysis of 48 neuroimaging studies of reappraisal, most involving downregulation of negative affect. Reappraisal consistently 1) activated cognitive control regions and lateral temporal cortex, but not vmPFC, and 2) modulated the bilateral amygdala, but no other brain regions. This suggests that reappraisal involves the use of cognitive control to modulate semantic representations of an emotional stimulus, and these altered representations in turn attenuate activity in the amygdala.",
-  "cited_by_count": 1887,
+  "cited_by_count": 1888,
   "oa_status": null,
   "oa_url": "https://academic.oup.com/cercor/article-pdf/24/11/2981/855752/bht154.pdf",
   "landing_url": "https://doi.org/10.1093/cercor/bht154",
@@ -32275,7 +32275,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J., Silvers, J.A., Wager, T.D., Lopez, R., Onyemekwu, C., Kober, H., Weber, J. & Ochsner, K.N. (2013). Cognitive reappraisal of emotion: A meta-analysis of human neuroimaging studies. Cerebral Cortex. 24(11):2981-90. PMCID: PMC4193464. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-10-15"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "outhred2013acute",
@@ -32476,7 +32476,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Satpute, A. B., Wager, T. D., Wald, L. L., Cohen-Adad, J., Bianciardi, M., Choi, J. K., Buhle, J. T. & Barrett, L. F. (2013). Identification of discrete functional sub-regions of the human periaqueductal gray. Proceedings of the National Academy of Sciences. 110 (42)17101-17106. PMCID: PMC3801046. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "wager2013neural",
@@ -32598,7 +32598,7 @@
   "openalex_id": null,
   "date": "2014-08-01",
   "abstract": "",
-  "cited_by_count": 10,
+  "cited_by_count": 13,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.7551/mitpress/9475.003.0017",
@@ -32652,7 +32652,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Plassmann, H. and Wager, T. D. (2013). How Expectancies Shape Consumption Experiences. In: Preston, Knuston, Kringelbach (Eds), Interdisciplinary Science of Consumption. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "lindquist2012estimating",
@@ -32835,7 +32835,7 @@
   "abstract_source": "crossref",
   "crossref_checked": true,
   "citation_original": "Buhle, J. T., Stevens, B. L., Friedman, J. J. & Wager, T. D. (2012). Distraction and Placebo: Two Separate Routes to Pain Control. Psychological Science. 23(3)246-53 PMID: 22261568. [PDF]",
-  "citations_refreshed": "2026-10-15"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "thayer2012metaanalysis",
@@ -33099,7 +33099,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Roy, M., Shohamy, D. & Wager, T. D. (2012). Ventromedial prefrontal-subcortical systems and the generation of affective meaning. Trends in Cognitive Sciences. 16(3):147-156. PMCID: PMC3318966. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "buhle2012common",
@@ -33206,7 +33206,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J. T., Kober, H., Ochsner K. N., Mende-Siedlecki, P., Weber, J., Hughes, B., Kross, E., Atlas, L. Y., McRae, K. & Wager, T. D. (2012). Common representation of pain and negative emotion in the midbrain periaqueductal gray. Social Cognitive and Affective Neuroscience. 8(6):609-16.PMCID: PMC3739905. [PDF]",
-  "citations_refreshed": "2026-10-15"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "lindquist2012basis",
@@ -35100,7 +35100,7 @@
   "openalex_id": null,
   "date": "2010-01",
   "abstract": "Most statistical analyses of fMRI data assume that the nature, timing and duration of the psychological processes being studied are known. However, in many areas of psychological inquiry, it is hard to specify this information a priori. Examples include studies of drug uptake, emotional states or experiments with a sustained stimulus. In this paper we assume that the timing of a subject's activation onset and duration are random variables drawn from unknown population distributions. We propose a technique for estimating these distributions assuming no functional form, and allowing for the possibility that some subjects may show no response. We illustrate how these distributions can be used to approximate the probability that a voxel/region is activated as a function of time. Further a procedure is discussed that uses a hidden Markov random field model to cluster voxels based on characteristics of their onset, duration, and anatomical location. These methods are applied to an fMRI study (n=24) of state anxiety, and are well suited for investigating individual differences in state-related changes in fMRI activity and other measures.",
-  "cited_by_count": 58,
+  "cited_by_count": 59,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.neuroimage.2009.08.061",
@@ -35157,7 +35157,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Robinson, L. F., Wager, T. D., & Lindquist, M. A. (2010). Changepoint estimation in multi-subject fMRI studies. Neuroimage. 49(2):1581-92. PMID: 19733671. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "rutherford2010expectancy",
@@ -35244,7 +35244,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Rutherford, B. R., Wager, T. D., & Roose, S. P. (2010). Expectancy and the Treatment of Depression: A Review of Experimental Methodology and Effects on Patient Outcome. Current Psychiatry Reviews. 6(1):1-10. PMCID: PMC4011659. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "kober2010metaanalyses",
@@ -35363,7 +35363,7 @@
   "openalex_id": null,
   "date": "2010-03-23",
   "abstract": "Abstract  The Stroop task is among the most influential experimental paradigms for the study of cognitive control. Recent variants have sought to extend the Stroop task to the study of emotional regulation. To assess these emotional Stroop tasks, it is important to distinguish between those that seek to disrupt performance purely via distraction by emotional stimuli that engage attention, from those that do so by presenting emotional information that specifically conflicts with task-relevant judgments. The emotional stimuli in distraction-based Stroop tasks typically fail to disrupt the performance of healthy adults, and recent work suggests that when inference does occur, it lags behind goal-directed processing, primarily degrading performance on subsequent trials. Although early neuro-imaging research using the emotional distraction Stroop tasks gave rise to the influential hypothesis of distinct emotional and nonemotional processing regions in the anterior cingulate cortex, subsequent research has provided limited support. Other recent evidence suggests that interference in these distraction tasks might reflect a generic transient surprise rather than inherently emotional processes. In contrast to emotional distraction Stroop tasks, studies of emotional conflict have reported robust congruency effects, but it is unclear that the resolution of stimulus incompatibility is relevant to questions of how one controls one’s emotions. Future research with emotional distraction Stroop tasks should seek to develop variants that evince more robust effects, whereas research on emotional stimulus incompatibility should leverage previous work with nonemotional conflict Stroop variants to explore topics such as the relationship between output modality and dimensional relevancy, and the distinction between categorization and identification task goals.",
-  "cited_by_count": 21,
+  "cited_by_count": 22,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1093/acprof:oso/9780195391381.003.0006",
@@ -35419,7 +35419,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J., Wager, T. D., & Smith, E. E. (2010). Using the Stroop Task to study emotion regulation. In: Hassin, R. R., Oschner, K. N., Trope, T. (Eds.), Self Control in Society, Mind, and Brain. [PDF]",
-  "citations_refreshed": "2026-10-15"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "buhle2010performancedependent",
@@ -35502,7 +35502,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J. & Wager, T. D. (2010). Performance-dependent inhibition of pain by an executive working memory task. PAIN. 149:19-26. NIHMS157612. PMID: 20129735. [PDF]",
-  "citations_refreshed": "2026-10-15"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "wager2010separate",
@@ -35753,7 +35753,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J., & Wager, T. D. (2010). Does meditation training lead to enduring changes in the anticipation and experience of pain? PAIN. 150:382-3. PMID: 20546996. [PDF]",
-  "citations_refreshed": "2026-10-15"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "atlas2010mediators",
@@ -36685,7 +36685,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Salimi-Khorshidi, G., Smith, S. M., Keltner, J. R., Wager, T. D. & Nicholos, T. E. (2009). Meta-analysis of neuroimaging data: a comparison of image-based and coordinate-based pooling of studies. Neuroimage. 45:810-23. PMID: 19166944. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "lieberman2009correlations",
@@ -37456,7 +37456,7 @@
   },
   "abstract_source": "pdf",
   "citation_original": "Purkayastha, S., Wager, T. D. & Nichols, T. E. (2008). Inferring individual differences in fMRI: Finding brain regions with significant within-subject correlation. Statistica Sinica. 18:1483-1500. [PDF]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "wager2008neuroimaging",
@@ -40899,7 +40899,7 @@
   "openalex_id": null,
   "date": null,
   "abstract": "",
-  "cited_by_count": 1891,
+  "cited_by_count": 1889,
   "oa_status": null,
   "oa_url": "https://link.springer.com/content/pdf/10.3758/CABN.3.4.255.pdf",
   "landing_url": "https://doi.org/10.3758/cabn.3.4.255",
@@ -40956,7 +40956,7 @@
    "classified_at": "2026-09-06T19:26:20Z"
   },
   "citation_original": "Wager, T. D. & Smith, E. E. (2003). Neuroimaging studies of working memory: a meta-analysis. Cognitive and Affective Behavioral Neuroscience. 4:255-74. PMID: 15040547. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-10-14"
+  "citations_refreshed": "2026-10-21"
  },
  {
   "id": "jonides2003modules",
