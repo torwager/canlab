@@ -6462,6 +6462,97 @@
   "citations_refreshed": "2026-10-20"
  },
  {
+  "title": "Characterization of Chronic Ocular Pain Using the Neurologic Pain Signature",
+  "authors": [
+   "Sperber, J. E.",
+   "Reyes, N. L.",
+   "Galor, A.",
+   "Pattany, P. M.",
+   "Felix, E. R.",
+   "Wager, T. D.",
+   "Holmes, S. A.",
+   "Moulton, E. A."
+  ],
+  "authors_short": [
+   "Sperber JE",
+   "Reyes NL",
+   "Galor A",
+   "Pattany PM",
+   "Felix ER",
+   "Wager TD",
+   "Holmes SA",
+   "Moulton EA"
+  ],
+  "year": 2024,
+  "date": "2024-04-01",
+  "status": "published",
+  "kind": "abstract",
+  "journal": "The Journal of Pain",
+  "volume": "25",
+  "issue": "4 Suppl.",
+  "pages": "46",
+  "doi": "10.1016/j.jpain.2024.01.213",
+  "pmid": null,
+  "pmcid": null,
+  "openalex_id": "https://openalex.org/W4394753742",
+  "abstract": "Chronic ocular pain is a disabling condition defined by ocular spontaneous pain and allodynia. To determine whether brain network dynamics related to pain are different in patients with chronic pain vs. those without, we analyzed the functional connectivity between the constituent brain regions that comprise the Neurologic Pain Signature (NPS). Subjects were recruited from the Miami Veterans Affairs Medical Center and split into two groups: those with chronic ocular pain (n=60, average ocular pain ≥1/10 over 1 week recall) and those without ocular pain (n=20). MRI was performed using a 3T Siemens MAGNETOM Vida scanner (Erlangen, Germany). Resting state scans were acquired using a gradient echo, echo planar imaging sequence (10 min and 6s). The CONN toolbox processed functional connectivity analyses of resting state fMRI data. Fusiform gyrus and lingual gyrus demonstrated stronger functional connectivity in subjects with chronic ocular pain compared to those without. Furthermore, right insula and lingual gyrus also exhibited increased connectivity in the chronic pain cohort, albeit weaker than that of the fusiform gyrus and lingual gyrus. Our results suggest that NPS areas related to multisensory integration are differentially affected compared to other NPS regions in patients with chronic ocular pain.",
+  "cited_by_count": 1,
+  "oa_status": "bronze",
+  "oa_url": "http://www.jpain.org/article/S1526590024002220/pdf",
+  "landing_url": "https://doi.org/10.1016/j.jpain.2024.01.213",
+  "keywords": [
+   "chronic ocular pain",
+   "functional connectivity",
+   "resting-state fMRI",
+   "fusiform gyrus",
+   "lingual gyrus",
+   "insula",
+   "multisensory integration",
+   "allodynia",
+   "brain network dynamics"
+  ],
+  "links": [],
+  "source": "openalex (added by Tor Wager)",
+  "id": "sperber2024characterization",
+  "date_added": "2026-10-20",
+  "has_pdf": false,
+  "tags": {
+   "topic": [
+    "chronic_pain",
+    "pain"
+   ],
+   "approach": [
+    "fmri"
+   ],
+   "type": [
+    "empirical"
+   ]
+  },
+  "summary": "Resting-state fMRI connectivity among the brain regions that make up the Neurologic Pain Signature was compared between veterans with chronic ocular pain (n=60) and without ocular pain (n=20).",
+  "key_finding": "Patients with chronic ocular pain showed stronger fusiform–lingual gyrus and right insula–lingual gyrus connectivity, suggesting that NPS regions involved in multisensory integration are most affected.",
+  "free_keywords": [
+   "chronic ocular pain",
+   "dry eye",
+   "resting-state functional connectivity",
+   "Neurologic Pain Signature regions",
+   "fusiform gyrus",
+   "lingual gyrus",
+   "veterans",
+   "conference abstract"
+  ],
+  "classification": {
+   "taxonomy_version": "1.1.0",
+   "prompt_version": "1.2.0",
+   "model": "Claude Code (manual)",
+   "input_mode": "abstract",
+   "confidence": 0.75,
+   "notes": "Tagged from the published conference abstract (no full text). The NPS is used to define regions of interest, so the paper is not tagged neuromarker (CLAUDE.md neuromarker policy).",
+   "classified_at": "2026-10-21T01:34:55Z"
+  },
+  "citation": "Sperber, J. E., Reyes, N. L., Galor, A., Pattany, P. M., Felix, E. R., Wager, T. D., Holmes, S. A., & Moulton, E. A. (2024). Characterization of Chronic Ocular Pain Using the Neurologic Pain Signature. The Journal of Pain, 25(4 Suppl.), 46. https://doi.org/10.1016/j.jpain.2024.01.213",
+  "abstract_source": "published conference abstract"
+ },
+ {
   "id": "harp2024neuromarkers",
   "title": "Neuromarkers in addiction: Definitions, development strategies, and recent advances",
   "authors": [

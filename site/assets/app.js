@@ -115,6 +115,7 @@ window.CL = (function () {
     if (r.st === "in press") return '<span class="badge new">in press</span>';
     if (r.st === "under review") return '<span class="badge adjacent">under review</span>';
     if (r.kind === "chapter") return '<span class="badge">chapter</span>';
+    if (r.kind === "abstract") return '<span class="badge" title="A published conference abstract, not a full paper">conference abstract</span>';
     return "";
   }
   // added to the database or published in the last 30 days, ignoring anything dated before the current year
@@ -185,7 +186,7 @@ window.CL = (function () {
       return `@${ty}{${bibKey(r)},\n  title = {${e(r.t)}},\n  author = {${authorsBib(r).join(" and ")}},\n  ${venue} = {${e(r.j)}},\n  year = {${r.y || ""}},${r.vol ? `\n  volume = {${e(r.vol)}},` : ""}${r.issue ? `\n  number = {${e(r.issue)}},` : ""}${r.pg ? `\n  pages = {${e(r.pg)}},` : ""}${r.doi ? `\n  doi = {${r.doi}},` : ""}${r.pmid ? `\n  pmid = {${r.pmid}},` : ""}${r.doi ? `\n  url = {https://doi.org/${r.doi}},` : (r.u ? `\n  url = {${r.u}},` : "")}\n  note = {From the CANlab publications database}\n}`; }).join("\n\n");
   }
   function toRis(recs) {
-    return recs.map(r => ["TY  - " + (r.kind === "chapter" ? "CHAP" : (r.kind === "proceedings" ? "CONF" : (r.kind === "preprint" ? "UNPB" : "JOUR"))), `TI  - ${r.t}`, ...authorsBib(r).map(a => `AU  - ${a}`), `${r.kind === "chapter" ? "T2" : "JO"}  - ${r.j || ""}`, `PY  - ${r.y || ""}`, r.d ? `DA  - ${r.d.replace(/-/g, "/")}` : null, r.vol ? `VL  - ${r.vol}` : null, r.issue ? `IS  - ${r.issue}` : null, r.pg && r.pg.includes("-") ? `SP  - ${r.pg.split("-")[0]}` : (r.pg ? `SP  - ${r.pg}` : null), r.pg && r.pg.includes("-") ? `EP  - ${r.pg.split("-")[1]}` : null, r.doi ? `DO  - ${r.doi}` : null, r.pmid ? `AN  - ${r.pmid}` : null, r.doi ? `UR  - https://doi.org/${r.doi}` : (r.u ? `UR  - ${r.u}` : null), r.pdf ? `L1  - ${r.pdf}` : null, r.ab ? `AB  - ${r.ab}` : null, "DB  - CANlab publications", "ER  - "].filter(Boolean).join("\n")).join("\n\n");
+    return recs.map(r => ["TY  - " + (r.kind === "chapter" ? "CHAP" : (r.kind === "proceedings" ? "CONF" : (r.kind === "preprint" ? "UNPB" : (r.kind === "abstract" ? "ABST" : "JOUR")))), `TI  - ${r.t}`, ...authorsBib(r).map(a => `AU  - ${a}`), `${r.kind === "chapter" ? "T2" : "JO"}  - ${r.j || ""}`, `PY  - ${r.y || ""}`, r.d ? `DA  - ${r.d.replace(/-/g, "/")}` : null, r.vol ? `VL  - ${r.vol}` : null, r.issue ? `IS  - ${r.issue}` : null, r.pg && r.pg.includes("-") ? `SP  - ${r.pg.split("-")[0]}` : (r.pg ? `SP  - ${r.pg}` : null), r.pg && r.pg.includes("-") ? `EP  - ${r.pg.split("-")[1]}` : null, r.doi ? `DO  - ${r.doi}` : null, r.pmid ? `AN  - ${r.pmid}` : null, r.doi ? `UR  - https://doi.org/${r.doi}` : (r.u ? `UR  - ${r.u}` : null), r.pdf ? `L1  - ${r.pdf}` : null, r.ab ? `AB  - ${r.ab}` : null, "DB  - CANlab publications", "ER  - "].filter(Boolean).join("\n")).join("\n\n");
   }
   function toCsv(recs) {
     const q = v => `"${String(v == null ? "" : v).replace(/"/g, '""')}"`;

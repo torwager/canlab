@@ -198,7 +198,9 @@ My list / Sign in: star lists in localStorage, named lists, import/export, expor
 id (stable slug: firstauthor+year+firstlongword, e.g. wager2013fmribased), title, authors ["Surname, I. I."],
 authors_short ["Surname II"] (used for author search/network; variants merged at build via
 AUTHOR_ALIASES + prefix rule), authors_truncated (bool), year, date, status (published|in press|preprint|
-under review), kind (article|chapter|preprint|proceedings|other), journal (book title for chapters),
+under review), kind (article|chapter|preprint|proceedings|abstract|other; abstract = published conference
+abstract, e.g. a Journal of Pain meeting supplement, shown with a "conference abstract" badge, added 2026-10-20),
+journal (book title for chapters),
 volume, issue, pages, doi, pmid, pmcid, openalex_id, abstract, abstract_source, cited_by_count,
 oa_url, landing_url, keywords, links [{type: pdf|publisher|maps|code|data|paradigm|video|supplement|
 preprint, label, url, url_original, version: publisher|author_manuscript}], has_pdf, citation
