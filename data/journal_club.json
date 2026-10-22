@@ -1,7 +1,153 @@
 {
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026httpswwwbiorxivorgcontentvf",
+   "slack_ts": "1792615391.702569",
+   "shared_on": "2026-10-21",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 3
+    },
+    {
+     "name": "👍🏼",
+     "count": 1
+    }
+   ],
+   "url": "https://www.biorxiv.org/content/10.64898/2026.08.17.745279v5",
+   "doi": "10.64898/2026.08.17.745279",
+   "title": "Seeing at Will: Shared Neural Representations of Motion Perception and Intention",
+   "abstract": "Intention can bias perception in cases where two or more interpretations of a stimulus are possible. The neural mechanisms whereby intention influences perception are poorly understood. Here we investigated whether the intention to perceive horizontal or vertical motion in a bistable apparent motion stimulus pre-activates motion axes representations in sensory cortex before the position shift occurs and before motion in consciously perceived. Twelve participants underwent fMRI scanning under three conditions: (1) passively viewing quartet stimuli moving continuously along veridical trajectories; (2) passively viewing bistable apparent motion quartet stimuli induced by two pairs of squares alternately flashing at diagonally opposite corners of an invisible rectangle; or (3) while actively intending to perceive a single-shot apparent-motion stimulus as moving either vertically or horizontally. Multivariate decoding analyses revealed that activity patterns during the intention period of (3) generalized to patterns evoked by both (1) physical and (2) ambiguous motion perception. Cross-decoding was strongest within dorsal/lateral visual regions, including hMT+, V3AB, and the intraparietal sulcus, but was largely absent from ventral visual cortex. Widespread overlap was also observed between intention-related and perceptual motion representations throughout the dorsal/lateral visual cortex. Our findings suggest that intention may bias prospective sensory representations prior to the stimulus-driven processing that results in perceptual experience and that these representations closely resemble those associated with illusory motion perception. The fact that intention-related representations were mostly found within dorsal/lateral visual regions is consistent with top-down influences from attentional control systems.",
+   "authors": [
+    "Si, W.",
+    "Choe, E.",
+    "Heller, N. H.",
+    "Kohler, P. J.",
+    "Cavanagh, P.",
+    "Stoermer, V. S.",
+    "Tse, P."
+   ],
+   "journal": "bioRxiv",
+   "year": 2026,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.64898/2026.08.17.745279v5",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1792615391702569",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception",
+     "cognitive_control"
+    ],
+    "approach": [
+     "fmri",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-22T15:17:22Z",
+    "usage": {
+     "input_tokens": 673,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 96,
+     "cost_usd": 0.00315
+    }
+   }
+  },
+  {
+   "id": "quabs2026functional",
+   "slack_ts": "1792602637.032359",
+   "shared_on": "2026-10-21",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 5
+    },
+    {
+     "name": "👍🏽",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41586-026-11175-2",
+   "doi": "10.1038/s41586-026-11175-2",
+   "title": "Functional architecture of the human insula",
+   "abstract": "The insular cortex has a central role in pain1,2, interoception3,4 and feelings5,6, yet its functional architecture and causal electrophysiological relationships among its subregions remain poorly understood. Here we combine intracranial electrical stimulation and task-based electroencephalography recordings with connectivity mapping within a cytoarchitectonic atlas of the human insula7&#8211;10 in 87 participants implanted with intracranial electrodes, and identify a quadripartite functional architecture comprising four distinct regions: (1) a dorsal&#8211;posterior region encoding somatotopically organized nociceptive/thermoceptive and somatosensory signals; (2) a ventral&#8211;posterior region with access to somatic information across multiple body parts; (3) a mid-anterior region associated with visceral sensations and anxiety states; and (4) an anterior&#8211;polar region, largely silent to direct stimulation, yet showing robust activation during salience detection and change of action mode. Critically, this anterior region, with its strong connections with the prefrontal cortex, including the anterior cingulate cortex, exerts strong and direct influence over other insular regions, while receiving less-strong indirect inputs from them, revealing an electrophysiological pathway for cognitive modulation of pain and bodily perception. Together, these findings define a functional architecture of the human insula that links cytoarchitecture to directed and asymmetric electrophysiological interactions, with mechanistic implications for cognitive modulation of pain and interoceptive experience. A functional architecture of the human insula links cytoarchitecture to directed and asymmetric electrophysiological interactions, with mechanistic implications for cognitive modulation of pain and interoceptive experience.",
+   "authors": [
+    "Quabs, J.",
+    "Pantis, S.",
+    "Chen, G.",
+    "Huang, W.",
+    "Ma, E.",
+    "del Vecchio, M.",
+    "Lyu, D.",
+    "Wang, C.",
+    "Avanzini, P.",
+    "Buch, V.",
+    "Ramayya, A. G.",
+    "Caspers, S.",
+    "Vogel, H.",
+    "Parvizi, J."
+   ],
+   "journal": "Nature",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41586-026-11175-2.pdf",
+   "type": "journal-article",
+   "publisher_url": "https://doi.org/10.1038/s41586-026-11175-2",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1792602637032359",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "pain",
+     "brain_body",
+     "perception"
+    ],
+    "approach": [
+     "psychophysiology",
+     "brain_stimulation",
+     "other_imaging"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-22T15:17:20Z",
+    "usage": {
+     "input_tokens": 654,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 109,
+     "cost_usd": 0.01296
+    }
+   }
+  },
   {
    "id": "jung2026mechanistic",
    "slack_ts": "1792435439.027939",
