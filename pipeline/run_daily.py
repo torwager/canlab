@@ -8,6 +8,7 @@ never added to data/papers.json automatically: they go to data/candidates.json, 
 is remembered in data/screened.json so re-running with overlapping windows is safe.
 """
 import argparse
+import re
 import json
 import sys
 import time
@@ -50,6 +51,29 @@ def discover(days):
     return cands, report
 
 
+# Conference abstracts are not listed on the site (PI, 2026-10-23). Journals that print meeting abstracts as
+# one-page items in their regular or supplement issues; a one-page item there, or any item paged "S12" or in a
+# supplement issue, is treated as an abstract and set aside in screened.json (reason "conference_abstract").
+MEETING_ABSTRACT_JOURNALS = {"journal of pain", "the journal of pain", "biological psychiatry", "psychosomatic medicine",
+                             "neuropsychopharmacology", "brain stimulation", "pain medicine", "european journal of pain",
+                             "biological psychiatry: cognitive neuroscience and neuroimaging", "international journal of psychophysiology",
+                             "psychophysiology", "journal of cognitive neuroscience", "neuroimage", "the clinical journal of pain"}
+
+
+def is_conference_abstract(rec):
+    """One printed page (e.g. "46", "S12", "46-46"; not an article number such as 105644 or e70383) in a journal that
+    prints meeting abstracts, or a one-page item in a supplement issue."""
+    pages = re.sub(r"\s", "", str(rec.get("pages") or ""))
+    parts = [x for x in re.split(r"[-–—]", pages) if x]
+    if not parts or len(parts) > 2 or (len(parts) == 2 and parts[0] != parts[1]):
+        return False
+    if not re.fullmatch(r"S?\d{1,4}", parts[0], re.I):
+        return False  # article numbers and e-locators are not page numbers
+    issue = str(rec.get("issue") or "").lower()
+    supplement = parts[0].upper().startswith("S") or "suppl" in issue or re.fullmatch(r"\d*s\d*", issue) is not None
+    return supplement or (rec.get("journal") or "").strip().lower() in MEETING_ABSTRACT_JOURNALS
+
+
 def is_lab_paper(rec):
     return any(a.split(",")[0].strip().lower() in config.LAB_AUTHOR_SURNAMES for a in rec.get("authors") or [])
 
@@ -74,6 +98,8 @@ def main(argv=None):
             continue
         if not is_lab_paper(rec):
             screened[key] = {"date": today, "reason": "not_lab_author"}; continue
+        if is_conference_abstract(rec):
+            screened[key] = {"date": today, "reason": "conference_abstract", "title": (rec.get("title") or "")[:200]}; continue
         rec["id"] = db.make_id(rec["authors"][0] if rec["authors"] else "", rec.get("year"), rec["title"], existing_ids)
         existing_ids.add(rec["id"])
         rec["citation"] = f"{', '.join(rec['authors'][:6])}{' et al.' if len(rec['authors']) > 6 else ''} ({rec.get('year')}). {rec['title']}. {rec.get('journal', '')}."

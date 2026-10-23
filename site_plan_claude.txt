@@ -205,6 +205,8 @@ preprint, label, url, url_original, version: publisher|author_manuscript}], has_
 (regenerated APA-style string), citation_original, commentaries [{title, authors, journal, year, doi,
 pdf, note}], preprint_doi, tags {topic:[], approach:[], type:[one]}, summary, key_finding,
 free_keywords, classification {model, input_mode, confidence, notes, classified_at}, date_added, source.
+Conference abstracts (e.g. Journal of Pain meeting supplements) are NOT listed (PI, 2026-10-23): add the work once
+the full paper is published; the daily search should leave such items in screened.json, not candidates.
 Rule: only papers with the PI as an author are records; editorials/commentaries ABOUT a paper by others
 are attached to that paper as commentaries. A preprint and its published version are one record with a
 preprint link.
