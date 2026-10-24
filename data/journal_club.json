@@ -1,7 +1,94 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026article",
+   "slack_ts": "1792789349.656879",
+   "shared_on": "2026-10-23",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 4,
+   "reactions": [],
+   "url": "https://gking.harvard.edu/peerless/",
+   "doi": null,
+   "title": "AI Article Reviews Dominate Human Peer Reviews at Their Best: Evidence and Policy Choices | Gary King",
+   "abstract": "We show that AI-generated article reviews are now better, by every measure we could construct, than reviews written by well-compensated human experts and judged to be of unusually high quality by journal editors and authors. We then discuss how this result may inform journal policy choices, with concerning downsides as well as potential paths to increase publication speed and quality; reduce adversarial interactions; improve the experience of editors, reviewers, authors, and readers; and advance science.",
+   "authors": [],
+   "journal": "Gary King",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1792789349656879",
+   "kind": "link"
+  },
+  {
+   "id": "khosla2026privileged",
+   "slack_ts": "1792784230.269539",
+   "shared_on": "2026-10-23",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 1,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41562-026-02515-3",
+   "doi": "10.1038/s41562-026-02515-3",
+   "title": "Privileged representational axes in biological and artificial neural networks",
+   "abstract": "How do neurons code information? Recent work emphasizes the geometry and information content of population codes, using measures that are blind to the native tunings (or &#8216;axes&#8217;) of neural responses. But might these representational axes matter, with some privileged systematically over others? We developed methods to test for alignment of neural tuning across brains and deep convolutional neural networks (DCNNs). Across both vision and audition, both brains and DCNNs consistently favoured certain axes for representing the natural world. Moreover, the representational axes of DCNNs trained on natural inputs were aligned to those in perceptual cortices, such that axis-sensitive model&#8211;brain similarity metrics better differentiated competing models of biological sensory systems. We further show that coding schemes that privilege certain axes can facilitate task performance, reduce downstream wiring costs and improve generalization. These results motivate a new framework for understanding neural tuning in biological and artificial networks and its computational benefits. Khosla et al. show that both brains and neural networks consistently favoured certain axes for representing the natural world.",
+   "authors": [
+    "Khosla, M.",
+    "Srivastava, S.",
+    "Williams, A. H.",
+    "McDermott, J.",
+    "Kanwisher, N."
+   ],
+   "journal": "Nature Human Behaviour",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41562-026-02515-3.pdf",
+   "type": "journal-article",
+   "pmid": "42919984",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/s41562-026-02515-3",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1792784230269539",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "ai_integration",
+     "computational_model",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The authors found that both human brains and deep convolutional neural networks consistently favor certain privileged representational axes when encoding visual and auditory natural stimuli.",
+   "key_finding": "DCNNs trained on natural inputs showed representational axes aligned with those in perceptual cortices, and axis-sensitive model-brain similarity metrics better differentiated competing models of sensory processing while privileged axes improved task performance and generalization.",
+   "free_keywords": [
+    "neural tuning",
+    "population coding",
+    "representational geometry",
+    "deep convolutional neural networks",
+    "vision",
+    "audition",
+    "model-brain alignment"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "Only abstract available; approach tags inferred from described methods comparing brain and DCNN representations.",
+    "classified_at": "2026-10-24T14:01:25Z",
+    "usage": {
+     "input_tokens": 447,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 293,
+     "cost_usd": 0.01438
+    }
+   }
+  },
   {
    "id": "shared2026httpswwwbiorxivorgcontentvf",
    "slack_ts": "1792615391.702569",
