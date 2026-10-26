@@ -199,7 +199,7 @@
   const track = document.getElementById("gallery-track"), dots = document.getElementById("gdots");
   if (!track) return;
   let frames = [];
-  try { frames = await (await fetch("assets/gallery/frames.json")).json(); } catch (e) { return; }
+  try { frames = await (await fetch("assets/gallery/frames.json?v=10")).json(); } catch (e) { return; }
   const N = frames.length, els = [];
   frames.forEach((fr, i) => {
     const d = document.createElement("div"); d.className = "frame";
