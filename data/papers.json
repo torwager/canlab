@@ -3920,6 +3920,101 @@
   }
  },
  {
+  "title": "Action features dominate cortical representation during natural vision",
+  "authors": [
+   "Jung, H.",
+   "Jain, H.",
+   "Han, X.",
+   "Feilong, M.",
+   "Han, J.",
+   "Shokeen, D.",
+   "Van Uden, C.",
+   "Hanson, I.",
+   "Connolly, A. C.",
+   "Wager, T. D.",
+   "Haxby, J. V.",
+   "Nastase, S. A."
+  ],
+  "authors_short": [
+   "Jung H",
+   "Jain H",
+   "Han X",
+   "Feilong M",
+   "Han J",
+   "Shokeen D",
+   "Van Uden C",
+   "Hanson I",
+   "Connolly AC",
+   "Wager TD",
+   "Haxby JV",
+   "Nastase SA"
+  ],
+  "year": 2026,
+  "date": "2026-10-23",
+  "status": "published",
+  "kind": "article",
+  "journal": "Proceedings of the National Academy of Sciences",
+  "volume": "123",
+  "issue": "43",
+  "pages": "e2625018123",
+  "doi": "10.1073/pnas.2625018123",
+  "pmid": "42912782",
+  "pmcid": null,
+  "openalex_id": "https://openalex.org/W7223288881",
+  "abstract": "Cortical resources are allocated into systems specialized for processing ecologically relevant features of the world. These features are typically studied in isolation using controlled experimental stimuli, making it difficult to assess the relative importance of different kinds of features that tend to overlap during natural vision. In the current study, we evaluated the relative contributions of action, agent, and scene features in predicting cortical activity while participants viewed a 1-h nature documentary. We tested four sets of model features: semantic vectors capturing the observed action, agent, and scene features derived from an annotation of the stimulus, as well as low-level visual motion-energy features. We used banded ridge regression to fit vertex-wise encoding models from the combination of all four sets of features. While each set of features predicted neural activity in the expected areas, the action features predicted more widespread activity. A variance partitioning analysis revealed that the action features captured the most unique variance in neural activity across a much larger extent of cortex than the agent or scene features. Our findings suggest that cortical activity during dynamic, natural vision is dominated by features for understanding the actions of others.",
+  "cited_by_count": 0,
+  "oa_status": "hybrid",
+  "oa_url": "https://doi.org/10.1073/pnas.2625018123",
+  "landing_url": "https://doi.org/10.1073/pnas.2625018123",
+  "keywords": [
+   "scene features",
+   "natural vision",
+   "cortical representation",
+   "neural encoding models",
+   "semantic vectors",
+   "social cognition",
+   "variance partitioning"
+  ],
+  "links": [],
+  "source": "openalex (added by Sydney Shohan)",
+  "id": "jung2026action",
+  "date_added": "2026-10-26",
+  "has_pdf": false,
+  "tags": {
+   "topic": [
+    "perception",
+    "social"
+   ],
+   "approach": [
+    "fmri",
+    "machine_learning"
+   ],
+   "type": [
+    "empirical"
+   ]
+  },
+  "citation": "Jung, H., Jain, H., Han, X., Feilong, M., Han, J., Shokeen, D., Van Uden, C., Hanson, I., Connolly, A. C., Wager, T. D., Haxby, J. V., & Nastase, S. A. (2026). Action features dominate cortical representation during natural vision. Proceedings of the National Academy of Sciences, 123(43), e2625018123. https://doi.org/10.1073/pnas.2625018123",
+  "summary": "The authors fit encoding models to fMRI data from participants watching a one-hour nature documentary and found that action features explained unique cortical activity across a much larger area than agent, scene or motion-energy features.",
+  "key_finding": "Action features captured the most unique variance in cortical activity across a much larger extent of cortex than agent or scene features during natural vision.",
+  "free_keywords": [
+   "natural vision",
+   "encoding models",
+   "banded ridge regression",
+   "variance partitioning",
+   "action observation",
+   "nature documentary"
+  ],
+  "classification": {
+   "taxonomy_version": "1.1.0",
+   "prompt_version": "1.2.0",
+   "model": "claude-sonnet-5-5 (Claude Code, abstract only)",
+   "input_mode": "abstract",
+   "confidence": 0.8,
+   "notes": "Tagged from the abstract only (no PDF yet). Encoding models fit with banded ridge regression were counted as machine_learning.",
+   "classified_at": "2026-10-26T14:21:12Z"
+  }
+ },
+ {
   "id": "ibonie2026prosocial",
   "title": "Prosocial behaviors across bipolar and major depressive mood disorders: A preliminary investigation",
   "authors": [
