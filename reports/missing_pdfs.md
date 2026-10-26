@@ -1,20 +1,22 @@
 # Lab papers without a PDF on the site
 
-Updated 2026-10-25 by `pipeline/fetch_pdfs.py` (runs daily). 1 papers.
+Updated 2026-10-26 by `pipeline/fetch_pdfs.py` (runs daily). 2 papers.
 
 No open-access copy could be found for these. To add one: download the PDF from the publisher link (institutional access, e.g. on the Dartmouth VPN), save it as `site/pdf/<file name>` in the repository and push; the next daily run links it on the site. Author manuscripts go in `site/pdf/author_manuscripts/`.
 
 | Year | Paper | Publisher link | Save as |
 |---|---|---|---|
+| 2026 | Action features dominate cortical representation during natural vision | https://doi.org/10.1073/pnas.2625018123 | `jung2026action.pdf` |
 | 2015 | Placebo and activity in the central nervous system | no DOI found | `sprenger2015placebo.pdf` |
 
 ## Published papers whose PDF is a manuscript or preprint
 
-74 papers. The site labels these "PDF (author manuscript)" or "PDF (preprint)". The daily run looks for an open-access published version once a month; to replace one by hand, save the publisher's PDF over the file named here and push.
+75 papers. The site labels these "PDF (author manuscript)" or "PDF (preprint)". The daily run looks for an open-access published version once a month; to replace one by hand, save the publisher's PDF over the file named here and push.
 
 | Year | Paper | Now | Publisher link | File |
 |---|---|---|---|---|
 | 2026 | Mitochondrial Psychobiology | author manuscript | no DOI | `site/pdf/andreazza2026mitochondrial.pdf` |
+| 2026 | A case study of early-emerging prosopometamorphopsia | preprint | https://doi.org/10.1080/02643294.2026.2755076 | `site/pdf/fortner2026first.pdf` |
 | 2026 | Intrinsic Functional Subregions of the Human Hypothalamus: Cortical Coupling and Subregional Organiz | author manuscript | https://doi.org/10.1162/netn.a.609 | `site/pdf/lee2026functional.pdf` |
 | 2026 | Mitoception Via the Metabokine GDF15 and Human Health | author manuscript | https://doi.org/10.31219/osf.io/ekj54_v3 | `site/pdf/liu2026mitoception.pdf` |
 | 2026 | Adolescent pain reports share genetic overlap with adult chronic pain conditions: a polygenic score  | author manuscript | https://doi.org/10.1016/j.jpain.2026.106260 | `site/pdf/author_manuscripts/rader2026adolescent.pdf` |
