@@ -799,7 +799,7 @@
  },
  {
   "id": "fortner2026first",
-  "title": "The first comprehensive case study of early-emerging prosopometamorphopsia",
+  "title": "A case study of early-emerging prosopometamorphopsia",
   "authors": [
    "Fortner, S.",
    "Mello, A.",
@@ -808,7 +808,7 @@
    "Jung, H.",
    "Bujarski, K.",
    "Wager, T. D.",
-   "Duchanie, B."
+   "Duchaine, B."
   ],
   "authors_short": [
    "Fortner S",
@@ -818,18 +818,18 @@
    "Jung H",
    "Bujarski K",
    "Wager T. D",
-   "Duchanie B"
+   "Duchaine B"
   ],
   "year": 2026,
-  "status": "preprint",
+  "status": "in press",
   "kind": "article",
-  "journal": "bioRxiv",
+  "journal": "Cognitive Neuropsychology",
   "volume": null,
   "issue": null,
   "pages": null,
-  "citation": "Fortner, S., Mello, A., Stehr, D., Kodiweera, C., Jung, H., Bujarski, K., Wager, T. D., & Duchanie, B. (preprint). The first comprehensive case study of early-emerging prosopometamorphopsia. bioRxiv. https://doi.org/10.64898/2025.12.15.690312",
-  "doi": "10.64898/2025.12.15.690312",
-  "pmid": "41446252",
+  "citation": "Fortner, S., Mello, A., Stehr, D., Kodiweera, C., Jung, H., Bujarski, K., Wager, T. D., & Duchaine, B. (in press). A case study of early-emerging prosopometamorphopsia. Cognitive Neuropsychology. https://doi.org/10.1080/02643294.2026.2755076",
+  "doi": "10.1080/02643294.2026.2755076",
+  "pmid": null,
   "pmcid": null,
   "openalex_id": "https://openalex.org/W4417424612",
   "date": "2025-12-17",
@@ -837,7 +837,7 @@
   "cited_by_count": 0,
   "oa_status": "green",
   "oa_url": "https://doi.org/10.64898/2025.12.15.690312",
-  "landing_url": "https://doi.org/10.64898/2025.12.15.690312",
+  "landing_url": "https://doi.org/10.1080/02643294.2026.2755076",
   "openalex_authors": [
    "Sydney G Fortner",
    "Antônio Mello",
@@ -865,6 +865,11 @@
     "url": "pdf/fortner2026first.pdf",
     "url_original": "https://sites.dartmouth.edu/canlab/files/2026/01/2025.12.15.690312v1.full_.pdf",
     "version": "preprint"
+   },
+   {
+    "type": "preprint",
+    "label": "Preprint",
+    "url": "https://doi.org/10.64898/2025.12.15.690312"
    }
   ],
   "has_pdf": true,
@@ -906,7 +911,8 @@
   },
   "crossref_checked": true,
   "citation_original": "Fortner, S., Mello, A., Stehr, D., Kodiweera, C., Jung, H., Bujarski, K., Wager T. D., & Duchanie, B. (preprint)The first comprehensive case study of early-emerging prosopometamorphopsia. bioRxiv. [PDF]",
-  "citations_refreshed": "2026-10-25"
+  "citations_refreshed": "2026-10-25",
+  "preprint_doi": "10.64898/2025.12.15.690312"
  },
  {
   "id": "luxvicarious",
