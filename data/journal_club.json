@@ -1,7 +1,124 @@
 {
- "updated": "2026-10-26",
+ "updated": "2026-10-27",
  "channel": null,
  "items": [
+  {
+   "id": "chakravarthula2026network",
+   "slack_ts": "1793113125.096259",
+   "shared_on": "2026-10-27",
+   "shared_by": "Hsin-Yun Tsai",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41593-026-02486-8",
+   "doi": "10.1038/s41593-026-02486-8",
+   "title": "Network geometry shapes the transformation of task representations across the human cortex",
+   "abstract": "Flexible cognition requires the brain to generalize across tasks while preserving task-specific information. Previous work showed that task representations are compressed in the association cortex and expanded in sensory and motor systems, but the mechanisms underlying these transformations are unclear. Here we test whether the geometry of intrinsic brain connectivity constrains how representations change between cortical regions. We analyzed functional MRI acquired during 16 diverse cognitive tasks together with activity flow modeling, finding that connectivity dimensionality predicts representational changes across the cortex. Low-dimensional connectivity compressed task representations and increased similarities across tasks, whereas high-dimensional connectivity expanded representations and supported conjunctive coding of task features. Activity flow modeling reproduced the observed compression-to-expansion pattern along the sensory&#8211;association&#8211;motor hierarchy and generated representational geometries that more closely matched targets than sources, consistent with transformation rather than transfer of information. These findings identify network geometry as a systems-level principle that shapes cortical representations and supports flexible cognition. The dimensionality of intrinsic brain connectivity systematically shapes how task representations compress and expand across the cortex, and activity flow modeling shows the active role of network geometry in generating the transformation.",
+   "authors": [
+    "Chakravarthula, L. N. C.",
+    "Ito, T.",
+    "Tzalavras, A.",
+    "Cole, M. W."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41593-026-02486-8.pdf",
+   "type": "journal-article",
+   "pmid": "42918864",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/s41593-026-02486-8",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1793113125096259",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control"
+    ],
+    "approach": [
+     "fmri",
+     "computational_model",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-27T15:53:52Z",
+    "usage": {
+     "input_tokens": 526,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 99,
+     "cost_usd": 0.00289
+    }
+   }
+  },
+  {
+   "id": "shared2026sciencedirectn",
+   "slack_ts": "1793078500.956119",
+   "shared_on": "2026-10-27",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.sciencedirect.com/science/article/pii/S1361841526004299",
+   "doi": "10.1016/j.media.2026.104360",
+   "title": "PaSTA: Fast parametric inference of significance for spatial associations between brain maps",
+   "abstract": null,
+   "authors": [
+    "Liu, Y.",
+    "Zalesky, A."
+   ],
+   "journal": "Medical Image Analysis",
+   "year": 2027,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1793078500956119",
+   "publisher_url": "https://doi.org/10.1016/j.media.2026.104360",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "neuroimaging_methods",
+     "open_tools"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The paper introduced PaSTA, a fast parametric method for computing statistical significance of spatial associations between brain maps.",
+   "key_finding": null,
+   "free_keywords": [
+    "spatial correlation",
+    "statistical inference",
+    "brain map comparison",
+    "permutation testing alternative"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.4,
+    "notes": "Only title available; tags inferred from method description, actual content (e.g., specific neuroimaging application) unknown.",
+    "classified_at": "2026-10-27T15:53:50Z",
+    "usage": {
+     "input_tokens": 123,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 187,
+     "cost_usd": 0.01268
+    }
+   }
+  },
   {
    "id": "shared2026article",
    "slack_ts": "1792789349.656879",
