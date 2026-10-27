@@ -108,7 +108,7 @@ window.CL = (function () {
   function citeLine(r) {
     const vol = r.vol ? ` <i>${esc(r.vol)}</i>${r.issue ? `(${esc(r.issue)})` : ""}` : "";
     const pg = r.pg ? `, ${esc(r.pg)}` : "";
-    return `${esc(r.j || "")}${vol}${pg}`;
+    return `${r.j ? `<span class="jname">${esc(r.j)}</span>` : ""}${vol}${pg}`;
   }
   function statusBadge(r) {
     if (r.st === "preprint" || r.kind === "preprint") return '<a class="badge preprint" href="publications.html?preprint=1" title="Not yet peer reviewed. Click to see all preprints">preprint</a>';
@@ -124,11 +124,18 @@ window.CL = (function () {
   }
   function paperCard(r, opts = {}) {
     const isNew = isNewPaper(r);
-    return `<article class="paper" data-id="${esc(r.id)}" id="p-${esc(r.id)}">
+    // opts.tagToggle: the tag chips start hidden behind a "Tags" button placed next to the PDF link
+    const chipsHtml = chipsFor(r, true), fold = !!opts.tagToggle && !!chipsHtml;
+    let links = linkList(r);
+    if (fold) {
+      const btn = '<button type="button" class="plink tagtoggle" aria-expanded="false" title="Show or hide the tags">Tags <span class="car" aria-hidden="true">▾</span></button>';
+      links = /<a class="plink pdf"[^>]*>.*?<\/a>/.test(links) ? links.replace(/(<a class="plink pdf"[^>]*>.*?<\/a>)/, "$1" + btn) : btn + links;
+    }
+    return `<article class="paper${fold ? " tagfold" : ""}" data-id="${esc(r.id)}" id="p-${esc(r.id)}">
       <div class="title">${starBtn(r.id)}${isNew ? '<a class="badge new fresh" href="publications.html?new=1" title="Added or published in the last 30 days. Click to see all new papers">new</a> ' : ""}<a href="papers/${encodeURIComponent(r.id)}.html">${esc(r.t)}</a></div>
       <div class="meta"><span class="authors">${esc(r.al || r.a)}${r.trunc ? ", et al." : ""}</span><span class="date tnum">${r.y || ""}</span><span class="journal">${citeLine(r)}</span>${statusBadge(r)}${r.cit != null && r.cit > 0 ? `<span class="cites tnum" title="Citations (OpenAlex)">${r.cit.toLocaleString()} citations</span>` : ""}</div>
-      <div class="chips">${chipsFor(r, true)}</div>
-      <div class="links">${linkList(r)}</div>
+      <div class="chips">${chipsHtml}</div>
+      <div class="links">${links}</div>
       ${(r.comm || []).length ? `<div class="comms">${r.comm.map(c => `<a class="comm" href="${esc(c.pdf || (c.doi ? "https://doi.org/" + c.doi : "#"))}" target="_blank" rel="noopener" title="${esc(c.note || "Commentary on this paper")}"><span class="ic">✎</span><span><b>${esc(c.note || "Commentary")}:</b> ${esc(c.title)} <span class="muted">(${esc(c.authors || "")}${c.journal ? ", " + esc(c.journal) : ""}${c.year ? " " + c.year : ""})</span></span></a>`).join("")}</div>` : ""}
     </article>`;
   }

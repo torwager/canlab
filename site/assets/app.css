@@ -110,7 +110,7 @@ main.wrap { padding-top: 104px; padding-bottom: 4rem; }
 
 /* Layout */
 .layout { display: grid; grid-template-columns: 272px minmax(0, 1fr); gap: 1.8rem; align-items: start; }
-@media (max-width: 880px) { .layout { grid-template-columns: 1fr; } .filters { position: static !important; max-height: none !important; } }
+@media (max-width: 880px) { .layout { grid-template-columns: minmax(0, 1fr); } .filters { position: static !important; max-height: none !important; } }
 .filters { position: sticky; top: 88px; max-height: calc(100vh - 100px); overflow-y: auto; padding-right: .3rem; }
 .filters details { border-top: 1px solid var(--line); padding: .55rem 0; }
 .filters details:last-child { border-bottom: 1px solid var(--line); }

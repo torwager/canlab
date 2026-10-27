@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://torwager.github.io/canlab/publications.html">
 <link rel="alternate" type="application/rss+xml" title="CANlab: new papers" href="feed.xml">
 <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png?v=3" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="assets/app.css?v=35">
+<link rel="stylesheet" href="assets/app.css?v=36">
 <style>
   .head-hero { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
   .head-hero .page-head { margin-bottom: .8rem; }
@@ -42,11 +42,47 @@
   .reflist { max-width: 78ch; }
   .reflist .ref { padding: .45rem 0 .45rem 2.2em; text-indent: -2.2em; font-size: .95rem; line-height: 1.5; color: var(--ink-2); border-bottom: 1px dotted var(--line); }
   .reflist .ref a.t { color: var(--ink); font-weight: 500; text-decoration: none; }
+  .paper .title a { font-family: var(--sans, Inter, system-ui, sans-serif); font-weight: 600; }
+  /* tighter entries; year and journal run on after the authors instead of starting a new line */
+  #results .paper { padding: .6rem 1rem .65rem; gap: .25rem; }
+  #results .paper .title { font-size: 1rem; line-height: 1.3; }
+  #results .paper .meta { display: block; line-height: 1.45; }
+  #results .paper .meta > * { display: inline; margin-right: .55rem; }
+  #results .paper .meta .badge { white-space: nowrap; }
+  #results .paper .meta .date { font-family: inherit; font-size: inherit; color: inherit; }
+  /* slightly smaller link buttons (PDF, Tags, Publisher, PubMed, Details ...) */
+  #results .paper .links .plink { font-size: .72rem; padding: .12em .5em; gap: .25em; }
+  #results .paper .links { gap: .6rem .45rem; }
+  /* plain links (Tags, Publisher, PubMed, Details ...) without a box; only the Neuromarker gallery pill keeps its box */
+  #results .paper .links .plink:not(.pdf):not(.nm) { border: none; background: none; padding: .12em .05em; color: var(--steel-deep); font-weight: 500; }
+  #results .paper .links .plink:not(.pdf):not(.nm):hover { background: none; text-decoration: underline; text-underline-offset: 3px; }
+  #results .paper.tags-open .links button.tagtoggle { background: none; font-weight: 700; }
+  #results .paper .links .plink.pdf { border: none; background: none; padding: .12em .05em; color: var(--steel-deep); font-weight: 600; }
+  #results .paper .links .plink.pdf:hover { background: none; text-decoration: underline; text-underline-offset: 3px; }
+  #results .paper .links { gap: .5rem .9rem; align-items: center; }
+  /* the journal name stands out */
+  #results .paper .jname { color: var(--warn); font-weight: 600; }
+  /* tag chips are folded behind a "Tags" button next to the PDF link */
+  .paper.tagfold .chips { display: none; }
+  .paper.tagfold.tags-open .chips { display: flex; }
+  .paper .links button.plink { font: inherit; display: inline-flex; align-items: center; gap: .3em; padding: .2em .65em; border-radius: 0; border: 1px solid var(--line-2); color: var(--ink-2); font-size: .8rem; font-weight: 500; background: var(--surface); cursor: pointer; }
+  .paper .links button.plink:hover { border-color: var(--ink); }
+  .paper.tags-open .links button.plink { background: var(--surface-2); border-color: var(--ink-2); }
+  .paper .tagtoggle .car { font-size: .7em; transition: transform .15s; }
+  .paper.tags-open .tagtoggle .car { transform: rotate(180deg); }
+  /* the tag filters scroll away with the page (not sticky) and the papers run full width underneath them */
+  @media (min-width: 881px) {
+    body:not(.simple) .layout { display: block; }
+    body:not(.simple) .layout::after { content: ""; display: table; clear: both; }
+    body:not(.simple) .filters { float: left; width: 272px; margin: 0 1.8rem .6rem 0; position: static !important; max-height: none !important; overflow: visible; }
+    body:not(.simple) #results { display: block; }
+    body:not(.simple) #results .paper { margin-bottom: .5rem; }
+  }
   .reflist .ref a.t:hover { color: var(--steel-deep); text-decoration: underline; }
   .reflist .ref .extra { font-size: .82rem; white-space: nowrap; }
   .reflist .ref .extra a { margin-left: .5em; }
   .reflist .books { margin: .3rem 0 1rem; }
-  body.simple .layout { grid-template-columns: 1fr; }
+  body.simple .layout { grid-template-columns: minmax(0, 1fr); }
   #citedlg { width: min(920px, calc(100vw - 2rem)); max-height: calc(100vh - 3rem); border: 1px solid var(--line); border-radius: 18px; padding: 0; background: var(--bg); color: var(--ink); box-shadow: 0 24px 60px rgba(0,0,0,.25); }
   #citedlg::backdrop { background: rgba(26,35,50,.45); }
   #citedlg .cd-head { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.3rem .4rem; }
@@ -124,7 +160,7 @@
 <div id="site-footer"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/minisearch/7.2.0/umd/index.min.js"></script>
 <script src="assets/config.js?v=7"></script>
-<script src="assets/app.js?v=18"></script>
+<script src="assets/app.js?v=20"></script>
 <script src="assets/layout.js?v=13"></script>
 <script src="assets/account.js?v=7"></script>
 <script src="assets/hero.js?v=7"></script>
@@ -240,11 +276,11 @@
       const ys = [...counts.keys()].filter(y => y !== "new").sort((a, b) => sort === "old" ? a - b : b - a);
       els.yearnav.innerHTML = timelineHtml(ys, counts, true, counts.has("new"));
       let html = "", cur = null;
-      for (const r of slice) { const g = grp(r); if (g !== cur) { cur = g; html += g === "new" ? `<h2 class="year-head" id="ynew">New<span class="n">${counts.get("new")} paper${counts.get("new") === 1 ? "" : "s"}</span></h2>` : yearHead(g, counts.get(g)); } html += CL.paperCard(r); }
+      for (const r of slice) { const g = grp(r); if (g !== cur) { cur = g; html += g === "new" ? `<h2 class="year-head" id="ynew">New<span class="n">${counts.get("new")} paper${counts.get("new") === 1 ? "" : "s"}</span></h2>` : yearHead(g, counts.get(g)); } html += CL.paperCard(r, { tagToggle: true }); }
       els.results.innerHTML = html || '<div class="empty">No papers match. Try fewer filters or a broader search.</div>';
     } else {
       els.yearnav.innerHTML = "";
-      els.results.innerHTML = slice.length ? slice.map(r => CL.paperCard(r)).join("") : '<div class="empty">No papers match. Try fewer filters or a broader search.</div>';
+      els.results.innerHTML = slice.length ? slice.map(r => CL.paperCard(r, { tagToggle: true })).join("") : '<div class="empty">No papers match. Try fewer filters or a broader search.</div>';
     }
     els.pager.innerHTML = pages > 1 ? `<button class="btn" id="prev" ${page <= 1 ? "disabled" : ""}>‹ Prev</button><span class="small muted tnum">page ${page} of ${pages}</span><button class="btn" id="next" ${page >= pages ? "disabled" : ""}>Next ›</button>` : "";
     const prev = document.getElementById("prev"), next = document.getElementById("next");
@@ -253,6 +289,8 @@
   }
   const sortIsYear = () => els.sort.value === "year";
   // year links: jump to the page holding that year
+  // "Tags" button on a card: show or hide that paper's tag chips
+  els.results.addEventListener("click", e => { const b = e.target.closest(".tagtoggle"); if (!b) return; const card = b.closest(".paper"); const open = card.classList.toggle("tags-open"); b.setAttribute("aria-expanded", open ? "true" : "false"); });
   els.yearnav.addEventListener("click", e => {
     const a = e.target.closest("a[data-y]"); if (!a) return;
     const y = a.dataset.y === "new" ? "new" : +a.dataset.y; const i = lastShown.findIndex(r => y === "new" ? CL.isNewPaper(r) : (r.y || 0) === y && !(sortIsYear() && CL.isNewPaper(r)));
