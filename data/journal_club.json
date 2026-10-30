@@ -1,7 +1,298 @@
 {
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "channel": null,
  "items": [
+  {
+   "id": "xiao2026stimulusspecific",
+   "slack_ts": "1793339374.876369",
+   "shared_on": "2026-10-30",
+   "shared_by": "tor",
+   "n_comments": 1,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41593-026-02493-9",
+   "doi": "10.1038/s41593-026-02493-9",
+   "title": "Stimulus-specific recruitment of human amygdala neurons predicts episodic memory encoding success",
+   "abstract": "Controlling whether an experience is encoded into long-term memory and thus later remembered is a crucial aspect of memory. Here we examined single-neuron activity in the human brain while participants formed memories for novel visual stimuli and later retrieved them with confidence ratings. Category-selective amygdala neurons exhibited elevated firing during encoding of later remembered items relative to later forgotten items. This effect was predictive of the episodic aspect of the memory, was restricted to the preferred category of each cell, emerged earlier and was stronger in the amygdala compared to the hippocampus, and did not depend on stimulus valence and arousal. Successful memory formation was accompanied by enhanced spike-field coherence between the activity of amygdala category cells and hippocampal field potentials. These findings demonstrate that stimulus-specific recruitment of the amygdala predicts memory formation and suggest category cells in the right amygdala as a target for interventions to treat disorders affecting episodic memory in humans. The study shows that stimulus-specific neurons in the human amygdala determine which experiences become lasting memory, revealing a mechanism that predicts episodic memory formation and may guide future treatments for memory disorders.",
+   "authors": [
+    "Xiao, J.",
+    "Daume, J.",
+    "Salimpour, Y.",
+    "Kurilenko, N.",
+    "Mosher, C.",
+    "Anderson, W. S.",
+    "Valiante, T. A.",
+    "Mamelak, A. N.",
+    "Rutishauser, U."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41593-026-02493-9.pdf",
+   "type": "journal-article",
+   "pmid": "42946791",
+   "pmcid": null,
+   "oa_url": "https://www.nature.com/articles/s41593-026-02493-9.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41593-026-02493-9",
+   "via_url": "https://x.com/uelirutishauser/status/2115555481435701496?a=HV1nNa4NJWYN5Lxt468&amp;s=12",
+   "via": "x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1793339374876369",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control",
+     "perception"
+    ],
+    "approach": [
+     "psychophysiology"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-30T16:42:47Z",
+    "usage": {
+     "input_tokens": 507,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 92,
+     "cost_usd": 0.00278
+    }
+   }
+  },
+  {
+   "id": "jung2026action",
+   "slack_ts": "1793305005.572619",
+   "shared_on": "2026-10-29",
+   "shared_by": "Zhaoxing",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "🥳",
+     "count": 10
+    },
+    {
+     "name": "🎉",
+     "count": 9
+    },
+    {
+     "name": "❤️",
+     "count": 6
+    },
+    {
+     "name": "party_parrot",
+     "count": 6
+    }
+   ],
+   "url": "https://doi.org/10.1073/pnas.2625018123",
+   "doi": "10.1073/pnas.2625018123",
+   "title": "Action features dominate cortical representation during natural vision",
+   "abstract": "Cortical resources are allocated into systems specialized for processing ecologically relevant features of the world. These features are typically studied in isolation using controlled experimental stimuli, making it difficult to assess the relative importance of different kinds of features that tend to overlap during natural vision. In the current study, we evaluated the relative contributions of action, agent, and scene features in predicting cortical activity while participants viewed a 1-h nature documentary. We tested four sets of model features: semantic vectors capturing the observed action, agent, and scene features derived from an annotation of the stimulus, as well as low-level visual motion-energy features. We used banded ridge regression to fit vertex-wise encoding models from the combination of all four sets of features. While each set of features predicted neural activity in the expected areas, the action features predicted more widespread activity. A variance partitioning analysis revealed that the action features captured the most unique variance in neural activity across a much larger extent of cortex than the agent or scene features. Our findings suggest that cortical activity during dynamic, natural vision is dominated by features for understanding the actions of others.",
+   "authors": [
+    "Jung, H.",
+    "Jain, H.",
+    "Han, X.",
+    "Feilong, M.",
+    "Han, J.",
+    "Shokeen, D.",
+    "Van Uden, C.",
+    "Hanson, I.",
+    "Connolly, A. C.",
+    "Wager, T. D.",
+    "Haxby, J. V.",
+    "Nastase, S. A."
+   ],
+   "journal": "Proceedings of the National Academy of Sciences",
+   "year": 2026,
+   "pdf_url": null,
+   "type": "journal-article",
+   "pmid": "42912782",
+   "pmcid": "PMC13715761",
+   "oa_url": "https://doi.org/10.1073/pnas.2625018123",
+   "publisher_url": "https://doi.org/10.1073/pnas.2625018123",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1793305005572619",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception",
+     "social",
+     "cognitive_control"
+    ],
+    "approach": [
+     "fmri",
+     "machine_learning",
+     "computational_model"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-10-30T16:42:45Z",
+    "usage": {
+     "input_tokens": 450,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 104,
+     "cost_usd": 0.00278
+    }
+   }
+  },
+  {
+   "id": "sicorello2026emotion",
+   "slack_ts": "1793303214.921349",
+   "shared_on": "2026-10-29",
+   "shared_by": "Zhaoxing",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "❤️",
+     "count": 3
+    },
+    {
+     "name": "🎉",
+     "count": 3
+    }
+   ],
+   "url": "https://doi.org/10.1038/s41586-026-11203-1",
+   "doi": "10.1038/s41586-026-11203-1",
+   "title": "Emotion regulation capacity lacks a shared neural signature",
+   "abstract": "Abstract Cognitive reappraisal refers to changing how one thinks about a situation to alter its emotional impact. It is central to well-being 1 and engages prefrontal regulatory circuits 2 , prompting the assumption that their activity reflects a person’s capacity to regulate emotions 3–5 . Yet evidence for this assumption remains inconclusive and has not been established at scale. Here we analysed 40 task-based functional magnetic resonance imaging (fMRI) datasets in a preregistered consortium with 2,175 participants and show that three widely used indicators of reappraisal capacity—trait questionnaires, task-based affective ratings and amygdala down-regulation—do not converge on a common core. Moreover, none of the three indicators showed the expected association with canonical prefrontal regulatory circuits. Trait questionnaires showed no detectable neural associations across the brain and task-based affective ratings were instead associated with responses in the amygdala and sensorimotor cortices. At the process level, canonical control circuits were engaged during both emotion generation and reappraisal, challenging their presumed specificity for emotion regulation. These findings caution against using activation in putatively regulatory brain regions to infer how well a person regulates emotions, with implications for neural biomarkers, interventions and psychoeducation that link emotion regulation difficulties to specific regional brain deficits.",
+   "authors": [
+    "Sicorello, M.",
+    "Zaehringer, J.",
+    "Kraynak, T. E.",
+    "Gianaros, P. J.",
+    "Nebe, S.",
+    "Paschke, L. M.",
+    "Steimke, R.",
+    "Stelzel, C.",
+    "Walter, H.",
+    "LaBar, K. S.",
+    "Graner, J. L.",
+    "Kim, S. H.",
+    "Wessa, M.",
+    "Sandner, M.",
+    "Weinmar, F.",
+    "Derntl, B.",
+    "Huneke, N. T. M.",
+    "Fagan, H. A.",
+    "Fernández, G.",
+    "Yan, L.",
+    "Marín-Morales, A.",
+    "Verdejo-Román, J.",
+    "Steward, T.",
+    "Harrison, B. J.",
+    "Davey, C. G.",
+    "Dörfel, D.",
+    "Neta, M.",
+    "Pierce, J.",
+    "Stolz, D. S.",
+    "Kissler, J.",
+    "Benzait, A.",
+    "Erk, S.",
+    "Berboth, S.",
+    "van Reekum, C. M.",
+    "Tupitsa, E.",
+    "Bratec, S. M.",
+    "Sorg, C.",
+    "Müller-Pinzler, L.",
+    "Sokołowski, A.",
+    "Dragan, W. Ł.",
+    "Folkierska-Żukowska, M.",
+    "Jentsch, V. L.",
+    "Merz, C. J.",
+    "Scheffel, C.",
+    "Diers, K.",
+    "Nashiro, K.",
+    "Min, J.",
+    "Mather, M.",
+    "Heinke, S.",
+    "Gärtner, A.",
+    "McRae, K.",
+    "Powers, J. P.",
+    "Doren, N.",
+    "Maier, S. U.",
+    "Dziobek, I.",
+    "Guendelman, S.",
+    "Gaebler, M.",
+    "Daniels, J. K.",
+    "Burghart, M.",
+    "Schmidt, S. N. L.",
+    "Hofhansel, L.",
+    "Habel, U.",
+    "Kohn, N.",
+    "Morawetz, C."
+   ],
+   "journal": "Nature",
+   "year": 2026,
+   "pdf_url": null,
+   "type": "journal-article",
+   "pmid": "42951968",
+   "pmcid": null,
+   "oa_url": "https://doi.org/10.1038/s41586-026-11203-1",
+   "publisher_url": "https://doi.org/10.1038/s41586-026-11203-1",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1793303214921349",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "emotion",
+     "emotion_regulation"
+    ],
+    "approach": [
+     "fmri",
+     "mega_analysis",
+     "neuromarker"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "A preregistered mega-analysis of 40 fMRI datasets with 2,175 participants found that trait questionnaires, task-based affective ratings, and amygdala down-regulation—three common indicators of reappraisal capacity—do not converge and are not consistently linked to prefrontal regulatory circuits.",
+   "key_finding": "None of three common indicators of emotion regulation capacity (trait questionnaires, affective ratings, amygdala down-regulation) converged or showed expected associations with canonical prefrontal control circuits across 2,175 participants.",
+   "free_keywords": [
+    "cognitive reappraisal",
+    "amygdala",
+    "prefrontal cortex",
+    "individual differences",
+    "biomarker",
+    "consortium data",
+    "replication"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Typo in tags schema key fixed conceptually; type field value used as 'empirical'.",
+    "classified_at": "2026-10-30T16:42:43Z",
+    "usage": {
+     "input_tokens": 544,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 340,
+     "cost_usd": 0.01505
+    }
+   }
+  },
   {
    "id": "shared2026mathematical",
    "slack_ts": "1793234461.960319",
