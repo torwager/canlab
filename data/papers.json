@@ -1140,7 +1140,7 @@
  },
  {
   "id": "sun2026fatigue",
-  "title": "Fatigue Links Sociodemographic Risk to Pain Intensity and Spread in Two Surgical Cohorts",
+  "title": "Fatigue links sociodemographic risk to pain intensity and spread in 2 surgical cohorts",
   "authors": [
    "Sun, M.",
    "Ansari, B.",
@@ -1164,14 +1164,14 @@
    "Wager TD"
   ],
   "year": 2026,
-  "status": "in press",
+  "status": "published",
   "kind": "article",
   "journal": "Pain",
   "volume": null,
   "issue": null,
   "pages": null,
-  "citation": "Sun, M., Ansari, B., Clauw, D., Harris, R. E., Sluka, K. A., Kaplan, C. M., Brummet, C. M., Lindquist, M. A., & Wager, T. D. (in press). Fatigue Links Sociodemographic Risk to Pain Intensity and Spread in Two Surgical Cohorts. Pain.",
-  "doi": null,
+  "citation": "Sun, M., Ansari, B., Clauw, D., Harris, R. E., Sluka, K. A., Kaplan, C. M., Brummet, C. M., Lindquist, M. A., & Wager, T. D. (2026). Fatigue links sociodemographic risk to pain intensity and spread in 2 surgical cohorts. Pain. https://doi.org/10.1097/j.pain.0000000000004137",
+  "doi": "10.1097/j.pain.0000000000004137",
   "pmid": "41674598",
   "pmcid": null,
   "openalex_id": "https://openalex.org/W7128017883",
@@ -1180,7 +1180,7 @@
   "cited_by_count": 0,
   "oa_status": "green",
   "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/02/04/2026.02.02.26345387.full.pdf",
-  "landing_url": "https://doi.org/10.64898/2026.02.02.26345387",
+  "landing_url": "https://doi.org/10.1097/j.pain.0000000000004137",
   "openalex_authors": [
    "Michael Sun",
    "Briha Ansari",
@@ -1205,15 +1205,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF (preprint)",
+    "label": "PDF",
     "url": "pdf/sun2026fatigue.pdf",
     "url_original": "pdf/sun2026fatigue.pdf",
-    "version": "preprint"
-   },
-   {
-    "type": "preprint",
-    "label": "Preprint",
-    "url": "https://doi.org/10.64898/2026.02.02.26345387"
+    "version": "publisher"
    }
   ],
   "has_pdf": true,
