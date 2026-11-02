@@ -806,6 +806,7 @@
    "Stehr, D.",
    "Kodiweera, C.",
    "Jung, H.",
+   "Kerns, S.",
    "Bujarski, K.",
    "Wager, T. D.",
    "Duchaine, B."
@@ -816,23 +817,24 @@
    "Stehr D",
    "Kodiweera C",
    "Jung H",
+   "Kerns S",
    "Bujarski K",
    "Wager T. D",
    "Duchaine B"
   ],
   "year": 2026,
-  "status": "in press",
+  "status": "published",
   "kind": "article",
   "journal": "Cognitive Neuropsychology",
   "volume": null,
   "issue": null,
   "pages": null,
-  "citation": "Fortner, S., Mello, A., Stehr, D., Kodiweera, C., Jung, H., Bujarski, K., Wager, T. D., & Duchaine, B. (in press). A case study of early-emerging prosopometamorphopsia. Cognitive Neuropsychology. https://doi.org/10.1080/02643294.2026.2755076",
+  "citation": "Fortner, S., Mello, A., Stehr, D., Kodiweera, C., Jung, H., Kerns, S., Bujarski, K., Wager, T. D., & Duchaine, B. (2026). A case study of early-emerging prosopometamorphopsia. Cognitive Neuropsychology. https://doi.org/10.1080/02643294.2026.2755076",
   "doi": "10.1080/02643294.2026.2755076",
   "pmid": "42963857",
   "pmcid": null,
   "openalex_id": "https://openalex.org/W4417424612",
-  "date": "2025-12-17",
+  "date": "2026-10-30",
   "abstract": "Prosopometamorphopsia (PMO) is a rare perceptual disorder characterized by facial distortions. This report presents the first thorough study of a case of PMO that emerged early in life. Zed has experienced lifelong, dynamic facial distortions in which features move, droop, disappear, expand, shrink, and rotate. He also experiences identity misrecognitions, in which he perceives familiar faces as strangers and vice versa (e.g., seeing his grandfather when viewing a young woman). Behavioral assessments indicate that Zed's distortions occur across viewpoints, visual field positions, picture-plane orientations, and visual angles. Neuropsychological testing revealed face identity recognition deficits, yet, despite his facial distortions, Zed can make accurate fine-grained perceptual judgments about facial age and sex. Structural MRI showed no lesions, but face-selectivity in two right posterior face-selective areas was reduced, and diffusion tensor imaging revealed lower white matter integrity in the left inferior fronto-occipital fasciculus. Zed's case offers new insights into early-emerging PMO, its manifestations, co-occurrence with other face-processing disorders, and underlying neural correlates.",
   "cited_by_count": 0,
   "oa_status": "green",
@@ -861,15 +863,10 @@
   "links": [
    {
     "type": "pdf",
-    "label": "PDF (preprint)",
+    "label": "PDF",
     "url": "pdf/fortner2026first.pdf",
-    "url_original": "https://sites.dartmouth.edu/canlab/files/2026/01/2025.12.15.690312v1.full_.pdf",
-    "version": "preprint"
-   },
-   {
-    "type": "preprint",
-    "label": "Preprint",
-    "url": "https://doi.org/10.64898/2025.12.15.690312"
+    "url_original": "pdf/fortner2026first.pdf",
+    "version": "publisher"
    }
   ],
   "has_pdf": true,
