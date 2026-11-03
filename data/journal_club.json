@@ -1,7 +1,167 @@
 {
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026sciencedirecto",
+   "slack_ts": "1793655607.028589",
+   "shared_on": "2026-11-02",
+   "shared_by": "tor",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "🎉",
+     "count": 14
+    }
+   ],
+   "url": "https://www.sciencedirect.com/science/article/pii/S209012322600826X",
+   "doi": "10.1016/j.jare.2026.10.036",
+   "title": "Simultaneous brain–spinal fMRI reveals neural mechanisms of TENS-induced analgesia",
+   "abstract": null,
+   "authors": [
+    "Wei, Z.",
+    "Duan, Y.",
+    "Zhu, Y.",
+    "Lin, X.",
+    "Zhang, L.",
+    "Zhang, M.",
+    "Brooks, J. C.",
+    "Liu, Y.",
+    "Hu, L.",
+    "Kong, Y."
+   ],
+   "journal": "Journal of Advanced Research",
+   "year": 2026,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1793655607028589",
+   "publisher_url": "https://doi.org/10.1016/j.jare.2026.10.036",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "pain"
+    ],
+    "approach": [
+     "fmri",
+     "other_imaging"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The study used simultaneous brain-spinal cord fMRI to investigate the neural mechanisms underlying transcutaneous electrical nerve stimulation (TENS)-induced pain relief.",
+   "key_finding": null,
+   "free_keywords": [
+    "TENS",
+    "spinal cord fMRI",
+    "analgesia",
+    "brain-spinal interactions"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.4,
+    "notes": "Only title available; no abstract or full text, so topic/approach tags are inferred from the title and limited to likely core themes.",
+    "classified_at": "2026-11-03T17:55:33Z",
+    "usage": {
+     "input_tokens": 133,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 210,
+     "cost_usd": 0.00321
+    }
+   }
+  },
+  {
+   "id": "shared2026githubb",
+   "slack_ts": "1793655183.166579",
+   "shared_on": "2026-11-02",
+   "shared_by": "tor",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 3
+    }
+   ],
+   "url": "https://github.com/MaurizioSicorello/NIDER_project",
+   "doi": null,
+   "title": "GitHub - MaurizioSicorello/NIDER_project: Data and analyses for a collaborative meta-analysis on the neurobiological basis of emotion regulation traits",
+   "abstract": "Data and analyses for a collaborative meta-analysis on the neurobiological basis of emotion regulation traits - MaurizioSicorello/NIDER_project",
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1793655183166579",
+   "kind": "link"
+  },
+  {
+   "id": "shared2026mauriziosicorelloniderproject",
+   "slack_ts": "1793655183.166579",
+   "shared_on": "2026-11-02",
+   "shared_by": "tor",
+   "n_comments": 1,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 3
+    }
+   ],
+   "url": "https://doi.org/10.5281/zenodo.22084628",
+   "doi": "10.5281/zenodo.22084628",
+   "title": "MaurizioSicorello/NIDER_project: NIDER_project v1.0.0",
+   "abstract": "Archived data, analysis code, and selected outputs for the manuscript \"Emotion Regulation Capacity Lacks a Shared Neural Signature\" by Sicorello et al. and the NIDER consortium (Neurobiology of Individual Differences in Emotion Regulation).",
+   "authors": [],
+   "journal": "Zenodo",
+   "year": null,
+   "pdf_url": null,
+   "publisher_url": "https://doi.org/10.5281/zenodo.22084628",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1793655183166579",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "emotion_regulation",
+     "emotion"
+    ],
+    "approach": [
+     "fmri",
+     "neuromarker",
+     "machine_learning",
+     "mega_analysis",
+     "open_tools"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "This Zenodo archive shared data, analysis code, and outputs for a multi-site study examining whether emotion regulation capacity has a shared neural signature across individuals.",
+   "key_finding": "Emotion regulation capacity did not show a consistent, generalizable neural signature across the pooled NIDER consortium datasets.",
+   "free_keywords": [
+    "NIDER consortium",
+    "emotion regulation capacity",
+    "open data",
+    "Zenodo",
+    "individual differences",
+    "neural signature"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.6,
+    "notes": "Only abstract available; inferred tags from manuscript title and consortium description, fixed stray typo in type key manually below.",
+    "classified_at": "2026-11-03T17:55:30Z",
+    "usage": {
+     "input_tokens": 201,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 278,
+     "cost_usd": 0.01374
+    }
+   }
+  },
   {
    "id": "talhelm2026defining",
    "slack_ts": "1793580332.269509",
@@ -331,11 +491,7 @@
    "n_comments": 1,
    "reactions": [
     {
-     "name": "❤️",
-     "count": 3
-    },
-    {
-     "name": "🎉",
+     "name": "👍",
      "count": 3
     }
    ],
@@ -2951,10 +3107,6 @@
    "reactions": [
     {
      "name": "👍",
-     "count": 1
-    },
-    {
-     "name": "👍🏽",
      "count": 1
     }
    ],
