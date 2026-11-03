@@ -1,0 +1,11 @@
+{
+ "date": "2026-11-03",
+ "found": 4,
+ "new_candidates": 0,
+ "sources": {
+  "openalex": 0,
+  "pubmed": 4
+ },
+ "citations_refreshed": 57,
+ "seconds": 66
+}
