@@ -1,7 +1,76 @@
 {
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "channel": null,
  "items": [
+  {
+   "id": "hagendorff2026machine",
+   "slack_ts": "1793808761.940009",
+   "shared_on": "2026-11-04",
+   "shared_by": "Vivek Sagar",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.science.org/doi/full/10.1126/sciadv.aec1912",
+   "doi": "10.1126/sciadv.aec1912",
+   "title": "Machine psychology for language models",
+   "abstract": "Large language models (LLMs) show increasingly advanced emergent capabilities and are being incorporated across various societal domains. Understanding their behavior and reasoning abilities is therefore important. We argue that a fruitful direction for research is engaging LLMs in experiments inspired by psychology that have traditionally been aimed at understanding human cognition and behavior. Here, we highlight and summarize theoretical perspectives, experimental paradigms, and computational analysis techniques that this approach brings to the table. It paves the way for a “machine psychology” for LLMs that goes beyond performance measurements and focuses instead on computational insights that move us toward a better understanding and discovery of emergent abilities and behavioral patterns in LLMs. We review existing work taking this approach, synthesize best practices, and highlight promising future directions. We also describe the important caveats of applying methodologies designed for understanding humans to machines. We posit that leveraging tools from experimental psychology to study LLMs will become increasingly valuable as models evolve to be more powerful, opaque, multimodal, and integrated into complex agentic real-world settings.",
+   "authors": [
+    "Hagendorff, T.",
+    "Dasgupta, I.",
+    "Binz, M.",
+    "Chan, S.",
+    "Lampinen, A.",
+    "Wang, J. X.",
+    "Akata, Z.",
+    "Schulz, E."
+   ],
+   "journal": "Science Advances",
+   "year": 2026,
+   "pdf_url": null,
+   "type": "journal-article",
+   "pmid": "42950038",
+   "pmcid": "PMC13718702",
+   "oa_url": "https://doi.org/10.1126/sciadv.aec1912",
+   "publisher_url": "https://doi.org/10.1126/sciadv.aec1912",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1793808761940009",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control"
+    ],
+    "approach": [
+     "ai_integration",
+     "behavioral"
+    ],
+    "type": [
+     "review"
+    ]
+   },
+   "summary": "The authors proposed a 'machine psychology' framework applying experimental psychology paradigms to study large language models' cognition and behavior, reviewing existing approaches and best practices.",
+   "key_finding": null,
+   "free_keywords": [
+    "large language models",
+    "machine psychology",
+    "emergent abilities",
+    "LLM cognition",
+    "behavioral paradigms"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "Not a CANlab-typical neuroscience paper; tagging is approximate given it concerns AI/LLM behavior rather than human brain data.",
+    "classified_at": "2026-11-04T17:59:37Z",
+    "usage": {
+     "input_tokens": 447,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 219,
+     "cost_usd": 0.01364
+    }
+   }
+  },
   {
    "id": "shared2026sciencedirecto",
    "slack_ts": "1793655607.028589",
@@ -3107,6 +3176,10 @@
    "reactions": [
     {
      "name": "👍",
+     "count": 5
+    },
+    {
+     "name": "👍🏽",
      "count": 1
     }
    ],
@@ -3204,7 +3277,7 @@
      "cost_usd": 0.0046
     }
    },
-   "n_comments": 0
+   "n_comments": 2
   },
   {
    "id": "shared2026hypchart",
