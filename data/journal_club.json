@@ -1,7 +1,88 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026sciencedirectp",
+   "slack_ts": "1793887121.734369",
+   "shared_on": "2026-11-05",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👀",
+     "count": 2
+    },
+    {
+     "name": "👍",
+     "count": 2
+    }
+   ],
+   "url": "https://www.sciencedirect.com/science/article/pii/S0896627315004134?via%3Dihub",
+   "doi": "10.1016/j.neuron.2015.05.006",
+   "title": "A Top-Down Cortical Circuit for Accurate Sensory Perception",
+   "abstract": null,
+   "authors": [
+    "Manita, S.",
+    "Suzuki, T.",
+    "Homma, C.",
+    "Matsumoto, T.",
+    "Odagawa, M.",
+    "Yamada, K.",
+    "Ota, K.",
+    "Matsubara, C.",
+    "Inutsuka, A.",
+    "Sato, M.",
+    "Ohkura, M.",
+    "Yamanaka, A.",
+    "Yanagawa, Y.",
+    "Nakai, J.",
+    "Hayashi, Y.",
+    "Larkum, M. E.",
+    "Murayama, M."
+   ],
+   "journal": "Neuron",
+   "year": 2015,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1793887121734369",
+   "publisher_url": "https://doi.org/10.1016/j.neuron.2015.05.006",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception",
+     "cognitive_control"
+    ],
+    "approach": [
+     "fmri"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The study likely examined a top-down cortical circuit that supports accurate sensory perception, though no abstract was available to confirm methods or findings.",
+   "key_finding": null,
+   "free_keywords": [
+    "top-down processing",
+    "sensory cortex",
+    "perceptual accuracy"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.2,
+    "notes": "Only title available; no abstract or text, so topic/approach tags are inferred with low confidence and may not reflect CANlab's typical methods.",
+    "classified_at": "2026-11-05T18:01:59Z",
+    "usage": {
+     "input_tokens": 116,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 192,
+     "cost_usd": 0.01271
+    }
+   }
+  },
   {
    "id": "hagendorff2026machine",
    "slack_ts": "1793808761.940009",
