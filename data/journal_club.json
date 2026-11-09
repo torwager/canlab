@@ -1,7 +1,152 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "channel": null,
  "items": [
+  {
+   "id": "polania2018efficient",
+   "slack_ts": "1794250546.267619",
+   "shared_on": "2026-11-09",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 4
+    },
+    {
+     "name": "👍🏼",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41593-018-0292-0",
+   "doi": "10.1038/s41593-018-0292-0",
+   "title": "Efficient coding of subjective value",
+   "abstract": "Preference-based decisions are essential for survival, for instance, when deciding what we should (not) eat. Despite their importance, preference-based decisions are surprisingly variable and can appear irrational in ways that have defied mechanistic explanations. Here we propose that subjective valuation results from an inference process that accounts for the structure of values in the environment and that maximizes information in value representations in line with demands imposed by limited coding resources. A model of this inference process explains the variability in both subjective value reports and preference-based choices, and predicts a new preference illusion that we validate with empirical data. Interestingly, the same model explains the level of confidence associated with these reports. Our results imply that preference-based decisions reflect information-maximizing transmission and statistically optimal decoding of subjective values by a limited-capacity system. These findings provide a unified account of how humans perceive and valuate the environment to optimally guide behavior. Polan&#237;a et al. show that, similarly to sensory signals, subjective preferences guiding choice are represented by the brain in a manner that accounts for regularities of the environment, thereby optimizing use of limited neural processing resources.",
+   "authors": [
+    "Polanía, R.",
+    "Woodford, M.",
+    "Ruff, C. C."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2018,
+   "pdf_url": "https://www.nature.com/articles/s41593-018-0292-0.pdf",
+   "type": "journal-article",
+   "pmid": "30559477",
+   "pmcid": "PMC6314450",
+   "oa_url": "https://www.biorxiv.org/content/biorxiv/early/2018/06/29/358317.full.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41593-018-0292-0",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1794250546267619",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "reward_craving",
+     "perception"
+    ],
+    "approach": [
+     "computational_model",
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The authors proposed and tested a computational model showing that subjective value decisions reflect efficient, information-maximizing coding adapted to the statistics of the environment, predicting a novel preference illusion.",
+   "key_finding": "An efficient-coding model of value representation explained variability in subjective value reports, choices, and confidence, and correctly predicted a new preference illusion confirmed empirically.",
+   "free_keywords": [
+    "efficient coding",
+    "subjective value",
+    "decision making",
+    "preference illusion",
+    "confidence",
+    "Bayesian inference"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "Only abstract available; no neuroimaging data reported, so approach tags limited to computational modeling and behavior.",
+    "classified_at": "2026-11-09T20:44:15Z",
+    "usage": {
+     "input_tokens": 455,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 272,
+     "cost_usd": 0.01419
+    }
+   }
+  },
+  {
+   "id": "hahn2024unifying",
+   "slack_ts": "1794250546.267619",
+   "shared_on": "2026-11-09",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 4
+    },
+    {
+     "name": "👍🏼",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41593-024-01574-x",
+   "doi": "10.1038/s41593-024-01574-x",
+   "title": "A unifying theory explains seemingly contradictory biases in perceptual estimation",
+   "abstract": "Perceptual biases are widely regarded as offering a window into the neural computations underlying perception. To understand these biases, previous work has proposed a number of conceptually different, and even seemingly contradictory, explanations, including attraction to a Bayesian prior, repulsion from the prior due to efficient coding and central tendency effects on a bounded range. We present a unifying Bayesian theory of biases in perceptual estimation derived from first principles. We demonstrate theoretically an additive decomposition of perceptual biases into attraction to a prior, repulsion away from regions with high encoding precision and regression away from the boundary. The results reveal a simple and universal rule for predicting the direction of perceptual biases. Our theory accounts for, and yields, new insights regarding biases in the perception of a variety of stimulus attributes, including orientation, color and magnitude. These results provide important constraints on the neural implementations of Bayesian computations. Despite a long history of studying perceptual biases in neuroscience, many of the biases remain difficult to explain and even appear to be contradictory. The authors propose a unifying theory that sheds new light on such puzzling perceptual biases.",
+   "authors": [
+    "Hahn, M.",
+    "Wei, X."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2024,
+   "pdf_url": "https://www.nature.com/articles/s41593-024-01574-x.pdf",
+   "type": "journal-article",
+   "pmid": "38360947",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/s41593-024-01574-x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1794250546267619",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "perception"
+    ],
+    "approach": [
+     "computational_model"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The authors derived a unifying Bayesian theory decomposing perceptual estimation biases into attraction to priors, repulsion from high-precision encoding regions, and boundary regression effects.",
+   "key_finding": "A single additive decomposition rule predicts the direction of perceptual biases across orientation, color, and magnitude estimation tasks, reconciling previously contradictory accounts.",
+   "free_keywords": [
+    "Bayesian perception",
+    "efficient coding",
+    "central tendency",
+    "perceptual bias",
+    "orientation estimation"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "Based on abstract only; this is a theoretical/computational modeling paper not central to CANlab's usual affective neuroscience focus.",
+    "classified_at": "2026-11-09T20:44:18Z",
+    "usage": {
+     "input_tokens": 480,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 266,
+     "cost_usd": 0.00446
+    }
+   }
+  },
   {
    "id": "shared2026sciencedirectp",
    "slack_ts": "1793887121.734369",
