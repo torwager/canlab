@@ -1,12 +1,11 @@
 # Lab papers without a PDF on the site
 
-Updated 2026-11-08 by `pipeline/fetch_pdfs.py` (runs daily). 2 papers.
+Updated 2026-11-09 by `pipeline/fetch_pdfs.py` (runs daily). 1 papers.
 
 No open-access copy could be found for these. To add one: download the PDF from the publisher link (institutional access, e.g. on the Dartmouth VPN), save it as `site/pdf/<file name>` in the repository and push; the next daily run links it on the site. Author manuscripts go in `site/pdf/author_manuscripts/`.
 
 | Year | Paper | Publisher link | Save as |
 |---|---|---|---|
-| 2026 | Action features dominate cortical representation during natural vision | https://doi.org/10.1073/pnas.2625018123 | `jung2026action.pdf` |
 | 2015 | Placebo and activity in the central nervous system | no DOI found | `sprenger2015placebo.pdf` |
 
 ## Published papers whose PDF is a manuscript or preprint
@@ -16,6 +15,7 @@ No open-access copy could be found for these. To add one: download the PDF from 
 | Year | Paper | Now | Publisher link | File |
 |---|---|---|---|---|
 | 2026 | Mitochondrial Psychobiology | author manuscript | no DOI | `site/pdf/andreazza2026mitochondrial.pdf` |
+| 2026 | Action features dominate cortical representation during natural vision | preprint | https://doi.org/10.1073/pnas.2625018123 | `site/pdf/jung2026action.pdf` |
 | 2026 | Intrinsic Functional Subregions of the Human Hypothalamus: Cortical Coupling and Subregional Organiz | author manuscript | https://doi.org/10.1162/netn.a.609 | `site/pdf/lee2026functional.pdf` |
 | 2026 | Mitoception Via the Metabokine GDF15 and Human Health | author manuscript | https://doi.org/10.31219/osf.io/ekj54_v3 | `site/pdf/liu2026mitoception.pdf` |
 | 2026 | Adolescent pain reports share genetic overlap with adult chronic pain conditions: a polygenic score  | author manuscript | https://doi.org/10.1016/j.jpain.2026.106260 | `site/pdf/author_manuscripts/rader2026adolescent.pdf` |
@@ -26,7 +26,6 @@ No open-access copy could be found for these. To add one: download the PDF from 
 | 2023 | Advancing cognitive neuroscience | author manuscript | https://doi.org/10.4135/9781529616613.n34 | `site/pdf/botviniknezerr2023advancing.pdf` |
 | 2023 | Social cues influence perception of others’ pain | author manuscript | https://doi.org/10.1002/ejp.2225 | `site/pdf/zhang2023social.pdf` |
 | 2022 | Test-retest reliability of an adaptive thermal pain calibration procedure in healthy volunteers. The | author manuscript | https://doi.org/10.1016/j.jpain.2022.01.011 | `site/pdf/amir2022testretest.pdf` |
-| 2021 | Altered white matter microstructure organization in posts traumatic stress disorder across 3047 adul | author manuscript | https://doi.org/10.1038/s41380-019-0631-x | `site/pdf/dennis2021altered.pdf` |
 | 2021 | Framing the Future First: Medial Temporal Lobe Activation Discriminates Delay and Acceleration Frami | author manuscript | https://doi.org/10.1037/npe0000122 | `site/pdf/reeck2021framing.pdf` |
 | 2021 | An Approach to Automatically Label & Order Brain Activity/Component Maps | preprint | https://doi.org/10.1089/brain.2020.0950 | `site/pdf/salman2021approach.pdf` |
 | 2020 | Functional MRI Can Be Highly Reliable, but It Depends on What You Measure: A Commentary on Elliott e | author manuscript | https://doi.org/10.1177/0956797621989730 | `site/pdf/kragel2020fmri.pdf` |
