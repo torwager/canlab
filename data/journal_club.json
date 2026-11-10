@@ -1,7 +1,66 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "channel": null,
  "items": [
+  {
+   "id": "onell2026pink",
+   "slack_ts": "1794331948.762409",
+   "shared_on": "2026-11-10",
+   "shared_by": "Vivek Sagar",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.science.org/doi/10.1126/sciadv.aeb2684",
+   "doi": "10.1126/sciadv.aeb2684",
+   "title": "Pink noise in dyads’ semantic similarity trajectories predicts conversation enjoyment",
+   "abstract": "Conversation is a core component of human social life. Many influential theories treat conversation as a linear system, i.e., the sum of its parts. However, linear accounts of semantic entrainment lose explanatory power at their upper limits: Discussing perfectly aligned opinions becomes boring. We propose an alternate account that considers the multiscale organization of semantic similarity over the course of a conversation, as indexed by pink noise. Here, we test whether pink noise can be found in interlocutors’ conavigated trajectories through semantic space. Not only is pink noise present, but its strength predicts positive conversation outcomes like enjoyment and connection, increases with practice, and is reflected in a large language model’s representation of conversation quality. These results demonstrate an important role for scale-free dynamics in characterizing successful conversation.",
+   "authors": [
+    "O’Nell, K. C.",
+    "Sanchez, K. L.",
+    "Finn, E. S."
+   ],
+   "journal": "Science Advances",
+   "year": 2026,
+   "pdf_url": null,
+   "type": "journal-article",
+   "pmid": "42993848",
+   "pmcid": "PMC13742169",
+   "oa_url": "https://doi.org/10.1126/sciadv.aeb2684",
+   "publisher_url": "https://doi.org/10.1126/sciadv.aeb2684",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1794331948762409",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "social"
+    ],
+    "approach": [
+     "computational_model",
+     "ai_integration",
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-11-10T17:50:26Z",
+    "usage": {
+     "input_tokens": 366,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 96,
+     "cost_usd": 0.01225
+    }
+   }
+  },
   {
    "id": "polania2018efficient",
    "slack_ts": "1794250546.267619",
