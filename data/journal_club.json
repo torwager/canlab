@@ -1,7 +1,99 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026justu",
+   "slack_ts": "1794372498.788459",
+   "shared_on": "2026-11-11",
+   "shared_by": "Zhaoxing",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.cell.com/neuron/fulltext/S0896-6273(25)00664-6",
+   "doi": "10.1016/j.neuron.2025.08.029",
+   "title": "Within-individual precision mapping of brain networks exclusively using task data",
+   "abstract": null,
+   "authors": [
+    "Du, J.",
+    "Tripathi, V.",
+    "Elliott, M. L.",
+    "Ladopoulou, J.",
+    "Sun, W.",
+    "Eldaief, M. C.",
+    "Buckner, R. L."
+   ],
+   "journal": "Neuron",
+   "year": 2025,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1794372498788459",
+   "publisher_url": "https://doi.org/10.1016/j.neuron.2025.08.029",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "cognitive_control",
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "neuroimaging_methods",
+     "machine_learning"
+    ],
+    "type": [
+     "methods"
+    ]
+   },
+   "summary": "The paper introduced a method for mapping individual-specific brain networks using only task-based fMRI data, enabling precision functional mapping without resting-state scans.",
+   "key_finding": null,
+   "free_keywords": [
+    "precision functional mapping",
+    "individual differences",
+    "task fMRI",
+    "network parcellation"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.3,
+    "notes": "Only title available; tags inferred from likely methodological content on precision mapping using task fMRI.",
+    "classified_at": "2026-11-11T17:54:11Z",
+    "usage": {
+     "input_tokens": 107,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 200,
+     "cost_usd": 0.01277
+    }
+   }
+  },
+  {
+   "id": "shared2026trials",
+   "slack_ts": "1794343875.343689",
+   "shared_on": "2026-11-10",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 1
+    },
+    {
+     "name": "👍🏽",
+     "count": 1
+    }
+   ],
+   "url": "https://aitrialsobservatory.org/",
+   "doi": null,
+   "title": "AI Trials Observatory",
+   "abstract": "A systematic, regularly updated record of what randomized trials show about how generative AI affects people.",
+   "authors": [],
+   "journal": "aitrialsobservatory.org",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1794343875343689",
+   "kind": "link"
+  },
   {
    "id": "onell2026pink",
    "slack_ts": "1794331948.762409",
