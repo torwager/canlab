@@ -947,7 +947,7 @@
   "openalex_id": "https://openalex.org/W7126087745",
   "date": "2026-01-29",
   "abstract": "Neural oscillations are fundamental to the integration of sensory, affective, and cognitive processes that contribute to pain perception. Transcranial alternating current stimulation (tACS) provides a valuable tool for investigating and modulating these oscillatory dynamics. In this review, we examine the effects of tACS on pain perception and pain-related oscillations in both healthy participants and individuals with chronic pain, highlighting methodological variability and mechanistic uncertainties that may contribute to mixed findings. We identified 14 studies, including 9 studies of experimental pain in healthy individuals and 5 of clinical pain disorders, comparing tACS to sham. Somatosensory alpha was the most frequently targeted oscillatory feature. Results varied considerably. Several studies reported reductions in pain, increases in alpha power, or changes in sensorimotor and prefrontal connectivity, but others showed no meaningful neural or behavioral effects. Out of the 14 studies, 6 demonstrated analgesic benefits and 2 showed improvements only under specific conditions or within subgroups, for a total of 8/14 studies with positive findings. Possible sources of heterogeneity include variation in stimulation duration, electrode montage, frequency alignment with individual rhythms, contextual state, and anatomical and neurophysiological differences across individuals. Pre-registered studies with sufficient power are needed to replicate effects within the most promising intervention protocols to establish a foundation in the field. We also recommend inclusion of brain imaging or electrophysiological recordings to verify whether stimulation effectively modulates the targeted neural oscillations. Finally, recent methodological advances, including phase-specific tACS, amplitude-modulated tACS, and individualized electric-field modeling, offer new opportunities to enhance mechanistic precision and clinical applicability. We argue that by integrating these approaches, future research can move beyond fixed, one-size-fits-all protocols toward personalized, state-dependent, closed-loop tACS approaches. Exploring these frontiers will transform tACS from an exploratory tool into a reliable intervention for pain.",
-  "cited_by_count": 3,
+  "cited_by_count": 4,
   "oa_status": "gold",
   "oa_url": "https://www.mdpi.com/2076-3425/16/2/152/pdf?version=1769687371",
   "landing_url": "https://doi.org/10.3390/brainsci16020152",
@@ -1016,7 +1016,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Fathi Y., Dehghani, A., Gantz, D. M., Liberati, G., & Wager, T. D. (2026) Transcranial Alternating Current Stimulation for Pain: Mixed Evidence and the Path to Precision Neuromodulation. Brain Sci. 16(152). [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "yazdanpanah2026social",
@@ -1127,7 +1127,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Yazdanpanah, A., Jung, H., Soltani, A., & Wager, T. D. (2026) Social information creates self-fulfilling prophecies in judgments of pain, vicarious pain, and cognitive effort,Proc. Natl. Acad. Sci. U.S.A. 123 (7), e2513856123. [read online] [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "panzel2026auditory",
@@ -1598,7 +1598,7 @@
   "pmcid": null,
   "date": "2026-03-18",
   "abstract": "Functional brain connectivity has been instrumental in uncovering the large-­scale organization of the brain and its relation to various behavioral and clinical phenotypes. Understanding how this functional architecture relates to the brain’s dynamic activity repertoire is an essential next step towards interpretable generative models of brain function. We propose functional connectivity-­ based Attractor Neural Networks (fcANNs), a theoretically inspired model of macro-­scale brain dynamics, simulating recurrent activity flow among brain regions based on first principles of self-­ organization. In the fcANN framework, brain dynamics are understood in relation to attractor states; neurobiologically meaningful activity configurations that minimize the free energy of the system. We provide the first evidence that large-­scale brain attractorsas reconstructed by fcANNsexhibit an approximately orthogonal organization, which is a signature of the self-­orthogonalization mechanism of the underlying theoretical framework of free-­energy-­minimizing attractor networks. Analyses of seven distinct human neuroimaging datasets demonstrate that fcANNs can accurately reconstruct and predict brain dynamics under a wide range of conditions, including resting and task states, and brain disorders. By establishing a formal link between connectivity and activity, fcANNs offer a simple and interpretable computational alternative to conventional descriptive analyses. Research Article *For correspondence: tamas.spisak@uk-essen.de Competing interest: The authors declare that no competing interests exist. Funding: See page 27 Preprint posted 11 April 2024 Sent for Review 28 May 2024 Reviewed preprint posted 05 September 2024 Reviewed preprint revised 24 December 2025 Version of Record published 18 March 2026 Reviewing Editor: Spase Petkoski, Institut de Neurosciences des Systèmes, Marseille, France ‍ ‍ Copyright Englert et al. This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited.",
-  "cited_by_count": 4,
+  "cited_by_count": 10,
   "oa_status": null,
   "oa_url": "https://elifesciences.org/reviewed-preprints/98725.pdf",
   "landing_url": "https://doi.org/10.7554/elife.98725",
@@ -1658,7 +1658,7 @@
   "crossref_checked": true,
   "abstract_source": "pdf",
   "citation_original": "Englert, R., Kincses, B., Kotikalapudi R., Gallitto, G., Li, J., Hoffschlag, K., Woo, C. W., Wager, T. D., Timmann, D., Bingel, U.,& Spisak, T. (2026) Functional connectivity-based attractor dynamics of the human brain in rest, task, and disease. eLife 13:RP98725. [PDF]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -2751,7 +2751,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zhang, L.-B., Dehghani, A., Hu, L., Sadil, P., Losin, L., Lindquist, M., & Wager, T. D. (preprint). Intensity-dependent topographical expansion of sensory representations. bioRxiv. [online link]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "sicorello2026functional",
@@ -3576,7 +3576,7 @@
    "classified_at": "2026-09-07T03:40:08Z"
   },
   "citation_original": "Zorina-Lichtenwalter, K., Bango, C. I.,Petre, B., Rader, L., Čeko, M., Lindquist, M. A., Friedman, N. P., & Wager, T. D. (2026) Brain gray matter changes across chronic pain trajectories: MRI evidence from 35,000 individuals. PAIN.",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-06",
    "result": "found:page-link:publisher",
@@ -4816,7 +4816,7 @@
   "openalex_id": "https://openalex.org/W4408144068",
   "date": "2025-03-03",
   "abstract": "Mounting evidence supports a prominent neurobiological and psychological component to chronic pain. However, the genetic association between chronic pain, psychiatric conditions, and neuroticism remains unclear. To assess this, we estimated genetic correlations between latent factors for General and Musculoskeletal Pain and Externalizing, Psychotic Thought, Compulsive Thought, and Internalizing psychopathology using genomic structural equation models of published genome-wide association studies. We further estimated the proportion of each pain-psychopathology correlation explained by neuroticism. We observed substantial genetic correlations for the General Pain factor with Internalizing and Externalizing psychiatric factors ( r = .7 for both); genetic correlations with Psychotic and Compulsive Thought disorders were negligible ( r < .2). Neuroticism explained substantial (19%–53%) shared genetic variance for General Pain with Externalizing and Internalizing factors. Overlapping genetic risks for chronic pain, psychiatric conditions, and neuroticism suggest shared biological mechanisms, underscoring the importance of chronic-pain assessment and treatment programs that address these shared mechanisms.",
-  "cited_by_count": 2,
+  "cited_by_count": 4,
   "oa_status": "closed",
   "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2023/06/27/2023.06.20.23291689.full.pdf",
   "landing_url": "https://doi.org/10.1177/21677026251317431",
@@ -4887,7 +4887,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zorina-Lichtenwalter, K., Bango, C. I., Čeko, M., Ashar, Y. K., Keller, M. C., Wager, T. D., & Friedman, N. P. (2025). Patterns of shared genetic risk between chronic pain, psychopathologies, and neuroticism. Clinical psychological science : a journal of the Association for Psychological Science, 13(5), 933–950. [pdf]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "vase2025opportunities",
@@ -5019,7 +5019,7 @@
   "openalex_id": "https://openalex.org/W4410611384",
   "date": "2025-05-22",
   "abstract": "Bayesian accounts of perception, such as predictive processing, suggest that perceptions integrate expectations and sensory experience, and thus assimilate to expected values. Furthermore, more precise expectations should have stronger influences on perception. We tested these hypotheses using a within-subject paradigm with social cues consisting of what participants were told were ratings from 10 prior participants, but which were actually constructed to independently manipulate the cue mean, variance (precision), and skewness independent of the actual stimulus intensity delivered. Forty-five participants reported their expectations regarding the painfulness of thermal stimuli or the visual contrast of flickering checkerboards. In a second session, similar (sham) cues were each followed by either a noxious thermal or a visual stimulus. Perceptions assimilated to cue-based expectations in both modalities, but precision effects were modality-specific: more precise cues enhanced assimilation in visual perception only, while higher uncertainty slightly increased reported pain. fMRI analysis revealed that the cues affected higher-level affective and cognitive systems--including assimilation to the cue mean in the Stimulus Intensity-Independent Pain Signature-1 (SIIPS-1), a neuromarker of endogenous pain processing--and in the nucleus accumbens. There were no predictive cue effects on the Neurological Pain Signature (NPS), a neuromarker of nociceptive pain. Region of interest analyses showed activity consistent with aversive prediction-error-like encoding in the periaqueductal gray during pain perception, but no cue or prediction error-related responses in early perceptual processing systems. Furthermore, behavioral and computational models of the expectation session revealed that expectations construction was biased towards extreme cue values in both modalities, and towards low-pain cues specifically. These findings suggest that predictive processing theories should be extended with mechanisms such as selective attention to outliers, and that expectation generation and its perceptual effects vary by sensory modality and primarily influence higher-level processes rather than early perception, at least when cues are not reinforced.",
-  "cited_by_count": 3,
+  "cited_by_count": 4,
   "oa_status": "gold",
   "oa_url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1013053&type=printable",
   "landing_url": "https://doi.org/10.1371/journal.pcbi.1013053",
@@ -5096,7 +5096,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Botvinik-Nezer, R., Geuter, S., Lindquist, M. A., & Wager, T. D. (2025) Expectation generation and its effect on subsequent pain and visual perception. PLoS Comput Biol 21(5): e1013053. [PDF]",
-  "citations_refreshed": "2026-11-08"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "zhang2025bases",
@@ -5197,7 +5197,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zhang, J-X., Bo, K., Wager, T. D., & Gross, J. J. (2025) The brain bases of emotion generation and emotion regulation. Trends in Cognitive Sciences. p: 1364-6613. [online link] [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "reddan2025neural",
@@ -5730,7 +5730,7 @@
   "openalex_id": "https://openalex.org/W4414707064",
   "date": "2025-10-01",
   "abstract": "BACKGROUND: Chronic pain is associated with alterations in brain function, offering promising avenues for advancing diagnostic and therapeutic strategies. In particular, these alterations may serve as brain-based biomarkers to support diagnosis, guide treatment decisions and monitor clinical courses of chronic pain. METHODS: Motivated by this potential, this study analysed associations between chronic pain and changes of large-scale brain network function using resting-state electroencephalography (EEG) from 614 individuals with chronic pain, collected by research groups from Australia, Germany, Israel, New Zealand, and the US. FINDINGS: Employing a discovery-replication approach, we found limited replicability of associations between pain intensity and brain network connectivity. However, a mega-analysis combining all datasets revealed robust associations between pain intensity and large-scale brain network connectivity at theta frequencies and including the limbic network. Additionally, multivariate analyses identified connectivity patterns spanning theta, alpha, and beta frequencies with strong evidence for associations with pain intensity. Variations and ablations of model features yielded deeper insights into the relative importance of distinct electrophysiological brain features in assessing chronic pain. INTERPRETATION: Our findings highlight challenges and provide guidance for developing EEG-based, scalable, and affordable biomarkers of chronic pain. FUNDING: This project was funded by the Deutsche Forschungsgemeinschaft and the Technical University of Munich.",
-  "cited_by_count": 29,
+  "cited_by_count": 30,
   "oa_status": "gold",
   "oa_url": "https://doi.org/10.1016/j.ebiom.2025.105955",
   "landing_url": "https://doi.org/10.1016/j.ebiom.2025.105955",
@@ -5813,7 +5813,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Bott, F. S., Zebhauser, P. T., Hohn, V. D., Turgut, Ö., May, E. S., Tiemann, L., Gil Ávila, C., Heitmann, H., Nickel, M. M., Day, M. A., Adhia, D. B., Ashar, Y. K., Wager, T. D., Granovsky, Y., Yarnitsky, D., Jansen, M. P., Gross, J., & Ploner, M. (2025) Exploring electroencephalographic chronic pain biomarkers: a mega-analysis. eBioMedicine, 120 (105955). ISSN 2352-3964. [Online Link]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "found:pmc-opendata:publisher",
@@ -5974,7 +5974,7 @@
   "openalex_id": "https://openalex.org/W4415464662",
   "date": "2025-10-23",
   "abstract": "The brain continuously anticipates the body's energetic needs and prepares to meet them before they arise-a process called allostasis. To support allostasis, the brain continually models the body's sensory state, a process known as interoception. Here we replicate and extend a large-scale system that supports allostasis and interoception in the human brain using ultrahigh precision 7 Tesla functional magnetic resonance imaging (n = 90), improving precision in subgenual and pregenual anterior cingulate topography and expanding brainstem nuclei mapping. Our functional connectivity analyses provide corroborating evidence for more than 96% of the anatomical connections documented in nonhuman animal tract-tracing studies. This system also includes regions of dense intrinsic connectivity throughout the system, some of which were identified previously as part of the backbone of neural communication across the brain. These results reinforce the existing evidence for a whole-brain system that supports the modeling and regulation of the body's internal milieu.",
-  "cited_by_count": 48,
+  "cited_by_count": 53,
   "oa_status": "hybrid",
   "oa_url": "https://www.nature.com/articles/s41593-025-02087-x.pdf",
   "landing_url": "https://doi.org/10.1038/s41593-025-02087-x",
@@ -6059,7 +6059,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zhang, J., Chen, D., Deming, P., Srirangarajan, T., Theriault, J. E., Kragel, P. A., Hartley, L., Lee, K. M., McVeigh, K., Wager, T. D., Wald, L. L., Satpute, A. B., Quigley, K. S., Whitfield-Gabrieli, S., Barrett, L. F., & Bianciardi, M. (2025). Cortical and subcortical mapping of the human allostatic-interoceptive system using 7 Tesla fMRI. Nature neuroscience, 28(11), 2380–2391. [pdf]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "wager2024look",
@@ -7153,7 +7153,7 @@
   "openalex_id": "https://openalex.org/W4400732326",
   "date": "2024-07-17",
   "abstract": "Drug treatments for pain often do not outperform placebo, and a better understanding of placebo mechanisms is needed to improve treatment development and clinical practice. In a large-scale fMRI study (N = 392) with pre-registered analyses, we tested whether placebo analgesic treatment modulates nociceptive processes, and whether its effects generalize from conditioned to unconditioned pain modalities. Placebo treatment caused robust analgesia in conditioned thermal pain that generalized to unconditioned mechanical pain. However, placebo did not decrease pain-related fMRI activity in brain measures linked to nociceptive pain, including the Neurologic Pain Signature (NPS) and spinothalamic pathway regions, with strong support for null effects in Bayes Factor analyses. In addition, surprisingly, placebo increased activity in some spinothalamic regions for unconditioned mechanical pain. In contrast, placebo reduced activity in a neuromarker associated with higher-level contributions to pain, the Stimulus Intensity Independent Pain Signature (SIIPS), and affected activity in brain regions related to motivation and value, in both pain modalities. Individual differences in behavioral analgesia were correlated with neural changes in both modalities. Our results indicate that cognitive and affective processes primarily drive placebo analgesia, and show the potential of neuromarkers for separating treatment influences on nociception from influences on evaluative processes.",
-  "cited_by_count": 50,
+  "cited_by_count": 51,
   "oa_status": "gold",
   "oa_url": "https://doi.org/10.1038/s41467-024-50103-8",
   "landing_url": "https://doi.org/10.1038/s41467-024-50103-8",
@@ -7235,7 +7235,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Botvinik-Nezer R., Petre B., Ceko M., Lindquist M.A., Friedman N.P., & Wager T.D. (2024). Placebo treatment affects brain systems related to affective and cognitive processes, but not nociceptive pain. Nature Communications. [PDF]",
-  "citations_refreshed": "2026-11-08"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "quide2024enigmachronic",
@@ -8338,7 +8338,7 @@
    "classified_at": "2026-09-06T19:26:20Z"
   },
   "citation_original": "Botvinik-Nezer R. & Wager T.D. (2023). Advancing cognitive neuroscience. In Boyle, G. J., Northoff, G., Barbey, A. K., Fregni, F., Jahanshahi, M., Pascual-Leone, A., & Sahakian, B. J. (Eds.) The Sage Handbook of Cognitive and Systems Neuroscience. Neuroscientific Principles, Systems and Methods (pp. 569-589). SAGE Publications Limited. [PDF]",
-  "citations_refreshed": "2026-11-08",
+  "citations_refreshed": "2026-11-14",
   "pdf_upgrade": {
    "last": "2026-11-09",
    "result": "not-found",
@@ -9576,7 +9576,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Botvinik-Nezer, R., Jones, M., & Wager, T.D. (2023). A Belief Systems Analysis of Fraud Beliefs Following the 2020 U.S. Election. Nature Human Behaviour, 7(7), 1106–1119. PMID: 37037989. [PDF]",
-  "citations_refreshed": "2026-11-08"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "tankha2023dont",
@@ -9729,7 +9729,7 @@
   "openalex_id": "https://openalex.org/W4377565096",
   "date": "2023-05-23",
   "abstract": "ABSTRACT: Chronic pain conditions frequently co-occur, suggesting common risks and paths to prevention and treatment. Previous studies have reported genetic correlations among specific groups of pain conditions and reported genetic risk for within-individual multisite pain counts (≤7). Here, we identified genetic risk for multiple distinct pain disorders across individuals using 24 chronic pain conditions and genomic structural equation modeling (Genomic SEM). First, we ran individual genome-wide association studies (GWASs) on all 24 conditions in the UK Biobank ( N ≤ 436,000) and estimated their pairwise genetic correlations. Then we used these correlations to model their genetic factor structure in Genomic SEM, using both hypothesis- and data-driven exploratory approaches. A complementary network analysis enabled us to visualize these genetic relationships in an unstructured manner. Genomic SEM analysis revealed a general factor explaining most of the shared genetic variance across all pain conditions and a second, more specific factor explaining genetic covariance across musculoskeletal pain conditions. Network analysis revealed a large cluster of conditions and identified arthropathic, back, and neck pain as potential hubs for cross-condition chronic pain. Additionally, we ran GWASs on both factors extracted in Genomic SEM and annotated them functionally. Annotation identified pathways associated with organogenesis, metabolism, transcription, and DNA repair, with overrepresentation of strongly associated genes exclusively in brain tissues. Cross-reference with previous GWASs showed genetic overlap with cognition, mood, and brain structure. These results identify common genetic risks and suggest neurobiological and psychosocial mechanisms that should be targeted to prevent and treat cross-condition chronic pain.",
-  "cited_by_count": 84,
+  "cited_by_count": 88,
   "oa_status": "green",
   "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10524350/pdf/nihms-1885984.pdf",
   "landing_url": "https://doi.org/10.1097/j.pain.0000000000002922",
@@ -9803,7 +9803,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zorina-Lichtenwalter, K., Bango, C. I., Van Oudenhove, L., Čeko, M., Lindquist, M. A., Grotzinger, Andrew D., Keller, M.C., Friedman, N.P. & Wager, T.D. (2023). Genetic risk shared across 24 chronic pain conditions: identification and characterization with genomic structural equation modeling. PAIN, 164(10), 2239–2252. PMID: 37219871. PMCID: PMC10524350. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "kim2023dorsomedial",
@@ -10097,9 +10097,9 @@
   "openalex_id": "https://openalex.org/W4312056427",
   "date": "2023-08",
   "abstract": "Recent years have marked a renaissance in efforts to increase research reproducibility in psychology, neuroscience, and related fields. Reproducibility is the cornerstone of a solid foundation of fundamental research-one that will support new theories built on valid findings and technological innovation that works. The increased focus on reproducibility has made the barriers to it increasingly apparent, along with the development of new tools and practices to overcome these barriers. Here, we review challenges, solutions, and emerging best practices with a particular emphasis on neuroimaging studies. We distinguish 3 main types of reproducibility, discussing each in turn. Analytical reproducibility is the ability to reproduce findings using the same data and methods. Replicability is the ability to find an effect in new datasets, using the same or similar methods. Finally, robustness to analytical variability refers to the ability to identify a finding consistently across variation in methods. The incorporation of these tools and practices will result in more reproducible, replicable, and robust psychological and brain research and a stronger scientific foundation across fields of inquiry.",
-  "cited_by_count": 94,
+  "cited_by_count": 103,
   "oa_status": "closed",
-  "oa_url": null,
+  "oa_url": "https://www.sciencedirect.com/science/article/am/pii/S245190222200341X",
   "landing_url": "https://doi.org/10.1016/j.bpsc.2022.12.006",
   "openalex_authors": [
    "Rotem Botvinik‐Nezer",
@@ -10158,7 +10158,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Botvinik-Nezer, R. & Wager, T.D. (2023). Reproducibility in Neuroimaging Analysis: Challenges and Solutions.Biological Psychiatry: Cognitive Neuroscience and Neuroimaging, 8(8), 780–788. PMID: 36906444. [PDF]",
-  "citations_refreshed": "2026-11-08",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-08",
    "result": "linked-local",
@@ -10747,7 +10747,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zhang, L., Wager, T. D., & Koban, L. (2023) Social cues influence perception of others’ pain. European Journal of Pain, 28(5), 845-854. [PDF]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -12857,7 +12857,7 @@
   "openalex_id": null,
   "date": "2019-12-19",
   "abstract": "A growing number of studies have examined alterations in white matter organization in people with posttraumatic stress disorder (PTSD) using diffusion MRI (dMRI), but the results have been mixed which may be partially due to relatively small sample sizes among studies. Altered structural connectivity may be both a neurobiological vulnerability for, and a result of, PTSD. In an effort to find reliable effects, we present a multi-cohort analysis of dMRI metrics across 3047 individuals from 28 cohorts currently participating in the PGC-ENIGMA PTSD working group (a joint partnership between the Psychiatric Genomics Consortium and the Enhancing NeuroImaging Genetics through Meta-Analysis consortium). Comparing regional white matter metrics across the full brain in 1426 individuals with PTSD and 1621 controls (2174 males/873 females) between ages 18-83, 92% of whom were trauma-exposed, we report associations between PTSD and disrupted white matter organization measured by lower fractional anisotropy (FA) in the tapetum region of the corpus callosum (Cohen's d = -0.11, p = 0.0055). The tapetum connects the left and right hippocampus, for which structure and function have been consistently implicated in PTSD. Results were consistent even after accounting for the effects of multiple potentially confounding variables: childhood trauma exposure, comorbid depression, history of traumatic brain injury, current alcohol abuse or dependence, and current use of psychotropic medications. Our results show that PTSD may be associated with alterations in the broader hippocampal network.",
-  "cited_by_count": 116,
+  "cited_by_count": 117,
   "oa_status": null,
   "oa_url": "https://www.nature.com/articles/s41380-019-0631-x.pdf",
   "landing_url": null,
@@ -12920,7 +12920,7 @@
   "citation_original": "Dennis, E.L. et al. (2021). Altered white matter microstructure organization in posts traumatic stress disorder across 3047 adults results from the PGC-ENIGMA PTSD consortium. Molecular Psychiatry. 26(8):4315-4330. PMCID: PMC7302988. [PDF]",
   "authors_truncated": true,
   "preprint_doi": "10.1101/677153",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -13261,7 +13261,7 @@
   "pmcid": null,
   "openalex_id": null,
   "date": "2021",
-  "abstract": "",
+  "abstract": "reply to ''questioning the consensus on placebo and nocebo effects\"",
   "cited_by_count": 5,
   "oa_status": null,
   "oa_url": "https://www.karger.com/Article/Pdf/514435",
@@ -13312,7 +13312,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Evers A.W.M., Colloca L., Blease C., Gaab J., Jensen K.B., Atlas L.Y., Beedie, C., Benedetti F., Bingel U., Büchel C., Bussemaker, J., Colagiuri B., Crum A.J., Finniss, D., Geers, A. L., Howick J., Klinger R., Meeuwis, S., Meissner K., Napadow V., Petrie, K. J., Rief, W., Smeets, I., Wager, T. D., Wanigasekera, V., Vase L., Kelley J., Kirsch, I. (2021). Letter: “Consensus on placebo and nocebo effects connects science with practice” Reply to “Questioning the consensus on placebo and nocebo effects.” Psychotherapy and Psychosomatics. 90(3):213-214. PMID: 33631769. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "lee2021neuroimaging",
@@ -13692,7 +13692,7 @@
   "openalex_id": null,
   "date": "2021-03-02",
   "abstract": "The brain systems underlying placebo analgesia are insufficiently understood. Here we performed a systematic, participant-level meta-analysis of experimental functional neuroimaging studies of evoked pain under stimulus-intensity-matched placebo and control conditions, encompassing 603 healthy participants from 20 (out of 28 eligible) studies. We find that placebo vs. control treatments induce small, widespread reductions in pain-related activity, particularly in regions belonging to ventral attention (including mid-insula) and somatomotor networks (including posterior insula). Behavioral placebo analgesia correlates with reduced pain-related activity in these networks and the thalamus, habenula, mid-cingulate, and supplementary motor area. Placebo-associated activity increases occur mainly in frontoparietal regions, with high between-study heterogeneity. We conclude that placebo treatments affect pain-related activity in multiple brain areas, which may reflect changes in nociception and/or other affective and decision-making processes surrounding pain. Between-study heterogeneity suggests that placebo analgesia is a multi-faceted phenomenon involving multiple cerebral mechanisms that differ across studies.",
-  "cited_by_count": 186,
+  "cited_by_count": 188,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1038/s41467-021-21179-3",
@@ -13794,7 +13794,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zunhammer, M., Spisák, T., Wager, T. D. & Bingel, U. & The Placebo Imaging Consortium (2021). Meta-analysis of neural systems underlying placebo analgesia from individual participant fMRI data. Nature Communications. 12(1):1391. PMID: 33654105. [PDF], [Treshholded Whole Brain Maps]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-06",
    "result": "found:pmc-opendata:publisher",
@@ -14610,7 +14610,7 @@
   "openalex_id": null,
   "date": "2021-09",
   "abstract": "Caregiving and other interpersonal interactions often require accurate perception of others' pain from nonverbal cues, but perceivers may be subject to systematic biases based on gender, race, and other contextual factors. Such biases could contribute to systematic under-recognition and undertreatment of pain. In 2 experiments, we studied the impact of perceived patient sex on lay perceivers' pain estimates and treatment recommendations. In Experiment 1 (N = 50), perceivers viewed facial video clips of female and male patients in chronic shoulder pain and estimated patients' pain intensity. Multi-level linear modeling revealed that perceivers under-estimated female patients' pain compared with male patients, after controlling for patients' self-reported pain and pain facial expressiveness. Experiment 2 (N = 200) replicated these findings, and additionally found that 1) perceivers' pain-related gender stereotypes, specifically beliefs about typical women's vs. men's willingness to express pain, predicted pain estimation biases; and 2) perceivers judged female patients as relatively more likely to benefit from psychotherapy, whereas male patients were judged to benefit more from pain medicine. In both experiments, the gender bias effect size was on average 2.45 points on a 0-100 pain scale. Gender biases in pain estimation may be an obstacle to effective pain care, and experimental approaches to characterizing biases, such as the one we tested here, could inform the development of interventions to reduce such biases. Perspective: This study identifies a bias towards underestimation of pain in female patients, which is related to gender stereotypes. The findings suggest caregivers' or even clinicians' pain stereotypes are a potential target for intervention.",
-  "cited_by_count": 356,
+  "cited_by_count": 363,
   "oa_status": null,
   "oa_url": "http://www.jpain.org/article/S1526590021000353/pdf",
   "landing_url": "https://doi.org/10.1016/j.jpain.2021.03.001",
@@ -14684,7 +14684,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zhang, L., Losin, E.A.R., Ashar, Y.K., Koban, L. & Wager, T.D. (2021). Gender biases in estimation of others’ pain. The Journal of Pain. 22(9): 1048 – 1059 PMID: 33684539. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "rawat2021redefining",
@@ -14919,7 +14919,7 @@
   "openalex_id": null,
   "date": "2021-11-17",
   "abstract": "The specific neural systems underlying the subjective feeling of fear are debated in affective neuroscience. Here, we combine functional MRI with machine learning to identify and evaluate a sensitive and generalizable neural signature predictive of the momentary self-reported subjective fear experience across discovery (n = 67), validation (n = 20) and generalization (n = 31) cohorts. We systematically demonstrate that accurate fear prediction crucially requires distributed brain systems, with important contributions from cortical (e.g., prefrontal, midcingulate and insular cortices) and subcortical (e.g., thalamus, periaqueductal gray, basal forebrain and amygdala) regions. We further demonstrate that the neural representation of subjective fear is distinguishable from the representation of conditioned threat and general negative affect. Overall, our findings suggest that subjective fear, which exhibits distinct neural representation with some other aversive states, is encoded in distributed systems rather than isolated 'fear centers'.",
-  "cited_by_count": 159,
+  "cited_by_count": 167,
   "oa_status": null,
   "oa_url": "https://www.nature.com/articles/s41467-021-26977-3.pdf",
   "landing_url": "https://doi.org/10.1038/s41467-021-26977-3",
@@ -14993,7 +14993,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zhou, F, & Zhao, W., & Qi, Z., & Geng, Y., Yao, S., Kendrick, K.M., Wager, T.D. & Becker, B. (2021). A distributed fMRI-based signature for the subjective experience of fear. Nature Communications. 12(1), 6643. [PDF], [Brain Pattern Masks]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "neuromarkers": [
    {
     "id": "2021-zhou-subjective-fear",
@@ -16008,7 +16008,7 @@
   "openalex_id": null,
   "date": "2019-12-09",
   "abstract": "Recent studies indicate that a significant reorganization of cerebral networks may occur in patients with chronic pain, but how immediate pain experience influences the organization of large-scale functional networks is not yet well characterized. To investigate this question, we used functional magnetic resonance imaging in 106 participants experiencing both noxious and innocuous heat. Painful stimulation caused network-level reorganization of cerebral connectivity that differed substantially from organization during innocuous stimulation and standard resting-state networks. Noxious stimuli increased somatosensory network connectivity with (a) frontoparietal networks involved in context representation, (b) \"ventral attention network\" regions involved in motivated action selection, and (c) basal ganglia and brainstem regions. This resulted in reduced \"small-worldness,\" modularity (fewer networks), and global network efficiency and in the emergence of an integrated \"pain supersystem\" (PS) whose activity predicted individual differences in pain sensitivity across 5 participant cohorts. Network hubs were reorganized (\"hub disruption\") so that more hubs were localized in PS, and there was a shift from \"connector\" hubs linking disparate networks to \"provincial\" hubs connecting regions within PS. Our findings suggest that pain reorganizes the network structure of large-scale brain systems. These changes may prioritize responses to painful events and provide nociceptive systems privileged access to central control of cognition and action during pain.",
-  "cited_by_count": 81,
+  "cited_by_count": 80,
   "oa_status": null,
   "oa_url": "https://academic.oup.com/cercor/article-pdf/30/5/2804/33160761/bhz276.pdf",
   "landing_url": "https://doi.org/10.1093/cercor/bhz276",
@@ -16078,7 +16078,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zheng, W., Woo, C. W., Yao, Z., Goldstein, P., Atlas, L. Y., Roy, M., Schmidt, L., Krishnan, A., Jempa, M., Hu, B & Wager, T .D. (2020). Pain-Evoked Reorganization in Functional Brain Networks. Cerebral Cortex. 30(5): 2804-2822. PMCID: PMC7197093. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "kano2020imaging",
@@ -16376,7 +16376,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Yu, H., Koban, L., Crockett, M. J., Zhou, X & Wager, T. D. (2020). Toward a Brain-Based Bio-Marker of Guilt. Neuroscience Insight. 15:2633105520957638. PMID: 32995750. [PDF]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "neuromarkers": [
    {
     "id": "2019-yu-koban-guilt",
@@ -16740,7 +16740,7 @@
   "pmcid": null,
   "date": "2020-04-02",
   "abstract": "Abstract \n                 \n                   Background \n                   In the absence of verbal communication it is challenging to infer an individual’s sensory and emotional experience. In adults, fMRI has been used to develop multivariate brain activity signatures, which reliably capture elements of human pain experience. We translate whole-brain fMRI signatures that encode pain perception in adults to the newborn infant brain, to advance understanding of functional brain development and pain perception in early life. \n                 \n                 \n                   Methods \n                   A cohort of adults (n=10; mean age=28.3 years) and 2 cohorts of healthy infants (Cohort A: n=15; Cohort B: n=22; mean postnatal age=3 days) were stimulated with low intensity nociceptive stimuli (64-512mN) during acquisition of functional MRI data. fMRI pain signatures were applied directly to the adult data and transformed such that they could be applied to the infant brain. In each cohort, we assessed the concordance of the signatures with the brain responses using cosine-similarity scores, and we assessed stimulus intensity encoding of the signature responses using Spearman rank correlation. Brain activity in ‘pro-pain’ and ‘anti-pain’ brain regions were also examined. \n                 \n                 \n                   Findings \n                   The Neurologic Pain Signature (NPS), which reflects aspects of nociceptive pain experience, was activated in both the adults and infants, and reliably encoded stimulus intensity. However, the Stimulus Intensity Independent Pain Signature (SIIPS1), which reflects higher-level cognitive modulation of nociceptive input, was only expressed in adults. ‘Pro-pain’ brain regions showed similar activation patterns in adults and infants, whereas, ‘anti-pain’ brain regions exhibited divergent responses. \n                 \n                 \n                   Interpretation \n                   Basic intensity encoding of nociceptive information is similar in adults and infants. However, translation of adult brain signatures into infants reveals significant differences in infant cerebral processing of nociceptive information, which may reflect their lack of expectation, motivation and contextualisation. This study expands the use of brain activity pain signatures to non-verbal patients and provides a potential approach to assess analgesic interventions in infancy. \n                 \n                 \n                   Funding \n                   This work was funded by Wellcome (Senior Research Fellowship awarded to Prof. Rebeccah Slater) and SSNAP “Support for Sick and Newborn Infants and their Parents” Medical Research Fund (University of Oxford Excellence Fellowship awarded to Dr Eugene Duff). \n                 \n                 \n                   Research in context \n                   \n                     Evidence before this study \n                     We searched PubMed for research articles published prior to March 2020 using terms including ‘fMRI’, ‘infant or neonate’, and ‘pain or nociception’ in the title or abstract. Due to the relatively new emergence of this field, and the experimental and analytical challenges involved in studying cerebral processing of pain in the MRI environment in healthy newborn infants, only five fMRI studies have examined infant brain responses to nociceptive input. \n                     In a foundational pilot study, Williams et al., applied an experimental noxious stimulus to a single infant, evoking widespread brain activity that included several brain regions involved in pain processing in adults. Goksan et al., subsequently performed an observational cohort study and used regional analyses to compare active brain regions in infants (n=10) and adults (n=10), concluding that the evoked patterns of brain activity were broadly similar in infants and adults. Further follow-up analysis in the infant cohort revealed that the functional connectivity of brain regions involved in descending pain modulation influences the magnitude of pain-related brain activity. Two further studies focused on methodological advances, providing evidence-based recommendations for fMRI acquisition parameters and image processing in order to maximise the quality of infant data, and these methods have been implemented in this study. \n                   \n                   \n                     Added value of this study \n                     This study translates validated adult pain fMRI brain signatures to a nonverbal patient population in which the assessment and management of pain presents a significant clinical challenge. Application of fMRI brain signatures to newborn infants expands on previous fMRI studies that provided only qualitative evidence that noxious stimulation commonly activates brain regions in the adult and infant brain. Here we demonstrate that the basic encoding of the sensory discriminative aspects of pain, as represented by the Neurologic Pain Signature (NPS), occurs in both adults and infants, whereas higher-level cognitive modulation of pain, represented by the Stimulus Intensity Independent Pain Signature (SIIPS1) is only present in adults and not observed in infants. The differences in how the immature infant brain processes pain, relative to the mature adult brain, are likely to reflect differences in their expectation, motivation and contextualisation of external events rather than differences in their core nociceptive cerebral processing of pain. This work allows us to use quantitative fMRI observations to make stronger inferences related to pain experience in nonverbal infants. \n                   \n                   \n                     Implications of all the available evidence \n                     Behavioural pain scores used in neonatal clinical care offer limited sensitivity and specificity to pain. Neonatal clinical trials that use these scores as outcome measures frequently report a lack of efficacy of common analgesic interventions, resulting in few evidence-based drugs for treating pain. The value of using brain-based neuroimaging markers of pain as a means of providing objective evidence of analgesic efficacy in early proof of concept studies is well recognised in adults, even in the absence of behavioural pain modulation. Similarly, in infants EEG-based measures of noxious-evoked brain activity have been used as outcome measures in clinical trials of analgesics to overcome some of the inherent limitations of using behavioural observations to quantify analgesic efficacy. Considering the successful translation of the Neurologic Pain Signature (NPS) and its sensitivity to analgesic modulation in adults, this novel methodology represents an objective brain-based fMRI approach that could be used to advance the discovery and assessment of analgesic interventions in infancy.",
-  "cited_by_count": 34,
+  "cited_by_count": 37,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/s2589-7500(20)30168-0",
@@ -16808,7 +16808,7 @@
   "crossref_checked": true,
   "citation_original": "Duff, E. P., Moultrie, F., van der Vaart, M., Goksan, S., Abos, A., Fitzgibbon, S. P., Baxter, L., Wager, T. D. & Slater, R. (2020). Inferring the infant pain experience: a translational fMRI-based signature study. The Lancet Digital Health. 2(9): E458-E467. PMID: 32954244. [PDF]",
   "preprint_doi": "10.1101/2020.04.01.998864",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "reddan2020touch",
@@ -17059,7 +17059,7 @@
   "pmcid": null,
   "date": "2020-06-03",
   "abstract": "Pain empathy can be evoked by multiple cues, particularly observation of acute pain inflictions or facial expressions of pain. Previous studies suggest that these cues commonly activate the insula and anterior cingulate, yet vicarious pain encompasses pain-specific responses as well as unspecific processes (e.g. arousal) and overlapping activations are not sufficient to determine process-specific shared neural representations. We employed multivariate pattern analyses to fMRI data acquired during observation of noxious stimulation of body limbs (NS) and painful facial expressions (FE) and found spatially and functionally similar cross-modality (NS versus FE) wholebrain vicarious pain-predictive patterns. Further analyses consistently identified shared neural representations in the bilateral mid-insula. The vicarious pain patterns were not sensitive to respond to non-painful high-arousal negative stimuli but predicted self-experienced thermal pain. Finally, a domain-general vicarious pain pattern predictive of self-experienced pain but not arousal was developed. Our findings demonstrate shared pain-associated neural representations of vicarious pain.",
-  "cited_by_count": 104,
+  "cited_by_count": 107,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.7554/elife.56929",
@@ -17130,7 +17130,7 @@
   "crossref_checked": true,
   "abstract_source": "pdf",
   "citation_original": "Zhou. F, Li, J., Zhao, W., Xu, L., Zheng, X., Fu, M., Yao, S., Kendrick, K. M., Wager, T. D. & Becker, B. (2020). Empathic pain evoked by sensory and emotional-communicative cues share common and process-specific neural representation. eLife. 9: e56929. PMCID: PMC7505665. [PDF], [Brain Pattern Mask], [Dataset]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "neuromarkers": [
    {
     "id": "2020-zhou-general-vicarious-pain",
@@ -18170,7 +18170,7 @@
   "openalex_id": null,
   "date": "2020-10-19",
   "abstract": "Clinical and laboratory studies demonstrate that placebo and nocebo effects influence various symptoms and conditions after the administration of both inert and active treatments. There is an increasing need for up-to-date recommendations on how to inform patients about placebo and nocebo effects in clinical practice and train clinicians how to disclose this information. Based on previous clinical recommendations concerning placebo and nocebo effects, a 3-step, invitation-only Delphi study was conducted among an interdisciplinary group of internationally recognized experts. The study consisted of open- and closed-ended survey questions followed by a final expert meeting. The surveys were subdivided into 3 parts: (1) informing patients about placebo effects, (2) informing patients about nocebo effects, and (3) training clinicians how to communicate this information to the patients. There was consensus that communicating general information about placebo and nocebo effects to patients (e.g., explaining their role in treatment) could be beneficial, but that such information needs to be adjusted to match the specific clinical context (e.g., condition and treatment). Experts also agreed that training clinicians to communicate about placebo and nocebo effects should be a regular and integrated part of medical education that makes use of multiple formats, including face-to-face and online modalities. The current 3-step Delphi study provides consensus-based recommendations and practical considerations for disclosures about placebo and nocebo effects in clinical practice. Future research is needed on how to optimally tailor information to specific clinical conditions and patients' needs, and on developing standardized disclosure training modules for clinicians.",
-  "cited_by_count": 108,
+  "cited_by_count": 110,
   "oa_status": null,
   "oa_url": "https://www.karger.com/Article/Pdf/510738",
   "landing_url": "https://doi.org/10.1159/000510738",
@@ -18250,7 +18250,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Evers, A., Colloca, L., Blease, C., Gaab, J., Jensen, K., Atlas, L. Y., Beedie, C., Benedetti, F., Bingel, U., Büchel, C., Bussemaker, J, Colagiuri, B., Crum, A. J., Finniss, D., Geers, A., Howick, J., Klinger, R, Meeuwis, S. H., Meissner, K., Napadow, V., Petrie, K., Rief, W., Smeets, I., Wager, T. D., Wanigasekera, V., Vase, L., Kelley, J. M. & Kirsch, I. (2020). What should clinicians tell patients about placebo and nocebo effects? Practical considerations based on expert consensus. Psychotherapy and Psychosomatics. 90:49-56. PMID: 33075796. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "goldstein2020clinicianpatient",
@@ -20006,7 +20006,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zunhammer, M., Wager, T. D., & Bingel, U. on behalf of the Placebo Imaging Consortium (2019). Laterality and Stimulation Bias in Meta-analysis of Placebo Responses. JAMA Neurology. 76(7):870. PMID: 31107522. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "zilchamano2019neural",
@@ -20111,7 +20111,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zilcha-Mano, S., Wang, Z., Peterson, B., Wall, M. M., Chen, Y., Wager, T. D., Brown, P. B., Roose, S. P., & Rutherford, B. R. (2019). Neural Mechanisms of Expectancy-Based Placebo Effects in Antidepressant Clinical Trials. Journal of Psychiatric Research. 116: 19-25. PMCID: PMC6790474. [PDF]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -21075,7 +21075,7 @@
   "openalex_id": null,
   "date": "2018",
   "abstract": "&lt;b&gt;&lt;i&gt;Background:&lt;/i&gt;&lt;/b&gt; Placebo and nocebo effects occur in clinical or laboratory medical contexts after administration of an inert treatment or as part of active treatments and are due to psychobiological mechanisms such as expectancies of the patient. Placebo and nocebo studies have evolved from predominantly methodological research into a far-reaching interdisciplinary field that is unravelling the neurobiological, behavioural and clinical underpinnings of these phenomena in a broad variety of medical conditions. As a consequence, there is an increasing demand from health professionals to develop expert recommendations about evidence-based and ethical use of placebo and nocebo effects for clinical practice. &lt;b&gt;&lt;i&gt;Methods:&lt;/i&gt;&lt;/b&gt; A survey and interdisciplinary expert meeting by invitation was organized as part of the 1st Society for Interdisciplinary Placebo Studies (SIPS) conference in 2017. Twenty-nine internationally recognized placebo researchers participated. &lt;b&gt;&lt;i&gt;Results:&lt;/i&gt;&lt;/b&gt; There was consensus that maximizing placebo effects and minimizing nocebo effects should lead to better treatment outcomes with fewer side effects. Experts particularly agreed on the importance of informing patients about placebo and nocebo effects and training health professionals in patient-clinician communication to maximize placebo and minimize nocebo effects. &lt;b&gt;&lt;i&gt;Conclusions:&lt;/i&gt;&lt;/b&gt; The current paper forms a first step towards developing evidence-based and ethical recommendations about the implications of placebo and nocebo research for medical practice, based on the current state of evidence and the consensus of experts. Future research might focus on how to implement these recommendations, including how to optimize conditions for educating patients about placebo and nocebo effects and providing training for the implementation in clinical practice.",
-  "cited_by_count": 592,
+  "cited_by_count": 597,
   "oa_status": null,
   "oa_url": "https://www.karger.com/Article/Pdf/490354",
   "landing_url": null,
@@ -21128,7 +21128,7 @@
   "abstract_source": "crossref",
   "crossref_checked": true,
   "citation_original": "Evers, A. W. M., Colloca, L., Blease, C., Annoni, M., Atlas, Y. A., Benedetti, F., . . . Kelley, J. M. (2018). Implications of placebo and nocebo effects for clinical practice: expert consensus. Psychotherapy and Psychosomatics. 87(4): 204-210. PMCID: PMC3167012. [PDF]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "authors_truncated": true
  },
  {
@@ -22343,7 +22343,7 @@
   "openalex_id": null,
   "date": "2018-11-01",
   "abstract": "Placebo effects reduce pain and contribute to clinical analgesia, but after decades of research, it remains unclear whether placebo treatments mainly affect nociceptive processes or other processes associated with pain evaluation. We conducted a systematic, participant-level meta-analysis to test the effect of placebo treatments on pain-associated functional neuroimaging responses in the neurologic pain signature (NPS), a multivariate brain pattern tracking nociceptive pain. Medline (PubMed) was searched from inception to May 2015; the search was augmented with results from previous meta-analyses and expert recommendations. Eligible studies were original investigations that were published in English in peer-reviewed journals and that involved functional neuroimaging of the human brain with evoked pain delivered under stimulus intensity-matched placebo and control conditions. The authors of all eligible studies were contacted and asked to provide single-participant data. Data were collected between December 2015 and November 2017 following the Preferred Reporting Items for Systematic Review and Meta-Analyses of individual participant data guidelines. Results were summarized across participants and studies in a random-effects model. The main, a priori outcome was NPS response; pain reports were assessed as a secondary outcome. We obtained data from 20 of 28 identified eligible studies, resulting in a total sample size of 603 healthy individuals. The NPS responses to painful stimulation compared with baseline conditions were positive in 575 participants (95.4%), with a very large effect size (g = 2.30 [95% CI, 1.92 to 2.69]), confirming its sensitivity to nociceptive pain in this sample. Placebo treatments showed significant behavioral outcomes on pain ratings in 17 of 20 studies (85%) and in the combined sample (g = -0.66 [95% CI, -0.80 to -0.53]). However, placebo effects on the NPS response were significant in only 3 of 20 studies (15%) and were very small in the combined sample (g = -0.08 [95% CI, -0.15 to -0.01]). Similarly, analyses restricted to studies with low risk of bias (g = -0.07 [95% CI, -0.15 to 0.00]) indicated very small effects, and analyses of just placebo responders (g = -0.22 [95% CI, -0.34 to -0.11]) indicated small effects, as well. Placebo treatments have moderate analgesic effects on pain reports. The very small effects on NPS, a validated measure that tracks levels of nociceptive pain, indicate that placebo treatments affect pain via brain mechanisms largely independent of effects on bottom-up nociceptive processing.",
-  "cited_by_count": 167,
+  "cited_by_count": 168,
   "oa_status": null,
   "oa_url": "https://jamanetwork.com/journals/jamaneurology/articlepdf/2694717/jamaneurology_zunhammer_2018_oi_180047.pdf",
   "landing_url": null,
@@ -22404,7 +22404,7 @@
   "crossref_checked": true,
   "abstract_source": "pubmed",
   "citation_original": "Zunhammer, M., Bingel, U., & Wager, T. D. (2018). Placebo Effects on the Neurologic Pain Signature: A Meta-analysis of Individual Participant Functional Magnetic Resonance Imaging Data. JAMA Neurology. 75(11): 1321-1330. PMCID: PMC6248115. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "kragel2018reproducible",
@@ -22898,7 +22898,7 @@
   "crossref_checked": true,
   "citation_original": "De la Vega, A., Yarkoni, T., Wager, T. D., & Banich, M. T. (2017). Large-scale Meta–analysis Suggests Low Regional Modularity in Lateral Frontal Cortex. Cerebral Cortex. 28(10): 3414-3428. PMID: 28968758. [PDF], [Brain Model]",
   "preprint_doi": "10.1101/083352",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "zhu2017altered",
@@ -22939,7 +22939,7 @@
   "openalex_id": null,
   "date": "2016-12-28",
   "abstract": "Individuals with comorbid posttraumatic stress disorder and major depressive disorder (PTSD-MDD) often exhibit greater functional impairment and poorer treatment response than individuals with PTSD alone. Research has not determined whether PTSD-MDD is associated with different network connectivity abnormalities than PTSD alone. We used functional magnetic resonance imaging (fMRI) to measure resting state functional connectivity (rs-FC) patterns of brain regions involved in fear and reward processing in three groups: patients with PTSD-alone (n = 27), PTSD-MDD (n = 21), and trauma-exposed healthy controls (TEHCs, n = 34). Based on previous research, seeds included basolateral amygdala (BLA), centromedial amygdala (CMA), and nucleus accumbens (NAcc). Regardless of MDD comorbidity, PTSD was associated with decreased connectivity of BLA-orbitalfrontal cortex (OFC) and CMA-thalamus pathways, key to fear processing, and fear expression, respectively. PTSD-MDD, compared to PTSD-alone and TEHC, was associated with decreased connectivity across multiple amygdala and striatal-subcortical pathways: BLA-OFC, NAcc-thalamus, and NAcc-hippocampus. Further, while both the BLA-OFC and the NAcc-thalamus pathways were correlated with MDD symptoms, PTSD symptoms correlated with the amygdala pathways (BLA-OFC; CMA-thalamus) only. Comorbid PTSD-MDD may be associated with multifaceted functional connectivity alterations in both fear and reward systems. Clinical implications are discussed.",
-  "cited_by_count": 97,
+  "cited_by_count": 98,
   "oa_status": null,
   "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/da.22594",
   "landing_url": "https://doi.org/10.1002/da.22594",
@@ -23002,7 +23002,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zhu, X., Helpman, L., Papini, S., Schneier, F., Markowitz, J. C., Van Meter, P. E., Lindquist, M. A., Wager, T. D., & Neria, Y. (2017). Altered Resting-State Functional Connectivity of Fear and Reward Circuitry in Comorbid PTSD and Major Depression. Depression and Anxiety. 34(7):641-650. PMCID: PMC5667358. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "woo2017imaging",
@@ -23083,7 +23083,7 @@
    "notes": null,
    "classified_at": "2026-09-07T03:40:08Z"
   },
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "becker2017orbitofrontal",
@@ -23208,7 +23208,7 @@
   "openalex_id": null,
   "date": "2017-02-14",
   "abstract": "Cerebral processes contribute to pain beyond the level of nociceptive input and mediate psychological and behavioural influences. However, cerebral contributions beyond nociception are not yet well characterized, leading to a predominant focus on nociception when studying pain and developing interventions. Here we use functional magnetic resonance imaging combined with machine learning to develop a multivariate pattern signature-termed the stimulus intensity independent pain signature-1 (SIIPS1)-that predicts pain above and beyond nociceptive input in four training data sets (Studies 1-4, N=137). The SIIPS1 includes patterns of activity in nucleus accumbens, lateral prefrontal and parahippocampal cortices, and other regions. In cross-validated analyses of Studies 1-4 and in two independent test data sets (Studies 5-6, N=46), SIIPS1 responses explain variation in trial-by-trial pain ratings not captured by a previous fMRI-based marker for nociceptive pain. In addition, SIIPS1 responses mediate the pain-modulating effects of three psychological manipulations of expectations and perceived control. The SIIPS1 provides an extensible characterization of cerebral contributions to pain and specific brain targets for interventions.",
-  "cited_by_count": 230,
+  "cited_by_count": 235,
   "oa_status": null,
   "oa_url": "https://www.nature.com/articles/ncomms14211.pdf",
   "landing_url": "https://doi.org/10.1038/ncomms14211",
@@ -23279,7 +23279,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Woo, C. W., Schmidt, L., Krishnan, A., Jepma, M., Roy, M., Lindquist, M. A., Atlas, L. Y. & Wager, T. D. (2017). Quantifying cerebral contributions to pain beyond nociception. Nature Communications. 8: 14211. PMCID: PMC5316889 [PDF], [Brain Model]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "neuromarkers": [
    {
     "id": "2017-woo-siips1",
@@ -25716,7 +25716,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Woo, C. W., & Wager, T. D. (2016). What Reliability Can and Cannot Tell Us about Pain Report and Pain Neuroimaging. PAIN. 157(3)511-13. PMID: 26645548. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "panta2016tool",
@@ -25868,7 +25868,7 @@
   "openalex_id": null,
   "date": "2016-04",
   "abstract": "Pain features centrally in numerous illnesses and generates enormous public health costs. Despite its ubiquity, the psychological and neurophysiological nature of pain remains controversial. Here, we survey one controversy in particular: the relation between nociceptive pain, which is somatic in origin, and empathic pain, which arises from observing others in pain. First, we review evidence for neural overlap between nociceptive and empathic pain and what this overlap implies about underlying mental representations. Then, we propose a framework for understanding the nature of the psychological and neurophysiological correspondence across these types of 'pain'. This framework suggests new directions for research that can better identify shared and dissociable representations underlying different types of distress, and can inform theories about the nature of pain.",
-  "cited_by_count": 220,
+  "cited_by_count": 221,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.tics.2016.02.003",
@@ -25927,7 +25927,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zaki, J., Wager, T. D., Singer, T., Keysers, C., & Gazzola, V. (2016). The anatomy of suffering: Understanding the relationship between nociceptive and empathic pain. Trends in cognitive sciences. 20(4):249-259. PMCID: PMC5521249. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "vachonpresseau2016multiple",
@@ -26377,7 +26377,7 @@
   "openalex_id": null,
   "date": "2016-06-15",
   "abstract": "The functional organization of human medial frontal cortex (MFC) is a subject of intense study. Using fMRI, the MFC has been associated with diverse psychological processes, including motor function, cognitive control, affect, and social cognition. However, there have been few large-scale efforts to comprehensively map specific psychological functions to subregions of medial frontal anatomy. Here we applied a meta-analytic data-driven approach to nearly 10,000 fMRI studies to identify putatively separable regions of MFC and determine which psychological states preferentially recruit their activation. We identified regions at several spatial scales on the basis of meta-analytic coactivation, revealing three broad functional zones along a rostrocaudal axis composed of 2-4 smaller subregions each. Multivariate classification analyses aimed at identifying the psychological functions most strongly predictive of activity in each region revealed a tripartite division within MFC, with each zone displaying a relatively distinct functional signature. The posterior zone was associated preferentially with motor function, the middle zone with cognitive control, pain, and affect, and the anterior with reward, social processing, and episodic memory. Within each zone, the more fine-grained subregions showed distinct, but subtler, variations in psychological function. These results provide hypotheses about the functional organization of medial prefrontal cortex that can be tested explicitly in future studies. Activation of medial frontal cortex in fMRI studies is associated with a wide range of psychological states ranging from cognitive control to pain. However, this high rate of activation makes it challenging to determine how these various processes are topologically organized across medial frontal anatomy. We conducted a meta-analysis across nearly 10,000 studies to comprehensively map psychological states to discrete subregions in medial frontal cortex using relatively unbiased data-driven methods. This approach revealed three distinct zones that differed substantially in function, each of which were further subdivided into 2-4 smaller subregions that showed additional functional variation. Each individual region was recruited by multiple psychological states, suggesting subregions of medial frontal cortex are functionally heterogeneous.",
-  "cited_by_count": 303,
+  "cited_by_count": 310,
   "oa_status": null,
   "oa_url": "https://www.jneurosci.org/content/jneuro/36/24/6553.full.pdf",
   "landing_url": "https://doi.org/10.1523/jneurosci.4402-15.2016",
@@ -26451,7 +26451,7 @@
   },
   "crossref_checked": true,
   "citation_original": "de la Vega, A., Chang, L. J., Banich, M. T., Wager, T. D., & Yarkoni, T. (2016). Large-Scale Meta-Analysis of Human Medial Frontal Cortex Reveals Tripartite Functional Organization. The Journal of Neuroscience. 36(24):6553-6562. PMCID: PMC5015787. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "ma2016serotonin",
@@ -26835,7 +26835,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zunhammer, M., Bingel, U., & Wager, T. D. (2016). Issues in Pain Prediction? More Gain than Pain. Trends in Neurosciences. 39(10):639-640. PMID: 27503637. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "eisenbarth2016multivariate",
@@ -26931,7 +26931,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Eisenbarth, H., Chang, L. J., & Wager, T. D. (2016). Multivariate Brain Prediction of Heart Rate and Skin Conductance Responses to Social Threat. The Journal of Neuroscience. 36(47):11987-11998. PMCID: PMC5125248. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "neuromarkers": [
    {
     "id": "2016-eisenbarth-jneuro-autonomic-patterns",
@@ -27239,7 +27239,7 @@
   },
   "abstract_source": "pdf",
   "citation_original": "Woo, C. W. & Wager, T. D. (2015). The predictive mapping approach in neuroimaging. Advances in Computational Psychophysiology. Science. 350 (6256), 114. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "olssona2015neural",
@@ -27693,7 +27693,7 @@
   "openalex_id": null,
   "date": "2015-01-06",
   "abstract": "Cognitive self-regulation can strongly modulate pain and emotion. However, it is unclear whether self-regulation primarily influences primary nociceptive and affective processes or evaluative ones. In this study, participants engaged in self-regulation to increase or decrease pain while experiencing multiple levels of painful heat during functional magnetic resonance imaging (fMRI) imaging. Both heat intensity and self-regulation strongly influenced reported pain, but they did so via two distinct brain pathways. The effects of stimulus intensity were mediated by the neurologic pain signature (NPS), an a priori distributed brain network shown to predict physical pain with over 90% sensitivity and specificity across four studies. Self-regulation did not influence NPS responses; instead, its effects were mediated through functional connections between the nucleus accumbens and ventromedial prefrontal cortex. This pathway was unresponsive to noxious input, and has been broadly implicated in valuation, emotional appraisal, and functional outcomes in pain and other types of affective processes. These findings provide evidence that pain reports are associated with two dissociable functional systems: nociceptive/affective aspects mediated by the NPS, and evaluative/functional aspects mediated by a fronto-striatal system.",
-  "cited_by_count": 274,
+  "cited_by_count": 276,
   "oa_status": null,
   "oa_url": "https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1002036&type=printable",
   "landing_url": "https://doi.org/10.1371/journal.pbio.1002036",
@@ -27757,7 +27757,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Woo, C. W., Roy, M., Buhle, J. T. & Wager, T. D. (2015). Distinct brain systems mediate the effects of nociceptive input and self-regulation on pain. PLoS Biology. 13(1): e1002036. PMCID: PMC4285399. [PDF], [Paradigm]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "raisoncl2015somatic",
@@ -28425,7 +28425,7 @@
   "pmcid": null,
   "date": "2015-06-16",
   "abstract": "Agreeable people are more likely to display prosocial attitudes and helpful behavior in a broad range of situations. Here we show that this tendency interacts with the personal characteristics of interaction partners. In an online study (n = 284), participants were given the opportunity to report attitudes toward and make monetary donations to needy individuals who were described in dynamically generated biographies. Using a machine learning and multilevel modeling framework, we tested three potential explanations for the facilitatory influence of Agreeableness on charitable behavior. We find that Agreeableness preferentially increased donations and prosocial attitudes toward targets normatively rated as being more deserving, but not to targets considered less deserving. Our results advance understanding of person-by-situation interactions in the context of charitable behavior and prosocial attitudes.",
-  "cited_by_count": 20,
+  "cited_by_count": 21,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.7717/peerj.1089",
@@ -28486,7 +28486,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Yarkoni, T., Ashar, Y. K., & Wager, T. D. (2015). Interactions between donor Agreeableness and recipient characteristics in predicting charitable donation and positive social evaluation. PeerJ. 3: e1089. PMCID: PMC4548474. [PDF]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "preprint_doi": "10.7287/peerj.preprints.1182v1"
  },
  {
@@ -28847,7 +28847,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Woo, C. W., & Wager, T. D. (2015). Neuroimaging-based biomarker discovery and validation. PAIN. 156(8):1379-1381. PMCID: PMC4504798. [PDF]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -29077,7 +29077,7 @@
   "pmcid": null,
   "date": "2015-11",
   "abstract": "Background—Alterations in frontal and striatal function are hypothesized to underlie risky decision-making in drug users, but how these regions interact to affect behavior is incompletely understood. We used mediation analysis to investigate how prefrontal cortex and ventral striatum together influence risk avoidance in abstinent drug users. Method—Thirty-seven abstinent substance-dependent individuals (SDI) and 43 controls underwent fMRI while performing a decision-making task involving risk and reward. Analyses of a priori regions-of-interest tested whether activity in dorsolateral prefrontal cortex (DLPFC) and ventral striatum (VST) explained group differences in risk avoidance. Whole-brain analysis was conducted to identify brain regions influencing the negative VST-risk avoidance relationship. Results—Right DLPFC (RDLPFC) positively mediated the group-risk avoidance relationship (p < 0.05); RDLPFC activity was higher in SDI and predicted higher risk avoidance across groups, controlling for SDI vs. controls. Conversely, VST activity negatively influenced risk avoidance (p < 0.05); it was higher in SDI, and predicted lower risk avoidance. Whole-brain analysis revealed that, across group, RDLPFC and left temporal-parietal junction positively (p ≤ 0.001) while right *Supplementary material can be found by accessing the online version of this paper at http://dx.doi.org and by entering doi:…",
-  "cited_by_count": 36,
+  "cited_by_count": 37,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.drugalcdep.2014.12.026",
@@ -29136,7 +29136,7 @@
   "crossref_checked": true,
   "abstract_source": "pdf",
   "citation_original": "Yamamoto, D. J., Woo, C. W., Wager, T. D., Regner, M. F., & Tanabe, J. (2015). Influence of dorsolateral prefrontal cortex and ventral striatum on risk avoidance in addiction: A mediation analysis. Drug and Alcohol Dependence. 149, 10-17. PMCID: PMC4361089. [PDF]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -30794,7 +30794,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Xue, W., Kang, J., Bowman, F. D., Wager, T. D., & Guo, J. (2014). Identifying functional co-activation patterns in neuroimaging studies via poisson graphical models. Biometrics. 70(4):812-822. PMCID: PMC4276452. [PDF]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -31479,7 +31479,7 @@
   "openalex_id": null,
   "date": "2014-11-17",
   "abstract": "Current theories suggest that physical pain and social rejection share common neural mechanisms, largely by virtue of overlapping functional magnetic resonance imaging (fMRI) activity. Here we challenge this notion by identifying distinct multivariate fMRI patterns unique to pain and rejection. Sixty participants experience painful heat and warmth and view photos of ex-partners and friends on separate trials. FMRI pattern classifiers discriminate pain and rejection from their respective control conditions in out-of-sample individuals with 92% and 80% accuracy. The rejection classifier performs at chance on pain, and vice versa. Pain- and rejection-related representations are uncorrelated within regions thought to encode pain affect (for example, dorsal anterior cingulate) and show distinct functional connectivity with other regions in a separate resting-state data set (N = 91). These findings demonstrate that separate representations underlie pain and rejection despite common fMRI activity at the gross anatomical level. Rather than co-opting pain circuitry, rejection involves distinct affective representations in humans.",
-  "cited_by_count": 311,
+  "cited_by_count": 317,
   "oa_status": null,
   "oa_url": "https://www.nature.com/articles/ncomms6380.pdf",
   "landing_url": "https://doi.org/10.1038/ncomms6380",
@@ -31549,7 +31549,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Woo, C. W., Koban, L., Kross, E., Lindquist, M. A., Banich, M. T., Ruzic, L., Andrews-Hanna, J. R. & Wager, T. D. (2014). Separate Neural Representations for Physical Pain and Social Rejection. Nature Communications. 5:5380. PMCID: PMC4285151. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "neuromarkers": [
    {
     "id": "2015-woo-naturecomms-rejection",
@@ -32344,7 +32344,7 @@
   "openalex_id": null,
   "date": "2013-06-13",
   "abstract": "In recent years, an explosion of neuroimaging studies has examined cognitive reappraisal, an emotion regulation strategy that involves changing the way one thinks about a stimulus in order to change its affective impact. Existing models broadly agree that reappraisal recruits frontal and parietal control regions to modulate emotional responding in the amygdala, but they offer competing visions of how this is accomplished. One view holds that control regions engage ventromedial prefrontal cortex (vmPFC), an area associated with fear extinction, that in turn modulates amygdala responses. An alternative view is that control regions modulate semantic representations in lateral temporal cortex that indirectly influence emotion-related responses in the amygdala. Furthermore, while previous work has emphasized the amygdala, whether reappraisal influences other regions implicated in emotional responding remains unknown. To resolve these questions, we performed a meta-analysis of 48 neuroimaging studies of reappraisal, most involving downregulation of negative affect. Reappraisal consistently 1) activated cognitive control regions and lateral temporal cortex, but not vmPFC, and 2) modulated the bilateral amygdala, but no other brain regions. This suggests that reappraisal involves the use of cognitive control to modulate semantic representations of an emotional stimulus, and these altered representations in turn attenuate activity in the amygdala.",
-  "cited_by_count": 2044,
+  "cited_by_count": 2061,
   "oa_status": null,
   "oa_url": "https://academic.oup.com/cercor/article-pdf/24/11/2981/855752/bht154.pdf",
   "landing_url": "https://doi.org/10.1093/cercor/bht154",
@@ -32411,7 +32411,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J., Silvers, J.A., Wager, T.D., Lopez, R., Onyemekwu, C., Kober, H., Weber, J. & Ochsner, K.N. (2013). Cognitive reappraisal of emotion: A meta-analysis of human neuroimaging studies. Cerebral Cortex. 24(11):2981-90. PMCID: PMC4193464. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-11-08"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "outhred2013acute",
@@ -32917,7 +32917,7 @@
   "openalex_id": null,
   "date": "2012-01-18",
   "abstract": "An explosion of recent research has studied whether placebo treatments influence health-related outcomes and their biological markers, but almost no research has examined the psychological processes required for placebo effects to occur. This study tested whether placebo treatment and cognitive distraction reduce pain through shared or independent processes. We tested the joint effects of performance of an executive working memory task and placebo treatment on thermal pain perception. An interactive effect of these two manipulations would constitute evidence for shared mechanisms, whereas additive effects would imply separate mechanisms. Participants ( N = 33) reported reduced pain both when they performed the working memory task and when they received the placebo treatment, but the reductions were additive, a result indicating that the executive demands of the working memory task did not interfere with placebo analgesia. Furthermore, placebo analgesia did not impair task performance. Together, these data suggest that placebo analgesia does not depend on active redirection of attention and that expectancy and distraction can be combined to maximize pain relief.",
-  "cited_by_count": 119,
+  "cited_by_count": 121,
   "oa_status": null,
   "oa_url": null,
   "landing_url": null,
@@ -32971,7 +32971,7 @@
   "abstract_source": "crossref",
   "crossref_checked": true,
   "citation_original": "Buhle, J. T., Stevens, B. L., Friedman, J. J. & Wager, T. D. (2012). Distraction and Placebo: Two Separate Routes to Pain Control. Psychological Science. 23(3)246-53 PMID: 22261568. [PDF]",
-  "citations_refreshed": "2026-11-08"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "thayer2012metaanalysis",
@@ -33278,7 +33278,7 @@
   "openalex_id": null,
   "date": "2012-03-24",
   "abstract": "Human neuroimaging offers a powerful way to connect animal and human research on emotion, with profound implications for psychological science. However, the gulf between animal and human studies remains a formidable obstacle: human studies typically focus on the cortex and a few subcortical regions such as the amygdala, whereas deeper structures such as the brainstem periaqueductal gray (PAG) play a key role in animal models. Here, we directly assessed the role of PAG in human affect by interleaving in a single fMRI session two conditions known to elicit strong emotional responses--physical pain and negative image viewing. Negative affect and PAG activity increased in both conditions. We next examined eight independent data sets, half featuring pain stimulation and half negative image viewing. In sum, these data sets comprised 198 additional participants. We found increased activity in PAG in all eight studies. Taken together, these findings suggest PAG is a key component of human affective responses.",
-  "cited_by_count": 109,
+  "cited_by_count": 110,
   "oa_status": null,
   "oa_url": "https://academic.oup.com/scan/article-pdf/8/6/609/27107551/nss038.pdf",
   "landing_url": "https://doi.org/10.1093/scan/nss038",
@@ -33342,7 +33342,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J. T., Kober, H., Ochsner K. N., Mende-Siedlecki, P., Weber, J., Hughes, B., Kross, E., Atlas, L. Y., McRae, K. & Wager, T. D. (2012). Common representation of pain and negative emotion in the midbrain periaqueductal gray. Social Cognitive and Affective Neuroscience. 8(6):609-16.PMCID: PMC3739905. [PDF]",
-  "citations_refreshed": "2026-11-08"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "lindquist2012basis",
@@ -33917,7 +33917,7 @@
   "openalex_id": null,
   "date": "2012-08-01",
   "abstract": "The distinction between processes used to perceive and understand the self and others has received considerable attention in psychology and neuroscience. Brain findings highlight a role for various regions, in particular the medial PFC (mPFC), in supporting judgments about both the self and others. We performed a meta-analysis of 107 neuroimaging studies of self- and other-related judgments using multilevel kernel density analysis [Kober, H., & Wager, T. D. Meta-analyses of neuroimaging data. Wiley Interdisciplinary Reviews, 1, 293-300, 2010]. We sought to determine what brain regions are reliably involved in each judgment type and, in particular, what the spatial and functional organization of mPFC is with respect to them. Relative to nonmentalizing judgments, both self- and other judgments were associated with activity in mPFC, ranging from ventral to dorsal extents, as well as common activation of the left TPJ and posterior cingulate. A direct comparison between self- and other judgments revealed that ventral mPFC as well as left ventrolateral PFC and left insula were more frequently activated by self-related judgments, whereas dorsal mPFC, in addition to bilateral TPJ and cuneus, was more frequently activated by other-related judgments. Logistic regression analyses revealed that ventral and dorsal mPFC lay at opposite ends of a functional gradient: The z coordinates reported in individual studies predicted whether the study involved self- or other-related judgments, which were associated with increasingly ventral or dorsal portions of mPFC, respectively. These results argue for a distributed rather than localizationist account of mPFC organization and support an emerging view on the functional heterogeneity of mPFC.",
-  "cited_by_count": 870,
+  "cited_by_count": 880,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1162/jocn_a_00233",
@@ -33981,7 +33981,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Denny, B., Kober, H., Wager, T. D. & Ochsner, K. N. (2012). A Meta-Analysis of Functional Neuroimaging Studies of Self and Other Judgments Reveals a Spatial Gradient for Mentalizing in Medial Prefrontal Cortex. Journal of Cognitive Neuroscience. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "denny2012anticipatory",
@@ -34070,7 +34070,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Denny, B. T., Ochsner, K. N., Weber, J., & Wager, T. D. (2012). Anticipatory brain activity predicts the success or failure of subsequent emotion regulation. Social Cognitive and Affective Neuroscience. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "link2011past",
@@ -34479,7 +34479,7 @@
   "openalex_id": null,
   "date": "2011-06-26",
   "abstract": "The rapid growth of the literature on neuroimaging in humans has led to major advances in our understanding of human brain function but has also made it increasingly difficult to aggregate and synthesize neuroimaging findings. Here we describe and validate an automated brain-mapping framework that uses text-mining, meta-analysis and machine-learning techniques to generate a large database of mappings between neural and cognitive states. We show that our approach can be used to automatically conduct large-scale, high-quality neuroimaging meta-analyses, address long-standing inferential problems in the neuroimaging literature and support accurate 'decoding' of broad cognitive states from brain activity in both entire studies and individual human subjects. Collectively, our results have validated a powerful and generative framework for synthesizing human neuroimaging data on an unprecedented scale.",
-  "cited_by_count": 3700,
+  "cited_by_count": 3762,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1038/nmeth.1635",
@@ -34546,7 +34546,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Yarkoni, T., Poldrack, R. A., Nichols, T. E., Van Essen, D. C., & Wager, T. D. (2011). Large-scale automated synthesis of human functional neuroimaging data. Nature Methods. 8:665-670. PMCID: PMC3146590. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "kross2011reply",
@@ -35555,7 +35555,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J., Wager, T. D., & Smith, E. E. (2010). Using the Stroop Task to study emotion regulation. In: Hassin, R. R., Oschner, K. N., Trope, T. (Eds.), Self Control in Society, Mind, and Brain. [PDF]",
-  "citations_refreshed": "2026-11-08"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "buhle2010performancedependent",
@@ -35582,7 +35582,7 @@
   "openalex_id": null,
   "date": "2010-04",
   "abstract": "It is widely assumed that distraction reduces pain. Similarly, it is assumed that pain distracts from concurrent, unrelated cognitive processing, reducing performance on difficult tasks. Taken together, these assumptions suggest pain processing and cognitive function engage an overlapping set of domain-general, capacity-limited mental resources. However, experimental tests of this proposal have yielded mixed results, leading to alternative proposals that challenge the common model of a bidirectional relationship between concurrent pain and task performance. We tested these contrasting positions using a novel concurrent pain and executive working memory paradigm. Both task difficulty and nociceptive stimulus intensity were individually calibrated for each participant. Participants reported less pain during the working memory task than a visually matched control condition. Conversely, increasing levels of heat incrementally reduced task performance. Path analyses showed that variations in pain completely mediated this effect, and that even within a given heat level, trial-by-trial fluctuations in pain predicted decrements in performance. In sum, these findings argue that overlapping cognitive resources play a role in both pain processing and executive working memory. Future studies could use this paradigm to understand more precisely which components of executive function or other cognitive resources contribute to the experience of pain.",
-  "cited_by_count": 271,
+  "cited_by_count": 272,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1016/j.pain.2009.10.027",
@@ -35638,7 +35638,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J. & Wager, T. D. (2010). Performance-dependent inhibition of pain by an executive working memory task. PAIN. 149:19-26. NIHMS157612. PMID: 20129735. [PDF]",
-  "citations_refreshed": "2026-11-08"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "wager2010separate",
@@ -35806,7 +35806,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Etkin, A., & Wager, T. D. (2010). Brain systems underlying anxiety disorders: a view from neuroimaging. In: Simpson, H. B., Schneier, F., Neria, Y., Lewis-Fernandez, R. (Eds.), Anxiety Disorders: Theory, Research and Clinical Perspectives (Cambridge Medicine). [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "buhle2010does",
@@ -35889,7 +35889,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Buhle, J., & Wager, T. D. (2010). Does meditation training lead to enduring changes in the anticipation and experience of pain? PAIN. 150:382-3. PMID: 20546996. [PDF]",
-  "citations_refreshed": "2026-11-08"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "atlas2010mediators",
@@ -36161,7 +36161,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Yarkoni, T., Poldrack, R. A., Van Essen, D. C., & Wager, T. D. (2010). Cognitive neuroscience 2.0: building a cumulative science of human brain function. Trends Cognitive Science. 14(11):489-496. PMCID: PMC2963679. [PDF]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -38733,7 +38733,7 @@
   "openalex_id": null,
   "date": "2007-09",
   "abstract": "The ability to empathize with the suffering of others is critical for maintaining relationships and engaging in prosocial behavior. Recently, a series of studies have demonstrated that while watching other people experience pain (other pain), participants engage the anterior insula (AI) and anterior cingulate cortex (ACC), brain regions involved in the direct experience of pain (self pain). Here we test the hypothesis that common activity in ACC and AI may reflect the operation of distinct but overlapping networks of regions that support perception of self or other pain. To address this possibility, we scanned participants using fMRI while they received noxious thermal stimulation (self pain) or watched short videos of other people sustaining painful injuries (other pain). We isolated overlapping regions for self and other pain in the ACC and AI and then used them as seed regions for two kinds of functional connectivity analyses. These analyses identified areas whose activity co-varied with ACC and AI activity during self or other pain either across time (intra-individual connectivity) or across participants (inter-individual connectivity). Both connectivity analyses identified clusters in the midbrain and periaqueductal gray with greater connectivity to the AI during self pain as opposed to other pain. The opposite pattern was found in the dorsal medial prefrontal cortex, that showed greater connectivity to the ACC and AI during other pain than during self pain using both types of analysis. Intra-individual connectivity analyses also revealed regions in the superior temporal sulcus, posterior cingulate, and precuneus that became more connected to ACC during other pain as compared to self pain. Together, these data demonstrated that regions showing similar activity during self and other pain may nonetheless be part of distinct functional networks. These networks could not have been detected in prior work that examined overlap between self and other pain in terms of average activity, but not connectivity.",
-  "cited_by_count": 193,
+  "cited_by_count": 194,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1080/17470910701401973",
@@ -38792,7 +38792,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Zaki, J., Ochsner, K. N., Hanelin, J., Wager, T. D. & Mackey, S. C. (2007). Different circuits for different pain: patterns of functional connectivity reveal distinct networks for processing pain in self and others. Social Neuroscience. 2:276-91. PMID: 18633819. [PDF]",
-  "citations_refreshed": "2026-11-07",
+  "citations_refreshed": "2026-11-14",
   "pdf_search": {
    "last": "2026-10-09",
    "result": "no-published-version",
@@ -38829,7 +38829,7 @@
   "openalex_id": null,
   "date": "2007-10",
   "abstract": "The study of human anxiety disorders has benefited greatly from functional neuroimaging approaches. Individual studies, however, vary greatly in their findings. The authors searched for common and disorder-specific functional neurobiological deficits in several anxiety disorders. The authors also compared these deficits to the neural systems engaged during anticipatory anxiety in healthy subjects. Functional magnetic resonance imaging and positron emission tomography studies of posttraumatic stress disorder (PTSD), social anxiety disorder, specific phobia, and fear conditioning in healthy individuals were compared by quantitative meta-analysis. Included studies compared negative emotional processing to baseline, neutral, or positive emotion conditions. Patients with any of the three disorders consistently showed greater activity than matched comparison subjects in the amygdala and insula, structures linked to negative emotional responses. A similar pattern was observed during fear conditioning in healthy subjects. Hyperactivation in the amygdala and insula were, of interest, more frequently observed in social anxiety disorder and specific phobia than in PTSD. By contrast, only patients with PTSD showed hypoactivation in the dorsal and rostral anterior cingulate cortices and the ventromedial prefrontal cortex-structures linked to the experience and regulation of emotion. This meta-analysis allowed us to synthesize often disparate findings from individual studies and thereby provide neuroimaging evidence for common brain mechanisms in anxiety disorders and normal fear. Effects unique to PTSD furthermore suggested a mechanism for the emotional dysregulation symptoms in PTSD that extend beyond an exaggerated fear response. Therefore, these findings help refine our understanding of anxiety disorders and their interrelationships.",
-  "cited_by_count": 3548,
+  "cited_by_count": 3572,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1176/appi.ajp.2007.07030504",
@@ -38893,7 +38893,7 @@
   },
   "crossref_checked": true,
   "citation_original": "Etkin, A. & Wager, T. D.. (2007). Functional neuroimaging of anxiety: a meta-analysis of emotional processing in PTSD, social anxiety disorder, and specific phobia. American Journal of Psychiatry. 164:1476-88. NIHMSID: NIHMS357021 PMID: 17898336. [PDF], [Brain Model]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "stern2007preparatory",
@@ -39021,7 +39021,7 @@
   "openalex_id": null,
   "date": null,
   "abstract": "—One common point of debate in the study of emotion is whether the basic, irreducible elements of emotional life are discrete emotion categories, such as anger, fear, sadness, and so on, or dimensions such as approach and avoidance. Resolving this debate will identify the basic building blocks of emotional life that are the most appropriate targets of scientific inquiry. In this paper, we briefly review meta-analytic work on the neuroimaging of emotion and examine its potential for identifying ‘‘natural kinds’’ of emotion in the brain. We outline criteria for identifying such natural kinds, summarize the evidence to date on category and dimensional approaches, and suggest ways in which neuroimaging studies could more directly address fundamental questions about the nature of emotion.",
-  "cited_by_count": 374,
+  "cited_by_count": 375,
   "oa_status": null,
   "oa_url": null,
   "landing_url": "https://doi.org/10.1111/j.0963-7214.2006.00411.x",
@@ -39073,7 +39073,7 @@
   },
   "abstract_source": "pdf",
   "citation_original": "Feldmann-Barrett, L. & Wager, T. D. (2006). The Structure of Emotion: Evidence from neuroimaging studies. Current Directions in Psychological Science. 15(2):79-83. [PDF]",
-  "citations_refreshed": "2026-11-07"
+  "citations_refreshed": "2026-11-14"
  },
  {
   "id": "wager2006need",
