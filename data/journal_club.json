@@ -1,7 +1,206 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "channel": null,
  "items": [
+  {
+   "id": "kayyal2025retrieval",
+   "slack_ts": "1794846035.520129",
+   "shared_on": "2026-11-16",
+   "shared_by": "Byeol",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 2
+    },
+    {
+     "name": "👍🏼",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41593-024-01864-4",
+   "doi": "10.1038/s41593-024-01864-4",
+   "title": "Retrieval of conditioned immune response in male mice is mediated by an anterior–posterior insula circuit",
+   "abstract": "To protect the body from infections, the brain has evolved the ability to coordinate behavioral and immunological responses. The conditioned immune response (CIR) is a form of Pavlovian conditioning wherein a sensory (for example, taste) stimulus, when paired with an immunomodulatory agent, evokes aversive behavior and an anticipatory immune response after re-experiencing the taste. Although taste and its valence are represented in the anterior insular cortex and immune response in the posterior insula and although the insula is pivotal for CIRs, the precise circuitry underlying CIRs remains unknown. Here, we demonstrated that a bidirectional circuit connecting the anterior and posterior (aIC&#8211;pIC) insula mediates the CIR in male mice. Retrieving the behavioral dimension of the association requires activity of aIC-to-pIC neurons, whereas modulating the anticipatory immunological dimension requires bidirectional projections. These results illuminate a mechanism by which experience shapes interactions between sensory internal representations and the immune system. Moreover, this newly described intrainsular circuit contributes to the preservation of brain-dependent immune homeostasis. The authors show that a bidirectional circuit connecting the anterior and posterior (aIC&#8211;pIC) insula mediates the conditioned immune response in male mice, illustrating a mechanism by which sensory experience affects immune function.",
+   "authors": [
+    "Kayyal, H.",
+    "Cruciani, F.",
+    "Chandran, S. K.",
+    "Edry, E.",
+    "Schif-Zuck, S.",
+    "Koren, T.",
+    "Yiannakas, A.",
+    "Rolls, A.",
+    "Ariel, A.",
+    "Rosenblum, K."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2025,
+   "pdf_url": "https://www.nature.com/articles/s41593-024-01864-4.pdf",
+   "type": "journal-article",
+   "pmid": "39870921",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/s41593-024-01864-4",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1794846035520129",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "brain_body",
+     "expectation_learning",
+     "perception"
+    ],
+    "approach": [
+     "other_imaging"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The study showed in male mice that a bidirectional circuit between anterior and posterior insular cortex mediates the conditioned immune response, linking taste-based learning to anticipatory immune changes.",
+   "key_finding": "Anterior-to-posterior insula projections were required for retrieving the behavioral (aversive) component of the conditioned immune response, while bidirectional aIC-pIC projections were required for the anticipatory immunological component.",
+   "free_keywords": [
+    "insular cortex",
+    "conditioned immune response",
+    "Pavlovian conditioning",
+    "taste aversion",
+    "mouse model",
+    "brain-immune interaction",
+    "circuit tracing"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.6,
+    "notes": "Non-CANlab animal neuroscience paper; approach tags limited due to abstract-only availability and lack of fMRI/human methods; likely uses optogenetics/chemogenetics not covered by vocabulary.",
+    "classified_at": "2026-11-16T20:29:39Z",
+    "usage": {
+     "input_tokens": 579,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 342,
+     "cost_usd": 0.00542
+    }
+   }
+  },
+  {
+   "id": "miura2020encoding",
+   "slack_ts": "1794844768.752289",
+   "shared_on": "2026-11-16",
+   "shared_by": "Byeol",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000584",
+   "doi": "10.1371/journal.pbio.3000584",
+   "title": "Encoding of social exploration by neural ensembles in the insular cortex",
+   "abstract": "The insular cortex participates in diverse complex brain functions, including social function, but their cellular basis remains unclear. This study uses microendoscopic calcium imaging in mice interacting with conspecifics to identify “social cells” in the agranular insular cortex; multiple subsets of neurons encode distinct aspects of ongoing social behavior.",
+   "authors": [
+    "Miura, I.",
+    "Sato, M.",
+    "Overton, E. T. N.",
+    "Kunori, N.",
+    "Nakai, J.",
+    "Kawamata, T.",
+    "Nakai, N.",
+    "Takumi, T."
+   ],
+   "journal": "PLOS Biology",
+   "year": 2020,
+   "pdf_url": null,
+   "type": "journal-article",
+   "pmid": "32956387",
+   "pmcid": "PMC7529241",
+   "oa_url": "https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.3000584&type=printable",
+   "publisher_url": "https://doi.org/10.1371/journal.pbio.3000584",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1794844768752289",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "social"
+    ],
+    "approach": [
+     "other_imaging"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-11-16T20:29:32Z",
+    "usage": {
+     "input_tokens": 207,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 84,
+     "cost_usd": 0.01181
+    }
+   }
+  },
+  {
+   "id": "shared2026justv",
+   "slack_ts": "1794844768.752289",
+   "shared_on": "2026-11-16",
+   "shared_by": "Byeol",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.cell.com/cell-reports/fulltext/S2211-1247(25)00856-3#fig1",
+   "doi": "10.1016/j.celrep.2025.116085",
+   "title": "Parvalbumin interneurons in the insular cortex control social familiarity and emotion recognition",
+   "abstract": null,
+   "authors": [
+    "Fujima, S.",
+    "Sato, M.",
+    "Nakai, N.",
+    "Takumi, T."
+   ],
+   "journal": "Cell Reports",
+   "year": 2025,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1794844768752289",
+   "publisher_url": "https://doi.org/10.1016/j.celrep.2025.116085",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "social",
+     "empathy"
+    ],
+    "approach": [
+     "other_imaging"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.1,
+    "notes": "invalid",
+    "classified_at": "2026-11-16T20:29:35Z",
+    "usage": {
+     "input_tokens": 118,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 90,
+     "cost_usd": 0.00198
+    }
+   }
+  },
   {
    "id": "shared2026justu",
    "slack_ts": "1794372498.788459",
