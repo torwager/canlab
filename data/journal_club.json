@@ -1,7 +1,86 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "channel": null,
  "items": [
+  {
+   "id": "toikumo2026gene",
+   "slack_ts": "1794931752.880889",
+   "shared_on": "2026-11-17",
+   "shared_by": "Zhaoxing",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 2
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41593-026-02455-1",
+   "doi": "10.1038/s41593-026-02455-1",
+   "title": "Gene discovery and pleiotropic architecture of multidimensional pain in a genome-wide association study of &gt;1.2 million individuals",
+   "abstract": "Abstract Chronic pain is highly prevalent worldwide, yet its genetic architecture remains to be fully elucidated. Here we leveraged data from 1,235,695 European-ancestry individuals across three biobanks. In a meta-analytic genome-wide association study of multidimensional pain (MP), we identified 343 independent loci, 92 of which were new pain associations. Sex-specific meta-analyses revealed 115 independent loci (12 of which were new) among males ( n = 583,066) and 12 loci (2 of which were new) among females ( n = 241,266). Multi-omic gene prioritization analyses highlighted 490 genes associated with MP through their effects on brain-specific and blood-specific regulation. Mendelian randomization analyses showed causal associations between MP and psychiatric disorders, substance use disorders and C-reactive protein levels. MP variants also showed pleiotropic associations with several brain imaging-derived phenotypes. This study expands our knowledge of the genetics of pain and its pathogenesis, highlighting the importance of its pleiotropy with multiple disorders and elucidating its multi-omic pathophysiology.",
+   "authors": [
+    "Toikumo, S.",
+    "Davis, C.",
+    "Jinwala, Z.",
+    "Khan, Y.",
+    "Jennings, M.",
+    "Davis, L.",
+    "Sanchez-Roige, S.",
+    "Kember, R. L.",
+    "Kranzler, H. R."
+   ],
+   "journal": "Nature Neuroscience",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41593-026-02455-1.pdf",
+   "type": "journal-article",
+   "pmid": "43020908",
+   "pmcid": null,
+   "oa_url": "https://www.nature.com/articles/s41593-026-02455-1.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41593-026-02455-1",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1794931752880889",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "chronic_pain",
+     "pain",
+     "clinical"
+    ],
+    "approach": [
+     "genetics",
+     "mega_analysis"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "A genome-wide association study meta-analyzed multidimensional pain data from over 1.2 million individuals across three biobanks to identify genetic loci and pleiotropic links with other conditions.",
+   "key_finding": "The study identified 343 independent loci for multidimensional pain (92 new), with multi-omic analyses implicating 490 genes and Mendelian randomization showing causal links to psychiatric disorders, substance use disorders, and C-reactive protein levels.",
+   "free_keywords": [
+    "GWAS",
+    "biobank",
+    "Mendelian randomization",
+    "pleiotropy",
+    "chronic pain genetics",
+    "multi-omics",
+    "brain imaging-derived phenotypes"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.9,
+    "notes": null,
+    "classified_at": "2026-11-17T19:11:48Z",
+    "usage": {
+     "input_tokens": 505,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 289,
+     "cost_usd": 0.01446
+    }
+   }
+  },
   {
    "id": "kayyal2025retrieval",
    "slack_ts": "1794846035.520129",
