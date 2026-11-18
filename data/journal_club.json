@@ -1,7 +1,138 @@
 {
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "channel": null,
  "items": [
+  {
+   "id": "ma2026emotion",
+   "slack_ts": "1795025649.003079",
+   "shared_on": "2026-11-18",
+   "shared_by": "Byeol",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003795",
+   "doi": "10.1371/journal.pbio.3003795",
+   "title": "Emotion knowledge is structured in a grid-like coordinate system in the human ventromedial prefrontal cortex",
+   "abstract": "Human emotional experiences vary widely in everyday life, yet they are systematically organized within a continuous affective space defined by valence and arousal. Although this circumplex organization has shaped decades of research, its neural implementation remains unclear. Here, we asked whether abstract emotion concepts are encoded using grid-like coordinate principles in the human brain. During fMRI, participants tracked trajectories through affective space conveyed through morphs of facial expressions and sequences of phrases. We found that ventromedial prefrontal cortex (vmPFC) encoded affective space with robust hexadirectional modulation characteristic of grid-like coding. This coordinate representation generalized across stimulus modalities, indicating abstraction beyond perceptual features. The grid-like signal reflected a metric organization of emotion concepts independent of overt behavior, whereas distance-related signals in vmPFC predicted trial-by-trial affective judgements. Together, these findings suggest that emotion knowledge is structured by a grid-like coordinate system in the human brain that can support predictive inference and flexible decision-making.",
+   "authors": [
+    "Ma, Y.",
+    "Kragel, P. A."
+   ],
+   "journal": "PLOS Biology",
+   "year": 2026,
+   "pdf_url": null,
+   "type": "journal-article",
+   "pmid": "42970571",
+   "pmcid": "PMC13739216",
+   "oa_url": "https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.3003795&type=printable",
+   "publisher_url": "https://doi.org/10.1371/journal.pbio.3003795",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795025649003079",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "emotion",
+     "perception"
+    ],
+    "approach": [
+     "fmri",
+     "computational_model"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "Using fMRI while participants tracked trajectories through affective space via facial expression morphs and phrases, the authors found that ventromedial prefrontal cortex exhibited hexadirectional grid-like coding of emotion concepts.",
+   "key_finding": "vmPFC showed robust hexadirectional modulation characteristic of grid-like coding that generalized across facial and verbal stimulus modalities, with distance-related signals predicting trial-by-trial affective judgements.",
+   "free_keywords": [
+    "grid cells",
+    "circumplex model",
+    "valence-arousal space",
+    "cognitive map",
+    "emotion knowledge",
+    "hexadirectional modulation"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.75,
+    "notes": "Only abstract available; full methods details on analyses not accessible.",
+    "classified_at": "2026-11-18T18:51:56Z",
+    "usage": {
+     "input_tokens": 469,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 290,
+     "cost_usd": 0.00468
+    }
+   }
+  },
+  {
+   "id": "zhang2026interaction",
+   "slack_ts": "1795018155.291899",
+   "shared_on": "2026-11-18",
+   "shared_by": "Zhaoxing",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41562-026-02516-2",
+   "doi": "10.1038/s41562-026-02516-2",
+   "title": "Interaction with AI companions and psychological well-being",
+   "abstract": "As large-language-model-enhanced chatbots become increasingly expressive and socially responsive, many users begin forming companionship-like bonds with them. This study investigates how using AI companions relates to psychological well-being. We collected self-reported data from 1,131 US adults who use Character.AI, including survey responses and 4,664 chat sessions (464,687 messages) from 237 participants. By triangulating self-reported usage, relationship descriptions and real chat histories, we identify patterns of engagement and associated outcomes. Smaller social networks were associated with reporting companionship as the primary chatbot use (&#946; = &#8722;0.03; 95% confidence interval (CI), (&#8722;0.05, &#8722;0.01)), which in turn was associated with lower well-being (&#946; = &#8722;0.48; 95% CI, (&#8722;0.70, &#8722;0.25)). For self-reported companionship usage, this association was stronger when interactions were intensive (&#946; = &#8722;0.31; 95% CI, (&#8722;0.56, &#8722;0.06)) and highly disclosive (&#946; = &#8722;0.38; 95% CI, (&#8722;0.63, &#8722;0.14)). These results suggest that the association between AI companionship and well-being is not uniform and depends on users&#8217; offline social environments and how chatbots are used. In this mixed-methods study, Zhang et al. examine AI companionship and psychological well-being, finding that the association depends on usage patterns and users&#8217; offline social contexts.",
+   "authors": [
+    "Zhang, Y.",
+    "Zhao, D.",
+    "Hancock, J. T.",
+    "Kraut, R.",
+    "Yang, D."
+   ],
+   "journal": "Nature Human Behaviour",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41562-026-02516-2.pdf",
+   "type": "journal-article",
+   "pmid": "42552393",
+   "pmcid": null,
+   "oa_url": "https://arxiv.org/pdf/2506.12605",
+   "publisher_url": "https://doi.org/10.1038/s41562-026-02516-2",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795018155291899",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "social",
+     "clinical"
+    ],
+    "approach": [
+     "behavioral",
+     "ai_integration"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0,
+    "notes": null,
+    "classified_at": "2026-11-18T18:51:52Z",
+    "usage": {
+     "input_tokens": 608,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 91,
+     "cost_usd": 0.01269
+    }
+   }
+  },
   {
    "id": "toikumo2026gene",
    "slack_ts": "1794931752.880889",
