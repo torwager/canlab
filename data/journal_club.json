@@ -1,7 +1,86 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "channel": null,
  "items": [
+  {
+   "id": "xu2026primary",
+   "slack_ts": "1795065082.385379",
+   "shared_on": "2026-11-19",
+   "shared_by": "Zhaoxing",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 2
+    }
+   ],
+   "url": "https://link.springer.com/article/10.1186/s10194-026-02549-y",
+   "doi": "10.1186/s10194-026-02549-y",
+   "title": "Primary motor cortex–directed transcranial focused ultrasound modulates pain perception and cortical nociceptive-sensory processing",
+   "abstract": "Abstract Background Pain remains a major clinical challenge and imposes substantial health and socioeconomic burdens, highlighting the need for non-pharmacological strategies that can directly modulate central pain-processing networks. Non-invasive brain stimulation has therefore become an important approach for pain neuromodulation. Among emerging techniques, transcranial focused ultrasound stimulation (tFUS) is particularly attractive because it can deliver spatially focused acoustic energy with adjustable stimulation depth. Although the primary motor cortex (M1) is a key target for central pain modulation, direct human evidence on the pain-modulatory effects of M1-directed tFUS remains limited. We investigated whether tFUS directed toward right M1 modulates experimental pain thresholds and cortical pain-processing dynamics in healthy adults. Methods This randomized, sham-controlled crossover study included 28 healthy adults, who completed a total of 56 experimental sessions. Each participant received 15 min of real and sham tFUS directed toward the right M1, which was functionally localized with transcranial magnetic stimulation, in two separate sessions. Pain sensitivity was assessed using heat and pressure pain thresholds. Pain-related electroencephalographic (EEG) outcomes, analyzed in 25 participants with usable EEG data, included contact heat–evoked potentials, pain-evoked oscillatory activity, and resting-state functional connectivity. Additional assessments included computed tomography-informed acoustic modeling in one representative participant and evaluations of blinding efficacy and adverse events. Results Compared with sham stimulation, M1-directed tFUS produced greater pre-to-post increases in both heat and pressure pain thresholds. These behavioral effects were accompanied by prolonged P2 latency of contact heat–evoked potentials, reduced heat pain–evoked alpha power, and attenuated beta-band resting-state functional connectivity within a fronto-central-parietotemporal network. Exploratory repeated-measures correlations showed that P2 latency changes were positively associated with changes in pain thresholds. Representative simulation indicated that the estimated acoustic and thermal exposure remained within nonsignificant-risk levels. No serious adverse events occurred, and all reported symptoms were mild or moderate and transient. No statistically significant differences in blinding ratings were detected between real and sham stimulation. Conclusions These findings provide preliminary evidence that tFUS directed toward M1 can acutely modulate experimental pain sensitivity relative to sham stimulation, accompanied by exploratory changes in pain-related EEG measures and preliminary support for tolerability. Further studies are needed to determine whether these effects can be reproduced, sustained, and translated to clinical pain populations. Trial registration Chinese Clinical Trial Registry, ChiCTR2500110109, preregistered on September 30, 2025.",
+   "authors": [
+    "Xu, H.",
+    "Yi, Y.",
+    "Hu, H.",
+    "Xue, C.",
+    "Guo, Z.",
+    "Li, Q.",
+    "Chen, X.",
+    "Wang, J.",
+    "Shan, L.",
+    "Cong, Q.",
+    "Feng, Z.",
+    "Jia, J."
+   ],
+   "journal": "The Journal of Headache and Pain",
+   "year": 2026,
+   "pdf_url": null,
+   "type": "journal-article",
+   "oa_url": "https://doi.org/10.1186/s10194-026-02549-y",
+   "publisher_url": "https://doi.org/10.1186/s10194-026-02549-y",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795065082385379",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "pain"
+    ],
+    "approach": [
+     "brain_stimulation",
+     "psychophysiology",
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "A randomized sham-controlled crossover study in 28 healthy adults found that transcranial focused ultrasound targeting primary motor cortex increased heat and pressure pain thresholds and altered pain-related EEG measures compared to sham.",
+   "key_finding": "M1-directed tFUS increased heat and pressure pain thresholds, prolonged P2 latency of contact heat-evoked potentials, reduced heat pain-evoked alpha power, and attenuated beta-band fronto-central-parietotemporal connectivity relative to sham.",
+   "free_keywords": [
+    "transcranial focused ultrasound",
+    "motor cortex",
+    "pain threshold",
+    "contact heat-evoked potentials",
+    "EEG oscillations",
+    "resting-state connectivity",
+    "non-invasive neuromodulation"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "No full text available; tagged based on abstract only. tFUS is not in the specific vocabulary list (tms/tdcs/tis) so only brain_stimulation general tag applied.",
+    "classified_at": "2026-11-19T18:59:30Z",
+    "usage": {
+     "input_tokens": 1093,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 382,
+     "cost_usd": 0.01657
+    }
+   }
+  },
   {
    "id": "ma2026emotion",
    "slack_ts": "1795025649.003079",
