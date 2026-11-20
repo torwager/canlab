@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026httpsalpogeremarkpdf",
+   "slack_ts": "1795194852.745189",
+   "shared_on": "2026-11-20",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 2
+    }
+   ],
+   "url": "https://alpo.ge/remark.pdf",
+   "doi": null,
+   "title": "Link on alpo.ge",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795194852745189",
+   "kind": "link",
+   "title_unresolved": true
+  },
   {
    "id": "xu2026primary",
    "slack_ts": "1795065082.385379",
