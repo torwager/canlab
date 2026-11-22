@@ -1,0 +1,13 @@
+{
+ "date": "2026-11-22",
+ "found": 1,
+ "new_candidates": 0,
+ "sources": {
+  "openalex": {
+   "error": "OpenAlex rate limit"
+  },
+  "pubmed": 1
+ },
+ "citations_refreshed": 58,
+ "seconds": 297
+}
