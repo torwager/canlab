@@ -1,7 +1,87 @@
 {
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "channel": null,
  "items": [
+  {
+   "id": "samardzija2026transdiagnostic",
+   "slack_ts": "1795310698.444199",
+   "shared_on": "2026-11-22",
+   "shared_by": "Michael",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "❤️",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41597-026-08749-0?error=cookies_not_supported&code=d3b1d77a-3209-4b52-a08d-b6965cc198ec",
+   "doi": "10.1038/s41597-026-08749-0",
+   "title": "A Transdiagnostic fMRI Dataset With 400 + Deeply Phenotyped Participants Across Resting and Task States",
+   "abstract": "YaleNeuroConnect1 is a human functional MRI (fMRI) dataset collected at Yale University that includes functional MRI data and functional connectomes acquired during resting-state and six task conditions. There are 410 diagnostically and demographically diverse participants, each with extensive neuropsychological testing and symptom inventories obtained outside the MRI. Prior work shows that predictive models relating the brain to external measures can be stronger when using connectivity data obtained during continuous performance tasks instead of the more common resting-state. The tasks here were selected to exercise the brain across various cognitive domains. For each participant, 50&#8201;minutes of fMRI data were collected along with high-resolution 3D brain volumes. The fMRI data, combined with the deep phenotyping data in a diverse participant pool, allow studies of brain parcellation across conditions, the relationship between cognitive and clinical measures, identification of circuits supporting external measures, and data for the development of brain-based tests. The transdiagnostic nature of the sample allows a range of symptom scores to test the principles of the Research Domain Criteria framework.",
+   "authors": [
+    "Samardzija, A.",
+    "Shen, X.",
+    "Greene, A. S.",
+    "Mehta, S.",
+    "Iannone, S.",
+    "Simon, A. J.",
+    "Parra, F.",
+    "Luo, W.",
+    "Cutts, S. A.",
+    "Tang, K.",
+    "Arora, J.",
+    "Tokoglu, F.",
+    "Hahn, C. A.",
+    "Woods, S. W.",
+    "Sanacora, G.",
+    "Katz, R. B.",
+    "Srihari, V.",
+    "Spann, M. N.",
+    "Scheinost, D.",
+    "Constable, R. T."
+   ],
+   "journal": "Scientific Data",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41597-026-08749-0.pdf",
+   "type": "journal-article",
+   "oa_url": "https://www.nature.com/articles/s41597-026-08749-0_reference.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41597-026-08749-0",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795310698444199",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "clinical",
+     "cognitive_control"
+    ],
+    "approach": [
+     "fmri",
+     "open_tools",
+     "machine_learning"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-11-22T17:50:18Z",
+    "usage": {
+     "input_tokens": 488,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 107,
+     "cost_usd": 0.01261
+    }
+   }
+  },
   {
    "id": "shared2026httpsalpogeremarkpdf",
    "slack_ts": "1795194852.745189",
