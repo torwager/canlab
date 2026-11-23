@@ -1,7 +1,77 @@
 {
- "updated": "2026-11-22",
+ "updated": "2026-11-23",
  "channel": null,
  "items": [
+  {
+   "id": "zachs2019noninvasive",
+   "slack_ts": "1795463265.175859",
+   "shared_on": "2026-11-23",
+   "shared_by": "Byeol",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s41467-019-08721-0",
+   "doi": "10.1038/s41467-019-08721-0",
+   "title": "Noninvasive ultrasound stimulation of the spleen to treat inflammatory arthritis",
+   "abstract": "Abstract Targeted noninvasive control of the nervous system and end-organs may enable safer and more effective treatment of multiple diseases compared to invasive devices or systemic medications. One target is the cholinergic anti-inflammatory pathway that consists of the vagus nerve to spleen circuit, which has been stimulated with implantable devices to improve autoimmune conditions such as rheumatoid arthritis. Here we report that daily noninvasive ultrasound (US) stimulation targeting the spleen significantly reduces disease severity in a mouse model of inflammatory arthritis. Improvements are observed only with specific parameters, in which US can provide both protective and therapeutic effects. Single cell RNA sequencing of splenocytes and experiments in genetically-immunodeficient mice reveal the importance of both T and B cell populations in the anti-inflammatory pathway. These findings demonstrate the potential for US stimulation of the spleen to treat inflammatory diseases.",
+   "authors": [
+    "Zachs, D. P.",
+    "Offutt, S. J.",
+    "Graham, R. S.",
+    "Kim, Y.",
+    "Mueller, J.",
+    "Auger, J. L.",
+    "Schuldt, N. J.",
+    "Kaiser, C. R. W.",
+    "Heiller, A. P.",
+    "Dutta, R.",
+    "Guo, H.",
+    "Alford, J. K.",
+    "Binstadt, B. A.",
+    "Lim, H. H."
+   ],
+   "journal": "Nature Communications",
+   "year": 2019,
+   "pdf_url": "https://www.nature.com/articles/s41467-019-08721-0.pdf",
+   "type": "journal-article",
+   "pmid": "30862842",
+   "pmcid": "PMC6414603",
+   "oa_url": "https://www.nature.com/articles/s41467-019-08721-0.pdf",
+   "publisher_url": "https://doi.org/10.1038/s41467-019-08721-0",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795463265175859",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "brain_body",
+     "clinical"
+    ],
+    "approach": [
+     "other_imaging",
+     "behavioral"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": "placeholder",
+    "classified_at": "2026-11-23T22:03:22Z",
+    "usage": {
+     "input_tokens": 430,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 102,
+     "cost_usd": 0.01244
+    }
+   }
+  },
   {
    "id": "samardzija2026transdiagnostic",
    "slack_ts": "1795310698.444199",
