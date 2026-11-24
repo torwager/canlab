@@ -1,7 +1,196 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "channel": null,
  "items": [
+  {
+   "id": "zeng2026vagus",
+   "slack_ts": "1795549214.529519",
+   "shared_on": "2026-11-24",
+   "shared_by": "Zhaoxing",
+   "n_comments": 2,
+   "reactions": [
+    {
+     "name": "💩",
+     "count": 3
+    }
+   ],
+   "url": "https://doi.org/10.1016/j.chom.2026.11.003",
+   "doi": "10.1016/j.chom.2026.11.003",
+   "title": "Vagus nerve stimulation ameliorates epilepsy via a gut microbiota-butyrate-vagal axis",
+   "abstract": null,
+   "authors": [
+    "Zeng, L.",
+    "Zou, J.",
+    "Xu, Y.",
+    "Kong, J.",
+    "Xiao, Q.",
+    "Cheng, Z.",
+    "Xie, M.",
+    "Wan, Y.",
+    "Zhang, A.",
+    "Luo, Y.",
+    "Huang, Y.",
+    "Ye, Y.",
+    "Yuan, J.",
+    "Xue, S.",
+    "Zhou, X.",
+    "Cao, P.",
+    "Zhu, Z.",
+    "Xie, T.",
+    "Sun, H.",
+    "Guo, Y."
+   ],
+   "journal": "Cell Host &amp; Microbe",
+   "year": 2026,
+   "pdf_url": null,
+   "type": "journal-article",
+   "publisher_url": "https://doi.org/10.1016/j.chom.2026.11.003",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795549214529519",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "brain_body",
+     "clinical"
+    ],
+    "approach": [
+     "brain_stimulation"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.3,
+    "notes": "malformed",
+    "classified_at": "2026-11-24T20:40:10Z",
+    "usage": {
+     "input_tokens": 136,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 96,
+     "cost_usd": 0.00208
+    }
+   }
+  },
+  {
+   "id": "shared2026justw",
+   "slack_ts": "1795544526.879349",
+   "shared_on": "2026-11-24",
+   "shared_by": "Byeol",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 2
+    }
+   ],
+   "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01326-7#fig1",
+   "doi": "10.1016/j.cell.2026.10.039",
+   "title": "The blood-brain barrier imports diverse neuroprotective proteins through pathways impaired early in Alzheimer’s disease models",
+   "abstract": null,
+   "authors": [
+    "Zhou, H.",
+    "Maynard, J. C.",
+    "Pennacchio, A. J.",
+    "Apolonio, A.",
+    "Liu, X.",
+    "Yao, L.",
+    "Negahban, M.",
+    "Zhang, Z.",
+    "Ding, B.",
+    "Oberhauser, J.",
+    "Wen, X.",
+    "Yang, M. J.",
+    "Huang, F.",
+    "Chayama, Y.",
+    "Doddipalli, S.",
+    "Bernardi, M.",
+    "Domke, L.",
+    "Lo, I.",
+    "Simms, J.",
+    "Pan, A.",
+    "Du, S.",
+    "To, N.",
+    "Wong, P. S.",
+    "Duong, D.",
+    "Fox, E.",
+    "Seyfried, N. T.",
+    "Cheung, T. H.",
+    "Tracy, T. E.",
+    "Burlingame, A. L.",
+    "Yang, A. C."
+   ],
+   "journal": "Cell",
+   "year": 2026,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795544526879349",
+   "publisher_url": "https://doi.org/10.1016/j.cell.2026.10.039",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "clinical"
+    ],
+    "approach": [],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The study examined how the blood-brain barrier imports neuroprotective proteins and showed that these transport pathways are disrupted early in Alzheimer's disease mouse models.",
+   "key_finding": "Several neuroprotective protein transport pathways across the blood-brain barrier were found to be impaired at early stages of Alzheimer's disease model progression.",
+   "free_keywords": [
+    "blood-brain barrier",
+    "Alzheimer's disease",
+    "protein transport",
+    "neuroprotection",
+    "mouse models"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "title_only",
+    "confidence": 0.2,
+    "notes": "Title-only record; content is outside typical CANlab cognitive/affective neuroscience scope, limiting confident tagging of approach and topic.",
+    "classified_at": "2026-11-24T20:40:08Z",
+    "usage": {
+     "input_tokens": 127,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 649,
+     "cost_usd": 0.0173
+    }
+   }
+  },
+  {
+   "id": "shared2026todd",
+   "slack_ts": "1795496871.696399",
+   "shared_on": "2026-11-24",
+   "shared_by": "tor",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 4
+    }
+   ],
+   "url": "https://lnkd.in/p/eUyGK7PT",
+   "doi": null,
+   "title": "Todd Constable | Yale University | 485 likes · 25 comments | LinkedIn",
+   "abstract": "Anyone want some data? We've just released A Transdiagnostic fMRI Dataset With 400 + Deeply Phenotyped Participants Across Resting and Task States! (48min of fMRI data per subject). It's called YaleNeuroConnect and it's on OpenNeuro. Thanks to Anja Samardzija and team for pushing this through. Enjoy! <https://lnkd.in/eT6fYHhq> Thanks to NIH, NIMH, NIBIB",
+   "authors": [],
+   "journal": "LinkedIn",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795496871696399",
+   "kind": "link"
+  },
   {
    "id": "zachs2019noninvasive",
    "slack_ts": "1795463265.175859",
