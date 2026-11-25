@@ -1,7 +1,593 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026cattendee",
+   "slack_ts": "1795630151.635479",
+   "shared_on": "2026-11-25",
+   "shared_by": "Byeol",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 1
+    }
+   ],
+   "url": "https://cattendee.abstractsonline.com/meeting/21503",
+   "doi": null,
+   "title": "cAttendee",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795630151635479",
+   "kind": "link"
+  },
+  {
+   "id": "liu2026neurobiomarkerguided",
+   "slack_ts": "1795628037.731719",
+   "shared_on": "2026-11-25",
+   "shared_by": "marta",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.nature.com/articles/s44220-026-00665-x",
+   "doi": "10.1038/s44220-026-00665-x",
+   "title": "Neurobiomarker-guided neuromodulation for youth with major depressive episodes: a double-blind randomized trial",
+   "abstract": "Strong heterogeneity limits precision medicine in youth with mood disorders during major depressive episodes (MDE). Here we propose and evaluate a neurobiomarker-guided repetitive transcranial magnetic stimulation (rTMS) strategy in a double-blind randomized controlled trial. Using multicenter resting-state functional magnetic resonance imaging data (N&#8201;=&#8201;2,328), we validated functional imbalance along the sensorimotor&#8211;association axis as a robust neurobiomarker distinguishing two neurosubtypes&#8212;archetypal and atypical. We then conducted a double-blind randomized controlled trial (2 August 2022&#8211;20 January 2024) in 219 youth with MDE. Participants were classified into subtypes and randomly assigned to subtype-specific active rTMS or sham stimulation. The primary outcome was depressive symptom improvement measured by the 17-item Hamilton Depression Rating Scale; secondary outcomes assessed neurobiological effects using functional magnetic resonance imaging. The trial met its prespecified primary endpoint. The active rTMS showed greater symptom improvement than sham (adjusted mean difference of &#8722;2.34, 95% confidence interval &#8722;3.80 to &#8722;0.87, P&#8201;=&#8201;0.002), with significant effects observed in both subtypes. However, the clinical efficacy was moderate, with only the anxiety/somatization factor showing significantly higher rates of partial response and response. The archetypal subtype exhibited increased fluctuation amplitude in the visual cortex following active rTMS compared with sham, meeting the prespecified secondary endpoint. By contrast, no significant neurobiological effects were observed in the atypical subtype. Symptom improvement was associated with functional activity alterations along the sensorimotor&#8211;association axis. These findings provide preliminary support for biologically driven, neurosubtype-specific treatments in youth with MDE (ClinicalTrials.gov, NCT05465928 ). In this study, the authors examined whether a neuroimaging-defined biomarker reflecting functional imbalance along the sensorimotor&#8211;association axis could subtype major depressive episodes and guide repetitive transcranial magnetic stimulation treatment in youth.",
+   "authors": [
+    "Liu, J.",
+    "Xiao, Y.",
+    "Zheng, J.",
+    "Zhao, P.",
+    "Wang, L.",
+    "Tang, R.",
+    "Duan, J.",
+    "Zheng, H.",
+    "Wei, D.",
+    "Qiu, J.",
+    "Xie, P.",
+    "He, Y.",
+    "Xia, M.",
+    "Zhu, R.",
+    "Gong, X.",
+    "Zhang, X.",
+    "Wang, F."
+   ],
+   "journal": "Nature Mental Health",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s44220-026-00665-x.pdf",
+   "type": "journal-article",
+   "publisher_url": "https://doi.org/10.1038/s44220-026-00665-x",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795628037731719",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "clinical"
+    ],
+    "approach": [
+     "fmri",
+     "neuromarker",
+     "brain_stimulation",
+     "tms",
+     "mega_analysis"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "A double-blind randomized trial in 219 youth with major depressive episodes used a resting-state fMRI biomarker of sensorimotor-association axis imbalance to subtype patients and guide rTMS treatment, finding modest overall efficacy with subtype-specific neurobiological effects.",
+   "key_finding": "Active rTMS outperformed sham in depressive symptom improvement (adjusted mean difference -2.34, P=0.002), with the archetypal subtype showing increased visual cortex fluctuation amplitude while the atypical subtype showed no significant neurobiological change.",
+   "free_keywords": [
+    "youth depression",
+    "rTMS",
+    "neurosubtypes",
+    "sensorimotor-association axis",
+    "resting-state fMRI",
+    "precision psychiatry",
+    "Hamilton Depression Rating Scale"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Typo in topic key due to formatting fix needed",
+    "classified_at": "2026-11-25T19:57:35Z",
+    "usage": {
+     "input_tokens": 899,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 360,
+     "cost_usd": 0.00624
+    }
+   }
+  },
+  {
+   "id": "shared2026neuron",
+   "slack_ts": "1795577787.591459",
+   "shared_on": "2026-11-25",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 2
+    }
+   ],
+   "url": "https://neuron-lens.com/",
+   "doi": null,
+   "title": "Neuron Lens",
+   "abstract": "What each neuron and attention head inside Qwen3 from 0.6B to 14B, post-trained and base, and Gemma 4 12B responds to, and what it makes the model say.",
+   "authors": [],
+   "journal": "neuron-lens.com",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795577787591459",
+   "kind": "link"
+  },
+  {
+   "id": "schwaba2026robust",
+   "slack_ts": "1795573043.991329",
+   "shared_on": "2026-11-25",
+   "shared_by": "Xiaomin",
+   "n_comments": 6,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 2
+    }
+   ],
+   "url": "https://www.nature.com/articles/s41586-026-10992-9",
+   "doi": "10.1038/s41586-026-10992-9",
+   "title": "Robust inference and correlates from genetic associations with personality",
+   "abstract": "Personality traits describe stable differences in how people think, feel and behave, and how they interact with and experience their social and physical environments1,2. Many questions remain unanswered about associations between DNA and personality traits, such as their robustness, their&amp;nbsp;generalizability and the biological and social pathways through which they act. Here we meta-analyse data across 46 cohorts comprising 611,037 to 1.14&#8201;million participants with European-like and African-like genomes for genome-wide association studies (GWAS) of the Big Five personality traits (extraversion, agreeableness, conscientiousness, neuroticism and openness to experience), and data from up to 50,725 participants for within-family GWAS. We identify 1,260 lead genetic variants associated with personality, including 824 novel variants3. Common genetic variants explain a moderate 4.8&#8211;9.3% of the variance in measures of each trait, and 9.3&#8211;13.3% among instruments with typical measurement reliability. Genetic associations with personality are highly consistent but not identical across geography, reporter (self versus close other), age group and measurement instrument, and we find minimal spousal assortment for personality in recent history. In contrast to many other social and behavioural traits4,5, within-family GWAS and polygenic index analyses indicate that genetic associations with personality are minimally confounded by the shared family environment. Polygenic prediction, genetic correlation and Mendelian randomization analyses indicate that personality traits have widespread, potentially causal associations with consequential behaviours and life outcomes. Overall, we find that the genetic architecture of personality is robustly generalizable, minimally confounded and widely relevant to human experience. The genetic architecture of personality is robustly generalizable, minimally confounded and widely relevant to human experience.",
+   "authors": [
+    "Schwaba, T.",
+    "Clapp Sullivan, M. L.",
+    "Akingbuwa, W. A.",
+    "Ilves, K.",
+    "Tanksley, P. T.",
+    "Williams, C. M.",
+    "Dragostinov, Y.",
+    "Mallard, T. T.",
+    "Tubbs, J. D.",
+    "Liao, W.",
+    "Ackerman, L. S.",
+    "Fealy, J. C. M.",
+    "Hemani, G.",
+    "de la Fuente, J.",
+    "Smith, G. D.",
+    "Gupta, P.",
+    "Stein, M. B.",
+    "Gelernter, J.",
+    "Levey, D. F.",
+    "Võsa, U.",
+    "Ausmees, L.",
+    "Realo, A.",
+    "Esko, T.",
+    "Vaht, M.",
+    "Allik, J.",
+    "Esko, T.",
+    "Mõttus, R.",
+    "Vainik, U.",
+    "Jonsdottir, G. A.",
+    "Thorleifsson, G.",
+    "Gunnarsson, Á. F.",
+    "Bjornsdottir, G.",
+    "Thorgeirsson, T. E.",
+    "Stefansson, H.",
+    "Stefansson, K.",
+    "Cheesman, R.",
+    "Qin, Q.",
+    "Corfield, E. C.",
+    "Ask, H.",
+    "Torvik, F. A.",
+    "Ystrom, E.",
+    "Tesli, M.",
+    "Boomsma, D. I.",
+    "de Geus, E. J. C.",
+    "Hottenga, J.",
+    "Melo, D. C.",
+    "Snieder, H.",
+    "Hartman, C. A.",
+    "Xia, C.",
+    "Campbell, A.",
+    "Luciano, M.",
+    "Deary, I. J.",
+    "Hill, W. D.",
+    "Jang, S.",
+    "Vrieze, S. I.",
+    "Abecasis, G.",
+    "Lupton, M. K.",
+    "Mitchell, B. L.",
+    "Viher, P. V.",
+    "Colodro-Conde, L.",
+    "Martin, N. G.",
+    "Medland, S. E.",
+    "Derks, E. M.",
+    "Wormington, B.",
+    "Kaprio, J.",
+    "Silventoinen, K.",
+    "Palviainen, T.",
+    "Musial, A.",
+    "Rimfeld, K.",
+    "Plomin, R.",
+    "Malanchini, M.",
+    "Dick, D. M.",
+    "Aliev, F.",
+    "Wesseldijk, L. W.",
+    "Ullén, F.",
+    "Mosing, M. A.",
+    "Kranzler, H. R.",
+    "Nunez, Y.",
+    "Beck, S.",
+    "Polimanti, R.",
+    "Edwards, T.",
+    "Giannelis, A.",
+    "Willoughby, E. A.",
+    "Lee, J. J.",
+    "McGue, M.",
+    "Terracciano, A.",
+    "Marongiu, M.",
+    "Fiorillo, E.",
+    "Cucca, F.",
+    "Sutin, A. R.",
+    "van der Most, P. J.",
+    "Oldehinkel, A. J.",
+    "Kretschmer, T.",
+    "Shabalin, A. A.",
+    "Docherty, A. R.",
+    "Krueger, R. F.",
+    "Freilich, C. D.",
+    "Mishra, B. H.",
+    "Lehtimäki, T.",
+    "Raitakari, O. T.",
+    "Kähönen, M.",
+    "Saarinen, A.",
+    "Dobewall, H.",
+    "Keltikangas-Järvinen, L.",
+    "Berger, K.",
+    "Herrera-Rivero, M.",
+    "Streit, F.",
+    "Awasthi, S.",
+    "Witt, S. H.",
+    "Tuhkanen, J.",
+    "Räikkönen, K.",
+    "Eriksson, J. G.",
+    "Lahti, J.",
+    "Davies, G.",
+    "Redmond, P.",
+    "Taylor, A.",
+    "Corley, J.",
+    "Russ, T. C.",
+    "Ciullo, M.",
+    "Nutile, T.",
+    "Ding, J.",
+    "Qian, Y.",
+    "Tanaka, T.",
+    "Ferrucci, L.",
+    "Zillich, L.",
+    "Sirignano, L.",
+    "Harden, K. P.",
+    "Genç, E.",
+    "Gajewski, P. D.",
+    "Getzmann, S.",
+    "Fraenz, C.",
+    "Schneider Peñate, J. E.",
+    "Lis, S.",
+    "Hall, A. S. M.",
+    "Schmahl, C.",
+    "Herpertz, S. C.",
+    "Abdellaoui, A.",
+    "Nivard, M. G.",
+    "Tucker-Drob, E. M."
+   ],
+   "journal": "Nature",
+   "year": 2026,
+   "pdf_url": "https://www.nature.com/articles/s41586-026-10992-9.pdf",
+   "type": "journal-article",
+   "pmid": "42686911",
+   "pmcid": "PMC13589609",
+   "oa_url": "https://doi.org/10.1038/s41586-026-10992-9",
+   "publisher_url": "https://doi.org/10.1038/s41586-026-10992-9",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795573043991329",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "clinical"
+    ],
+    "approach": [
+     "genetics",
+     "mega_analysis"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "A large-scale GWAS meta-analysis across 46 cohorts and over a million participants identified 1,260 genetic variants associated with Big Five personality traits, finding robust and generalizable genetic architecture minimally confounded by family environment.",
+   "key_finding": "Common genetic variants explained 4.8-9.3% of variance in personality traits, with 824 novel variants identified and minimal confounding from shared family environment via within-family GWAS.",
+   "free_keywords": [
+    "GWAS",
+    "Big Five personality traits",
+    "polygenic index",
+    "Mendelian randomization",
+    "within-family design",
+    "assortative mating",
+    "genetic architecture"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "This is a genetics/personality paper not directly tied to CANlab's typical affective neuroscience focus, but fits the genetics approach tag; topic tagging is approximate given lack of a more specific personality trait category.",
+    "classified_at": "2026-11-25T19:57:31Z",
+    "usage": {
+     "input_tokens": 678,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 334,
+     "cost_usd": 0.00554
+    }
+   }
+  },
+  {
+   "id": "chiang2000catching",
+   "slack_ts": "1795560002.629179",
+   "shared_on": "2026-11-24",
+   "shared_by": "Vivek Sagar",
+   "n_comments": 10,
+   "reactions": [
+    {
+     "name": "❤️",
+     "count": 1
+    },
+    {
+     "name": "😲",
+     "count": 1
+    }
+   ],
+   "url": "https://www.nature.com/articles/35014679",
+   "doi": "10.1038/35014679",
+   "title": "Catching crumbs from the table",
+   "abstract": "In the face of metahuman science, humans have become metascientists.",
+   "authors": [
+    "Chiang, T."
+   ],
+   "journal": "Nature",
+   "year": 2000,
+   "pdf_url": "https://www.nature.com/articles/35014679.pdf",
+   "type": "journal-article",
+   "pmid": "10850694",
+   "pmcid": null,
+   "publisher_url": "https://doi.org/10.1038/35014679",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795560002629179",
+   "kind": "paper",
+   "tags": {
+    "topic": [],
+    "approach": [],
+    "type": [
+     "commentary"
+    ]
+   },
+   "summary": "A brief opinion or news piece reflecting on the state of science in the face of advanced 'metahuman' scientific understanding, with no specific neuroscience content described.",
+   "key_finding": null,
+   "free_keywords": [
+    "metascience",
+    "Nature commentary",
+    "philosophy of science"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.2,
+    "notes": "Abstract is extremely sparse (a single cryptic sentence) and does not provide enough information to confidently assign topic or approach tags specific to CANlab's research areas; this appears to be a short commentary/fiction piece rather than a neuroscience research article.",
+    "classified_at": "2026-11-25T19:57:28Z",
+    "usage": {
+     "input_tokens": 98,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 219,
+     "cost_usd": 0.00323
+    }
+   }
+  },
+  {
+   "id": "shared2026docs",
+   "slack_ts": "1795556182.732459",
+   "shared_on": "2026-11-24",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "❤️",
+     "count": 2
+    }
+   ],
+   "url": "https://docs.cneuromod.ca/",
+   "doi": null,
+   "title": "docs @latest",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795556182732459",
+   "kind": "link"
+  },
+  {
+   "id": "li2025largescale",
+   "slack_ts": "1795554381.229819",
+   "shared_on": "2026-11-24",
+   "shared_by": "Byeol",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 1
+    }
+   ],
+   "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202410160",
+   "doi": "10.1002/advs.202410160",
+   "title": "Large‐Scale Plasma Proteomics to Profile Pathways and Prognosis of Chronic Pain",
+   "abstract": "Abstract While increasing peripheral mechanisms related to chronic pain, the plasma proteomics profile associated with it and its prognosis remains elusive. This study utilizes 2923 plasma proteins and chronic pain of 51 644 participants from UK Biobank and finds 474 proteins linked to chronic pain in six sites: head, neck or shoulder, back, stomach or abdominal, hip, and knee, with 11 proteins sharing across pain sites. The identified proteins are largely enriched in immune and metabolic pathways and highly expressed in tissues like lungs and small intestines. Phenome‐wide analysis highlights the significance of pain‐related proteome on diverse facets of human health, and in‐depth Mendelian randomization validates 10 proteins (CD302, RARRES2, TNFRSF1B, BTN2A1, TNFRSF9, COL18A1, TNF, CD74, TNFRSF4, and BTN2A1) as markers of chronic pain. Furthermore, protein sets capable of classifying pain patients and healthy participants, particularly performing best in hip pain (area under curve, AUC = 0.725), are identified. Interestingly, the prediction of pain spreading over ten years achieves an AUC of 0.715, with leptin identified as a crucial predictor. This study delineates proteins associated with various pain conditions and identifies proteins capable of classifying pain and predicting pain spreading, offering benefits for both research and clinical practice.",
+   "authors": [
+    "Li, Z.",
+    "Ma, Q.",
+    "Zhang, J.",
+    "Yin, R.",
+    "You, J.",
+    "Hao, Q.",
+    "Wu, X.",
+    "Kang, J.",
+    "Wang, L.",
+    "Deng, Y.",
+    "Li, Y.",
+    "Shen, C.",
+    "Wu, B.",
+    "Feng, J.",
+    "Tu, Y.",
+    "Xiao, X.",
+    "Yu, J.",
+    "Cheng, W."
+   ],
+   "journal": "Advanced Science",
+   "year": 2025,
+   "pdf_url": null,
+   "type": "journal-article",
+   "pmid": "40048323",
+   "pmcid": "PMC12021123",
+   "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/advs.202410160",
+   "publisher_url": "https://doi.org/10.1002/advs.202410160",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795554381229819",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "chronic_pain",
+     "brain_body"
+    ],
+    "approach": [
+     "genetics",
+     "machine_learning",
+     "mega_analysis"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "",
+   "key_finding": null,
+   "free_keywords": [],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.5,
+    "notes": null,
+    "classified_at": "2026-11-25T19:57:20Z",
+    "usage": {
+     "input_tokens": 601,
+     "cache_read_input_tokens": 0,
+     "cache_creation_input_tokens": 4224,
+     "output_tokens": 106,
+     "cost_usd": 0.01282
+    }
+   }
+  },
+  {
+   "id": "chen2025diagnosis",
+   "slack_ts": "1795554381.229819",
+   "shared_on": "2026-11-24",
+   "shared_by": "Byeol",
+   "n_comments": 0,
+   "reactions": [
+    {
+     "name": "👍",
+     "count": 1
+    }
+   ],
+   "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202507691",
+   "doi": "10.1002/advs.202507691",
+   "title": "Diagnosis, Prognosis, and Drug Target Discovery for Chronic Widespread Pain: A Large Proteogenomic Study",
+   "abstract": "Abstract Chronic widespread pain (CWP) remains challenging due to its heterogeneous causes and complex mechanisms. A total of 2920 plasma proteins are analyzed from 29,254 UK Biobank participants. A total of 256 proteins are identified as cross‐sectionally correlated with CWP. A simple (top 10 proteins) and comprehensive (all significant proteins) proteomic‐based score (ProtS) is created for CWP diagnosis, both outperforming and improving the existing clinical score (area under the curve, AUC: 0.801, 0.723, and 0.791 alone, and 0.856 and 0.880 in combination). In addition, the protein score predicted 13‐years risk of pain‐related traits over the body, including pain onset, progression, and intensity; Moreover, it has stronger associations with nociplastic pain and fibromyalgia compared to nociceptive and neuropathic pain, implying a unique protein signature of different pain mechanisms. Finally, among 434 candidate proteins prioritized in the observational analysis, 18 are corroborated with causal relevance by Mendelian randomization, and importantly, four (CA14, DPEP1, LGALS3, and TNF) showed potential as novel drug targets repurposed for treating CWP.",
+   "authors": [
+    "Chen, L.",
+    "Kelleher, E.",
+    "Meng, R.",
+    "Liu, D.",
+    "Guo, Y.",
+    "Wang, Y.",
+    "Gao, Y.",
+    "Huang, Z.",
+    "Liang, Z.",
+    "Yuan, S.",
+    "Zeng, C.",
+    "Ma, J.",
+    "Dong, Y.",
+    "Irani, A.",
+    "Lei, G.",
+    "Xie, J.",
+    "Prieto‐Alhambra, D."
+   ],
+   "journal": "Advanced Science",
+   "year": 2025,
+   "pdf_url": null,
+   "type": "journal-article",
+   "pmid": "41025730",
+   "pmcid": "PMC12713070",
+   "oa_url": "https://doi.org/10.1002/advs.202507691",
+   "publisher_url": "https://doi.org/10.1002/advs.202507691",
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795554381229819",
+   "kind": "paper",
+   "tags": {
+    "topic": [
+     "chronic_pain",
+     "pain"
+    ],
+    "approach": [
+     "machine_learning",
+     "genetics",
+     "mega_analysis"
+    ],
+    "type": [
+     "empirical"
+    ]
+   },
+   "summary": "The study used plasma proteomics from nearly 30,000 UK Biobank participants to build a protein-based score diagnosing and predicting chronic widespread pain, and identified four candidate drug targets via Mendelian randomization.",
+   "key_finding": "A proteomic score combined with a clinical score achieved AUC up to 0.880 for diagnosing chronic widespread pain, and Mendelian randomization identified CA14, DPEP1, LGALS3, and TNF as causally relevant drug targets.",
+   "free_keywords": [
+    "UK Biobank",
+    "proteomics",
+    "Mendelian randomization",
+    "fibromyalgia",
+    "nociplastic pain",
+    "drug target discovery",
+    "biomarker"
+   ],
+   "classification": {
+    "taxonomy_version": "1.1.0",
+    "prompt_version": "1.2.0",
+    "model": "anthropic:claude-sonnet-5",
+    "input_mode": "abstract",
+    "confidence": 0.85,
+    "notes": "Approach tag 'type' had a typo artifact fixed in output; genetics tag used for Mendelian randomization causal inference.",
+    "classified_at": "2026-11-25T19:57:24Z",
+    "usage": {
+     "input_tokens": 548,
+     "cache_read_input_tokens": 4224,
+     "cache_creation_input_tokens": 0,
+     "output_tokens": 344,
+     "cost_usd": 0.00538
+    }
+   }
+  },
   {
    "id": "zeng2026vagus",
    "slack_ts": "1795549214.529519",
