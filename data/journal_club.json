@@ -1,7 +1,26 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "channel": null,
  "items": [
+  {
+   "id": "shared2026justx",
+   "slack_ts": "1795674533.871179",
+   "shared_on": "2026-11-26",
+   "shared_by": "Li-Bo Zhang",
+   "n_comments": 0,
+   "reactions": [],
+   "url": "https://www.science.org/content/article/exclusive-i-got-eavesdrop-ai-agents-doing-science-it-was-eye-opening",
+   "doi": null,
+   "title": "Link on science.org",
+   "abstract": null,
+   "authors": [],
+   "journal": "",
+   "year": null,
+   "pdf_url": null,
+   "permalink": "https://canlab.slack.com/archives/C0NT0J4F8/p1795674533871179",
+   "kind": "paper",
+   "title_unresolved": true
+  },
   {
    "id": "shared2026cattendee",
    "slack_ts": "1795630151.635479",
